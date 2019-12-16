@@ -1,0 +1,274 @@
+WEBVTT
+
+00:01.080 --> 00:02.120
+Welcome back.
+
+00:02.130 --> 00:07.820
+Let's talk about the topic of formatted strings.
+
+00:07.850 --> 00:14.940
+Up until now we've just written simple strings but we want a program that's dynamic that's static.
+
+00:15.050 --> 00:21.130
+Let's say we have a Amazon page and we're working on Amazon actually.
+
+00:21.170 --> 00:26.960
+And when a user logs into their profile while we want to display their name or what they have in the
+
+00:26.960 --> 00:35.930
+cart in that case we don't want to just hard code and write every single user's name like Andre or another
+
+00:35.930 --> 00:39.860
+user Joe and write every single name in the world.
+
+00:39.950 --> 00:40.300
+No.
+
+00:40.310 --> 00:49.220
+Ideally what we can do is have something dynamic where let's say it's a profile page and we simply use
+
+00:49.220 --> 00:53.660
+the name variable and we display that on the page.
+
+00:53.660 --> 00:59.120
+Now this name variable should equal whatever the user's name is.
+
+00:59.120 --> 01:01.480
+And this is something that we can graph from the database.
+
+01:01.490 --> 01:03.790
+Again something that we'll talk later on in the course.
+
+01:03.860 --> 01:10.950
+But let's assume that in here when we do equals we're going to grab some user information which will
+
+01:10.950 --> 01:16.120
+be the name and this name for now will be John.
+
+01:16.120 --> 01:19.260
+All right let's go Johnny and this Johnny.
+
+01:19.260 --> 01:28.830
+We want to display on the profile page and we can do that with formatted strings we can simply do something
+
+01:28.830 --> 01:37.150
+like print and then say name but we also want to greet that person.
+
+01:37.240 --> 01:37.700
+Right.
+
+01:37.720 --> 01:47.400
+So let's do hi and then plus name and remember to add a space if I click Run I get high.
+
+01:47.700 --> 01:57.030
+Johnny but as we get more and more information let's say we have H and Johnny is fifty five.
+
+01:57.190 --> 02:02.810
+If I wanted to extend the sentence and I want to say you are.
+
+02:03.040 --> 02:14.230
+And then add another plus make sure we add a space in here and then add year old Ron here.
+
+02:14.660 --> 02:14.950
+All right.
+
+02:14.960 --> 02:18.680
+We get a type error must be string not INT.
+
+02:18.680 --> 02:19.310
+Oh boy.
+
+02:19.310 --> 02:19.520
+All right.
+
+02:19.520 --> 02:24.890
+So we have to convert this into a string so remember we can do that like this.
+
+02:25.130 --> 02:28.090
+And then if I click Run Hi Johnny.
+
+02:28.090 --> 02:33.890
+You are a 55 year old or years old.
+
+02:33.990 --> 02:34.660
+All right.
+
+02:34.660 --> 02:41.350
+That was a little cumbersome but we're making our Amazon page dynamic we can grab different information
+
+02:41.350 --> 02:48.790
+from the database and we'll have in a string something according to the user but there's a better way
+
+02:48.790 --> 02:49.750
+of doing this.
+
+02:49.960 --> 02:59.350
+And with formatted strings all we need to do is add an F. at the beginning in this f at the beginning
+
+02:59.380 --> 03:05.530
+is going to tell Python hey this is going to be a format it's shrink and instead of doing all this plus
+
+03:05.530 --> 03:14.030
+and name and all this stuff and doing the SDR to convert the type we can simply do something like this
+
+03:14.720 --> 03:25.090
+Let's remove this and simply do brackets and say name and then again remove all of this
+
+03:28.860 --> 03:31.190
+and say H.
+
+03:31.650 --> 03:41.400
+So I'm going to say hi name you are eight years old and if I click Run here you see that it still works.
+
+03:41.400 --> 03:47.700
+This is a new feature of Python 3 by adding F to the beginning.
+
+03:47.700 --> 03:55.410
+It's saying hey this is going to be a formatted string and I want you to just make these variables available.
+
+03:55.450 --> 04:02.950
+Strings inside of well this string how much cleaner is that now.
+
+04:03.000 --> 04:10.430
+Although this is nice and clean and this is my preferred way of writing strings before Python 3.
+
+04:10.470 --> 04:17.340
+You didn't really have this so in python 2 and mind you this works in Python 3 as well as you can see
+
+04:17.790 --> 04:27.710
+we had something different to accomplish this what we had was this idea of a dot format and Dot format.
+
+04:27.720 --> 04:37.310
+So let's remove the f here is going to do the same thing for us we do a bracket here and then we say
+
+04:37.880 --> 04:51.370
+hey we want Johnny and age of 55 and we can just remove these variable names if I click run here.
+
+04:51.930 --> 04:55.450
+I get an error and you have to be careful here.
+
+04:55.590 --> 04:59.050
+Dot format works on strings.
+
+04:59.090 --> 05:05.310
+You can see over here that we did it outside of the brackets and what it's doing is saying hey run the
+
+05:05.310 --> 05:13.530
+format action on this print but print is not really a string right.
+
+05:13.530 --> 05:21.600
+So you have to make sure that we move the brackets to the outside so that we evaluate this piece of
+
+05:21.600 --> 05:22.280
+code first.
+
+05:22.290 --> 05:31.780
+So the string is going to get formatted and then we're going to print if I run this hi Johnny you are
+
+05:31.820 --> 05:36.630
+55 years old so that works the same way.
+
+05:36.710 --> 05:42.850
+But what if we wanted to use variables because right now we're just doing this by order.
+
+05:42.860 --> 05:47.510
+So whatever comes first gets filled in first in the brackets.
+
+05:47.570 --> 05:53.330
+Well we can do something like name and age.
+
+05:53.630 --> 05:54.770
+Let's see can we do that.
+
+05:54.860 --> 05:56.640
+Let's run.
+
+05:56.640 --> 05:57.420
+There you go.
+
+05:57.480 --> 05:58.850
+That works the same way.
+
+05:59.850 --> 06:06.840
+What if we had a specific order maybe we want this to be h in here to be name.
+
+06:06.960 --> 06:08.960
+Well we can mix those around.
+
+06:09.060 --> 06:17.520
+We can say 1 here and 0 here because in computer science we always start counting from zero.
+
+06:17.910 --> 06:19.860
+So this is zero.
+
+06:19.890 --> 06:29.710
+And this is one if we had something else in here let's say a third variable then this will be so if
+
+06:29.710 --> 06:32.480
+I click Run here all right.
+
+06:32.520 --> 06:35.220
+Everything is upside down.
+
+06:35.260 --> 06:38.640
+Finally I can just create my own variables if I wanted to.
+
+06:38.650 --> 06:52.770
+So let's say Hi let's say new name equals Sally and then age of Sally is going to equal let's say 100
+
+06:53.810 --> 06:55.120
+Sally is very old.
+
+06:55.310 --> 06:59.050
+Now if I do zero let's say I'm one here.
+
+06:59.330 --> 07:01.240
+Quick run.
+
+07:01.340 --> 07:05.810
+So now we'll actually get an error tuple index out of range.
+
+07:05.810 --> 07:11.810
+Now we haven't really learned about tuples and ranges and this is the low confusing but a bit of a trick
+
+07:11.810 --> 07:12.450
+here.
+
+07:12.590 --> 07:21.540
+We want to make sure that we add now because we've given the actual variable a value.
+
+07:21.800 --> 07:33.250
+We need to actually say new name here and here will be h so that if I click Run there you go.
+
+07:33.310 --> 07:33.990
+Hi Sally.
+
+07:34.030 --> 07:42.290
+You are a hundred years old as you can see with DOT format things are a little bit more complicated.
+
+07:42.600 --> 07:50.360
+You'll still see this and all Python to code still uses the dot format and you'll see a lot of Python
+
+07:50.360 --> 07:59.700
+3 code bases that still use dot format because some people prefer it but I would argue that the f at
+
+07:59.700 --> 08:07.050
+the beginning of a formatted string is the way to go because well it just makes things so much easier.
+
+08:07.050 --> 08:07.700
+Right.
+
+08:07.710 --> 08:10.650
+Nice and clean nice and easy.
+
+08:10.650 --> 08:16.980
+So I do recommend that you use the formatted string with the F in front.
+
+08:16.980 --> 08:21.000
+And for short we usually call this an F string.
+
+08:21.000 --> 08:23.400
+All right I'll see in the next one.
+
+08:23.400 --> 08:23.690
+Bye bye.

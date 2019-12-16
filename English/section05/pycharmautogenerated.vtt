@@ -1,0 +1,343 @@
+WEBVTT
+
+00:00.390 --> 00:01.590
+Welcome back.
+
+00:01.590 --> 00:06.400
+Up until now we've talked about Sublime Text and Visual Studio code.
+
+00:06.600 --> 00:13.590
+Code editors that we had to install a bunch of plugins and extensions in order to customize it to what
+
+00:13.590 --> 00:21.200
+we want and they work really well with a ton of different programming languages the next one though
+
+00:21.500 --> 00:30.050
+is an I.D. e and it's called pie chart and it's probably the most popular tool for Python developers.
+
+00:30.050 --> 00:38.600
+So I really really like it but it's an IDC that is unlike a code editor it already comes pre-built with
+
+00:38.630 --> 00:40.260
+a lot of things.
+
+00:40.340 --> 00:45.870
+This company Jeff brains makes it and the focus purely on Python developers.
+
+00:46.070 --> 00:52.640
+So that is if you're a python developer they really focus and make sure that all the tools you need
+
+00:52.640 --> 00:54.710
+to succeed are in here.
+
+00:55.580 --> 01:03.470
+Now when you click on Download Now you have two versions the professional one which you have to pay
+
+01:03.470 --> 01:05.720
+for and the community one.
+
+01:05.810 --> 01:11.750
+So just download the community one the professional One just comes with a few extra features that we
+
+01:11.750 --> 01:12.600
+don't really need.
+
+01:12.620 --> 01:15.000
+So download the community one.
+
+01:15.050 --> 01:16.160
+Just a heads up.
+
+01:16.190 --> 01:17.810
+It's a lot bigger.
+
+01:17.810 --> 01:19.940
+It's three hundred and fifteen megabytes.
+
+01:19.940 --> 01:23.370
+So again it comes with a lot more tools for us to use.
+
+01:23.390 --> 01:28.180
+So it is a little bit heavier than Visual Studio code or Sublime Text.
+
+01:28.790 --> 01:34.280
+But if you are a python developer and you just want an environment where you can do everything in one
+
+01:34.280 --> 01:37.810
+place pi charm is the way to go.
+
+01:37.820 --> 01:42.650
+Now let's fast forward through this so that we're not waiting around for the download.
+
+01:42.890 --> 01:43.640
+All right.
+
+01:43.640 --> 01:48.070
+That was a long pause for me but for you with some editing this should have been quick.
+
+01:48.190 --> 01:48.890
+Right.
+
+01:48.920 --> 01:56.450
+If I open this up now again if you're on Windows or if you're on Mac installation process will be different
+
+01:56.930 --> 01:59.440
+in our case because we are on a Mac.
+
+01:59.540 --> 02:06.900
+I just drag this to application with Windows you'll probably go through an installer all right it's
+
+02:06.930 --> 02:07.890
+all installed.
+
+02:07.980 --> 02:20.020
+Now if I double click py charm is going to open up for me and we'll just make sure we allow it now in
+
+02:20.020 --> 02:28.600
+my case I had already a previous version of picture that I've been using and you might want to import
+
+02:28.630 --> 02:29.590
+your previous setting.
+
+02:29.770 --> 02:32.680
+But in our case we've never used pie chart before.
+
+02:32.680 --> 02:39.160
+And also most likely you want a fresh install so even if you get this type of pop up you can just click
+
+02:39.160 --> 02:43.190
+on do not import settings so you get a fresh slate.
+
+02:43.260 --> 02:46.540
+We're going to click okay and there we have it.
+
+02:47.280 --> 02:50.040
+And right away you can see that.
+
+02:50.190 --> 02:51.960
+Well it gives us a lot of options.
+
+02:52.530 --> 02:54.570
+Let's just say I've never used pie chart before.
+
+02:54.570 --> 02:57.020
+And next we get to choose our UI.
+
+02:57.030 --> 02:59.490
+Do we want Dracula which is dark.
+
+02:59.490 --> 03:00.710
+Or do we want light.
+
+03:00.780 --> 03:02.070
+Let's go with dark for now
+
+03:05.120 --> 03:08.240
+so I'm going to skip the remaining and set default
+
+03:13.020 --> 03:18.300
+so in PI charm now we can create a new project.
+
+03:18.450 --> 03:22.110
+Now in here it asks us where we want our create our project.
+
+03:22.110 --> 03:24.430
+In my case we can just leave it over here.
+
+03:24.480 --> 03:33.120
+We'll call it my project and before we click Create make sure that you click on this project.
+
+03:33.140 --> 03:42.480
+Interpreter and double check that our base interpreter is using Python 3.
+
+03:42.530 --> 03:49.550
+Remember if you're on a Mac or Linux you might have Python 2 already installed in our case we installed
+
+03:49.610 --> 03:52.900
+our python version three point seven right here.
+
+03:52.910 --> 03:59.880
+So we make sure that this latest version of Python is what's being used as the interpreter.
+
+03:59.930 --> 04:05.110
+Now we can just click Create and our project is going to start for us
+
+04:08.730 --> 04:15.130
+we enclose these tips every once in a while you get tip of the day because this is an idea you get a
+
+04:15.130 --> 04:19.660
+lot of features that you can read about online.
+
+04:19.660 --> 04:27.800
+So it might take you a while to get used to pie chart but it is a very powerful tool let's make this
+
+04:27.800 --> 04:29.170
+a little bit bigger.
+
+04:29.330 --> 04:38.660
+Now with my project here I can right click say new and then select file our file we'll just call it.
+
+04:39.130 --> 04:39.370
+Hi.
+
+04:39.370 --> 04:43.000
+Hi dot pie click Okay.
+
+04:44.700 --> 04:45.580
+And there we go.
+
+04:45.580 --> 04:51.850
+We have our first file opened up and we can just once again say print.
+
+04:51.910 --> 04:57.480
+Now this is definitely way too small so I'm going to go to pie chart preferences.
+
+04:57.520 --> 05:02.540
+And here it gives you a ton of options to customize pi charm to your liking.
+
+05:02.560 --> 05:09.000
+In my case I want to make sure that I use let's say a custom font but definitely increase the size too.
+
+05:09.030 --> 05:10.250
+Let's go with 18.
+
+05:10.270 --> 05:10.990
+How's that.
+
+05:10.990 --> 05:13.510
+Let's apply that's better.
+
+05:13.510 --> 05:14.560
+You know what I want to.
+
+05:14.560 --> 05:15.700
+Even bigger.
+
+05:15.700 --> 05:17.530
+Let's do 20.
+
+05:17.530 --> 05:18.130
+I'm going to head.
+
+05:18.150 --> 05:20.710
+OK.
+
+05:20.790 --> 05:21.120
+All right.
+
+05:21.120 --> 05:23.220
+This side is now bigger.
+
+05:23.220 --> 05:23.760
+That's great.
+
+05:23.760 --> 05:27.510
+We can see it but this is still tiny.
+
+05:27.510 --> 05:30.410
+I want this a little bit bigger so let's fix that as well.
+
+05:30.540 --> 05:38.910
+We can fix this easily by pressing command and then using the mouse wheel if you have a mouse or using
+
+05:38.910 --> 05:47.310
+two fingers and zooming in like so if you're on a Windows machine L.B. control instead of command and
+
+05:47.310 --> 05:51.380
+just zooming in and out as you like.
+
+05:51.390 --> 05:53.960
+Now the interesting thing here with pie chart.
+
+05:54.210 --> 06:01.500
+I know we have a ton of things that we might not be familiar with right now but the key thing is that
+
+06:01.500 --> 06:10.830
+Python three point seven is running our project and if we type something like print Hey hey we get a
+
+06:10.830 --> 06:21.450
+ton of interesting things first we get a typo saying hey this whole hey hey is not an English word.
+
+06:21.450 --> 06:23.450
+If I add spaces look at that.
+
+06:23.490 --> 06:31.500
+It even gives me typos of English words but then I also have this yellow curly bracket or squiggly line
+
+06:32.690 --> 06:37.610
+and it tells me Pep 8 no new line at the end of the file there's something that we're going to talk
+
+06:37.610 --> 06:41.100
+about shortly when we talk about formatting our code.
+
+06:41.330 --> 06:43.880
+But if I add a new line look at that.
+
+06:44.030 --> 06:46.050
+Everything is working smoothly.
+
+06:46.100 --> 06:47.940
+I get a nice little checkmark.
+
+06:48.380 --> 06:57.600
+Now I can run this code by going to run and then clicking run and you can see the shortcut command here
+
+06:57.600 --> 06:58.440
+as well.
+
+06:58.440 --> 07:01.560
+If I run this asked me Hey what do you want to run.
+
+07:01.740 --> 07:05.050
+Well I want to run the new high high python file.
+
+07:05.250 --> 07:07.990
+I click on this and look at that.
+
+07:08.030 --> 07:10.920
+Let's make this a little bit bigger that's better.
+
+07:12.280 --> 07:14.980
+We see that our file is being run.
+
+07:15.220 --> 07:20.620
+The process finished with exit code 0 0 is a good sign it means there were no errors and everything
+
+07:20.860 --> 07:28.510
+is great now we who make an error here and let's say I miss my brackets and I hit run arc and just click
+
+07:28.510 --> 07:37.450
+on run here look at that it gives me an error saying hey hey syntax error and expected yo f while passing
+
+07:37.950 --> 07:39.650
+and tells you something went wrong.
+
+07:39.820 --> 07:45.360
+So once again I can fix it run my code and everything is good.
+
+07:45.400 --> 07:48.960
+There are a lot of features here that you can explore on your own.
+
+07:49.030 --> 07:50.330
+Get comfortable with it.
+
+07:50.500 --> 07:53.560
+Pie charm is definitely a great idea.
+
+07:53.590 --> 08:00.190
+And the beauty is that unlike Sublime Text or visual studio code where we had to install all these packages
+
+08:00.580 --> 08:04.900
+pie chart comes well with everything built in.
+
+08:04.900 --> 08:09.290
+It's an IDC we don't have to install any of these packages.
+
+08:09.400 --> 08:15.460
+This environment is already set up for us to work professionally with python because it is made for
+
+08:15.460 --> 08:17.280
+Python developers.
+
+08:17.440 --> 08:18.990
+I'll see in the next one by.

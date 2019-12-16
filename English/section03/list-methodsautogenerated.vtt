@@ -1,0 +1,325 @@
+WEBVTT
+
+00:01.280 --> 00:01.590
+All right.
+
+00:01.620 --> 00:07.230
+Let's learn about some actions that we can take on lists and this is very exciting because you can perform
+
+00:07.260 --> 00:10.080
+a lot of actions on lists.
+
+00:10.080 --> 00:19.030
+Now we've learned about built in functions right functions that come with Python and we've actually
+
+00:19.030 --> 00:24.940
+seen this one before when we talked about strings which is the length function.
+
+00:24.940 --> 00:29.680
+And here we can have it calculate the length of a list.
+
+00:29.680 --> 00:38.060
+So for example if we had a basket here that had 1 2 3 4 5 Well this basket.
+
+00:38.060 --> 00:46.000
+If I calculate the length of the basket let's do print here so we can see the result and I click Run
+
+00:49.950 --> 00:58.050
+5 the length of the basket is five because while there's five items remember a length is the actual
+
+00:58.050 --> 01:00.070
+length it doesn't start counting from zero.
+
+01:00.150 --> 01:08.470
+It's going to do human length which is five but lists get really powerful when it comes to methods.
+
+01:08.470 --> 01:14.800
+So instead of a built in function remember a method is a new action that it's owned by something and
+
+01:14.800 --> 01:17.800
+it's specific let's say to a data type.
+
+01:17.800 --> 01:28.970
+So if we go to list methods you'll see that Python has a few less methods that we can use in the way
+
+01:28.970 --> 01:37.660
+we use these methods is remember we just add a dot after a list.
+
+01:37.660 --> 01:40.710
+So let's have a look at some of them first.
+
+01:40.740 --> 01:44.720
+I'm going to start off with the adding ones.
+
+01:44.970 --> 01:51.170
+So let's say in this basket we want to add something to it to the end of the list.
+
+01:51.240 --> 01:57.900
+Well we can use the append and remember with a method as soon as you write the DOT l tell you what we
+
+01:57.900 --> 02:01.940
+can use which is very very useful when you have an editor.
+
+02:01.950 --> 02:10.130
+So the first one is append and if I hover over this well it just tells me appends an object to end.
+
+02:10.360 --> 02:17.560
+And in Python an object is well everything in Python is an object a number is an object a list is an
+
+02:17.560 --> 02:22.030
+object so just think of it as an item for now.
+
+02:22.050 --> 02:28.740
+So if I want to append let's say one hundred to the end of the list and you know what let's add a new
+
+02:29.610 --> 02:39.640
+list here and this new list will do the append for us if I print the new list and I click Run I get
+
+02:40.060 --> 02:42.130
+none.
+
+02:43.070 --> 02:44.080
+That's weird.
+
+02:44.190 --> 02:52.980
+What if I print basket here if I click Run.
+
+02:53.010 --> 02:53.960
+All right.
+
+02:54.300 --> 03:06.470
+So it looks like the basket was appended to we added a hundred but a new list when we assigned it the
+
+03:06.530 --> 03:11.340
+basket dot append that new list is completely not.
+
+03:11.720 --> 03:17.540
+And that is because append changes the list in place.
+
+03:17.780 --> 03:19.680
+What does in place mean.
+
+03:19.910 --> 03:22.880
+It means that it doesn't produce a value.
+
+03:22.880 --> 03:28.400
+All it does is saying hey I'm just going to append a hundred to this basket that you gave me.
+
+03:28.400 --> 03:29.500
+But I don't really care.
+
+03:29.510 --> 03:33.990
+I'm not producing a result I'm just changing this for you.
+
+03:34.240 --> 03:36.310
+I know it's a little confusing.
+
+03:36.400 --> 03:45.990
+So in order for our new list to have that 100 hundred at the end we have to do something like this cyclic
+
+03:45.990 --> 03:48.170
+run.
+
+03:48.220 --> 03:48.960
+There we go.
+
+03:49.240 --> 03:56.520
+After we've appended to the basket then we can assign so that new list points to basket which points
+
+03:56.790 --> 03:59.860
+to this list that was modified.
+
+03:59.940 --> 04:00.800
+All right.
+
+04:00.970 --> 04:02.760
+What else is there.
+
+04:02.760 --> 04:10.170
+Well there's also something called insert and you see over here that insert gives an index and an object
+
+04:10.470 --> 04:14.040
+so we can insert something not at the end of the list.
+
+04:14.040 --> 04:17.930
+I mean we could but we can also insert it anywhere we want in an index.
+
+04:18.300 --> 04:31.390
+So for example in this case if I do insert a 100 at 0 1 2 3 4 so less to index a 4 and I click Run I've
+
+04:31.450 --> 04:34.580
+added a 100 to the index of 4.
+
+04:34.630 --> 04:42.100
+If I do index 0 5 and I click Run I've added a 100 at the end of the list.
+
+04:42.190 --> 04:47.510
+Now let's try and copy this and see if we can just add it into here.
+
+04:47.650 --> 04:48.460
+If I click Run
+
+04:51.130 --> 04:56.110
+Again same thing insert modifies the list in place.
+
+04:56.350 --> 05:01.190
+It doesn't create a new copy of the list all right.
+
+05:01.250 --> 05:12.380
+And if we add this like this well once again insert modifies the list in place.
+
+05:12.380 --> 05:16.990
+That is it doesn't really output a new list.
+
+05:16.990 --> 05:20.840
+It just modifies whatever is existing in memory.
+
+05:20.950 --> 05:29.530
+Finally there is another method called extend and extend instead of an actual item or object takes what
+
+05:29.530 --> 05:36.490
+we call an editable which we're gonna get into later on but it's something that you can loop over you
+
+05:36.490 --> 05:39.130
+can iterate over which is a list.
+
+05:39.190 --> 05:48.300
+So we just give it another list like let's say a hundred or one hundred and one so if I run this once
+
+05:48.300 --> 05:51.000
+again it doesn't I'll our new list.
+
+05:51.000 --> 06:00.130
+It just modifies the list in place and adds on or extends our list and we can also just give it one
+
+06:00.760 --> 06:02.830
+item.
+
+06:02.850 --> 06:04.310
+All right let's keep going.
+
+06:04.400 --> 06:13.990
+With the removing methods now with the removing we once again have a few fun things that we can do.
+
+06:14.950 --> 06:21.760
+So let's continue with this basket that we've been using that now has 100 included into it.
+
+06:21.760 --> 06:24.770
+And that way we can remove things is well.
+
+06:24.790 --> 06:26.020
+There's a few ways.
+
+06:26.020 --> 06:39.050
+First one is basket dot pop and basket that pop if I go like this and let's print this basket.
+
+06:39.170 --> 06:46.370
+I'm going to comment out the new list for now since we're not using it and then we're going to say basket
+
+06:46.610 --> 06:48.470
+dot pop and then print
+
+06:52.400 --> 06:59.120
+let's run this and pop pops off whatever is at the end of the list.
+
+06:59.520 --> 07:05.340
+In our case at the end of the list because we've extended the basket to 100 hundred that one hundred
+
+07:05.370 --> 07:06.420
+gets removed.
+
+07:06.420 --> 07:15.260
+If I do basket dub pop again not here I'm down here and I run.
+
+07:15.470 --> 07:19.320
+You see that both one hundred and five get removed.
+
+07:19.340 --> 07:23.700
+What if I do pop zero five click Run here
+
+07:26.730 --> 07:31.600
+it removes the item in the index.
+
+07:31.600 --> 07:38.180
+So here pop zero is going to remove whatever is that index of zero which is 1.
+
+07:38.340 --> 07:48.040
+Now there's also dot remove remove again is we give it a value that we want to remove.
+
+07:48.490 --> 07:52.170
+So in our case let's say we want to remove number four.
+
+07:52.210 --> 07:58.680
+Well if we run this it's going to remove four for us.
+
+07:59.010 --> 08:06.510
+So remove we give it the value that we want to remove with Pop we give it the index that we want to
+
+08:06.510 --> 08:18.980
+remove and just to see if this is working let's add a new list here and we'll say new list equals basket
+
+08:19.010 --> 08:28.600
+da remove add a new list here see if that gets modified No it does not get modified that means remove
+
+08:28.900 --> 08:36.840
+is working in place it doesn't return a value it just simply changes whatever list you give it.
+
+08:36.980 --> 08:43.720
+What if we do pop if I run this I get 5 mm hmm.
+
+08:43.840 --> 08:50.890
+Why is that and this is something that you just have to get used to different methods do different things.
+
+08:51.070 --> 09:00.100
+For example pop the way it works is that pop returns whatever you have just removed in our case when
+
+09:00.100 --> 09:11.240
+we did four that is index of 0 1 2 3 4 it return the number 5 for me even though it removed it from
+
+09:11.240 --> 09:18.800
+the basket it's still returned something and the reason for others is that we got none.
+
+09:18.800 --> 09:22.530
+That is when a method doesn't return anything it returns None.
+
+09:22.670 --> 09:30.250
+A topic we're going to cover shortly so you have to be careful and understand what each method returns.
+
+09:30.250 --> 09:38.270
+If I go overextend I see here that this little arrow shows me that none is returned.
+
+09:38.360 --> 09:42.800
+That means it's not going to produce anything with this method.
+
+09:42.800 --> 09:47.550
+It's only going to change or extend a list that it was given.
+
+09:47.630 --> 09:51.620
+Don't worry if this is confusing that's something that you're gonna get used to as we get more and more
+
+09:51.620 --> 09:52.690
+practice.
+
+09:52.760 --> 10:01.580
+Now the last removing method I want to show you is clear and clear as you might guess fight click run
+
+10:01.580 --> 10:03.490
+here.
+
+10:03.530 --> 10:16.460
+Well this is none but if I go to basket and I click Run The basket is empty clear removes whatever is
+
+10:16.480 --> 10:22.130
+in the list completely clears it just as the name suggests.
+
+10:22.270 --> 10:22.830
+All right.
+
+10:22.840 --> 10:24.970
+That was a lot but there's still a few more.
+
+10:25.000 --> 10:26.030
+So let's take a break.
+
+10:26.080 --> 10:27.760
+I'll see you in the next video by.

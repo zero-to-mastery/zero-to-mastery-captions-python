@@ -1,0 +1,262 @@
+WEBVTT
+
+00:00.970 --> 00:07.930
+Welcome back and let's talk another term logical operators and they're very very useful when it comes
+
+00:07.930 --> 00:08.950
+to conditional logic.
+
+00:09.520 --> 00:10.620
+Let's have a look.
+
+00:10.870 --> 00:12.850
+Logical operators are.
+
+00:12.910 --> 00:23.740
+Well as a matter of fact you've actually seen them before and is a logical operator or is an logical
+
+00:23.800 --> 00:24.450
+operator.
+
+00:24.460 --> 00:28.510
+It allows us to perform logic between two things.
+
+00:28.510 --> 00:30.970
+What else is a logical operator.
+
+00:30.970 --> 00:33.480
+Well let me listed out for you.
+
+00:33.550 --> 00:44.530
+We have greater than less than equal to let's actually use them.
+
+00:44.530 --> 00:53.110
+And an example is for greater than five well if I print this.
+
+00:53.360 --> 00:54.860
+What do you think will happen.
+
+00:54.980 --> 00:56.480
+Shouldn't be a surprise.
+
+00:56.510 --> 00:57.830
+That's false.
+
+00:57.830 --> 01:00.140
+Four is not greater than five.
+
+01:00.140 --> 01:03.520
+This is a logical operator that you may have seen a math class.
+
+01:03.800 --> 01:07.190
+If I do the opposite is for less than five.
+
+01:07.190 --> 01:08.180
+That makes sense.
+
+01:08.180 --> 01:09.930
+That's true.
+
+01:09.950 --> 01:13.190
+What about is for equal to 5.
+
+01:13.310 --> 01:15.860
+If I run this I get false.
+
+01:15.860 --> 01:18.500
+Now why did I use two equals here.
+
+01:18.500 --> 01:21.050
+Why not just do this.
+
+01:21.050 --> 01:30.910
+Well if I run here I get an error syntax error keyword can't be an expression it's because remember
+
+01:30.940 --> 01:35.100
+equal is what we used to assign to a variable.
+
+01:35.280 --> 01:35.590
+Right.
+
+01:35.590 --> 01:42.630
+And if you remember I told you that a variable in Python can start with a with a number.
+
+01:42.640 --> 01:50.490
+It has to be a letter or underscore so when I do this it's going to error because the interpreter is
+
+01:50.490 --> 01:55.280
+going to say hey I'm trying to assign a variable for the value of five.
+
+01:55.280 --> 01:57.260
+And while that's not really allowed.
+
+01:57.270 --> 02:02.370
+So we use double equals to tell the interpreter Hey I'm not assigning a variable here.
+
+02:02.370 --> 02:05.120
+I want to compare things and we can compare different things.
+
+02:05.130 --> 02:05.580
+I can do.
+
+02:06.030 --> 02:12.350
+Hello equals to Hello equal to true.
+
+02:12.460 --> 02:20.290
+What if I do a is greater than B I get false.
+
+02:20.490 --> 02:23.050
+Now why is that this.
+
+02:23.250 --> 02:30.690
+I want you to Google on your own and figure out why is a greater than B.
+
+02:30.880 --> 02:32.210
+What if I do a.
+
+02:32.350 --> 02:38.160
+Is that greater than capital A That's true.
+
+02:39.420 --> 02:43.980
+This is this is interesting and this is actually quite an interesting reason.
+
+02:44.100 --> 02:50.150
+So I know I know it's easy for me to just give you an answer but I want you to practice googling this.
+
+02:50.280 --> 02:56.010
+And the reason I'm not giving you an answer is it's also because it's not very important because most
+
+02:56.010 --> 03:01.620
+of the time you want to make code that is easy to understand and understandable you're most likely using
+
+03:01.620 --> 03:04.980
+greater than and less than with numbers.
+
+03:05.010 --> 03:07.970
+So if you see something like this in code.
+
+03:08.130 --> 03:10.360
+Well you wouldn't know what's going on.
+
+03:10.380 --> 03:17.130
+What is this person trying to compare why are they doing is lower case a greater than capital A it's
+
+03:17.130 --> 03:21.950
+not something that you see very often but the reason you get this expression is quite interesting.
+
+03:21.950 --> 03:24.770
+So I do recommend you Google Google into it.
+
+03:24.810 --> 03:28.300
+Like I said I'm a strong believer in not holding your hand the entire way.
+
+03:28.410 --> 03:35.730
+I know so far the videos up until now have been quite easy especially if you are an experienced programmer.
+
+03:35.730 --> 03:41.640
+But as we progress you'll see that after this course you need to figure things out on your own.
+
+03:41.640 --> 03:48.750
+And my job is not to just handhold you the entire way it's to develop the skills in you to become an
+
+03:48.750 --> 03:49.890
+employable programmer.
+
+03:49.890 --> 03:53.720
+So I hope you bear with me as I just give you this little challenge.
+
+03:53.730 --> 03:54.210
+All right.
+
+03:54.270 --> 04:02.770
+We want to bid on a tangent so let's bring it back can I do things like this is one greater than two
+
+04:04.160 --> 04:09.590
+or you know what let's do less than two and less than three and less than four.
+
+04:09.620 --> 04:10.870
+Will this work.
+
+04:10.880 --> 04:11.980
+Well of course it will.
+
+04:11.990 --> 04:15.980
+It's just an expression rate that we're evaluating and all of this is true.
+
+04:16.100 --> 04:24.990
+But as soon as I change and something is false it's going to short circuit which we learned about previously
+
+04:25.440 --> 04:29.210
+and return false.
+
+04:29.220 --> 04:33.680
+All right so we know the greater than equal to less than sine.
+
+04:33.690 --> 04:44.790
+We also have greater than or equal to so that if I do zero here and I click Run I get true.
+
+04:44.790 --> 04:49.030
+Because it's saying hey is this greater than or equal to zero.
+
+04:49.050 --> 04:58.040
+I can also do less than or equal to zero and here I get false because zero or one is not greater or
+
+04:58.040 --> 04:58.780
+equal to zero.
+
+04:58.790 --> 05:05.110
+But if I do zero here I'll get true here's another one.
+
+05:05.150 --> 05:06.870
+What if I do this.
+
+05:06.980 --> 05:08.580
+Exclamation mark equal.
+
+05:08.750 --> 05:17.170
+This means in Python not equal to if I run this I get false and this is a little tricky.
+
+05:17.400 --> 05:21.900
+What it's saying is hey is this not equal to this.
+
+05:21.900 --> 05:29.220
+So it's the opposite of doing equals if these two things don't equal it's going to say true.
+
+05:29.220 --> 05:36.720
+So if I do one here I'll get true because these two things do not equal.
+
+05:36.750 --> 05:45.820
+So we've learned greater two or less than greater two equals equals or greater or greater or equal to.
+
+05:46.110 --> 05:53.850
+We've learned about less than or equal to we've learned about not equal to but we've also learned about
+
+05:53.940 --> 06:02.030
+and and or And finally there's one more I want to teach you and it's the not keyword.
+
+06:02.280 --> 06:08.230
+I know I know it's it's a little it's a little much but it's not as hard as you think not is.
+
+06:08.430 --> 06:09.720
+Well the opposite.
+
+06:09.720 --> 06:24.040
+So if I do hear not true what do I get I get false and you see that not is also a function.
+
+06:24.090 --> 06:28.750
+So it's a key word but also a function that we can use.
+
+06:29.160 --> 06:35.420
+If I do not false again I just get the opposite.
+
+06:35.640 --> 06:36.780
+What if I do this.
+
+06:36.780 --> 06:46.610
+What if I do not want equals to one Why will I get here I get false because this expression evaluates
+
+06:46.610 --> 06:50.030
+to true and then not just does the opposite.
+
+06:50.900 --> 06:56.090
+So let's take a break here and work on a little bit of an exercise to make sure that we understand this.

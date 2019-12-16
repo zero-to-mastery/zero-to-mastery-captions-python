@@ -1,0 +1,640 @@
+WEBVTT
+
+00:01.470 --> 00:08.120
+In this video we're going to talk about get and get hub and source control.
+
+00:08.160 --> 00:13.530
+Now you might remember get hub from our previous section where we used it to put the Web site online
+
+00:14.340 --> 00:17.820
+but I'll show you that it is so much more than that.
+
+00:18.000 --> 00:24.690
+More importantly getting get hub is used by most professional companies and it is a skill that is expected
+
+00:24.690 --> 00:26.700
+to be known by all developers now.
+
+00:27.330 --> 00:33.460
+So this is an important section one of the first things most developers have to do on their first day
+
+00:33.460 --> 00:40.030
+at the job is to MIT something called a pull request which uses get and get help.
+
+00:40.270 --> 00:41.380
+We'll get through that.
+
+00:41.380 --> 00:47.580
+In this section don't worry you're going to learn all of this and it's going to make sense.
+
+00:47.590 --> 00:49.600
+Let's first start with source control.
+
+00:49.630 --> 00:53.180
+Up until now we have only worked on small files.
+
+00:53.260 --> 00:56.260
+No team members just ourselves.
+
+00:56.260 --> 00:58.470
+Just a couple of files.
+
+00:58.660 --> 01:02.410
+But in real life you're most likely not the only developer on a team.
+
+01:03.370 --> 01:04.900
+Most likely the projects are huge.
+
+01:04.900 --> 01:07.060
+There's many many files.
+
+01:07.060 --> 01:12.670
+Source control allows us to make sure that multiple people can work on the same file from different
+
+01:12.670 --> 01:14.320
+locations.
+
+01:14.350 --> 01:22.480
+Think of it as Google Docs that allows people to collaborate on one document but enough talk let's actually
+
+01:22.540 --> 01:23.470
+check it out.
+
+01:23.470 --> 01:27.410
+I have over here set up two folders.
+
+01:27.580 --> 01:28.720
+One is for myself.
+
+01:28.750 --> 01:36.580
+Andre who just started a new job but X company and I have MRC here who has been working at the company
+
+01:36.580 --> 01:40.750
+for a while and she has project files over here.
+
+01:40.750 --> 01:46.540
+I'm actually using the files from our background generator video now without get or get help.
+
+01:46.540 --> 01:53.830
+What I can do is just copy and paste these files so I have whatever Marcy has and we can start working
+
+01:53.830 --> 01:54.860
+on these files.
+
+01:54.910 --> 02:02.470
+I can have my developer environment here with my terminal and my Sublime Text and I can work on whatever
+
+02:02.470 --> 02:09.560
+changes that need to be made on the app and Marci over here also has her own version where she can work
+
+02:09.560 --> 02:16.520
+on it and we're both working on the same project but let's say that both Marcy and I are working on
+
+02:16.520 --> 02:23.510
+this project and she decides to change the project name from gradient background to super background
+
+02:24.650 --> 02:30.680
+and at the same time in my project I decide to call this cool background.
+
+02:31.440 --> 02:39.740
+Well now you'll have to set up a meeting between myself and Marcy and decide how we should change the
+
+02:39.740 --> 02:40.880
+code.
+
+02:41.180 --> 02:46.490
+And this is a small example but you can imagine that as different programmers work together there's
+
+02:46.490 --> 02:50.710
+always going to be this issue of one person changing one thing and another prison changing.
+
+02:50.750 --> 02:51.590
+Another thing.
+
+02:51.590 --> 02:59.510
+This is where source control came in and social control is a way to control this where we have one place
+
+02:59.540 --> 03:02.260
+instead of our own computers.
+
+03:02.330 --> 03:09.350
+And this case is just represented by the folder that I have in here instead of each of us having a copy
+
+03:09.350 --> 03:12.480
+of the project with source control.
+
+03:12.560 --> 03:19.370
+We have a copy of the project but there is a centralized location up somewhere maybe owned by the company
+
+03:19.370 --> 03:26.960
+or somewhere on the Internet that has the ultimate version that we each talk to to make sure that we
+
+03:26.960 --> 03:35.390
+each have the same version getting get hub is a way to do this to be able to use source control and
+
+03:35.540 --> 03:38.870
+as a matter of fact it's the de facto way of doing this.
+
+03:38.870 --> 03:44.540
+So like I said before this is most likely the tool you'll be using every single day at your workplace
+
+03:46.190 --> 03:54.140
+so if I go to the github Web site here what it allows us to do is it's a place a central place that
+
+03:54.140 --> 04:04.360
+both Andre and Marcy can talk to so even though we work on the same files the same project I can ask
+
+04:04.450 --> 04:07.650
+this central location such as GetUp.
+
+04:07.750 --> 04:11.150
+Hey has Marcy made any changes.
+
+04:11.410 --> 04:18.590
+And Marcy can ask hey has Andre made any changes and every once in a while you'll get something like
+
+04:18.590 --> 04:25.490
+this where we have cool background and super background where we have something called a merge conflict
+
+04:26.420 --> 04:34.250
+what get Hub allows us to do is say hey I noticed there is a merge conflict I see that you guys have
+
+04:34.250 --> 04:38.850
+both changed your background I don't know who's right but here's the information.
+
+04:39.620 --> 04:43.840
+Andre Marcy Can you guys talk amongst yourself and figure it out.
+
+04:45.150 --> 04:46.130
+That's pretty much workflow.
+
+04:46.140 --> 04:48.710
+So let's actually see what this looks like.
+
+04:50.020 --> 04:53.230
+The first thing we want to do is set up a github account.
+
+04:53.620 --> 04:59.340
+If you haven't done it in the previous exercises you absolutely should start to get hub account.
+
+04:59.350 --> 05:00.640
+It's free.
+
+05:00.640 --> 05:06.220
+And like I said before if you're a developer you just need to have it it's where everybody puts their
+
+05:06.220 --> 05:11.110
+projects it's where you work you'll be spending a lot of time on this Web site.
+
+05:12.680 --> 05:18.500
+You might remember that when we had the get Hub project I also told you to get get hub for desktop
+
+05:21.330 --> 05:23.570
+although we use that to make things simpler.
+
+05:23.570 --> 05:27.480
+During that video this is actually not the recommended way of doing it.
+
+05:27.510 --> 05:34.620
+It allows you to visually see and interact with get hub but it's kind of looked down upon by employers
+
+05:34.620 --> 05:39.360
+and most people use the terminal or the command prompt to actually do it.
+
+05:39.380 --> 05:44.730
+So I won't be teaching you this way just because I think it's bad practice and getting used to the terminal
+
+05:44.820 --> 05:46.440
+is important.
+
+05:46.440 --> 05:51.460
+I'm going to close that and we're gonna get the start the very first thing we're gonna do is we're going
+
+05:51.460 --> 05:58.910
+to click on Start a project and here we're going to call it whatever you want we'll call it background
+
+06:00.140 --> 06:07.280
+generator and you also want to leave it as public and we want to click on initialize this with a read
+
+06:07.280 --> 06:09.580
+me and we'll click Create repository.
+
+06:10.010 --> 06:10.880
+And what that does.
+
+06:10.910 --> 06:18.200
+Well we've created a new project on GitHub and here the read me which is just a file that describes
+
+06:18.260 --> 06:18.950
+your project.
+
+06:18.950 --> 06:20.350
+You can see that it's here.
+
+06:20.690 --> 06:24.320
+We can type into the read me whatever we want and I'll describe our project.
+
+06:25.190 --> 06:29.420
+But let's go back if Marcy.
+
+06:29.420 --> 06:32.320
+Let's say Marcy has been working at this company for a long time.
+
+06:32.330 --> 06:36.420
+I'm actually gonna remove my files here.
+
+06:36.820 --> 06:42.700
+Marcy has been working at this company for a long time and the employer finally decided hey we need
+
+06:42.700 --> 06:43.630
+to use get hub.
+
+06:43.630 --> 06:46.420
+We're going to hire this new guy Andre.
+
+06:46.420 --> 06:51.210
+We want to make sure that you both can work on it on the project together without any issues.
+
+06:51.220 --> 06:59.740
+Can you put the project up on github so what Marcy will do is she will go to get help create background
+
+06:59.740 --> 07:05.320
+generator and then she's going to click right over here to clone or download and she's going to make
+
+07:05.320 --> 07:12.880
+sure it says use HDD P.S. And from here you just click on this button which copies this link to your
+
+07:12.880 --> 07:19.520
+keyboard then Marcy goes to her terminal.
+
+07:19.780 --> 07:27.160
+And right now we're in documents we want to have the project in the Marcy folder so I'll C.D. into Marcy
+
+07:27.730 --> 07:31.120
+if I click Elyse I see that yet I have my files.
+
+07:31.120 --> 07:42.440
+Now the first command that we're going to learn is called Get clone and then copy and paste what we
+
+07:42.440 --> 07:43.770
+copy from the Web site.
+
+07:43.820 --> 07:49.540
+We're just saying hey clone this project from get hub dot com.
+
+07:49.820 --> 07:53.000
+So I press enter and there you go.
+
+07:53.000 --> 07:54.890
+Everything is downloaded.
+
+07:55.310 --> 08:00.080
+If I go back to the folder now I see that I have a background generator.
+
+08:00.070 --> 08:04.970
+If I double click this you'll see that I have a dot get folder here that's actually hidden.
+
+08:04.970 --> 08:10.070
+You might not even see it on your laptop if you don't have this feature on your computer enabled but
+
+08:10.070 --> 08:14.700
+this dog get now allows me to communicate with GetUp.
+
+08:15.050 --> 08:16.270
+So what we can do now.
+
+08:16.280 --> 08:23.840
+Marcy can copy and paste these files and put it into the background generator.
+
+08:23.930 --> 08:26.680
+Now let me show you the next get command.
+
+08:26.720 --> 08:33.020
+Marcy right now if we see she's in her folder but now we need to go into background generator because
+
+08:33.050 --> 08:36.030
+if we do any gate commands here.
+
+08:36.350 --> 08:39.740
+Well it won't work because it's not a good project.
+
+08:39.740 --> 08:43.560
+We need to actually go inside of the project that was created on github.
+
+08:43.760 --> 08:46.820
+So I'm going to S.D. into that directory notice here.
+
+08:46.820 --> 08:53.150
+I have my terminal set so that it actually shows me what get hub location I'm in and I'll explain one
+
+08:53.150 --> 08:58.600
+master means later now that we're here we can look at all our files.
+
+08:58.620 --> 09:04.810
+Yep I see that now I have my read me which I created on GitHub plus the files that I copy and pasting
+
+09:06.650 --> 09:14.250
+we need to sync this so that if I go into my background generator instead of the read me files Marcy
+
+09:14.270 --> 09:26.300
+can put up her files on GitHub the way we do that is our second command get status it tells us that
+
+09:27.200 --> 09:34.870
+we have on tracked files that is we have indexed not a Schimmel script yes and style that are on tract
+
+09:35.330 --> 09:39.740
+and it says use get ad file to include while you will be committed.
+
+09:40.430 --> 09:48.680
+So now that we see our status of what we have in our folder we can say get ad and the file name so I
+
+09:48.680 --> 10:02.560
+can do index dot paste email get had script digest and get ad style that CSX.
+
+10:03.950 --> 10:06.410
+Let's clear this so we can see it.
+
+10:06.530 --> 10:11.420
+And now I can do get status again just to see what our status is.
+
+10:11.420 --> 10:16.630
+And now I have your branches up to date changes to be committed.
+
+10:16.640 --> 10:21.290
+You see that now with ad we've said hey we want to add these changes.
+
+10:21.410 --> 10:27.050
+We have new files that we've added and says to be committed.
+
+10:27.050 --> 10:35.630
+So the second step is to do something called Get commit and get commit says hey I'm committing that
+
+10:35.630 --> 10:39.630
+these are the changes that I want to make to get hub.
+
+10:39.830 --> 10:44.040
+And it allows you to pass a message so that on get happy it'll show the message.
+
+10:44.150 --> 10:50.300
+When Andre comes back in he can say oh Marcy added these files and this is the message and we do that
+
+10:50.300 --> 10:52.710
+by doing this.
+
+10:52.820 --> 11:03.110
+And within here within the double codes I can say adding starting Project close the bracket press Enter
+
+11:04.460 --> 11:05.810
+I'm going to clear this.
+
+11:05.920 --> 11:07.430
+Now there's one last step.
+
+11:07.610 --> 11:09.070
+We've added.
+
+11:09.380 --> 11:16.490
+We did get add to add our changes then get commit to commit and say yeah we're locking in those changes.
+
+11:16.490 --> 11:22.540
+And then finally we need to let get hub dot com know that these are the changes.
+
+11:22.550 --> 11:25.130
+So we do get push
+
+11:28.400 --> 11:29.690
+and there you go.
+
+11:29.690 --> 11:33.440
+It has now been pushed to this repository.
+
+11:33.440 --> 11:41.700
+So if I go back and I refresh look at that it's the same thing that we did when we put up our first
+
+11:41.700 --> 11:42.930
+Web site online.
+
+11:43.050 --> 11:49.230
+But instead of using the desktop version of Get hub we use the command line and now we have our project
+
+11:49.530 --> 11:51.800
+which is very good.
+
+11:51.810 --> 11:53.530
+Now let's go back to our example.
+
+11:53.640 --> 11:55.830
+So Marcy has been working on this project.
+
+11:55.840 --> 11:57.540
+There's a good repository.
+
+11:57.540 --> 12:02.990
+And I just joined the company and now I need to start working on this.
+
+12:03.150 --> 12:10.350
+What do I do now I need to access GitHub and get the copy of background generator the way I do that.
+
+12:10.380 --> 12:11.820
+Well I go into my folder
+
+12:15.540 --> 12:23.910
+and I do the same thing I do get clone and then I copy and paste the repository just like before
+
+12:26.820 --> 12:30.280
+get clone and clone the repo.
+
+12:30.510 --> 12:31.400
+And there you go.
+
+12:31.500 --> 12:38.960
+If I go back to my folder look at that I have a background generator so we're both working now on background
+
+12:38.960 --> 12:45.940
+generator but not off of each other's files we're working with whatever version is on github.
+
+12:46.890 --> 12:47.220
+All right.
+
+12:47.220 --> 12:55.320
+So now more realistic we go back to working and on the first day of my job I say I'm going to change
+
+12:55.320 --> 12:57.140
+the greenish background title.
+
+12:57.210 --> 13:06.360
+Actually the h1 tag to cool generator if I save this and I do get status
+
+13:09.720 --> 13:18.050
+Oh well I'm not in a good repository right now if you remember I have to go into background generator.
+
+13:18.400 --> 13:21.090
+Let me open that up a bit so you can see.
+
+13:21.140 --> 13:22.800
+There you go again.
+
+13:22.880 --> 13:27.950
+These get commands won't work if you're not in a folder that has the dot get folder.
+
+13:28.400 --> 13:32.150
+So let me do that C.D. into background generator.
+
+13:32.390 --> 13:37.970
+I'm going to clear this and I'm going to say get status and look at that.
+
+13:38.000 --> 13:46.340
+It tells me that I've modified index not ACM Alpha and if you remember I will say Get had I only have
+
+13:46.340 --> 13:51.440
+one file I can do it next dot A.T.M. but if I want it if I had multiple files and I want to just commit
+
+13:51.440 --> 13:59.330
+all them on once I can just do the period so I'll do that and then get commit and I'll add a message
+
+13:59.990 --> 14:06.030
+changing Title I press enter.
+
+14:06.470 --> 14:07.930
+Now clear this.
+
+14:08.010 --> 14:08.290
+OK.
+
+14:08.310 --> 14:15.720
+And again I do get push and it looks like everything went through.
+
+14:15.800 --> 14:18.360
+So let's open that up and check it out.
+
+14:18.380 --> 14:19.610
+I now refresh here
+
+14:22.890 --> 14:30.350
+and what we haven't seen any changes but we now see that we have three commits.
+
+14:30.510 --> 14:36.120
+We have the initial commit the adding back project that MRC did.
+
+14:36.120 --> 14:44.550
+And it shows you all the files that were added and if I go back I have the changing title commit and
+
+14:44.550 --> 14:46.680
+now I see that yeah.
+
+14:46.860 --> 14:51.750
+Andre just changed the background generator which is in red too.
+
+14:51.810 --> 14:54.600
+Cool generator.
+
+14:54.700 --> 15:00.130
+So as you can see we have a history of all the changes and we can always go back if there's any mistakes
+
+15:00.730 --> 15:03.570
+but there's one issue right now.
+
+15:03.730 --> 15:13.580
+If I go back to the code and I go to Marcy's computer I see that well she still has a background generator
+
+15:14.050 --> 15:15.040
+here.
+
+15:15.110 --> 15:16.070
+Why is that.
+
+15:16.070 --> 15:19.190
+Well because her computer doesn't know that.
+
+15:19.190 --> 15:21.350
+Get hub has been updated.
+
+15:21.350 --> 15:28.070
+The next command I'm going to show you this is the last one I'm going to show you in this video is get
+
+15:28.210 --> 15:29.150
+pull.
+
+15:29.330 --> 15:38.480
+So remember get push to push the changes to get Hongkong and get pull to pull Whatever's the latest.
+
+15:38.480 --> 15:41.470
+So I do get pull.
+
+15:41.720 --> 15:42.250
+And there you go.
+
+15:42.680 --> 15:48.400
+You see over here that it shows me that index that Asian mail file was was changed.
+
+15:48.410 --> 15:54.420
+Now you see that my title has been changed to cool generator.
+
+15:54.490 --> 16:00.090
+Let's just say that Marcy saw my first change and she really really likes how I've added cool generator.
+
+16:00.220 --> 16:03.880
+But I think she wants to make it capitalized again.
+
+16:03.880 --> 16:05.740
+She's going to save that.
+
+16:06.040 --> 16:08.900
+She's going to say get status.
+
+16:09.100 --> 16:09.380
+All right.
+
+16:09.400 --> 16:16.900
+I have my index that a simple file get and then get commit.
+
+16:16.900 --> 16:29.490
+And off the message cap a two lies title and then get push.
+
+16:29.510 --> 16:31.050
+There you go again.
+
+16:31.250 --> 16:37.410
+I go back I refresh and now there's four commits.
+
+16:37.460 --> 16:44.470
+And we see that capitalized title is the new changes the first day of work is done.
+
+16:44.870 --> 16:53.280
+I come into the next day of work and while I want to start with whatever the latest project is of back
+
+16:53.270 --> 16:59.810
+on generator let's say Marcy worked all night to change that title to cool capitalized I want to make
+
+16:59.810 --> 17:02.030
+sure that I have the most updated version.
+
+17:02.180 --> 17:07.660
+So what I do is when I get into work in the morning I'll say well I want to make sure that if there's
+
+17:07.670 --> 17:14.150
+any changes that Marcy made I know about then so I'm going to say get pull and notice here how the titles
+
+17:14.540 --> 17:19.970
+going to change after I do the pull and now I click to Sublime Text.
+
+17:19.980 --> 17:22.200
+And there you go.
+
+17:22.200 --> 17:24.940
+Cool generator.
+
+17:25.050 --> 17:25.440
+All right.
+
+17:25.440 --> 17:33.000
+And the next video we're going to expand on this and show you what happens if both Marcy and Andre make
+
+17:33.060 --> 17:35.780
+the same changes.
+
+17:35.850 --> 17:37.000
+What does get hub do.
+
+17:37.650 --> 17:39.240
+I'll see on that one by.

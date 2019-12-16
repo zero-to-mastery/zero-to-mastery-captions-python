@@ -1,0 +1,205 @@
+WEBVTT
+
+00:00.180 --> 00:04.100
+What is a programming language.
+
+00:04.170 --> 00:07.920
+If someone asked you this question can you answer it.
+
+00:09.330 --> 00:13.830
+Programming is simply a way for us to give instructions to computers.
+
+00:14.840 --> 00:20.540
+We give it an instruction manual and the computer follows without code.
+
+00:20.540 --> 00:23.900
+Computer programs wouldn't do anything.
+
+00:23.900 --> 00:27.650
+You wouldn't be able to move the mouse around on your screen.
+
+00:27.650 --> 00:33.550
+You wouldn't be able to Google things you wouldn't be able to play Pokemon on your phone right.
+
+00:33.560 --> 00:36.920
+I can't just tell my computer what to do.
+
+00:36.950 --> 00:43.670
+You see computers don't understand English or any other human language for that matter.
+
+00:43.670 --> 00:55.440
+So what language do computers speak well they speak in ones and zeros all electronics speak that language
+
+00:55.710 --> 01:04.860
+of on or off zero or 1 but writing ones and zeros would be gibberish for us.
+
+01:04.860 --> 01:06.730
+It's hard for us to communicate like that.
+
+01:06.780 --> 01:07.060
+Right.
+
+01:07.830 --> 01:15.380
+So humans have developed programming languages that are in between human language and machine language.
+
+01:15.660 --> 01:23.180
+That is zeros and one some programming languages are lower level than others.
+
+01:23.190 --> 01:30.350
+That is they're closer to machine language and other programming languages are higher level than others.
+
+01:30.390 --> 01:39.780
+That is they're closer to English or a human language and there are lots of programming languages.
+
+01:39.880 --> 01:44.810
+You have languages like assembly that is really really close to machine code.
+
+01:44.920 --> 01:51.870
+You have languages like Python and javascript that are really really close to English.
+
+01:51.920 --> 01:53.930
+That's great.
+
+01:53.930 --> 01:55.000
+We have these pieces.
+
+01:55.010 --> 01:58.330
+But what are we missing here.
+
+01:58.340 --> 02:05.370
+I mean if I want to find flights to Hawaii how do we go from here to.
+
+02:05.390 --> 02:12.530
+Well having let's say a Web site show us a display of all our flights telling the computer to show those
+
+02:12.530 --> 02:18.210
+flight information on our screen what are we missing here.
+
+02:18.210 --> 02:26.550
+Well we have these programming languages that we usually write on a file such as Python javascript maybe
+
+02:26.550 --> 02:27.170
+even Java.
+
+02:27.510 --> 02:35.640
+And then we somehow need to get these files that we write into ones in zero so that the our machines
+
+02:35.700 --> 02:37.490
+can understand.
+
+02:37.660 --> 02:41.300
+Well we need a translator right.
+
+02:42.650 --> 02:50.750
+We take our code that we write what we call a source code written in a programming languages and we
+
+02:50.750 --> 02:58.000
+give that to a translator that can understand that language but also understands machine language.
+
+02:58.190 --> 03:03.500
+And this translator just translates these files for us.
+
+03:03.730 --> 03:05.350
+So what is this.
+
+03:05.350 --> 03:08.040
+TRANSLATOR It's not really a person right.
+
+03:08.050 --> 03:12.610
+I'm not giving my code to somebody and somebody is going to just start shouting at the computer and
+
+03:12.730 --> 03:14.670
+be quite silly.
+
+03:14.710 --> 03:19.570
+What is this translator ready to have your mind blown.
+
+03:19.570 --> 03:30.240
+Well it's a nother program written by a human it can either be an interpreter or a compiler.
+
+03:30.360 --> 03:38.190
+Now Python usually uses an interpreter usually an interpreter.
+
+03:38.260 --> 03:46.270
+Just like a translator goes line by line through our code and executes our code on our machine.
+
+03:47.360 --> 03:50.660
+Compilers are a little bit different.
+
+03:50.720 --> 03:59.630
+They take your code all at once read the entire file all at once and then translate that to machine
+
+03:59.630 --> 03:59.840
+code.
+
+04:00.440 --> 04:09.020
+So again interpreter goes line by line and each line executes an instruction a compilers takes the entire
+
+04:09.020 --> 04:12.830
+file and turns it into machine code.
+
+04:12.830 --> 04:19.590
+Now the differences between these two are a little complicated and beyond the scope of the course.
+
+04:19.730 --> 04:25.070
+And don't worry we're going to come back to this topic but I want you to just have this general picture
+
+04:25.460 --> 04:34.630
+that when we write code whether it's Python JavaScript Java C or C++ what we're doing is we're typing
+
+04:34.630 --> 04:37.840
+it in a language that is human readable.
+
+04:37.840 --> 04:43.690
+We're giving it to one of these translators like an interpreter or a compiler.
+
+04:43.870 --> 04:53.310
+And these spit out code that are able to run on our machines so to review interpreters translate.
+
+04:53.310 --> 05:01.860
+Line by line and execute the line before going to the next line compilers translate all lines of a program
+
+05:02.370 --> 05:11.410
+to a file usually called a binary and execute the whole file at once now in the next video we're going
+
+05:11.410 --> 05:16.710
+to talk about this process a little bit more in detail especially on how it works with python.
+
+05:17.290 --> 05:19.210
+But why did I start with this.
+
+05:19.210 --> 05:21.950
+I mean this is a complex topic.
+
+05:22.000 --> 05:26.740
+Most developers especially if they're starting out don't even know of this process.
+
+05:26.770 --> 05:29.530
+They just know that they write code and then it runs.
+
+05:29.560 --> 05:32.490
+So why did I teach this here.
+
+05:32.620 --> 05:40.260
+Because in order for us to be able to write Python code well I can't just write it anywhere.
+
+05:40.390 --> 05:48.820
+Right if you work right now to your computer and let's say you opened up a text file like this one and
+
+05:48.880 --> 05:54.940
+you started typing Python code but for now we don't know Python so let's just say I want to go search
+
+05:55.180 --> 06:04.590
+for Pokemon Well this might be code we don't know if it is but I can't just use this right.
+
+06:04.600 --> 06:11.180
+I mean this isn't really Python code but how would my computer know what I'm talking about in order
+
+06:11.180 --> 06:14.060
+for us to start writing Python.
+
+06:14.090 --> 06:22.060
+We need to download this translation service in the next video I'm going to show you how to do that.
+
+06:22.130 --> 06:22.790
+I'll see in that one.

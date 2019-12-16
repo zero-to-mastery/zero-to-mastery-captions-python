@@ -1,0 +1,112 @@
+WEBVTT
+
+00:00.750 --> 00:01.770
+Welcome back.
+
+00:01.770 --> 00:04.080
+Were you able to figure it out.
+
+00:04.140 --> 00:11.000
+I just googled around for some free dot ICL icons and I really really like this lightning bolt one.
+
+00:11.010 --> 00:21.680
+So I've just downloaded it as an ICAO and now it's in my folder over here as Bolt dot ICAO.
+
+00:22.100 --> 00:28.880
+Now how were you able to solve this if your first instinct was to google for it.
+
+00:28.880 --> 00:29.900
+Well good job.
+
+00:29.930 --> 00:32.210
+That's what you want to do as a developer.
+
+00:32.570 --> 00:37.100
+You see over here that well flask has documentation on how we can use it.
+
+00:38.120 --> 00:40.060
+Now there's two ways to do it.
+
+00:41.130 --> 00:47.090
+We have this link way and a way that works with older browsers as well.
+
+00:48.470 --> 00:57.440
+Now this syntax might not be obvious to you but let's use this method and then I'm going to show you
+
+00:57.560 --> 01:00.450
+what it actually does.
+
+01:00.530 --> 01:03.170
+So let's just copy paste.
+
+01:03.170 --> 01:10.140
+So we go into our index today Schimmel and in our link tag I'm going to add this.
+
+01:10.400 --> 01:17.660
+So let's make this a little bit bigger so we can see and maybe a little smaller so that everything is
+
+01:17.660 --> 01:23.950
+in here and we see here that we have this syntax that we haven't seen before.
+
+01:24.070 --> 01:30.040
+That's actually going to be used with flask that we're going to talk about but we see here that it's
+
+01:30.040 --> 01:36.400
+going to be for the static folder and the file name is going to be Saba Khan dot ICAO but minus called
+
+01:36.400 --> 01:38.400
+the bolt dot ICAO.
+
+01:38.410 --> 01:42.150
+So let's just call it bolt dot ICL.
+
+01:42.430 --> 01:43.740
+That's the following.
+
+01:43.840 --> 01:45.910
+And it should be in the aesthetic folder.
+
+01:46.000 --> 01:47.500
+So I'm going to move this
+
+01:52.140 --> 02:00.120
+into this static folder just like that now if I just.
+
+02:00.240 --> 02:11.600
+Here I can actually comment this out hit save and see what happens if I go back to my Web site and I
+
+02:11.600 --> 02:15.020
+refresh Hey look at that.
+
+02:15.250 --> 02:17.210
+Do you see how I have a little bolt here.
+
+02:17.230 --> 02:21.150
+You see that the bolt dot ICL is now on my Web site.
+
+02:21.160 --> 02:22.540
+How cool is that.
+
+02:22.630 --> 02:24.960
+And I didn't really do anything crazy.
+
+02:25.030 --> 02:29.460
+I didn't even have to have an endpoint which is really really cool.
+
+02:29.770 --> 02:36.100
+Again flask because a father icon is something so common just makes it super easy for us so we don't
+
+02:36.100 --> 02:45.390
+have to clutter our code with a father con end point so I can just remove this but you know what.
+
+02:45.390 --> 02:49.310
+I'm not a big fan of doing things without understanding them.
+
+02:49.380 --> 02:54.870
+And right now what we just did here seems really really strange.
+
+02:54.870 --> 03:01.770
+Whereas this you are all for thing coming from what's with this double squiggly lines in the next video
+
+03:01.800 --> 03:03.990
+we're going to find out what all of this means.

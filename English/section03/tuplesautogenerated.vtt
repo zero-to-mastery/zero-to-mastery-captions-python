@@ -1,0 +1,178 @@
+WEBVTT
+
+00:00.540 --> 00:00.960
+Hurray.
+
+00:00.970 --> 00:07.380
+It's time for our third data structure as we continue down to our different data types in Python and
+
+00:07.390 --> 00:15.340
+this one is called a couple or tuple depending on how you like to pronounce it and we actually saw this
+
+00:15.430 --> 00:18.270
+slightly when we talked about dictionaries.
+
+00:18.400 --> 00:26.670
+But before we get into that what are couples well a topple our like list.
+
+00:26.680 --> 00:30.670
+But unlike lists we cannot modify them.
+
+00:30.670 --> 00:31.950
+There are immutable.
+
+00:32.080 --> 00:36.900
+So you can think of them as immutable lists and they look like this.
+
+00:36.970 --> 00:47.060
+So let's call it my topple is going to use brackets to denote a couple and we can do one two three four
+
+00:47.180 --> 00:49.700
+five just like a list.
+
+00:49.760 --> 00:57.640
+Now you remember how in a list we could have modified this and said index of 1.
+
+00:57.710 --> 01:00.720
+Well now is going to equal Z.
+
+01:01.040 --> 01:08.330
+If I run this it's going to error out it's going to tell me hey tuple object does not support item assignment
+
+01:08.960 --> 01:10.830
+a topple is immutable.
+
+01:10.850 --> 01:13.210
+Once you create it it's the way it is.
+
+01:13.220 --> 01:17.010
+You can't sort it or reverse it like we saw with lists.
+
+01:17.030 --> 01:19.220
+It's just there.
+
+01:19.250 --> 01:19.910
+What about this.
+
+01:19.910 --> 01:29.970
+Can I just print a topple and just grab the second item on that topple Well yes you can.
+
+01:29.980 --> 01:33.790
+Just like a list you can access it through an index.
+
+01:33.790 --> 01:43.740
+Can I maybe do does 5 exist in my topple just like we could in a list.
+
+01:43.750 --> 01:46.890
+Well yes we can.
+
+01:46.900 --> 01:50.490
+The difference is that it's immutable right now.
+
+01:50.560 --> 01:51.670
+Why do we need this.
+
+01:51.670 --> 01:56.680
+I mean we already have lists so why do I have to learn to spell if you know it's pretty much the same
+
+01:56.680 --> 01:57.550
+as lists.
+
+01:57.640 --> 01:59.950
+The only thing is I can't change it.
+
+01:59.950 --> 02:01.770
+There's a few benefits to this.
+
+02:01.780 --> 02:08.020
+For example if you don't need to change the list that makes things easier because it tells other programmers
+
+02:08.020 --> 02:10.720
+looking at your code hey this shouldn't be changed.
+
+02:10.760 --> 02:11.500
+I'd like a list.
+
+02:11.500 --> 02:13.120
+I want this to stay the way it is.
+
+02:13.120 --> 02:17.480
+Keep this order so it makes things easier and more efficient.
+
+02:17.710 --> 02:23.680
+It makes your code safer because people can modify right it makes code more predictable.
+
+02:23.680 --> 02:28.940
+However it makes code more predictable but it's less flexible than a list.
+
+02:28.990 --> 02:35.800
+I can't really sort a top or I can't run reverse on topple now because of this because they are less
+
+02:35.800 --> 02:37.090
+flexible.
+
+02:37.090 --> 02:43.120
+The other good thing about them is that they're slightly more performance than lists so they're usually
+
+02:43.120 --> 02:49.370
+faster than lists and if you don't need a list to change we'll use a couple.
+
+02:49.390 --> 02:56.370
+So a good use of a typo for example if you work at Uber is a geographic location and coordinates right.
+
+02:56.380 --> 03:04.780
+You can have latitude and longitude here and because let's say this won't change or maybe a user's location
+
+03:04.810 --> 03:09.810
+or pickup point doesn't often change we can just use a couple.
+
+03:10.000 --> 03:17.050
+However maybe when you're in a car as a driver and you're Uber driver well you probably need your coordinates
+
+03:17.050 --> 03:23.890
+your latitude longitude and a list because your car is moving that's constantly changing and we saw
+
+03:23.890 --> 03:27.580
+it topple when we talked about dictionaries right.
+
+03:27.580 --> 03:40.920
+Remember when we did user 4 we did user dot items and then I said Hey just print user dot items and
+
+03:40.920 --> 03:47.760
+we saw here that we got a dictionary items and inside of this dictionary we see that basket one two
+
+03:47.760 --> 03:50.160
+three greet Hello.
+
+03:50.250 --> 03:58.830
+An H 20 are a Tupolev so this actually returns are key and value as a couple.
+
+03:59.720 --> 04:06.560
+And as I mentioned before a dictionary can have keys that are immutable.
+
+04:06.560 --> 04:14.300
+So a topple is a completely valid key in Python so I can do want to hear and that is a valid key in
+
+04:14.300 --> 04:21.730
+a dictionary and the way I would access this would be like user curly bracket.
+
+04:21.820 --> 04:27.910
+Want to so that if I click Run here I have an extra bracket.
+
+04:27.910 --> 04:28.680
+Let's fix that.
+
+04:28.690 --> 04:30.250
+Let's click run again.
+
+04:30.250 --> 04:31.000
+And there you go.
+
+04:31.000 --> 04:35.560
+I'm able to grab user top a 1 2 and grab 1 2 3.
+
+04:35.590 --> 04:41.860
+List you see here how I'm trying to use different data structures combining them together.
+
+04:41.980 --> 04:46.060
+Let's take a break and finish off our understanding of couple in the next video.

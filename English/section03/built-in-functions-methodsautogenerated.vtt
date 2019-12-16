@@ -1,0 +1,307 @@
+WEBVTT
+
+00:00.980 --> 00:02.300
+Welcome back.
+
+00:02.300 --> 00:09.500
+So far we've learned a few built in functions that Python has few built in actions right.
+
+00:09.500 --> 00:13.880
+Actions that we can take on data and we learned about SDR.
+
+00:13.880 --> 00:16.220
+We learned about it.
+
+00:16.400 --> 00:20.790
+We learned about float and the type conversion that we can do.
+
+00:20.810 --> 00:22.970
+We also learned about type.
+
+00:22.970 --> 00:28.760
+We also learned about print and these built in functions in python.
+
+00:28.760 --> 00:35.030
+Well there's a few of them and all linked to this resource but there's not two too many.
+
+00:35.210 --> 00:48.140
+As a matter of fact we've also seen ones like a B.S. or round in our numbers video so numbers had some
+
+00:48.500 --> 00:57.050
+functions that we can use some built in functions well strings also has a very useful one called Lent
+
+00:57.680 --> 01:00.770
+which stands for Lent.
+
+01:00.810 --> 01:10.920
+So as you guessed it if I type in something like this and I print this out and I click Run I get nine
+
+01:11.340 --> 01:14.300
+because it's calculating the length of the string.
+
+01:14.400 --> 01:22.190
+In our case one two three four five six seven eight nine.
+
+01:22.410 --> 01:26.020
+The length of the string is nine.
+
+01:26.040 --> 01:32.500
+Now you have to be careful here because the length itself doesn't start at zero as we've seen with indexes.
+
+01:32.550 --> 01:35.990
+Instead it counts like humans do from 1.
+
+01:36.000 --> 01:45.170
+So a neat thing to do here is I can do something like this Let's say that we have a variable greet that
+
+01:45.200 --> 01:48.980
+equals Lou.
+
+01:49.170 --> 01:59.070
+Well I can grab the great variable which has a string and use String slicing to grab.
+
+01:59.080 --> 02:04.210
+Well the first and then goal all the way until the end.
+
+02:04.600 --> 02:06.690
+Now the default already does this.
+
+02:06.760 --> 02:13.650
+If I leave it like this it's going to grab hello and make sure I add a bracket here.
+
+02:13.660 --> 02:17.540
+Let's click Run I get Hello.
+
+02:17.550 --> 02:21.700
+Now if I do 0 to length of
+
+02:25.060 --> 02:25.890
+what does that mean.
+
+02:25.900 --> 02:29.020
+Well if I click Run I still get Hello.
+
+02:29.020 --> 02:33.770
+Because the length of Grete is nine
+
+02:37.070 --> 02:38.960
+like so now.
+
+02:39.410 --> 02:45.190
+This length function is quite useful and we're gonna use it a lot in this course.
+
+02:45.320 --> 02:55.150
+But I want to introduce to you the concept of built in functions as well as what we call built in methods.
+
+02:55.610 --> 03:03.120
+What does that mean a built in function had the syntax of the word that was highlighted in blue and
+
+03:03.120 --> 03:12.870
+then we used curly brackets to perform some action on a data type however Python also has this idea
+
+03:12.870 --> 03:20.900
+of methods and methods are similar to functions but they they are owned by something.
+
+03:20.910 --> 03:25.740
+So for example in Python we have string methods.
+
+03:25.740 --> 03:32.590
+So these are methods or actions that only strings can perform and don't worry.
+
+03:32.640 --> 03:37.540
+This is something that we'll talk more about when we talk about classes and functions.
+
+03:37.860 --> 03:42.060
+But for now Python for example has a string methods.
+
+03:42.060 --> 03:50.010
+So these are methods that we can use specifically for strings and methods have a special syntax where
+
+03:50.070 --> 03:56.000
+instead of just the word with the curly brackets it usually has a dot in front of it.
+
+03:56.100 --> 04:03.830
+So dot and then some sort of word and we've actually seen one format right Dot format.
+
+04:03.900 --> 04:07.620
+Curly brackets or brackets is a method.
+
+04:07.620 --> 04:14.850
+And if I go to Python string methods and I scroll down or scroll up we see that format format specific
+
+04:14.850 --> 04:20.160
+values in a string is a method now why do we care.
+
+04:20.970 --> 04:28.060
+Well with this python gives us automatic tools that we can use on strings.
+
+04:28.070 --> 04:36.720
+So let's explore some of these string methods let's create a quote here and the quote is going to be
+
+04:36.750 --> 04:47.510
+to be or not to be now in here with this quote We can use some methods on this string.
+
+04:47.510 --> 04:53.320
+Now I'm not going to go through everything because while 60 percent of these you're most likely never
+
+04:53.320 --> 04:58.620
+going to use in your career I'm going to go over the important ones that you'll see over and over again
+
+04:58.780 --> 05:02.540
+but I'll also linked to this so that you can see this for yourself as a reference.
+
+05:02.590 --> 05:09.220
+Remember as a programmer your job is not to memorize this and read a language like you read a dictionary
+
+05:09.460 --> 05:17.740
+instead is to know that this resource exists and it's for you to explore and learn as a specific problem
+
+05:17.860 --> 05:18.280
+occurs.
+
+05:18.850 --> 05:22.610
+But let's get back to the task at hand.
+
+05:22.670 --> 05:28.320
+One thing that we can do is to use the upper method.
+
+05:28.670 --> 05:34.200
+We use a dot and then type in upper and then the curly brackets.
+
+05:34.280 --> 05:41.080
+And luckily for us our editor shows us that this actually exists because of the dropdown.
+
+05:41.660 --> 05:50.740
+So what happens now if I print this and I click Run look at that.
+
+05:50.740 --> 05:56.520
+Everything gets capitalized to be or not to be.
+
+05:56.590 --> 06:02.930
+There is also another one we can use called capitalized.
+
+06:02.950 --> 06:07.610
+What's the difference between the two well if I run.
+
+06:07.950 --> 06:15.570
+You see that it capitalizes the beginning of the sentence and by the way your editor or in our case
+
+06:15.570 --> 06:23.780
+our rebel if you hover over this they'll actually tell you what it does it returns a capitalized version
+
+06:23.840 --> 06:34.960
+of s so whatever is to the left of the dot and a good editor will actually show you all the things available
+
+06:34.960 --> 06:35.650
+to you.
+
+06:35.680 --> 06:44.050
+So as soon as you press a dot look at that I see all these purple boxes which are methods that are available
+
+06:44.050 --> 06:48.430
+to me for a string and you see there's a lot of them.
+
+06:48.700 --> 06:54.790
+Now don't worry about these double underscores these Dunder methods because this is something that we'll
+
+06:54.790 --> 06:56.740
+talk about when we talk about classes.
+
+06:56.920 --> 07:01.100
+But he can see that you have different things that you can use.
+
+07:01.210 --> 07:10.210
+For example you have lower instead of upper in lower cases everything What if I want to use find for
+
+07:10.210 --> 07:22.940
+example and find simply says hey does B exist in the code to be or not to be in fact click Run well
+
+07:23.180 --> 07:35.520
+it tells me that yes code dot find has a B and it starts at index of three so if I go to 0 1 2 and then
+
+07:35.910 --> 07:37.060
+look at that 3.
+
+07:37.230 --> 07:45.130
+So we have find which finds us the first occurrence of a piece of text.
+
+07:45.190 --> 07:53.410
+You also have things like replace where I can replace whatever I give it as the first thing and then
+
+07:53.410 --> 08:00.610
+separated to the second thing so you can see over here it tells me old and then comma new and I can
+
+08:00.610 --> 08:08.240
+replace this with me if I click Run I get to me or not to me.
+
+08:08.240 --> 08:12.400
+So this replaces all the occurrences of B.
+
+08:12.470 --> 08:22.230
+Now the final thing I want to point out to you is that if I print here quote What do you think is going
+
+08:22.230 --> 08:23.340
+to happen.
+
+08:23.340 --> 08:26.820
+I've printed here and I replaced.
+
+08:26.820 --> 08:29.400
+To me to be or not to be with.
+
+08:29.400 --> 08:30.630
+To me or not to me.
+
+08:31.920 --> 08:38.800
+Quite a selfish quote but if I print this again on the fifth line what do you think will happen.
+
+08:38.820 --> 08:39.300
+Let's find out
+
+08:43.870 --> 08:46.470
+is this what you expected.
+
+08:46.490 --> 08:51.920
+Think about why this might happen based on what we've learned here's the thing.
+
+08:51.970 --> 08:54.790
+Remember strings are immutable.
+
+08:54.850 --> 08:57.140
+That is they cannot be change.
+
+08:57.160 --> 09:03.660
+We can overwrite them if we want but we don't change them we either create them or destroy them.
+
+09:03.730 --> 09:13.130
+In our case when we do quote da replace to me or not to me it's creating a new string.
+
+09:13.150 --> 09:16.650
+Now we're not assigning the string to anything.
+
+09:16.650 --> 09:20.440
+So eventually after we printed we remove it from memory.
+
+09:20.640 --> 09:36.490
+But if I do something like this where I have quote two equals quote I replace and I print quote to well
+
+09:36.610 --> 09:39.900
+in our case we're creating a whole new string.
+
+09:39.900 --> 09:46.090
+We're creating a string but we never modify the original string because it's immutable.
+
+09:46.270 --> 09:54.040
+So that quote always stays the way it is until we destroy it until we remove it.
+
+09:54.040 --> 09:55.370
+Our program ends.
+
+09:55.450 --> 09:59.570
+This is going to exist.
+
+09:59.570 --> 10:00.660
+Hope you're having fun.
+
+10:00.700 --> 10:03.420
+Hang in there more to learn in the next video.

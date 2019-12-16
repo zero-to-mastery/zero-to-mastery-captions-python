@@ -1,0 +1,322 @@
+WEBVTT
+
+00:00.920 --> 00:02.020
+Welcome back.
+
+00:02.060 --> 00:08.510
+In the previous video we learned about importing the data and using the pandas library to manipulate
+
+00:08.570 --> 00:10.340
+our data offering.
+
+00:10.360 --> 00:15.400
+Now let's learn a little bit more about this step which is to clean the data.
+
+00:15.400 --> 00:21.630
+And in this case let's try to solve an interesting problem let's say that instead of this filtering
+
+00:22.200 --> 00:31.250
+what we want to do or what our boss comes and tells us is that he or she wants to know well what players
+
+00:31.250 --> 00:39.740
+are a good deal what players are the best in terms of skill but are also a lower salary so maybe we
+
+00:39.740 --> 00:41.220
+can afford them better.
+
+00:41.300 --> 00:47.990
+So let's say that the boss wants a few things from you if we go back to Kaggle here and look at our
+
+00:47.990 --> 00:48.930
+data.
+
+00:49.010 --> 00:57.780
+Actually have a link to all the columns that this data has and let's say our boss wants to find out
+
+00:58.140 --> 01:04.740
+the current market value of the player and the wage.
+
+01:04.860 --> 01:13.230
+So he or she wants to know which player is under valued right now and maybe we can offer we can grab
+
+01:13.230 --> 01:15.770
+that player for a really good deal.
+
+01:15.810 --> 01:22.380
+So while we want a graph from the data is the value the wage and obviously the name category of the
+
+01:22.380 --> 01:24.150
+player.
+
+01:24.190 --> 01:28.450
+Now if you want you can pause the video and tried to do this yourself.
+
+01:28.720 --> 01:30.590
+Otherwise let's give it a go.
+
+01:31.700 --> 01:40.040
+Let's create a new variable called a data frame one and this is going to grab using the panda's library.
+
+01:40.040 --> 01:50.200
+The data frame method which will accept our previous data frame that we've grabbed which is our entire
+
+01:50.200 --> 01:50.980
+CSP file.
+
+01:50.980 --> 01:59.530
+So let's say data frame and then we're going to select as our second parameter the columns that we want.
+
+01:59.530 --> 02:09.170
+In this case we can give it an array of columns that we want which will be name wage and then finally
+
+02:09.560 --> 02:14.470
+value so let's just print.
+
+02:14.580 --> 02:18.960
+Def 1 to see if this is working.
+
+02:19.020 --> 02:19.760
+There you go.
+
+02:19.800 --> 02:24.330
+Just like that we have the name wage and value of the player.
+
+02:24.330 --> 02:29.130
+Holy moly messy messy has has quite a high wage.
+
+02:29.130 --> 02:31.650
+That's a that's a nice wage.
+
+02:31.670 --> 02:33.400
+All right let's keep going.
+
+02:33.560 --> 02:35.050
+Now here's the next part.
+
+02:35.090 --> 02:41.380
+We have this table but the data doesn't really mean anything to us right now.
+
+02:42.560 --> 02:50.080
+Let's say we want to sort the data now because what we want to do is we want to compare each player's
+
+02:50.200 --> 02:58.960
+wage with the value and have perhaps a different column called The Difference to see which player has
+
+02:58.960 --> 03:03.570
+the biggest gap between their wage and their value.
+
+03:04.620 --> 03:08.040
+Well let's let's try and give this a go.
+
+03:08.430 --> 03:16.800
+Now ideally we can just create a different column by simply saying the F one we're going to add difference
+
+03:17.490 --> 03:25.170
+and this different column is simply going to equal the data frame that we have built over here and it's
+
+03:25.170 --> 03:35.830
+going to be the value minus the F one the wait.
+
+03:36.340 --> 03:46.570
+Just like that now if I run this let's do the F1 and click Run Oh I get an error if I scroll all the
+
+03:46.570 --> 03:55.500
+way down I see unsupported operant type S for minus so I'm trying to subtract a string and a string
+
+03:58.010 --> 04:00.150
+and we've learned about this before right.
+
+04:00.290 --> 04:07.610
+You can see over here that the wage of a player is in euros and they get paid a lot so sometimes you
+
+04:07.610 --> 04:17.320
+have the M which is 4 million or K for the thousands so we need to convert this into an int right.
+
+04:17.320 --> 04:22.380
+So we can do that quite easily again using Python now with this part.
+
+04:22.380 --> 04:30.570
+You can try and solve this yourself and try to convert these values and wages to an integer and remove
+
+04:30.600 --> 04:38.570
+the euro sine and the and or the K for the thousands or if you want to just do this quickly.
+
+04:38.580 --> 04:42.380
+You can even google around because this is a common problem.
+
+04:42.450 --> 04:53.310
+All you do is google for pandas convert String to int or in my case look at that googling around I found.
+
+04:53.310 --> 05:01.740
+Convert the string two point nine zero K to this in Panda's data frame so it looks like they are asking
+
+05:01.740 --> 05:03.830
+the exact same questions that we have.
+
+05:03.960 --> 05:11.250
+And again as a developer you have to really learn to start googling and finding answers on your own
+
+05:12.030 --> 05:17.130
+because most likely other people have the same questions you have.
+
+05:17.130 --> 05:25.050
+Now if I scroll to the answer here you see that I get some answers that look overly complicated but
+
+05:25.440 --> 05:28.620
+I really like this one so value to float.
+
+05:28.740 --> 05:31.280
+So we're changing a value to a float.
+
+05:31.290 --> 05:39.940
+We give it some sort of an X and that's it so this converts our value to float and you see here that
+
+05:39.940 --> 05:46.010
+it replaces different things for us such as the K and the B.
+
+05:46.360 --> 05:48.010
+So that's perfect.
+
+05:48.130 --> 05:55.570
+Let's copy this and again I'll link to this resource so you can take a look for yourself.
+
+05:55.720 --> 06:02.300
+If I go to r soccer let's enter the function that we have here.
+
+06:02.340 --> 06:09.490
+Make sure that it's formatted properly so we now have the value to float function which is great.
+
+06:09.600 --> 06:20.330
+If we go back to the the question here unfortunately they only remove the last item in the list and
+
+06:20.390 --> 06:22.300
+not the beginning portion.
+
+06:22.490 --> 06:28.280
+So we can just do that ourselves because we want to remove the euro sign as well so there's actually
+
+06:28.280 --> 06:30.020
+a pretty easy way of doing this.
+
+06:30.020 --> 06:31.220
+Using regex.
+
+06:31.220 --> 06:32.090
+So let me show you.
+
+06:32.160 --> 06:37.490
+We can do a wage variable that equals def 1 our data frame.
+
+06:37.490 --> 06:45.770
+We're gonna grab the wage column let's make this a little bit bigger so you can see and this wage column
+
+06:45.830 --> 06:52.820
+is going to be replaced and the replace method allows us to use regex.
+
+06:52.840 --> 07:01.210
+So what we can do is we'll say that we want to remove the euro sign so let's just copy it from here.
+
+07:04.840 --> 07:05.850
+Just like this.
+
+07:07.210 --> 07:18.010
+With an empty string and then the third parameter is to just say Reg X equals to.
+
+07:18.090 --> 07:21.030
+Now if you go to Reg X one to one dot com
+
+07:25.220 --> 07:27.260
+and we copy while we just did.
+
+07:27.260 --> 07:29.300
+So let's just copy this
+
+07:33.020 --> 07:40.290
+if I do anything with a euro sign you see that it is highlighted over here.
+
+07:40.310 --> 07:42.390
+That's what they regex does.
+
+07:42.390 --> 07:46.310
+Again this is something that I just experimented with.
+
+07:46.340 --> 07:54.180
+Trust me I don't remember this off the top of my head I just looked it up before this video so we replace
+
+07:54.340 --> 08:02.630
+all the your signs with the empty string and then finally if we go to r stack overflow answer you remember
+
+08:02.630 --> 08:09.760
+here that in order for us to use the value to float we just simply do not apply value to float.
+
+08:09.830 --> 08:24.730
+So again if we go to our soccer we'll just say dot apply value to float which is why we have up here
+
+08:27.990 --> 08:31.910
+and we can just do the same thing for the value as well.
+
+08:32.010 --> 08:44.290
+So let's say value is going to equal value here and the same thing being applied.
+
+08:44.450 --> 08:55.550
+And then finally with these new columns we can just update them by simply saying the F one wage is going
+
+08:55.550 --> 09:07.980
+to equal wage and then data frame one value is going to equal value.
+
+09:08.020 --> 09:16.330
+So because now these are going to be integers I can now run this minus operation and hopefully if we
+
+09:16.330 --> 09:18.940
+didn't make any mistakes this should work.
+
+09:19.000 --> 09:19.590
+Let's have a look.
+
+09:21.870 --> 09:23.190
+All right.
+
+09:23.230 --> 09:30.730
+Look at that we have a new difference column which just subtracts value from wage
+
+09:33.420 --> 09:34.150
+awesome.
+
+09:34.200 --> 09:39.190
+The last thing I want to do is to actually sort this so I can better understand it.
+
+09:39.240 --> 09:45.390
+So let's do for the last part say sort values again.
+
+09:45.410 --> 09:54.770
+Another thing that we get from pandas and we'll sort by the difference column and we'll say ascending
+
+09:56.150 --> 09:57.660
+equals to false.
+
+09:57.800 --> 10:02.930
+So we get the biggest difference first instead of lowest to highest.
+
+10:02.930 --> 10:13.200
+So if I run this now look at that I get the players with the biggest difference all the way down to
+
+10:13.200 --> 10:15.180
+the lowest players.
+
+10:15.180 --> 10:24.260
+Very very cool so this was a bit of a longer video but I wanted to show you the idea of cleaning the
+
+10:24.260 --> 10:33.020
+data that is we removed any unnecessary data we converted to types or clean things up in case we needed
+
+10:33.050 --> 10:33.560
+anything.
+
+10:33.590 --> 10:42.350
+And then perhaps even added extra information that we might need so that we can improve or get insights
+
+10:42.890 --> 10:46.100
+about what we might want to do next.
+
+10:46.100 --> 10:48.110
+Let's take a break and I'll see you in the next video.

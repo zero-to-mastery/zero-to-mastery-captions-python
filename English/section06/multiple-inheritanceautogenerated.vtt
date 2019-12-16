@@ -1,0 +1,235 @@
+WEBVTT
+
+00:00.300 --> 00:07.000
+Let's talk about multiple inheritance which you're able to do in python.
+
+00:07.050 --> 00:12.780
+Now remember we have our user wizard and Archer classes.
+
+00:13.140 --> 00:16.780
+We're trying to build that game right now.
+
+00:16.800 --> 00:18.590
+Let's clean up some of this code.
+
+00:18.600 --> 00:21.630
+We won't need the IN IT function anymore.
+
+00:21.630 --> 00:23.860
+We'll just have user here.
+
+00:24.000 --> 00:30.640
+We have wizard that inherits from user and also Archer that inherits from user.
+
+00:30.780 --> 00:38.640
+But what happens if we want to create a new character and this character is called a class let's say
+
+00:40.840 --> 00:46.480
+let's say it's called hybrid Borg we are name I know but here's the thing.
+
+00:46.480 --> 00:53.060
+Hybrid Borg is a special type of character because it has the powers that wizards have which is attack.
+
+00:53.170 --> 00:57.120
+It has the power that archers have which is Czech arrows.
+
+00:57.190 --> 01:09.480
+And just for fun let's also add run here and we'll just say four run ran really fast.
+
+01:09.510 --> 01:10.240
+All right.
+
+01:10.390 --> 01:17.750
+So we want this hybrid Borg to have all of these methods can we do that.
+
+01:17.760 --> 01:19.690
+Well we can't.
+
+01:19.740 --> 01:30.210
+All we need to do is say wizard and then Archer we can give it as many parameters as we want as as multiple
+
+01:30.210 --> 01:30.960
+inheritances.
+
+01:30.960 --> 01:37.760
+We're inheriting from Wizard and Archer so that in year let's say I don't do anything and I'll just
+
+01:37.760 --> 01:49.870
+head pass if I instantiate let's say hybrid Borg one is going to be hybrid for class instantiate it.
+
+01:50.340 --> 01:52.950
+I can now use all of these things.
+
+01:52.950 --> 01:57.750
+Let's check them let's say print HP one dot run.
+
+01:57.840 --> 02:00.500
+Can I do that again.
+
+02:00.570 --> 02:01.690
+A little spelling error.
+
+02:01.800 --> 02:03.840
+Let's make sure it's hybrid.
+
+02:03.840 --> 02:06.380
+Hybrid Borg not hybrid board.
+
+02:06.450 --> 02:09.030
+I hope you're not bored of this video.
+
+02:09.090 --> 02:09.920
+All right.
+
+02:09.930 --> 02:16.910
+I get an air missing two required positional arguments name and power.
+
+02:17.000 --> 02:17.400
+All right.
+
+02:17.420 --> 02:26.550
+Because while we have to pass these things in right it accepts these parameters OK.
+
+02:26.580 --> 02:29.800
+So let's say that we want name to be
+
+02:32.480 --> 02:35.350
+boggy and the power to be 50.
+
+02:35.480 --> 02:46.680
+If I run this all right it looks like ran really fast run works I was able to inherit from Archer.
+
+02:46.680 --> 02:48.300
+What about check arrows
+
+02:51.100 --> 03:01.890
+if I click Run Oh I get hybrid Borg object has no attribute errors.
+
+03:01.970 --> 03:14.640
+Now why is that because technically we inherited from Wizard first then Archer and Wizard except name
+
+03:15.330 --> 03:24.300
+and power but we never gave the house name and Eris.
+
+03:24.560 --> 03:26.880
+So how can we solve that.
+
+03:26.900 --> 03:27.900
+Let's try something.
+
+03:27.980 --> 03:34.450
+Let's say we added arrows here one hundred would this work hmm.
+
+03:34.550 --> 03:36.720
+That doesn't work does it.
+
+03:36.830 --> 03:43.280
+And this is a tricky thing with multiple inheritance and why some programming languages actually don't
+
+03:43.280 --> 03:45.170
+even allow multiple inheritance.
+
+03:45.170 --> 03:50.960
+Things could get a little tricky because in your head you have to make sure that you understand how
+
+03:51.170 --> 03:58.280
+these classes are implemented and make sure that we're not overwriting anything in our case we can complicate
+
+03:58.340 --> 04:00.160
+our code a little bit.
+
+04:00.200 --> 04:02.250
+So what can we do here.
+
+04:03.510 --> 04:08.300
+Well in here I can perhaps do something like this.
+
+04:08.380 --> 04:17.840
+I can say define in it this receives self it will receive a name a power.
+
+04:18.410 --> 04:22.670
+And also arrows.
+
+04:22.760 --> 04:30.290
+And then finally and here I can say that we're going to call also the archer
+
+04:33.370 --> 04:35.100
+dot in it.
+
+04:36.250 --> 04:47.710
+And that's going to take self and then pass in the name and arrows so that if I run this well let's
+
+04:47.710 --> 04:52.410
+add the arrows a hundred here and I click Run.
+
+04:52.430 --> 04:53.330
+There you go.
+
+04:53.330 --> 05:01.650
+Arrows is now working now just to check that our attack on the wizard is working as well.
+
+05:01.830 --> 05:08.440
+If we do attack and click Run Oh boy.
+
+05:08.950 --> 05:19.710
+Now our hybrid object has no power so once again in order for us to have power we'll have to copy this
+
+05:20.030 --> 05:30.940
+and let's say this time wizard in it self and then give it power by click Run.
+
+05:30.950 --> 05:31.760
+All right.
+
+05:31.760 --> 05:33.390
+Attack works.
+
+05:33.560 --> 05:40.390
+Let's go back to check arrow make sure we haven't broken anything if I click that that works as well.
+
+05:40.410 --> 05:43.410
+And then finally what about signing Paul sign in work
+
+05:48.310 --> 05:49.720
+logged in.
+
+05:49.840 --> 05:50.850
+All right.
+
+05:50.860 --> 05:53.140
+Oh boy that was a lot.
+
+05:53.140 --> 05:57.470
+And there are a few ways of actually solving this problem.
+
+05:57.520 --> 06:03.700
+What I wanted to show you though is that when you do multiple inheritance things can get complicated.
+
+06:03.790 --> 06:06.040
+And although we walk through it step by step.
+
+06:06.040 --> 06:12.220
+Imagine if there was a coder that came along on your team at work and tried to understand this code
+
+06:13.000 --> 06:19.990
+well we've added quite a bit of logic here and things are getting more and more complicated and it's
+
+06:19.990 --> 06:22.580
+hard to keep track of everything in your head.
+
+06:22.750 --> 06:28.240
+And this is why multiple inheritance is one of those things where it's really really powerful but with
+
+06:28.240 --> 06:34.550
+great power comes great responsibility because we're creating more and more complexity.
+
+06:34.720 --> 06:41.380
+Again part of the reason that some programming languages don't actually allow you to do multiple inheritance
+
+06:42.390 --> 06:47.880
+and by the way I'm going to confuse you even more in the next video we're going to talk about something
+
+06:47.880 --> 06:55.860
+called MRO and it's going to be another great example of why you want to be cautious with multiple inheritances.
+
+06:55.890 --> 06:57.560
+I'll see you on that one by.

@@ -1,0 +1,364 @@
+WEBVTT
+
+00:00.480 --> 00:01.230
+Welcome back.
+
+00:02.220 --> 00:08.700
+I just found this python package pie jokes and mind you I have never installed this so I'm going to
+
+00:08.700 --> 00:13.560
+try and do this from scratch so you can see what the steps would be like.
+
+00:13.560 --> 00:16.320
+So this is a completely useless package.
+
+00:16.350 --> 00:19.230
+It looks like it gives us one line jokes for programmers.
+
+00:19.260 --> 00:21.380
+So I think this will be appropriate.
+
+00:21.390 --> 00:25.230
+I also like the fact that it has GitHub stars.
+
+00:25.230 --> 00:33.360
+So here sometimes some of these packages have are hosted on github and get hub is essentially a social
+
+00:33.360 --> 00:41.160
+network for programmers you're able to put up your code up here and people can be your code and download
+
+00:41.170 --> 00:48.830
+it and a good measure of how popular a package is is usually something like stars or forks because stars
+
+00:48.830 --> 00:54.530
+are given by people that really like the package or fork is people who copy the package and use it in
+
+00:54.530 --> 00:58.050
+their own coding maybe on their own get how profiles.
+
+00:58.100 --> 01:03.770
+So this looks like a very simple library so let's let's install it.
+
+01:03.800 --> 01:07.100
+So there's several ways that we can actually install this package.
+
+01:07.100 --> 01:11.630
+You can see here that the command is pip install pi jokes but I want to show you first how it works
+
+01:11.630 --> 01:19.560
+with PI charm and then show you how to do it with the command line so I have pi charm over here.
+
+01:19.600 --> 01:25.450
+We have some relics of our old project now in here in PI charm.
+
+01:25.450 --> 01:32.080
+Again it's an idea so comes with a lot of built in things I can do PI charm preferences and then simply
+
+01:32.080 --> 01:41.090
+go to project modules I can go to project interpreter and then here I see that this interpreter has
+
+01:41.090 --> 01:43.370
+some modules already pre installed.
+
+01:43.370 --> 01:48.080
+I see that I have Pip but all I need to do is click on the plus sign here.
+
+01:48.140 --> 01:55.950
+If I click plus I can actually hear search for packages so these are all the available packages that
+
+01:55.950 --> 01:56.750
+we have.
+
+01:56.760 --> 01:59.580
+So what was our thing called again pi jokes.
+
+01:59.580 --> 02:04.680
+All right let's search for Pi jokes pi jokes.
+
+02:04.740 --> 02:06.390
+There it is.
+
+02:06.490 --> 02:11.980
+I think it was this one with zero point five with the author pi joke society just making sure that it's
+
+02:11.980 --> 02:15.220
+the same one yep.
+
+02:15.310 --> 02:17.680
+Author of Pi joke society.
+
+02:17.680 --> 02:23.540
+So all we need to do here is to simply install package.
+
+02:23.550 --> 02:24.150
+There you go.
+
+02:24.150 --> 02:26.870
+Pi jokes installed successfully.
+
+02:26.920 --> 02:32.220
+So now that I have pi jokes here let's have a look at how we can use it.
+
+02:32.380 --> 02:35.910
+By the way I can actually test to see that I have this installed.
+
+02:35.910 --> 02:44.320
+If I go to lip Python three point seven site packages there's my PI jokes distribution.
+
+02:44.320 --> 02:47.820
+Awesome so let's see how we can use it again.
+
+02:47.830 --> 02:51.180
+I've actually never used this before so let's have a look.
+
+02:51.200 --> 02:55.090
+You can also access jokes in your own project by importing pi jokes.
+
+02:55.100 --> 02:55.490
+All right.
+
+02:55.520 --> 03:02.010
+Let me just copy that and using the function get joke and get jokes.
+
+03:02.010 --> 03:03.010
+All right sounds simple enough.
+
+03:03.020 --> 03:04.400
+Let's give that a go.
+
+03:04.400 --> 03:12.170
+I'm going to import pi jokes like that an animal is the function the function was get joke.
+
+03:12.340 --> 03:16.570
+So let's do pie jokes and say Get
+
+03:20.260 --> 03:25.790
+joke and I can see that I can give it a language and category.
+
+03:25.900 --> 03:36.170
+So let's say get joke here so string is English so let's do we want the joke in english and category.
+
+03:36.240 --> 03:40.080
+Let's see it says we can do neutral what are the options here.
+
+03:40.110 --> 03:45.560
+Neutral is neutral geek jokes no adult jokes for us we can do Chuck Norris jokes.
+
+03:45.570 --> 03:46.070
+All right.
+
+03:46.140 --> 03:47.880
+Neutral is fine that's the default.
+
+03:47.910 --> 03:49.820
+So we actually don't even need to pass anything here.
+
+03:49.830 --> 03:55.520
+But just to be safe let's do neutral.
+
+03:55.530 --> 03:57.150
+All right let's.
+
+03:57.150 --> 04:00.690
+I don't know what it's going to do so let's just run this program and see what happens.
+
+04:01.850 --> 04:02.090
+All right.
+
+04:02.120 --> 04:03.710
+Let's print out the joke.
+
+04:03.740 --> 04:17.510
+Let's say joke equals and then say print joke five like run real programmers can write assembly code
+
+04:17.510 --> 04:21.520
+in any language Ha ha ha.
+
+04:21.530 --> 04:22.190
+All right.
+
+04:22.260 --> 04:24.110
+Here's our completely useless package.
+
+04:24.110 --> 04:24.830
+Let's do another one.
+
+04:24.920 --> 04:26.610
+We'll see if there's any funny ones.
+
+04:26.900 --> 04:32.180
+How to explain the movie Inception to a programmer when you run a VM inside another VM inside another
+
+04:32.180 --> 04:32.540
+VM.
+
+04:32.540 --> 04:35.030
+Everything runs real slow.
+
+04:35.030 --> 04:35.610
+All right.
+
+04:35.690 --> 04:41.300
+Some of these jokes I'm sure are pretty funny some of them might be a little bit advanced but hey that's
+
+04:41.300 --> 04:42.370
+actually not bad.
+
+04:42.380 --> 04:45.540
+You know what I might use this package in the future I think.
+
+04:45.690 --> 04:47.650
+I think this fine but I won't bore you with me.
+
+04:47.660 --> 04:49.470
+Keep pressing play I might die.
+
+04:49.490 --> 04:56.270
+I might not record for a few hours and just waste time reading these these jokes but I just wanted to
+
+04:56.270 --> 05:00.220
+show the process of how I would go about doing something like this.
+
+05:01.270 --> 05:09.920
+Now most programmers that don't use pi charm instead of doing what I did will most likely use let's
+
+05:09.920 --> 05:13.340
+say their terminal to actually do this.
+
+05:13.340 --> 05:17.950
+So I have my sublime text here and my terminal or a command prompt.
+
+05:17.990 --> 05:26.270
+If you're on Windows right here and if I do present working directory again this is a Linux and Mac
+
+05:26.300 --> 05:31.460
+command so I see I'm on the desktop which is where what might 1.0 PI follows.
+
+05:31.520 --> 05:40.030
+Now if I wanted to use the PI jokes in here and I click Run.
+
+05:40.060 --> 05:50.820
+So let's say Python 3 1.0 pi module not found no module named pi jokes.
+
+05:50.980 --> 05:58.720
+That's not good but that's because we installed it for our PI charm environment but not enough for us
+
+05:58.720 --> 06:00.610
+to use outside of pie chart.
+
+06:00.640 --> 06:02.560
+So how can we do that.
+
+06:02.560 --> 06:10.780
+Well we can do Pip to install from the P wide API library or the repository.
+
+06:10.870 --> 06:18.040
+So again if I go all the way up you see that I have pip install pi jokes so I can even copy this and
+
+06:18.040 --> 06:21.460
+just install it for myself here.
+
+06:21.470 --> 06:22.440
+Now here's the thing.
+
+06:22.520 --> 06:25.240
+Depending on how you have your machine set up.
+
+06:25.250 --> 06:34.730
+If I do Pip dash V with capital V it's going to give me the version of Pip but if you see here that
+
+06:34.730 --> 06:39.650
+it says from Python two point seven we want to make sure we're using Python 3.
+
+06:39.710 --> 06:49.260
+So in your case if you do Pip three dash v you'll get the right version of Pip so make sure you check
+
+06:49.260 --> 06:54.520
+that and make sure that you're using with the Python 3 or higher.
+
+06:54.650 --> 07:01.940
+In my case I'll have to call Pip 3 you can always set this up so that Pip refers to the Python 3.
+
+07:02.330 --> 07:08.780
+But for now let's say Pip 3 and then we're going to install and here all we say is the package name
+
+07:08.780 --> 07:12.140
+we want to install in our case it's the PI jokes package
+
+07:15.740 --> 07:22.460
+it's collecting pi jokes successfully installed pi jokes zero point five I also get a little warning
+
+07:22.460 --> 07:25.520
+here you're using Pip version nineteen point 0 point 3.
+
+07:25.670 --> 07:32.000
+However version nineteen point one is available and you might get this and I always recommend just upgrading.
+
+07:32.000 --> 07:37.520
+So I'm just going to copy the command that they give us and I'm going to say pip install upgrade Pip
+
+07:37.870 --> 07:39.980
+and I'm gonna do Pip three
+
+07:42.960 --> 07:43.390
+right.
+
+07:43.440 --> 07:56.840
+So I've successfully updated Pip so again Pip 3 v now House version nineteen point one point one if
+
+07:56.840 --> 08:06.650
+I now let's say clear here and do Pip list I see that it shows me all the lists of the packages that
+
+08:06.650 --> 08:16.550
+I have and if I scroll up here I see that I have whereas it well I use the PIP man instead of Pip three
+
+08:16.610 --> 08:20.920
+solicitor Pip three list.
+
+08:20.950 --> 08:22.900
+So there's something that you just have to be careful of.
+
+08:22.930 --> 08:26.050
+You can see Pip three list is looking a lot nicer.
+
+08:26.110 --> 08:33.260
+Let's see I see that pie jokes is installed awesome.
+
+08:33.470 --> 08:40.410
+So now that I have this let's run it so I can run Python 3 and then say 1.0 by
+
+08:43.290 --> 08:46.990
+Oh what an appropriate joke I swear I did not time this.
+
+08:47.130 --> 08:53.760
+This is just the programming universe telling us something says Friends don't let friends use python
+
+08:53.760 --> 08:56.570
+two point seven because hey we should get this joke.
+
+08:56.670 --> 08:59.100
+Python 3 is the current and latest.
+
+08:59.310 --> 08:59.810
+That's funny.
+
+08:59.820 --> 09:01.560
+That's actually a I'm pretty please.
+
+09:01.560 --> 09:05.970
+I feel like we should end the video here because this is this is just perfect.
+
+09:06.120 --> 09:06.610
+All right.
+
+09:06.690 --> 09:15.270
+This is how you install packages with P IP we are able to really use the power of the developers all
+
+09:15.270 --> 09:21.780
+around the world using just the simple comment pip or PIP 3 install and whatever package we want across
+
+09:21.780 --> 09:26.220
+the world across the Internet we have access to in our projects.
+
+09:26.220 --> 09:27.910
+I'll see you in the next one by.

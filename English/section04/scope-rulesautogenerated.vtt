@@ -1,0 +1,307 @@
+WEBVTT
+
+00:00.830 --> 00:01.290
+All right.
+
+00:01.340 --> 00:02.940
+Let's play a little game.
+
+00:03.110 --> 00:08.900
+Can you guess what the output of this program is going to be I have over here a close one.
+
+00:08.940 --> 00:15.350
+Then we create a function called confusion where we have a equals to five and we return.
+
+00:15.360 --> 00:23.390
+Hey my question is when we print a and when we print confusion What do you expect to happen here.
+
+00:24.140 --> 00:25.490
+Take a second to figure out.
+
+00:25.520 --> 00:27.850
+Pause if you need to and let's find out
+
+00:31.120 --> 00:33.010
+one in five.
+
+00:33.120 --> 00:35.210
+Is that what you expected.
+
+00:35.220 --> 00:37.060
+Let's go line by line.
+
+00:37.280 --> 00:42.810
+First we assign a value of 1 to variable a.
+
+00:43.130 --> 00:49.070
+We then create a function called confusion and Python interpreter is going to say all right.
+
+00:49.070 --> 00:50.050
+Confusion function.
+
+00:50.060 --> 00:50.800
+I know what it is.
+
+00:50.810 --> 00:53.290
+I'm going to put it in memory when you need to use me.
+
+00:53.300 --> 00:54.280
+Just let me know.
+
+00:54.470 --> 01:01.220
+And then it's going to go to line eight and line eight is going to say hey print a what's a.
+
+01:01.300 --> 01:05.950
+Well the only time that I've seen a is right here A equals one.
+
+01:05.960 --> 01:09.280
+So go into memory what's a equals one.
+
+01:09.320 --> 01:18.720
+But then when I run confusion like this I'm going to say hey a is going to equal to five and now we
+
+01:18.720 --> 01:21.010
+return eight which is five.
+
+01:21.400 --> 01:24.880
+OK what if I change the order of this.
+
+01:24.900 --> 01:26.370
+What if I go like this.
+
+01:26.370 --> 01:31.900
+What will happen if I click Run.
+
+01:31.990 --> 01:33.120
+Is that what you expected
+
+01:36.330 --> 01:37.240
+once again.
+
+01:37.380 --> 01:38.910
+We have a close one.
+
+01:39.000 --> 01:45.060
+Then we define the function and then we print confusion now.
+
+01:45.100 --> 01:55.680
+Confusion here is going to assign a equal to five and then return a but why didn't this change.
+
+01:55.680 --> 01:58.920
+Why is a still equal to 1 by the time we get here.
+
+01:59.850 --> 02:01.890
+And this is because of scope.
+
+02:01.980 --> 02:11.100
+Right what the Python interpreter does is when it runs the confusion function it's going to say hey
+
+02:11.640 --> 02:19.290
+a is going to equal to 5 but I'm creating a variable here called a in my own universe.
+
+02:19.290 --> 02:21.990
+I don't know anything about a equals one here.
+
+02:22.020 --> 02:24.280
+I have my own universe.
+
+02:24.480 --> 02:29.670
+And after we run this function then while we're done we've returned the function and it's completely
+
+02:29.670 --> 02:38.950
+gone but we never left the universe into the global scope so there's a set of rules that the Python
+
+02:38.950 --> 02:42.220
+interpreter goes through to check a variable.
+
+02:42.220 --> 02:47.890
+And the rules are this first it's going to check with the local.
+
+02:47.890 --> 02:54.810
+So start with local and what we call is a local scope a local scope is a scope.
+
+02:54.820 --> 02:57.520
+That's part of this local function.
+
+02:57.520 --> 02:59.830
+So a is a local scope.
+
+02:59.860 --> 03:00.730
+It's going to check there.
+
+03:00.730 --> 03:04.050
+Hey do I know the variable A BOAT.
+
+03:04.090 --> 03:04.690
+YEAH.
+
+03:04.690 --> 03:09.040
+WHEN I RETURN A I have a variable defined here.
+
+03:09.040 --> 03:11.110
+So it starts there.
+
+03:11.110 --> 03:14.150
+But let's say a wasn't there.
+
+03:14.230 --> 03:24.240
+Let's say I remove a and I click Run here I get both once because the second rule is if there is nothing
+
+03:24.240 --> 03:33.880
+in the local variable or local scope then number two is there a parent local scope in our case.
+
+03:33.910 --> 03:36.760
+What's the parent of this function.
+
+03:36.790 --> 03:47.410
+Well it's the global scope but we can also do another function let's say parent and parent is a parent
+
+03:47.620 --> 03:50.090
+of the confusion function.
+
+03:50.090 --> 03:59.020
+And in here let's say a equals to 10 now in here we'll return confusion.
+
+03:59.030 --> 04:02.500
+Just so we can use it again and actually run it.
+
+04:03.560 --> 04:05.000
+So let's call parent
+
+04:08.040 --> 04:11.600
+and click Run.
+
+04:11.600 --> 04:12.630
+All right let's go through this.
+
+04:12.650 --> 04:14.570
+So it's not too confusing.
+
+04:14.570 --> 04:17.620
+We have their parent function that gets called.
+
+04:17.620 --> 04:24.170
+So when we call that we assign a equals to 10 and then we also create a new function confusion.
+
+04:24.230 --> 04:28.690
+And then finally we return confusion and actually run it.
+
+04:28.730 --> 04:31.570
+So we're going to return a.
+
+04:31.730 --> 04:37.570
+And then in here print whatever the value of a is which is 10 and why is that.
+
+04:37.580 --> 04:40.340
+Well because we first start with the local scope.
+
+04:40.340 --> 04:43.070
+Hey does confusion know what a is.
+
+04:43.070 --> 04:45.290
+No I don't have it in my local scope.
+
+04:45.290 --> 04:45.740
+OK.
+
+04:45.770 --> 04:47.740
+Does my parent local scope have it.
+
+04:47.750 --> 04:52.450
+So it's going to go up a level and say Hey does parent function know what it is.
+
+04:52.460 --> 04:52.750
+Yep.
+
+04:52.850 --> 04:54.230
+I have a equals to 10.
+
+04:54.260 --> 04:55.760
+So it's going to print that.
+
+04:55.910 --> 05:06.540
+The third rule or the Third Order is global and global is what we call the indentation of nothing.
+
+05:06.540 --> 05:07.400
+It's this file.
+
+05:07.410 --> 05:07.630
+Right.
+
+05:07.630 --> 05:11.560
+Whatever the File has that is global.
+
+05:11.560 --> 05:17.470
+In our case if a equals to 10 doesn't exist here there's no local there's no parent local and I click
+
+05:17.470 --> 05:22.150
+Run it checks the global scope
+
+05:25.020 --> 05:29.820
+and then finally there's one other rule and this is number four and it's a tricky one.
+
+05:29.820 --> 05:42.610
+And this is what we call built in Python or built in Python functions so Python comes with predefined
+
+05:42.620 --> 05:51.290
+functions such as well the sum that we've talked about before this some let's say just give it five
+
+05:52.580 --> 06:03.800
+is going to check or actually let's not give it anything let's just do some here when I run this I get
+
+06:03.830 --> 06:06.950
+built in function some.
+
+06:07.220 --> 06:10.940
+Now how do you know what this was.
+
+06:10.940 --> 06:13.900
+What this variable at the end of the day was.
+
+06:13.970 --> 06:19.420
+Well it because it said hey do I have some inside of this universe.
+
+06:19.430 --> 06:21.260
+No I don't.
+
+06:21.260 --> 06:21.750
+OK.
+
+06:21.830 --> 06:25.670
+Do I have some in my parent scope.
+
+06:25.730 --> 06:26.800
+No I don't.
+
+06:27.500 --> 06:27.710
+OK.
+
+06:27.710 --> 06:30.060
+Do I have a sum in global.
+
+06:30.080 --> 06:30.530
+No.
+
+06:30.600 --> 06:36.800
+There's nothing some in here and then the final thing it's going to check is hey is some some sort of
+
+06:36.800 --> 06:39.050
+a built in python function.
+
+06:39.050 --> 06:39.420
+Yep.
+
+06:39.530 --> 06:40.860
+Python actually gives us some.
+
+06:40.880 --> 06:49.130
+So you can use it so it doesn't error out and this is the scope rules that the Python interpreter falls.
+
+06:49.250 --> 06:50.850
+Very very cool.
+
+06:50.870 --> 06:53.270
+There's still a few more things that we need to learn.
+
+06:53.350 --> 06:54.670
+So I'll see you in the next video.

@@ -1,0 +1,247 @@
+WEBVTT
+
+00:01.070 --> 00:01.610
+All right.
+
+00:01.640 --> 00:03.020
+How was that.
+
+00:03.020 --> 00:05.450
+Hopefully you were able to figure it out.
+
+00:05.510 --> 00:06.770
+If not don't worry.
+
+00:06.770 --> 00:18.370
+Here's the solution what I'm going to do here is just keep the P Y PD f import and start from scratch.
+
+00:18.570 --> 00:25.560
+The first thing I want to do is I want to grab this super dope EDF that we're going to process.
+
+00:26.010 --> 00:35.460
+So again I'll just call it the template and this template will be the P Y PD f we'll use the PD f file
+
+00:35.610 --> 00:42.280
+reader object and I'll actually show you a little shortcut instead of just opening it the way we have
+
+00:42.280 --> 00:52.590
+been before we can just inside of here say open and then say super dot PD F which is why we're going
+
+00:52.590 --> 01:02.630
+to open and then open it with the second parameter being read binary just like this.
+
+01:02.760 --> 01:05.580
+We're going to create a file reader.
+
+01:05.610 --> 01:08.250
+Now you can do it this way or the way that I've shown you before.
+
+01:08.280 --> 01:13.680
+This is just a cleaner syntax that I like using next.
+
+01:13.680 --> 01:22.030
+I also want to open up the watermark PDA so I'm going to call it watermark and again we're going to
+
+01:22.300 --> 01:23.250
+use the same thing.
+
+01:23.260 --> 01:34.150
+So I'm going to say file reader and instead of opening the super PDA F I'll open the watermark PDA and
+
+01:34.150 --> 01:39.470
+then finally I want to be able to write my output and combine these two.
+
+01:39.520 --> 01:53.560
+So I'm going to say output equals and we'll say pi PD f dot PD f file writer to create our write object
+
+01:53.620 --> 01:56.910
+in memory now from here.
+
+01:56.910 --> 01:58.440
+This is the tricky part.
+
+01:58.470 --> 02:06.680
+Ideally we loop through the pages here of the template and add the watermark to it.
+
+02:06.730 --> 02:11.130
+Now we are not going to know how many pages supercop EDF has.
+
+02:11.170 --> 02:17.800
+I mean we might want to change this program so that we use the command line here to give it a file but
+
+02:17.800 --> 02:24.700
+ideally we want to make a program that is flexible and no matter how many pages the given PDL has we
+
+02:24.700 --> 02:26.580
+can process it.
+
+02:26.580 --> 02:34.770
+So what I'm going to do is use a for loop here and we can also create a function if we want but for
+
+02:34.770 --> 02:40.480
+now because this is going to be just one block of code we can just keep it without a function.
+
+02:40.770 --> 02:50.450
+And I'm going to say for I in range because we don't know how big this file is going to be and what
+
+02:50.450 --> 03:01.780
+I'm going to say is template dot get num pages get nom pages is going to tell me how many pages the
+
+03:01.780 --> 03:03.810
+template has.
+
+03:03.850 --> 03:11.310
+Remember we've also seen the way of saying num pages in a previous lesson but we can just use get num
+
+03:11.310 --> 03:13.870
+pages just to show you something different.
+
+03:13.890 --> 03:19.020
+So now it's going to get the number of pages it's going to create a range objects out of it.
+
+03:19.170 --> 03:20.620
+And we're going to loop through it.
+
+03:20.670 --> 03:28.740
+So if we have five pages it's going to loop five times now in here what we can do is have a page object.
+
+03:28.760 --> 03:34.220
+So we're going to say template get page of the index that we're at.
+
+03:34.220 --> 03:38.210
+So this is going to go through each time and it's going gonna get the first page the first time around
+
+03:38.300 --> 03:43.550
+the second page the third page the fourth page so that we go through everything and that's gonna be
+
+03:43.550 --> 03:44.160
+our page.
+
+03:44.240 --> 03:57.220
+Object next where we're going to do is say page dot merge page and this merge page is simply going to
+
+03:57.220 --> 04:09.550
+get the watermark dot get page at index of 0 because the watermark PD f only has that one page that
+
+04:09.550 --> 04:19.090
+has the watermark so I'm going to merge onto that page the watermark now.
+
+04:19.100 --> 04:27.630
+Notice here that I didn't use the PDA f file merger and also you y merch page works the way it does
+
+04:28.380 --> 04:33.460
+when we finished a project but you can use either one.
+
+04:33.570 --> 04:40.920
+The key here with merch page is that I like the PDA file merger which combines the files one after another
+
+04:41.240 --> 04:46.860
+merge page actually well merge as the page like we want with the watermark.
+
+04:46.860 --> 04:52.800
+Now this is something that you would have had to read through the documentation if you tried the exercise
+
+04:52.830 --> 04:53.820
+on your own.
+
+04:53.820 --> 04:59.390
+Again one of those things that you just have to practice that muscle finally.
+
+04:59.410 --> 05:09.390
+Now that we have the page we can say output which is the PDA rider that we're gonna have our output
+
+05:10.170 --> 05:20.500
+will be the ad page and we're going to add this page that we've merged and now finally what we can do
+
+05:20.500 --> 05:35.470
+in here is say with open and we'll call this new PD f let's call it watermarked output dot PD f we're
+
+05:35.470 --> 05:39.920
+going to say right binary and we're gonna call it as
+
+05:43.200 --> 05:43.520
+so then.
+
+05:43.520 --> 05:51.690
+Now if we do output dot right and right this file let's see what happens.
+
+05:51.750 --> 05:56.590
+I'm going to run my program and then go nowhere.
+
+05:56.640 --> 05:57.470
+Let's see if it worked.
+
+05:57.500 --> 06:00.380
+We see that we have a watermarked output now.
+
+06:00.500 --> 06:02.960
+Again this is gibberish but if we open this
+
+06:06.020 --> 06:10.440
+check that out we have our dummy PDA file.
+
+06:10.690 --> 06:13.140
+We have the draft over here on the second page.
+
+06:13.270 --> 06:18.910
+Third page and even the fourth page with the rotation.
+
+06:18.910 --> 06:20.840
+How cool is that.
+
+06:20.860 --> 06:28.430
+We just created a PDA off watermark or that was quite simple right again.
+
+06:28.510 --> 06:34.030
+If this is confusing and you're saying Hey Andre I didn't get this am I a bad programmer.
+
+06:34.150 --> 06:34.900
+No you're not.
+
+06:34.900 --> 06:38.690
+This is very library specific right.
+
+06:38.830 --> 06:42.620
+You're never gonna get asked this exact syntax in an interview.
+
+06:42.640 --> 06:46.790
+Instead you read the documentation you want to merge pages.
+
+06:46.810 --> 06:54.880
+So you Google something like merge page on the official documentation of a library and you figure out
+
+06:55.840 --> 06:58.720
+hey merge pages right here.
+
+06:58.840 --> 07:01.220
+I can read one merge page does that is we see.
+
+07:01.240 --> 07:04.660
+Oh yeah merges the content streams of two pages into one.
+
+07:04.660 --> 07:04.980
+All right.
+
+07:05.020 --> 07:05.980
+That's what we need.
+
+07:05.980 --> 07:06.900
+So that's what we use.
+
+07:06.910 --> 07:12.190
+And you experiment go back and forth until you have a working project.
+
+07:12.280 --> 07:13.200
+There you have it.
+
+07:13.270 --> 07:15.640
+You can now work in Hollywood.
+
+07:15.640 --> 07:16.770
+Congratulations.
+
+07:16.780 --> 07:18.750
+I'll see you in the next video.
+
+07:18.780 --> 07:19.030
+Bye bye.

@@ -1,0 +1,280 @@
+WEBVTT
+
+00:00.480 --> 00:01.900
+Welcome back.
+
+00:01.920 --> 00:06.560
+Let's continue with lists now so far the square brackets.
+
+00:06.570 --> 00:07.830
+We've seen them before right.
+
+00:07.830 --> 00:12.670
+We saw them when working with strings and just like strings.
+
+00:12.690 --> 00:20.270
+Lists are quite similar in that we can use list slicing.
+
+00:20.280 --> 00:25.260
+If you remember with String slicing we have things like hello.
+
+00:25.590 --> 00:32.760
+And we were able to assign into a string let's say a variable string and we could do a string and then
+
+00:32.760 --> 00:33.900
+slice.
+
+00:33.900 --> 00:43.500
+So do something like this where we had the start the stop and then the step through so that we start
+
+00:43.500 --> 00:49.880
+at index of 0 and end at index of 2 and then go one by one.
+
+00:50.060 --> 00:54.890
+So list slicing is also available to us.
+
+00:54.890 --> 01:00.890
+So let's make this card a little bit bigger and you can actually just make things cleaner by formatting
+
+01:01.460 --> 01:03.380
+it this way.
+
+01:03.400 --> 01:03.580
+All right.
+
+01:03.580 --> 01:05.910
+So what should we add to our cart.
+
+01:05.920 --> 01:13.600
+We'll also add some toys and then you know what Amazon does groceries now so let's add some Delicious
+
+01:13.600 --> 01:15.010
+grapes.
+
+01:15.070 --> 01:16.170
+Awesome.
+
+01:16.180 --> 01:23.570
+Now let's say I wanted to get every single item in the cart while we just simply do this and we have
+
+01:24.260 --> 01:25.540
+our entire list.
+
+01:25.670 --> 01:34.140
+But let's use some list slicing let's say I wanted to grab from the first item to the second item.
+
+01:34.140 --> 01:43.430
+If I click Run I get notebooks and sunglasses maybe I want to go all the way till the end.
+
+01:43.430 --> 01:50.410
+But skip every second one I get notebooks and toys.
+
+01:50.410 --> 01:51.640
+We started zero.
+
+01:51.640 --> 01:55.530
+We step over to toys and we step over and we're done.
+
+01:56.380 --> 01:57.130
+Awesome.
+
+01:57.130 --> 02:04.190
+And this is something that we've already seen when talking with strings OK but here is where it gets
+
+02:04.250 --> 02:05.400
+interesting.
+
+02:05.420 --> 02:08.870
+Remember how I said that strings are immutable.
+
+02:08.870 --> 02:10.990
+That means we can't change them.
+
+02:11.150 --> 02:11.940
+Right.
+
+02:11.960 --> 02:17.030
+And we talked about this when we had a string like Hello.
+
+02:17.270 --> 02:22.580
+I couldn't do greet zero equals to let's say Z.
+
+02:22.760 --> 02:24.710
+I'd get an error here.
+
+02:24.710 --> 02:28.960
+I get SDR object does not support item assignment.
+
+02:29.390 --> 02:31.010
+It's immutable.
+
+02:31.190 --> 02:41.270
+But the interesting thing with lists is that they are mutable so that if I change my Amazon cart and
+
+02:41.270 --> 02:47.300
+say that you know what I don't really want notebooks so I'm going to grab the first item which is notebooks
+
+02:47.690 --> 02:49.250
+and instead of notebooks.
+
+02:49.360 --> 02:50.490
+Hi.
+
+02:50.690 --> 02:51.880
+What do we want.
+
+02:51.890 --> 02:53.910
+We'll say we want a new laptop.
+
+02:53.910 --> 02:54.680
+It's a big upgrade.
+
+02:56.090 --> 02:58.330
+When I print this Amazon cart
+
+03:01.440 --> 03:02.080
+look at that.
+
+03:02.220 --> 03:05.090
+I'm able to change this list.
+
+03:06.850 --> 03:09.970
+And it didn't give me an error in that sense.
+
+03:09.970 --> 03:11.330
+Lists are immutable.
+
+03:11.350 --> 03:16.420
+We simply replace on the memory bookshelf of our computer notebooks.
+
+03:16.420 --> 03:18.250
+And I say Hey change it to a laptop.
+
+03:18.520 --> 03:21.260
+And they let us do that OK.
+
+03:21.270 --> 03:23.490
+So that's awesome.
+
+03:23.490 --> 03:25.190
+But let's try something here.
+
+03:26.310 --> 03:35.520
+What if I create a now they're print here and in the Amazon cart I'll use list slicing to let's say
+
+03:35.820 --> 03:45.240
+I want to item from index of one all the way until index of three let's run this and see what happens.
+
+03:45.260 --> 03:45.920
+Try and guess
+
+03:49.360 --> 03:51.600
+is that what you expected.
+
+03:51.640 --> 03:55.480
+Let's go through this code when we get to line 10.
+
+03:55.820 --> 04:07.590
+We grab the Amazon cart which has been updated with laptop and I grab item 1 2 3 2 that is sunglasses
+
+04:08.940 --> 04:16.230
+to toys so 0 1 2 and then we stop at 3 just to make this easier to understand.
+
+04:16.230 --> 04:24.960
+Let's start off with zero here so that we see that laptop has been changed and then here in the second
+
+04:24.960 --> 04:31.780
+one online eleven we print the Amazon cart but hold on a second.
+
+04:31.850 --> 04:41.630
+This list did not change and that is because with list slicing we're creating a new list a new copy
+
+04:41.750 --> 04:43.180
+of this list.
+
+04:43.250 --> 04:49.970
+So here we're creating an entirely new list so that I could actually assign it to a variable new cart
+
+04:50.450 --> 05:00.760
+is going to be Amazon cart and let's just do the same thing here and new cart is an entirely new list
+
+05:00.790 --> 05:02.020
+on its own.
+
+05:02.050 --> 05:13.740
+I could change a new cart let's say zero into let's say gum and if I print this you see that I have
+
+05:13.830 --> 05:21.990
+two new separate lists but a list is mutable because I can change whatever is at the index anytime I
+
+05:21.990 --> 05:23.250
+want.
+
+05:23.250 --> 05:32.380
+And every time we do list slicing we create a new copy of that list but I have a tricky question for
+
+05:32.380 --> 05:36.550
+you here what happens if I just do this
+
+05:39.630 --> 05:45.140
+if I run this.
+
+05:45.210 --> 05:53.900
+Did you see that instead of slicing my list I simply said that new cart is going to equal the Amazon
+
+05:54.050 --> 06:04.200
+cart and I changed a new cart index of 0 2 equal to gum but now my Amazon cart got modified as well.
+
+06:04.980 --> 06:12.600
+Why is that and this is a bit of a tricky question that you might encounter in an interview.
+
+06:13.680 --> 06:22.350
+The reason is that right now the way that I did equals means that hey new cart is going to equal Amazon
+
+06:22.350 --> 06:23.110
+cart.
+
+06:23.340 --> 06:26.300
+And what does Amazon cart equal to.
+
+06:26.310 --> 06:34.020
+Well Amazon cart points somewhere in memory in our machines that says hey this is what Amazon cart is.
+
+06:34.020 --> 06:36.690
+So because here we're not copying the list.
+
+06:36.690 --> 06:44.350
+Instead we're just saying hey the value of new card is whatever is in the memory of Amazon cart we now
+
+06:44.830 --> 06:52.920
+when we modify a new cart are simply changing the Amazon cart all the way back from here.
+
+06:52.960 --> 06:55.100
+So this is an important concept.
+
+06:55.300 --> 07:04.210
+If you want to let's say copy a list then you do something like this where you copy the entire list
+
+07:04.480 --> 07:11.150
+and this is something that you'll see a lot in code bases but this line is saying hey I want to create
+
+07:11.150 --> 07:20.000
+a copy use list slicing to copy this Amazon cart and it's going to equal new cart so that now if I run
+
+07:20.000 --> 07:26.100
+this you'll see that the original Amazon cart stays the same.
+
+07:26.440 --> 07:29.360
+But the new cart is now something different.
+
+07:30.140 --> 07:31.750
+This is a quick Gotcha.
+
+07:31.760 --> 07:34.910
+They just have to get used to but it's an important concept.
+
+07:34.970 --> 07:43.310
+This idea of copying vs. modifying the list and it's something we'll explore a little bit more in the
+
+07:43.310 --> 07:47.620
+next couple of videos for now take a break and I'll see you in the next one by.

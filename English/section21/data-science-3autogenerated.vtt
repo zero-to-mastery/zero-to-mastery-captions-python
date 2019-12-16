@@ -1,0 +1,379 @@
+WEBVTT
+
+00:00.960 --> 00:01.950
+Welcome back.
+
+00:01.950 --> 00:06.570
+We finally created some data that our boss can finally use.
+
+00:06.570 --> 00:10.000
+The difference between wage and value of a soccer player.
+
+00:10.200 --> 00:12.390
+But this is kind of hard to read.
+
+00:12.390 --> 00:20.470
+Wouldn't it be nice if we can visualize this data and that is a big thing that a data scientist does.
+
+00:20.540 --> 00:28.880
+It analyzes the data understands the data cleans the data but at the end of the day if you want to present
+
+00:28.880 --> 00:35.270
+this to anybody you need it in a format that is easily understandable for somebody that might not be
+
+00:35.510 --> 00:37.380
+a data science expert.
+
+00:37.430 --> 00:40.010
+So let's visualize this.
+
+00:40.010 --> 00:47.720
+Now we talked about map plot lib which is what is often used to visualize this data.
+
+00:47.720 --> 00:54.260
+Now this library is very extensive and you can read the documentation on your own but a ton of other
+
+00:54.260 --> 01:01.460
+libraries have been built on top of it to simplify and make it easier for us to visualize data.
+
+01:01.460 --> 01:07.210
+One of these libraries is called Seabourn and is really really easy to use.
+
+01:07.220 --> 01:11.890
+Let me show you so we have this data.
+
+01:11.890 --> 01:21.040
+If we go to a new cell block and just a reminder here the way Jupiter notebooks works is that it has
+
+01:21.040 --> 01:22.910
+to run all these inputs.
+
+01:22.930 --> 01:31.510
+If you refresh Jupiter notebooks and you have a notebook and just click on run for one cell it won't
+
+01:31.780 --> 01:34.700
+have the previous cells in memory.
+
+01:34.840 --> 01:42.310
+So you have to make sure that all these cells are run in order for you to execute this part because
+
+01:42.550 --> 01:49.350
+if you just restarted Jupiter notebooks it won't have any of this in memory but Anyway just wanted to
+
+01:49.350 --> 01:58.120
+make that note in case you have an error let's use Seabourn to visualize the data we have above.
+
+01:58.140 --> 02:05.160
+So again seaborne you can just read the documentation and there's tons of tutorials online they can
+
+02:05.160 --> 02:09.120
+follow but I'll just show you the easy way of doing it.
+
+02:09.210 --> 02:11.580
+So we're going to import Seabourn.
+
+02:11.790 --> 02:20.450
+We're going to setup sea borne by just running set and now we can just create a variable graph and call
+
+02:20.510 --> 02:27.830
+S and S or sorry I should do borne as I said s just so we don't have to write Seabourn every time.
+
+02:27.950 --> 02:34.490
+So as an S dot set and then we're going to say graph equals S.A. and we're going to use the scatter
+
+02:34.490 --> 02:38.930
+plot as the graphing method that we want to use.
+
+02:39.080 --> 02:46.330
+And on the x axis we're going to use the wage and on the y axis.
+
+02:46.790 --> 02:55.700
+We're going to use the value and the data we're going to use for the graph is going to be data frame
+
+02:55.790 --> 02:58.940
+1 which is what we have up here.
+
+02:58.940 --> 03:03.740
+So if I run this all right we should have the graph now.
+
+03:03.760 --> 03:05.730
+So let's actually print it out.
+
+03:05.740 --> 03:10.150
+If I click Run look at that.
+
+03:10.390 --> 03:19.600
+How easy was that seaborne was imported for me and all I had to do is say what graph I wanted.
+
+03:19.610 --> 03:20.780
+What were the values.
+
+03:20.780 --> 03:24.230
+So that is the x axis and the y axis.
+
+03:24.230 --> 03:30.400
+And what data we want to use and all of a sudden I have a graph.
+
+03:30.550 --> 03:32.950
+How cool is that.
+
+03:32.990 --> 03:34.440
+Just like that.
+
+03:34.460 --> 03:42.920
+Using some really nice Python libraries I now have a notebook that shows my progress of exploring this
+
+03:43.130 --> 03:46.040
+data but we have one problem here.
+
+03:46.040 --> 03:52.370
+You see I have all these scattered dots but I don't really know what they mean.
+
+03:52.370 --> 03:59.030
+Wouldn't it be cool if there's a way for us to hover and actually see which player represents the dot.
+
+03:59.060 --> 04:05.540
+Well we can do that with a another library and this one is called bouquet bouquet.
+
+04:06.260 --> 04:13.370
+It's a hard one to say book bouquet whatever you want to call it is another library that allows us to
+
+04:13.370 --> 04:17.510
+actually have interactive visualizations.
+
+04:17.540 --> 04:28.460
+So again if I go back I can use it in a similar fashion that I did with Seabourn I simply say from bouquet
+
+04:29.410 --> 04:34.700
+poke it's going to be really hard to say and I'm going to say dot plotting.
+
+04:35.060 --> 04:37.830
+So form the plotting library.
+
+04:37.880 --> 04:51.670
+I'm going to import the figure and show functions and then also from the bouquet dot models I'm going
+
+04:51.670 --> 04:57.380
+to import the hover tool which is going to allow us to hover over these things again.
+
+04:57.400 --> 05:02.340
+You don't have to memorize these if you go to the documentation and look at the quick start.
+
+05:02.350 --> 05:05.210
+You'll actually see this or you can even google for it.
+
+05:05.950 --> 05:13.280
+So if we actually go to the quick start guide you see that we have the two libraries that we import
+
+05:13.330 --> 05:19.510
+plotting and models and it shows you how to get started quickly as a matter of fact that we can just
+
+05:19.570 --> 05:24.930
+copy and paste this line which allows us to plot title and x axis.
+
+05:24.970 --> 05:40.060
+So let's do that and I'm going to give the title as soccer 20 19 the x axis label will be wage and the
+
+05:40.060 --> 05:47.630
+y axis label will be value and in here I can give it different parameters that perhaps I want for example
+
+05:47.630 --> 05:59.000
+I can say plot width for how many pixels I want my plot with to be and same with plot height we'll say
+
+05:59.000 --> 06:03.130
+we want that to be also seven hundred pixels.
+
+06:03.380 --> 06:09.830
+And then finally I can say what type of tools I want to use in our case we're going to create a hover
+
+06:10.010 --> 06:12.860
+tool so that we can hover over this
+
+06:16.950 --> 06:28.480
+so this will be our graph right now next if I do p dot show or actually the way I would work is we do
+
+06:28.480 --> 06:34.790
+the show that we import from here and we run it like this.
+
+06:35.230 --> 06:44.920
+And you know what for now let's not use any of the hover tools if I click run here but looks like I
+
+06:44.920 --> 06:48.070
+have bit of a mistake here.
+
+06:48.070 --> 06:49.470
+I delete this show by mistake.
+
+06:49.500 --> 06:52.570
+Let's click Run and look at that.
+
+06:52.690 --> 06:58.110
+It actually opens up a new HCM all file for me so that this could be interactive.
+
+06:58.120 --> 07:00.430
+But right now it's empty.
+
+07:00.430 --> 07:08.170
+We actually have to draw the circles of our plot but we have wage and value and the title soccer 2019
+
+07:08.950 --> 07:13.380
+if we go to the quick start we see that we can do lines
+
+07:17.720 --> 07:26.590
+and we can do circles as well with a different type of options and because we're doing a scatter plot
+
+07:26.830 --> 07:29.020
+let's do exactly that.
+
+07:29.020 --> 07:39.450
+I'll go back and in here say that I want the circles that we're going to create and again don't get
+
+07:39.450 --> 07:41.300
+too confused if this is new to you.
+
+07:41.300 --> 07:46.830
+Again this is all just a library and the documentation that you have to read if you want to get familiar
+
+07:46.830 --> 07:58.770
+with it so we'll have the circles wage and value so that is the x axis and the y axis values of the
+
+07:58.770 --> 08:05.940
+circles and then we'll say size we can give it a size of let's say 10 for now and the source of the
+
+08:05.940 --> 08:08.730
+data will be from D F 1.
+
+08:08.760 --> 08:12.810
+So that's why we want the circles to contain.
+
+08:12.810 --> 08:18.810
+If I now run this well I may have spell something wrong.
+
+08:18.810 --> 08:20.000
+This should be size.
+
+08:20.130 --> 08:20.940
+If I click Run
+
+08:24.430 --> 08:29.800
+look at that I have my data points which is great.
+
+08:29.820 --> 08:34.030
+Which is what we have before we have a new HMO file that's generated.
+
+08:34.260 --> 08:43.520
+But I want to be able to hover so if I go to let's close this for now if I go to the quick start guide
+
+08:43.580 --> 08:48.350
+and let's just search for hover we see that do we have the hover tool
+
+08:51.630 --> 08:56.470
+and we have all these options that we can use for a hovering again.
+
+08:56.530 --> 09:04.970
+Do I like this one but I will show you the basic syntax essentially while we want to do is we use the
+
+09:05.000 --> 09:11.130
+hover to equal the hover tool that we're importing.
+
+09:11.130 --> 09:20.420
+And in here we can say that the tool tips is going to equal a list that contains some couples.
+
+09:20.580 --> 09:23.340
+So it looks like we can use the tool tip like this.
+
+09:23.370 --> 09:28.790
+So let me just copy this so we have the tool tips.
+
+09:29.010 --> 09:38.280
+We have the index and then the x and y axis in our case it's wage and value and we'll change this to
+
+09:38.640 --> 09:47.870
+wage and value and we don't care about the ordering but we actually want to add another field which
+
+09:47.870 --> 09:54.020
+is the name of the player from the data.
+
+09:54.040 --> 10:03.560
+So as you can see in the hover tool tips section were four basic tool tips I'll show you exactly what
+
+10:04.490 --> 10:07.400
+each value represents and how you can represent it.
+
+10:07.400 --> 10:10.040
+And you have the dollar signs and the ad signs.
+
+10:10.040 --> 10:15.770
+So in our case we want to individually have the wage and the value displayed here.
+
+10:16.610 --> 10:24.350
+So we're gonna use the ad sign unlike the x and y dollar sign which just simply gives us the x and y
+
+10:24.560 --> 10:24.920
+value.
+
+10:25.760 --> 10:32.530
+So I'm just gonna change this to the ad side and then finally also have the name property as well.
+
+10:32.540 --> 10:42.190
+Now the final thing we need to do is to just give this tool tips as the tools inside of this figure
+
+10:42.250 --> 10:43.260
+parameter.
+
+10:43.360 --> 10:47.840
+If I now run this well it looks like another area.
+
+10:47.840 --> 10:49.750
+Let's see.
+
+10:49.750 --> 10:52.000
+So it should be a hover tool here
+
+10:56.250 --> 11:01.520
+and give it the array that we want.
+
+11:01.520 --> 11:02.330
+So that if I run
+
+11:05.830 --> 11:11.670
+a look at that we have an interactive plot that we can actually analyze.
+
+11:11.980 --> 11:20.620
+So we see here that Neymar is well has a pretty low wage compared to his value.
+
+11:20.620 --> 11:22.750
+What about messy here.
+
+11:22.840 --> 11:26.670
+Well messy is definitely getting paid a lot compared to his value.
+
+11:26.680 --> 11:33.640
+So you might find some good deals for trades maybe with mopping very very cool.
+
+11:33.640 --> 11:40.890
+Now this is just the tip of the iceberg when it comes to visualization libraries like this.
+
+11:41.000 --> 11:49.200
+There's a lot of trial and error and learning how the library works how to visualize this properly and
+
+11:49.410 --> 11:53.700
+up until now all we've done is this part right.
+
+11:53.700 --> 11:59.380
+We've imported the data and then clean the data and maybe have done some visualizations with it.
+
+11:59.460 --> 12:07.590
+We haven't really done any of these parts yet up until now while we've been doing is mostly data science
+
+12:08.520 --> 12:14.400
+trying to grab data and understand it for business purposes.
+
+12:14.400 --> 12:21.750
+I wanted to explore this dataset a little bit more maybe try out some of these data visualization libraries
+
+12:22.260 --> 12:28.410
+but for now I think we have enough to move on and get into some more machine learning concepts.
+
+12:28.500 --> 12:30.310
+I'll see you in the next one by.

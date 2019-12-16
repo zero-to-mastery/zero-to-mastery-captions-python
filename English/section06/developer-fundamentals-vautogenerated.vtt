@@ -1,0 +1,118 @@
+WEBVTT
+
+00:00.570 --> 00:03.440
+Welcome back to another developer fundamental.
+
+00:03.570 --> 00:05.170
+What is it.
+
+00:05.220 --> 00:10.100
+It's to test your assumptions what I mean by this.
+
+00:10.110 --> 00:16.110
+Well anytime you learn something something new maybe something I'm teaching you or something other instructor
+
+00:16.290 --> 00:23.910
+or book or resource is teaching you you want to test your understanding and your assumptions because
+
+00:24.000 --> 00:29.540
+you don't want to have any magic black box that things are happening that you don't understand.
+
+00:29.550 --> 00:33.540
+You want to know how things are working so you can explain it to people.
+
+00:33.540 --> 00:40.500
+For example remember how I said that self is referring to this player character class.
+
+00:40.620 --> 00:48.340
+How can we test this assumption with code well if I had just learned what self is what I would do is
+
+00:48.340 --> 00:51.170
+to say to myself well I want to see self.
+
+00:51.190 --> 00:52.810
+I want to know what it is.
+
+00:53.110 --> 01:02.450
+You know what I'm going to return here self and actually see what's going to give me right.
+
+01:02.450 --> 01:05.660
+I it's code I can return self if I want to.
+
+01:05.670 --> 01:09.480
+Well let's do that let's create this player character.
+
+01:09.480 --> 01:11.880
+Yes I'm 100 years old.
+
+01:11.880 --> 01:14.810
+And then here we'll do player dot run.
+
+01:15.390 --> 01:22.300
+Let's do a print here and click Run.
+
+01:22.310 --> 01:23.290
+All right.
+
+01:23.330 --> 01:32.810
+So the self is the player character that I created which is player 1 which is located here OK.
+
+01:32.870 --> 01:40.520
+So although this is a simple example what I'm doing as I'm learning is to test my assumption is that
+
+01:40.610 --> 01:44.990
+what I expected before I even run this code I like to think my head.
+
+01:45.170 --> 01:47.200
+What do you think is going to happen.
+
+01:47.720 --> 01:54.960
+And if there's a mismatch and I get something returned that I do understand well then maybe I look into
+
+01:54.960 --> 01:55.470
+it.
+
+01:55.490 --> 02:01.160
+For example this underscore underscore mean I still don't really know what this is.
+
+02:01.160 --> 02:03.030
+Why is it is this here.
+
+02:03.080 --> 02:05.020
+I mean it has to be there for a reason.
+
+02:05.030 --> 02:05.840
+Right.
+
+02:05.900 --> 02:09.890
+And that's something that we're actually going to talk about later on in the course when we talk about
+
+02:10.190 --> 02:11.190
+modules.
+
+02:11.390 --> 02:13.070
+So hang in there.
+
+02:13.070 --> 02:20.120
+But the way that learning happens in an accelerated fashion is when you don't just take my word for
+
+02:20.120 --> 02:24.290
+it because if you do that you don't fully grasp the concept.
+
+02:24.380 --> 02:32.570
+The idea is to test and test yourself as well and your understanding and say if my assumption is that
+
+02:32.660 --> 02:38.100
+self is referring to the object that we create how can we tested.
+
+02:38.330 --> 02:43.850
+And this is a great skill that a great programmer has.
+
+02:43.880 --> 02:49.820
+So hopefully in future lessons when I'm teaching you something you test those assumptions you test your
+
+02:49.820 --> 02:53.140
+learning through methods like this.
+
+02:53.360 --> 02:54.110
+I'll see you in the next one.

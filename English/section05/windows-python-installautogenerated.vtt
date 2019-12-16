@@ -1,0 +1,145 @@
+WEBVTT
+
+00:00.630 --> 00:01.630
+Welcome back.
+
+00:01.650 --> 00:09.510
+It's finally time to install Python the Python interpreter that we've been talking about for so long
+
+00:10.650 --> 00:12.280
+and if you're on Windows.
+
+00:12.280 --> 00:14.770
+This video is going to help you get set up.
+
+00:15.600 --> 00:17.000
+We're going to go to Python.
+
+00:17.060 --> 00:18.180
+Dot org.
+
+00:18.210 --> 00:26.400
+Click on downloads and make sure that we're downloading for Windows we're simply going to click and
+
+00:26.400 --> 00:30.440
+I'm going to run the installer.
+
+00:30.460 --> 00:31.240
+All right.
+
+00:31.240 --> 00:35.350
+Now this is really really important on Windows.
+
+00:35.350 --> 00:40.320
+You want to make sure that you click on Add Python to path.
+
+00:40.330 --> 00:48.940
+What this is going to allow us to do is to actually open up Python and use python from the command prompt.
+
+00:48.940 --> 00:52.030
+I'll show you that once we install this how it works.
+
+00:52.030 --> 01:00.940
+But make sure you click on this and also to install a launcher for all users which is recommended so
+
+01:00.940 --> 01:08.850
+I'm going to click install now and yes we'll say go ahead.
+
+01:08.870 --> 01:14.840
+Now you want to install based on your system you might have an older version of Windows a newer version.
+
+01:15.080 --> 01:21.470
+Usually the python dot or Web site will detect your machine and know what to install but obviously install
+
+01:21.470 --> 01:27.620
+according to why you have in my case it's a 32 bit system.
+
+01:27.640 --> 01:28.910
+All right come on.
+
+01:28.910 --> 01:31.150
+All right setup was successful.
+
+01:31.150 --> 01:33.040
+Let's close.
+
+01:33.040 --> 01:41.590
+And then what I want to do is actually use the command prompt yes I'm going to type into search command
+
+01:42.250 --> 01:42.640
+prompt
+
+01:46.140 --> 01:47.370
+if I click here.
+
+01:47.550 --> 01:54.910
+And now if I type in python a check that out we have Python working.
+
+01:55.680 --> 01:56.730
+Awesome.
+
+01:56.730 --> 02:06.680
+Now on windows you can also use something called Power shell and power Shell is actually well I prefer
+
+02:06.680 --> 02:14.730
+it over command prompt because the same commands that work on a Linux machine or a Mac will work on
+
+02:14.730 --> 02:15.950
+power shell.
+
+02:15.960 --> 02:21.000
+So again if I do Python here and hit enter.
+
+02:21.000 --> 02:21.690
+Look at that.
+
+02:21.690 --> 02:23.820
+Python is working as well.
+
+02:23.820 --> 02:31.740
+So if you have Windows and you have power shell available I do recommend you use partial because the
+
+02:31.740 --> 02:41.130
+commands that I use in the course will most likely work with partial another option for Windows is something
+
+02:41.130 --> 02:43.220
+called Get bash.
+
+02:43.260 --> 02:46.740
+So if I do get bash so forget bash.
+
+02:46.740 --> 02:56.870
+If you go to get four windows you'll see here that it comes with get bash which underneath the hood
+
+02:57.620 --> 02:58.240
+what it is.
+
+02:58.250 --> 03:06.650
+It's an emulation a bash emulation which is a shell to allow us to use Unix commands that can be used
+
+03:06.650 --> 03:14.570
+and Mac or on Linux on the windows machine so that if you ever watch it tutorial where the instructor
+
+03:14.570 --> 03:18.510
+is using a Mac for example you can use those same commands.
+
+03:18.650 --> 03:25.760
+So to review we have the option of using get bash if you want or you have the option of using command
+
+03:25.760 --> 03:29.760
+prompt or my personal favorite power show.
+
+03:30.660 --> 03:38.340
+So if you have partial on your device then I recommend using that if not get bash but because during
+
+03:38.340 --> 03:47.340
+our install clicked on that checkbox that says hey add Python to our path variable we're able to run
+
+03:47.400 --> 03:54.810
+this python command and actually enter the python wrap something that will become useful and you'll
+
+03:54.810 --> 03:58.000
+see why it's useful as we go through the course.
+
+03:58.170 --> 04:01.730
+But for now let's take a break and I'll see in the next video by.

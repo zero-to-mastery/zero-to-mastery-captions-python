@@ -1,0 +1,436 @@
+WEBVTT
+
+00:00.450 --> 00:01.260
+Welcome back.
+
+00:01.260 --> 00:02.000
+How was it.
+
+00:02.010 --> 00:02.790
+Was it tough.
+
+00:02.790 --> 00:09.160
+I hope you don't hate me for making it a little bit tough but it's going to be a good thing and remember
+
+00:09.310 --> 00:12.100
+if you didn't get it right away it's not a big deal.
+
+00:12.100 --> 00:16.060
+This is how we learn so let's make this a little bit bigger.
+
+00:16.060 --> 00:16.960
+There you go.
+
+00:16.960 --> 00:23.500
+And start off with our first step which is to grab these two arguments that we're going to have to use.
+
+00:24.400 --> 00:33.540
+So how can we do this well the first thing we're going to do is let's say path which is the first path
+
+00:33.660 --> 00:47.110
+of our images or let's just call it image folder in this image folder is going to use sis dot ARG V
+
+00:47.560 --> 00:54.620
+which is the arguments and remember the arc V is this is the first one which is the python file.
+
+00:54.760 --> 00:55.700
+This is the second.
+
+00:55.750 --> 00:58.270
+And this is the third the way programming works.
+
+00:58.270 --> 01:00.920
+We start with zero then one then two.
+
+01:00.940 --> 01:10.430
+So we're going to say is our v one here and then for the second one which is the output folder it's
+
+01:10.430 --> 01:14.190
+going to be says Dot ARG v 2.
+
+01:14.240 --> 01:20.370
+So I always like testing what we've done because we want to make sure that our assumptions are correct.
+
+01:20.390 --> 01:31.850
+So let's just print image folder and output folder and let's just run this file.
+
+01:31.870 --> 01:32.420
+All right.
+
+01:32.420 --> 01:32.790
+Look at that.
+
+01:32.810 --> 01:36.640
+We get pokie decks and new it looks like this is working.
+
+01:37.280 --> 01:37.640
+Awesome.
+
+01:37.640 --> 01:39.200
+So we did the first desk.
+
+01:39.410 --> 01:42.510
+What about the second one.
+
+01:42.670 --> 01:47.370
+The second one is to check if this new folder exists.
+
+01:47.380 --> 01:52.170
+If not we need to create it so we can use it in here to put images.
+
+01:52.180 --> 02:00.610
+So again this sounds like an if statement so I'm going to say if and then check if the folder exists
+
+02:01.770 --> 02:05.840
+so the way we can do that is using the OS module.
+
+02:05.860 --> 02:09.790
+Now there's also the path lip module that you can use.
+
+02:09.790 --> 02:13.540
+It's completely up to you now with the OS.
+
+02:13.580 --> 02:23.900
+What we can do is say OS dot path dot exists and this is just going to check Hey does this exist.
+
+02:23.910 --> 02:25.930
+So I'm going to say output folder.
+
+02:26.190 --> 02:33.670
+Does this exist so let's just see what the output of this is.
+
+02:33.670 --> 02:37.510
+So before I even do the if statement again I like testing my code.
+
+02:37.660 --> 02:49.860
+So I'm going to say if OS path exists or sorry instead of if we want print let's run this and we get
+
+02:49.980 --> 02:54.230
+false why is it false because it doesn't exist.
+
+02:54.270 --> 02:59.290
+So in order for if statement to work we actually have to do this.
+
+02:59.310 --> 03:06.030
+We have to say if not because we want to get the opposite.
+
+03:06.030 --> 03:06.810
+Right.
+
+03:06.840 --> 03:14.190
+So if this doesn't exist then we want to convert this to true so that we can do something within this
+
+03:14.190 --> 03:16.970
+block which is to create the folder.
+
+03:17.070 --> 03:20.190
+So how can we do that once again.
+
+03:20.210 --> 03:30.020
+We use the OS module and we use the make does or make directory method and we just give it the directory
+
+03:30.050 --> 03:32.280
+output folder.
+
+03:32.490 --> 03:37.890
+So again let's test our code and if I run this look at that.
+
+03:37.890 --> 03:47.100
+We have the new folder awesome and this way if I run this code again we see that we don't create another
+
+03:47.100 --> 03:53.010
+folder because while we're just checking this and because this folder exists now we're not going to
+
+03:53.010 --> 03:57.710
+duplicate and make another folder awesome.
+
+03:57.740 --> 04:00.150
+So step by step we're making headway.
+
+04:00.650 --> 04:06.360
+And again you may be asking yourself hold on Andre I never learned about make Ders How do I do that.
+
+04:06.380 --> 04:13.280
+And again this is something that you just have to practice where you look up what the module does and
+
+04:13.280 --> 04:15.940
+you google around and this is how you figure things out.
+
+04:15.950 --> 04:19.040
+Nobody has things memorized as a program.
+
+04:19.040 --> 04:20.000
+Don't hate me.
+
+04:20.000 --> 04:24.390
+I'm just helping you practice that muscle all right.
+
+04:24.390 --> 04:31.540
+Last part last part is to loop through the pokie tax grab each image and convert it and save it to the
+
+04:31.540 --> 04:32.350
+new folder.
+
+04:32.920 --> 04:34.260
+So how can we do that.
+
+04:34.480 --> 04:39.710
+While we do a for loop and we'll say file name in.
+
+04:40.000 --> 04:52.290
+And then again we'll use the OS dot list directory and this is going to be the items in the directory.
+
+04:52.360 --> 05:01.850
+So with list there what we can do is just give it the image folder and then here we now have each of
+
+05:01.850 --> 05:06.080
+these file path now in here.
+
+05:06.080 --> 05:11.230
+I can say image equals image dot open.
+
+05:11.480 --> 05:12.740
+And what should we do here.
+
+05:12.740 --> 05:16.400
+Because remember we're going to open this every time.
+
+05:16.400 --> 05:16.700
+Right.
+
+05:17.480 --> 05:22.910
+And this file JPEG to PSG is outside of these folders.
+
+05:22.910 --> 05:30.740
+So we somehow need to open these images at the PO codex.
+
+05:31.020 --> 05:38.700
+But remember we want to use whatever the input is because folder pocket X might not be always the same.
+
+05:38.700 --> 05:44.390
+So instead of grabbing the poke at X folder we'll just simply use an F string.
+
+05:44.550 --> 05:55.370
+And within this f string I'm going to say we want the image folder which is going to give us the pocket
+
+05:55.370 --> 06:02.110
+ax slash and the slash here because we assume that the user going to enter the slash.
+
+06:02.150 --> 06:09.870
+We don't have to include it in here and then give another string which will be the file name which we
+
+06:09.870 --> 06:18.640
+grab from you so we now open these images each one of them and then we can just convert them.
+
+06:18.640 --> 06:18.970
+Right.
+
+06:19.330 --> 06:23.200
+So let's convert them by saying image dot save.
+
+06:23.320 --> 06:27.510
+And once again we're going to use an F string and do the same thing.
+
+06:27.520 --> 06:29.230
+But this time for the output folder.
+
+06:29.290 --> 06:34.130
+So I'm going to say output folder.
+
+06:34.130 --> 06:46.710
+Give it the file name and then comma and then convert it to PSG and just for fun let's just say print.
+
+06:46.710 --> 06:47.790
+All done.
+
+06:47.790 --> 06:53.090
+To let us know that every time an image gets processed we print all done.
+
+06:53.190 --> 06:55.830
+Now we're going to try and run this code.
+
+06:55.930 --> 06:58.490
+There's actually a bug in this code that we're going to have to fix.
+
+06:58.500 --> 07:00.170
+But let's just see what happens.
+
+07:00.210 --> 07:04.280
+So I'm going to run this and there we go.
+
+07:04.310 --> 07:09.180
+We have all done all done all done all done for images.
+
+07:09.440 --> 07:11.090
+And it looks like it worked.
+
+07:11.150 --> 07:12.030
+Right.
+
+07:12.140 --> 07:13.170
+Let's have a look.
+
+07:13.190 --> 07:23.540
+If I go to the new folder here it looks like these are still in j x that's strange.
+
+07:23.570 --> 07:24.520
+Why would that be.
+
+07:24.530 --> 07:29.480
+I thought we should be converting these right.
+
+07:29.490 --> 07:34.030
+Well what if within here the save will do a dot PMG.
+
+07:34.170 --> 07:41.350
+So again let's make this a little bit smaller so we'll say Save Us dot PMG in file format PMG.
+
+07:41.620 --> 07:46.760
+If I run this all right.
+
+07:46.770 --> 07:47.370
+Look at that.
+
+07:47.370 --> 07:53.450
+We now have the images but oh we have got Jay back dot PDG.
+
+07:53.610 --> 07:55.770
+What's going on here.
+
+07:55.790 --> 08:00.110
+Well we have to clean our name right.
+
+08:00.150 --> 08:11.350
+So what we need to do is when we grab the image open we need to remove the DOT JPEG from that image
+
+08:11.530 --> 08:14.800
+so we can save it as a P and G.
+
+08:14.920 --> 08:16.390
+So how can we do that.
+
+08:16.420 --> 08:22.270
+And that's something that you may have had to Google because there's actually a useful tool that we
+
+08:22.270 --> 08:25.300
+can use with the OS module that allows us to do this.
+
+08:25.630 --> 08:41.280
+So what we can do is we can say clean name and we'll say OS dot path dot split text and what this is
+
+08:41.280 --> 08:45.070
+going to do is it's going to split the text for us.
+
+08:45.090 --> 08:45.780
+So let me show you.
+
+08:45.780 --> 08:51.820
+I'm going to say file name and in here I'm not going to save anything I'm going to comment this out
+
+08:53.300 --> 09:00.690
+and I just want to print clean name so let's just see what split text does.
+
+09:00.710 --> 09:06.800
+I'm going to clear this and run again and I have an extra teen here.
+
+09:06.810 --> 09:08.490
+It should be split text.
+
+09:09.390 --> 09:13.200
+So let's say that again and look at that.
+
+09:13.200 --> 09:21.510
+It gives me a tumble that splits the text between the name and the extension.
+
+09:21.510 --> 09:22.740
+That's extremely useful.
+
+09:22.740 --> 09:29.670
+So we just need to keep this first part and we don't care about this part so we can just access the
+
+09:29.670 --> 09:32.600
+clean name by saying zero.
+
+09:32.610 --> 09:36.270
+So the first item in the topple.
+
+09:36.300 --> 09:47.400
+So now if I go back to this and instead of fondly we use the Clean name to save the image.
+
+09:47.420 --> 09:48.200
+This should work.
+
+09:48.440 --> 09:51.900
+So let me remove some of the comments here.
+
+09:52.130 --> 09:57.380
+And another thing I want to do is I want to remove all these images because we don't need them anymore.
+
+09:57.380 --> 09:59.530
+We ideally have just PMG images.
+
+09:59.570 --> 10:02.420
+So I'm going to actually remove this new folder.
+
+10:02.420 --> 10:07.270
+So let's say delete OK you can delete it.
+
+10:07.280 --> 10:07.940
+There you go.
+
+10:07.940 --> 10:11.780
+I'm going to save and let's see if this works now.
+
+10:12.920 --> 10:17.450
+Let's run our command all done.
+
+10:17.530 --> 10:20.100
+If we go back Hey check that out.
+
+10:20.170 --> 10:25.280
+All our images are now PMG and you saw how fast that was.
+
+10:25.450 --> 10:29.900
+We just created our first jetpack to PSG converter.
+
+10:29.950 --> 10:35.890
+This file can now convert as long as you give it a folder with you can give it a hundreds of images
+
+10:35.920 --> 10:42.790
+thousands of images of JPEG and it's going to convert them to PMG if you want you can even resize them
+
+10:43.150 --> 10:49.570
+you can even add image filters to them and we're able to do that all with a few lines of code of Python
+
+10:49.960 --> 10:55.780
+and some useful libraries very very cool.
+
+10:55.800 --> 11:00.540
+Now we're just scratching the surface here but you're starting to see the power of Python.
+
+11:00.540 --> 11:05.940
+We have a problem and this problem can be solved with Python and it's libraries.
+
+11:06.060 --> 11:12.900
+And by just doing a bit of googling a little trial and error and debugging our code we just made something
+
+11:12.900 --> 11:18.670
+that could potentially save us a lot of time instead of doing this manually.
+
+11:18.690 --> 11:19.260
+Good job.
+
+11:19.290 --> 11:23.220
+If you've gotten this far this is our first image processing project.
+
+11:23.220 --> 11:24.510
+I hope you're excited.
+
+11:24.510 --> 11:26.590
+There's still lots more to cover.
+
+11:26.910 --> 11:30.800
+But give yourself a pat on the back and I'll see you in the next video.
+
+11:30.800 --> 11:31.050
+Bye bye.

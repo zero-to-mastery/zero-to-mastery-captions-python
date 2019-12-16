@@ -1,0 +1,127 @@
+WEBVTT
+
+00:00.580 --> 00:02.290
+All right all right all right.
+
+00:02.290 --> 00:08.920
+So up until now we've spent for ever talking about numbers and strings and you're thinking oh God we
+
+00:08.920 --> 00:12.040
+have so many more to go through and my head hurts already.
+
+00:12.040 --> 00:16.780
+Well you know what I think you're going to really really like this one because this one's really really
+
+00:16.780 --> 00:25.990
+short and they're called billions and billions in Python is bull and bull.
+
+00:26.280 --> 00:29.240
+Well there's only two options.
+
+00:29.450 --> 00:34.990
+A bull can either be true or false.
+
+00:35.150 --> 00:35.600
+That's it.
+
+00:36.140 --> 00:37.160
+How awesome is that.
+
+00:37.190 --> 00:44.820
+You just learned billions so a billion I can assign to let's say my Facebook profile.
+
+00:45.080 --> 00:56.800
+I can say Andre or I can say name equals Andre and make sure that we form this into a string and then
+
+00:56.860 --> 01:03.670
+I can say bull let's say we're creating an even better social network than Facebook or creating our
+
+01:03.670 --> 01:03.820
+own.
+
+01:04.270 --> 01:13.490
+And this social network also has the is cool option on your user profile and let's say for now it's
+
+01:13.610 --> 01:14.190
+false.
+
+01:14.320 --> 01:21.920
+You see over here that's being highlighted now is cool is set to false but all of a sudden I'm thinking
+
+01:22.250 --> 01:27.090
+my profile doesn't look good if is cool is set to fall so I'm going to change that.
+
+01:27.110 --> 01:30.930
+I'm going to say is cool is now equal to true.
+
+01:30.980 --> 01:35.980
+Now my profile has been changed to is cool is true.
+
+01:36.020 --> 01:38.760
+Hurray and that's it.
+
+01:39.980 --> 01:50.070
+Billions represent this idea of true and false which in programming is kind of like saying 0 and 1 their
+
+01:50.190 --> 01:52.150
+logical values.
+
+01:52.290 --> 01:52.830
+Right.
+
+01:52.850 --> 01:59.040
+There is some logic that we can use and we'll see you when we talk about conditionals in upcoming videos
+
+01:59.310 --> 02:06.450
+where billions become really really useful because we can use billions to control the flow of our program
+
+02:06.690 --> 02:07.870
+to do something.
+
+02:07.980 --> 02:16.680
+If something is true to do another thing if something is false it's a cornerstone of computer science.
+
+02:16.680 --> 02:24.450
+And by the way a topic we're going to explore more and more is this idea of using billions to denote
+
+02:24.720 --> 02:25.240
+logic.
+
+02:25.650 --> 02:34.380
+So for example what do you think a bowl of one converting one two billion would do if I print this and
+
+02:34.380 --> 02:47.500
+I click Run I get true in boolean one means true a zero while that equals false and remember we're just
+
+02:47.500 --> 02:54.940
+simply converting this integer into a bowling value and a boolean well just either false or true nothing
+
+02:54.940 --> 02:55.300
+else.
+
+02:55.330 --> 02:56.510
+That's it.
+
+02:56.510 --> 03:03.320
+And I can also convert a string that says true into a bully and true.
+
+03:03.320 --> 03:07.900
+Again this is something we're going to explore a little bit more when we talk about conditional logic.
+
+03:08.200 --> 03:14.630
+But I wanted to make this video nice and short to let you know that hey not all these data types are
+
+03:14.630 --> 03:17.900
+as complex as well numbers and strings.
+
+03:17.900 --> 03:18.440
+All right.
+
+03:18.440 --> 03:19.290
+Nice and short.
+
+03:19.310 --> 03:20.790
+I'll see in the next one.
+
+03:20.840 --> 03:21.110
+Bye bye.

@@ -1,0 +1,244 @@
+WEBVTT
+
+00:01.460 --> 00:02.540
+Welcome back.
+
+00:02.540 --> 00:06.040
+We just learned what a programming language is.
+
+00:06.110 --> 00:13.700
+It's just set of instructions that we give to a translator and this translator can be an interpreter
+
+00:13.970 --> 00:22.220
+or compiler and we give these files that we create our own code our source code to these translators
+
+00:22.550 --> 00:28.520
+and they allow us to give instructions to machines to computers to phones.
+
+00:28.520 --> 00:35.430
+So we learned that we need these machines in order for us to write Python.
+
+00:35.570 --> 00:36.640
+Right.
+
+00:36.680 --> 00:38.410
+How can we get these.
+
+00:38.450 --> 00:45.980
+Well we download them and here we download python from the Python Software Foundation from Python.
+
+00:45.980 --> 00:54.470
+Dot org now before we download Python we're going to wait a little bit because in this course I want
+
+00:54.470 --> 01:02.120
+you to understand why we're doing things not just follow my tutorials follow my videos and while not
+
+01:02.120 --> 01:08.840
+understand the meaning and the fundamentals behind why we're doing things you should be able to teach
+
+01:09.440 --> 01:10.400
+why you're going to learn.
+
+01:10.940 --> 01:12.890
+So let's take a pause here for a second.
+
+01:13.960 --> 01:20.470
+If this is the first time that you're learning a programming language I have some good news for you
+
+01:21.400 --> 01:22.670
+at the end of the day.
+
+01:22.810 --> 01:28.450
+All programming languages do the same thing and they tell the machine what to do.
+
+01:28.480 --> 01:32.470
+However different languages have different ways of doing it.
+
+01:32.500 --> 01:40.660
+The beauty is that most languages have very similar principles if this is your first programming language.
+
+01:40.660 --> 01:42.500
+Well this is gonna be the hardest part.
+
+01:42.580 --> 01:50.950
+Learning the first one afterwards every new language you learn becomes easier and easier in the sense
+
+01:50.950 --> 01:55.110
+that it's not the same as let's say learning English and Japanese.
+
+01:55.180 --> 02:02.860
+Two very distinct languages in programming things become a lot easier as you learn that first foundational
+
+02:02.920 --> 02:03.990
+language.
+
+02:04.000 --> 02:11.650
+Now if this is not your first language and let's say you've written code in C C++ or JavaScript and
+
+02:11.680 --> 02:16.800
+you just want to learn python well you're going to find these first couple of videos quite easy.
+
+02:16.840 --> 02:21.910
+But bear with me trust me we're gonna get into some advanced topics here and we're gonna make you a
+
+02:21.910 --> 02:26.710
+full fledged developer by the end of this but let's go back to this topic at hand.
+
+02:26.740 --> 02:30.010
+This idea of downloading this translator.
+
+02:30.010 --> 02:37.840
+The thing is when people refer to Python the language they're most likely talking about the implementation
+
+02:38.530 --> 02:41.940
+that is they're talking not about the language itself.
+
+02:41.950 --> 02:45.610
+Because Python the language is just a specification.
+
+02:45.610 --> 02:51.940
+You can think of it as a document that somebody wrote that says hey when I write the words D F that
+
+02:51.940 --> 02:58.510
+means something in Python and when I write something like print that means something in python.
+
+02:58.510 --> 03:01.230
+But the translation machines.
+
+03:01.240 --> 03:10.500
+Well we can have tons of them different interpreters different compilers for example Python dawg.
+
+03:10.680 --> 03:15.740
+When you click download here you're actually downloading this.
+
+03:16.020 --> 03:21.630
+The C Python because it's written in the C programming language.
+
+03:21.750 --> 03:24.720
+This is what you're downloading.
+
+03:24.790 --> 03:37.260
+It's a program written C to read your python file and well run it on a machine but there's other implementations.
+
+03:37.260 --> 03:45.150
+For example there's the GI Thorne project and this is a translator that is written in the Java language
+
+03:46.310 --> 03:51.930
+there's pipeline which is actually written in Python.
+
+03:52.050 --> 03:57.070
+So it's a interpreter It's a translation machine written in Python.
+
+03:57.360 --> 04:04.260
+And then there's also things like irony python which is written for the dot net framework.
+
+04:04.830 --> 04:14.490
+So here's a little trick question when you download from Python the official language is actually see
+
+04:14.490 --> 04:15.360
+python.
+
+04:15.580 --> 04:23.220
+You're downloading this interpreter that follows the python specification but at the end of the day
+
+04:23.220 --> 04:29.900
+it's a machine built by somebody but these machines can well come in many forms.
+
+04:29.980 --> 04:38.620
+So when most people talk about Python they're talking about this one see Python that well does our translation
+
+04:38.620 --> 04:46.530
+for us it interprets our Python code and runs it on a machine.
+
+04:46.530 --> 04:53.420
+So we're downloading this and if you want to really get into details as to what we're downloading what
+
+04:53.440 --> 04:58.810
+we're downloading a machine that takes our Python code which go hurry we're going to write.
+
+04:59.180 --> 05:08.540
+And it goes to the interpreter which we download using C Python and this C Python is going to create
+
+05:08.600 --> 05:18.280
+something called a byte code for example this byte code prints hello world on our screen.
+
+05:18.310 --> 05:21.090
+Now this might look like gibberish to you.
+
+05:21.190 --> 05:23.550
+And even for me I don't know by code.
+
+05:23.710 --> 05:31.200
+This looks pretty well confusing just for printing hello world to the screen while the interpreter does
+
+05:31.200 --> 05:32.740
+that automatically for us.
+
+05:32.760 --> 05:33.960
+We see we don't see it.
+
+05:33.960 --> 05:35.230
+It's behind the scene.
+
+05:35.370 --> 05:44.490
+Now once it creates a bike code that is closer to machine code it then uses the C Python virtual machine.
+
+05:44.640 --> 05:47.990
+Again just something that runs this code.
+
+05:48.090 --> 05:53.390
+And then this code gets run on our machine.
+
+05:53.420 --> 05:57.430
+Now you're never ever going to be asked this question in an interview.
+
+05:57.440 --> 06:04.130
+I mean maybe and most developers don't know this but I want you to use this as a reference that when
+
+06:04.140 --> 06:10.430
+we write Python code throughout the rest of this course this is what's happening.
+
+06:10.430 --> 06:12.310
+We're writing Python.
+
+06:12.350 --> 06:14.720
+It goes gets interpreted.
+
+06:14.750 --> 06:23.570
+Line by line and formed into what we call byte code this bike code gets run on the C Python virtual
+
+06:23.570 --> 06:29.570
+machine which runs on our computers our phones or laptops.
+
+06:29.570 --> 06:36.560
+And when we're downloading from Python dot org we're downloading these two pieces so that once we have
+
+06:36.560 --> 06:40.350
+them downloaded we can run python.
+
+06:40.370 --> 06:41.390
+All right.
+
+06:41.390 --> 06:44.450
+That was a tough one and I mean we just got started.
+
+06:44.450 --> 06:47.370
+I hope your brain is an exploding again.
+
+06:47.420 --> 06:49.990
+This is something for you to use as a reference.
+
+06:50.120 --> 06:51.240
+But you know what.
+
+06:51.260 --> 06:55.410
+I think it's time for us to learn how to actually run Python code.
+
+06:55.520 --> 06:57.230
+And don't worry we are getting there.
+
+06:57.230 --> 07:01.490
+We are going to write our first python program very soon.
+
+07:01.490 --> 07:03.340
+I'll see in the next one by.

@@ -1,0 +1,58 @@
+WEBVTT
+
+00:00.640 --> 00:06.100
+Let's talk about scripting but what do I really mean by scripting.
+
+00:06.100 --> 00:13.750
+This is just a general term to say that while we're writing scripts scripts using Python to do something
+
+00:13.750 --> 00:22.080
+for us to use the power of the machines to help us be more productive more efficient so this section
+
+00:22.110 --> 00:24.890
+is all about making our lives easier.
+
+00:24.900 --> 00:31.050
+Understanding what the power of Python is what we've learned up until now and how we can use it to make
+
+00:31.080 --> 00:33.020
+our lives easier.
+
+00:33.030 --> 00:36.960
+We're going to learn about processing images really efficiently.
+
+00:36.990 --> 00:40.800
+We're going to learn about working with files like PDX.
+
+00:40.890 --> 00:46.040
+We're going to learn how to send e-mails with Python even text messages.
+
+00:46.050 --> 00:48.320
+We're going to build a Twitter board.
+
+00:48.390 --> 00:53.490
+We're also going to build projects along the way to show you all the cool things we can do with Python.
+
+00:53.490 --> 00:59.850
+My favorite project that we're going to build is a super secure password checker to see if our passwords
+
+00:59.850 --> 01:00.960
+have ever been hacked.
+
+01:00.960 --> 01:07.740
+It's a really really neat project but the idea here is that with python using all these libraries and
+
+01:07.740 --> 01:12.930
+modules that have been built by the Python community we can do so much.
+
+01:12.930 --> 01:20.020
+So it's going to be a really exciting section and it's going to open up a whole world of possibilities.
+
+01:20.070 --> 01:24.870
+Molly going to scratch the surface but I guarantee you by the end of it you're going to be really really
+
+01:24.870 --> 01:29.450
+excited and truly understand the power of Python.
+
+01:29.460 --> 01:30.110
+Let's get started.

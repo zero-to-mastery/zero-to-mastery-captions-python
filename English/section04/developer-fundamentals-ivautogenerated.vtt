@@ -1,0 +1,223 @@
+WEBVTT
+
+00:00.570 --> 00:01.410
+It's happening.
+
+00:01.440 --> 00:06.840
+Our next developer of fundamentals and that is what is good code.
+
+00:06.960 --> 00:08.920
+I mean what is good.
+
+00:08.940 --> 00:13.950
+That seems so vague right like when somebody says I'm a good coder I'm an excellent programmer.
+
+00:13.950 --> 00:15.520
+He's a senior programmer.
+
+00:15.540 --> 00:17.100
+He's an expert programmer.
+
+00:17.100 --> 00:18.120
+He's a tech lead.
+
+00:18.120 --> 00:19.530
+He's a genius.
+
+00:19.530 --> 00:22.470
+What what does that really mean.
+
+00:22.470 --> 00:29.630
+Well you can narrow it down to these simple statements what is clean good code.
+
+00:29.700 --> 00:33.760
+I kind of gave it away the first one is clean.
+
+00:33.890 --> 00:41.840
+That is we want to make sure our code is following a style that lets say the Python community endorses.
+
+00:41.840 --> 00:49.550
+Are we following the best practices and Python has this great feature of auto format and Python has
+
+00:49.760 --> 00:54.440
+standard ways of using spaces to make sure that our code is clean.
+
+00:54.470 --> 01:02.630
+I'm not using unnecessarily ugly spaces like this or maybe making lists really weird and funky maybe
+
+01:02.630 --> 01:09.620
+no spaces in between here maybe I have a lot of random comments over here.
+
+01:09.620 --> 01:18.710
+We're keeping our code clean we make sure that every line that we have is easily readable but also we
+
+01:18.710 --> 01:27.180
+don't have any extra stuff that we don't need in and this also relates to the idea of readability.
+
+01:27.460 --> 01:34.500
+Now readability means the ability to want to read your own code maybe two years down the road you're
+
+01:34.500 --> 01:35.820
+going to come back and look at the code.
+
+01:35.830 --> 01:41.680
+Are you gonna be able to understand it if you work in teams or for companies and other co-workers common
+
+01:41.720 --> 01:42.970
+look at your code.
+
+01:42.970 --> 01:51.620
+Is it easy to understand and here this is obviously personal preference but most of the time the ideas
+
+01:51.620 --> 01:53.120
+are are simple.
+
+01:53.120 --> 01:57.640
+For example I'm using names here that make sense.
+
+01:57.890 --> 02:03.610
+If I had variable names that don't make sense I'll be really hard for somebody to read my code.
+
+02:03.650 --> 02:09.080
+Maybe these people would be confused why I have this print statement here.
+
+02:09.080 --> 02:19.790
+In that case maybe I should comment in here being like need a new line after every row or maybe they'll
+
+02:19.790 --> 02:21.540
+be confused why we need this as well.
+
+02:21.540 --> 02:28.480
+So depending on your style you might want to add comments make sure that a naming of your variables
+
+02:28.810 --> 02:36.140
+are good and maybe making sure that it's not only you that understands the code.
+
+02:36.250 --> 02:39.830
+The other one is the idea of predictability.
+
+02:39.970 --> 02:46.000
+And this is my favorite one that is sometimes people try to be really clever with their code trying
+
+02:46.000 --> 02:56.200
+to have the most compact code or using the newest features or some really obscure tools that or functions
+
+02:56.200 --> 03:00.880
+that are not very common just to look well frankly smart.
+
+03:01.030 --> 03:07.600
+But would you want to have code that makes sense that does things just one thing really well.
+
+03:07.690 --> 03:12.710
+Now this code is quite small so it's quite predictable.
+
+03:12.880 --> 03:18.240
+You know it just has one pass through and it's easy to predict what's going to happen.
+
+03:18.280 --> 03:24.040
+We're going to print but as we get more and more into the course you'll see that our code is going to
+
+03:24.040 --> 03:28.840
+get larger and larger and having predictable easy to understand code is really important.
+
+03:29.620 --> 03:35.770
+And then finally this is an important principle that you're here everywhere is the heart.
+
+03:35.830 --> 03:38.030
+Why do not repeat yourself.
+
+03:38.080 --> 03:43.960
+You don't want to have code that you're constantly repeating yourself over and over again.
+
+03:43.960 --> 03:51.640
+This is a small example but it's very easy as a programmer to say oh I'm going to copy this and then
+
+03:51.670 --> 03:57.410
+I'm going to run this again so that if I click Run look at that I have two trees.
+
+03:57.410 --> 04:03.580
+Now this is amazing but maybe that's not the best idea.
+
+04:03.590 --> 04:10.760
+You now have 28 lines of code and people might be confused why we're doing this twice maybe instead
+
+04:11.060 --> 04:18.410
+we want to programmatically have a counter here of maybe saying running this twice or maybe using something
+
+04:18.410 --> 04:24.650
+like functions which we'll learn later to make sure that we can repeat this process over and over and
+
+04:24.650 --> 04:26.280
+over.
+
+04:26.350 --> 04:31.630
+Now keep these in the back of your mind because throughout the course we're going to explore these topics
+
+04:32.820 --> 04:38.160
+but let's say I just came on to this code and I wanted you to clean it up a bit.
+
+04:38.970 --> 04:43.420
+Again this is just personal preference but these are some of the things that I would do.
+
+04:43.440 --> 04:49.200
+One is here pixels equal to one instead.
+
+04:49.200 --> 04:50.520
+This is kind of confusing.
+
+04:50.520 --> 04:56.220
+I'm just going to say if there is a pixel here and I know that pixels are either a zero on one then
+
+04:56.220 --> 05:00.970
+print here because this is a truth value that we'll just evaluate to true.
+
+05:01.110 --> 05:05.190
+So that just kind of cleaned up my code a little bit better next.
+
+05:05.200 --> 05:11.980
+Another thing that I might do maybe I want to make this more extensible which might mean doing something
+
+05:11.980 --> 05:22.270
+like say film variable that equals to the star and then maybe empty which equals to an empty string
+
+05:22.840 --> 05:29.990
+and change these to fill and empty.
+
+05:29.990 --> 05:32.570
+Now this is extra line of code.
+
+05:32.660 --> 05:39.200
+But for example if we're doing this multiple times instead of perhaps maybe we're running print over
+
+05:39.200 --> 05:46.730
+and over and over or maybe we have another line of print over here and another line of print over here
+
+05:46.940 --> 05:56.000
+and then maybe another line of print over here that is empty instead of me having to change five locations
+
+05:56.000 --> 05:56.230
+here.
+
+05:56.240 --> 06:03.020
+I can now change just this part and maybe instead of Star I want to display I don't know dollar sign
+
+06:04.440 --> 06:10.030
+and if I run this all right I get a little different image here.
+
+06:10.110 --> 06:17.820
+But again I was able to just change the variable and the variable was used to fill out whatever I needed
+
+06:17.820 --> 06:19.050
+done.
+
+06:19.050 --> 06:23.490
+Now these are all things that you do need a bit of experience to get used to.
+
+06:23.550 --> 06:29.400
+But we'll hopefully explore this throughout the course and by the end of it you'll have all these best
+
+06:29.400 --> 06:31.880
+practices in mind.
+
+06:31.940 --> 06:32.720
+I'll see in the next one.

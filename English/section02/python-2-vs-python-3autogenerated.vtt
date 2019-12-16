@@ -1,0 +1,253 @@
+WEBVTT
+
+00:01.370 --> 00:02.690
+Welcome back.
+
+00:02.690 --> 00:11.750
+Whenever you start to learn python it's unavoidable that you'll encounter this topic of Python 2 vs.
+
+00:12.020 --> 00:13.850
+Python 3.
+
+00:13.850 --> 00:17.390
+So what is this all about.
+
+00:17.510 --> 00:19.290
+And it's a very important topic.
+
+00:19.610 --> 00:24.410
+Now first of all python is created by a human right.
+
+00:24.560 --> 00:28.710
+As a matter of fact it was created by this person right here.
+
+00:28.800 --> 00:30.700
+His name is Guido.
+
+00:30.870 --> 00:36.050
+Now a programming language is always evolving.
+
+00:36.180 --> 00:38.570
+It sound like somebody creates a programming language.
+
+00:38.580 --> 00:40.430
+It's perfect and that's it.
+
+00:40.440 --> 00:40.770
+No.
+
+00:40.830 --> 00:43.680
+All programming languages are constantly being updated.
+
+00:43.800 --> 00:51.000
+Just like on your phone you constantly get software updates while a programming language is constantly
+
+00:51.000 --> 00:57.660
+evolving to make it better and better because nobody gets it right the first time and by the way this
+
+00:57.660 --> 00:59.970
+is a great video that I'm going to link to.
+
+01:00.000 --> 01:01.950
+You can check it out in the resources.
+
+01:02.160 --> 01:10.350
+Now Python was created in 1991 by this gentleman and it was actually created with the name from Monty
+
+01:10.350 --> 01:18.030
+Python which was a British comedy group but like I said before the language is always evolving.
+
+01:18.030 --> 01:29.250
+And in 2008 Brito decided that while python version 2 which has been used for a very long time had some
+
+01:29.250 --> 01:32.910
+things that he and the community wanted to change.
+
+01:33.060 --> 01:41.210
+So in 2008 they decided to create Python 3 a new version of the language.
+
+01:41.370 --> 01:43.560
+Here was the tricky part.
+
+01:43.560 --> 01:51.600
+You see when you update software lets say on your phone or even on your laptop you expect things to
+
+01:51.870 --> 01:54.050
+keep working right.
+
+01:54.060 --> 01:55.560
+Updates are usually good.
+
+01:55.560 --> 02:03.330
+They're improvements but some of the features that Python 2 had they didn't like or they wanted to change
+
+02:03.360 --> 02:03.990
+completely.
+
+02:04.140 --> 02:12.150
+So Python 3 introduced to what we call breaking changes that is if you updated to Python 3.
+
+02:12.240 --> 02:14.160
+Remember the Python interpreter.
+
+02:14.160 --> 02:18.560
+The C Python translator that we've been talking about.
+
+02:18.600 --> 02:25.740
+Well as soon as you updated that your Python 2 code wasn't really going to work.
+
+02:26.400 --> 02:31.410
+It's like updating your phone and then all of a sudden all your apps stop working.
+
+02:31.440 --> 02:33.860
+That doesn't sound very good does it.
+
+02:34.880 --> 02:38.360
+That's pretty much what happened in 2008.
+
+02:38.360 --> 02:46.010
+Most companies that wrote their code in Python Version 2 just kept python version 2 because well for
+
+02:46.010 --> 02:53.390
+them to upgrade meant that they had to go through their code line by line and make some changes.
+
+02:53.390 --> 02:56.960
+Now these changes weren't that significant.
+
+02:56.960 --> 03:00.770
+For example I'll link to some resources but don't worry.
+
+03:00.770 --> 03:06.240
+These are topics that we're going to cover throughout the course but different things wouldn't work.
+
+03:06.350 --> 03:12.710
+For example the print function which we've learned about in python 2 It didn't have the brackets it
+
+03:12.950 --> 03:15.060
+looked like this.
+
+03:15.500 --> 03:19.250
+And Python 3 used the brackets.
+
+03:19.580 --> 03:24.090
+So all the code that had print like this would break.
+
+03:24.110 --> 03:29.300
+Now the differences themselves aren't that big.
+
+03:29.300 --> 03:33.610
+I mean you can read through them and we'll talk about this in the course.
+
+03:33.620 --> 03:38.540
+But overall you can learn them in a day.
+
+03:38.540 --> 03:44.200
+That's why when we learn Python most of the time we're learning Python 3.
+
+03:44.270 --> 03:51.530
+But you can use the same knowledge with the older version of Python Now you may see some python version
+
+03:51.530 --> 03:56.060
+to code out there for companies that have an upgraded.
+
+03:56.120 --> 04:01.520
+But it's now will be called legacy that is come 2020.
+
+04:01.520 --> 04:06.530
+It's going to stop receiving security updates so the community Python community as a whole is saying
+
+04:06.530 --> 04:12.860
+hey everybody start using Python 3 because we're going to stop maintaining Python 2.
+
+04:13.520 --> 04:18.050
+So we're going to learn the most up to date version 3 in this course.
+
+04:18.050 --> 04:25.220
+But we're also going to touch on some older topics that Python 2 covers just in case you encounter them
+
+04:25.310 --> 04:32.710
+when you work for a company that perhaps still supports legacy code but as I mentioned the whole community
+
+04:32.830 --> 04:35.950
+as a whole is moving towards Python 3.
+
+04:35.980 --> 04:43.690
+This Web site for example shows you how many big packages popular Python packages which we'll talk about
+
+04:43.990 --> 04:47.320
+support Python 3 in our case.
+
+04:47.320 --> 04:52.370
+There's only four popular packages that don't support Python 3.
+
+04:52.390 --> 04:55.840
+So what I'm saying is Python 3 is the way to go.
+
+04:55.840 --> 04:56.890
+It's the way of the future.
+
+04:56.890 --> 04:59.110
+That's what we're going to learn in the course.
+
+04:59.110 --> 05:02.960
+But I want you to be aware of the historical context.
+
+05:03.280 --> 05:10.090
+And one thing to be careful of when in this course you were searching for answers or maybe I have some
+
+05:10.090 --> 05:18.760
+exercises that require you to Google things for example if we go to the Python documentation which is
+
+05:18.880 --> 05:28.270
+the reference of how well what the programming language does you'll see that you can choose the versions
+
+05:28.270 --> 05:35.680
+here and you always want to go with the latest but you might find some answers online that still use
+
+05:35.680 --> 05:37.640
+python version too.
+
+05:37.690 --> 05:43.060
+So you want to make sure that when you're searching for answers that you don't encounter any legacy
+
+05:43.060 --> 05:44.750
+code.
+
+05:44.840 --> 05:50.720
+Like I said 95 percent of the time it's mostly the same but you usually want to keep current with the
+
+05:50.720 --> 05:56.720
+language it has the most community support most up to date most secure language.
+
+05:57.590 --> 06:05.360
+So just a quick note about Python 3 versus Python 2 when you hear the word python.
+
+06:05.360 --> 06:10.770
+People are generally just talking about both Python 3 and Python 2.
+
+06:11.020 --> 06:19.540
+And if you remember in our repo when we created our first program you see that you're using python version
+
+06:19.630 --> 06:20.870
+three point six.
+
+06:20.950 --> 06:24.960
+This is the default standard version that rebel control.
+
+06:25.690 --> 06:30.220
+So right away we know that we're using Python 3 awesome.
+
+06:30.250 --> 06:31.020
+It's up to date.
+
+06:31.030 --> 06:34.210
+It's new the whole community is behind it.
+
+06:34.210 --> 06:36.220
+Well most of the community is behind it.
+
+06:36.490 --> 06:38.180
+So we're all good to go.
+
+06:38.230 --> 06:39.900
+I'll see in the next video by.

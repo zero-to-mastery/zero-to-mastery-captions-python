@@ -1,0 +1,166 @@
+WEBVTT
+
+00:00.390 --> 00:02.860
+I have a fun little exercise for you.
+
+00:02.910 --> 00:12.110
+I want you to create a super list using the class super list now in here.
+
+00:12.370 --> 00:19.480
+I want you to add code that allows us to have just like we have a list in Python.
+
+00:19.480 --> 00:28.650
+Allow us to access through index through well any way that a regular list allows us to use it.
+
+00:28.810 --> 00:36.270
+But the only difference is that the super list is going to have a special Dunder method.
+
+00:36.310 --> 00:37.900
+Let's say that when we do.
+
+00:37.900 --> 00:38.720
+Length.
+
+00:38.900 --> 00:48.640
+So when we define Dunder Dunder length we're going to modify it and we're going to have it return no
+
+00:48.640 --> 00:51.470
+matter what a thousand.
+
+00:51.530 --> 00:58.650
+Now this may look easy because all we want to do is modify the length Dunder here.
+
+00:59.060 --> 01:06.830
+But the question is based on what you learned about inheritance about object oriented programming instead
+
+01:06.830 --> 01:13.590
+of having to write every single Dunder that we need to use on a list.
+
+01:13.670 --> 01:22.910
+How can we easily acquire the power that list already has and then just modify this length Dunder so
+
+01:22.910 --> 01:27.220
+remember super list is going to be a list that we can create.
+
+01:27.350 --> 01:39.330
+We can instantiate like this super list one we're going to call super list and it's going to allow us
+
+01:39.510 --> 01:52.880
+to do things like length super list and also access items in the Super list or use super list one dot
+
+01:53.110 --> 02:05.080
+let's say append and maybe a pad 5 and actually get super list 1.
+
+02:05.250 --> 02:06.930
+All right take it away from here.
+
+02:06.960 --> 02:07.560
+Give it a go.
+
+02:07.560 --> 02:09.650
+Pause the video because I'll give you the answer.
+
+02:10.620 --> 02:13.790
+So let's just implement this.
+
+02:13.890 --> 02:19.710
+We're going to have self in here and we're only going to return.
+
+02:19.770 --> 02:31.330
+Let's say a thousand so that when we call super list 1 and let's comment this out and I do length here.
+
+02:31.510 --> 02:36.760
+Let's print it out I should get a thousand.
+
+02:36.760 --> 02:38.170
+That's good.
+
+02:38.170 --> 02:41.350
+But I want the functionality of this.
+
+02:41.350 --> 02:45.040
+I want to be able to append to my super list.
+
+02:45.040 --> 02:54.820
+So let's run this and see what happens I get an attribute air super list object has no attribute append.
+
+02:55.350 --> 02:56.500
+Let's think about this.
+
+02:56.610 --> 03:02.440
+How can we acquire the powers that lists in Python already have.
+
+03:02.460 --> 03:05.040
+Well we learned about inheritance right.
+
+03:05.230 --> 03:14.310
+And all we have to do is just simply type list here and now list becomes our parent class of Superclass.
+
+03:14.400 --> 03:16.050
+So let's give us a go now.
+
+03:16.050 --> 03:20.970
+If I click Run all right that seems to work.
+
+03:20.990 --> 03:28.410
+What if we want to access super list at index while not 5 at index of 0.
+
+03:28.490 --> 03:29.330
+If I click Run
+
+03:32.410 --> 03:34.900
+I get a thousand.
+
+03:34.990 --> 03:37.070
+Well that's because we're not printing anything yet.
+
+03:37.080 --> 03:43.330
+So let's print here and click Run check that out.
+
+03:43.430 --> 03:48.560
+We're able to have this super list and we just extended the functionality of list.
+
+03:48.590 --> 03:50.320
+How cool is that.
+
+03:51.590 --> 03:56.640
+Now to double check there's a fun little function that we have in Python.
+
+03:57.140 --> 04:06.970
+And it's called is sub class and here we say super list and list.
+
+04:07.080 --> 04:16.020
+If I click Run I get true because is super list a subclass of list.
+
+04:16.770 --> 04:18.510
+Yep that's true.
+
+04:18.510 --> 04:23.250
+What about this is list a subclass of the base object
+
+04:25.990 --> 04:34.800
+Yep it's true remember everything in Python is an object that inherits from the base object class we
+
+04:34.800 --> 04:44.250
+then inherit some built in list methods and we're able to use all of that in our super list just by
+
+04:44.250 --> 04:46.430
+inheriting like this.
+
+04:46.680 --> 04:53.610
+Very very cool now for some of you this might have been a simple exercise and you got her right away
+
+04:53.880 --> 04:54.820
+if you didn't.
+
+04:54.840 --> 04:55.590
+Don't worry.
+
+04:55.590 --> 04:57.480
+Now you know pretty cool.
+
+04:58.080 --> 04:59.130
+I'll see in the next one.
+
+04:59.690 --> 04:59.970
+Bobby.

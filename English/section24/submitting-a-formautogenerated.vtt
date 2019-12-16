@@ -1,0 +1,316 @@
+WEBVTT
+
+00:00.990 --> 00:04.080
+Okay okay Andre can we finally submit this form.
+
+00:04.350 --> 00:04.710
+All right.
+
+00:04.750 --> 00:08.670
+In this video we'll finally see what happens when we submit this form.
+
+00:09.030 --> 00:16.860
+But there is one last thing that we need to include and that is the name attributes.
+
+00:16.860 --> 00:18.340
+And then I'll explain.
+
+00:18.390 --> 00:20.980
+Towards the end of this video why we need those.
+
+00:20.990 --> 00:25.700
+So we want to add in each one of our fields a name actually.
+
+00:25.710 --> 00:28.260
+So this one will be first name.
+
+00:28.260 --> 00:31.740
+And I'm just going to copy and paste here just so be a little bit faster.
+
+00:31.740 --> 00:38.380
+We have last name email password.
+
+00:38.750 --> 00:45.560
+Birthday we already have these for the radio buttons which is good.
+
+00:46.870 --> 00:48.560
+And we need here.
+
+00:48.790 --> 00:54.530
+Cat Dog Volvo Volvo OK.
+
+00:54.740 --> 01:00.780
+And we don't need it for the buns because while there's no user information there so I'm going to save
+
+01:00.780 --> 01:07.230
+that and I'm going to make this full screen so you can see I'm going to refresh the page and let's enter
+
+01:07.230 --> 01:10.320
+some fake data and see what happens.
+
+01:10.380 --> 01:21.540
+So I'm going to say fake man email addresses fake password would be 1 2 3 birthday will be mail with
+
+01:21.540 --> 01:24.490
+a cat and has an orgy.
+
+01:24.720 --> 01:32.060
+I'm going to click register now but keep an eye out up over here to see what happens when I click Did
+
+01:32.060 --> 01:33.520
+you catch that.
+
+01:33.600 --> 01:41.300
+Let's copy this because when I click register this got attached minimizes.
+
+01:41.430 --> 01:46.060
+And print this out here so we can see it for ourselves.
+
+01:46.160 --> 01:47.910
+First we have a question mark.
+
+01:48.020 --> 01:49.880
+Then first name fake.
+
+01:49.880 --> 01:54.020
+That's exactly why we entered we have last name man.
+
+01:54.020 --> 01:55.190
+Email is fake.
+
+01:55.190 --> 01:56.960
+Something something G.M. dot.com
+
+01:59.520 --> 02:01.350
+password 1 2 3 0.
+
+02:01.410 --> 02:08.380
+They know our password birthday gender and Cat on.
+
+02:08.440 --> 02:11.640
+We didn't don't select Volvo.
+
+02:11.830 --> 02:13.900
+Not sure while take a look at that later.
+
+02:14.080 --> 02:22.390
+But you can see over here that the value that the values that we entered into our form were just attached
+
+02:22.690 --> 02:23.640
+to this link.
+
+02:23.920 --> 02:30.910
+And this is actually called query strings and what it is it's one way for us to send our information
+
+02:31.060 --> 02:36.550
+to the back end or the servers because we have to store this form information somewhere so that when
+
+02:36.550 --> 02:40.750
+we come back onto this page the Web site remembers ups.
+
+02:40.750 --> 02:51.570
+This was automatically generate a nation mail five with a form but form was using an attribute called
+
+02:51.780 --> 02:53.950
+get and this get.
+
+02:54.340 --> 03:01.650
+If I left it as this will do the exact same thing where it will attach the form information to the you
+
+03:01.650 --> 03:04.180
+are out and send it to the server.
+
+03:04.260 --> 03:12.420
+There is another option where you can do post and you can try it on your own here but you wouldn't see
+
+03:12.420 --> 03:15.890
+any query parameters so this wouldn't change the bar.
+
+03:15.900 --> 03:22.890
+The top one change and that is because it will be attached to the body of the request which we'll get
+
+03:22.890 --> 03:24.650
+into when we get to that section.
+
+03:24.650 --> 03:30.030
+I don't want to confuse you too much but you can see the difference here of why we might want to use
+
+03:30.030 --> 03:35.400
+post instead of get because well what if somebody was over my shoulder and they can see my password
+
+03:35.430 --> 03:36.300
+right there in the bar.
+
+03:36.930 --> 03:42.660
+I just wanted you to get comfortable with the idea that we are sending this information to the back
+
+03:42.660 --> 03:44.800
+end the way we handle that.
+
+03:44.850 --> 03:46.950
+We'll get into later on in the course.
+
+03:46.950 --> 03:49.660
+Right now we're just focusing on the front.
+
+03:50.220 --> 03:57.780
+The last thing I want to show you was that form also has a action attribute which used to get used a
+
+03:57.780 --> 04:08.040
+lot if you saw old p HP based Web sites they'll have some sort of a action dot P HP which said submit
+
+04:08.040 --> 04:16.110
+this form and when you submit this form to the back end to the server run this script this file that's
+
+04:16.320 --> 04:17.250
+on the server.
+
+04:17.490 --> 04:19.580
+But there are better ways of doing this now.
+
+04:19.590 --> 04:22.020
+So I'll show that later on and of course
+
+04:25.730 --> 04:29.170
+let's take a look at this.
+
+04:29.240 --> 04:35.510
+So we have a question mark and this is the standard anytime there's a query string so we're adding a
+
+04:35.510 --> 04:39.220
+piece of data to our U.R.L..
+
+04:39.350 --> 04:45.770
+It starts off with the question mark which states Hey coming up we're gonna have a bunch of data for
+
+04:45.770 --> 04:46.380
+you.
+
+04:46.640 --> 04:53.300
+The first one is first name which again corresponds with the name that we have in our form and that
+
+04:53.300 --> 04:55.340
+was equal to fake.
+
+04:55.370 --> 04:58.500
+So that's property and value.
+
+04:58.700 --> 05:10.410
+So you can think of name as property and the value as men so last name first name you can see here that
+
+05:10.410 --> 05:10.830
+there's an.
+
+05:10.830 --> 05:11.520
+And sign.
+
+05:11.520 --> 05:18.840
+So that's again saying first name equals to fake and last name equals demand and email equals to fake
+
+05:19.110 --> 05:21.390
+some gibberish gmail dot com.
+
+05:21.390 --> 05:25.140
+So this is because of something called the You are all encoding.
+
+05:25.320 --> 05:30.960
+And because the U R L has special meaning for some characters such as this.
+
+05:30.960 --> 05:39.420
+And the question mark it encodes the at sign with something that it understands but it won't affect
+
+05:39.630 --> 05:41.330
+its encoding.
+
+05:41.410 --> 05:46.990
+We have password 1 2 3 birthday gender on and Cat on.
+
+05:46.990 --> 05:55.660
+And I've actually realized why the Volvo and Audie information didn't register and that is because for
+
+05:55.900 --> 06:02.260
+the query string to work as you can see it needs to have a name associated with a value so we have first
+
+06:02.260 --> 06:03.490
+name and fake.
+
+06:03.490 --> 06:11.580
+If we look at the radio bunds we have a name which is gender and we have on.
+
+06:11.800 --> 06:17.800
+So you see over here how we didn't send any value.
+
+06:17.800 --> 06:22.690
+We know that the gender some button was clicked in the gender so it's on.
+
+06:22.690 --> 06:31.450
+But we don't know which value and that is because we should have included a value for the males so that
+
+06:31.660 --> 06:39.910
+if that's the one that's selected a value will be sent and finally value.
+
+06:40.140 --> 06:53.050
+And now same with the select we should have had our name of the Select field be cars so that now the
+
+06:53.050 --> 07:00.520
+name can be associated with the value so let's give that a try one more time I'm going to delete this
+
+07:01.780 --> 07:04.820
+I'm going to save the changes that we just made.
+
+07:05.080 --> 07:07.420
+I'm going to make this full screen.
+
+07:07.420 --> 07:11.960
+Let's refresh and enter some new information.
+
+07:12.070 --> 07:16.570
+Fake new email is new.
+
+07:16.610 --> 07:24.790
+Fake G.M. dot com password is 1 2 3 4 this time birthday.
+
+07:24.910 --> 07:30.700
+Let's do female dog and Audie.
+
+07:30.970 --> 07:36.700
+I'm going to click register and let's see what we have here.
+
+07:36.870 --> 07:45.900
+We have first name fake last name is new email new Fake a G.M. dot com password 1 2 3 4 birthday gender
+
+07:46.020 --> 07:47.180
+is female.
+
+07:47.280 --> 07:49.080
+Good dog is on.
+
+07:49.110 --> 07:50.610
+OK so we've selected dog.
+
+07:50.610 --> 07:51.090
+That's great.
+
+07:51.090 --> 07:53.520
+And then cars is Hardy.
+
+07:53.520 --> 08:01.780
+There you go and that's as complicated as forms are going to get you'll encounter this a lot.
+
+08:01.780 --> 08:08.650
+And there is definitely in most Web sites that you build whether it's a landing page a web site that
+
+08:08.650 --> 08:10.700
+requires registration.
+
+08:10.810 --> 08:13.050
+This is something that you'll see a lot.
+
+08:13.090 --> 08:19.140
+Once you understand this once it makes sense you know you can call yourself an e-mail developer.
+
+08:19.140 --> 08:21.450
+So I'll see you in the next one.
+
+08:21.450 --> 08:21.720
+Bye bye.

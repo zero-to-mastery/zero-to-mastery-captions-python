@@ -1,0 +1,199 @@
+WEBVTT
+
+00:00.760 --> 00:01.530
+All right.
+
+00:01.660 --> 00:04.390
+We're almost kind of flying through this.
+
+00:04.390 --> 00:05.680
+I know we're going slow here.
+
+00:05.680 --> 00:11.050
+But trust me once you get these data types things become a lot easier.
+
+00:11.050 --> 00:16.420
+So we're just climbing that mountain so that we can start looking at a higher level at the language
+
+00:16.510 --> 00:19.750
+of Python to keep going.
+
+00:19.750 --> 00:26.800
+Let's talk about this data type SDR which stands for strings.
+
+00:26.820 --> 00:27.540
+We'll see what they are
+
+00:30.560 --> 00:40.530
+a string is simply well a piece of text for example a string can be written with quotation marks.
+
+00:40.640 --> 00:41.870
+And I can say hi.
+
+00:42.230 --> 00:44.570
+Hello there.
+
+00:44.570 --> 00:46.080
+And that is a string.
+
+00:46.130 --> 00:49.110
+You see that the color changed here and my editor.
+
+00:49.130 --> 00:52.490
+I can also make strings with double quotes.
+
+00:53.390 --> 00:57.350
+So once again this is also a valid string.
+
+00:58.010 --> 00:59.690
+And I can put anything I want in here.
+
+00:59.690 --> 01:01.490
+I can do numbers if I wanted to.
+
+01:01.490 --> 01:02.720
+Exclamation marks.
+
+01:02.900 --> 01:10.820
+It's just a piece of text you can think of it as a sentence for now and if I do the type function here
+
+01:10.970 --> 01:16.760
+remember these brackets to note that we want to perform some sort of action which is we're using the
+
+01:16.760 --> 01:19.280
+type action that Python gives us.
+
+01:19.280 --> 01:21.790
+And if I click Run you see that.
+
+01:22.080 --> 01:30.350
+Oh and remember we have to print it out it is also let's do print so that we can see the display and
+
+01:30.350 --> 01:33.470
+I click Run you see that it's SDR.
+
+01:33.530 --> 01:36.300
+It's a type of string.
+
+01:36.320 --> 01:39.380
+Now we can use this in important ways.
+
+01:39.440 --> 01:47.910
+For example imagine you're creating a log in form and we want to collect somebodies username and password.
+
+01:48.100 --> 01:57.370
+Well we can have user name variable that we assign let's say some sort of user name let's call it super
+
+01:57.730 --> 02:04.370
+coder and then password can be super secret.
+
+02:04.740 --> 02:09.630
+And now we have these variables usernames and passwords that we can use throughout our program such
+
+02:09.630 --> 02:12.800
+as to check if a password exists.
+
+02:12.900 --> 02:19.820
+And remember I can use single quotes or double quotes but there's a third way that we can write strings
+
+02:19.910 --> 02:20.470
+in Python.
+
+02:21.410 --> 02:25.210
+And this well is used for long strings.
+
+02:25.250 --> 02:28.140
+So let's just create a variable long string.
+
+02:28.340 --> 02:33.990
+And while we can do here is three single quotes in a row like this.
+
+02:34.430 --> 02:43.640
+And then here I can just say wow maybe so a pair of eyes of somebody that's really impressed.
+
+02:43.640 --> 02:48.640
+And let's go with a mouth that actually kind of looks like here.
+
+02:48.930 --> 02:49.830
+All right.
+
+02:49.910 --> 02:52.520
+And then I finish it off with three single quotes.
+
+02:52.550 --> 03:07.200
+Again so now if I print the long string and I click Run look at that my little weird emoji face is printed.
+
+03:07.200 --> 03:14.010
+So the three single quotes is four long strings that I can keep going on multiple lines for example.
+
+03:14.010 --> 03:15.740
+I can't do this with a single quote.
+
+03:15.750 --> 03:21.360
+You see that the orange color is now gone because python is going to say this is a new line.
+
+03:21.360 --> 03:28.080
+And this is another line and it's going to give me an error because well a caret with a quote doesn't
+
+03:28.080 --> 03:29.160
+mean anything.
+
+03:29.160 --> 03:35.640
+But if we use three single quotes you can see that we can do multi line strings and this is really useful
+
+03:35.640 --> 03:39.870
+if you want to have maybe long sentences and paragraphs.
+
+03:39.870 --> 03:46.830
+Now with a string we use we can do some cool things that we saw in the numbers videos.
+
+03:46.920 --> 03:59.170
+What if I had something like this Let's say I wanted to grab the first name of a user just give my own
+
+03:59.170 --> 04:06.470
+name here and then last name and again my super hard to pronounce last name.
+
+04:06.570 --> 04:11.130
+Could we do something like this where we have a full name.
+
+04:11.130 --> 04:29.130
+Equals to first name plus last name and then if we print here the full name like this should this work.
+
+04:29.150 --> 04:30.160
+Well let's have a look.
+
+04:30.170 --> 04:36.060
+Let me remove this part of here just so we have nice and clean looking code.
+
+04:36.200 --> 04:38.790
+And if I click Run.
+
+04:39.010 --> 04:39.910
+There you go.
+
+04:39.910 --> 04:46.090
+My name is printed but you see that there's no spaces here because we're going to use the addition sign
+
+04:46.120 --> 04:48.300
+to attach Andre to Nagoya.
+
+04:48.330 --> 04:50.470
+But you can see that there's no spaces here.
+
+04:50.530 --> 04:59.780
+So I can add a space if I wanted to or I can just simply create another string inside of here just like
+
+04:59.780 --> 05:06.990
+this and then add a spacing between so we're just using the plus sign which we've seen in the numbers
+
+05:07.800 --> 05:16.880
+videos but instead to add strings together and now if I click Run you see that I got the space because
+
+05:16.910 --> 05:25.090
+I'm adding a space in here and between the names very very cool but there's a few more neat things that
+
+05:25.090 --> 05:26.200
+we can do with strings.
+
+05:26.200 --> 05:28.660
+So let's take a break and I'll see you in the next video.

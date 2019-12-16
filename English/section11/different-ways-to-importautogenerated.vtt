@@ -1,0 +1,211 @@
+WEBVTT
+
+00:00.330 --> 00:04.950
+Let's learn about different ways that we can actually import these modules.
+
+00:04.950 --> 00:08.160
+Up until now we've only learned about import.
+
+00:08.490 --> 00:11.880
+But sometimes things can get pretty hectic.
+
+00:11.880 --> 00:18.850
+For example we can actually have a another package inside of another package if for example I create
+
+00:18.850 --> 00:22.640
+a new folder here and say new Python package.
+
+00:22.690 --> 00:27.660
+We'll call this more shopping click Okay.
+
+00:27.820 --> 00:35.660
+You see that I've shaded a nother package inside of a package that has its own in it file and let's
+
+00:35.660 --> 00:45.230
+move this now to let's do refactor move and we'll move it inside of the more shopping folder shall say
+
+00:45.530 --> 00:50.190
+more if I click Okay.
+
+00:50.320 --> 00:57.470
+You'll see that I've moved this module over here so I have a package inside of a package and the way
+
+00:57.470 --> 01:08.400
+we would access this is to say simply shopping dot more shopping dot shopping cart and let's copy that
+
+01:08.400 --> 01:16.650
+over and do the same here and now when I click run you'll see that it still works.
+
+01:16.650 --> 01:24.660
+But this is getting a little bit too crazy you can imagine as we have more and more packages that we
+
+01:24.660 --> 01:31.960
+constantly have to this dot this dot and this is getting a little too long and ugly.
+
+01:32.050 --> 01:35.180
+So how can we better this.
+
+01:35.310 --> 01:41.130
+Well one way of doing this in a cleaner fashion is to do something like this instead of saying import
+
+01:41.160 --> 01:48.800
+we say from this part I want to import the function.
+
+01:48.890 --> 01:58.400
+So here I'm saying hey from package name package name module import whatever function I want in our
+
+01:58.400 --> 02:01.390
+case we want to import these by function.
+
+02:01.520 --> 02:03.310
+So you see here I can just do that.
+
+02:03.380 --> 02:15.860
+And in my code I can just run by as if it was part of this main file if I run this you'll see that it
+
+02:15.860 --> 02:18.600
+still works awesome.
+
+02:18.640 --> 02:23.410
+So that's definitely cleaner and we can do this with utility as well.
+
+02:23.470 --> 02:31.420
+I can say from utility import and actually import the two files or the two functions.
+
+02:31.420 --> 02:33.090
+So that is multiply.
+
+02:33.250 --> 02:38.810
+And if we want another function we can just add a comma and say divide.
+
+02:38.840 --> 02:52.100
+So now we can print Apple or by Apple as well as divide let's say 5 by two and we can also multiply
+
+02:55.000 --> 03:01.840
+and make sure it's a comma here because it is a function like this so that if I run this you'll see
+
+03:01.840 --> 03:04.140
+that there we go.
+
+03:04.210 --> 03:05.410
+This works as well.
+
+03:05.440 --> 03:09.420
+So this is a really nice way to clean up your code.
+
+03:09.420 --> 03:17.500
+You can also do something like this where you say from package name package name and then import the
+
+03:17.500 --> 03:19.210
+entire module.
+
+03:19.210 --> 03:22.870
+So let's say I want to import these shopping cart module.
+
+03:23.110 --> 03:29.980
+I can say import so package dot package or you could just hand have done one package and import the
+
+03:29.980 --> 03:31.700
+actual module shopping cart.
+
+03:32.680 --> 03:45.250
+So now I would access it like this shopping cart dot by and this is going to work as well.
+
+03:45.270 --> 03:52.080
+Now the reason you might want to do this instead of what we had before is that sometimes you can get
+
+03:52.170 --> 03:55.390
+name collisions let me show you.
+
+03:55.520 --> 04:04.190
+Let's say I had a print and then in here we use the max function which gives us it's a built in function.
+
+04:04.310 --> 04:11.930
+We give it an iterator and it finds the max for us so that if I run this you'll see that the max in
+
+04:11.930 --> 04:22.480
+this list is three well imagine in our utility function we have a let's say instead of divide or we
+
+04:22.480 --> 04:33.670
+add a max that simply says returns and loops Well if I go back to my main dot pi
+
+04:36.870 --> 04:47.410
+get max as my function and I click Run well you see I get an error I get Max takes zero positional arguments
+
+04:47.440 --> 04:54.400
+but was given but one was given because now Max does a mean what we thought we meant at least in this
+
+04:54.400 --> 04:56.840
+file we've imported Max.
+
+04:57.040 --> 05:05.070
+And while Max has a whole different function now so we can actually override existing functions.
+
+05:05.150 --> 05:12.170
+So by using something like this shopping cart we make sure that we have only one case that we might
+
+05:12.170 --> 05:20.660
+have named collision but all the properties or all the methods that shopping art has are connected to
+
+05:20.660 --> 05:21.620
+shopping cart.
+
+05:21.620 --> 05:29.330
+So instead of having multiple functions that could be overwritten I only have one namespace and by the
+
+05:29.330 --> 05:34.010
+way this is also one of the reasons that I don't recommend doing something like this.
+
+05:34.040 --> 05:41.910
+You can actually do import star and what this says is Hey from the utility module import everything.
+
+05:42.050 --> 05:49.340
+And when you do that you'll see that once again we get an error because it imports the max as well.
+
+05:49.640 --> 05:53.330
+And because we don't even know what's being imported right now we can't see it.
+
+05:53.360 --> 05:56.750
+We have to go to the file to see it when we get an error like this.
+
+05:56.750 --> 05:58.340
+We're gonna be like what's going on.
+
+05:58.340 --> 06:00.800
+I thought Max is working and it's because of this line.
+
+06:01.010 --> 06:07.760
+So it's always good to be explicit and say exactly what you want to import but let's remove Max for
+
+06:07.760 --> 06:08.150
+now.
+
+06:08.540 --> 06:12.050
+But as you can see modules can be important in different ways.
+
+06:12.050 --> 06:19.550
+My recommendation is to always be explicit and say exactly what you want to import and the format usually
+
+06:19.550 --> 06:28.550
+follows either using the import statement followed by the package dock module or import the module or
+
+06:28.550 --> 06:37.610
+you can do the from statement to give it package sub package and module if you want or you can do module
+
+06:38.120 --> 06:45.200
+and then saying import and the specific function or the actual module itself many ways of doing it depending
+
+06:45.200 --> 06:46.240
+on your need.
+
+06:46.280 --> 06:53.870
+The key takeaway here is that modules and packages help us have good engineering practices and build
+
+06:53.930 --> 07:00.880
+big projects in an organized fashion yet still have all these files talk to each other right.
+
+07:00.880 --> 07:01.540
+That was a lot.
+
+07:01.600 --> 07:03.380
+Let's learn more in the next video.

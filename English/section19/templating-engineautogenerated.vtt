@@ -1,0 +1,124 @@
+WEBVTT
+
+00:00.520 --> 00:01.790
+Welcome back.
+
+00:01.810 --> 00:10.300
+What is this weird syntax in order for us to understand that we have to understand this idea of a templating
+
+00:10.450 --> 00:11.830
+language.
+
+00:11.860 --> 00:18.880
+You see the power of flask is the fact that we can build things dynamically.
+
+00:18.880 --> 00:20.860
+What I mean by this.
+
+00:20.950 --> 00:32.650
+Well let's assume that in the body tag here I write to curly brackets like this if I do in here four
+
+00:32.740 --> 00:42.370
+plus five and I save let's go back to our website with our cool lightning bolt and let me close this
+
+00:42.370 --> 00:42.850
+for now.
+
+00:42.940 --> 00:47.130
+If I refresh I get nine.
+
+00:47.320 --> 00:49.670
+Is that what you expected.
+
+00:49.680 --> 00:51.710
+How is that possible.
+
+00:51.810 --> 01:00.210
+Because if you're wondering this isn't HMO if I did this in a regular HMO it will just show the actual
+
+01:00.330 --> 01:03.620
+curly brackets curly brackets four plus five.
+
+01:03.840 --> 01:14.190
+But something is happening here flask looks at these double curly brackets and says oh this is an expression.
+
+01:14.400 --> 01:18.640
+This is a python expression that I actually need to evaluate.
+
+01:18.870 --> 01:26.940
+And this is actually the exciting thing with flask underneath the hood.
+
+01:26.940 --> 01:32.730
+It uses something called Ginger a templating language.
+
+01:32.730 --> 01:35.340
+It's a way for us to do this.
+
+01:35.610 --> 01:38.430
+And flask comes built in with that.
+
+01:39.270 --> 01:47.220
+So if we look at the fabric on what we just did is we've used ginger to say hey I want you to evaluate
+
+01:47.220 --> 01:49.110
+this as Python.
+
+01:49.710 --> 02:00.400
+So if I copy this and I go to server dot pi and in here let's just do a print and paste this in.
+
+02:00.490 --> 02:06.940
+That is the exact same thing that we added to our shemale except for we now need that you are all for
+
+02:07.180 --> 02:09.290
+that comes with flask.
+
+02:09.970 --> 02:20.860
+Let's move this here actually inside of the root Phi refresh I see over here that I get static bolt
+
+02:20.950 --> 02:22.390
+that ICL.
+
+02:22.390 --> 02:29.300
+So it's printing the actual U.R.L. static slash bolt that ICL.
+
+02:29.410 --> 02:36.880
+Now I could just technically have copy and pasted this and just done this whole thing as a string instead
+
+02:36.880 --> 02:38.180
+of using your output.
+
+02:38.980 --> 02:45.550
+But if you go to the documentation of flask it talks about your URL for and why it's a good idea to
+
+02:45.610 --> 02:49.120
+build your url instead of hard coding them.
+
+02:49.270 --> 02:52.810
+And it gives you actual reason of why you might do that for now.
+
+02:52.810 --> 02:56.190
+You can just think of it as a safer way to build your house.
+
+02:56.260 --> 03:03.100
+So that's all we're doing we're essentially saying grab the bolt dot ICL from the static folder and
+
+03:03.100 --> 03:12.830
+we're able to do this through this templating language very very cool and now we have an extra power
+
+03:13.370 --> 03:23.230
+in our tool belt that is we're now able to dynamically update parts of the page.
+
+03:23.380 --> 03:24.770
+What do I mean by this.
+
+03:24.850 --> 03:34.830
+Imagine if our super cool web site when I actually refresh here gives me the user name of that person
+
+03:35.960 --> 03:46.930
+for example if I request for the blog of Andre and I hit run ideally I'll say hi Andre and then maybe
+
+03:47.770 --> 03:51.160
+show my blog post using flask.
+
+03:51.160 --> 03:54.010
+We can do that and let's find out how to do that in the next video.

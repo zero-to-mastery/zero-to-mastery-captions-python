@@ -1,0 +1,151 @@
+WEBVTT
+
+00:00.420 --> 00:02.300
+It's time for another project.
+
+00:02.370 --> 00:08.680
+And in this project I'm going to show you how to create a Twitter bot and this Twitter board is gonna
+
+00:08.700 --> 00:16.890
+do a bunch of interesting things that well might help us with Twitter maybe following back people maybe
+
+00:16.920 --> 00:20.910
+retweeting something or liking a tweet based on a keyword.
+
+00:20.910 --> 00:23.130
+It's gonna be a lot of fun.
+
+00:23.430 --> 00:31.630
+Now this section requires us to work with what we call the Twitter API few remember with our discussion
+
+00:31.630 --> 00:32.930
+of API.
+
+00:33.070 --> 00:38.980
+There are API I's that Web sites provide that gives us data.
+
+00:38.980 --> 00:44.080
+There's also ways for us to grab data from a Web site that doesn't have an API using something like
+
+00:44.080 --> 00:44.780
+scraping.
+
+00:44.830 --> 00:48.450
+And that's something that we talk about in the scraping section of the course.
+
+00:49.150 --> 00:51.520
+But then there's also permissive API.
+
+00:51.850 --> 00:58.810
+That is well Twitter gives us access to its data but we have to get permission from Twitter to access
+
+00:58.810 --> 01:01.520
+that data not just anybody can get it.
+
+01:01.540 --> 01:07.830
+So if I go to Twitter API and I click on the link here I actually already have set up an account.
+
+01:08.350 --> 01:15.440
+But if you don't have an account your page is going to well look like this and you're going to have
+
+01:15.440 --> 01:19.090
+to click on Apply to apply for access.
+
+01:19.100 --> 01:21.560
+Now the Twitter API is completely free.
+
+01:21.560 --> 01:28.940
+The reason you need to apply is because well they don't want people to do bad things such as create
+
+01:28.940 --> 01:38.090
+a board that just post sensitive information maybe does something illegal does some spamming so they
+
+01:38.090 --> 01:42.570
+just want to make sure that hey this is legitimately for a good use.
+
+01:42.590 --> 01:48.020
+What you can do when you apply is just say this is a personal developer use account make sure you read
+
+01:48.020 --> 01:51.100
+the agreement and policy essentially don't be a jerk.
+
+01:51.170 --> 01:56.600
+And as long as you're nice and you're just experimenting like we are now and we don't abuse the API
+
+01:56.930 --> 01:58.600
+they'll give us access.
+
+01:58.700 --> 02:04.790
+Now you can do that or you can just watch me code a Twitter but like I said it doesn't take long.
+
+02:04.790 --> 02:11.490
+So you can do this on your own and I do recommend you signing up for the API because it is kind of fun
+
+02:11.490 --> 02:14.550
+and cool to build a Twitter bot.
+
+02:14.590 --> 02:21.890
+Now once you've created an account you'll have something like this and they've actually recently changed
+
+02:21.890 --> 02:25.060
+their UI so it looks a lot more confusing than it needs to be.
+
+02:25.060 --> 02:28.790
+But all you need to do is to just click on get started.
+
+02:28.930 --> 02:36.040
+They have really really good documentation here that you can actually go to DOCS documentation and read
+
+02:36.040 --> 02:37.960
+up on how you can use the API.
+
+02:38.680 --> 02:47.420
+But in my case I want to just create an app now in here I've already created a team bot but you can
+
+02:47.420 --> 02:53.720
+just click on create an app here you can add an app name some description of what the application does
+
+02:53.730 --> 03:02.420
+so you can say for developer use you'll have to provide some sort of web site you around and you just
+
+03:02.420 --> 03:04.550
+have to fill out some of this information.
+
+03:04.610 --> 03:09.020
+Now I wasn't going to just record me entering this information because that wouldn't be exciting to
+
+03:09.020 --> 03:09.370
+you.
+
+03:09.380 --> 03:11.810
+So I've created one ahead of time.
+
+03:11.930 --> 03:19.640
+Now what we're going to do with this spot is write our own python script and interact with this API
+
+03:20.240 --> 03:21.770
+in order for us to do that.
+
+03:21.800 --> 03:28.010
+We're going to use something called B which as you can see is an easy to use Python library for accessing
+
+03:28.010 --> 03:29.450
+the Twitter API.
+
+03:29.450 --> 03:37.970
+So using the T.P. library we're going to be able to interact with this API and well write python scripts.
+
+03:38.060 --> 03:39.470
+It's gonna be a ton of fun.
+
+03:40.130 --> 03:42.710
+So in the next video we're gonna get started.
+
+03:42.710 --> 03:45.810
+I'm going to show you how to build your first Twitter board.
+
+03:45.860 --> 03:51.830
+I have a folder here called this ziti and bought with my tweet tweet dot pie file.
+
+03:51.920 --> 03:54.670
+So get ready and let's start coding in the next video.

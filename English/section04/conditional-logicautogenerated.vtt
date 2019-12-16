@@ -1,0 +1,514 @@
+WEBVTT
+
+00:00.480 --> 00:03.360
+Let's talk about conditional logic.
+
+00:03.360 --> 00:04.710
+An important concept.
+
+00:04.710 --> 00:06.200
+All over programming.
+
+00:06.270 --> 00:09.420
+What do I mean by conditional logic.
+
+00:09.420 --> 00:11.600
+We've learned about bullying.
+
+00:11.640 --> 00:11.970
+Right.
+
+00:12.000 --> 00:19.950
+We have true and we have false and some of you might be wondering why they're so useful.
+
+00:19.950 --> 00:25.300
+And when it comes to conditional logic billions are really really important.
+
+00:25.300 --> 00:35.280
+For example let's say we create a variable is called and you know what we're going to create a car that
+
+00:35.370 --> 00:38.760
+automatically detects if you can start the engine.
+
+00:38.880 --> 00:44.220
+Maybe if you're not old enough the engine won't start and it won't let you drive.
+
+00:44.340 --> 00:50.940
+So that they make sure that this car is super safe and only people that are perhaps over 18 can drive
+
+00:50.940 --> 00:51.780
+it.
+
+00:51.810 --> 00:54.060
+So how can we code something like that.
+
+00:54.120 --> 01:00.490
+Let's assume Tesla has a new feature like the well we'll have something like is old and we'll set this
+
+01:00.490 --> 01:06.800
+to true right maybe we have something else.
+
+01:07.460 --> 01:15.680
+Maybe it checks a license to make sure that we have a license so we can say is license and then we can
+
+01:15.680 --> 01:17.510
+set it to true.
+
+01:17.690 --> 01:23.020
+Now these could change true and false depending on the user and the driver.
+
+01:23.150 --> 01:28.160
+But when I talk about conditionals This is what I mean in Python.
+
+01:28.190 --> 01:37.670
+We can use the if keyword to say if some condition exists and this is just me writing it it doesn't
+
+01:37.670 --> 01:38.180
+exist.
+
+01:38.180 --> 01:42.250
+You can see that I get a read on underline with invalid syntax.
+
+01:42.380 --> 01:47.720
+But here we want to say a condition that evaluates to true or false.
+
+01:47.840 --> 01:58.340
+In our case we can say hey if is old witch what does it evaluate to well evaluates to true if that's
+
+01:58.340 --> 02:06.530
+true then let's say print you are old enough to drive.
+
+02:06.660 --> 02:08.440
+Now there's a few new things here.
+
+02:08.530 --> 02:16.930
+One I've added a semicolon or a call in and then you'll see here that the indentation is different.
+
+02:17.140 --> 02:27.310
+As a matter of fact when I press enter after the colon you see that it automatically gives me a space.
+
+02:27.310 --> 02:34.230
+This tells the Python interpreter I'm going to do an if statement a conditional operation.
+
+02:34.630 --> 02:43.980
+And if this happens to be true run everything that's inside of here that has this indentation and if
+
+02:43.980 --> 02:54.460
+I do something without the indentation let's say print check check this to the Python interpreter is
+
+02:54.460 --> 02:56.780
+like a completely new line.
+
+02:56.860 --> 03:00.580
+It is not part of this F block.
+
+03:00.580 --> 03:03.960
+And if you're using the rep you see over here I get a little minus sign.
+
+03:04.180 --> 03:05.440
+I click this.
+
+03:05.440 --> 03:13.240
+You see how it hides Well what it does is it's saying hey this is a code block over here.
+
+03:13.330 --> 03:22.420
+It's an entire thing in itself but anything outside that is not indented well doesn't belong to it.
+
+03:22.420 --> 03:29.020
+So to a Python interpreter it's going to say I have this line and then I have this line.
+
+03:29.170 --> 03:30.530
+Let me show you what I mean.
+
+03:30.700 --> 03:40.230
+If I run this program I get you are old enough to drive and then I also get check check but what if
+
+03:40.230 --> 03:43.180
+I say is old is now false.
+
+03:43.500 --> 03:48.370
+What do you think will happen if I run this I get.
+
+03:48.510 --> 03:54.010
+Check check our Python interpreter is going to say hey.
+
+03:54.280 --> 04:00.840
+Set Variable is old to false Hey set is licensed equals too true.
+
+04:01.150 --> 04:02.710
+And then it's going to go to line three.
+
+04:02.740 --> 04:03.490
+No nothing there.
+
+04:03.490 --> 04:04.510
+I'm going to keep going.
+
+04:04.510 --> 04:05.240
+Line four.
+
+04:05.260 --> 04:07.510
+Hey if is old.
+
+04:07.600 --> 04:08.990
+Is this true.
+
+04:09.040 --> 04:09.510
+No.
+
+04:09.550 --> 04:17.080
+If all this false and the interpreter is going to say OK I'm only supposed to run this piece of code
+
+04:17.140 --> 04:24.940
+if this is true because this is now false I'm just going to completely ignore what's underneath here
+
+04:25.270 --> 04:29.260
+and just go to the next line that has well no indentation.
+
+04:29.260 --> 04:31.740
+So it's going to print check check.
+
+04:32.050 --> 04:35.270
+And this is the power of conditionals.
+
+04:35.380 --> 04:42.100
+We're able to essentially skip lines the interpreter doesn't even care what's in here because I just
+
+04:42.100 --> 04:46.390
+told my program to skip from line for two lines six.
+
+04:46.420 --> 04:54.450
+How cool is that so we learnt that there is this If keyword but there's also another thing we can use
+
+04:54.780 --> 05:03.360
+called else and you'll notice here that I did and added to the indentation and else as the name suggests
+
+05:04.200 --> 05:09.920
+simply says hey if this something is true then do this.
+
+05:10.290 --> 05:14.430
+Otherwise also else do this.
+
+05:14.430 --> 05:21.230
+And again you see that I've added the indentation so try to guess what's about to happen in this program.
+
+05:21.550 --> 05:29.680
+If I click Run I get checked check because it's saying hey is old is that true.
+
+05:29.680 --> 05:30.790
+No it's not true.
+
+05:30.820 --> 05:33.080
+Okay I'm going to completely ignore that.
+
+05:33.340 --> 05:34.740
+The interpreter sees else.
+
+05:34.780 --> 05:35.040
+Okay.
+
+05:35.050 --> 05:43.030
+Well this wasn't true so I'm going to run whenever this evaluates to false I'm going to always run print.
+
+05:43.030 --> 05:44.810
+Check check.
+
+05:44.960 --> 05:51.760
+What if I change is old to now equal to true what will happen next.
+
+05:51.760 --> 06:05.920
+Well I get you are old enough to drive else only runs if the F block of code evaluates to false very
+
+06:06.040 --> 06:08.270
+very cool all right.
+
+06:08.270 --> 06:09.430
+Let me ask you another question.
+
+06:09.500 --> 06:23.470
+What if I did print here and let's change this to you are not of age if I run this.
+
+06:23.500 --> 06:24.790
+Is that what you expected.
+
+06:24.790 --> 06:32.340
+Well I hope by now you agree that this is the expected behavior because is old is true.
+
+06:32.380 --> 06:37.840
+I'm going to print this and then Python interpreter is going to say well this was true so I'm going
+
+06:37.840 --> 06:41.740
+to completely ignore the else block and then just go to the next line.
+
+06:41.830 --> 06:42.880
+What's on line 8.
+
+06:42.880 --> 06:43.360
+Nothing.
+
+06:43.360 --> 06:46.280
+So I'm going to go to line 9 and I'm going to print.
+
+06:46.380 --> 06:47.240
+OK OK.
+
+06:47.260 --> 06:57.290
+OK as you can see we're now controlling the flow of our programs where instead of going from one to
+
+06:57.290 --> 07:02.440
+nine just line by line we're now saying a line for do some sort of check.
+
+07:02.450 --> 07:05.430
+And based on that skip a few lines.
+
+07:05.780 --> 07:07.610
+Very very cool.
+
+07:07.630 --> 07:07.900
+All right.
+
+07:07.900 --> 07:10.120
+There's one other thing I want to show you.
+
+07:10.270 --> 07:12.620
+And it's the.
+
+07:13.450 --> 07:19.650
+If and I know this kind of looks weird you would think that it will be else if.
+
+07:19.720 --> 07:24.540
+But no no no it's L. F..
+
+07:24.570 --> 07:26.730
+And what do you think this does.
+
+07:26.730 --> 07:37.020
+Well you use it in combination with if you say if something if otherwise else if another condition so
+
+07:37.020 --> 07:42.870
+let's say is licensed then do another condition.
+
+07:42.870 --> 07:49.300
+So let's say print you can drive now.
+
+07:49.610 --> 07:51.860
+So let's go through this again.
+
+07:52.020 --> 08:00.810
+I'm going to say is this person old enough if that person is old enough and this evaluates to true.
+
+08:00.930 --> 08:11.630
+Well then I want you to run this otherwise I want you to run this condition hey is this true.
+
+08:11.760 --> 08:12.380
+No.
+
+08:12.470 --> 08:15.110
+If it's not true then jumped to else.
+
+08:15.240 --> 08:22.530
+So what will happen here if I click Run we get true for the first conditional block.
+
+08:22.560 --> 08:23.770
+Right over here.
+
+08:23.770 --> 08:29.010
+So automatically Python interpreter is going to say well we just got true here so I'm going to ignore
+
+08:29.010 --> 08:32.550
+this and ignore this and then print.
+
+08:32.550 --> 08:32.950
+OK.
+
+08:32.970 --> 08:38.150
+OK but let's say that is old is now false.
+
+08:39.650 --> 08:44.560
+What will happen next if I click Run.
+
+08:44.700 --> 08:46.020
+This is false.
+
+08:46.020 --> 08:53.000
+So Python interpreter is going to say Nope not gonna care about this block and I'm going to go hey.
+
+08:53.010 --> 08:57.540
+Else if I condition hey is this person licensed.
+
+08:57.690 --> 08:59.190
+Yep they are.
+
+08:59.190 --> 09:06.140
+So I'm going to print you can drive now and ignore else so it works like this.
+
+09:06.160 --> 09:10.000
+What if both of these were false.
+
+09:10.000 --> 09:16.610
+Well as you can imagine the Python interpreter is going to ignore it's going to run this say no.
+
+09:16.660 --> 09:17.620
+This is false.
+
+09:17.770 --> 09:18.200
+This.
+
+09:18.260 --> 09:19.590
+No this is false.
+
+09:19.600 --> 09:22.450
+And then finally it's going to run this.
+
+09:22.540 --> 09:29.080
+You see that else is a catch all that is if none of these conditions are true then we're just going
+
+09:29.080 --> 09:30.340
+to run this.
+
+09:30.340 --> 09:31.930
+So it's a backup in a sense.
+
+09:31.930 --> 09:38.660
+Hey if all things fail Jane just do this very very cool.
+
+09:38.720 --> 09:44.030
+Now if you look at this program you're thinking this program doesn't really work that well does it.
+
+09:44.030 --> 09:50.390
+I mean we're checking if the person is old and if person is licensed but shouldn't we check both.
+
+09:50.390 --> 09:54.530
+We want somebody who has a license and who's old enough to dry.
+
+09:54.560 --> 09:55.540
+Mm hmm.
+
+09:55.610 --> 09:57.690
+This is this is a buggy program.
+
+09:57.710 --> 10:02.320
+If we implement this in a Tesla Well we're gonna get a lot of lawsuits right.
+
+10:02.330 --> 10:07.120
+Because we can get somebody who's maybe licensed but isn't old enough.
+
+10:07.220 --> 10:14.360
+Which I guess doesn't make sense but we can get somebody who is old enough but never got their driver's
+
+10:14.360 --> 10:14.990
+license.
+
+10:14.990 --> 10:20.660
+And somehow we get access to the car and they can start the engine and drive and oh that's a that's
+
+10:20.660 --> 10:23.460
+a lawsuit waiting to happen so how can we fix this.
+
+10:23.470 --> 10:24.220
+Mm hmm.
+
+10:24.440 --> 10:25.400
+You know what.
+
+10:25.640 --> 10:31.420
+The power is that this is an expression right.
+
+10:31.450 --> 10:38.450
+An expression if you remember is something that produces a value end up that means that this doesn't
+
+10:38.450 --> 10:41.300
+have to you know just have true here.
+
+10:41.300 --> 10:42.650
+It could be an expression.
+
+10:42.650 --> 10:53.930
+So I could say if is old and is licensed then I can do that.
+
+10:54.240 --> 10:58.020
+And this is something new that we haven't seen before the end.
+
+10:58.020 --> 11:00.570
+This is another keyword in Python.
+
+11:00.900 --> 11:06.450
+And in the now coming video we're gonna talk about more of these keywords but this should read like
+
+11:06.480 --> 11:07.300
+English right.
+
+11:07.350 --> 11:21.120
+If is old and is licensed then do this so it can now remove the L if and then here both expressions
+
+11:21.210 --> 11:25.460
+need to evaluate to True that is whatever happens here.
+
+11:25.540 --> 11:32.930
+This has to evaluate to true and this has to evaluate to true and only when both are true.
+
+11:32.950 --> 11:33.910
+Again as.
+
+11:33.910 --> 11:45.360
+And states then you're old enough to drive and you have a license so that if I run this well I get an
+
+11:45.360 --> 11:50.970
+error rate because or an unknown error but it goes into the else block because both of these are false
+
+11:51.330 --> 11:55.800
+if only one of them is true and I click Run.
+
+11:56.020 --> 12:01.420
+You are not of age because both of these have to be true.
+
+12:01.540 --> 12:04.760
+If I click Run Hey.
+
+12:04.770 --> 12:11.510
+All right the car is starting you can drive away with your Tesla OK before I finish this video because
+
+12:11.510 --> 12:20.850
+this is a lot I want to just note one thing that is the L if statement the l live statement is really
+
+12:20.850 --> 12:27.350
+really useful because when you have code like this where you have an if statement and an L statement
+
+12:28.710 --> 12:31.260
+usually you only see one of each.
+
+12:31.290 --> 12:36.450
+I mean sure in another part of the program I could have another if statement and an if statement with
+
+12:36.450 --> 12:39.300
+another else statement inside of here.
+
+12:39.570 --> 12:47.670
+But usually when you have this grouping together you only see one F and one else but you can have multiple
+
+12:47.730 --> 12:56.730
+l FS so I can have L if another condition here and then I can have another L if another condition here
+
+12:57.110 --> 12:59.890
+you can have as many as you want.
+
+12:59.970 --> 13:05.790
+Eventually the program is going to either evaluate one of these conditions to true or it's going to
+
+13:05.790 --> 13:07.080
+go into the else block.
+
+13:07.320 --> 13:10.860
+But usually you follow this order.
+
+13:11.020 --> 13:12.190
+All right.
+
+13:12.220 --> 13:13.070
+That was a lot.
+
+13:13.090 --> 13:15.940
+Let's take a break and explore this topic a little bit more.
+
+13:16.060 --> 13:17.500
+I'll see in the next one public.

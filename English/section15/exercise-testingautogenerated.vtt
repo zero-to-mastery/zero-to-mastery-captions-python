@@ -1,0 +1,460 @@
+WEBVTT
+
+00:00.390 --> 00:01.370
+Welcome back.
+
+00:01.410 --> 00:06.950
+Let's do a fun little exercise by revisiting a piece of code that we've written before.
+
+00:07.080 --> 00:14.070
+Remember the random no guessing game where we had to guess a number between 1 and 10.
+
+00:14.100 --> 00:18.690
+If I run this file you see that it asked me to guess.
+
+00:18.690 --> 00:24.190
+So let's say one two three four five six seven eight nine.
+
+00:24.390 --> 00:25.840
+And I finally get the number.
+
+00:25.860 --> 00:26.900
+You are a genius.
+
+00:26.910 --> 00:29.250
+The number was 9.
+
+00:29.300 --> 00:32.510
+So how can we test this code.
+
+00:32.510 --> 00:37.580
+Now one thing you'll notice here is that we don't really have a function.
+
+00:37.610 --> 00:42.950
+I remember when I told you about functional programming and how it's good to break up our code into
+
+00:42.950 --> 00:49.790
+small bits of functions that do one thing and one thing really well especially pure functions.
+
+00:49.940 --> 00:56.400
+Well one of the big benefits with that mentality is that you create code that is really really easy
+
+00:56.400 --> 01:02.480
+to test instead of having really complicated logic in our tests.
+
+01:02.480 --> 01:07.610
+We can simply give our functions an input and expect an output.
+
+01:07.610 --> 01:10.520
+And this is why we have unit test.
+
+01:10.610 --> 01:16.420
+And the idea of a unit test is that we're testing each piece of unit.
+
+01:16.580 --> 01:22.070
+These unit tests are small little pieces testing these simple functions.
+
+01:22.070 --> 01:31.250
+So my challenge to you is to use this code and try to break this up into simple functions.
+
+01:31.340 --> 01:41.760
+Now in our case I want us to just test this part of the code which is the guessing part where we receive
+
+01:41.790 --> 01:52.050
+an input which will be the guests and then test it against some random answer that we have and we should
+
+01:52.050 --> 02:03.870
+expect some sort of output so either we enter a number has to be one to 10 and if we get a right we
+
+02:03.870 --> 02:11.100
+have to get the string but the key here is that we probably want to move this into a function that we
+
+02:11.100 --> 02:12.430
+can test.
+
+02:12.630 --> 02:21.360
+We can't ignore the outside world and break this up into its own little function so pause the video
+
+02:21.360 --> 02:22.570
+here give it a go.
+
+02:22.590 --> 02:27.720
+You're gonna have to get through some stumbling blocks but it's going to really test your understanding
+
+02:27.720 --> 02:28.630
+of tests.
+
+02:28.650 --> 02:32.840
+Haha funny that was upon so pass a video give it a go.
+
+02:32.840 --> 02:35.120
+Otherwise I'm going to get going with the answer.
+
+02:36.510 --> 02:39.750
+The first thing I want to do is to set up my test again.
+
+02:39.780 --> 02:46.280
+I'm going to import unit test and I'm going to create the class test.
+
+02:46.290 --> 02:53.570
+Main or let's call a test script this time or test game.
+
+02:53.570 --> 02:57.400
+I'm going to say unit test dot test case.
+
+02:57.550 --> 02:59.800
+This is going to be our test case.
+
+02:59.800 --> 03:04.750
+And then here I'll create let's say just a simple test let's say
+
+03:08.200 --> 03:10.690
+game or test input
+
+03:14.020 --> 03:23.090
+received the self and for now I'm just going to pass this because we're not really doing anything finally.
+
+03:23.150 --> 03:24.200
+I'll say if
+
+03:27.560 --> 03:35.490
+name because to me then run the unit test dot me.
+
+03:35.740 --> 03:46.940
+So this is just our simple setup so if we run this now let's say Python 3 test out by you see that we
+
+03:47.120 --> 03:48.260
+ran one test.
+
+03:48.260 --> 03:48.500
+All right.
+
+03:48.500 --> 03:51.360
+So this is our setup next.
+
+03:51.380 --> 03:58.460
+What I want to do is actually take this out so I can use it in my test filed by extracting it into a
+
+03:58.460 --> 03:59.150
+function.
+
+03:59.180 --> 04:11.590
+So I'm just going to say at the top over here I'm going to define our guess gain or let's call it run
+
+04:13.780 --> 04:26.020
+guess that's going to receive a input or let's say a guess and then it's going to run this code.
+
+04:26.020 --> 04:27.000
+So let's do that.
+
+04:27.000 --> 04:36.940
+I'm going to take this piece of code like this and simply paste it in here.
+
+04:37.080 --> 04:43.050
+Now the wrong guess is also going to need the answer variable so I'm going to give it a second parameter
+
+04:43.410 --> 04:45.870
+answer like this.
+
+04:46.340 --> 04:56.960
+So that now I can just simply inside of here run this function with the guests and answer just like
+
+04:56.960 --> 04:57.170
+that.
+
+04:58.960 --> 05:05.260
+So let's save it here and run this test or let's just run the actual file to make sure that it's still
+
+05:05.260 --> 05:05.580
+working.
+
+05:06.980 --> 05:12.390
+Oh and we get a bit of an indentation error so we have to make sure that our indentation is correct
+
+05:12.400 --> 05:15.020
+because remember in Python that means something.
+
+05:17.010 --> 05:18.540
+All right now we have an issue.
+
+05:18.630 --> 05:26.610
+We have a break outside of loop because while we were using the break keyword and while we're outside
+
+05:26.670 --> 05:33.390
+of a loop right now so one thing we can do is we can say return here.
+
+05:33.460 --> 05:36.880
+So let's run that again and keep guessing a name
+
+05:40.000 --> 05:41.260
+or a number.
+
+05:41.320 --> 05:42.260
+And there you go.
+
+05:42.310 --> 05:43.790
+This is still working.
+
+05:43.900 --> 05:51.210
+I'm able to use return here because this well is going to run and return.
+
+05:51.460 --> 06:06.330
+But now we're still inside of the game so maybe we can just return TRUE AND SAY IF run gets is true
+
+06:06.420 --> 06:08.340
+we're going to break out of this
+
+06:11.640 --> 06:13.440
+again let's out our game.
+
+06:13.680 --> 06:17.500
+We want to just clear this and run the game again.
+
+06:18.130 --> 06:21.930
+One two three four.
+
+06:21.970 --> 06:22.780
+And there you go.
+
+06:22.810 --> 06:23.910
+I've enter a number.
+
+06:23.950 --> 06:24.850
+I'm a genius.
+
+06:24.850 --> 06:25.870
+We've just finished the game.
+
+06:26.530 --> 06:31.620
+Let's make this a little bit smaller just so you can see so we have our run.
+
+06:31.620 --> 06:41.870
+Guess I've modified the code a bit but the key thing is that I've extracted out a unit of functionality
+
+06:42.710 --> 06:50.240
+so that I can test something like run guess so it looks like I have modified our code but the code is
+
+06:50.240 --> 06:50.930
+still working.
+
+06:50.930 --> 06:55.360
+So now let's start testing our wrong guess.
+
+06:55.400 --> 07:03.810
+Function let's go here and start importing our script
+
+07:06.610 --> 07:09.190
+and in here do a few things.
+
+07:09.230 --> 07:17.570
+First I want the answer to let's say equal five And the guess is going to equal five.
+
+07:17.580 --> 07:25.380
+So we want to make sure that if the guests and the answer match that well the wrong guess goes through
+
+07:25.380 --> 07:38.190
+the if statement and prints out you are a genius or in our case returns true so let's say self dot assert
+
+07:39.420 --> 07:46.450
+equal that script or actually first time around let's actually run it.
+
+07:46.480 --> 07:59.790
+So let's have result equals do script dot what was it run guess run guess and give it the answer.
+
+08:00.210 --> 08:00.810
+And guess
+
+08:03.780 --> 08:15.050
+and we expect the result to return true so we can just say assert true that the result is true.
+
+08:15.210 --> 08:16.290
+If I now run this
+
+08:19.160 --> 08:22.280
+oh we actually start up the game.
+
+08:22.460 --> 08:23.960
+So how can we fix this.
+
+08:23.960 --> 08:28.340
+Well we can close this and actually add the if name main
+
+08:33.800 --> 08:44.170
+so down here we'll say Hey only run this if this is the main file being run just like that if I go back
+
+08:44.170 --> 08:46.380
+to test here and run this again.
+
+08:48.400 --> 08:48.970
+All right.
+
+08:49.070 --> 08:55.160
+Now it's working but I get an assertion error test game object has no attribute assert true because
+
+08:55.160 --> 09:00.670
+while I misspelled it let's try that again all right.
+
+09:00.850 --> 09:05.830
+It looks like one test ran and everything is good.
+
+09:05.860 --> 09:07.480
+We also see that it printed out.
+
+09:07.480 --> 09:09.370
+You are a genius.
+
+09:09.400 --> 09:11.080
+Very very nice.
+
+09:11.080 --> 09:16.710
+By the way I'm showing you this way of testing because this is how a real life scenario looks.
+
+09:16.750 --> 09:22.360
+You keep breaking things you keep making mistakes and then you try and fix them and correct your code
+
+09:22.360 --> 09:29.060
+and you can see our code is already looking better and better just by running these tests OK.
+
+09:29.060 --> 09:29.900
+What else can we do.
+
+09:29.900 --> 09:36.180
+Let's say here that we're going to copy this and just so things are shorter.
+
+09:36.190 --> 09:42.510
+I'm just going to directly enter the parameters in here.
+
+09:42.730 --> 09:46.820
+Just like that say taste input let's say.
+
+09:46.830 --> 09:49.850
+Incorrect or
+
+09:52.800 --> 10:01.940
+wrong guess so let's say the answer is five and I guess zero so we want to assert that this is going
+
+10:01.940 --> 10:11.100
+to equal false so if I run this two tests are passing that's awesome.
+
+10:11.200 --> 10:13.330
+What else can we test here.
+
+10:13.330 --> 10:21.250
+All right well we want to test that if the guess is not between zero and 10 or between 1 and 10.
+
+10:21.250 --> 10:24.520
+In that case we want to have a print of Hey Bozo.
+
+10:24.520 --> 10:25.550
+I said wanted 10.
+
+10:26.230 --> 10:28.510
+So once again I can test
+
+10:32.330 --> 10:40.930
+that if my guess wrong number let's say the answer is five.
+
+10:41.010 --> 10:43.670
+But I give you eleven.
+
+10:43.910 --> 10:49.470
+We want to assert Well right now we're printing and not doing anything.
+
+10:49.670 --> 10:54.090
+So maybe we should return false.
+
+10:54.200 --> 10:55.760
+Just to have some consistency here
+
+10:59.220 --> 10:59.750
+again.
+
+10:59.790 --> 11:05.630
+If I do that and I run there you know three tests are passing.
+
+11:05.870 --> 11:06.950
+That's great.
+
+11:07.100 --> 11:18.370
+And there's many many more tests that we can write maybe let's do one more test which is to test what
+
+11:18.370 --> 11:31.290
+if the input is a string if I run this and make sure that wrong type here.
+
+11:31.290 --> 11:40.540
+Make sure the names are different and I have four Tests running because this isn't going to pass and
+
+11:40.540 --> 11:43.300
+it's going to return false.
+
+11:43.430 --> 11:49.280
+Now there's many more things that we can do here but you can see the power of test right now.
+
+11:49.280 --> 11:51.770
+If you have different test than me that's OK.
+
+11:51.770 --> 11:53.660
+Everybody test cases are different.
+
+11:53.660 --> 12:00.690
+The whole point of testing is to just simply look at our code and see how we can improve it how we can
+
+12:00.690 --> 12:08.100
+break our code how we can simplify our code by breaking it into smaller units smaller units that can
+
+12:08.100 --> 12:14.170
+be tested and fix some errors that perhaps we wouldn't have thought about.
+
+12:14.200 --> 12:16.420
+Now there's many more things that we can do.
+
+12:16.510 --> 12:25.390
+But you noticed here how the idea was to work on small piece at a time test it and then maybe further
+
+12:25.390 --> 12:28.860
+on we can look at this part of the code or maybe the.
+
+12:28.900 --> 12:32.600
+Try and accept part of the code.
+
+12:32.860 --> 12:39.970
+And here's the thing when you're working for a company I argue that there are an infinite number of
+
+12:39.970 --> 12:40.970
+tests they can do.
+
+12:40.990 --> 12:46.030
+You can have hundreds of lines here to test your code to bits.
+
+12:46.030 --> 12:53.610
+But just because you're testing as many times as possible doesn't really make your tests good.
+
+12:53.620 --> 13:00.390
+Like I said there's an infinite number of tests that you can write and the idea is to write good quality
+
+13:00.390 --> 13:08.550
+tests that cover most of your cases but eventually you'll have diminishing returns where you have to
+
+13:08.550 --> 13:16.590
+have a tradeoff between writing code and writing tests and sometimes depending on what the job requires
+
+13:16.710 --> 13:24.390
+you might have to focus more on tests and focus less on code or sometimes maybe you need to move fast
+
+13:24.630 --> 13:26.270
+and you don't have time to write tests.
+
+13:26.610 --> 13:31.220
+And again depending on the business needs that might be the case too.
+
+13:31.350 --> 13:38.490
+But with this section I hope you understand some of the principles following testing in software development
+
+13:39.330 --> 13:48.250
+that is bugs are always going to arise in our code and we can use lending to help us with this.
+
+13:48.290 --> 13:54.420
+But one of the best ways to make sure that our code is working properly is test.
+
+13:54.560 --> 14:02.870
+And the more tests that we have usually means the more stable our code I'll see in the next one by.

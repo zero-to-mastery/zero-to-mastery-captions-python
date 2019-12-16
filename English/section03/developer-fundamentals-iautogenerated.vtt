@@ -1,0 +1,148 @@
+WEBVTT
+
+00:01.090 --> 00:01.680
+All right.
+
+00:01.700 --> 00:05.170
+This is a big video now.
+
+00:05.270 --> 00:12.030
+These videos are going to be sprinkled throughout the course they're developing fundamentals video.
+
+00:12.070 --> 00:19.330
+These are the topics that are going to be super super short but important because as a beginner it's
+
+00:19.330 --> 00:24.190
+hard to learn these things because you don't know what you don't know.
+
+00:24.190 --> 00:30.370
+So what I'm going to try and do in these developer fundamentals is tell you well how to avoid the mistakes
+
+00:30.370 --> 00:36.670
+that I made when I got started and what a lot of people do when they get started that is they don't
+
+00:36.670 --> 00:42.480
+have a clear path and don't understand what the most efficient way to do things is.
+
+00:42.490 --> 00:47.770
+So with developer fundamentals we're going to talk about key things to make you.
+
+00:47.890 --> 00:56.470
+First of all efficient in learning python but also make you a programmer that is really really good
+
+00:56.740 --> 00:58.320
+and that companies want.
+
+00:58.330 --> 01:02.530
+So what is this first developer fundamental.
+
+01:02.920 --> 01:05.830
+It's don't read the dictionary.
+
+01:05.830 --> 01:11.550
+What does that mean well when you're learning a language such as Python.
+
+01:11.550 --> 01:17.400
+You're going to have a tendency especially when you're starting up to try and learn every single thing
+
+01:17.580 --> 01:22.230
+every single function every single syntax every single trick.
+
+01:22.230 --> 01:28.290
+It's almost like you're trying to learn a language by reading a dictionary from page one all the way
+
+01:28.290 --> 01:28.950
+to page.
+
+01:28.950 --> 01:32.680
+I don't know a thousand two hundred but that's now how things work.
+
+01:32.820 --> 01:37.920
+As a matter of fact when I work with different programming languages I don't know all the syntax is
+
+01:37.950 --> 01:45.150
+I don't know all the methods and functions and what a lot of developers do is not necessarily memorize
+
+01:45.510 --> 01:49.350
+everything just like you would every single word in a dictionary.
+
+01:49.350 --> 01:54.460
+Instead you understand what exists and what you can use.
+
+01:54.510 --> 02:01.680
+But you can always google things and most of the time developers are Googling things no matter how experienced
+
+02:01.680 --> 02:02.650
+they are.
+
+02:02.670 --> 02:09.120
+For example if we go to the Python documentation here we can go through everything right.
+
+02:09.140 --> 02:15.260
+I can go through the language reference and read through everything and this is really really useful
+
+02:15.260 --> 02:24.380
+information but you're not going to memorize every single thing about the language because there's a
+
+02:24.380 --> 02:25.680
+lot.
+
+02:25.870 --> 02:27.960
+This is the python language.
+
+02:27.970 --> 02:31.750
+And then there's also the libraries the standard libraries that we can use.
+
+02:31.750 --> 02:37.500
+And if you sit through here and just read everything in here.
+
+02:37.810 --> 02:41.890
+Well you're not going to memorize anything in order for you to actually learn Python.
+
+02:41.890 --> 02:48.310
+You have to use the language and you'll notice that some things are used a lot more than others just
+
+02:48.310 --> 02:54.940
+like in human languages like when you learn English there's really difficult words that don't get used
+
+02:55.090 --> 02:55.960
+that often.
+
+02:55.960 --> 03:04.090
+And there's words like and the or or apple that get used very often.
+
+03:04.630 --> 03:11.890
+So we're going to learn the language in a way that makes sense in a way that's efficient where we focus
+
+03:11.950 --> 03:19.150
+on the 20 percent that gets used 80 percent of the time and all these smaller more complicating things.
+
+03:19.150 --> 03:25.050
+We're going to cover but we're not going to cover one by one from start to finish.
+
+03:25.090 --> 03:30.160
+We're going to jump around the idea being that when you learn a programming language you're just using
+
+03:30.160 --> 03:37.810
+these concepts and slowly you're learning what's out there so that when you have a problem you can identify
+
+03:37.810 --> 03:46.720
+it and remember oh I think Python has a path lib library that I can use or perhaps remember that oh
+
+03:46.720 --> 03:49.960
+I can use tuples in Python.
+
+03:49.960 --> 03:56.410
+So your first developer fundamental is this don't learn a language as if you're trying to get 100 percent
+
+03:56.440 --> 03:57.480
+on a test.
+
+03:57.640 --> 04:02.860
+We're going to learn a language by actually using it focusing on the things that actually matter.
+
+04:02.860 --> 04:04.660
+All right that's enough talking for me.
+
+04:04.660 --> 04:06.440
+I'll see in the next video by.

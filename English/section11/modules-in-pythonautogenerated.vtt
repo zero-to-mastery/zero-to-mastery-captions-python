@@ -1,0 +1,394 @@
+WEBVTT
+
+00:00.760 --> 00:06.280
+Up to this point we've learned about a few ways to organize our Python code.
+
+00:06.310 --> 00:07.700
+The first thing we did.
+
+00:07.810 --> 00:13.090
+Well we just wrote Python in a file and that organizes it right.
+
+00:13.270 --> 00:17.950
+Our entire code has been so far on one single file.
+
+00:17.950 --> 00:21.520
+So that was one way that we organized our code.
+
+00:21.590 --> 00:29.420
+Next we learned about functions and functions were used as a way for us to not write code that we repeat
+
+00:29.510 --> 00:30.800
+over and over.
+
+00:30.800 --> 00:37.220
+We could write functions that we can use anywhere we want in our file so that we can call these functions
+
+00:37.340 --> 00:45.200
+over and over and we can name the functions appropriately so that our code makes sense and then we learned
+
+00:45.200 --> 00:53.150
+about classes write these blueprints that we can create objects from we can instantiate new Python data
+
+00:53.150 --> 00:59.600
+types beyond the ones that they just gave us right instead of just having dictionaries and lists we
+
+00:59.600 --> 01:07.420
+can create our own custom ones our own lists maybe that have extra features and we're able to use classes
+
+01:07.540 --> 01:16.880
+to organize our code to box them up and give each class a certain method and attribute that packages
+
+01:16.890 --> 01:19.190
+it nicely for us to use.
+
+01:19.210 --> 01:25.090
+We also learned about functional programming and how unlike let's say object oriented programming where
+
+01:25.090 --> 01:28.370
+we see a lot of classes with functional programming.
+
+01:28.390 --> 01:35.200
+We just use a lot of functions a lot of pure functions and we have a data that we just passed into those
+
+01:35.200 --> 01:39.640
+functions and we organize things into small little pieces.
+
+01:40.030 --> 01:48.190
+All of these things were meant for us to keep our code clean make our code more maintainable thus keeping
+
+01:48.190 --> 01:56.440
+our code organized because as you write more lines of code it gets harder and harder to keep everything
+
+01:56.500 --> 01:57.910
+in your head.
+
+01:57.910 --> 02:03.910
+If other people join your team to work on your project they need an easy way to figure out how things
+
+02:03.910 --> 02:11.240
+are working but we still have a problem and that problem is that everything is contained in this one
+
+02:11.450 --> 02:19.060
+file all the functions all the classes we've been writing has been on just one dot pi file but in real
+
+02:19.060 --> 02:21.100
+life this isn't the case.
+
+02:21.340 --> 02:27.160
+We have a lot more code and we can't just have one file with millions line of code.
+
+02:27.700 --> 02:29.950
+So how do we stay organized
+
+02:32.870 --> 02:38.230
+if we had multiple files of python like this.
+
+02:38.430 --> 02:40.850
+Because our project is getting bigger and bigger.
+
+02:40.860 --> 02:41.850
+Would this work.
+
+02:41.850 --> 02:48.350
+Is there a way for us to link all of these files together as a matter of fact.
+
+02:48.390 --> 02:55.770
+There is and this is very common practice all across industry and we call this way of organizing code
+
+02:56.340 --> 03:01.420
+modules and modules are simply will these files.
+
+03:01.420 --> 03:10.220
+Each one of these files each dot pi file is a module and by building these modules kind of like we built
+
+03:10.490 --> 03:15.890
+different functions kind of like we built different classes because inside of these files we can have
+
+03:15.890 --> 03:23.900
+classes we can have functions but we can also have different files so a layer higher to divide up our
+
+03:23.900 --> 03:29.940
+code and in this section we're going to learn all about modules and try to master it and see how we
+
+03:29.940 --> 03:38.020
+can write organized code let's have a look you can see over here if I click on files in our repo we
+
+03:38.020 --> 03:43.340
+have a main dot pi and every time I click run this fall guy run.
+
+03:43.630 --> 03:46.600
+But what if we have more files.
+
+03:46.600 --> 03:56.540
+What if I add another file here and we'll call it utility dot pi so based on what I just tell you these
+
+03:56.630 --> 04:05.980
+two things are what their modules right mean dot pi is a module you tilted up pi is a module and when
+
+04:05.980 --> 04:12.290
+writing modules we use the same principles as variables in python which is snake case.
+
+04:12.370 --> 04:21.150
+That is if they're spaces we use underscore everything is lowercase letter so how do we divide up these
+
+04:21.600 --> 04:22.760
+modules.
+
+04:22.890 --> 04:25.800
+And this comes with practice when you're just beginning.
+
+04:25.800 --> 04:29.970
+It's hard to say Hey what goes into what file what goes into what file.
+
+04:29.970 --> 04:32.530
+But it's similar to classes right.
+
+04:32.610 --> 04:40.350
+Similar to functions we want to divide up our code into chunks then make sense again.
+
+04:40.480 --> 04:49.950
+Let's say we're working at Netflix we might have a file dedicated to videos we might have another file
+
+04:49.980 --> 04:59.560
+or module dedicated to the logging of a user maybe another file dedicated to analytics and figuring
+
+04:59.580 --> 05:02.170
+out recommendations for users.
+
+05:02.370 --> 05:09.260
+We want to group these classes and functions together inside of a file that makes sense.
+
+05:10.330 --> 05:16.030
+Now one of the most common ways to use a module is something like a utility.
+
+05:16.160 --> 05:23.140
+So let's say we want to create a utility module that is a module that has a lot of what kind of like
+
+05:23.140 --> 05:24.440
+a tool belt.
+
+05:24.460 --> 05:30.730
+Very simple functions that we can use all across our project because we can imagine here having multiple
+
+05:30.730 --> 05:31.810
+files.
+
+05:32.020 --> 05:34.380
+So let's create a very simple example.
+
+05:34.450 --> 05:43.360
+I'm going to say a multiply function exists here and this takes a number one and number two and in here
+
+05:43.360 --> 05:50.340
+we're simply going to return num 1 times num to a very simple function.
+
+05:50.890 --> 05:54.450
+And once again we'll also have a divide function.
+
+05:54.610 --> 06:01.740
+And yes this is kind of useless because we can just use the plus or to divide operant in python.
+
+06:01.750 --> 06:05.810
+But stick with me here and trying to show you an example.
+
+06:05.830 --> 06:06.240
+All right.
+
+06:06.250 --> 06:12.460
+So number two I'm going to return num 1 divided by num two.
+
+06:12.700 --> 06:14.520
+Nice and simple.
+
+06:14.560 --> 06:23.680
+So this is our utility module that has all these functions for us now.
+
+06:23.690 --> 06:26.710
+Notice here that we're actually not doing anything in this file.
+
+06:26.750 --> 06:33.400
+I'm simply defining functions but I'm not running any of the functions but let's say we have this utility
+
+06:33.400 --> 06:37.770
+module and I want to use it in my main dot pi file.
+
+06:37.930 --> 06:46.970
+How would we go about doing this well the way we communicate between these two files is quite simple.
+
+06:47.070 --> 06:55.020
+All we need to do is use the import command we import and then give it the file name that we want to
+
+06:55.020 --> 06:55.530
+import.
+
+06:55.620 --> 06:56.730
+What do we want to import.
+
+06:56.730 --> 07:00.110
+We want to import utility just like that.
+
+07:00.270 --> 07:06.240
+And notice that I'm not adding the DOT PI because we assume that whatever we're going to import is going
+
+07:06.240 --> 07:07.480
+to be a python file.
+
+07:07.530 --> 07:11.670
+So we don't need to do that just the name just like that.
+
+07:11.760 --> 07:16.490
+Now let's print utility here if I run this
+
+07:19.560 --> 07:20.270
+Whoa.
+
+07:20.300 --> 07:27.710
+Do you see that we have module utility from and then this is a file path that this Web site generates
+
+07:27.710 --> 07:28.190
+for us.
+
+07:28.220 --> 07:30.420
+So it doesn't really matter.
+
+07:30.610 --> 07:34.220
+Now there's a few things that happen here.
+
+07:34.220 --> 07:45.340
+One is that we generated this PI cache folder underscore underscore pi cache and oh boy what is this
+
+07:45.490 --> 07:48.750
+gibberish hmm mm hmm.
+
+07:48.770 --> 07:51.040
+This is this is pretty confusing right.
+
+07:51.050 --> 07:59.640
+Well this PI cash is created every time we run a file with let's say enforcement.
+
+07:59.930 --> 08:09.510
+So when we're using modules you see what pi cash does is when we click Run the interpreter is going
+
+08:09.510 --> 08:16.470
+to create this PI cache folder and it's going to say hey I'm running this file this one main dot pi
+
+08:16.470 --> 08:16.940
+file.
+
+08:17.130 --> 08:24.660
+Anything that made that pi file imports let's say utility in our case I'm going to cash it.
+
+08:24.960 --> 08:28.360
+So see how here it says Dot P Y C.
+
+08:28.740 --> 08:32.470
+This is because it's using the C Python interpreter.
+
+08:32.520 --> 08:38.070
+Remember this is the C Python which is the interpreter written and c.
+
+08:38.070 --> 08:48.150
+So this is actually a compiled file so that next time I click Run here on my main dot pi nothing changes
+
+08:48.450 --> 08:56.250
+because what's going to happen is instead of loading up utility dot pi it's going to load up this compiled
+
+08:56.550 --> 09:05.670
+version of utility because nothing has changed and utility dot pi and this makes things faster.
+
+09:05.680 --> 09:11.740
+When I tried to run main dot pi again that's what caching is caching is hey I'm going to remember this
+
+09:11.770 --> 09:18.320
+and this is the compile version so I don't have to go through the compilation step again but notice
+
+09:18.320 --> 09:24.520
+that the main dot pi file does not get compiled because while we run it every time.
+
+09:24.520 --> 09:32.330
+Now if we change the utility function to not have the divide in there I click Run and you don't notice
+
+09:32.330 --> 09:38.800
+it here but this has now been rerun because we have a different file.
+
+09:38.990 --> 09:41.680
+You see that we have multiply here but not divide.
+
+09:42.020 --> 09:47.080
+So let's bring back divide again go back to here click Run
+
+09:50.190 --> 09:50.910
+and there you go.
+
+09:50.910 --> 09:55.420
+We have divide here to now but this is something that we don't touch.
+
+09:55.430 --> 10:00.250
+This just comes underneath the hood with any editor that we use.
+
+10:01.010 --> 10:06.960
+And in a few videos we're going to show you how this also happens when you use something like pie chart.
+
+10:06.990 --> 10:13.050
+This is just something that editors allow us to do just so our programs can run faster.
+
+10:13.620 --> 10:16.640
+So I now have access let's make this a little bit smaller.
+
+10:16.650 --> 10:19.490
+I now have access to utility and here's the interesting part.
+
+10:19.530 --> 10:27.090
+If I do dot here look at that I have access to divide and multiply so that I can multiply numbers let's
+
+10:27.090 --> 10:29.010
+say 2 and 3 click right.
+
+10:30.530 --> 10:35.330
+And I am able to use the utility module in my main file.
+
+10:35.330 --> 10:36.200
+Very very cool.
+
+10:36.200 --> 10:41.290
+If I do divide and I click Run I can use this as well.
+
+10:41.300 --> 10:42.810
+Very very cool.
+
+10:43.070 --> 10:48.830
+And I can import as many times as I want if I had a different file in here and I want to import another
+
+10:48.830 --> 10:49.190
+thing.
+
+10:49.220 --> 10:52.010
+Let's say there is a utility to file.
+
+10:52.100 --> 10:59.200
+Well I can import that and import as many things as I want and use them across my files.
+
+10:59.210 --> 11:02.230
+How cool is that.
+
+11:02.240 --> 11:09.380
+So now we have a way to organize our code and have all these files communicate together because in real
+
+11:09.380 --> 11:15.680
+life we have big projects and these big projects are going to be worked on by different teams different
+
+11:15.680 --> 11:19.840
+programmers and we need a way to work with all these files.
+
+11:20.060 --> 11:27.170
+And by using the import statements between modules we're able to use functionality just like we were
+
+11:27.170 --> 11:34.250
+able to use the functionality that functions provided us between different files and most of the time
+
+11:34.610 --> 11:41.390
+if you're working at a company the first couple lines on a dot pi file are usually import statements
+
+11:41.390 --> 11:47.640
+because usually you're communicating with other files let's learn some more in the next video.

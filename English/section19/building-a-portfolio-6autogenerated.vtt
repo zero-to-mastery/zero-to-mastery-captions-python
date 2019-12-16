@@ -1,0 +1,214 @@
+WEBVTT
+
+00:00.690 --> 00:01.700
+Hey you're still there.
+
+00:01.710 --> 00:05.370
+I know this is a bit of a long project but stick with me.
+
+00:05.370 --> 00:08.320
+We're getting really really close.
+
+00:08.370 --> 00:13.050
+You see up until now we've built this whole system right.
+
+00:13.080 --> 00:20.040
+We have our HCM LCROSS and JavaScript files that we got free templates for and we also implemented our
+
+00:20.040 --> 00:29.280
+server so that the browser can actually send data to us and we can actually save that data and even
+
+00:29.340 --> 00:36.930
+send a thank you Asia email page back once somebody submits a form our web page is now something more
+
+00:36.930 --> 00:40.330
+dynamic than just text that people can read.
+
+00:40.380 --> 00:48.300
+People can now interact with our Web page by submitting a form and we now have sent this form data to
+
+00:48.300 --> 00:55.220
+our Python server but there was a problem that I mentioned in the last video that is as soon as the
+
+00:55.220 --> 01:02.240
+server stops running or maybe it crashes that data is lost because right now that information of the
+
+01:02.240 --> 01:03.770
+form is in memory.
+
+01:04.430 --> 01:11.930
+Ideally we write it somewhere on disk so that even if we stop the server that information is still somewhere
+
+01:11.960 --> 01:20.860
+on a file so that this file lives on this computer just like a file lives on your desktop or laptop.
+
+01:20.960 --> 01:25.610
+So how can we do this well we've done this before right.
+
+01:25.610 --> 01:28.930
+We simply write to a file.
+
+01:29.040 --> 01:33.370
+Now we're going to explore this topic a little bit more throughout the next couple of videos.
+
+01:33.450 --> 01:42.780
+But what I want to do is to close off some of these folders and create a new file in here that will
+
+01:42.780 --> 01:48.100
+be a text file and this file will just be called database dot DST.
+
+01:48.150 --> 01:56.850
+Just a simple text file and this database will act as our database where we store information that the
+
+01:56.850 --> 01:58.710
+server receives.
+
+01:58.710 --> 02:04.260
+So if you remember we're going to store email we're going to store a subject and then we're going to
+
+02:04.260 --> 02:15.940
+store the message so ideally we're able to append or add to this file as people submit the form.
+
+02:16.000 --> 02:17.550
+So how can we do this.
+
+02:17.830 --> 02:21.400
+If you want to pause the video and give it a try yourself.
+
+02:22.360 --> 02:28.290
+Otherwise let's try this we can create a new function here.
+
+02:28.690 --> 02:29.500
+Right.
+
+02:29.830 --> 02:41.320
+To file this right to file will receive some sort of data that will send and we're going to say with
+
+02:42.880 --> 02:50.420
+open again something that we've seen before and we're going to open the database.
+
+02:50.580 --> 02:58.570
+And again because it's in the same folder as the server we don't need to specify a file path we can
+
+02:58.570 --> 03:07.380
+say database dot text and we're going to open in the mode of a.
+
+03:07.440 --> 03:13.740
+So that is to append to that file because it already exists and we'll just call it as database
+
+03:16.570 --> 03:29.760
+and in here we'll say that the file will equal database dot right and then write what we want in our
+
+03:29.760 --> 03:34.350
+case we want to write the email
+
+03:37.370 --> 03:47.860
+the message or the subject and then the message and we can just extract that from our data.
+
+03:47.970 --> 03:48.390
+Right.
+
+03:48.430 --> 03:56.180
+That we're going to pass in so we can say that e-mail is going to equal the data email
+
+04:01.030 --> 04:11.560
+subject is going to equal data subject and their message is going to equal data message because it's
+
+04:11.560 --> 04:12.440
+a dictionary.
+
+04:12.460 --> 04:13.300
+Right.
+
+04:13.330 --> 04:21.100
+And then all we can do here is just do an F string and say that we want we want first of all a new line
+
+04:21.370 --> 04:30.940
+so that there's a new line every time there's an entry and we'll say that we want the email comma the
+
+04:31.810 --> 04:40.930
+subject and then finally comma the message so that's our right to file.
+
+04:41.030 --> 04:52.430
+Function and then in here instead of printing data we can just simply call right to file and pass in
+
+04:53.000 --> 05:02.920
+the data so let's save this and see what happens going to come back to the page and then click sent.
+
+05:02.920 --> 05:03.250
+All right.
+
+05:03.250 --> 05:04.550
+Looks like things have worked.
+
+05:04.600 --> 05:11.660
+But let's see if we actually wrote to file if I go to database look at that.
+
+05:12.110 --> 05:14.700
+I have my data.
+
+05:14.780 --> 05:17.960
+That is the e-mail the subject and the message.
+
+05:17.960 --> 05:24.380
+And if I go back to the page let's say go to contact again and this time let's do a different e-mail
+
+05:26.510 --> 05:33.830
+some tax some more text hit send and let's go back and how cool is that.
+
+05:34.010 --> 05:40.520
+We now have our own custom database where we store all these users information.
+
+05:40.850 --> 05:47.190
+And the cool part is that even if I close the server I still have this information with me.
+
+05:47.320 --> 05:52.140
+I can always come back and see who has submitted a form.
+
+05:52.270 --> 05:59.130
+Very very cool and if by now you realize this is how databases work.
+
+05:59.190 --> 06:00.350
+Well good for you.
+
+06:00.360 --> 06:02.990
+This is how databases work.
+
+06:03.000 --> 06:06.210
+This is why you hear the words database.
+
+06:06.210 --> 06:14.520
+A database is essentially a place for you to store data in a safe way outside of the server.
+
+06:14.520 --> 06:14.900
+Right.
+
+06:14.910 --> 06:23.160
+Because if your information is in memory as soon as the computer closes while that memory is gone instead
+
+06:23.640 --> 06:30.630
+a text file like this even if I shut down my computer and and turn it back on is always going to be
+
+06:30.630 --> 06:34.500
+on disk and it's what we call persisting.
+
+06:34.500 --> 06:38.970
+That is it persists so that it never gets deleted.
+
+06:38.970 --> 06:41.790
+But how can we make this better.
+
+06:41.790 --> 06:44.500
+Well right now this is just a text file.
+
+06:44.520 --> 06:51.920
+This is kind of inconvenient and hard to read maybe we're creating a startup landing page and we're
+
+06:51.920 --> 06:59.570
+collecting users information maybe e-mail so we can e-mail people when these startup launches a better
+
+06:59.570 --> 07:04.740
+way to create a database is maybe using a CSP file or an excel file.
+
+07:04.820 --> 07:06.950
+So in the next video let's explore that.

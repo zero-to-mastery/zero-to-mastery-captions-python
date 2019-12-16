@@ -1,0 +1,232 @@
+WEBVTT
+
+00:00.710 --> 00:02.010
+Welcome back.
+
+00:02.030 --> 00:10.420
+So we just received all the data from Hacker News at least on the page that we requested and we saw
+
+00:10.420 --> 00:15.360
+here that we received all this HMO information which is great.
+
+00:15.430 --> 00:18.600
+This is just a string that we received.
+
+00:18.610 --> 00:23.880
+What beautiful soup allows us to do is to do something called Pass.
+
+00:24.130 --> 00:31.960
+That is we can use beautiful soup to convert this from a string to an actual object that we can manipulate
+
+00:31.990 --> 00:38.190
+and use using Python to modify this data to what we want.
+
+00:38.190 --> 00:39.180
+Let me show you what I mean.
+
+00:39.630 --> 00:45.930
+So we can now use beautiful soup I'm going to remove the tax here and we can say beautiful soup.
+
+00:46.140 --> 00:56.220
+And then in here I can give it the string that we want with all the data that is response dot text like
+
+00:56.220 --> 00:59.970
+we saw which is the one on the left here and then we pass it.
+
+01:00.060 --> 01:08.430
+That is we tell it hey this data needs to be modified into ECMO that we can actually use.
+
+01:08.460 --> 01:16.740
+So the way we do that with beautiful soup is we simply say a e-mail dot parser and this tells beautiful
+
+01:16.740 --> 01:20.300
+soup that hey this is e-mail and I want you to pass it.
+
+01:20.400 --> 01:24.080
+So converted from a string to something that we can actually use.
+
+01:24.210 --> 01:26.780
+And this creates what we call a soup object.
+
+01:26.850 --> 01:31.560
+So I'm going to assign it to a soup variable but I can call it whatever I want.
+
+01:31.740 --> 01:36.090
+Now some of you might be asking what this really is.
+
+01:36.090 --> 01:42.510
+And the reason that we have to do this is that beautiful soup also passes another data called excel.
+
+01:42.630 --> 01:49.080
+And again if we go to the documentation Web site let's go to beautiful soup documentation and let's
+
+01:49.080 --> 01:55.350
+just search for a small dot parser.
+
+01:55.520 --> 02:03.240
+You see over here that we can have different parsers such as the HMO parser which comes built in.
+
+02:03.470 --> 02:09.400
+But there's also the maximal parser and other parsers that we can install.
+
+02:09.410 --> 02:15.230
+So again anytime you have a question always referred to the documentation and just control off and you'll
+
+02:15.230 --> 02:22.320
+find any extra information you need ninety nine percent of the time you're just using the HDMI parser
+
+02:22.380 --> 02:23.320
+as the default.
+
+02:23.370 --> 02:24.810
+But what does that mean.
+
+02:24.810 --> 02:26.970
+What did this just do for us.
+
+02:26.970 --> 02:28.480
+Well let's have a look.
+
+02:28.500 --> 02:35.220
+If I print here the soup object that we just created and let's go all the way down here.
+
+02:35.250 --> 02:42.700
+Let's clear this for now and run our Python code again scraped up by right.
+
+02:42.740 --> 02:46.520
+We see here that we got the soup object.
+
+02:46.520 --> 02:48.170
+It's actually a little bit cleaner.
+
+02:48.170 --> 02:49.910
+It's no longer a string.
+
+02:49.970 --> 02:56.750
+You see here that it's in full a symbol we have the title we have the had we have the body tag so we
+
+02:56.750 --> 03:01.710
+can actually manipulate this as if it's well a python object.
+
+03:01.710 --> 03:07.890
+So for example I can do soup dot body to grab just the body.
+
+03:07.890 --> 03:12.890
+So if I save and I run the script again.
+
+03:12.990 --> 03:13.670
+There you go.
+
+03:13.680 --> 03:17.690
+We now just received the body.
+
+03:17.760 --> 03:19.350
+Let me clear this so we can see it.
+
+03:19.350 --> 03:24.280
+I'm going to run it again.
+
+03:24.460 --> 03:27.360
+You see that now we have just the body.
+
+03:27.430 --> 03:33.070
+I can even do something like dot contents and if I run this let's clear this again
+
+03:37.230 --> 03:42.960
+I get the entire content but you see here in a list for awesome.
+
+03:43.080 --> 03:47.420
+Now using this soup object we can do some really neat things.
+
+03:47.460 --> 03:58.570
+For example let's say I want to find using the Find all method all the divs that we have in this soup
+
+03:58.600 --> 03:59.330
+object.
+
+03:59.380 --> 04:08.920
+So if I save let's clear this and run our script how cool is that we get all the div objects in a list
+
+04:09.010 --> 04:13.180
+for that's contained on that page.
+
+04:13.180 --> 04:19.360
+What about all the links maybe we want to get all the tags which are the links of the site.
+
+04:19.360 --> 04:25.120
+Well once again let's clear this for now and run our script and look at that.
+
+04:25.150 --> 04:27.700
+We have all the eight tags.
+
+04:27.700 --> 04:34.290
+That is all the links on the page and you can imagine there's different uses that we can do here we
+
+04:34.290 --> 04:43.970
+can say Title 5 run title here we get the title tag of our soup object if I do something like a here
+
+04:44.000 --> 04:53.880
+which is the a tag and I run the script again I'll get the first a tag that comes up another one that
+
+04:53.880 --> 04:55.940
+we can do is something called Find.
+
+04:55.980 --> 05:00.360
+So instead of find all find finds the well the first thing.
+
+05:00.360 --> 05:07.100
+So again if I do find a and I click Run here you see that I get the same thing.
+
+05:07.110 --> 05:09.780
+It finds the first item.
+
+05:09.810 --> 05:12.480
+Now why is this useful.
+
+05:12.480 --> 05:19.470
+Because if we go to our hacker news Web site and what I want to do is let's say go to the first link
+
+05:19.470 --> 05:23.460
+here right click it and then do inspect.
+
+05:23.480 --> 05:31.860
+This gives us well this HMO Dom object that gives us all the information on the page.
+
+05:31.910 --> 05:32.500
+Right.
+
+05:32.510 --> 05:41.100
+So looking at this I know that for sure I'm going to want this a tag that has the link and the title
+
+05:42.530 --> 05:45.980
+but I'm also probably going to want the votes right.
+
+05:45.980 --> 05:48.050
+So if I keep going down here
+
+05:51.630 --> 05:59.800
+to this part you see here that right here is the score and I'm probably going to be interested in how
+
+05:59.800 --> 06:02.320
+many points this is as well.
+
+06:02.350 --> 06:08.370
+For example I can use the I.D. attribute here so let's copy this score.
+
+06:08.590 --> 06:15.230
+I can even do something like find and give it an I.D. that equals this value.
+
+06:15.410 --> 06:15.870
+If.
+
+06:15.860 --> 06:26.220
+Now let's clear all and run the file you see that I get that exact same tag with the idea of this score
+
+06:27.490 --> 06:34.450
+so by allowing us to grab these different elements throughout the page we can selectively pick what
+
+06:34.450 --> 06:36.340
+data we want.
+
+06:36.360 --> 06:38.640
+Let's take a break here and learn more in the next video.

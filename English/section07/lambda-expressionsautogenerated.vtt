@@ -1,0 +1,301 @@
+WEBVTT
+
+00:00.510 --> 00:01.580
+Welcome back.
+
+00:01.590 --> 00:04.590
+Let's talk about something that I really really love.
+
+00:04.960 --> 00:17.190
+And it's called lambda expressions and lambda is actually a computer science term that really is compatible
+
+00:17.190 --> 00:20.430
+with this idea of functional programming.
+
+00:20.430 --> 00:28.950
+You see lambda expressions in Python are one time anonymous functions that you don't need more than
+
+00:28.950 --> 00:30.000
+once.
+
+00:30.030 --> 00:31.170
+What does that mean.
+
+00:31.170 --> 00:39.900
+Well lambda expressions are really really useful when you're using them for functions that A you only
+
+00:39.900 --> 00:40.790
+use once.
+
+00:40.800 --> 00:45.990
+Remember how we talked about functions are useful because we can define them and then use these functions
+
+00:46.050 --> 00:51.370
+over and over and thus save us from copy and pasting code.
+
+00:51.540 --> 00:58.100
+Well lambda functions are for those occasions where we have a function but we only need to use it once.
+
+00:58.620 --> 01:02.250
+And then the second part is that they're anonymous functions.
+
+01:02.250 --> 01:04.890
+That is because we only use them once.
+
+01:04.920 --> 01:09.840
+We don't need to have a name for them because I mean we don't really need to store them anywhere on
+
+01:09.840 --> 01:10.770
+our machines.
+
+01:10.770 --> 01:12.350
+I just want to use it once.
+
+01:12.420 --> 01:15.360
+Just run it and then I'm done with it.
+
+01:15.360 --> 01:17.720
+Just throw it away.
+
+01:17.750 --> 01:24.530
+So how does a lambda function look like a lambda function looks like this.
+
+01:24.530 --> 01:27.080
+We say lambda in python.
+
+01:27.230 --> 01:32.990
+Let me just add a bit of space here just so we can see we say lambda and you can see that it's highlighted
+
+01:32.990 --> 01:41.600
+blue and then I'm going to say a parameter that this function is going to get and then a in and then
+
+01:41.690 --> 01:52.640
+some sort of a function here and the parameter or instead of function it'll be some sort of a manipulation
+
+01:52.700 --> 01:53.750
+that we do.
+
+01:53.750 --> 02:00.750
+So let's say action that we want to take on a parameter.
+
+02:00.770 --> 02:01.160
+All right.
+
+02:01.190 --> 02:02.740
+This still looks confusing.
+
+02:02.750 --> 02:11.570
+So let's actually try to implemented in our functions that we've created so let's say multiply by two
+
+02:11.630 --> 02:14.600
+is one of those things that we're only going to use once.
+
+02:14.660 --> 02:16.330
+I only want to multiply by two.
+
+02:16.330 --> 02:18.350
+This my list and then I'm done with it.
+
+02:18.350 --> 02:23.250
+I don't need to save it to memory it's just extra piece of code I don't need this.
+
+02:23.270 --> 02:24.820
+How can we do it.
+
+02:24.920 --> 02:30.740
+Well let's say we have the map function back here and let's turn it into a list
+
+02:33.650 --> 02:36.080
+and for now I'm just going to minimize these.
+
+02:36.140 --> 02:40.670
+So we only focus on the multiply by two.
+
+02:40.670 --> 02:50.060
+And here let's go back to multiply by two remember how we had it before my list.
+
+02:50.360 --> 02:54.020
+And we don't need the third parameter just like that.
+
+02:54.020 --> 02:59.270
+Now with a lambda function I can say hey I don't need to create a whole new function I'm only going
+
+02:59.270 --> 03:00.530
+to use it once.
+
+03:00.530 --> 03:09.850
+Let's just remove this entirely and instead of using multiply by two I'm going to say lambda and here
+
+03:09.880 --> 03:13.150
+I'm going to give it the parameter what parameter am I going to receive.
+
+03:13.420 --> 03:20.440
+Well I'm going to receive an item from my list and then in here what do we want to do to my list.
+
+03:20.440 --> 03:25.170
+Well I want to multiply it by two.
+
+03:25.200 --> 03:26.040
+All right.
+
+03:26.040 --> 03:27.190
+Could this work.
+
+03:27.330 --> 03:28.200
+Let's give it a go.
+
+03:28.200 --> 03:28.890
+I'm going to run
+
+03:31.480 --> 03:33.200
+Whoa did you see that.
+
+03:33.340 --> 03:35.610
+I didn't even use multiply by 2.
+
+03:35.650 --> 03:38.110
+As a matter of fact I can just delete it.
+
+03:39.160 --> 03:45.150
+And if I click run everything still works.
+
+03:45.170 --> 03:46.900
+Now why is this.
+
+03:47.000 --> 03:53.250
+Remember lambda expressions are one time anonymous functions.
+
+03:53.250 --> 03:55.350
+There's no name attached to this function.
+
+03:55.350 --> 04:01.700
+This is the function right here that you don't need to run more than once.
+
+04:01.700 --> 04:07.640
+So once the interpreter runs this line of code it doesn't remember this.
+
+04:07.640 --> 04:11.270
+It just forgets about it but it performs the action for us.
+
+04:11.390 --> 04:18.530
+In our case we're saying hey I want to create a lambda expression I'm going to take an item from my
+
+04:18.530 --> 04:23.980
+list and then I'm going to multiply that item times two.
+
+04:24.020 --> 04:35.380
+And this automatically returns it again the order that we do is lambda then we give it the parameter
+
+04:36.470 --> 04:39.120
+Colin and then the action we want to take.
+
+04:39.450 --> 04:48.720
+In our case I'll be paranoid and whatever action we want to do like so in our case.
+
+04:48.720 --> 04:54.200
+Item times two and this automatically returns.
+
+04:54.270 --> 04:56.250
+How cool is that.
+
+04:56.270 --> 05:03.140
+This is a really nice feature of Python to keep your code really nice and clean and not clutter with
+
+05:03.320 --> 05:10.760
+all these functions and other languages might not have lambdas but they are sometimes called anonymous
+
+05:10.760 --> 05:12.140
+functions.
+
+05:12.140 --> 05:16.650
+Again something that we've discussed why they're anonymous.
+
+05:16.880 --> 05:22.940
+They're just like normal functions and even behave like them but we only use them once and they don't
+
+05:22.940 --> 05:24.010
+have any.
+
+05:24.150 --> 05:26.990
+We can see here that it makes things a little bit cleaner.
+
+05:26.990 --> 05:31.700
+What if we tried to do filter now with a lambda function.
+
+05:31.790 --> 05:38.550
+Well if you want you can pause the video and try yourself but it should be fairly easy right.
+
+05:38.570 --> 05:49.790
+If I do filter I can do lambda item and then item well just copy this so the action that we want to
+
+05:49.790 --> 05:57.060
+take on the item is this and if I run it again it works.
+
+05:57.070 --> 06:05.120
+How nice is that no longer need this function either very very nice.
+
+06:05.230 --> 06:11.490
+What about reduce can we use reduce with Lambda.
+
+06:11.490 --> 06:12.900
+Sure why not.
+
+06:12.930 --> 06:19.530
+Let's say here will say reduce we're going to remove the list from here because we're just producing
+
+06:19.530 --> 06:20.860
+a single value.
+
+06:21.030 --> 06:28.260
+I'm going to say lambda item remember reduce accepts two parameters.
+
+06:28.390 --> 06:36.820
+The accumulator and then the item so I can just give it to parameters like this and then say what do
+
+06:36.820 --> 06:37.450
+we want to do.
+
+06:38.080 --> 06:46.830
+Well I just want to add accumulator with the item so if I do my list here like this and I click Run
+
+06:49.100 --> 06:49.910
+check that out.
+
+06:50.180 --> 06:51.980
+That works as well.
+
+06:52.130 --> 06:53.590
+How cool is that.
+
+06:54.730 --> 07:01.000
+Again we no longer need the accumulator and now we just have one line functions that I can just run
+
+07:01.690 --> 07:07.400
+and immediately reduce the list very very cool.
+
+07:07.520 --> 07:13.320
+We're gonna be exploring lambdas a little bit more especially in the comprehension part of the course.
+
+07:13.340 --> 07:19.400
+So if you're still not 100 percent on them don't worry we'll have more use cases and why they're useful
+
+07:19.670 --> 07:21.070
+later on in the course.
+
+07:21.350 --> 07:27.230
+But lambda expressions I really really like they make your code really really small.
+
+07:27.230 --> 07:34.820
+However they do make the code a little bit less readable so it is a tradeoff where you can get really
+
+07:34.820 --> 07:39.160
+clever with lambda expressions but make your code really confusing to others.
+
+07:39.230 --> 07:41.240
+So you do want to be careful.
+
+07:41.360 --> 07:43.190
+For now we're done.
+
+07:43.190 --> 07:44.990
+I'll see in the next video by.

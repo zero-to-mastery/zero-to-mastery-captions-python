@@ -1,0 +1,343 @@
+WEBVTT
+
+00:00.550 --> 00:01.880
+All right.
+
+00:01.910 --> 00:05.930
+Your head must be spinning because of all these looping.
+
+00:05.930 --> 00:06.250
+That's.
+
+00:06.410 --> 00:07.420
+That's a really bad joke.
+
+00:07.430 --> 00:11.540
+But I thought it was funny because I've been recording for hours now and I think I'm going a little
+
+00:11.540 --> 00:11.990
+kooky.
+
+00:11.990 --> 00:15.060
+So this is going to be my last video for the day.
+
+00:15.110 --> 00:16.360
+Now for the course.
+
+00:16.370 --> 00:19.060
+But we're gonna do a little fun exercise.
+
+00:19.160 --> 00:21.410
+Now I call all exercise is fun.
+
+00:21.410 --> 00:25.660
+Obviously I'm biased but this one this one's especially fun.
+
+00:25.670 --> 00:28.490
+Where are we going to do well.
+
+00:28.550 --> 00:35.210
+We're going to simulate what a computer does when when we have something like a graphical user interface
+
+00:35.600 --> 00:40.490
+that is a computer is able to display let's say even an image over here right.
+
+00:40.490 --> 00:44.450
+I can see the robot over here I can see the mouse.
+
+00:44.480 --> 00:46.420
+This is a graphical user interface.
+
+00:46.430 --> 00:49.130
+I see pictures I see images on my screen.
+
+00:49.130 --> 00:53.060
+These pixels on my screen and I can control them.
+
+00:53.120 --> 01:00.620
+Well we're going to create a basic version of this to show you how a computer would work just from the
+
+01:00.620 --> 01:02.520
+stuff that we've learned up until now.
+
+01:02.600 --> 01:05.600
+Using loops and using conditional logic.
+
+01:05.600 --> 01:06.950
+So what are we going to do.
+
+01:08.210 --> 01:10.900
+Well this is the exercise.
+
+01:11.090 --> 01:17.420
+And you can check out the reptile here or you can recreate this or again in this video you should have
+
+01:17.420 --> 01:22.260
+resources attached that you can play with it yourself.
+
+01:22.340 --> 01:27.440
+And what I want you to do is I want you to loop through this list of lists.
+
+01:28.070 --> 01:37.650
+And every time you encounter a zero I want you to display on the screen over here an empty space because
+
+01:37.720 --> 01:41.280
+zero in a computer denotes nothing right.
+
+01:41.280 --> 01:43.830
+We want a blank on the screen.
+
+01:43.830 --> 01:51.510
+However when I see a one I want to simulate a pixel right that tiny tiny dot on our computers that can
+
+01:51.510 --> 01:53.190
+be full of colors it could be green.
+
+01:53.190 --> 01:55.170
+It can be blue can be orange.
+
+01:55.170 --> 02:00.090
+But for our case I want it to be a star and using that.
+
+02:00.090 --> 02:06.450
+I want you to create a program that takes this picture that let's say is in our database or in our computers
+
+02:06.450 --> 02:12.660
+hard harddrive and displays it on the screen using space for multiply.
+
+02:13.080 --> 02:20.260
+And all I want you to do is when I click Run I want you to display that image right here.
+
+02:20.340 --> 02:20.760
+All right.
+
+02:20.760 --> 02:24.230
+This is a little tough one and I'm kind of letting you figure out on your own.
+
+02:24.240 --> 02:28.530
+But trust me you've learned all the tools necessary to do this.
+
+02:28.560 --> 02:29.580
+Pause the video.
+
+02:29.760 --> 02:30.390
+Give it a go.
+
+02:30.900 --> 02:32.690
+Otherwise I'm going to show you how it's done.
+
+02:34.280 --> 02:38.950
+So the very first thing I like to do is to think about what I'm about to do.
+
+02:39.050 --> 02:40.920
+I want to make sure that we have a plan in mind.
+
+02:41.000 --> 02:48.190
+So I'm going to comment first and I'm going to say well we definitely want to iterate over a picture.
+
+02:48.400 --> 02:49.190
+Right.
+
+02:49.250 --> 02:51.680
+So we're going to do some sort of iteration here.
+
+02:51.680 --> 03:05.970
+So that's number one and then in here I want to say that if it's a zero then I want to print an empty
+
+03:05.970 --> 03:17.460
+space and if it's a one I want to print a star.
+
+03:17.520 --> 03:17.900
+All right.
+
+03:17.910 --> 03:18.840
+So that's the plan.
+
+03:19.680 --> 03:19.890
+OK.
+
+03:19.890 --> 03:24.080
+So this shouldn't be too hard actually.
+
+03:24.300 --> 03:32.490
+Before you get started in order for this to work you need to google a special parameter or special option
+
+03:32.490 --> 03:40.140
+that you can give the print function and as a matter of fact the print function that you need to add
+
+03:40.140 --> 03:44.840
+or the option that you need to add is this and option.
+
+03:45.060 --> 03:52.730
+And if we scroll down it doesn't display that well I can see here string appended after the last value.
+
+03:52.930 --> 03:56.670
+So the default when we print something is a new line.
+
+03:56.710 --> 04:00.620
+But ideally we might not want a new line.
+
+04:00.670 --> 04:06.120
+So when that happens you might have to use this and option.
+
+04:06.170 --> 04:08.030
+Now I know I left it really vague.
+
+04:08.030 --> 04:08.360
+I want to.
+
+04:08.390 --> 04:13.520
+I want you to practice googling this and and figuring out from your mistake you're gonna have a bug
+
+04:13.550 --> 04:21.230
+when you create this code when you try to display this information but try to solve it using the tools
+
+04:21.230 --> 04:24.280
+that you have of problem solving.
+
+04:24.280 --> 04:25.330
+All right enough talk.
+
+04:25.330 --> 04:31.260
+Let's get to it so the first thing I want to do is iterate over the picture.
+
+04:31.360 --> 04:41.010
+I'm going to say for image in the picture because well this is one picture right here.
+
+04:41.050 --> 04:47.140
+So this is the picture but it's inside of a list because we can have multiple pictures and then I'm
+
+04:47.140 --> 04:52.510
+going to loop once again over this individual list.
+
+04:52.510 --> 04:59.050
+So once again I need to do a for loop and this time I want to say for pixel because each one of this
+
+04:59.050 --> 05:03.570
+is a pixel in the image.
+
+05:03.570 --> 05:06.070
+So this is a nested for loop.
+
+05:06.100 --> 05:15.960
+Now I'm going to add a conditional and say if pixel equals one then I'm going to
+
+05:19.040 --> 05:24.320
+a star.
+
+05:24.540 --> 05:25.230
+Otherwise
+
+05:28.090 --> 05:33.320
+I'm going to print an empty string.
+
+05:33.320 --> 05:35.960
+Well maybe not empty right.
+
+05:35.960 --> 05:41.990
+Because we do want a space a blank space in the image.
+
+05:42.020 --> 05:44.980
+All right so let's see if this works.
+
+05:46.240 --> 05:52.610
+If I click Run that's not really why I wanted.
+
+05:52.850 --> 05:57.990
+I want a clear image here but I'm just getting things one in line.
+
+05:58.130 --> 06:07.840
+And remember this was the little trick where a print every time it prints it creates a new line the
+
+06:07.840 --> 06:18.240
+default again if we close this you'll see is that end equals to this escape sequence of new line.
+
+06:19.170 --> 06:28.430
+So we can change that by simply saying star comma end and then I'm going to say for the end I don't
+
+06:28.430 --> 06:37.980
+want a new line I just want well a string but an empty string and same over here I do comma
+
+06:41.800 --> 06:46.470
+and and if I click Run All right.
+
+06:46.950 --> 06:52.590
+It's getting a little bit better but now I have an issue where we don't have any new lines.
+
+06:52.600 --> 06:55.820
+Everything is on one line.
+
+06:56.290 --> 06:56.920
+That's not good.
+
+06:56.920 --> 06:58.990
+How can we solve this.
+
+06:58.990 --> 07:05.590
+Well ideally the end of this first loop where we're just going.
+
+07:05.590 --> 07:10.840
+The image or the line in the image at the end of this.
+
+07:11.020 --> 07:13.650
+We create a new line right here.
+
+07:13.870 --> 07:14.580
+Right.
+
+07:14.590 --> 07:22.500
+So again looking at the indentation I don't want a new line on every pixel which we had the first time.
+
+07:22.500 --> 07:31.720
+But I also want to add a line between the lists of rows so maybe a better name for this will be a row
+
+07:31.990 --> 07:38.890
+in picture and in here I'm going to add the end of this for loop.
+
+07:38.890 --> 07:48.250
+So after we're done looping through the entire row at the bottom here I'm going to print an empty line.
+
+07:48.250 --> 07:52.350
+But remember the default is going to be a new line.
+
+07:52.440 --> 07:53.700
+So again an empty string.
+
+07:53.700 --> 07:55.630
+It's going to default to a new line.
+
+07:56.100 --> 08:04.990
+And we're still going to have this code if I run this so I get an error because image is not defined
+
+08:05.020 --> 08:07.180
+because I've just changed this to a row.
+
+08:07.200 --> 08:14.270
+So let's do row here click Run and look at that.
+
+08:14.350 --> 08:16.810
+We have our beautiful Christmas tree.
+
+08:16.900 --> 08:18.280
+If you don't think this is beautiful.
+
+08:18.310 --> 08:25.110
+This is the best I could but this is a Christmas tree and we finally have a display.
+
+08:25.110 --> 08:31.320
+We've used loops we've used conditional logic and we used a little googling to figure out hey we we
+
+08:31.320 --> 08:32.700
+need this option.
+
+08:33.090 --> 08:36.000
+Now our code works.
+
+08:36.000 --> 08:42.060
+But I want to do something better here and in the next video I want to clean up this code a little bit
+
+08:42.720 --> 08:46.620
+and cover a very important topic when it comes to programming.
+
+08:46.740 --> 08:47.990
+I'll see on that one by.

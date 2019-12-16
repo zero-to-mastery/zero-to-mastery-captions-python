@@ -1,0 +1,172 @@
+WEBVTT
+
+00:00.570 --> 00:01.760
+Welcome back.
+
+00:01.770 --> 00:10.630
+In this video I'm going to talk about the idea of truthiness and falsely What did they mean.
+
+00:10.680 --> 00:13.980
+And you'll hear this a lot in Python programming you see.
+
+00:14.010 --> 00:18.320
+Up until now you've used billions here as values.
+
+00:18.360 --> 00:19.470
+So it was really easy.
+
+00:19.500 --> 00:26.450
+If true and true then run this code but Python can do other things as well.
+
+00:26.450 --> 00:35.030
+For example if this was five and this was let's say hello what do you think will happen here in our
+
+00:35.030 --> 00:35.990
+program.
+
+00:35.990 --> 00:42.570
+Well if I click Run you are old enough to drive and you have a license.
+
+00:42.600 --> 00:44.360
+Is that what you expected.
+
+00:45.740 --> 00:53.690
+And this is because what Python does underneath the hood is actually convert these to billions for you.
+
+00:53.750 --> 01:03.590
+So it's almost as if it is doing this remember type conversion where converting the type to boolean
+
+01:04.490 --> 01:09.980
+as soon as we get to this if statement because python is saying hey I want true or false I don't care
+
+01:09.980 --> 01:13.800
+what is old is I don't care what is license this just give me true or false.
+
+01:13.820 --> 01:18.500
+So I know whether to do this or to go to the else block.
+
+01:18.700 --> 01:28.190
+Now if I was to just print let's do this here let's do print boolean Hello.
+
+01:28.270 --> 01:32.890
+And then finally print boolean 5.
+
+01:33.160 --> 01:38.760
+Let's see what we get we get true true.
+
+01:38.990 --> 01:47.090
+And this is what we call a truth the value in python that is it's a truth value because if we run the
+
+01:47.120 --> 01:54.380
+boolean type conversion on it it evaluates into true what's a false value.
+
+01:54.380 --> 02:03.190
+Well if I do zero and if I do let's say an empty string and I click run those are false.
+
+02:03.370 --> 02:11.290
+That is it's not actually false but it is false see because if we run bullion on it to Python it's going
+
+02:11.290 --> 02:14.150
+to say oh this is false and zero.
+
+02:14.170 --> 02:14.940
+That's false.
+
+02:14.980 --> 02:18.150
+And that kind of makes sense right.
+
+02:18.180 --> 02:21.370
+And if you actually go to stack overflow.
+
+02:21.410 --> 02:23.440
+If you've never seen stack overflow before.
+
+02:23.450 --> 02:30.950
+If you ever have programming questions and you're Googling them usually the top five answers will contain
+
+02:31.100 --> 02:34.000
+either one or two stack overflow answers.
+
+02:34.040 --> 02:39.830
+And basically what happens is people ask questions like What is truth and falsity in Python and you
+
+02:39.830 --> 02:46.670
+get answers so you can see over here that it has four answers and you usually look for the checkmark
+
+02:46.760 --> 02:52.250
+which means that this is a verified answer and means that hey this question owner has accepted it as
+
+02:52.250 --> 02:53.020
+the best answer.
+
+02:53.020 --> 02:56.780
+So the person who asked this question just said Yep this is the right answer.
+
+02:56.780 --> 02:57.830
+This is the best one.
+
+02:57.830 --> 03:04.040
+But you also have other people voting so you can see that this answer received 46 marks and although
+
+03:04.070 --> 03:10.400
+it was marked as the correct answer by the user maybe somebody else came along later on and gave an
+
+03:10.520 --> 03:11.480
+even better answer.
+
+03:11.480 --> 03:17.720
+So now we have one hundred and twenty three upvotes and you see that this answer is a lot better all
+
+03:17.720 --> 03:25.990
+values are considered toothy except for the following so you can actually see here that in Python these
+
+03:25.990 --> 03:33.310
+values are considered false see you can see 0 here you can see an empty string here and then there's
+
+03:33.310 --> 03:36.000
+a few other ones empty set.
+
+03:36.130 --> 03:44.080
+You have a empty dictionary empty list empty tuple you have decimals you have things like fractions
+
+03:44.350 --> 03:49.540
+you have zero point zero false is that and also none is false.
+
+03:50.320 --> 03:59.470
+So that if I type in none here that's false to now you don't need to memorize these because most of
+
+03:59.470 --> 04:02.170
+the time it it makes sense right.
+
+04:02.230 --> 04:05.480
+But it helps us do conditional logic very nicely.
+
+04:05.530 --> 04:16.270
+For example let's remove this and let's say that we have a user and this user has to have a password
+
+04:16.960 --> 04:33.020
+and a user name if let's say they user name is Johnny and the password is 1 2 3 well instead of me saying
+
+04:33.020 --> 04:39.890
+hey if this user has password and username and we're not checking if the user name exists or password
+
+04:39.890 --> 04:45.230
+exists we just want to make sure hey did this person fill out the form and did they try to submit a
+
+04:45.230 --> 04:46.480
+user name and password.
+
+04:46.640 --> 04:54.590
+I can just simply say password and username and I don't have to worry about converting this to a Boolean
+
+04:54.590 --> 05:01.010
+or anything like that because if password and user name exist then tried to log them in and you see
+
+05:01.010 --> 05:09.140
+that it reads a lot nicer because each one of these get evaluated into a true and false C value it's
+
+05:09.140 --> 05:16.470
+a nice little feature to keep Python well nice and simple and reading like English I'll see in the next
+
+05:16.470 --> 05:17.430
+video by.

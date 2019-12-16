@@ -1,0 +1,97 @@
+WEBVTT
+
+00:00.540 --> 00:00.960
+Oh boy.
+
+00:00.960 --> 00:05.880
+Here it is the coolest sounding section in the entire course.
+
+00:05.880 --> 00:13.470
+Machine learning now throughout the course we've learned that machines are really really good at certain
+
+00:13.470 --> 00:14.520
+things.
+
+00:14.520 --> 00:21.480
+Machines can perform tasks really really fast and we learn through Python that we can control these
+
+00:21.480 --> 00:24.980
+machines and get them to do tasks for us.
+
+00:25.050 --> 00:30.920
+Now these machines or computers are really good at things that we can describe right that we can write
+
+00:30.930 --> 00:34.890
+in code if else blocks to do something.
+
+00:34.890 --> 00:42.300
+Computers are really good at working on tasks that have these defined rules all the way up to a game
+
+00:42.300 --> 00:43.720
+of chess right.
+
+00:43.860 --> 00:51.540
+When you play a game of chess against a computer we could technically have if else blocks lots of them
+
+00:51.780 --> 00:56.260
+to see how to move each piece and what the pros and cons are.
+
+00:56.430 --> 01:03.050
+But then as soon as we stop having these specific rules things start to break down.
+
+01:03.090 --> 01:05.130
+For example what is a cat.
+
+01:05.670 --> 01:10.950
+If you could describe that to a computer or you had to program in Python and tried to write that code
+
+01:10.950 --> 01:19.210
+in Python would you be able to I mean sure you can say hey a cat has fur a cat has whiskers.
+
+01:19.220 --> 01:24.290
+Cat meows but then the computer asks you back what is a meal.
+
+01:24.290 --> 01:33.520
+What is for the harder things become to describe the harder it is for us to tell machines what to do
+
+01:34.570 --> 01:39.910
+in this section we're going to tackle this problem and we tackle this problem using something called
+
+01:39.910 --> 01:41.470
+machine learning.
+
+01:41.470 --> 01:48.250
+And you've definitely heard of it because it is a big buzzword right now in our industry because with
+
+01:48.250 --> 01:56.090
+machine learning you have so many applications we could have self-driving cars robots vision processing
+
+01:56.110 --> 02:03.120
+language processing recommendation engines translations stock price predictions.
+
+02:03.280 --> 02:05.140
+There's so many applications.
+
+02:05.140 --> 02:13.060
+The goal of machine learning is to make machines act more and more like humans because the smarter they
+
+02:13.060 --> 02:20.990
+get the more they help us humans accomplish our goals now in this section we're going to go over some
+
+02:20.990 --> 02:27.620
+theory to get us familiar with this topic and then do three projects on both data science and machine
+
+02:27.620 --> 02:31.590
+learning to understand this topic a little bit more.
+
+02:31.670 --> 02:32.390
+Don't worry.
+
+02:32.390 --> 02:33.830
+Don't get intimidated.
+
+02:33.830 --> 02:37.460
+We're going to try and simplify things and have fun along the way.
+
+02:37.460 --> 02:38.150
+Let's get started.

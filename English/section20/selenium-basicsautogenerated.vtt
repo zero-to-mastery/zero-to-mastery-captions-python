@@ -1,0 +1,355 @@
+WEBVTT
+
+00:00.420 --> 00:05.760
+Let's start getting into some interesting things we can do with selenium now what we're going to use
+
+00:05.760 --> 00:14.430
+for this exercise is going to be this Web site called selenium easy dot.com specifically the slash test
+
+00:14.820 --> 00:23.740
+part because this Web site gives us a nice testing ground for us to play with our Web site.
+
+00:23.910 --> 00:33.810
+For example if I do input forms here and do simple form demo I can actually use this Web site to test
+
+00:33.810 --> 00:42.770
+out typing stuff in showing message and seeing if we can do this with just code so the first thing I'm
+
+00:42.770 --> 00:51.080
+going to do is copy this your URL and in our case we'll just pick input forms and simple form demo later
+
+00:51.080 --> 00:51.370
+on.
+
+00:51.380 --> 00:58.250
+You can try it by yourself trying out different things but this tries to mimic most Web site functionality
+
+00:58.490 --> 01:05.290
+like form inputs tables alerts and models and allows you to test your code really nicely.
+
+01:05.360 --> 01:12.350
+So let's copy this URL and the first thing I'm going to do is while we're automation testers we we don't
+
+01:12.350 --> 01:14.330
+really manually type things in anymore.
+
+01:14.330 --> 01:16.100
+We let selenium do that for us.
+
+01:16.460 --> 01:22.370
+So the first thing I'm going to do is say hey Chrome browser I want you to get this you are well in
+
+01:22.370 --> 01:28.820
+my case I'm going to say hey this is the you are all that I just copy and pasted Chrome browser just
+
+01:28.820 --> 01:30.200
+get that for me.
+
+01:30.200 --> 01:31.490
+So let's run that code
+
+01:36.350 --> 01:44.920
+and check it out I've opened up the browser with selenium and it took me to the you URL that I specified.
+
+01:44.920 --> 01:52.310
+So most of the times this is going to be your first line where we go to a specific you are well now
+
+01:52.370 --> 02:00.490
+I want a window to be maximized so once again we'll just say Chrome browser and I'll say Maximize Window
+
+02:00.970 --> 02:06.510
+so that we'll have a full fledged window this time around.
+
+02:06.520 --> 02:12.740
+Now I'm going to close this once again because every time we run this code a new window is going to
+
+02:12.830 --> 02:13.310
+open up.
+
+02:13.400 --> 02:15.650
+So let's just close it for now.
+
+02:15.650 --> 02:21.820
+Now the next thing I want to do is to check that we're on the right page.
+
+02:21.950 --> 02:27.860
+Now the way selenium works is that it's going to look at this page and try to grab elements or find
+
+02:27.860 --> 02:30.110
+elements in this page.
+
+02:30.110 --> 02:36.430
+And it uses HDMI all that this page is built on to do this.
+
+02:36.650 --> 02:45.800
+Now HCM else simply is if I right click on anything in the page and I click on inspect a developer console
+
+02:45.800 --> 02:52.700
+is gonna show up and in the elements tab over here it actually shows you how the page is structured
+
+02:52.910 --> 03:01.550
+using H2 email H2 UML is what allows Web pages to get displayed in a browser and they simply contain
+
+03:01.550 --> 03:08.660
+information about each element in our case see over here it says complete automation testing tutorials
+
+03:09.300 --> 03:18.150
+ACM all says hey I want you to write this text right here so that let's say we go to the name and slogan
+
+03:18.780 --> 03:20.790
+or let's open up this.
+
+03:20.790 --> 03:28.570
+We see that we have selenium made easy right here we have an image which is right over here.
+
+03:28.740 --> 03:36.210
+Essentially A.T.M. allows us to display some text and some basic content on a Web site.
+
+03:36.210 --> 03:43.920
+So with selenium we're able to grab these elements and check them and modify them and do what we want.
+
+03:43.950 --> 03:47.440
+Let's go all the way up and show you this.
+
+03:47.560 --> 03:56.900
+Each H2 AML Page always has a title tag and a title is simply what gets displayed up here at the top.
+
+03:57.050 --> 03:59.990
+In our case it says selenium easy demo.
+
+03:59.990 --> 04:09.900
+So what I can do is actually copy this and say hey in our code is the string selenium easy demo is that
+
+04:09.960 --> 04:14.450
+in Chrome browser dot title.
+
+04:14.500 --> 04:18.610
+Now let's just print here and see what we get.
+
+04:18.670 --> 04:19.750
+I'm going to run this code
+
+04:24.880 --> 04:33.100
+the browser opens up and if I go back to the code look at that I get true because that text is in the
+
+04:33.100 --> 04:41.850
+title if I do something like Python easy demo and I run this
+
+04:48.250 --> 04:56.570
+you'll see that I'll get false now a easier way for us to check our code than just running print all
+
+04:56.570 --> 05:02.440
+the time is to use the search keyword that comes with python.
+
+05:02.450 --> 05:08.300
+Now you won't see this around too much because what's going to happen here is if we assert something
+
+05:08.630 --> 05:15.480
+if this returns false it's going to actually air out and exit out of the code.
+
+05:15.500 --> 05:16.790
+So if I run this
+
+05:22.220 --> 05:28.010
+you'll see that I get an error with an assertion error.
+
+05:28.050 --> 05:34.020
+So this is a good way for us to test if something exists or not but let's go back to what we had before
+
+05:34.110 --> 05:42.330
+which is selenium easy demo that should give us true and not error in our code now.
+
+05:42.380 --> 05:45.800
+Another thing here is we probably have a ton of windows here.
+
+05:46.170 --> 05:52.690
+So let's close them up and don't worry I'll show you how to actually close these later on if we want
+
+05:55.280 --> 06:01.020
+so I shows you how I'm able to extract the title from you.
+
+06:01.030 --> 06:09.640
+Another thing I can do is let's say hey I see over here in my HMO that there is a head tag and then
+
+06:09.640 --> 06:22.750
+there's also a body tag so here could I do something like Hey assert body if I click Run here hmm.
+
+06:22.890 --> 06:26.480
+It looks like we're not able to grab body.
+
+06:26.540 --> 06:28.370
+So what can we do here.
+
+06:28.370 --> 06:35.780
+Well another way for us to interact with a page like this is using selectors.
+
+06:35.780 --> 06:41.480
+Now the selectors I'll provide a link to some of the Chichi here that we can use.
+
+06:41.720 --> 06:50.660
+But the selectors are simply ways for us to grab items from a page we can grab items by I.D. by name
+
+06:50.900 --> 06:53.330
+by class name by tag name by link text.
+
+06:53.910 --> 06:59.910
+There's a ton of different things that we can do now to show you over here how that would look like
+
+07:01.160 --> 07:08.300
+if I go to the Asian male page over here the elements you'll see that if we wanted to grab let's say
+
+07:08.300 --> 07:19.020
+in our case we want to grab this button while I can right click click inspect and see over here that
+
+07:19.020 --> 07:22.620
+I have the button has a type.
+
+07:22.620 --> 07:27.000
+It has a class and it has some text which is show message.
+
+07:27.090 --> 07:34.710
+If I go to the cheat sheet I see here that I can grab things by different different options.
+
+07:34.870 --> 07:37.060
+We can do it by CSX.
+
+07:37.060 --> 07:40.660
+We can do it by the link tax we can do by tag name.
+
+07:40.660 --> 07:44.350
+We can do by class name.
+
+07:44.560 --> 07:49.070
+You see here that it says Driver dot find element by class name.
+
+07:49.090 --> 07:50.800
+So this is how we can select it.
+
+07:50.920 --> 07:51.610
+So let's do that.
+
+07:51.610 --> 07:59.340
+I'm going to copy and paste this and simply say hey Chrome browser I want you to find element by class
+
+07:59.340 --> 07:59.790
+name.
+
+07:59.880 --> 08:02.160
+And what was the class name that we used.
+
+08:02.580 --> 08:08.410
+Well in our case the class name is let's say bond default.
+
+08:08.470 --> 08:12.430
+So I'm going to say B10 default.
+
+08:13.340 --> 08:16.650
+And this is going to be our button.
+
+08:16.700 --> 08:24.850
+So if I run this and simply print button like this I run my code
+
+08:33.050 --> 08:40.680
+you'll see here that I'm able to grab from the selenium web driver a web element and it looks like it's
+
+08:40.680 --> 08:47.100
+an element I'm not really sure what's happening here but we are grabbing something a button.
+
+08:47.190 --> 08:53.010
+Now this button element that we've grabbed is exactly like we see it here.
+
+08:53.040 --> 08:58.470
+If I again inspect the element we've captured this part of the code.
+
+08:58.530 --> 09:08.350
+So this millennium now contains this button for us to use and as a shortcut here you see over hero says
+
+09:08.380 --> 09:12.040
+equal equals dollar sign zero.
+
+09:12.390 --> 09:18.570
+This actually allows us to select this element and use it in what we call the console.
+
+09:18.600 --> 09:27.090
+So if I clear the console and just say $ 0 you'll see that this is the element that we have captured.
+
+09:27.090 --> 09:31.540
+Now in here there's different ways that we can interact with it.
+
+09:31.740 --> 09:42.260
+One of the ways is to say something like get attribute and an attribute called Inner HCM.
+
+09:42.970 --> 09:49.960
+Now inner ECMO is simply going to grab whatever is between inside of this HMO which is the button and
+
+09:49.960 --> 09:52.110
+then you can see over here that the button closing.
+
+09:52.180 --> 09:57.340
+So we want to grab the show message if I do something like this.
+
+09:57.500 --> 10:04.980
+Let's say we call this button text and we print the button text file run this
+
+10:12.930 --> 10:18.810
+oh I'll actually get an arrow because you can see here that I did the syntax wrong I try to print the
+
+10:18.810 --> 10:26.070
+bond text and then got the attributes so instead make sure we move the brackets like this and run the
+
+10:26.070 --> 10:28.730
+code again.
+
+10:28.800 --> 10:29.280
+There we go.
+
+10:29.850 --> 10:33.140
+You see over here that we have show message.
+
+10:33.180 --> 10:41.430
+So I was able to through code inspect the page find out what I want to control.
+
+10:41.450 --> 10:44.220
+In this case maybe it's this one.
+
+10:44.390 --> 10:50.120
+And I was able to grab the text using the get attribute method.
+
+10:50.120 --> 10:57.240
+Again all these methods I will link to they all are something that you just have to get used to when
+
+10:57.240 --> 10:58.450
+you get into automation.
+
+10:58.530 --> 11:04.000
+But if you need to understand basic HCM well then they're quite easy to understand.
+
+11:04.140 --> 11:05.960
+There's actually not a lot of them.
+
+11:06.060 --> 11:11.670
+I would say there's probably 20 or so really useful methods that you can learn and use.
+
+11:11.670 --> 11:12.710
+But you know what.
+
+11:12.720 --> 11:14.430
+Right now this isn't that exciting.
+
+11:14.430 --> 11:16.700
+I mean yeah sure we've opened up a browser.
+
+11:16.710 --> 11:21.840
+We got to well look at a button and display the text that it shows.
+
+11:21.960 --> 11:26.420
+But I want to actually mimic something that we would do on a browser.
+
+11:26.640 --> 11:34.960
+Let's say we had this input and I want to modify this a simple page where I enter some sort of text
+
+11:35.380 --> 11:44.040
+I click show message and just like as if I'm signing into a Web site or uploading on Reddit.
+
+11:44.200 --> 11:46.030
+Let's automate that in the next video.

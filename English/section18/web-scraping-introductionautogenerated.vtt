@@ -1,0 +1,166 @@
+WEBVTT
+
+00:00.790 --> 00:03.700
+Let's talk about Web scraping.
+
+00:03.700 --> 00:08.370
+One of the things we can do with python what is web scraping.
+
+00:08.380 --> 00:16.990
+Well web scraping simply means programmatically using Python or any language grabbing data from a Web
+
+00:16.990 --> 00:18.230
+site.
+
+00:18.230 --> 00:27.280
+So for example I can grab data from Amazon from air being B from maybe a recipe Web site.
+
+00:27.290 --> 00:30.380
+Any Web site can be scraped.
+
+00:30.380 --> 00:37.220
+So essentially when we talk about Web scraping we mean downloading a web page grabbing the data from
+
+00:37.220 --> 00:43.790
+that web page cleaning it up somehow so that it's useful for us and then using that data.
+
+00:44.030 --> 00:47.480
+You see this is how Web sites work.
+
+00:47.480 --> 00:53.280
+We have a browser that we use like a chrome and we have a server.
+
+00:53.420 --> 01:00.980
+A server is simply a computer somewhere in the world that has three files that are needed to display
+
+01:01.010 --> 01:02.170
+a web page.
+
+01:02.180 --> 01:06.640
+We have an HMO file which is the content of the Web site.
+
+01:06.650 --> 01:10.750
+You can think of that as text and images of a Web site.
+
+01:10.790 --> 01:16.730
+We have CSX which gives us the colors and pretty styling that Web sites have.
+
+01:16.730 --> 01:22.190
+And then we have Javascript which allows us to have different behaviors in our Web site like submitting
+
+01:22.190 --> 01:31.820
+forms or having dropdown menus and all a browser does like Chrome is say hey if Andre visits this Web
+
+01:31.820 --> 01:39.410
+site let's say FIFA dot com browser is going to know when I type in FIFA dot com that says hey server
+
+01:39.710 --> 01:42.150
+can you give me the FIFA dot com.
+
+01:42.150 --> 01:48.320
+A simple CSF in JavaScript files and the server says yep no problem here they are.
+
+01:48.320 --> 01:52.040
+And then the page get displayed onto our browser.
+
+01:52.640 --> 01:58.150
+So these three files Well the data in them is accessible to us.
+
+01:58.190 --> 01:58.520
+Right.
+
+01:58.520 --> 02:01.820
+It gets displayed on a web page.
+
+02:01.850 --> 02:06.080
+So these files are now something that we can actually check up.
+
+02:06.080 --> 02:13.100
+For example if we go to the FIFA dot com Web site you see over here that well we have a pretty page
+
+02:13.280 --> 02:14.690
+with a lot of information.
+
+02:14.750 --> 02:15.980
+That's great.
+
+02:15.980 --> 02:25.610
+And if I right click here and do view page source this is the A.T.M. page of the FIFA Web site.
+
+02:25.940 --> 02:36.850
+As you can see it's pretty long but it has all the data that we see in this page.
+
+02:36.990 --> 02:45.770
+Now the C Ss and JavaScript files are linked to it but the main data that is the text maybe the images
+
+02:47.140 --> 02:49.220
+are all here.
+
+02:49.240 --> 02:56.520
+So for example we have latest news we have top 10 goals from the woman's World Cup.
+
+02:56.520 --> 02:58.070
+Well let's find out.
+
+02:58.140 --> 03:03.700
+Let's say top 10 goals from the Women's World Cup.
+
+03:03.740 --> 03:04.700
+You see that's what we have.
+
+03:04.700 --> 03:15.590
+We have the text right here in the web scraping is simply this grabbing this data and then removing
+
+03:15.590 --> 03:19.810
+all the parts that we don't care about and just keeping the parts that we care about.
+
+03:19.910 --> 03:23.950
+And web scraping works because this information is public.
+
+03:24.050 --> 03:27.960
+In order for a Web site to get displayed it has to be public.
+
+03:28.700 --> 03:36.020
+Maybe you're still wondering why web scraping might be useful Well there are many many cases for it.
+
+03:36.060 --> 03:42.540
+For example I'll link to this resource where it talks about some of the big uses for web scraping.
+
+03:42.540 --> 03:50.220
+Why would we want to scrape a Web site and you can see here there's many reasons.
+
+03:50.220 --> 03:51.840
+Maybe you want to get sale leads.
+
+03:51.840 --> 03:58.290
+That is you want to collect all the e-mails that are on a web page maybe a contact form.
+
+03:58.560 --> 04:02.400
+Maybe you have a yoga office software product.
+
+04:02.550 --> 04:09.930
+Maybe go to every single yoga studios web page and find the contact information scrape that data so
+
+04:09.930 --> 04:11.700
+you don't have to manually do it.
+
+04:11.730 --> 04:16.560
+Maybe you want to find all the jobs and open positions on a Web site.
+
+04:17.010 --> 04:22.890
+And instead of manually clicking through different pages you can scrape that data and there's many many
+
+04:22.980 --> 04:27.190
+use cases in our project that we're going to built for this session.
+
+04:27.210 --> 04:33.110
+We're actually going to scrape Hacker News a very popular Web site for many programmers and we're gonna
+
+04:33.150 --> 04:40.110
+turn this into something even more useful for us to read analyze and stay current with our industry.
+
+04:40.110 --> 04:41.790
+But we'll get to that in a bit.
+
+04:41.790 --> 04:46.590
+Let's take a break here and learn a little bit more about web scraping in the next video.

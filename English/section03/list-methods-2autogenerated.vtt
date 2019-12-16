@@ -1,0 +1,133 @@
+WEBVTT
+
+00:00.450 --> 00:01.340
+Welcome back.
+
+00:01.350 --> 00:04.120
+Let's keep going with some more stirring methods.
+
+00:04.380 --> 00:10.170
+Now we've learned about adding and removing once we learned about a penned insert an extent and then
+
+00:10.170 --> 00:16.690
+a removing we learned about pop remove and clear there's a few other important ones.
+
+00:16.770 --> 00:30.160
+Let's go with the index so instead of clearing here let's clean this up and we'll do basket dot index
+
+00:31.480 --> 00:36.690
+and index as you can see we give it a value a start and a stop.
+
+00:36.790 --> 00:37.930
+What does that mean.
+
+00:37.930 --> 00:49.070
+Well we want to say hey what index is number two if we do index of two and I click run it's going to
+
+00:49.070 --> 00:50.120
+give me one.
+
+00:50.210 --> 00:55.870
+I know this is a little confusing but it's asking for the index Where is number two.
+
+00:55.880 --> 00:58.830
+Number two is that index of 1.
+
+00:59.000 --> 01:02.300
+Let's change these into letters just so it's more clear.
+
+01:02.390 --> 01:07.300
+So we have a b c d.
+
+01:07.420 --> 01:19.700
+And then finally e and again if I do D here and I click Run I get an index of 3 because 0 1 2 3.
+
+01:19.700 --> 01:22.670
+It's on shelf 3 in our memory.
+
+01:22.670 --> 01:29.510
+And you can also do a optional parameter here which is where shall we start looking.
+
+01:29.510 --> 01:35.940
+So I want you to start looking at index of 0 and then finish looking at index of 2.
+
+01:36.170 --> 01:38.850
+If I do run here I get an error.
+
+01:38.900 --> 01:46.340
+It says hey D is not in List because while we started at index of 0 and stopped it index of 2 if I do
+
+01:46.340 --> 01:51.580
+three and I click Run No it stops right before three.
+
+01:51.610 --> 02:03.180
+So if I do four and I click Run there yo I get three now errors are not good or in our programs ideally
+
+02:03.210 --> 02:05.560
+we don't want to get errors.
+
+02:05.730 --> 02:07.100
+So how do we avoid this.
+
+02:07.110 --> 02:11.190
+What if we're looking for something and we're not sure if it's in the list or not.
+
+02:11.290 --> 02:18.150
+There's another nifty way of looking for things in that list and this involves what we call a python
+
+02:18.260 --> 02:26.330
+key word a key word is something that you use in Python that well already has some meaning.
+
+02:26.420 --> 02:35.080
+For example a keyword here if I go to Python keywords are all these wars that already mean something.
+
+02:35.120 --> 02:42.260
+Now we're gonna go through them and we haven't seen a lot of them yet but you might have seen true right
+
+02:42.350 --> 02:44.430
+in boolean values to mean something.
+
+02:44.810 --> 02:52.220
+So in Python we can't really use the word true because well it already means something.
+
+02:52.330 --> 03:00.040
+There is a word called in that as you can see as soon as we type means something as a keyword in Python.
+
+03:00.560 --> 03:02.660
+And this is quite nice.
+
+03:02.840 --> 03:19.140
+We can say hey is D in the basket and if I run this I get true okay is X in basket I get false because
+
+03:19.230 --> 03:27.060
+well it doesn't exist and this is actually quite useful and we can even do it for strings for example
+
+03:27.090 --> 03:34.360
+if I'm looking for let's say the letter I in a word and let's say it's I in.
+
+03:34.830 --> 03:47.330
+Hi my name is Ian if I click Run I get true because the letter I does exist in this string.
+
+03:47.340 --> 03:55.980
+All right well let's learn another one Another one is basket dot count and we can count how many times
+
+03:55.980 --> 03:57.690
+an item occurs.
+
+03:57.690 --> 04:08.160
+So for example if I do D and I click Run I get one because D only exists once in the list but if I add
+
+04:08.160 --> 04:17.580
+another D in here and I click Run we get to it counts how many time this value occurs in our list very
+
+04:17.700 --> 04:18.390
+very useful.
+
+04:19.320 --> 04:19.800
+All right.
+
+04:19.800 --> 04:21.240
+A few more still to go.
+
+04:21.270 --> 04:23.850
+Let's do some exercises and I'll see you in the next one.

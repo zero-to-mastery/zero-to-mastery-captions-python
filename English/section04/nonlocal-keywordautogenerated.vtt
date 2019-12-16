@@ -1,0 +1,124 @@
+WEBVTT
+
+00:00.420 --> 00:04.860
+Oh boy there's some code on the screen and it looks terribly confusing.
+
+00:04.860 --> 00:11.100
+This is an example of a really convoluted complicated function that you would never write but it'll
+
+00:11.130 --> 00:13.310
+be good for exercise purposes.
+
+00:13.440 --> 00:19.150
+And we're talking specifically about this right here called non local.
+
+00:19.230 --> 00:22.730
+It's actually a new keyword in Python 3.
+
+00:22.920 --> 00:29.370
+And as you can see my ripple doesn't even notice it so it doesn't even highlighted in blue because it
+
+00:29.370 --> 00:30.440
+is a new feature.
+
+00:30.570 --> 00:37.070
+But I do want to talk to you about it and let you know what it does the non local keyword is used to
+
+00:37.070 --> 00:39.650
+refer to this part.
+
+00:39.650 --> 00:46.880
+This parent local it's a way for us to say hey I want to use a variable that is not a global variable
+
+00:47.030 --> 00:54.890
+but is outside of the scope of my function so based on that definition try and pause the video and see
+
+00:54.950 --> 00:57.390
+what this function might do.
+
+00:57.800 --> 01:04.550
+I'll run it right now and then go through the code if I click Run.
+
+01:04.600 --> 01:10.700
+This is what we get so let's talk about this.
+
+01:10.800 --> 01:15.170
+We have an outer function and then we call the outer function.
+
+01:15.180 --> 01:22.320
+So the Python interpreter is going to go and say All right we have an x variable that is local to the
+
+01:22.590 --> 01:28.020
+outer function and then inside of here we're going to define an inner function.
+
+01:28.020 --> 01:34.290
+Another function and then here before we even call that we jumped in line nine and say All right call
+
+01:34.290 --> 01:35.110
+inter function.
+
+01:35.280 --> 01:41.560
+We come back and we say hey line five I want to use non local x.
+
+01:41.790 --> 01:42.690
+What does that mean.
+
+01:42.690 --> 01:47.910
+Well I want to use this x variable because it's non local.
+
+01:47.920 --> 01:51.310
+That is I don't want to create a new x variable.
+
+01:51.400 --> 01:59.980
+I want to jump up the scope to my parents scope my parent local and grab whatever you find in there
+
+02:00.430 --> 02:02.170
+as long as it's not global variable.
+
+02:02.170 --> 02:03.560
+Any parent will do.
+
+02:03.670 --> 02:05.050
+I want to grab that non-local.
+
+02:05.050 --> 02:09.480
+So now this ex is referring to the outer function here.
+
+02:09.550 --> 02:21.360
+So when we say X equals non-local we're assigning this new string and replacing this local so that when
+
+02:21.360 --> 02:31.020
+we print inner x we get non-local but also when we print the outer X we've modified this outer scope
+
+02:31.020 --> 02:32.580
+with the non-local keyword.
+
+02:32.610 --> 02:35.760
+So that becomes non local as well.
+
+02:35.760 --> 02:41.430
+If I remove this line and let's comment it out and I click Run you see the difference.
+
+02:41.430 --> 02:48.920
+Now we have the inner non-local but then the outer local hasn't been modified because this is a new
+
+02:49.100 --> 02:51.060
+variable.
+
+02:51.200 --> 02:58.360
+Again I argue that this actually makes your code more complicated than it needs to be.
+
+02:58.370 --> 03:04.160
+So there are special cases where you might want to use this but if you can try to make your code predictable
+
+03:04.220 --> 03:11.300
+where you can avoid using things like non-local and global mind you they are there for a reason because
+
+03:11.300 --> 03:14.390
+they are useful in some situation.
+
+03:14.390 --> 03:19.910
+With that said keep in mind make your code predictable make your code clean and I'll see you in the
+
+03:19.910 --> 03:20.420
+next video.

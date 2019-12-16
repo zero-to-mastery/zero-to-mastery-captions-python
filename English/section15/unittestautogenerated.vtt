@@ -1,0 +1,364 @@
+WEBVTT
+
+00:00.530 --> 00:01.370
+Welcome back.
+
+00:01.400 --> 00:05.060
+Let's write our first tests now.
+
+00:05.240 --> 00:11.790
+We're going to just have a simple function that we run and this program will create in our main dot
+
+00:11.800 --> 00:19.840
+pi file a let's say let's make this a little bit bigger we'll say that we have a function called do
+
+00:20.170 --> 00:20.650
+stuff.
+
+00:21.250 --> 00:31.620
+Yes very descriptive function now in here we'll just say that we accept a number and we'll just simply
+
+00:31.620 --> 00:43.320
+return num plus 5 a very very simple function so let's say this was our code that builds our app.
+
+00:44.070 --> 00:45.330
+So this is just one function.
+
+00:45.330 --> 00:50.910
+But hypothetically we have many functions that we want to test because these are actions that we're
+
+00:50.910 --> 00:59.350
+going to perform in our code so the way unit test works is like this.
+
+00:59.520 --> 01:07.320
+We have our test file and after we import our unit tests we want to import while the file that we want
+
+01:07.320 --> 01:09.640
+to test in our case its main dot pi.
+
+01:09.990 --> 01:19.550
+So let's just import main which is right here or we can just import the function as well if we want
+
+01:21.120 --> 01:26.400
+but in our case hypothetically we have many functions here so we can just import mean and use all the
+
+01:26.400 --> 01:28.230
+functions available there.
+
+01:28.230 --> 01:37.140
+Now the way unit test works is we create a class and then name it whatever you want in here we'll have
+
+01:37.140 --> 01:38.190
+all our tests.
+
+01:38.190 --> 01:46.620
+So let's just call it test Main and we inherit inside of this class.
+
+01:46.740 --> 01:48.480
+What unit test gives us.
+
+01:48.540 --> 01:52.940
+Which is a test.
+
+01:52.950 --> 01:56.310
+So this is just a standard way to work with unit test.
+
+01:56.340 --> 02:02.550
+So we're inheriting whatever unit test test cases and now we have that functionality available in our
+
+02:02.550 --> 02:04.840
+test main class.
+
+02:04.890 --> 02:09.920
+Now in here we can start testing and writing code to test.
+
+02:10.140 --> 02:14.160
+So how can we test main do stuff.
+
+02:14.160 --> 02:21.820
+Function well we simply say hey let's write a function in here or a method because this is part of a
+
+02:21.820 --> 02:28.450
+class and say hey I want to test do stuff and in here l receive self
+
+02:31.200 --> 02:41.850
+now in here I can test my code so I can say if no in here is equal to 10 I'm just giving it a random
+
+02:41.850 --> 02:49.560
+number then I'm going to say result is going to equal main dot do stuff
+
+02:52.300 --> 02:56.780
+so remember do stuff comes from Maine which is the function that we want to test.
+
+02:57.130 --> 03:05.650
+So I want to run the do stuff function and in here give the parameter num which I've just given here
+
+03:05.980 --> 03:08.610
+or let's just call this the test prep.
+
+03:09.430 --> 03:16.830
+So this test program we're going to run the code and we're going to get a result and this last line
+
+03:16.890 --> 03:28.830
+is the key part of unit test unit test allows us say self dot assert equal and assert equal is something
+
+03:28.830 --> 03:38.850
+that we get when we inherit from unit test and assert equal says hey assert or make sure that these
+
+03:38.850 --> 03:41.370
+two parameters are equal in our case.
+
+03:41.370 --> 03:42.220
+I want to test that.
+
+03:42.240 --> 03:53.900
+The result is equal to well in our case 10 plus 5 should equal 50 all right.
+
+03:54.010 --> 04:02.400
+Now finally in here we just run the unit test and the way we run the unit test because this is just
+
+04:02.400 --> 04:03.360
+one test that I get.
+
+04:03.390 --> 04:05.640
+I could have done multiple tests.
+
+04:05.640 --> 04:18.360
+All we need to say is unit test dot main which will run the entire test file within the test me.
+
+04:18.390 --> 04:23.370
+Now if I run this now all I have to do is say Python 3.
+
+04:23.640 --> 04:26.850
+My command line and say test dot by
+
+04:30.050 --> 04:38.100
+and I get OK ran one test and well super fast in zero seconds that was nice and quick.
+
+04:38.100 --> 04:43.920
+Now let's say I do something else where I assert equal that this equals 10.
+
+04:44.040 --> 04:44.850
+If I run this
+
+04:48.560 --> 04:49.630
+I get a fail.
+
+04:49.790 --> 04:56.300
+What failed will the test to do function failed on line 8.
+
+04:56.310 --> 04:58.490
+So that is right here.
+
+04:58.500 --> 05:00.510
+We have an assertion error.
+
+05:00.600 --> 05:04.410
+We got 15 but we expected 10.
+
+05:04.410 --> 05:05.690
+How cool is that.
+
+05:05.700 --> 05:07.700
+So I now have one failure.
+
+05:07.730 --> 05:15.110
+So I need to fix my code so something's not right here now in my case.
+
+05:15.150 --> 05:19.910
+This is because I've asserted the answer to be 15.
+
+05:19.920 --> 05:25.950
+But what if we create a another test in here and check.
+
+05:26.070 --> 05:29.580
+Hey what if we have test do stuff too.
+
+05:29.700 --> 05:36.700
+And this time the test program is actually going to be a piece of string.
+
+05:36.750 --> 05:46.120
+So what do we want the function to do well in our case and maybe it gives us a error maybe a value error.
+
+05:46.210 --> 05:48.340
+So I'll just say value
+
+05:52.010 --> 05:53.700
+because this shouldn't work.
+
+05:53.930 --> 05:56.770
+If I run this now let's clear this.
+
+05:56.810 --> 06:06.580
+If I run this now all right I have two tests but I have one error and I see here that I'm getting an
+
+06:06.580 --> 06:14.720
+error saying that hey I'm getting a type error can only concatenate string not eight now.
+
+06:14.770 --> 06:24.680
+In this case what actually fails is the test file because what we've just done actually fails our function
+
+06:26.420 --> 06:28.670
+but right away I see that.
+
+06:28.670 --> 06:31.810
+All right well this is something that we need to fix.
+
+06:31.840 --> 06:40.960
+So I can go back to Maine and say hey I want to make sure that we catch any errors like type errors
+
+06:40.960 --> 06:42.120
+or value errors.
+
+06:42.160 --> 06:50.430
+So the first thing I can do is just say Aunt number and if I save that to make sure that we convert
+
+06:50.430 --> 06:58.680
+something to an integer and I run this right now I get a value error Invalid literal so it can't be
+
+06:58.680 --> 07:00.910
+run on this piece of string.
+
+07:00.930 --> 07:07.500
+OK so another thing we can do to improve our code is to wrap it in a try except block.
+
+07:07.520 --> 07:08.190
+Right.
+
+07:08.250 --> 07:09.690
+And then we can catch.
+
+07:09.690 --> 07:20.230
+So let's say except and then here accept a value here and let's say as here and in here we can do whatever
+
+07:20.230 --> 07:20.700
+we want.
+
+07:22.380 --> 07:32.480
+So we can return if we want the air or we can even raise the air in our case let's just return the air
+
+07:35.200 --> 07:37.210
+and I'll show you why in a second.
+
+07:37.210 --> 07:42.010
+Now if I ran this you see that my test fails.
+
+07:42.070 --> 07:48.700
+But now it's actually an assertion error the assertion error is coming from our test file over here
+
+07:49.270 --> 07:58.860
+and I'm asserting that hey I want to make sure that the result and the value error are equal.
+
+07:58.940 --> 08:02.530
+Now you see over here that there's a bit of a mismatch.
+
+08:02.540 --> 08:09.970
+We have a value air over here doesn't equal the class value air.
+
+08:10.050 --> 08:19.350
+Now this is a bit of a trick where because we're returning an air it's actually an instance of the value
+
+08:19.410 --> 08:23.660
+air class so we need to do something like this.
+
+08:23.670 --> 08:35.750
+We need to say hey is instance and say What is it an instance of wall is a result an instance of value
+
+08:35.870 --> 08:37.720
+air like this.
+
+08:37.910 --> 08:42.140
+But the problem here is that let's make this a little bit bigger.
+
+08:42.200 --> 08:45.920
+The problem here is that assert equals is going to expect two parameters.
+
+08:46.040 --> 08:47.510
+Two things that must be equal.
+
+08:47.510 --> 08:55.350
+But here I just want to make sure that this returns true that the result is an instance of value here.
+
+08:55.430 --> 08:56.900
+So how can I do that.
+
+08:57.260 --> 09:06.160
+Well besides assert equal we have a few other methods that unit test gives us if I go to the unit test
+
+09:06.250 --> 09:11.020
+documentation here on the first line says the list of search methods.
+
+09:11.050 --> 09:17.030
+So here I see that these are all the methods for asserting and testing our code.
+
+09:17.320 --> 09:26.310
+The one that we probably want is this one assert true to check if something is true so if I do assert
+
+09:27.630 --> 09:35.780
+that this is true and I ran my test let's clear this and run my test again.
+
+09:35.810 --> 09:36.650
+There you go.
+
+09:36.650 --> 09:39.350
+I ran two tests and everything seems to be OK.
+
+09:39.560 --> 09:42.520
+And again to go over this why is this.
+
+09:42.530 --> 09:51.990
+Well I'm running my test file and then I'm going to run the test do stuff which is going to be OK then
+
+09:52.020 --> 09:57.060
+I do the second part where the test parameter is something that we don't really want which is just a
+
+09:57.060 --> 09:58.450
+piece of string.
+
+09:58.560 --> 10:05.100
+The result is going to give us a value error because we've caught this error and we're now returning
+
+10:05.100 --> 10:06.740
+the error.
+
+10:06.890 --> 10:09.410
+And then finally we run this piece of code.
+
+10:09.410 --> 10:10.970
+Hey is this true.
+
+10:10.970 --> 10:14.810
+Is the result going to be a value error.
+
+10:14.880 --> 10:16.640
+So you see what we're doing here.
+
+10:16.710 --> 10:24.080
+What we're trying to do with our test is to improve our function by simply trying to break it.
+
+10:24.090 --> 10:30.340
+So we want to break our function and see Hey can I trick this function into giving me an error.
+
+10:30.510 --> 10:37.590
+And then once you do that and a test fails then you go back to the function and try to fix it kind of
+
+10:37.590 --> 10:40.730
+like we did here which is really really cool.
+
+10:40.770 --> 10:47.670
+This is a common practice with testing where you try and break things until well the function becomes
+
+10:47.850 --> 10:50.760
+perfect.
+
+10:50.760 --> 10:55.710
+Now I want you to take your time here and see if you can break this function and maybe add a couple
+
+10:55.710 --> 10:57.320
+more tests in the next video.
+
+10:57.330 --> 11:00.760
+I'm going to add a few more to make this function even better.
+
+11:00.840 --> 11:02.580
+I'll see in the next one by.

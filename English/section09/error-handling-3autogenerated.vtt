@@ -1,0 +1,106 @@
+WEBVTT
+
+00:00.610 --> 00:07.840
+So we've just created a program that isn't going to air out hopefully at least with value errors and
+
+00:07.930 --> 00:18.590
+0 Division errors but sometimes errors and exceptions can be so severe that we do want to stop our programs
+
+00:18.590 --> 00:19.360
+from running.
+
+00:19.370 --> 00:23.060
+We do want to catch them like this with the accept block.
+
+00:23.210 --> 00:30.300
+But at the same time also stop whatever the program is doing maybe instead of print we actually want
+
+00:30.300 --> 00:34.220
+to display that red here and says oh something bad is happening.
+
+00:34.260 --> 00:35.460
+Stop that.
+
+00:35.460 --> 00:46.380
+Well in that case we either don't use the asset block or in here we can say raise value here.
+
+00:46.530 --> 00:49.560
+Now this is rare that you'd have to do this.
+
+00:49.590 --> 00:57.990
+There are some specific use cases but here you would just write a message saying hey cut it out so that
+
+00:58.020 --> 01:05.480
+if I run this well if I type in a valid number I get Please enter a number.
+
+01:05.540 --> 01:14.270
+OK I'm finally done because I raise a value area and it throws in here into the accept block.
+
+01:14.270 --> 01:24.490
+So I'd have to remove this and if I remove this like this and hit run enter five and look at that I
+
+01:24.490 --> 01:25.710
+get a value error.
+
+01:25.780 --> 01:32.320
+Hey cut it up so I'm able to throw my own errors.
+
+01:32.370 --> 01:39.270
+So this is really useful if you're creating your own library or tool and you want to let the user know
+
+01:39.270 --> 01:40.260
+that an error happened.
+
+01:40.260 --> 01:42.090
+I'm not going to keep doing what you're doing.
+
+01:43.820 --> 01:45.960
+And this could be any type of error.
+
+01:45.980 --> 01:55.230
+You can also do something like exception and if I click Run here do five I get an exception.
+
+01:55.230 --> 01:57.830
+Hey cut it up.
+
+01:57.850 --> 02:05.220
+The key thing to remember with errors is that errors are unavoidable in programming.
+
+02:05.560 --> 02:11.490
+What your job is as a programmer is to be able to anticipate these errors.
+
+02:11.590 --> 02:18.970
+These bugs these exceptions and handle them properly in your programs and some of the biggest errors
+
+02:18.970 --> 02:26.320
+happen when we're trying to accept input from a user not just using this input but functions accepting
+
+02:26.470 --> 02:36.040
+arguments classes accepting different inputs from users like method calls and trying to change attributes
+
+02:36.760 --> 02:40.980
+when the outside world and our programs try to communicate with each other.
+
+02:40.990 --> 02:42.690
+Errors are bound to happen.
+
+02:42.700 --> 02:49.360
+Our job as programmers is to try and code in a way that handles these exceptions gracefully and we can
+
+02:49.360 --> 02:51.610
+anticipate these errors.
+
+02:51.670 --> 02:54.700
+There's no such thing as a perfect program.
+
+02:54.910 --> 03:01.840
+However we can try and do our best to learn from these errors and try to manage them so that our programs
+
+03:02.110 --> 03:03.580
+don't break.
+
+03:03.720 --> 03:04.560
+I'll see in the next one.
+
+03:05.380 --> 03:05.580
+Bob.

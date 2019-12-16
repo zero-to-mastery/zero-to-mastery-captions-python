@@ -1,0 +1,163 @@
+WEBVTT
+
+00:00.630 --> 00:01.760
+Welcome back.
+
+00:01.770 --> 00:04.440
+Let's talk about something called escape
+
+00:06.820 --> 00:15.530
+sequence in Python let's comment this out and let me ask you a question.
+
+00:15.670 --> 00:20.220
+What if we wanted to have a string that tells me let's say the weather.
+
+00:21.130 --> 00:29.770
+And here we want to write it's sunny.
+
+00:30.070 --> 00:36.970
+You see how the highlighting change here because I want to say it's with an apostrophe S..
+
+00:37.150 --> 00:43.400
+But python is reading this and saying OK this is the start of the string and this is the end of the
+
+00:43.400 --> 00:43.910
+string.
+
+00:44.060 --> 00:45.620
+And then I have no idea what this is.
+
+00:45.620 --> 00:48.470
+And then we're starting a string again.
+
+00:48.610 --> 00:51.020
+How can we fix this.
+
+00:51.040 --> 00:55.340
+Well we can add a double quote string instead.
+
+00:55.570 --> 00:58.240
+And this now works.
+
+00:58.240 --> 01:07.670
+But what if for some reason we also wanted to add it's kind of sunny in quotation marks.
+
+01:07.670 --> 01:10.480
+Well now we have another issue.
+
+01:10.670 --> 01:19.580
+So how can we solve this because in human language we have double quotes and apostrophes what we can
+
+01:19.580 --> 01:28.430
+use escape sequences here and this is a little hard to understand at first but it's simply adding a
+
+01:28.550 --> 01:39.170
+slash like this so the one right above your enter on the keyboard so this slash when Python goes through
+
+01:39.170 --> 01:45.110
+it is going to say all right whatever comes after this I recognize this symbol whatever comes after
+
+01:45.110 --> 01:49.420
+this I'm going to assume it's a string.
+
+01:49.430 --> 01:59.680
+So now if I do backslash here and then backslash here it's going to say hey Python I'm letting you know
+
+01:59.680 --> 02:04.300
+whatever comes after this is a string I'm letting you know whatever comes after this is a string and
+
+02:04.300 --> 02:14.010
+then I'm letting you know what comes after this is a string so that when we print the weather everything
+
+02:14.040 --> 02:16.260
+is printed nicely.
+
+02:16.410 --> 02:18.070
+Awesome.
+
+02:18.080 --> 02:23.240
+Now this escape sequence can be used in multiple ways.
+
+02:23.270 --> 02:29.990
+For example if I want to have an actual backslash Well I can go like this.
+
+02:29.990 --> 02:35.360
+And because it's saying whatever comes after this is a string it's going to assume that this is a string
+
+02:35.360 --> 02:35.730
+now.
+
+02:35.750 --> 02:42.680
+So if I run this you see that we get this backslash and there's a few other neat tricks a can do with
+
+02:42.680 --> 02:43.320
+it.
+
+02:43.370 --> 02:50.630
+For example one of it is the backslash T.
+
+02:50.730 --> 02:51.900
+What does that mean.
+
+02:51.900 --> 02:54.530
+Well let's remove this for now.
+
+02:54.540 --> 03:00.130
+There you go the backslash t remember well it's out of space in here.
+
+03:00.140 --> 03:04.770
+So we can distinguish it is going to say hey whatever comes after this.
+
+03:04.940 --> 03:06.800
+I want you to add a tab.
+
+03:06.800 --> 03:08.960
+This is a special meaning here.
+
+03:08.960 --> 03:17.010
+So if I click on run you'll see that it's added a tab spacing to my string.
+
+03:17.030 --> 03:22.220
+Another one is using n or a new line.
+
+03:22.220 --> 03:32.040
+So let's leave t here and then add a backslash n and then say hope you have a good day.
+
+03:34.200 --> 03:35.770
+What do you think will happen here.
+
+03:35.790 --> 03:42.940
+Fact like run I have a tab from the backslash T.
+
+03:43.310 --> 03:50.190
+And then I have a new line after kind of Sunny because I do the backslash and which denotes a new line
+
+03:50.660 --> 03:54.190
+so that this shows up on a new line.
+
+03:54.200 --> 04:00.290
+Now these escape sequences are hard to see at first but they're pretty much available in all programming
+
+04:00.290 --> 04:01.910
+languages they use strings.
+
+04:01.910 --> 04:05.960
+So if you come from another language this shouldn't be that strange to you.
+
+04:06.080 --> 04:12.020
+If it's your first time seeing this you just need to get used to this syntax and every once in a while.
+
+04:12.110 --> 04:17.660
+Go to the Python documentation and just type in escape sequences and you'll see all the ones that we
+
+04:17.660 --> 04:18.100
+have.
+
+04:18.110 --> 04:21.380
+These are the main ones that you need to know.
+
+04:21.390 --> 04:21.900
+All right.
+
+04:21.900 --> 04:23.370
+More to learn in the next video.

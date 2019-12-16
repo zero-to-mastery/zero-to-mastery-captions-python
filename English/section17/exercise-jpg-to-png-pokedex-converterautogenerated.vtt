@@ -1,0 +1,196 @@
+WEBVTT
+
+00:00.300 --> 00:01.210
+Welcome back.
+
+00:01.230 --> 00:06.910
+It's time to apply what we just learned and do an exercise and build our own project.
+
+00:07.080 --> 00:08.880
+Now what is this project.
+
+00:08.880 --> 00:15.350
+This project is going to be a JPEG to PSG converter.
+
+00:15.370 --> 00:17.420
+You remember our pocket X right.
+
+00:17.500 --> 00:25.870
+Our pocket X are all these cute little pokey months but they're all in j peg format now JPEG image file
+
+00:25.870 --> 00:26.370
+format.
+
+00:26.380 --> 00:29.460
+You can read up on it but I prefer PMG.
+
+00:29.460 --> 00:34.000
+There are some benefits that PMG files have especially for these type of images.
+
+00:34.000 --> 00:40.690
+So for example if you're a web developer these types of images with not a lot of color or just a few
+
+00:40.840 --> 00:44.690
+colors you can see over here blue brown white.
+
+00:45.040 --> 00:51.240
+They're actually better when you develop Web sites to use PMG.
+
+00:51.400 --> 00:54.750
+Again that's beyond the scope of the course you can read up on this on your own.
+
+00:54.790 --> 01:00.640
+But a J pack too P G converter is really really useful.
+
+01:00.680 --> 01:04.630
+So how can we build it based on what we've learned.
+
+01:04.640 --> 01:09.110
+I'm going to get you started and the rest I'm going to try and see if we can figure out on your own.
+
+01:09.800 --> 01:18.300
+So what I'm going to do first is create a new file in here and I'm going to use the command line.
+
+01:18.300 --> 01:22.720
+I can use touch here because I'm using a Mac if you're using Windows.
+
+01:22.720 --> 01:26.770
+This command is different and that's something that we've already talked about before.
+
+01:26.950 --> 01:32.370
+You can also just manually on your computer just say new file so you can just right click and say a
+
+01:32.370 --> 01:34.750
+new file whatever you want.
+
+01:34.750 --> 01:39.550
+Well I already did this so instead of doing touch I'll just create a new file and what we'll call it
+
+01:39.760 --> 01:49.950
+is I'm going to call it j peg to PMG converter.
+
+01:49.960 --> 01:51.160
+There we go.
+
+01:51.160 --> 01:53.640
+Now what do we want this to do.
+
+01:53.650 --> 01:59.550
+Well we want a python script that I can run that works like this.
+
+01:59.650 --> 02:08.890
+I want to be able to say Python 3 and then say JPEG to PMG converted it up by and then give it to arguments.
+
+02:09.040 --> 02:17.490
+The first argument is I wanted to give the folder name so I'm going to say Poke it X and we're going
+
+02:17.490 --> 02:20.340
+to add a slash here to show that this is a folder.
+
+02:20.350 --> 02:27.520
+So I want you to open the pocket X folder and then the second parameter is the new folder that I want
+
+02:27.520 --> 02:28.290
+to create.
+
+02:28.300 --> 02:30.760
+So let's just call it new.
+
+02:30.790 --> 02:40.280
+So this new folder doesn't exist but I want to be able to create it and by the way if you're on a Windows
+
+02:40.370 --> 02:48.760
+this slash will be the other one it'll be the backslash like this but essentially what I want to do
+
+02:48.760 --> 02:50.290
+is run this command.
+
+02:50.500 --> 02:57.040
+It's going to look through all the images here and convert them into a JPEG and put them in a new folder
+
+02:57.370 --> 03:06.600
+called New so let's build that script and I'm going to get you started with a little hint.
+
+03:06.600 --> 03:15.980
+What we need to do is we need to be able to grab these arguments and also grab all these files and from
+
+03:15.980 --> 03:18.650
+the previous sections we should know how to do that.
+
+03:18.680 --> 03:27.860
+What I'm going to do is import the CIS module and import the OS module and of course from the pillow
+
+03:27.950 --> 03:34.670
+library I'm going to import pill from image it's import here.
+
+03:34.670 --> 03:35.190
+There you go.
+
+03:36.600 --> 03:47.890
+Now the first step is to actually using the CIS module grab the first and second argument.
+
+03:48.150 --> 03:51.720
+So remember that's the pocket X and the new folder.
+
+03:52.260 --> 03:54.410
+So that's the first thing we want to do.
+
+03:54.420 --> 04:08.810
+The second thing is to well based on whether this exists or not to check if new exists or this folder
+
+04:08.810 --> 04:13.500
+exists and if not create it right.
+
+04:14.370 --> 04:18.620
+So if this doesn't exist we have to create the folder so we can put the images in.
+
+04:18.930 --> 04:28.180
+And then finally while we want to do here and this is the tough part we want to loop through this entire
+
+04:28.180 --> 04:42.880
+folder so loop through pocket X and then we want to convert images to G.
+
+04:43.100 --> 04:48.480
+And then finally we want to save them to the new folder.
+
+04:48.500 --> 04:49.460
+This is a tough one.
+
+04:49.460 --> 04:52.480
+It combines a lot of the things that we've learned up until now.
+
+04:52.640 --> 04:57.380
+You might not get it right away because it is a little tricky so don't worry.
+
+04:57.380 --> 05:01.430
+In the next video I'm going to show you how to solve this problem.
+
+05:01.850 --> 05:05.170
+But why you might want to learn is how to google.
+
+05:05.240 --> 05:09.090
+First of all how do you sis to grab the first and second argument.
+
+05:09.260 --> 05:19.400
+How to use the OS module to grab the path so that you can say hey I want these files in pocket X and
+
+05:19.400 --> 05:22.230
+I want to write to this new file.
+
+05:22.340 --> 05:28.070
+So we're gonna use the OS module for that and then obviously we're gonna use the pillow module to convert
+
+05:28.070 --> 05:34.590
+the images to PMG something that we've seen before this exercise is going to require a bit of googling
+
+05:35.010 --> 05:37.890
+on your case which is a good skill to develop.
+
+05:37.920 --> 05:39.930
+So in the next video I'm going to show you how to do this.
+
+05:40.380 --> 05:41.250
+I'll see you on that one.
+
+05:41.250 --> 05:42.260
+Good luck.

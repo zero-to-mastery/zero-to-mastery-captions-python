@@ -1,0 +1,229 @@
+WEBVTT
+
+00:00.580 --> 00:07.400
+Let's do a fun exercise to test our understanding and we're gonna use lambda expressions.
+
+00:07.510 --> 00:14.530
+Now I want you to create a lambda expression that is going to square our list.
+
+00:14.920 --> 00:23.200
+So let's say we have my list and this my list will have 5 4 3.
+
+00:23.220 --> 00:32.470
+Now I want you to create a one line lambda expression that's going to print for us A squared list.
+
+00:32.470 --> 00:37.960
+So five to the power of two will be twenty five forward to the power of two will be 16 and three to
+
+00:37.960 --> 00:39.790
+the power of two will be nine.
+
+00:39.790 --> 00:47.640
+So a list that contains those values using lambda expressions so that's your first challenge is to square
+
+00:49.010 --> 00:50.280
+the next challenge.
+
+00:50.660 --> 00:53.220
+And this one's a little tough.
+
+00:53.300 --> 01:02.750
+We're gonna do some list sorting must you square here just sequencing and in this list sorting.
+
+01:02.920 --> 01:05.770
+I have a list in this list.
+
+01:05.790 --> 01:07.350
+Well it's a tough one.
+
+01:07.360 --> 01:20.780
+We have a list that is a trouble of 0 2 then a couple let's say 4 3 and a couple let's say 9 9.
+
+01:21.030 --> 01:26.860
+And then finally a couple that is 10 negative 1.
+
+01:26.870 --> 01:41.540
+Now what I want you to do is to sort this based on the second value to make sure this is a comma so
+
+01:41.540 --> 01:42.080
+that is.
+
+01:42.170 --> 01:49.880
+I want this to be sorted so that this couple is first because minus one is the lowest then this couple
+
+01:49.900 --> 01:52.130
+because two is the next highest.
+
+01:52.220 --> 01:55.970
+Then this couple then this double.
+
+01:56.030 --> 02:00.570
+So how can you do that using lambda expressions.
+
+02:00.700 --> 02:01.900
+Now this is a tough one.
+
+02:01.900 --> 02:04.120
+So if you don't get it don't worry.
+
+02:04.120 --> 02:05.260
+Pause the video here.
+
+02:05.260 --> 02:06.100
+Take your time.
+
+02:06.100 --> 02:07.360
+See if you can solve this.
+
+02:07.480 --> 02:13.020
+Otherwise I'm going to get going with the answers this one should be fairly easy to you.
+
+02:13.110 --> 02:14.150
+Right.
+
+02:14.190 --> 02:18.310
+We can just simply do a map function or you know what.
+
+02:18.360 --> 02:26.880
+Let's just say new list is going to equal a list that we're going to map over
+
+02:30.570 --> 02:33.360
+and in here nothing we haven't seen before.
+
+02:33.400 --> 02:36.160
+I'm going to say lambda
+
+02:39.060 --> 02:48.500
+number is going to be number to the power of to and the list that I'm going to give it will be the my
+
+02:48.710 --> 02:54.310
+list if I run this.
+
+02:54.320 --> 02:55.130
+There you go.
+
+02:55.130 --> 02:58.880
+Nice and easy nice easy one liner.
+
+02:58.900 --> 03:00.260
+What about this one though.
+
+03:00.310 --> 03:01.580
+This one's a little tough.
+
+03:01.890 --> 03:12.280
+And you really have to think about we've learned that we have the DOT sort method right and these sort
+
+03:13.240 --> 03:14.170
+actually.
+
+03:14.170 --> 03:15.800
+Well let's see what happens if I just sort.
+
+03:15.790 --> 03:27.920
+Like this if I do print a dot sort and I click Run I get non because it modifies the list in place so
+
+03:28.040 --> 03:30.530
+let's just print a.
+
+03:30.560 --> 03:37.270
+After we have sorted it five click Run.
+
+03:37.290 --> 03:38.160
+All right.
+
+03:38.160 --> 03:42.980
+It I mean it looks like it's sorted with the first key.
+
+03:43.020 --> 03:52.170
+What if we move this in here in the middle and click Run.
+
+03:52.210 --> 03:52.740
+All right.
+
+03:52.740 --> 03:57.600
+Looks like it's sorting it for me but it's sorting it based on this first item.
+
+03:57.990 --> 04:06.380
+But I want this second item or what we call the second key to be this sorting factor and if you see
+
+04:06.380 --> 04:16.370
+here if we do sort I have to give it a key and we want the key to be to.
+
+04:16.610 --> 04:19.840
+So how can we do that.
+
+04:19.860 --> 04:21.620
+Well we can do something like this.
+
+04:21.630 --> 04:30.890
+We can say key is going to equal each one of the second keys and we can use a lambda expression here.
+
+04:31.120 --> 04:32.980
+We can say lambda.
+
+04:32.980 --> 04:46.540
+So the default parameter would be lambda of X and then simply say x 1.
+
+04:46.730 --> 04:47.720
+Let's go over this.
+
+04:47.750 --> 04:51.210
+What I'm saying is hey I want you to run the sort function.
+
+04:51.260 --> 04:58.370
+And the key for the sort function when I'm sorting through everything is I want it to iterate over each
+
+04:58.880 --> 05:01.640
+item that I'm going to get.
+
+05:01.950 --> 05:05.120
+That is X is going to be this couple.
+
+05:05.400 --> 05:12.630
+And I want you to use the value which we're going to return which is the second one.
+
+05:12.630 --> 05:17.510
+So the key is always going to be by the second item.
+
+05:17.510 --> 05:26.470
+Now if we run this look at that we're able to sort by the second item.
+
+05:26.520 --> 05:34.620
+Now if you didn't get this don't worry this is quite tough and it's hard for you to get used to the
+
+05:34.620 --> 05:42.320
+syntax or know that sort worked in this way but the goal is to show you that this is a common thing
+
+05:42.320 --> 05:49.200
+that you can do with lambda functions in a way to make sure that you can sort with different keys.
+
+05:49.220 --> 05:55.840
+For example this would work with a dictionary or another list inside of a list.
+
+05:55.850 --> 05:58.600
+This is a common way to adjust your sorting.
+
+05:58.880 --> 06:01.940
+And it's a pattern that you just have to remember.
+
+06:02.210 --> 06:07.370
+But it shows you the power of lambda where we don't really have to write these complicated functions
+
+06:07.790 --> 06:15.980
+if we really just needed a one time function and just a function that returns something simple lambda
+
+06:16.070 --> 06:18.180
+is a great tool to use.
+
+06:18.320 --> 06:23.060
+But if you didn't get this like I said don't worry this is one of those things that you'll just have
+
+06:23.060 --> 06:24.520
+to remember.
+
+06:24.530 --> 06:26.960
+Let's take a break and I'll see you in the next one.
+
+06:27.020 --> 06:27.220
+Bob.

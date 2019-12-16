@@ -1,0 +1,91 @@
+WEBVTT
+
+00:00.420 --> 00:01.650
+Welcome back.
+
+00:01.650 --> 00:09.120
+In this video we're going to try a little exercise and I actually want you to try this yourself and
+
+00:09.120 --> 00:11.620
+in the next video I'll show you the solution.
+
+00:11.610 --> 00:18.750
+Now I've attached here a watermark PDA if you can see over here that it says draft and it's just one
+
+00:18.750 --> 00:23.740
+page like this now you'll find this in your resources.
+
+00:23.740 --> 00:29.570
+But I want to build a tool that's quite useful that watermarks all my files.
+
+00:29.650 --> 00:36.010
+So remember the Super dot PDA file we made in the last video that had four pages.
+
+00:36.010 --> 00:38.560
+Well I want to watermark this all of them.
+
+00:38.620 --> 00:45.070
+So instead of me doing manually let's say we had thousands of pages I want a program that can watermark
+
+00:45.520 --> 00:46.820
+my PDX.
+
+00:46.840 --> 00:49.370
+Now why would this be useful.
+
+00:49.390 --> 00:55.020
+Well in Hollywood this is actually a useful thing to be able to do.
+
+00:55.120 --> 01:02.750
+Let's say you're working on a TV show let's call it lost and you want to give the script which is super
+
+01:02.750 --> 01:08.140
+secret because you don't want the audience to find out what happens in the show to your cast members
+
+01:08.440 --> 01:15.310
+and all these actors that are going to get a draft of the script but we don't want them to leak the
+
+01:15.310 --> 01:18.240
+script to the press so that everybody finds out about it.
+
+01:18.250 --> 01:18.900
+Right.
+
+01:18.910 --> 01:25.370
+So usually big companies in Hollywood watermark their script with usually an actor's name.
+
+01:25.390 --> 01:33.190
+So if that actor leaks the script well they'll know that that person has their name on the script and
+
+01:33.190 --> 01:35.010
+they're the ones that leaked it.
+
+01:35.020 --> 01:38.380
+So this is actually a useful thing to know.
+
+01:38.420 --> 01:39.560
+So how can we do this.
+
+01:41.180 --> 01:44.160
+Well this is your challenge right.
+
+01:44.210 --> 01:51.830
+What we want to do is ideally use the water dot PD f that I'll provide for you.
+
+01:51.830 --> 02:00.530
+I want to write this water dot PD F on all the pages of super dot PD f that we combined in the previous
+
+02:00.530 --> 02:01.100
+lesson.
+
+02:01.100 --> 02:10.340
+Or you can have your own PDUFA so using what we've learned up until now and the Pew IPD F2 library.
+
+02:10.460 --> 02:12.470
+Let's see if we can give that a go.
+
+02:12.650 --> 02:15.860
+And in the next video I'll show you how I did it.
+
+02:15.920 --> 02:17.440
+I'll see in the next one by.

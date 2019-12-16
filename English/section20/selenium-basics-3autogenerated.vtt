@@ -1,0 +1,226 @@
+WEBVTT
+
+00:00.510 --> 00:02.900
+Welcome back automation masters.
+
+00:02.910 --> 00:09.090
+Now up until this point we've ran this code quite a bit of times and you see that now I have a ton of
+
+00:09.330 --> 00:11.130
+chrome browsers open.
+
+00:11.130 --> 00:11.670
+That's not good.
+
+00:11.670 --> 00:13.980
+How do we close these things.
+
+00:13.980 --> 00:16.140
+Well quite easily actually.
+
+00:16.230 --> 00:21.040
+All we have to do is say Chrome browser dot close.
+
+00:21.250 --> 00:26.550
+Now this close method is going to close our browsers.
+
+00:26.620 --> 00:32.890
+However a lot of people sometimes have issues with this method because browsers are constantly being
+
+00:32.920 --> 00:38.860
+updated and sometimes selenium has some bugs where it doesn't close this properly.
+
+00:38.860 --> 00:41.720
+So this may work for you now.
+
+00:41.720 --> 00:43.310
+In my case if I run this
+
+00:48.180 --> 00:50.110
+all right well that actually worked.
+
+00:50.210 --> 00:53.140
+But there are instances where this won't work.
+
+00:53.150 --> 01:00.130
+So you might have to actually call this twice to make sure that it closes the instance.
+
+01:00.380 --> 01:06.860
+Now using close is going to close the current window that it's open which is what we're doing here with
+
+01:06.860 --> 01:07.740
+quit.
+
+01:07.760 --> 01:12.050
+You actually get to close the entire chrome driver.
+
+01:12.050 --> 01:22.040
+So let's do quit now and see if this works.
+
+01:22.110 --> 01:22.590
+All right.
+
+01:22.620 --> 01:25.690
+So that also quit the browser.
+
+01:25.770 --> 01:32.040
+But if in your code for some reason you're opening up the browser twice it's going to quit all sessions
+
+01:33.650 --> 01:37.970
+unfortunately because these ones are all past instances.
+
+01:38.210 --> 01:40.360
+It's not going to know how to quit them.
+
+01:40.370 --> 01:40.960
+We should have.
+
+01:41.000 --> 01:42.110
+Well quit them from before.
+
+01:42.110 --> 01:46.580
+So you're going to have to manually closings for now but at least now you know that you just add this
+
+01:46.580 --> 01:47.160
+at the end.
+
+01:47.180 --> 01:49.560
+Sorry for showing you how to do that at the very end.
+
+01:50.150 --> 01:56.060
+But I had to keep it open so I can explain all these things that are happening to you but ideally you
+
+01:56.090 --> 01:59.280
+quit the browser afterwards.
+
+01:59.290 --> 02:05.560
+Now this quit and close actually causes a lot of headaches and sometimes it may not work on a browser.
+
+02:05.620 --> 02:08.340
+This depends on the versions that you have installed.
+
+02:08.360 --> 02:13.780
+There's a ton of forms online they can look up and say hey why isn't my browser quitting.
+
+02:13.780 --> 02:20.890
+So it's a it's a heavily debated thing that you can find information online on if it doesn't work for
+
+02:20.890 --> 02:21.090
+you.
+
+02:21.090 --> 02:27.400
+You might have to call this twice or you might have to check that the version you're using is working
+
+02:27.400 --> 02:29.140
+properly.
+
+02:29.160 --> 02:34.920
+Now some of you might be asking this gives you a lot of power right.
+
+02:35.190 --> 02:41.790
+Because I mean I can start writing bots to go through Web sites maybe I want to write a little board
+
+02:41.790 --> 02:50.010
+that goes on every single Reddit post and upvotes it or maybe I click like on a Facebook page over and
+
+02:50.010 --> 02:59.880
+over and over maybe there's a voting contest going on and I can just write scripts to automate people
+
+02:59.880 --> 03:03.360
+signing in random people signing in and uploading.
+
+03:03.510 --> 03:05.130
+Let's say your submission.
+
+03:05.130 --> 03:10.710
+So there's many good ways to use automation and many bad ways to use automation.
+
+03:10.710 --> 03:19.080
+Maybe you want to send personal messages to your Facebook friends while you can automate it and message
+
+03:19.530 --> 03:26.840
+thousands of them all at the same time using something like many but you see websites are smarter than
+
+03:26.840 --> 03:37.350
+that because most Web sites will detect when it's a robot controlling it versus when there is a human.
+
+03:37.490 --> 03:39.740
+Because of how fast things are happening.
+
+03:39.740 --> 03:45.000
+No human is going to be able to send keys and click that fast.
+
+03:45.050 --> 03:46.050
+Right.
+
+03:46.100 --> 03:54.550
+So selenium actually has thought of that if we actually go back here to the site that I originally showed
+
+03:54.550 --> 04:04.440
+you which I'll link to if you scroll all the way down to wait wait allows us to actually wait and simulate
+
+04:04.440 --> 04:12.690
+actions at a bit of a delay so most people that write automation scripts on Web sites will use something
+
+04:12.690 --> 04:21.830
+like sleep or wait to make sure that there's pauses in between actions so that while Web sites aren't
+
+04:21.840 --> 04:29.890
+going to say hey hey this is this is definitely not a human I'm going to block their usage for example
+
+04:29.980 --> 04:36.220
+here on the Udemy Web site I tried to write a script that did things really really fast and you'll see
+
+04:36.220 --> 04:41.210
+that Udemy actually blocks my activity and says hey please verify that you're a human.
+
+04:41.530 --> 04:47.230
+So that it says hey I'm detecting something that makes me believe that this isn't a human I don't want
+
+04:47.230 --> 04:53.470
+our servers to get logged with all this activity because I mean companies like you damn you have to
+
+04:53.470 --> 04:58.930
+pay for let's say interactions on the Web site because they're talking to back and servers.
+
+04:58.930 --> 05:06.080
+So you'll notice some of these things and you want to be careful with automation that you're usually
+
+05:06.080 --> 05:12.440
+testing on your own product or your company's product and that you're not abusing the other Web sites
+
+05:12.470 --> 05:20.090
+and trying to let's say a game the system but using something like weight actually allows you to at
+
+05:20.090 --> 05:26.890
+least not do things as fast as possible so you don't get detected as easily as possible with great power
+
+05:26.890 --> 05:34.660
+comes great responsibility and selenium is a great tool for testing a lot of companies hire testers
+
+05:34.660 --> 05:37.940
+and automation testers for this specific reason.
+
+05:38.060 --> 05:41.470
+It's a great career option for you.
+
+05:41.470 --> 05:44.260
+However you can also do bad things with this.
+
+05:44.530 --> 05:46.450
+So be responsible.
+
+05:46.600 --> 05:49.380
+Don't do anything that might get you in trouble.
+
+05:49.540 --> 05:56.350
+Not advocating for anything of that but I hope this gave you a little test into what automation testers
+
+05:56.440 --> 06:03.910
+do and you can use selenium not just on browsers you can use them pretty much on any screen you can
+
+06:03.910 --> 06:09.260
+run them on Android devices IOW devices pretty much any screen.
+
+06:09.340 --> 06:12.540
+I hope that was fun and I'll see you in another video Bye.

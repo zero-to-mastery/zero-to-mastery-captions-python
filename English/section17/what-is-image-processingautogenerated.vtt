@@ -1,0 +1,148 @@
+WEBVTT
+
+00:00.240 --> 00:02.850
+Let's talk about image processing.
+
+00:02.850 --> 00:11.200
+If this is something that happens a lot and a lot of companies process images or videos what do I mean.
+
+00:11.200 --> 00:14.920
+Well Instagram here for example you may have used this service.
+
+00:14.920 --> 00:20.450
+What you do is you upload your pictures and Instagram displays it to all your friends.
+
+00:20.560 --> 00:27.310
+But if I click on one of these pictures here this image is an actually the image that I uploaded to
+
+00:27.310 --> 00:32.240
+Instagram because the image that I uploaded to Instagram was very large.
+
+00:32.290 --> 00:35.290
+It was probably around five megabytes.
+
+00:35.290 --> 00:39.490
+What Instagram does is it processes this image.
+
+00:39.490 --> 00:46.600
+Maybe it adds some cool filters for me to make it look nice but it also crops this image and makes it
+
+00:46.600 --> 00:47.080
+small.
+
+00:47.110 --> 00:49.900
+So it's only a couple of hundred of kilobytes.
+
+00:50.110 --> 00:52.060
+Now why would they do this.
+
+00:52.210 --> 00:59.680
+They do this because A they make pictures look nicer but also to save themselves a bit of money if they
+
+00:59.740 --> 01:04.730
+uploaded all the pictures that they have from all their users.
+
+01:04.840 --> 01:08.000
+And each picture was a couple of megabytes.
+
+01:08.110 --> 01:15.400
+That's a lot of store space for them to have to hold on to these pictures because each of these pictures
+
+01:15.460 --> 01:21.340
+are on their servers so they save a lot of money by compressing these images.
+
+01:21.550 --> 01:24.440
+The same thing happens on udemy as well.
+
+01:24.620 --> 01:29.680
+You may have watched a course on something like you Demi and thought men these videos are a little bit
+
+01:29.680 --> 01:30.130
+blurry.
+
+01:30.130 --> 01:32.350
+I wish there were a little clearer.
+
+01:32.350 --> 01:34.660
+Well you Demi does the same thing.
+
+01:34.690 --> 01:41.950
+They host all of these videos and if they hosted the original version of the videos such as the ones
+
+01:41.950 --> 01:48.100
+that I record in the full format well that's going to cost them a lot of money.
+
+01:48.220 --> 01:56.470
+So they're able to save money by compressing these videos so that they're smaller versions but also
+
+01:56.470 --> 02:02.290
+help out other students that maybe my watch these videos then don't have a good internet connection
+
+02:02.290 --> 02:07.270
+to watch them in HD so this is a very common problem.
+
+02:07.290 --> 02:10.570
+So we're going to learn all about that now.
+
+02:10.640 --> 02:12.410
+What are we going to use.
+
+02:12.500 --> 02:17.440
+The key thing is that internet is your friend as a python developer.
+
+02:17.480 --> 02:24.020
+You should be able to find these libraries by just doing a simple google search such as image processing
+
+02:24.050 --> 02:24.440
+python.
+
+02:24.930 --> 02:32.650
+And we see over here a bunch of resources like 10 Python image manipulation tools or things like open
+
+02:32.650 --> 02:38.770
+CV which we'll talk about but I'll save you the hassle and tell you what we're going to use we're going
+
+02:38.770 --> 02:45.440
+to use something called pillow which is a pretty standard library to use with Python when manipulating
+
+02:45.740 --> 02:46.900
+images.
+
+02:47.030 --> 02:51.710
+What we're going to do is actually install this pillar library and there's a couple of warnings here
+
+02:51.710 --> 02:59.340
+that we're going to get to in the next video but ideally all you're going to do is while you can just
+
+02:59.470 --> 03:01.040
+pip install pillow.
+
+03:01.230 --> 03:03.160
+So let's do that.
+
+03:03.210 --> 03:10.000
+I have a folder here and a project that we're gonna be working on so ignore the right side here.
+
+03:10.200 --> 03:15.490
+But in here all I'm going to do is a Pip and I want to make sure I'm using paper 3.
+
+03:15.570 --> 03:17.160
+Again this is something we've talked about.
+
+03:17.160 --> 03:17.870
+It's up to you.
+
+03:17.880 --> 03:28.130
+Make sure that we're using the latest version of Pip and then say install below and in my case it's
+
+03:28.130 --> 03:29.510
+already installed for you.
+
+03:29.510 --> 03:35.430
+It may take a little bit longer to install this package now in the next video.
+
+03:35.490 --> 03:41.470
+I'm going to talk a little bit about this warning which actually leads us to a key developer fundamental.
+
+03:41.520 --> 03:42.630
+So I'll see you now on.

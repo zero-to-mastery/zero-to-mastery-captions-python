@@ -1,0 +1,211 @@
+WEBVTT
+
+00:00.830 --> 00:09.940
+Let's talk about our next data structure and this one is called a dictionary in other languages.
+
+00:09.940 --> 00:15.580
+It might be called the hash table maybe map or objects in Python.
+
+00:15.580 --> 00:22.960
+We have this idea of dictionary or as Python likes to call it dict have to make sure I pronounce that
+
+00:22.960 --> 00:23.470
+properly.
+
+00:23.470 --> 00:29.140
+That's a really hard word to say when you're recording and you're repeating it over and over anyway.
+
+00:29.140 --> 00:30.460
+Dictionary.
+
+00:30.460 --> 00:31.180
+What is it.
+
+00:31.690 --> 00:36.190
+Well it's a data type in Python but it's also a data structure.
+
+00:36.280 --> 00:40.770
+Remember that I mentioned this idea of data structure when we talked about lists.
+
+00:40.960 --> 00:45.700
+There were the first the data structure in Python that we learned.
+
+00:45.820 --> 00:53.770
+It's a way for us to organize our data in a form that is has some different pros and cons and how we
+
+00:53.770 --> 00:56.790
+access it for example with lists.
+
+00:56.890 --> 00:59.380
+We saw that they're easily ordered.
+
+00:59.380 --> 01:05.260
+We can access them through indexes like 0 1 we can reverse them we can insert into them.
+
+01:05.260 --> 01:06.990
+It was really really nice.
+
+01:07.000 --> 01:08.860
+What about dictionaries.
+
+01:08.860 --> 01:17.550
+Well let's see what a dictionary looks like a dictionary will look something like this will have a key
+
+01:18.710 --> 01:28.540
+and a value then another comma and then another key and another value let's decipher this.
+
+01:29.170 --> 01:37.060
+So I'm using curly brackets here which denotes a dictionary and unlike a list we have what we call a
+
+01:37.060 --> 01:39.200
+key value pair.
+
+01:39.280 --> 01:47.630
+A key is a string for us to grab the value what I mean.
+
+01:47.630 --> 01:55.910
+Well in order for us to access any of these values I would go dictionary and then say the key in our
+
+01:55.910 --> 02:01.970
+case let's say we want to grab b. we would grab the key and then when we print here the result
+
+02:04.770 --> 02:11.340
+we get the value to we're essentially telling the computer Hey I have this variable dictionary remember
+
+02:11.340 --> 02:13.170
+I can name this whatever I want.
+
+02:13.350 --> 02:21.240
+I have this variable dictionary I want you to go find the key b and this key B if it exists grab me
+
+02:21.240 --> 02:21.810
+the value.
+
+02:21.870 --> 02:25.340
+So it's going to go into your memory or into the machine's memory.
+
+02:25.440 --> 02:30.480
+It's going to find where B is stored in our memory and grab the value.
+
+02:30.480 --> 02:37.750
+So in the bookshelf b we have the value to what if we do see which doesn't exist.
+
+02:37.830 --> 02:44.160
+If I click Run No I get an error it tells me hey sorry you're looking for key C but I don't really have
+
+02:44.160 --> 02:53.160
+that key and this is what a dictionary is a dictionary is an on ordered key value pair what I mean by
+
+02:53.160 --> 02:59.760
+that unordered means that they are not right next to each other in memory remember with lists we could
+
+02:59.760 --> 03:07.110
+access lists with index of 0 then index of one index of to all those bookshelves or right next to each
+
+03:07.110 --> 03:14.070
+other a dictionary on the other hand they're all over the place although I've put a and b here this
+
+03:14.190 --> 03:21.700
+might be in one spot a memory in this one in an other spot a memory and if I added let's say x this
+
+03:21.710 --> 03:30.310
+will be in another spot in memory and this might not be in order maybe I've written it a B X but when
+
+03:30.310 --> 03:37.540
+I actually return the entire dictionary maybe I don't have this in order these are all just scattered
+
+03:37.570 --> 03:44.310
+all across our memory as you see here when I receive the dictionary I get these things in order but
+
+03:44.460 --> 03:49.920
+that's only because it's small if I had a really really large dictionary I might not have them in order
+
+03:50.040 --> 04:00.060
+that I've inserted a so a dictionary is an unordered key value pair and as long as we know the key that
+
+04:00.060 --> 04:06.480
+is whatever the key that we're looking for then we just give that and our computer is going to know
+
+04:06.630 --> 04:10.800
+hey where in memory to look to grab the values.
+
+04:10.980 --> 04:17.060
+Now here's the cool thing about data structures like dictionaries and lists they're containers around
+
+04:17.300 --> 04:17.930
+data.
+
+04:17.930 --> 04:18.450
+Right.
+
+04:18.500 --> 04:21.510
+So this can be anything that we want.
+
+04:21.620 --> 04:30.470
+Let's say we want this one to be a list one two three maybe we want this to be a string Hello and maybe
+
+04:30.500 --> 04:36.010
+this is a volume value like true that is completely valid.
+
+04:36.050 --> 04:41.990
+I can access the a like so and I get the list.
+
+04:42.050 --> 04:44.830
+What if I want the second item in the list.
+
+04:44.840 --> 04:47.600
+Well I do index of one like this.
+
+04:49.570 --> 04:50.410
+And there you go.
+
+04:50.440 --> 04:58.030
+I get two and this is the same with lists and you'll see this a lot where if we had a list or let's
+
+04:58.030 --> 05:10.360
+call it my list and my list contains a dictionary that has let's say a 1 and you know what.
+
+05:10.390 --> 05:11.840
+Let's just copy paste this.
+
+05:12.040 --> 05:16.270
+We'll do this so we'll have the first item in the array
+
+05:19.260 --> 05:21.390
+like this then comma.
+
+05:21.510 --> 05:32.520
+Then another item in the array and this time around this one has four five six so that I can now grab
+
+05:32.520 --> 05:33.450
+from my list
+
+05:37.150 --> 05:46.960
+first item in the array and then maybe grab the A.
+
+05:47.220 --> 05:48.420
+That is the key.
+
+05:48.660 --> 05:53.940
+So remember this is a string and then we want to grab let's say the third item.
+
+05:53.940 --> 05:59.250
+So we'll go to fight run this.
+
+05:59.510 --> 06:02.280
+I should get 3 and 2.
+
+06:02.290 --> 06:03.640
+There you go.
+
+06:03.640 --> 06:10.720
+Now you might be asking yourself what's the deal with these data structures like why do we need dictionary
+
+06:10.720 --> 06:12.280
+why do we need list.
+
+06:12.280 --> 06:16.340
+Why can we just have one thing that does everything isn't that simpler.
+
+06:16.360 --> 06:20.130
+Think about that because in the next video I'm going to try and answer that question for you.

@@ -1,0 +1,208 @@
+WEBVTT
+
+00:00.150 --> 00:04.530
+Let's learn a few more neat things that we can do with images now.
+
+00:04.530 --> 00:09.420
+Here we learned that we're able to save images we can convert them.
+
+00:09.570 --> 00:16.800
+We can add image filters to them and we also learn that we can actually use this save method to give
+
+00:16.830 --> 00:23.130
+a new name to a file and then also give it an extension with the second parameter so we can convert
+
+00:23.130 --> 00:31.850
+from let's say a Jay back to a PMG file like this another neat thing that we can do is also actually
+
+00:31.850 --> 00:36.710
+do something called Show and this is just going to show us the image.
+
+00:36.710 --> 00:39.820
+Let me show you huh.
+
+00:39.830 --> 00:40.790
+Get that done.
+
+00:40.790 --> 00:42.350
+Let me show you.
+
+00:42.440 --> 00:42.770
+All right.
+
+00:42.770 --> 00:44.150
+There you go.
+
+00:44.150 --> 00:50.860
+We see that it's now opening up the file and showing me the great out black and white 1920s Pikachu
+
+00:54.320 --> 01:05.390
+we can also rotate our images so I can say filtered image and this image I want to rotate let's say
+
+01:05.480 --> 01:12.760
+90 degrees and I'm actually going to move this above the safe so that we can see the effects.
+
+01:12.820 --> 01:17.870
+I run this and go to gray dot PSG
+
+01:20.500 --> 01:30.220
+and let's just assign this to a crooked variable and this crooked variable which stores the new image
+
+01:31.120 --> 01:33.430
+is where we're going to save.
+
+01:33.430 --> 01:34.820
+So let's just loops.
+
+01:34.870 --> 01:43.480
+Let's save that and run this and if we now go to gray dot BMG look at that we got a crooked picture.
+
+01:43.670 --> 01:46.490
+And we can again do different things let's do a 180.
+
+01:46.490 --> 01:50.910
+So we have upside down to get you and there we go.
+
+01:50.930 --> 01:52.870
+We have upside down pikachu.
+
+01:52.880 --> 01:53.720
+So that's great.
+
+01:53.720 --> 01:59.020
+We can rotate images we can also resize the images.
+
+01:59.110 --> 02:06.010
+So let's just say resize here and this is going to be called resize and instead of rotate what we'll
+
+02:06.010 --> 02:15.390
+say is we'll say resize and we can say that this image you remember it was 640 by 640.
+
+02:15.420 --> 02:25.570
+I'm going to resize it to three hundred by three hundred so a nice little thumbnail if I run this up
+
+02:25.660 --> 02:33.040
+and you see that I get an error here and what I actually should have done here is the resize accepts
+
+02:33.070 --> 02:34.450
+a couple.
+
+02:34.450 --> 02:38.280
+So I have to add brackets around here.
+
+02:38.500 --> 02:45.560
+So if I run this again let me clear and run this again and we go to great PMG.
+
+02:45.660 --> 02:49.530
+Look at that Pikachu is a lot smaller than he used to be.
+
+02:49.650 --> 02:56.940
+Pikachu is tiny now so we got tiny Great out Pikachu so that's great.
+
+02:56.950 --> 03:01.660
+I can resize images which is really really useful.
+
+03:01.670 --> 03:05.730
+Now let's say I wanted to crop my Peek At You image.
+
+03:05.980 --> 03:07.260
+What can we do.
+
+03:07.270 --> 03:14.560
+Well instead of me telling you let's just find out we can go to the documentation Web site and simply
+
+03:14.560 --> 03:15.850
+search for crop
+
+03:18.530 --> 03:21.520
+and if we keep scrolling down creep scrolling down.
+
+03:21.510 --> 03:29.160
+Well let's just do dot crop to see if there's an actual function that we have and let's go over here
+
+03:29.550 --> 03:36.310
+and we see that we have a crop over here so cutting pasting and merging images.
+
+03:36.360 --> 03:36.630
+OK.
+
+03:36.660 --> 03:39.900
+So let me just zoom in so you can see it a little bit.
+
+03:41.360 --> 03:43.190
+We see exactly how it can work.
+
+03:43.190 --> 03:51.130
+We can just pick the pixel location of the four corners and crop an image.
+
+03:51.150 --> 03:55.400
+So let's just copy that and try it out.
+
+03:55.420 --> 03:57.940
+So we have the region.
+
+03:57.940 --> 04:06.460
+So let's just say region or let's just remove this and crop the filtered image.
+
+04:08.070 --> 04:20.680
+With the box like this and if we save this region image and run our code let's go to peek at you and
+
+04:20.680 --> 04:22.630
+look at that just the face of picture.
+
+04:22.630 --> 04:26.420
+He's so cute all right.
+
+04:26.980 --> 04:28.540
+Let's pretend that I didn't make that voice.
+
+04:28.540 --> 04:29.200
+Let's keep going.
+
+04:29.980 --> 04:31.180
+So there we have it.
+
+04:31.240 --> 04:32.820
+We can even crop images.
+
+04:32.830 --> 04:34.950
+I mean this is pretty basic stuff.
+
+04:34.960 --> 04:40.870
+But you see the power of image processing whatever you want to do you're not going to know at the top
+
+04:40.870 --> 04:41.530
+of your head.
+
+04:41.530 --> 04:47.560
+Instead you're gonna go to the documentation and say hey I want to have a blurry Great out image.
+
+04:47.560 --> 04:48.360
+How can I do that.
+
+04:48.370 --> 04:54.710
+Well you just search the documentation page and learn the commands and you write your file.
+
+04:55.000 --> 04:56.110
+And that's the key right.
+
+04:56.140 --> 05:02.170
+You're not going to know the top of your head the entire library when the need arises.
+
+05:02.170 --> 05:04.000
+You just read the documentation.
+
+05:04.000 --> 05:05.290
+That's what good developers do.
+
+05:06.600 --> 05:07.170
+All right.
+
+05:07.200 --> 05:09.990
+We've learned a lot but we still have a few more things to learn.
+
+05:10.140 --> 05:13.120
+So let's take a break and I'll see you in the next one.
+
+05:13.240 --> 05:13.430
+Bobby.

@@ -1,0 +1,343 @@
+WEBVTT
+
+00:00.990 --> 00:01.530
+Welcome back.
+
+00:02.160 --> 00:08.080
+Let's talk about our first data type and you know what let's do two at the same time.
+
+00:08.490 --> 00:19.200
+We have it and floats it stands for integer as you can see here and float stands for a floating point
+
+00:19.410 --> 00:20.930
+number.
+
+00:21.840 --> 00:24.400
+Let's explore that first.
+
+00:24.420 --> 00:34.770
+Let's start off with integer an integer is well a number three or four or five.
+
+00:34.770 --> 00:39.100
+These are all integers in a programming language.
+
+00:39.330 --> 00:47.050
+You can use integers to do mathematical operations for example two plus four.
+
+00:47.250 --> 00:50.730
+If I run this well nothing gets printed.
+
+00:50.730 --> 00:58.200
+Because again we have to perform some action on these data types and one action that we've learned so
+
+00:58.200 --> 01:10.220
+far is this idea of printing and we print something by calling the print keyword with the brackets so
+
+01:10.220 --> 01:21.010
+the brackets is almost like saying hey perform this action on these data types and if we run this we
+
+01:21.010 --> 01:23.570
+get six right here.
+
+01:23.680 --> 01:31.390
+Awesome so not only are we using print but we're also using the plus sign to perform an action to add
+
+01:31.630 --> 01:33.960
+the two data types together.
+
+01:34.090 --> 01:42.730
+And as you can imagine we can do most mathematical operations the basic ones we can do negative we can
+
+01:42.730 --> 01:54.640
+do let's say two times for and then we can also do two divided by four and in fact click run here.
+
+01:54.660 --> 01:55.170
+All right.
+
+01:55.170 --> 01:57.210
+It looks like everything is working.
+
+01:57.420 --> 01:59.900
+We've added We've subtracted.
+
+02:00.030 --> 02:01.380
+We've multiplied.
+
+02:01.380 --> 02:04.650
+And then we've also divide it.
+
+02:04.660 --> 02:07.510
+Now here's the interesting part.
+
+02:07.700 --> 02:14.960
+Up until now we've used what we call integers that is these are a whole numbers.
+
+02:15.040 --> 02:16.930
+There's no decimal places.
+
+02:17.060 --> 02:27.230
+They're just well integers and a neat trick that I can do here is I can actually say hey what's the
+
+02:27.230 --> 02:40.190
+type of two plus four if I click Run here All right let's let's decipher what just happened I've taught
+
+02:40.190 --> 02:46.080
+you a another action that we can perform which is something called type which tells us hey what data
+
+02:46.080 --> 02:52.320
+type is this and just like in math we go bracket by bracket.
+
+02:52.360 --> 02:57.220
+So the first part Python says hey what's two plus four.
+
+02:57.220 --> 03:04.580
+Well that's going to be six and it's going to say hey what's the type of six.
+
+03:04.630 --> 03:07.000
+Well the type of six that's an integer.
+
+03:07.060 --> 03:13.150
+So it's going to say class and we don't have to worry about the class keyword for now.
+
+03:13.180 --> 03:14.900
+That's something that we'll talk about later.
+
+03:14.980 --> 03:18.580
+But we see here that we're using I.A. for integer.
+
+03:18.580 --> 03:26.440
+And then finally after this gets evaluated by Python we print out whatever this does which is class
+
+03:26.530 --> 03:28.870
+int now.
+
+03:28.890 --> 03:29.880
+Check this out.
+
+03:29.910 --> 03:32.660
+Let's do the same for all these ones as well.
+
+03:33.850 --> 03:37.330
+So we're gonna say type here type
+
+03:40.460 --> 03:43.960
+and then type here.
+
+03:44.100 --> 03:46.590
+And if this syntax is intimidating Don't worry.
+
+03:46.590 --> 03:48.160
+This is something that you get used to.
+
+03:48.180 --> 03:50.230
+This is your first programming language.
+
+03:50.280 --> 03:55.680
+It is not going to be easy because well if it was easy then everybody would be doing it.
+
+03:55.710 --> 03:56.890
+So hang in there.
+
+03:56.970 --> 03:59.100
+Trust me as you practice more.
+
+03:59.130 --> 04:01.570
+This is going to start making more and more sense.
+
+04:02.340 --> 04:10.620
+Now before I click Run what do you think of the output of each one of these lines are ready.
+
+04:10.740 --> 04:11.470
+Give it a guess.
+
+04:11.530 --> 04:15.490
+And let's click Run.
+
+04:15.500 --> 04:17.850
+All right we got it.
+
+04:18.900 --> 04:23.460
+Four six we have negative 2 here which is also an integer.
+
+04:23.460 --> 04:27.740
+We have eight here which again is also an integer.
+
+04:28.170 --> 04:35.920
+But then we have float because two divided by four is zero point five.
+
+04:36.550 --> 04:37.810
+What is that.
+
+04:37.810 --> 04:41.380
+Well remember we are talking about two data types here.
+
+04:41.440 --> 04:50.350
+We're talking about int and float and float is what we call a floating point number a floating point
+
+04:50.350 --> 04:54.790
+number is simply a number with a decimal point.
+
+04:54.880 --> 04:58.830
+In our case this is zero point five.
+
+04:58.840 --> 05:08.720
+So it's a floating point number so if we write a number let's say we'll do print type and then I'll
+
+05:08.720 --> 05:12.790
+say zero point 0 0 0 0 1.
+
+05:12.870 --> 05:14.130
+What do you think we'll get.
+
+05:14.130 --> 05:21.200
+Well we would get a float if I do five point 0 0 0 1.
+
+05:21.220 --> 05:24.210
+Again we'll get a float.
+
+05:24.250 --> 05:37.070
+What about the number zero if I click Run I get an int because while there's no decimal points why do
+
+05:37.070 --> 05:42.940
+we need to make this distinction in programming and specifically in python.
+
+05:42.950 --> 05:50.170
+Well it's because a float takes up actually a lot more space in memory than an integer.
+
+05:50.170 --> 05:51.200
+Right.
+
+05:51.250 --> 05:56.170
+Because remember this number the number six.
+
+05:56.410 --> 05:59.240
+This needs to get stored in memory.
+
+05:59.530 --> 06:01.400
+On our machine.
+
+06:01.690 --> 06:05.560
+And remember that machines don't really understand this.
+
+06:05.620 --> 06:13.750
+They understand zeros and one and they store this number in something called a binary or binary numbers
+
+06:13.990 --> 06:16.330
+which is zeros and ones.
+
+06:16.330 --> 06:25.750
+Now the problem is when you have a decimal places like zero point or less to ten point five six it's
+
+06:25.750 --> 06:31.550
+hard to represent that in a binary number of zeros and ones because of this point.
+
+06:31.600 --> 06:40.120
+So a floating point number essentially stores these numbers in two different location one for the 10
+
+06:40.540 --> 06:43.560
+and one for 56.
+
+06:43.580 --> 06:46.750
+Now we don't need to get technical here but that's the idea.
+
+06:46.790 --> 06:54.500
+The idea is that we need more memory to store a number like this than a number like this.
+
+06:54.530 --> 06:59.900
+Now the topic of floating point numbers is really really interesting and I'll link to a resource but
+
+06:59.900 --> 07:02.690
+the best way to learn more about floating points.
+
+07:02.690 --> 07:09.050
+Again it's not super important that you know the technical details but if you go to a floating point
+
+07:09.860 --> 07:11.150
+number Python
+
+07:13.920 --> 07:21.060
+again you want to make sure that you go to the documentation for version 3 and you can actually learn
+
+07:21.060 --> 07:27.690
+about floating point Earth mistake and these official documentation by Python are always a good tool
+
+07:27.690 --> 07:33.150
+for you to use whenever you get confused about something or you want to get a little bit more extra
+
+07:33.150 --> 07:45.880
+detail but let's get back to the topic at hand both int and float are used for while numbers right and
+
+07:46.060 --> 07:53.850
+python is going to automatically format the type to whatever will make sense.
+
+07:53.980 --> 08:07.770
+For example if in here I do 20 plus one point one one is a integer the other one is a floating point
+
+08:07.770 --> 08:15.160
+number but when I click Run here automatically python is going to convert it to float.
+
+08:15.200 --> 08:22.740
+Let's remove these here so that we don't get confused by them so if I run this we see that this whole
+
+08:22.740 --> 08:27.090
+expression is converted into well a float.
+
+08:27.090 --> 08:39.080
+Now if I do let's say nine point nine here which will equal to eleven and I click Run these two floats
+
+08:39.650 --> 08:47.660
+add up to while still a floating point number because if I remove that type from here and I click Run
+
+08:49.840 --> 08:53.880
+It gives me the result eleven point zero.
+
+08:53.920 --> 09:01.020
+It keeps the floating point numbers all right but at the end of the day what we care about is that that
+
+09:01.020 --> 09:03.270
+Python works the way we expect it to.
+
+09:03.330 --> 09:12.230
+That is we can do mathematical operations as a matter of fact we can do a few other things as well.
+
+09:12.310 --> 09:23.680
+There's also this idea of the double multiply so this means to the power of so two to the power of two.
+
+09:23.760 --> 09:33.640
+Well that's going to equal 4 to do the power of 3 is going to equal 8.
+
+09:33.670 --> 09:45.030
+We also have the double divide that is that we can do to divide it by 4 but then we use two slashes
+
+09:45.030 --> 09:45.600
+here.
+
+09:45.930 --> 09:58.220
+If I click Run here I get zero this actually returns an integer rounded down.
+
+09:58.430 --> 10:12.810
+If I do three divided by four I get zero but if I do five divided by 4 I get one this gets rounded down
+
+10:13.020 --> 10:16.340
+to a integer.
+
+10:16.360 --> 10:23.800
+Finally the last operator that we're going to learn about is called modulo and it looks something like
+
+10:23.800 --> 10:24.670
+this.
+
+10:24.770 --> 10:43.230
+If I do 5 modulo which is the percent sign divided by 4 or modulo 4 5 run this I get 1 modulo is used
+
+10:43.590 --> 10:46.980
+to represent what's the remainder of this division.
+
+10:47.010 --> 10:52.590
+So if I divide 5 by for the remainder of this division will be 1.
+
+10:52.590 --> 11:03.580
+If I do 6 divided by 4 with modulo and I run I get to 2 is the remainder of 4 All right.
+
+11:03.650 --> 11:08.640
+Let's take a break and learn a little bit more about these numbers in the next video by.

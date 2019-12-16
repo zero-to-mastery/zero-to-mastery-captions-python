@@ -1,0 +1,394 @@
+WEBVTT
+
+00:00.620 --> 00:08.990
+One of the key features of Python is that the core language that we've been learning up until now is
+
+00:09.140 --> 00:10.130
+pretty small.
+
+00:10.220 --> 00:15.460
+As a matter of fact we've pretty much covered most of Python now.
+
+00:15.470 --> 00:25.040
+Python was created in this small tiny package as a feature to keep things simple although you may feel
+
+00:25.040 --> 00:27.550
+like you've learned a lot at the end of the day.
+
+00:27.740 --> 00:32.890
+It shouldn't have been that bad because there's not a lot of things to memorize.
+
+00:32.900 --> 00:40.480
+We also learned how to organize our code so that we have multiple Python files but the reason python
+
+00:40.780 --> 00:49.660
+is so popular and it's used in all sorts of industries from big tech companies like Google and Netflix
+
+00:49.840 --> 00:59.140
+to Amazon to small projects and people like us who just maybe are single developers building tiny projects.
+
+00:59.140 --> 01:07.000
+Python is extremely useful through what we call external modules and packages that is outside of what
+
+01:07.000 --> 01:08.010
+we get from Python.
+
+01:08.380 --> 01:18.260
+Well we have an entire package system where we can borrow and expand on the Python functionality and
+
+01:18.340 --> 01:23.430
+these are called Python's built in modules.
+
+01:23.470 --> 01:24.370
+Let me show you what I mean.
+
+01:25.240 --> 01:31.390
+If you go to the Python documentation they have the python module index that I'll link to.
+
+01:31.390 --> 01:37.210
+And here we have all the modules that Python give us.
+
+01:37.270 --> 01:44.290
+Now these modules actually were installed when we downloaded the Python interpreter.
+
+01:44.290 --> 01:50.010
+It comes with Python but in order for us to use them we have to import them.
+
+01:51.090 --> 01:54.890
+These are the built in modules and they're really really nice.
+
+01:54.930 --> 01:56.700
+For example do you want to send.
+
+01:56.700 --> 01:57.240
+I don't know.
+
+01:57.240 --> 01:58.230
+An email.
+
+01:58.230 --> 02:05.380
+Well there's an email module maybe you want to really do some mathematical operations that are complex
+
+02:05.380 --> 02:10.250
+while there's a math module for that and there's a module for a lot of things.
+
+02:10.420 --> 02:11.730
+Now don't get scared.
+
+02:11.740 --> 02:15.760
+This looks like a lot but you're not supposed to memorize any of these.
+
+02:15.760 --> 02:21.400
+You just need to know that they exist so that when you're Googling something you can type in Python
+
+02:21.400 --> 02:29.180
+built in module and let's say for example you want to build a game say Python built a module game or
+
+02:29.720 --> 02:34.910
+graphical user interface and check if the module exists.
+
+02:35.000 --> 02:41.720
+I have to say I've probably only used 30 percent of these but they're there for us to gain extra powers
+
+02:42.860 --> 02:44.150
+in other languages.
+
+02:44.150 --> 02:47.750
+This might be called a standard library.
+
+02:47.750 --> 02:54.470
+That is it's a standard library maintained by the Python community members and making sure that these
+
+02:54.470 --> 03:01.490
+packages work really really well with Python and that they're built into the language.
+
+03:01.670 --> 03:08.150
+So let's learn how to use them and use one of my favorite ones which is called random.
+
+03:08.150 --> 03:16.190
+So let's see here if we can find it are random generate pseudo random numbers with various common distributions
+
+03:16.760 --> 03:18.940
+and you can read all about it here.
+
+03:19.070 --> 03:19.810
+It's a long read.
+
+03:19.820 --> 03:26.490
+So let me just show you now the beauty is that we've actually installed this whenever you install Python
+
+03:26.640 --> 03:31.590
+on your machine you get access to all the built in module.
+
+03:31.590 --> 03:32.840
+The standard library.
+
+03:33.030 --> 03:37.650
+So all I have to do is say import random.
+
+03:37.860 --> 03:50.730
+And now I have access to random if I run this let's clock run look at that module random from library
+
+03:50.790 --> 03:58.870
+frameworks python you see that it's inversions three point seven library python and random dot PI.
+
+03:58.950 --> 04:03.670
+This is actually installed on my machine and it should be installed on yours as well.
+
+04:03.780 --> 04:11.070
+If you followed along and installed the python library now where is this where you can actually see
+
+04:11.070 --> 04:12.110
+it in our picture.
+
+04:13.210 --> 04:19.870
+If you go to external libraries here and you open this up you see here that I have the python three
+
+04:19.870 --> 04:27.430
+point seven modules and if I scroll down and you go to Python three point seven or whatever your installation
+
+04:27.430 --> 04:33.350
+was and scroll all the way down to let's say Ah where is it.
+
+04:33.360 --> 04:35.790
+Where is it as you can see there's a lot
+
+04:38.550 --> 04:42.290
+here it is random dot PI.
+
+04:42.380 --> 04:44.150
+This is installed on our hand sheet.
+
+04:44.210 --> 04:49.930
+And if I double click this Google that I have the random variable generator.
+
+04:50.050 --> 04:58.540
+And this is the file that allows us to use random and you can see over here that random is a class that
+
+04:58.720 --> 05:03.430
+is going to allow us to well use all this functionality and look at that.
+
+05:03.430 --> 05:11.020
+It even has this little line that I told you about in the previous video only run this test function.
+
+05:11.020 --> 05:18.490
+If this is the main fault run this is probably something that the maintainers of this module whoever
+
+05:18.490 --> 05:25.060
+coded this added to say Hey don't run this for anybody else but if for example we're working on this
+
+05:25.090 --> 05:29.950
+and we want to run the test function to test that all of these things are working then run that.
+
+05:30.100 --> 05:37.600
+But in our case when we use random as users or consumers of module This is never going to run very very
+
+05:37.600 --> 05:38.490
+cool.
+
+05:38.500 --> 05:41.350
+Now you can see here how many
+
+05:43.770 --> 05:50.590
+modules we have and we even have some packages like the e mail package with well a whole ton of things.
+
+05:50.640 --> 05:59.600
+So this is already existing in our computer and that's why we have access to import random so let's
+
+05:59.660 --> 06:02.100
+learn more about random now.
+
+06:02.150 --> 06:07.130
+What I'd like to do usually when I'm importing a library and I don't know what it does is to actually
+
+06:07.130 --> 06:10.070
+use the help function that comes with Python.
+
+06:10.490 --> 06:18.800
+If I run this you'll see here that I'll get a help message with well all the information and documentation
+
+06:18.860 --> 06:20.870
+of what it does.
+
+06:20.870 --> 06:23.000
+So it gives you some description.
+
+06:23.120 --> 06:30.020
+If you scroll down it shows you some of the code and some of the methods that perhaps we get which is
+
+06:30.290 --> 06:31.450
+really really nice.
+
+06:31.490 --> 06:32.940
+Let's lower that down.
+
+06:33.230 --> 06:42.960
+Another thing that I like to do after perhaps I read the documentation is to do the dir function and
+
+06:43.000 --> 06:50.710
+if I click Run and let's actually print that if I click Run.
+
+06:50.920 --> 06:51.550
+Here we go.
+
+06:51.550 --> 06:58.940
+It shows me all the methods available on this package so I can see all right.
+
+06:58.950 --> 07:05.760
+All these things that I have I have ran range sample see that I can use if you're using an idea like
+
+07:05.760 --> 07:06.450
+pie chart.
+
+07:06.480 --> 07:14.350
+I could just do dot and actually see all these methods as well which is really really nice.
+
+07:14.360 --> 07:23.390
+All right let's have some fun with this random module random has randomly a random method so random
+
+07:23.480 --> 07:31.750
+dot random is going to give us well let's print it out and find out it's going to give us a random number
+
+07:31.900 --> 07:34.570
+between 0 and 1.
+
+07:34.780 --> 07:36.070
+As you can see here.
+
+07:36.460 --> 07:39.500
+So this is really useful.
+
+07:39.510 --> 07:46.080
+Another thing it does is it gives you a Rand int which is a random integer and we can give it the first
+
+07:46.080 --> 07:49.330
+parameter where it should start and where it should end.
+
+07:49.380 --> 07:55.430
+If I run this look at that I get 4 than 1 then 6 and 2 just a random integer.
+
+07:55.440 --> 08:04.010
+Every time between the start and the finish another useful one with random is something called choice.
+
+08:04.070 --> 08:12.200
+And here inside of the choice we give it let's say a choice to make for example a list.
+
+08:12.200 --> 08:15.010
+One two three four.
+
+08:15.040 --> 08:17.060
+Or you know what let's do four or five.
+
+08:17.390 --> 08:28.520
+If I click Run It just makes the choice picks one from the iterator list that we have which is really
+
+08:28.520 --> 08:31.160
+rather nice just random choices.
+
+08:31.160 --> 08:32.780
+So why is this useful.
+
+08:32.780 --> 08:34.230
+Well maybe you want to build.
+
+08:34.310 --> 08:40.940
+I don't know a roulette game or a game where you need a random generator between let's say number one
+
+08:40.940 --> 08:41.590
+to 10.
+
+08:42.080 --> 08:47.460
+So this is a nice way to just do that without coding it yourself.
+
+08:47.480 --> 08:51.950
+Another one that I like is called shuffle and shuffle.
+
+08:52.130 --> 08:57.750
+If I click run here I'm probably using it the wrong way.
+
+08:57.800 --> 08:59.870
+So how can I find out more about this.
+
+09:01.300 --> 09:08.990
+Well this idea allows us to actually select and do view quick documentation which you can see as f 1.
+
+09:09.070 --> 09:14.810
+In my case it might be different based on your machine so I can just say f 1 and look at that.
+
+09:15.580 --> 09:19.840
+Well I see that shuffle has the sequence X in place.
+
+09:19.840 --> 09:26.040
+That is a modifies whatever list we're giving it in place so it returns None.
+
+09:26.050 --> 09:32.190
+So what we need to do is let's say my list that will be 1 2 THREE.
+
+09:32.470 --> 09:34.020
+Let's add a few more.
+
+09:34.210 --> 09:36.170
+Give my list in here.
+
+09:37.830 --> 09:44.850
+And instead of printing that after we'd shuffle things we'll say my list and then just print this.
+
+09:47.200 --> 09:49.140
+If I click Run now.
+
+09:49.250 --> 09:49.760
+There you go.
+
+09:49.760 --> 09:53.390
+I've shuffled my list in place.
+
+09:53.390 --> 09:55.550
+Very very cool.
+
+09:55.550 --> 09:59.810
+Now another import thing that I haven't shown yet.
+
+09:59.900 --> 10:05.140
+And you don't see it as often is to actually do something like this.
+
+10:05.150 --> 10:08.920
+I can say from random import.
+
+10:09.140 --> 10:19.950
+Shuffle or I can actually do an alias so I can say import random as and then give it an alias that is
+
+10:20.190 --> 10:21.720
+whatever we want to call it in this file.
+
+10:21.750 --> 10:23.370
+So let's say you la la.
+
+10:24.150 --> 10:26.810
+So in that case random becomes Who.
+
+10:26.820 --> 10:27.310
+La la.
+
+10:27.660 --> 10:30.810
+So you can actually avoid name collisions if you want.
+
+10:31.170 --> 10:33.720
+So if I click Run this should still work.
+
+10:35.010 --> 10:40.590
+But again a good practice for me personally is to always import only what you need.
+
+10:40.590 --> 10:46.030
+In our case we want to import from random just the shuffle.
+
+10:46.110 --> 10:50.440
+So I'm going to say shuffle because I'm being explicit here.
+
+10:50.460 --> 10:56.340
+And when a developer comes and sees that I'm importing shuffle from random they know that I'm only using
+
+10:56.700 --> 11:04.920
+this function from the random file and there's no guessing involved just like this let's learn some
+
+11:04.980 --> 11:07.960
+other built in modules in the next video.

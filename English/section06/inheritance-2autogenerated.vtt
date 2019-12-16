@@ -1,0 +1,142 @@
+WEBVTT
+
+00:00.750 --> 00:03.560
+Now I'm going to minimize this a little bit.
+
+00:03.690 --> 00:06.340
+Just so we can see a little bit clearer.
+
+00:06.390 --> 00:07.710
+It's not as messy this way.
+
+00:10.250 --> 00:15.180
+And I'm going to remove some of the spacing in between here even though I'll give us a warning just
+
+00:15.180 --> 00:18.030
+so we can see everything.
+
+00:18.030 --> 00:19.410
+There we go.
+
+00:19.410 --> 00:19.890
+All right.
+
+00:19.950 --> 00:23.550
+So we have these classes now.
+
+00:23.670 --> 00:33.750
+Python gives us a useful tool to check if something is an instance of a class and easily enough for
+
+00:33.750 --> 00:34.220
+us.
+
+00:34.230 --> 00:45.940
+It's called instance or is instance and is instance is a built in function in Python we give it the
+
+00:45.940 --> 00:51.070
+instance and then the class that we want to check.
+
+00:51.070 --> 00:58.890
+So in our case if we had wizard one equals two.
+
+00:58.920 --> 01:04.260
+Wizard Merlin with power of 60.
+
+01:04.330 --> 01:09.770
+In that case if I do wizard one and then do Class Wizard
+
+01:12.970 --> 01:26.830
+and I print this what do you think we'll get by click Run I get true because wizard is an instance or
+
+01:26.840 --> 01:30.210
+wizard one is an instance of wizard.
+
+01:30.410 --> 01:38.990
+Let me ask you this What if I do user is wizard one an instance of user guess what's about to happen
+
+01:41.360 --> 01:43.040
+it's true right.
+
+01:43.190 --> 01:48.160
+Because wizard class is a subclass of user.
+
+01:48.160 --> 01:49.600
+So technically yes.
+
+01:49.600 --> 02:00.070
+Wizard 1 is an instance of user because we've had to run this class to create wizard 1 but here is the
+
+02:00.070 --> 02:01.930
+interesting part.
+
+02:01.930 --> 02:13.430
+If I do wizard one dot do you see how I have are methods and attributes that I've added but also all
+
+02:13.430 --> 02:17.450
+these Dunder methods that we haven't really talked about yet.
+
+02:17.450 --> 02:19.700
+Where do these come from right.
+
+02:20.570 --> 02:23.220
+Well in Python.
+
+02:23.420 --> 02:31.040
+Remember how I said everything is an object well everything in Python inherits from the base object
+
+02:31.040 --> 02:33.510
+class that Python comes with.
+
+02:33.620 --> 02:35.770
+And it's called object.
+
+02:35.840 --> 02:45.450
+You see how it got highlighted here so if I do is instance wizard one of object and I have to remove
+
+02:45.480 --> 02:47.250
+the dot over here.
+
+02:47.250 --> 02:59.620
+Let's click Run it's true because wizard 1 inherits or gets methods from the Wizard class from the user
+
+02:59.620 --> 03:06.940
+class and even higher up from the object based class that Python comes with.
+
+03:06.940 --> 03:15.520
+And that's why we have these automatic methods attached for us so that using object every single method
+
+03:15.550 --> 03:17.110
+that is useful.
+
+03:17.110 --> 03:26.810
+For example if I open up a list if I do dot and let's say we pick the are EPR method which we don't
+
+03:26.810 --> 03:34.560
+really know what it does yet but if I go to wizard one and I do dot you see that I have it as well because
+
+03:34.800 --> 03:43.020
+they both inherit from the object base class and this way we avoid repeating code any common functionality
+
+03:43.080 --> 03:51.680
+I can just dish it out to all the objects that need it which is very very cool so underneath the hood
+
+03:51.950 --> 04:01.370
+when I do something like user it's actually accepting object as the parent class in order to accept
+
+04:01.820 --> 04:06.990
+these properties that are built in and that we might need in the future.
+
+04:07.000 --> 04:07.520
+All right.
+
+04:07.550 --> 04:08.300
+That was a lot.
+
+04:08.360 --> 04:10.000
+One more pillar to go.
+
+04:10.160 --> 04:11.690
+I'll see you in the next video.
+
+04:11.780 --> 04:11.990
+Bob.

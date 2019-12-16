@@ -1,0 +1,211 @@
+WEBVTT
+
+00:00.360 --> 00:08.070
+Let's go back to our example of our game where we have a user log in and they have to provide their
+
+00:08.070 --> 00:08.550
+age.
+
+00:08.580 --> 00:12.540
+Remember if I click run it's going to ask me Hey what's your age.
+
+00:12.540 --> 00:20.810
+And if I give it something that doesn't like it's going to keep asking me until I provide a proper value.
+
+00:20.870 --> 00:25.190
+There's one other piece to try except block that we haven't covered.
+
+00:25.310 --> 00:30.630
+So we know that we have try we have except and then we have else.
+
+00:30.830 --> 00:39.220
+But there's also another thing called finally and finally runs at the end after everything has been
+
+00:39.250 --> 00:40.460
+executed.
+
+00:40.480 --> 00:40.960
+Let me show you.
+
+00:41.290 --> 00:50.130
+If I do print I'll say OK I'm finally done.
+
+00:50.160 --> 00:59.440
+Let's see what happens if I click run here and I give it a proper age I get thank you because my try
+
+00:59.440 --> 01:00.880
+Bork succeeded.
+
+01:00.940 --> 01:02.490
+Nothing has failed.
+
+01:02.530 --> 01:14.470
+I go to the else and I say thank you and now I break out of the while loop but finally says hey no matter
+
+01:14.470 --> 01:21.880
+what at the end of it all I want you to finally do something let's see this in action if I do something
+
+01:21.880 --> 01:26.560
+like zero I get please enter H higher than zero.
+
+01:27.170 --> 01:28.640
+But then also still get.
+
+01:28.660 --> 01:30.210
+OK I'm finally done.
+
+01:30.470 --> 01:38.500
+What if I enter a gibberish I get hey please enter a number but also ok I'm finally done.
+
+01:38.540 --> 01:45.090
+So finally runs regardless at the end of everything.
+
+01:45.190 --> 01:47.470
+Why is this useful.
+
+01:47.470 --> 01:53.770
+Maybe you're working on a game server and you want to make sure that you log out any activity on the
+
+01:53.770 --> 01:54.370
+server.
+
+01:54.370 --> 02:00.550
+So let's say a user tries to log in even if they try to enter the wrong information.
+
+02:00.670 --> 02:06.430
+We want to log that activity so that maybe we can detect that there's people trying to break our program
+
+02:06.760 --> 02:14.450
+or just to have our records that hey this user has tried to log in 10 times so finally is very useful.
+
+02:14.480 --> 02:17.690
+Now let me ask you a question.
+
+02:17.900 --> 02:20.350
+What happens if I do something like this.
+
+02:20.570 --> 02:21.960
+Let's say I have here.
+
+02:22.130 --> 02:32.840
+Continue and maybe another break statement here and then maybe inside of here I'm also going to have
+
+02:32.840 --> 02:35.210
+a print.
+
+02:35.270 --> 02:40.640
+Can you hear me.
+
+02:40.650 --> 02:45.910
+What happens if I do something like this pause the video if you need to.
+
+02:45.910 --> 02:49.270
+Otherwise I'm going to hit run and see what's going to happen.
+
+02:49.480 --> 02:51.760
+What is going to happen if I enter 0
+
+02:55.550 --> 03:03.390
+I get please enter higher than 0 because I get a zero division error a catches here and then we break
+
+03:03.480 --> 03:11.370
+out of the loop the finally gets run but print never runs because well we break out of the loop and
+
+03:11.370 --> 03:14.390
+remember this is surrounded by the loop.
+
+03:14.580 --> 03:19.150
+Let me remove this so we can see it better OK.
+
+03:19.430 --> 03:22.390
+What happens if I do something like this.
+
+03:22.490 --> 03:26.930
+What if we run the program again and this time give it gibberish
+
+03:31.510 --> 03:35.290
+I get please entry no OK I'm finally done.
+
+03:35.290 --> 03:37.830
+And then what's your age.
+
+03:37.920 --> 03:40.430
+So what happened here.
+
+03:40.430 --> 03:42.080
+Well we tried this.
+
+03:42.110 --> 03:46.200
+We got an error a value error it says hey please enter a number.
+
+03:46.490 --> 03:48.650
+And then it's going to continue.
+
+03:48.830 --> 03:49.790
+Now continue.
+
+03:49.790 --> 03:56.050
+Instead of break doesn't break out of the loop out of the while loop instead it comes back to the top.
+
+03:56.450 --> 03:58.910
+So it's going to try again this part.
+
+03:58.910 --> 04:00.560
+What's your age.
+
+04:00.560 --> 04:00.970
+OK.
+
+04:01.100 --> 04:06.970
+So what if we finally try to log in properly and give it hey we're a team.
+
+04:07.010 --> 04:09.260
+What happens that.
+
+04:09.260 --> 04:10.610
+There you go.
+
+04:10.610 --> 04:17.060
+I get thank you because we've tried it everything works so no exception.
+
+04:17.060 --> 04:18.000
+So we are gonna get.
+
+04:18.050 --> 04:19.130
+Thank you.
+
+04:19.130 --> 04:21.580
+And then we break out of the loop.
+
+04:21.650 --> 04:25.070
+So once again this print never gets printed.
+
+04:25.070 --> 04:26.010
+Can you hear me.
+
+04:26.030 --> 04:27.140
+But then finally.
+
+04:27.140 --> 04:27.400
+OK.
+
+04:27.420 --> 04:28.830
+Finally is done.
+
+04:28.970 --> 04:36.530
+If we didn't have this break statement here and I click Run and give it 18.
+
+04:36.790 --> 04:43.830
+Oh boy finally I can hear you this print finally gets printed because we don't break out of here.
+
+04:43.930 --> 04:50.940
+We don't break out of here and then we run this line hopefully that makes sense.
+
+04:50.940 --> 04:52.250
+That was a bit of a trick question.
+
+04:52.260 --> 04:55.230
+But you're starting to get the hang of it.
+
+04:55.260 --> 04:57.460
+I'll see you in the next video by.

@@ -1,0 +1,337 @@
+WEBVTT
+
+00:00.480 --> 00:01.530
+Welcome back.
+
+00:01.560 --> 00:08.880
+That last project was a little bit overwhelming because we used a ton of libraries and a lot of data
+
+00:08.880 --> 00:16.080
+visualizations that are very specific to a library but we haven't really touched the topic of training
+
+00:16.080 --> 00:18.000
+the data and creating models.
+
+00:18.000 --> 00:22.010
+So in this project we're actually going to do some machine learning.
+
+00:22.090 --> 00:25.420
+It's gonna be a lot of fun but I want to give you a warning.
+
+00:25.530 --> 00:30.980
+This is just a taste of what machine learning is like if this is your first time.
+
+00:31.110 --> 00:37.680
+It might seem a little bit overwhelming but just like with anything it's all about practice and repetition
+
+00:38.710 --> 00:44.380
+but hopefully by the end of it you will see the six step process and how it actually works.
+
+00:44.560 --> 00:51.100
+And at the end of the day you'll also realize that it's not maybe as complicated as you might have initially
+
+00:51.220 --> 00:52.110
+thought.
+
+00:52.180 --> 00:54.100
+So let's get started.
+
+00:54.100 --> 00:58.880
+The first thing we're gonna do is create a new notebook with Python 3.
+
+00:58.990 --> 01:04.630
+Now this time around we're going to use a different dataset and a famous one when it comes to machine
+
+01:04.630 --> 01:05.650
+learning.
+
+01:05.650 --> 01:10.430
+It's called the IRS dataset for the iris flower.
+
+01:10.480 --> 01:21.060
+So if I type an iris flower it's a dataset that has all this information about the iris flower that
+
+01:21.060 --> 01:24.030
+actually has different types.
+
+01:24.030 --> 01:31.500
+So we're going to create a machine learning model that can detect types of the iris plant.
+
+01:31.500 --> 01:41.550
+Now luckily for us we can access this data very very easily using psychic learn psychic learn if you
+
+01:41.550 --> 01:48.920
+remember it was another library that is really really powerful to help us with machine learning.
+
+01:49.020 --> 01:59.820
+So all we have to do is say from psychic learn dot datasets and a psychic learn comes prebuilt with
+
+01:59.820 --> 02:03.430
+some good datasets that you can explore on your own.
+
+02:03.630 --> 02:17.620
+And we're just going to import the iris dataset or lowercase i just like this so that if I do Iris equals
+
+02:18.160 --> 02:28.330
+load dot Iris just like this and I click Run oh and this should be an underscore
+
+02:32.290 --> 02:41.490
+so we now have the data loaded and if we go back to our report we've imported the data we don't need
+
+02:41.490 --> 02:47.400
+to clean the data we learned about that in the previous project but because psychic learn has these
+
+02:47.400 --> 02:53.190
+data sets pre-built we can assume that it's clean data that we can use in our models.
+
+02:53.190 --> 02:57.870
+The next step is to split the data into training set and test set.
+
+02:57.870 --> 03:06.390
+But in order for us to do that we can use this concept of x and y in machine learning so x this capital
+
+03:06.420 --> 03:13.080
+X usually means the inputs that we want to give to our machine learning model.
+
+03:13.080 --> 03:17.960
+So in our case we'll say Iris dot data will be our inputs.
+
+03:17.970 --> 03:20.460
+So that is the data that we get.
+
+03:20.490 --> 03:22.620
+So let's actually see what that is.
+
+03:23.320 --> 03:24.780
+Let's run.
+
+03:24.780 --> 03:33.610
+That's the data you see that is just some massive arrays and Y is going to be the target.
+
+03:33.880 --> 03:42.970
+So if I do dot target and I click run you'll see that this is the target.
+
+03:43.000 --> 03:55.570
+Now what this means is we want to find or create a function that takes an X which will be our data and
+
+03:55.660 --> 04:01.210
+outputs the Y which is the target.
+
+04:01.240 --> 04:02.960
+That is the answer.
+
+04:03.250 --> 04:08.030
+Now in our case these are the answers 0 1 and 2.
+
+04:08.290 --> 04:19.780
+But if I Google Iris dataset and I go to the Wikipedia page here you'll see that the there are three
+
+04:19.990 --> 04:21.810
+types of Iris.
+
+04:21.970 --> 04:32.660
+This is Tulsa very see color and Virginia and each one of these is represented by either 0 1 or 2.
+
+04:32.660 --> 04:45.290
+So if we look at our dataset this target is the types of those three Iris flower types so the target
+
+04:45.290 --> 04:54.080
+in this case that comes pre set with the cycled learned library is this is the data of the images.
+
+04:54.080 --> 05:00.320
+So again if I remove this and hit run this is the image.
+
+05:00.320 --> 05:15.080
+So each list is a piece of data that represents by some parameters the iris flower and then we have
+
+05:15.140 --> 05:22.250
+the target which is the answer is when we input this data what is the output.
+
+05:22.250 --> 05:25.220
+Which one of the three flowers is it.
+
+05:25.430 --> 05:26.630
+Now if I go to Kaggle
+
+05:30.030 --> 05:33.620
+and I actually type in the iris dataset
+
+05:39.040 --> 05:48.690
+you can see that the columns are while the length of the pedal the SEP length and then the species name
+
+05:50.520 --> 05:55.110
+so you can see here that these are the columns that it's testing for.
+
+05:55.110 --> 06:02.850
+And you can see these are the numbers that we get in that array and each one corresponds with different
+
+06:03.090 --> 06:05.840
+type of the iris.
+
+06:05.850 --> 06:06.270
+Flower
+
+06:09.210 --> 06:10.790
+so let's get back to that.
+
+06:10.890 --> 06:18.470
+I'm going to say that capital X is going to be our data our input and then Y lowercase y.
+
+06:18.600 --> 06:25.920
+And this is just a standard will be our target.
+
+06:25.980 --> 06:32.600
+Finally we actually want to get the feature name so each item in the list here is a feature.
+
+06:32.610 --> 06:40.830
+Remember that's what these columns are these columns are the with the length of the pedal and the simple
+
+06:42.920 --> 06:57.000
+so we can store that by simply saying feature names has the iris dot feature names again which icons
+
+06:57.030 --> 07:09.990
+pre-built with the iris dataset and then the target names will be the iris dot target names again if
+
+07:09.990 --> 07:10.710
+I run this
+
+07:13.520 --> 07:15.140
+let's do feature names first
+
+07:18.650 --> 07:20.070
+there's the columns.
+
+07:20.210 --> 07:28.710
+And if I do target names you see that these are the three options
+
+07:31.630 --> 07:38.350
+so up until now we've imported the data we didn't have to clean the data we haven't really split the
+
+07:38.350 --> 07:45.160
+data yet but we're at least starting to understand our data and perhaps what it contains.
+
+07:45.160 --> 07:52.960
+So once we've understood the data and knowing that we have this information we can now start splitting
+
+07:53.050 --> 07:59.410
+the data into a training and data set because right now we're doing supervised learning because these
+
+07:59.410 --> 08:00.840
+are labeled right.
+
+08:00.880 --> 08:08.230
+We have all the data that we need and we also have the answers that we need so we can test our model
+
+08:09.130 --> 08:12.240
+by the way before I show you how to split the data.
+
+08:12.310 --> 08:19.550
+What do you think the type of x is.
+
+08:19.630 --> 08:24.350
+Can you guess it's a num pie array.
+
+08:24.710 --> 08:32.840
+Remember that library num PI that I told you allows us to use multi-dimensional arrays well underneath
+
+08:32.840 --> 08:36.860
+the hood this dataset is a number pi array.
+
+08:36.860 --> 08:42.110
+It's a little bit more feature rich than just a python list.
+
+08:42.300 --> 08:45.660
+Anyway let's start to split our data.
+
+08:45.840 --> 08:59.270
+So what we want to do here is from the cycle learn library I want to grab the model selection and in
+
+08:59.270 --> 09:06.980
+here we're going to import the train test split.
+
+09:07.120 --> 09:08.620
+Now what is that.
+
+09:08.950 --> 09:12.640
+Let's google and find out.
+
+09:12.820 --> 09:19.900
+So again if I go to the library documentation you can see that the train test split simply splits array
+
+09:20.380 --> 09:24.330
+or matrices into random train and test subsets.
+
+09:24.370 --> 09:30.730
+So just randomly decides for us how it's going to split the data into the training data and the test
+
+09:30.910 --> 09:32.670
+data.
+
+09:32.760 --> 09:35.610
+So now we can use it in an interesting way.
+
+09:35.850 --> 09:51.010
+We can simply say X is the training dataset the X test dataset the Y train dataset and then the Y test
+
+09:51.450 --> 10:02.940
+dataset and again we can just sign that to variables by using the train test split function that we
+
+10:02.940 --> 10:11.160
+import and give it the X the Y and some different variables.
+
+10:11.180 --> 10:20.230
+So for example over here if you can see we have things like test size or random state or shuffle different
+
+10:20.230 --> 10:21.520
+variables that we want.
+
+10:21.520 --> 10:23.640
+Again you can read this on your own.
+
+10:23.710 --> 10:31.870
+In our case let's just say that the test size will be zero point four.
+
+10:31.880 --> 10:34.580
+Now let's have a look at what kind of data we have now.
+
+10:34.730 --> 10:48.570
+So if I do print x the train data and we can do dot shape here and we'll also print the test shape if
+
+10:48.570 --> 10:59.450
+I run this it returns what we call a dimensionality of the array so that is how many rows and columns
+
+11:00.750 --> 11:04.310
+so it's got four columns and 90 rows.
+
+11:04.350 --> 11:15.150
+So our train data has 90 rows and our test test data has 60 rows if I change the test size here 2.5
+
+11:15.270 --> 11:17.200
+and I click Run you see that.
+
+11:17.220 --> 11:24.040
+Now I'm splitting the test size between 50 percent being for train 54 test.
+
+11:24.090 --> 11:32.130
+So we can actually change things up and tried different things and manipulate the train and test data
+
+11:32.130 --> 11:38.920
+size ideally though we want to have more train data than tests just because remember the more data we
+
+11:38.920 --> 11:46.070
+have the better our model is going to get and this is going to be the same for the why train and the
+
+11:46.070 --> 11:49.650
+why test variables as well.
+
+11:49.720 --> 11:50.620
+Congratulations.
+
+11:50.620 --> 11:54.970
+We've just split the data into training set and test set.
+
+11:54.970 --> 11:59.710
+We now have some exciting steps ahead such as creating the model.
+
+11:59.770 --> 12:02.620
+Let's take a break and learn how to do that in the next video.

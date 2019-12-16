@@ -1,0 +1,154 @@
+WEBVTT
+
+00:01.010 --> 00:04.190
+Let's learn about the python data types.
+
+00:04.370 --> 00:07.020
+All the options we have in Python.
+
+00:07.060 --> 00:12.730
+NOW WE'RE BACK TO OUR REPTILE thought I.D. So again write some python code we see over here that we're
+
+00:12.730 --> 00:16.490
+using python version three point six.
+
+00:16.540 --> 00:17.350
+That's great.
+
+00:17.350 --> 00:22.530
+Let's minimize this and start writing our first Python code.
+
+00:22.580 --> 00:30.770
+Now we're going to talk about data types and Python has several available to us.
+
+00:31.010 --> 00:35.650
+Now I'm going to list them out for you and then we're going to talk about each one individually.
+
+00:35.720 --> 00:43.460
+First we have something called it and you see right away when I type I have the ripple already give
+
+00:43.460 --> 00:45.340
+me a hint and it's highlighting it.
+
+00:45.410 --> 00:50.850
+If I hover over it it shows me that it stands for integer.
+
+00:50.880 --> 00:54.380
+We also have something called float.
+
+00:54.590 --> 00:58.760
+We have ball which stands for boolean.
+
+00:58.840 --> 01:15.270
+We have SDR which stands for string list tuple set and dict.
+
+01:15.290 --> 01:17.300
+Now what are these.
+
+01:17.300 --> 01:27.570
+These are data types right a data type is a value in python so you can think of it as exactly that values.
+
+01:27.690 --> 01:36.210
+So it would represent all numbers for example string will represent all letters for example in a program
+
+01:36.270 --> 01:40.760
+is simply instructions that tell a computer what to do and what does that mean.
+
+01:40.830 --> 01:47.860
+It's all about storing information or a data type and modifying that information.
+
+01:48.090 --> 01:54.390
+We're taking actions on these data types so the two crucial steps when learning a programming language
+
+01:54.660 --> 02:01.500
+is that well we have these data types that we need to understand that exist in a language and then we
+
+02:01.500 --> 02:09.540
+need to learn how we can manipulate the data create store read change remove this data from the machine.
+
+02:09.540 --> 02:16.140
+Now these data types are called the fundamental data types in Python.
+
+02:16.140 --> 02:23.090
+They are the core to the language now after the fundamental data types.
+
+02:23.090 --> 02:33.030
+We also have something called classes so beyond these data types we can actually create our own using
+
+02:33.030 --> 02:38.250
+something called classes so these will be custom types.
+
+02:38.380 --> 02:40.410
+Again something that we'll learn about.
+
+02:40.720 --> 02:44.800
+So I can create a class that I can name whatever I want.
+
+02:44.800 --> 02:48.060
+For example super car.
+
+02:48.130 --> 02:54.560
+Now that doesn't exist but I can create it and we'll explore how to do that in the course now.
+
+02:54.810 --> 03:03.500
+Besides the fundamental data types the classes which will be arc own custom types we also have something
+
+03:03.500 --> 03:06.320
+called specialized data types
+
+03:09.920 --> 03:12.920
+and these specialized data types.
+
+03:12.920 --> 03:23.480
+They're not built into python but they're special packages and modules that we can use from libraries.
+
+03:23.480 --> 03:26.330
+Now again this is a topic that we'll cover later.
+
+03:26.420 --> 03:36.080
+But these are you can think of it as extra boost whenever we don't have a data type that we want in
+
+03:36.080 --> 03:42.470
+the standard Python package and maybe we don't want to create our own custom types.
+
+03:42.470 --> 03:49.550
+There are specialized data types that we can use from what we call modules so you can think of it as
+
+03:49.880 --> 03:52.190
+extensions that we can add to the language.
+
+03:52.190 --> 03:55.700
+Again something that we'll talk about later on in the course.
+
+03:55.700 --> 04:02.960
+And then finally there's another type that is a little special called none and none.
+
+04:03.020 --> 04:09.650
+As you can see it's being highlighted which means it means something in the language none as the name
+
+04:09.650 --> 04:12.400
+suggests means nothing.
+
+04:12.410 --> 04:18.890
+It's kind of like the idea of zero in math it's the absence of value.
+
+04:19.130 --> 04:21.290
+It's simply nothing.
+
+04:21.740 --> 04:26.380
+And you'll see why this is important in programming later on.
+
+04:26.390 --> 04:32.380
+So these are our data types that we're going to talk and we're going to use in our language.
+
+04:32.540 --> 04:37.710
+Now we're going to start with the fundamental data types which are nice and simple for us to get through.
+
+04:37.730 --> 04:40.530
+So let's start one by one and you know what.
+
+04:40.640 --> 04:43.510
+Let's start with these two for now.
+
+04:43.610 --> 04:45.400
+I'll see you in the next one but my.

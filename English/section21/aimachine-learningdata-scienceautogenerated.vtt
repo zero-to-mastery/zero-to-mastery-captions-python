@@ -1,0 +1,115 @@
+WEBVTT
+
+00:00.650 --> 00:06.350
+Now up to this point in the course we've talked about Python careers and we've talked about being a
+
+00:06.350 --> 00:13.940
+back end developer using Python about testing and automation about being a general python developer
+
+00:13.940 --> 00:20.060
+and doing scripting being a software engineer and just writing software using python.
+
+00:20.060 --> 00:25.580
+But we haven't really touched on the subject of machine learning or research analyst data scientist
+
+00:25.790 --> 00:32.920
+data analyst and you see all these fields kind of overlap.
+
+00:33.130 --> 00:38.430
+So what is machine learning when we talk about machine learning.
+
+00:38.510 --> 00:41.450
+You have to keep this diagram in mind.
+
+00:41.450 --> 00:50.360
+You see it all starts with A.I. or artificial intelligence which simply means a human intelligence exhibited
+
+00:50.450 --> 00:58.670
+by machines an A.I. is while a machine that acts like a human and currently in our industry we have
+
+00:58.670 --> 01:06.680
+something called Narrow A.I. that is machines can be just as good or even better than humans at a specific
+
+01:06.680 --> 01:07.980
+task.
+
+01:08.060 --> 01:16.460
+For example detecting heart disease from images or at the game of Go or even video games.
+
+01:16.820 --> 01:23.780
+But narrow A.I. that we have currently simply means those machines can only do one thing really well
+
+01:23.960 --> 01:28.400
+they can't be like humans and have multiple abilities.
+
+01:28.400 --> 01:34.350
+That's called General A.I. and it's something that we're very very far away from now.
+
+01:34.350 --> 01:43.200
+Machine learning is a subset of A.I. and machine learning is an approach to try and achieve artificial
+
+01:43.200 --> 01:49.470
+intelligence through systems that can find patterns in a set of data.
+
+01:49.470 --> 01:56.220
+And actually Stanford University describes machine learning as the science of getting computers to act
+
+01:56.310 --> 02:03.540
+without being explicitly programmed that is getting machines to do things without us specifically saying
+
+02:03.780 --> 02:07.710
+do this then do that then do this and don't worry.
+
+02:07.750 --> 02:10.720
+We'll explore that more throughout the section.
+
+02:10.720 --> 02:18.370
+Now you may have also heard of deep learning and deep learning or deep neural networks is just one of
+
+02:18.370 --> 02:22.360
+the techniques for implementing machine learning.
+
+02:22.370 --> 02:26.330
+For now you can just think of it as a type of algorithm.
+
+02:27.140 --> 02:35.240
+But then we have this thing of data science and often the role of a data science and a machine learning
+
+02:35.240 --> 02:43.310
+expert are quite overlapping and most job descriptions actually don't even have a clear distinction
+
+02:43.340 --> 02:48.430
+between what is a machine learning expert and a data science expert.
+
+02:48.710 --> 02:55.340
+The field of data science simply means analyzing data looking at data and then doing something with
+
+02:55.340 --> 02:58.580
+it usually some sort of a business goal.
+
+02:58.610 --> 03:03.170
+So when we talk about machine learning there's a lot of overlap with data science.
+
+03:03.560 --> 03:08.810
+So throughout the next couple of videos we're going to be talking about both of these topics because
+
+03:08.810 --> 03:15.200
+both of them relate and overlap and he can't do one without the other because you need to be able to
+
+03:15.200 --> 03:20.040
+understand data and work with data to do any of these things.
+
+03:21.230 --> 03:27.620
+And that's why when we talk about careers often things like machine learning data scientist data analyst
+
+03:27.650 --> 03:35.150
+or research analyst are similar because they all work with data and from that data they want to derive
+
+03:35.150 --> 03:41.260
+some sort of an action for the business for the company or for the person.
+
+03:41.270 --> 03:42.560
+All right that's enough for now.
+
+03:42.680 --> 03:44.090
+Let's move on to the next video.

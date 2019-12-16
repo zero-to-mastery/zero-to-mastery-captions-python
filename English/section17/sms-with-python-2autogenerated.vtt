@@ -1,0 +1,88 @@
+WEBVTT
+
+00:00.360 --> 00:03.810
+So again I haven't really done this much before.
+
+00:03.810 --> 00:07.230
+But let's see if I can send myself a text message.
+
+00:07.230 --> 00:11.980
+I'm going to say get started with programmable Azzam S. All right.
+
+00:11.990 --> 00:13.820
+And I'm building my application.
+
+00:13.840 --> 00:17.260
+Looks like it can just click on just exploring.
+
+00:17.260 --> 00:21.480
+Let's see how I can do this really really fast.
+
+00:21.480 --> 00:29.070
+First I have to get a Tulio phone number so in order to send a message I need a phone number and this
+
+00:29.070 --> 00:31.140
+is my Twilio phone number.
+
+00:32.200 --> 00:32.460
+Right.
+
+00:32.480 --> 00:33.890
+So we'll choose this number.
+
+00:33.890 --> 00:37.270
+That's great.
+
+00:37.300 --> 00:37.500
+All right.
+
+00:37.510 --> 00:39.730
+I'm gonna copy this number in case I need it.
+
+00:39.730 --> 00:40.980
+Let's click done.
+
+00:41.260 --> 00:48.040
+And by the way a job of a programmer is to well most of the time read documentation Google around and
+
+00:48.040 --> 00:50.680
+just figure out how things work in general.
+
+00:50.680 --> 00:53.620
+You're just a problem solver right.
+
+00:53.620 --> 00:58.150
+So we have send a message here.
+
+00:58.230 --> 01:01.660
+We have my phone number that I just received.
+
+01:02.100 --> 01:05.630
+And let's see over here in the right to request it looks like.
+
+01:05.660 --> 01:05.940
+Oh yeah.
+
+01:05.940 --> 01:06.480
+Look at that.
+
+01:06.480 --> 01:10.760
+I can click on Python and it shows me exactly how cool is this.
+
+01:10.800 --> 01:11.550
+Exactly.
+
+01:11.550 --> 01:15.450
+What code I need to send my message all right.
+
+01:15.450 --> 01:21.590
+And it gives me even the auth token and the s I.D. and looks like the ortho can.
+
+01:21.600 --> 01:22.780
+I'll have to grab.
+
+01:23.020 --> 01:28.420
+All right in the next video we're going to copy this code and tried to sent myself a text message.
+
+01:28.470 --> 01:29.250
+Let's see if it works.

@@ -1,0 +1,289 @@
+WEBVTT
+
+00:00.530 --> 00:06.370
+Let's do a famous exercise and this might come up as an interview question.
+
+00:06.440 --> 00:14.680
+We're going to try and implement Fibonacci numbers and Fibonacci numbers are like this the first number
+
+00:15.340 --> 00:16.250
+is zero.
+
+00:16.300 --> 00:18.310
+Then the second number is 1.
+
+00:18.310 --> 00:19.750
+They always start with 0 1.
+
+00:19.900 --> 00:21.600
+Then this is what happens.
+
+00:21.730 --> 00:24.750
+We add 0 with 1 to equal the next number.
+
+00:24.970 --> 00:27.760
+We add 1 with 1 to equal the next number.
+
+00:27.940 --> 00:35.500
+We add 1 by 2 to get the next number 2 3 2 add the next number 5 8 2 add the next number.
+
+00:35.500 --> 00:37.210
+So on and so forth.
+
+00:37.240 --> 00:46.810
+As you can see this grows exponentially while it grows really high really fast and this sort of numbering
+
+00:46.810 --> 00:54.940
+actually shows up in nature a lot but it's also a an interesting problem because these numbers although
+
+00:55.000 --> 01:01.780
+at the beginning grow really really slowly they become larger and larger and larger and it becomes a
+
+01:01.780 --> 01:05.080
+problem that can really hog up the resources.
+
+01:05.470 --> 01:07.990
+So this is what I wanted to do.
+
+01:08.080 --> 01:18.180
+We're going to create a function fib that takes a number and in here this number is going to be the
+
+01:18.270 --> 01:20.730
+index number of the Fibonacci.
+
+01:20.760 --> 01:26.210
+So for example if it was the 20th number it should have this.
+
+01:26.220 --> 01:36.960
+So if I wanted let's say fib 20 here in that case I want you to return all these numbers using generators
+
+01:36.970 --> 01:42.010
+so that is one by one until we get to this location.
+
+01:42.060 --> 01:44.150
+Now there's two ways of doing this.
+
+01:44.310 --> 01:51.460
+You can do with the list or we can do it with a generator and you'll notice that with a generator it's
+
+01:51.460 --> 01:57.090
+a lot easier to do than with a list because eventually with the list you're going to run out of resources.
+
+01:57.100 --> 02:05.690
+So what I want you to do is to output on here the numbers that you see here all the way until 20.
+
+02:05.790 --> 02:09.590
+And if you want you can keep increasing that number and see what happens.
+
+02:09.760 --> 02:13.300
+And as a bonus you can try implementing this with a list as well.
+
+02:13.330 --> 02:21.480
+So it displays in a giant list as well pause the video if you want here otherwise I'm going to keep
+
+02:21.480 --> 02:25.860
+going with the answer first.
+
+02:25.920 --> 02:29.570
+What we want to do is say a is going to equal to zero.
+
+02:30.270 --> 02:32.460
+And B is equal to 1.
+
+02:33.420 --> 02:40.050
+So A and B are going to be the start of the numbers.
+
+02:40.460 --> 02:41.470
+Now in here.
+
+02:41.480 --> 02:47.750
+We're going to use the range generator to loop
+
+02:51.180 --> 02:57.680
+these number of times that we're going to provide the function now in here.
+
+02:57.680 --> 03:08.930
+First I want b to now or a two now equal whatever B was which is 1 and b to b whatever the next number
+
+03:08.930 --> 03:09.620
+is.
+
+03:09.650 --> 03:15.160
+Remember the rule with food Banaji we add the first two numbers to get the third number.
+
+03:15.200 --> 03:24.260
+So we have a B to get the next number then a B to get the next number and then a B to get the next number
+
+03:25.720 --> 03:34.210
+so the first thing I want to do is to actually yield hay and say Hey just give me whatever a is and
+
+03:34.210 --> 03:36.850
+then pause the function until the next part.
+
+03:36.970 --> 03:45.160
+After that after the for loop goes to the next part I'm going to say I want a two equal B
+
+03:49.230 --> 03:55.770
+and I want b to equal A plus B.
+
+03:56.000 --> 03:57.820
+Let's see if that makes sense.
+
+03:58.010 --> 04:02.030
+I'm saying hey return or yield a from this list.
+
+04:02.090 --> 04:11.390
+So it'll be zero at first then I want you to make a equal to 1 now because we're moving over and then
+
+04:11.390 --> 04:22.230
+I want b to equal 1 because A has turned into one and then the one previously so B becomes two.
+
+04:22.520 --> 04:24.760
+If we look over here that's what we want.
+
+04:24.800 --> 04:29.960
+We have a and b here and then we want to move over just one like this.
+
+04:30.020 --> 04:32.700
+So B should still be one.
+
+04:32.720 --> 04:43.550
+So while we might want to do here is to actually not modify a until we are able to do A plus B.
+
+04:43.680 --> 04:45.470
+So how can we do this.
+
+04:45.750 --> 04:56.150
+Well we can simply say let's say a temporary variable and this temp is going to hold on to whatever
+
+04:56.240 --> 05:04.400
+a was when we get here which is zero and then we're going to modify a two equal one and then B is going
+
+05:04.400 --> 05:15.140
+to be instead of A plus B will be temp which is zero plus whatever B was originally which is 1.
+
+05:15.570 --> 05:20.940
+I know this can get confusing you might want to pause here and maybe print and see exactly what's happening
+
+05:21.240 --> 05:34.260
+but hopefully our function works now if now I do something like 4 x in FID and give it let's say a hundred
+
+05:36.590 --> 05:46.620
+and let's just print out the answer so print x and I run this all right.
+
+05:46.720 --> 05:47.530
+Look at that.
+
+05:47.530 --> 05:49.260
+I get all my Fibonacci numbers.
+
+05:49.270 --> 05:51.300
+Let's do 20 like we saw in the example.
+
+05:51.340 --> 05:52.060
+If I click Run
+
+05:55.010 --> 05:59.490
+I get 4 1 8 1 so I'm 19.
+
+05:59.490 --> 06:04.160
+Because remember our count starts at zero.
+
+06:04.260 --> 06:13.850
+So technically here if we want we can do twenty one here click Run and we should get 6 7 4 6 5 which
+
+06:13.850 --> 06:17.700
+is what we get here very very cool.
+
+06:17.800 --> 06:24.890
+But you can see how the number increases dramatically as we increase to 1000.
+
+06:24.940 --> 06:29.830
+Now if we were to do this in a list it would look something like this.
+
+06:30.310 --> 06:31.480
+Let's copy here
+
+06:35.910 --> 06:42.600
+now flip to with a list would mean that we have to add a list in here
+
+06:45.560 --> 06:55.640
+and instead of yielding we'll do result dot append and we're going to append whatever the a value is
+
+06:55.670 --> 07:02.030
+which is the initial value and then we're going to do the same thing we've done before.
+
+07:02.040 --> 07:05.050
+So instead of yield we're now just appending to this list.
+
+07:05.340 --> 07:07.290
+And at the end we just return
+
+07:10.520 --> 07:13.730
+the list result.
+
+07:13.760 --> 07:18.910
+Now if I return this let's say fib 2 and give it a 100.
+
+07:18.950 --> 07:24.610
+And I click Run let's comment out the original one with the generator.
+
+07:24.720 --> 07:26.280
+Well we should probably print this shouldn't we.
+
+07:26.280 --> 07:33.440
+So let's do print and click Run.
+
+07:33.450 --> 07:34.380
+All right.
+
+07:34.380 --> 07:36.390
+That's a massive list.
+
+07:36.390 --> 07:42.530
+Now if we were to do a thousand here you see that it's taking quite a bit of time.
+
+07:42.540 --> 07:46.760
+What if we do 10000.
+
+07:46.940 --> 07:47.330
+All right.
+
+07:47.330 --> 07:52.430
+Is definitely taking some time and you can see over here how hard this is working you know what I'm
+
+07:52.430 --> 07:53.520
+going to stop it.
+
+07:54.680 --> 08:00.700
+And go back to our generator way let's do 10000 here.
+
+08:00.760 --> 08:03.310
+We'll see how 10000 looks with a generator
+
+08:06.530 --> 08:08.740
+Well it's still working hard.
+
+08:08.740 --> 08:11.530
+But I'm not keeping any of this in memory.
+
+08:11.530 --> 08:18.470
+We're taking it one by one and I can act upon it in our case just printing it one by one.
+
+08:18.480 --> 08:21.270
+Now this is a common interview question.
+
+08:21.330 --> 08:29.320
+It's actually a little bit unnecessarily confusing I think but it does demonstrate the power of generators
+
+08:30.770 --> 08:33.000
+you might have to watch this video a couple of times.
+
+08:33.050 --> 08:40.160
+But hopefully by now you're feeling a little bit comfortable with using ranges and how we can improve
+
+08:40.190 --> 08:43.310
+performance using generators.
+
+08:43.340 --> 08:45.320
+I'll see you in the next one by.

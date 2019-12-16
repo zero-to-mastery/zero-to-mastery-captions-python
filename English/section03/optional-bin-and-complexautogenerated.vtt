@@ -1,0 +1,145 @@
+WEBVTT
+
+00:00.450 --> 00:01.400
+Welcome back.
+
+00:01.410 --> 00:07.130
+This is a quick optional video that well with something that you probably won't use.
+
+00:07.140 --> 00:13.050
+But I want you to just know that it's out there and that is there's actually an extra data type that
+
+00:13.080 --> 00:13.970
+I did and talk about.
+
+00:14.340 --> 00:16.080
+And it's called complex.
+
+00:16.260 --> 00:20.750
+And as the name suggests it's pretty complex.
+
+00:20.910 --> 00:32.150
+However a complex number again is a number that is a third type instead of int and float.
+
+00:32.160 --> 00:34.830
+We also have this type four numbers.
+
+00:34.830 --> 00:41.340
+Now the reason I'm not really teaching complex is that you only use this if you're doing something really
+
+00:41.340 --> 00:42.960
+really complex math.
+
+00:43.020 --> 00:45.150
+Most of the time you'll never use it.
+
+00:45.150 --> 00:50.760
+I personally have never used it but it is good to know that it exists.
+
+00:50.760 --> 00:56.240
+It's the equivalent to a real number and you can read about complex numbers if you want.
+
+00:56.460 --> 00:59.370
+But again that's something that you don't need to worry.
+
+00:59.370 --> 01:02.110
+Ninety nine point nine percent of the time.
+
+01:02.130 --> 01:08.760
+Another thing I want to talk to you about is this idea that these integers and floats get stored such
+
+01:08.760 --> 01:17.340
+as five in memory as binary that is as binary numbers ones and zeros and there's actually an action
+
+01:17.400 --> 01:24.480
+or function that we can use in Python called Ben for binary and you can see that a bean returns the
+
+01:24.480 --> 01:27.360
+binary representation of an integer.
+
+01:27.360 --> 01:35.830
+So it's going to return whatever the binary version of 5 is if I click Run here while I have to print
+
+01:36.130 --> 01:36.910
+remember.
+
+01:37.030 --> 01:45.590
+So let's print and click Run and I get the binary representation.
+
+01:45.930 --> 01:52.440
+Now instead of all zeros and ones there's also this idea of B and that is what Python uses underneath
+
+01:52.440 --> 01:58.650
+the hood to say a when I see this number with zero B that's a binary number.
+
+01:58.650 --> 02:11.590
+But if I Google binary number five I see that the binary number for 5 is 1 0 1 which again that's what
+
+02:11.590 --> 02:15.640
+we see here so that's really cool.
+
+02:15.650 --> 02:18.850
+Really interesting just to know that it exists by the way.
+
+02:18.890 --> 02:25.220
+Just for fun let's say that we want to return this into a decimal let's say where the computer and we
+
+02:25.220 --> 02:35.810
+just retrieve this binary number I can do it and then wrap this like this in single or double quotes
+
+02:36.900 --> 02:45.630
+and then with the end I can also say hey I want this return to a number that is base 10 which is what
+
+02:45.840 --> 02:47.740
+us humans use.
+
+02:47.760 --> 02:58.910
+So if I actually do print here and click Run well actually we have to do base to here.
+
+02:58.910 --> 03:07.430
+Right because what we're saying is hey this number is base 2 and convert it to integer and base to number
+
+03:07.430 --> 03:10.250
+is while zeros and 1 it's a binary number.
+
+03:10.280 --> 03:14.910
+So if I click right here look at that I get five.
+
+03:15.780 --> 03:22.380
+So in your head you can think of it this way when we story number like five an integer like five when
+
+03:22.380 --> 03:24.030
+a computer retrieves that number.
+
+03:24.060 --> 03:25.670
+Let's say we're do some addition.
+
+03:25.860 --> 03:29.590
+Well it's going to grab this for memory.
+
+03:29.640 --> 03:35.040
+It's going to say well this is a binary number and I'm going to convert it into integer.
+
+03:35.040 --> 03:36.500
+Very very cool.
+
+03:36.510 --> 03:43.350
+Now the reason I taught this here you won't see this a lot in beginner courses and especially so early
+
+03:43.350 --> 03:44.000
+in the course.
+
+03:44.010 --> 03:48.630
+But I think it's an important principle although you might not get tested on this ever.
+
+03:48.810 --> 03:54.210
+For you to just understand how things are working underneath the hood I believe is an important thing
+
+03:54.210 --> 03:57.030
+for you to do in order to become a great developer.
+
+03:57.270 --> 04:00.200
+So hopefully this doesn't confuse you too much.
+
+04:00.210 --> 04:01.860
+I'll see you in the next video by.

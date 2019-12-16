@@ -1,0 +1,352 @@
+WEBVTT
+
+00:00.670 --> 00:09.190
+Now one of the best tools for browser automation is selenium and selenium works not just with Python
+
+00:09.220 --> 00:11.610
+but with lots of programming languages.
+
+00:11.680 --> 00:20.140
+But what it gives us is the ability to browse or use a browser without a human involved just through
+
+00:20.140 --> 00:20.530
+code.
+
+00:20.530 --> 00:27.760
+We can act and move around the mouse click on buttons and interact with the Web site and in this section
+
+00:27.820 --> 00:32.660
+we're gonna be using selenium now in order to install selenium.
+
+00:33.110 --> 00:38.320
+As you can see we'll have to use pip install now at the bottom here you see that.
+
+00:38.350 --> 00:44.570
+It says you may consider using virtual app to create isolated Python environments.
+
+00:44.570 --> 00:47.320
+Now we already know about this right.
+
+00:47.330 --> 00:55.130
+You could install pip install like this and have it available across your entire machine or you can
+
+00:55.130 --> 01:01.100
+use something like pip and to install it just for your specific project or you can use pi charm and
+
+01:01.100 --> 01:04.250
+use their automatic virtual environments.
+
+01:04.260 --> 01:10.320
+Now we've covered those topics in the other videos so I won't hear in my case I'm just going to install
+
+01:10.320 --> 01:12.840
+it globally like this.
+
+01:12.840 --> 01:15.560
+So I'm going to get started first.
+
+01:15.750 --> 01:28.100
+We're going to install selenium someone say pip in my case Pip 3 install selenium.
+
+01:28.190 --> 01:34.160
+Now once you have selenium installed you can create a file in my case I have an automation duck py file
+
+01:34.220 --> 01:34.720
+here.
+
+01:34.760 --> 01:38.360
+Let's make this a little bit bigger and this little bit bigger.
+
+01:38.530 --> 01:40.680
+Let me clear this now.
+
+01:40.680 --> 01:50.020
+The next step is to well import in our file so I can say import or actually from selenium package that
+
+01:50.020 --> 01:51.430
+we just installed.
+
+01:51.730 --> 01:55.370
+We can say import web driver.
+
+01:55.600 --> 02:03.130
+Now web driver is going to allow us to drive the Web through code however in order for us to be able
+
+02:03.130 --> 02:05.680
+to use selenium properly.
+
+02:05.680 --> 02:14.390
+If you go to the installation page here you see that there's something called drivers you see selenium
+
+02:14.450 --> 02:24.080
+works with these drivers because each browser like Chrome edge Firefox and Safari has different drivers
+
+02:24.920 --> 02:27.920
+to interface with the different browsers.
+
+02:27.980 --> 02:34.310
+So based on what browser you want to use to automate things you have to install each of these drivers
+
+02:36.290 --> 02:38.780
+in our case let's use the chrome driver.
+
+02:38.840 --> 02:44.600
+So we would just click over here and you can see over here that we have the different chrome drivers
+
+02:44.690 --> 02:45.730
+that we can use.
+
+02:45.770 --> 02:47.050
+You have the current releases.
+
+02:47.060 --> 02:56.720
+So the latest versions now usually the latest releases are now what we call stable that is maybe they're
+
+02:56.720 --> 02:57.560
+just brand new.
+
+02:57.560 --> 02:59.300
+So they haven't been tested enough.
+
+02:59.300 --> 03:05.600
+So what I'd like to do is to actually go to the Chrome driver tab here and make sure that we select
+
+03:05.660 --> 03:08.250
+the latest stable release.
+
+03:08.270 --> 03:13.250
+So based on when you watched this video this version number might be a little bit higher but as long
+
+03:13.250 --> 03:20.120
+as it's a stable release instead of the latest beta release which is chrome driver 76 then that's fine.
+
+03:20.210 --> 03:26.540
+So let's click over here and you'll see that as soon as I click here you'll give me zip files that I
+
+03:26.540 --> 03:29.480
+can install based on my machine.
+
+03:29.480 --> 03:37.700
+Now in my case I'm using a Mac so I'll just install the Mac driver and once they open up the zip file
+
+03:39.140 --> 03:43.540
+you'll see that I get this chrome driver executable.
+
+03:43.760 --> 03:49.580
+Now an executable is kind of like a dot e XY on a Windows machine.
+
+03:49.580 --> 03:55.160
+If I double click this it's going to run some code had some binary code that we can run on the machine.
+
+03:55.370 --> 03:57.800
+But this is our chrome driver.
+
+03:57.800 --> 04:04.340
+This is going to allow selenium to be able to open up our Chrome browser and manipulate that browser
+
+04:05.420 --> 04:05.900
+now.
+
+04:05.990 --> 04:14.180
+In my case I'm going to move this to my desktop because that's where my automation python file is.
+
+04:14.180 --> 04:15.590
+There we go.
+
+04:15.590 --> 04:17.040
+Now if I close this.
+
+04:17.270 --> 04:25.070
+And by the way if you go to Pipeline and click on selenium the package it will actually explain some
+
+04:25.070 --> 04:27.110
+of these installation steps as well.
+
+04:27.110 --> 04:32.470
+So you can actually run through this quick setup as well.
+
+04:32.470 --> 04:40.570
+Now in our case now that we have the chrome driver what we need to do is to now create an instance of
+
+04:40.570 --> 04:51.110
+the browser so let's just call this chrome browser and this is going to equal the web driver that we
+
+04:51.110 --> 04:52.270
+just imported.
+
+04:53.150 --> 04:57.660
+And then in here use Chrome as the browser.
+
+04:57.860 --> 05:00.180
+And then inside as the parameter.
+
+05:00.200 --> 05:03.080
+Remember this is the chrome class the web driver gives us.
+
+05:03.080 --> 05:11.100
+We have to give it the driver in order to drive the browser now because our chrome driver is in the
+
+05:11.100 --> 05:13.560
+same directory as in my file.
+
+05:13.560 --> 05:22.640
+I can just do a dot slash or use a string and say chrome driver which is the name of the driver.
+
+05:24.500 --> 05:30.730
+Now let's make this a little bit smaller so we can see everything now in here.
+
+05:31.970 --> 05:38.750
+If we had multiple projects we'd ideally use chrome driver not just copy and paste chrome driver everywhere
+
+05:38.750 --> 05:44.570
+into our project folders but instead you'd put it into your path.
+
+05:44.570 --> 05:45.200
+What does that mean.
+
+05:45.710 --> 05:51.380
+Well just like when we installed selenium when we did Pip 3 install selenium.
+
+05:52.310 --> 05:59.750
+Usually when you install something globally or when you have it available globally if you're on a Mac
+
+06:00.080 --> 06:10.890
+or Linux computer you usually will put it under user local then folder and you'd put it inside of this
+
+06:10.890 --> 06:11.730
+folder.
+
+06:12.060 --> 06:18.660
+If you're on a Windows you'd usually put it in its path in the windows folder of the C drive.
+
+06:18.660 --> 06:25.500
+And if you do that you can actually just keep this as blank and the driver will actually look for the
+
+06:25.920 --> 06:28.140
+Chrome driver in this path.
+
+06:29.280 --> 06:35.900
+But in our case we'll just leave it like this so make sure that the chrome driver is in the same folder
+
+06:35.930 --> 06:38.580
+as the file now in here.
+
+06:38.650 --> 06:45.410
+Let's print out what we have as a Chrome browser so I'm going to just run this file
+
+06:51.150 --> 06:56.460
+and I get an error during handling of the bag above exception where it looks like I get a file not found
+
+06:56.460 --> 06:56.690
+error.
+
+06:56.700 --> 07:00.960
+And that's because I made a little typo here it should be chrome driver.
+
+07:00.960 --> 07:02.310
+So let's say that again.
+
+07:02.310 --> 07:06.320
+Give that another go.
+
+07:06.410 --> 07:11.050
+And did you see that Chrome just opened up for me.
+
+07:11.190 --> 07:20.170
+So right now automatically by running Chrome browser I got an instance of the Chrome browser so let's
+
+07:20.170 --> 07:21.230
+see what we can do here.
+
+07:21.960 --> 07:33.410
+Let's say we change our browser to just be like this if I go here and do Chrome browser.
+
+07:33.570 --> 07:40.570
+Dot maximize the window and run this method.
+
+07:40.570 --> 07:45.800
+Let's run our file now when we run this.
+
+07:45.800 --> 07:47.120
+Nothing happened.
+
+07:47.120 --> 07:51.560
+And the reason is you see over here that we get an error and you might get this as well.
+
+07:51.590 --> 07:58.880
+It says not created exception message session not created this version of Chrome driver only supports
+
+07:59.120 --> 08:01.440
+chrome version seventy five.
+
+08:01.460 --> 08:07.520
+So you have to make sure that the driver that you install in our case it was the stable one is compatible
+
+08:07.520 --> 08:09.530
+with the version of Chrome that you have.
+
+08:09.530 --> 08:17.880
+Most likely you'll have to update your chrome version so you see over here that I have a version 74
+
+08:19.010 --> 08:24.190
+but in here says hey this is compatible only with Chrome version 75.
+
+08:24.620 --> 08:26.410
+So how can we fix this.
+
+08:26.450 --> 08:28.190
+We're simply going to relaunch
+
+08:33.230 --> 08:39.590
+I have updated my chrome version again if you're not sure how to do that you simply go to Chrome and
+
+08:39.830 --> 08:45.140
+go to about Google Chrome or preferences and you'll be able to update to the latest version or make
+
+08:45.140 --> 08:51.270
+sure that you're using the version that matches your driver now that we have version 75.
+
+08:51.310 --> 08:54.340
+Let's try this again.
+
+08:54.380 --> 08:56.990
+I'm going to run my file
+
+09:01.310 --> 09:07.350
+and look at that I get Chrome is being controlled by an automated test software.
+
+09:07.790 --> 09:16.080
+So I've just created a new window a new instance which is what we've done here with the Chrome browser
+
+09:17.180 --> 09:20.400
+and I've just said Maximize Window.
+
+09:20.450 --> 09:29.930
+Now if I remove Maximize Window here and I simply run this again you see that right now I have a narrow
+
+09:29.940 --> 09:32.270
+window this time with the window.
+
+09:32.280 --> 09:35.500
+Well now maximized just the default sizing.
+
+09:35.640 --> 09:40.530
+So every time I run this I create a new instance of the browser.
+
+09:40.590 --> 09:43.560
+Very very cool.
+
+09:43.580 --> 09:52.250
+Now let's close these for now and in the next video we're going to explore how we can use this to actually
+
+09:52.610 --> 09:55.210
+move through web pages.
+
+09:55.250 --> 10:00.800
+Now if you haven't gotten this far Take your time to make sure that the versions match that you're able
+
+10:00.800 --> 10:08.270
+to run a browser from your command line and in the next video we're going to do some really cool things.
+
+10:08.480 --> 10:09.920
+I'll see on that one by.

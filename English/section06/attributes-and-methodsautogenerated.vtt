@@ -1,0 +1,262 @@
+WEBVTT
+
+00:01.160 --> 00:10.390
+Object Oriented Programming allows us to create objects that have their own methods like run and attributes
+
+00:11.350 --> 00:13.490
+properties.
+
+00:13.520 --> 00:19.910
+It's a great way to add more functionality to a language and mimic the real world.
+
+00:19.940 --> 00:23.390
+For example we use the idea of working for a gaming company.
+
+00:23.390 --> 00:29.780
+Although Python only gave us a few data types I was able to create a player character and now my boss
+
+00:29.780 --> 00:36.230
+is happy because this player character can be used all over the game and all other coders have to do
+
+00:36.230 --> 00:41.630
+is run this line with the custom name and age of the character.
+
+00:41.630 --> 00:49.070
+So Opie allows us to write code that is repeatable well organized and also memory efficient right because
+
+00:49.070 --> 00:56.930
+we only write this once so if you want to be a great developer O P is something that you need to know
+
+00:57.110 --> 01:02.370
+and you need to understand because well this is how you want to organize your code.
+
+01:02.540 --> 01:10.310
+Thinking less procedural and thinking more in terms of functionality grouping data like attributes together
+
+01:10.310 --> 01:18.850
+with methods to create this class that is able to mimic something from the real world.
+
+01:18.950 --> 01:21.410
+Now I want to show you a useful tool here.
+
+01:22.400 --> 01:30.470
+We saw that when I do player dot my editor shows me what I have available the properties as well as
+
+01:30.470 --> 01:37.010
+these purple boxes which are the methods that I have available and right off the bat.
+
+01:37.020 --> 01:43.500
+You see that I have h name and run but then I have all these other ones that I got by default.
+
+01:43.500 --> 01:50.370
+Now these are all Dunder or magic methods which we're gonna get into but the key here is that if I do
+
+01:50.370 --> 01:56.400
+something like Help which is a new function that you may have not seen before and let's comment this
+
+01:56.400 --> 02:08.070
+out if I click Run I actually get well the entire blueprint of the object if I do something like a list
+
+02:09.930 --> 02:15.930
+and I click Run Again it shows the blueprint that it has.
+
+02:16.290 --> 02:22.640
+And this is a great way to see what class blueprint some of the Python data types have.
+
+02:22.770 --> 02:29.000
+Now this is something we'll revisit later but I want to go back to this.
+
+02:29.040 --> 02:36.420
+This player character now in here we saw that we're able to create attributes and attributes are pieces
+
+02:36.420 --> 02:39.120
+of data that are dynamic.
+
+02:39.120 --> 02:45.570
+That is when we instantiate an object they are going to be unique to that specific object like name
+
+02:46.110 --> 02:47.250
+and age.
+
+02:47.250 --> 02:56.250
+And we had to use this self keyword to make sure that it was dynamic however there's a another thing
+
+02:57.120 --> 03:02.430
+called the class object attribute and it might look like this.
+
+03:02.490 --> 03:08.910
+Let's say we had the player character and they had to let's say be a paying member in order to play
+
+03:08.910 --> 03:09.340
+this game.
+
+03:09.360 --> 03:14.700
+You have to have played or you have to have gotten a membership.
+
+03:14.700 --> 03:22.430
+So let's have a membership equals true attribute.
+
+03:22.430 --> 03:29.110
+Now unlike this one you see that it's on the same line as our methods.
+
+03:29.530 --> 03:33.280
+And this is called a class object
+
+03:37.520 --> 03:45.320
+in a class object attribute unlike these regular class attributes is different because while it's not
+
+03:45.320 --> 03:47.150
+dynamic it's static.
+
+03:47.960 --> 03:57.500
+So if I click run here and we want to make sure that we print something so let's print player 2 and
+
+03:57.550 --> 04:01.310
+I click Run Ball I get the player.
+
+04:01.320 --> 04:12.380
+That's great but if I do dot membership and I click Run look at that I get that equal to true.
+
+04:12.510 --> 04:20.350
+If I do Player 1 here as well and I click Run I get true again.
+
+04:20.470 --> 04:29.170
+So all the players have membership set to true but this is not dynamic it's a class object attribute
+
+04:29.170 --> 04:39.960
+which means it's an actual attribute on this class and this is something we use when there's no change.
+
+04:40.000 --> 04:48.490
+This is going to be true and exist for all objects so you can't really modify it is just all the objects
+
+04:48.490 --> 04:56.380
+that we instantiate will have access to it so this doesn't change across instances and we can use this
+
+04:56.470 --> 05:00.900
+down here as well or anywhere in this class blueprint.
+
+05:01.000 --> 05:09.670
+As a matter of fact for example let's say we wanted to check if membership exists.
+
+05:09.820 --> 05:15.330
+So we're checking if membership is true which I mean it always is.
+
+05:15.330 --> 05:25.430
+So this is a little bit redundant but in here I can say only if membership is true then I'm going to
+
+05:25.550 --> 05:34.670
+assign name and age but in order for us to access membership I'll have to do self dot membership because
+
+05:34.670 --> 05:44.290
+remember self refers to this player character so that if I run this everything still works and if I
+
+05:44.290 --> 05:46.690
+do if player one dot name
+
+05:49.560 --> 05:57.840
+this still works or I can refer to this by the actual player character.
+
+05:57.840 --> 06:00.380
+So player character dot membership.
+
+06:00.510 --> 06:11.760
+So if I click Run here this also works because it's a class object attribute if I wear two perhaps in
+
+06:11.760 --> 06:21.180
+the run let's change this to shout and in shout it's going to 1 or run let's remove this line it's going
+
+06:21.180 --> 06:31.960
+to print an F string that says My name is and give it a name.
+
+06:31.960 --> 06:33.530
+Do you think this will work.
+
+06:33.820 --> 06:34.500
+Let's give it a try.
+
+06:34.510 --> 06:46.730
+Let's say shout and make sure we run that method and then click shout again if I click Run I get an
+
+06:46.730 --> 06:50.290
+error name is not defined on line eleven.
+
+06:50.470 --> 06:52.330
+If I go to line you love in here.
+
+06:52.350 --> 06:53.840
+Name is not defined.
+
+06:54.050 --> 06:54.680
+Why is that.
+
+06:54.680 --> 06:57.250
+Well because we haven't used self.
+
+06:57.350 --> 07:04.210
+So let's do self dot name and in fact click Run.
+
+07:04.220 --> 07:04.700
+There you go.
+
+07:06.340 --> 07:07.520
+My name is Tom.
+
+07:07.540 --> 07:10.430
+My name is Cindy OK.
+
+07:10.470 --> 07:11.100
+Awesome.
+
+07:11.220 --> 07:19.670
+And I'm able to yourself because I pass it into here as the first parameter and all methods receive
+
+07:19.680 --> 07:23.030
+the first parameter a self so that we can use them.
+
+07:23.190 --> 07:31.360
+But could I just do player character Don name if I click Run I get an error.
+
+07:31.390 --> 07:34.900
+Play a character has no attribute name.
+
+07:34.980 --> 07:36.500
+Now why is that.
+
+07:36.570 --> 07:40.050
+Because name is not a class object attribute.
+
+07:40.050 --> 07:44.090
+It's not actually a property or an attribute of Player Character.
+
+07:44.100 --> 07:54.430
+No it's defined in our constructor function are init function so that's a bit of a gotcha here and something
+
+07:54.430 --> 08:00.790
+that you'll have to get used to a class object attribute is something that doesn't change across different
+
+08:00.910 --> 08:09.280
+instances versus an attribute or a class attribute is something that is dynamic and specific to each
+
+08:09.400 --> 08:18.900
+class object the way we access them is different where we can actually access membership like this but
+
+08:18.900 --> 08:26.500
+in order for us to access a name or age anywhere inside of our class we have to use the self dog name
+
+08:27.090 --> 08:33.480
+which is why anytime we create a method in a class even if I create a new one over here and let's say
+
+08:33.510 --> 08:42.750
+this new one is going to be run well once again I'll have to use self as a parameter and then anything
+
+08:42.750 --> 08:53.200
+else that I want to add in here as the second parameter so that when I click let's say Run I pass in
+
+08:53.200 --> 09:03.750
+the hello argument like this I know this is a lot but hopefully you're starting to follow the rules
+
+09:03.990 --> 09:10.230
+of classes once you remember these rules then it becomes easier and easier but we'll practice this a
+
+09:10.230 --> 09:11.640
+little bit more in the next video.

@@ -1,0 +1,364 @@
+WEBVTT
+
+00:01.730 --> 00:07.540
+A big part of being a developer is being able to use the terminal or the command line.
+
+00:07.550 --> 00:09.310
+Well what is it.
+
+00:09.560 --> 00:14.470
+In this video we're going to tackle this question and teach you a couple of very useful comments.
+
+00:14.630 --> 00:20.750
+Now on a Mac you simply do command space and type in terminal press enter and then the terminal will
+
+00:20.750 --> 00:21.470
+open for you.
+
+00:21.470 --> 00:24.560
+It's one of your applications and it's on every computer.
+
+00:24.560 --> 00:29.300
+If you're on a Windows machine then it is the command prompt.
+
+00:29.300 --> 00:32.010
+But what is it.
+
+00:32.010 --> 00:37.970
+Well it's how humans originally communicated with computers up until the 1980s.
+
+00:38.070 --> 00:44.570
+It was the main way humans gave instructions to computers and computers gave output to the humans.
+
+00:44.610 --> 00:50.970
+We didn't have something called the gooey or the graphical user interface such as me opening up a new
+
+00:50.970 --> 00:56.550
+folder and changing the name of this folder or opening up Google Chrome.
+
+00:56.550 --> 01:00.000
+I don't really need to know how this is done behind the scenes.
+
+01:00.120 --> 01:06.360
+I just click on an icon and it opens it up magically for me but command lines are really useful because
+
+01:06.810 --> 01:12.990
+you can do the exact same thing that you do visually on a graphical user interface like I have here
+
+01:13.650 --> 01:14.770
+on the command line.
+
+01:15.030 --> 01:19.180
+But they tend to be much much faster to do as I'm going to show you in this video.
+
+01:19.290 --> 01:24.900
+And they're also common ways to access different computers around the world like if you need to access
+
+01:24.900 --> 01:28.360
+a server in another country where your web app is hosted.
+
+01:28.380 --> 01:34.310
+Well you you'd use the command line and I'll show you how to do that later on in the course now in your
+
+01:34.310 --> 01:35.110
+day to day job.
+
+01:35.120 --> 01:41.450
+You'll be using at the terminal a lot because you'll have to access servers the database your front
+
+01:41.450 --> 01:45.410
+end application but you can do all that in one from the terminal.
+
+01:45.470 --> 01:50.930
+You can also download scripts that other people have written from the internet so you can use in your
+
+01:50.930 --> 01:52.150
+projects.
+
+01:52.190 --> 01:55.890
+Now these are all things I'm going to show you in the later sections.
+
+01:56.180 --> 02:01.160
+The commands that I'm about to show you work on a Mac or a Linux for Windows.
+
+02:01.160 --> 02:05.720
+I'll have the Windows version command at the bottom of the video as we progress.
+
+02:05.720 --> 02:08.520
+Most of them are the same but there are a few differences.
+
+02:08.870 --> 02:14.550
+So let's get started the first comment I'm going to show you is the LSI comment.
+
+02:14.930 --> 02:22.190
+I simply type in and press enter and it lists everything that is in my current directory.
+
+02:22.460 --> 02:24.080
+What is my current directory.
+
+02:24.080 --> 02:31.910
+Well I do p WD for present working directory and I see that I'm in the users.
+
+02:32.150 --> 02:33.160
+That's my user name.
+
+02:33.230 --> 02:41.270
+So I'm in my username folder and these are all the things available to me if I do C D then I can go
+
+02:41.270 --> 02:51.260
+into this if I wanted to go to let's say desktop I do C D desktop and now if I do less I see that I
+
+02:51.260 --> 02:54.640
+have untitled folder because that's the only thing on my desktop right now.
+
+02:56.240 --> 03:08.760
+I can also do C D dot dot and this brings me back to one directory up I can also do clear to clear up
+
+03:08.760 --> 03:18.430
+my terminal and have a nice fresh slate there's a stroke command C.D. slash and this takes me to the
+
+03:18.430 --> 03:25.780
+root directory if I do else I see that I have applications library system users that's the root directory
+
+03:25.780 --> 03:39.290
+of my Mac essentially my Macintosh HD I can also do C.D. squiggly line and this takes me to the user
+
+03:39.470 --> 03:44.980
+directory let's clear this again and if we check where we are.
+
+03:45.050 --> 03:52.890
+All right let's change just untitled folder to something like test ok let's say I'm in the user directory
+
+03:52.890 --> 03:59.790
+right now I wanted to access desktop and then the test folder I would simply do C.D. desktop and then
+
+04:00.120 --> 04:07.810
+test and now I'm in the test full there but there's nothing in there.
+
+04:07.810 --> 04:16.930
+So one thing we can do is I can say open dot and it opens a folder that we're currently in OK we're
+
+04:16.940 --> 04:25.650
+in the test folder now if I just put this to the side of here so you can see I can say make directory
+
+04:26.520 --> 04:34.590
+which is make a folder name so name here will be whatever I want the folder to be titled Let's just
+
+04:34.590 --> 04:36.390
+say this folder would be called
+
+04:39.580 --> 04:40.910
+did you see that.
+
+04:40.910 --> 04:47.040
+Now web app shows up in my folder let's change of view here so you can see it better.
+
+04:47.060 --> 04:48.100
+There you go.
+
+04:48.100 --> 04:56.470
+If I do LSD now I see that we have the web app folder and as we know we can go into it and let's double
+
+04:56.470 --> 04:57.640
+click here to see what we have.
+
+04:57.640 --> 05:00.830
+We have absolutely nothing.
+
+05:00.950 --> 05:06.670
+Well we can create a file in here by saying touch and the name of the file.
+
+05:06.680 --> 05:10.340
+So let's just do index dot HDMI amount.
+
+05:10.490 --> 05:12.910
+There you go and X that cinema.
+
+05:13.130 --> 05:16.650
+Now what if we wanted to open this index that Asian all.
+
+05:16.660 --> 05:23.610
+Again we just do open and the dot means we open the folder we're currently in which is here.
+
+05:23.720 --> 05:30.190
+But if I do open index dot HDMI l it opens the file for us.
+
+05:30.330 --> 05:31.020
+How cool is that.
+
+05:31.350 --> 05:37.830
+But index that HMO is pretty empty right now wouldn't be nice if we can open Sublime Text from here
+
+05:37.860 --> 05:42.100
+and add something again he can do that with open.
+
+05:42.580 --> 05:51.820
+You put in a line a for application and the name of the application so sublime text close the double
+
+05:51.820 --> 05:55.490
+quotes press enter and look at that.
+
+05:55.490 --> 06:05.070
+I have Sublime Text but if we wanted to do application sublime texts and open the index that a shemale
+
+06:05.090 --> 06:20.810
+file would just do this and now I can say AML and we'll just say hello world save that and if I do open
+
+06:20.820 --> 06:27.120
+index start HRT mouth we have our index that Asian male file loaded.
+
+06:27.340 --> 06:33.970
+Wasn't that a lot faster than right clicking creating a folder then dragging everything to sublime tax.
+
+06:34.000 --> 06:36.760
+And as you can see you can do things really really fast here.
+
+06:37.620 --> 06:37.930
+OK.
+
+06:37.970 --> 06:38.890
+Let's change something.
+
+06:38.950 --> 06:39.250
+Let's.
+
+06:39.250 --> 06:45.940
+I'm going to close Google Chrome and sublime and in the web app lets say I wanted to change the name
+
+06:45.940 --> 06:49.210
+of index that a simple to above the HMO.
+
+06:49.240 --> 06:56.440
+Well I'll do the end the command which stands for move but it just moves the index that Asia mail file
+
+06:56.680 --> 06:59.300
+to about that issue mail file.
+
+06:59.320 --> 07:00.490
+So it's a little trick.
+
+07:00.490 --> 07:07.990
+You're essentially just moving one file to another but by changing the name you create a new file and
+
+07:07.990 --> 07:09.730
+you replace it with the old one.
+
+07:10.840 --> 07:16.220
+So now I have about Dot HMO very cool.
+
+07:16.370 --> 07:18.880
+Now these commands typing them can get pretty tiring.
+
+07:18.890 --> 07:24.980
+I can press the up arrow and it goes through my entire history which is very cool.
+
+07:25.000 --> 07:32.440
+I can also press the tap key and it will bring up my most recent command or complete.
+
+07:32.440 --> 07:35.680
+So what I'm about to write so you can do it really really fast.
+
+07:35.680 --> 07:40.780
+And when your commands get longer and longer it's a very useful thing to do.
+
+07:40.810 --> 07:44.110
+I don't really need the about HCM I'll file anymore.
+
+07:44.110 --> 07:45.380
+Let's remove it.
+
+07:45.400 --> 07:56.360
+We do our M for a move and the name of the file about groups about that patient AML it's been removed.
+
+07:56.360 --> 07:57.260
+Perfect.
+
+07:57.260 --> 08:01.370
+Now what about the way that file.
+
+08:01.370 --> 08:02.500
+We can remove that as well.
+
+08:02.510 --> 08:05.270
+But if I just do remove web app
+
+08:08.640 --> 08:09.850
+it's not going to work.
+
+08:09.870 --> 08:16.980
+First of all if I do l s or present working directory I mean the web app folder.
+
+08:16.980 --> 08:20.320
+So I need to move back to the test folder.
+
+08:20.400 --> 08:22.040
+Let's clear here.
+
+08:22.120 --> 08:30.590
+Do C.D. now my present working directory is I'm in the test so I can remove web app by doing remove
+
+08:31.460 --> 08:41.920
+web app but our m only works for files to remove a directory a folder you need to do R.M. and then use
+
+08:41.920 --> 08:47.970
+the r option and then the folder name in the our case has the web app.
+
+08:48.040 --> 08:48.840
+There you go.
+
+08:49.000 --> 08:50.080
+It's gone.
+
+08:50.080 --> 08:53.800
+And with that you know we can remove the test folder as well.
+
+08:53.800 --> 09:01.380
+We can go back to our desktop and then do remove our test.
+
+09:01.590 --> 09:02.230
+There you go.
+
+09:02.340 --> 09:04.220
+It's gone.
+
+09:04.300 --> 09:06.180
+And one last trick on a Mac.
+
+09:06.190 --> 09:12.060
+You can do this.
+
+09:12.200 --> 09:13.790
+This is so cool.
+
+09:14.090 --> 09:14.880
+Right.
+
+09:14.900 --> 09:17.380
+Very very cool OK.
+
+09:17.460 --> 09:23.130
+As you can see you can have a lot of power with the terminal and I want you to get used to writing commands
+
+09:23.130 --> 09:23.730
+on here.
+
+09:23.730 --> 09:28.290
+And from now on try creating files and folders this way.
+
+09:28.290 --> 09:33.720
+Eventually you will get more and more comfortable with it and things will be much faster than just using
+
+09:33.870 --> 09:37.150
+the gooey and the developer environment section.
+
+09:37.380 --> 09:48.380
+I'll show you how you can change this boring black and white terminal to something like this.
+
+09:48.380 --> 09:52.740
+That's it for now.
+
+09:52.740 --> 09:54.650
+See you in the next venue.
+
+09:54.920 --> 09:55.530
+But by.

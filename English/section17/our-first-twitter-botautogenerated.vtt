@@ -1,0 +1,289 @@
+WEBVTT
+
+00:00.990 --> 00:02.130
+Welcome back.
+
+00:02.160 --> 00:04.380
+Let's build our Twitter board.
+
+00:04.380 --> 00:08.860
+The first thing we want to do is import T.P. library.
+
+00:09.090 --> 00:12.060
+And obviously this isn't a built in module in Python.
+
+00:12.150 --> 00:24.750
+So we'll have to install it by saying Pip three install TV and this is going to install the TB library.
+
+00:24.740 --> 00:26.200
+Awesome.
+
+00:26.220 --> 00:29.580
+Now this library has really good documentation.
+
+00:29.670 --> 00:35.550
+So when we go to read the docs I'll actually show you hey how to get started and give you some quick
+
+00:35.670 --> 00:38.210
+start up and setup that we need to do.
+
+00:38.400 --> 00:46.140
+In my case I'm just going to copy the hello TB code that they provided for us and just paste it in here.
+
+00:46.160 --> 00:47.720
+Now there's a few things happening here.
+
+00:47.840 --> 00:50.470
+Obviously we don't need the double imports.
+
+00:50.510 --> 00:58.250
+What we can see here is that we need to authenticate that is we use the 2P o off handler and we have
+
+00:58.250 --> 01:05.640
+to give it something called a Consumer key and a consumer secret and then we also have to set access
+
+01:05.650 --> 01:10.760
+token with the access token and access token secret.
+
+01:10.770 --> 01:19.090
+Now what this is is this is what the Twitter API uses to verify our account.
+
+01:19.150 --> 01:24.300
+You remember how we had to create an account here and get authenticated because not just anybody can
+
+01:24.300 --> 01:25.440
+use the Twitter API.
+
+01:25.890 --> 01:27.360
+Well this is what they're asking for.
+
+01:27.360 --> 01:30.950
+They're saying hey I want you to verify that this is you.
+
+01:31.050 --> 01:35.700
+If you're accessing the Twitter API I want to know who's accessing that data.
+
+01:35.700 --> 01:41.790
+So in your case after you've created an app you just click on details and you see here that we have
+
+01:41.790 --> 01:44.490
+keys and tokens these keys.
+
+01:44.490 --> 01:50.640
+I'm actually going to regenerate after this because you don't want to share these with anybody but I'll
+
+01:50.940 --> 01:52.800
+at least show you how these works.
+
+01:52.800 --> 01:58.650
+So that for yourself you'll have different keys and API keys and secrets that you have that you'll have
+
+01:58.650 --> 01:59.800
+to copy and paste.
+
+01:59.970 --> 02:02.060
+Luckily it tells us exactly what they are.
+
+02:02.070 --> 02:11.250
+We have the API key which is the consumer key well posted in here as a string.
+
+02:11.440 --> 02:17.000
+And then we have the API secret key which is the consumer.
+
+02:17.030 --> 02:26.690
+Secret which will paste it in their let's make this a little bit bigger so you can see and then we have
+
+02:26.690 --> 02:30.630
+the access token and the access token secret again.
+
+02:30.680 --> 02:32.030
+We copy the access token
+
+02:35.940 --> 02:42.410
+pasted in here and the secret.
+
+02:42.430 --> 02:49.000
+So again these are the keys that Twitter API is going to be able to use to identify you but you don't
+
+02:49.000 --> 02:54.750
+want to share these with anybody even though I'm showing it to everybody like I said after this video
+
+02:54.780 --> 02:56.060
+I'm just going to regenerate.
+
+02:56.070 --> 03:05.990
+So that while you won't be able to use my keys after we've set up this off object we then use the T.P.
+
+03:06.110 --> 03:14.290
+dot API to authenticate and we now have access to the API so let's check this out.
+
+03:14.290 --> 03:23.290
+I have my public tweets and I can grab those by saying API dot home timeline and then I'm going to loop
+
+03:23.350 --> 03:30.920
+over these tweets the public tweets and just print tweet dot text so let's try this out.
+
+03:33.260 --> 03:37.460
+Things never work the first time around so we'll see.
+
+03:37.520 --> 03:47.220
+I'm going to run Python 3 and say tweet tweet dot by.
+
+03:47.430 --> 03:48.240
+All right.
+
+03:48.240 --> 03:49.120
+Look at that.
+
+03:49.230 --> 04:01.930
+We've actually no heirs gotten the tweets from the home timeline and specifically from my Twitter home
+
+04:01.930 --> 04:02.830
+timeline.
+
+04:02.830 --> 04:04.240
+So we see a here we have.
+
+04:04.240 --> 04:05.920
+Let's see what we have.
+
+04:05.950 --> 04:11.440
+We have a re tweet an overview of the best newsletters that I know of for front end developers including
+
+04:11.440 --> 04:12.740
+General front and JavaScript.
+
+04:12.760 --> 04:13.580
+Yes yes.
+
+04:13.630 --> 04:18.550
+I hope this person included my newsletter by the way I have a newsletter in case you're wondering every
+
+04:18.550 --> 04:18.850
+month.
+
+04:19.180 --> 04:20.200
+But let's check this.
+
+04:20.230 --> 04:23.040
+If I go to my home Hey look at that.
+
+04:23.140 --> 04:28.630
+An overview of the best newsletters that I know for front end developers Brian Rinaldi.
+
+04:28.630 --> 04:31.600
+I hope my newsletters included but there you go.
+
+04:31.600 --> 04:33.300
+That's our timeline right there.
+
+04:33.580 --> 04:36.540
+And we're able to access the Twitter API.
+
+04:36.580 --> 04:38.680
+That was pretty easy right.
+
+04:38.680 --> 04:44.860
+Not that again I keep saying this I know I'm repetitive but this is the power of Python.
+
+04:44.950 --> 04:46.900
+There are just so many libraries.
+
+04:46.960 --> 04:54.550
+Such a large community and it's so easy to create things already just by looking at this T.P. library
+
+04:54.580 --> 04:58.240
+you probably can think of different things that you can do with Twitter.
+
+04:58.300 --> 05:00.720
+Like I said the world is your oyster.
+
+05:00.730 --> 05:05.870
+That's why python is such a popular language let's get back to this.
+
+05:06.010 --> 05:10.610
+So we have some tweets but let's do something exciting here.
+
+05:10.630 --> 05:14.290
+What else does the Twitter API give us.
+
+05:14.290 --> 05:21.810
+Well let's remove these public tweets for now and just print out let's say API dot me.
+
+05:22.150 --> 05:25.940
+And this is actually going to give the information about myself.
+
+05:26.170 --> 05:35.250
+So let's actually give this a variable saying user so and I'm going to say API dot me and this is going
+
+05:35.250 --> 05:38.810
+to give information about the user in my case.
+
+05:38.820 --> 05:41.160
+Let's just do user dot name.
+
+05:41.370 --> 05:45.090
+And again this is something that you can check for yourself on their documentation.
+
+05:45.090 --> 05:47.910
+And if I run this.
+
+05:48.040 --> 05:48.640
+There you go.
+
+05:48.640 --> 05:49.690
+That's my name.
+
+05:49.690 --> 05:50.870
+That's my Twitter username.
+
+05:51.700 --> 05:51.970
+OK.
+
+05:52.000 --> 05:52.900
+What else do we have.
+
+05:52.900 --> 05:55.120
+We have.
+
+05:55.120 --> 06:03.600
+Well the actual screen name which will be my Twitter handle right here.
+
+06:03.640 --> 06:05.750
+Andre Agassi with no spaces.
+
+06:05.950 --> 06:12.930
+And then let's just do what else can we do we can also do followers count again.
+
+06:13.060 --> 06:17.440
+These are all on the tweet B API that you can check for yourself.
+
+06:17.470 --> 06:18.460
+Fi do this
+
+06:21.890 --> 06:23.010
+Hey look at that.
+
+06:23.060 --> 06:28.850
+It's actually pretty crazy that I have 10000 followers not trying to show off or anything but it's crazy
+
+06:28.850 --> 06:31.300
+I barely tweet in somehow 10000.
+
+06:31.310 --> 06:33.690
+So thank you for the follow.
+
+06:33.800 --> 06:37.690
+Not sure how useful my tweets are but I appreciate the photos.
+
+06:37.700 --> 06:39.110
+That's pretty cool.
+
+06:39.110 --> 06:43.390
+But you know what I want to start building something useful with my Twitter board.
+
+06:43.460 --> 06:46.560
+So in the next video we're going to do just that.
+
+06:46.580 --> 06:48.190
+I'll see you on that one by.

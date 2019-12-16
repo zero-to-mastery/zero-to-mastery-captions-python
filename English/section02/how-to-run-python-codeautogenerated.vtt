@@ -1,0 +1,196 @@
+WEBVTT
+
+00:00.900 --> 00:01.320
+All right.
+
+00:01.410 --> 00:02.130
+Oh man.
+
+00:02.130 --> 00:04.510
+We've been talking for a long time.
+
+00:04.620 --> 00:08.240
+How can we finally run Python code.
+
+00:08.250 --> 00:09.740
+I want to start coding right.
+
+00:09.870 --> 00:12.900
+Let's download this translation service right.
+
+00:12.900 --> 00:15.430
+Well I'm sorry.
+
+00:15.510 --> 00:20.610
+Actually this something we're going to do later on in the course and I know what you're thinking.
+
+00:20.730 --> 00:24.430
+W TAF Andre what is this kindergarten.
+
+00:24.540 --> 00:25.550
+I mean come on.
+
+00:25.560 --> 00:27.240
+I came here to learn python.
+
+00:27.300 --> 00:28.990
+Start teaching me python.
+
+00:29.070 --> 00:30.600
+And I know I know.
+
+00:30.600 --> 00:31.190
+And don't worry.
+
+00:31.200 --> 00:36.840
+In this course we're going to get you to have a professional set up with Python so that when you go
+
+00:36.840 --> 00:41.320
+into the workforce you are doing what you're supposed to be doing.
+
+00:41.340 --> 00:46.400
+We're going to learn how to have all of these setup first.
+
+00:46.470 --> 00:53.660
+We're gonna have our terminal or command line where we can run python from right in what we call a repo
+
+00:54.390 --> 01:00.160
+and then we're also going to use code editors like Sublime Text and Visual Studio code.
+
+01:00.210 --> 01:07.230
+We're also going to use I.D. or integrated developer environments like Pi charm and Spider and we're
+
+01:07.230 --> 01:14.060
+also going to use Jupiter notebooks and I'm going to show you how to set up all of these on your computer.
+
+01:14.190 --> 01:20.340
+What the pros and cons of using each are and how some of them might be used for machine learning while
+
+01:20.610 --> 01:28.020
+others might be used for writing quick scripts and I know this is a lot but it's good to have these
+
+01:28.020 --> 01:34.470
+skills depending on what type of job you want and if you're a professional python developer.
+
+01:34.620 --> 01:38.060
+Well you should be using most of these but there is a problem.
+
+01:38.070 --> 01:45.120
+If I start introducing this in the course right away you see these tools you have to install differently
+
+01:45.150 --> 01:46.980
+based on what computer you have.
+
+01:47.460 --> 01:54.090
+So if you're using a Mac a Windows a Linux maybe you're using a mobile phone because we want to get
+
+01:54.090 --> 01:59.280
+started right away and write some code instead of worrying about installations and making sure that
+
+01:59.280 --> 02:01.580
+your computer is all set up.
+
+02:01.590 --> 02:06.570
+I want to make sure that all of us can get started right away no matter what device you're on.
+
+02:06.690 --> 02:13.260
+Now if you're really really keen head on over to the section where I show you how to install all these
+
+02:13.830 --> 02:15.690
+on all of your devices.
+
+02:15.690 --> 02:22.600
+So there you have it set up and you can come back to the section but I warn you it's easy to run into
+
+02:22.600 --> 02:26.600
+problems and get confused when installing these tools.
+
+02:26.650 --> 02:32.530
+So I recommend sticking with what I'm about to show you and I promise we will get you this professional
+
+02:32.530 --> 02:35.860
+setup no other course is going to teach you all these things.
+
+02:35.860 --> 02:39.280
+But before I dive into these we need to learn.
+
+02:39.410 --> 02:42.580
+Well you need to be able to just have fun and write some code.
+
+02:43.120 --> 02:47.860
+So what is this trick that I keep mentioning where we don't have to install any of these and still run
+
+02:47.860 --> 02:48.280
+Python.
+
+02:48.910 --> 02:50.630
+It's called wrap.
+
+02:50.680 --> 03:00.920
+You see instead of us having to download this we can go to rappel dot I.T. and when you go here you'll
+
+03:00.930 --> 03:02.700
+get a log in screen.
+
+03:02.760 --> 03:09.090
+Now I recommend create an account on here because trust me it's going to be very very useful it's one
+
+03:09.090 --> 03:17.580
+of my favorite tools and it allows you to save Python files just online for example once you log in
+
+03:17.580 --> 03:18.850
+and create an account.
+
+03:18.960 --> 03:25.530
+You can just create a new rappel choose the language that you want to use in our case we want to choose
+
+03:25.590 --> 03:36.580
+Python we can name our rebel so we can just call it Hey hey we can just create a ripple and check it
+
+03:36.580 --> 03:38.570
+out right away.
+
+03:38.830 --> 03:46.780
+We have without ever downloading this python translation service we can actually start writing Python
+
+03:47.860 --> 03:54.400
+right here in our browsers and this is going to work for anybody that has an Internet connection in
+
+03:54.400 --> 03:59.960
+a browser because this interpreter just runs automatically here.
+
+04:00.190 --> 04:05.100
+And the beauty with ripple is that well you can save these files.
+
+04:05.110 --> 04:11.380
+You can have different folders so as we work through the course you can actually have a folder for all
+
+04:11.380 --> 04:18.190
+your python work and just haven't really nice organized file structure that you can access anywhere
+
+04:18.190 --> 04:20.200
+you have internet connection.
+
+04:20.200 --> 04:24.480
+Now if you don't want to sign up for reptile that is it's completely free.
+
+04:24.670 --> 04:31.630
+You can also use this open source glut that I owe which again you go to Python and you're able to run
+
+04:31.870 --> 04:33.980
+Python online.
+
+04:34.150 --> 04:42.580
+So take your time sign up for reptile that I.T. and let's get started with our first python program.
+
+04:42.590 --> 04:48.290
+I'm finally getting there and the next video we're gonna write our first piece of code.
+
+04:48.290 --> 04:49.330
+No more waiting.
+
+04:49.340 --> 04:52.340
+It's coding time so I'll see you in the next video.
+
+04:52.340 --> 04:52.700
+Bye bye.

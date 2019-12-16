@@ -1,0 +1,238 @@
+WEBVTT
+
+00:00.930 --> 00:08.160
+Now the last step in order for us to deploy our portfolio Web site is to go to the configuration file
+
+00:08.280 --> 00:11.340
+right here when we click on this.
+
+00:11.340 --> 00:18.990
+You'll get a whole bunch of text and we can actually delete a ton of these things you'll see over here
+
+00:18.990 --> 00:24.610
+that you can have things set up based on what framework you use like flask.
+
+00:24.630 --> 00:35.220
+So because we're using flask let's remove all of this code just have the flask section and we'll remove
+
+00:35.250 --> 00:36.250
+the comments.
+
+00:36.390 --> 00:44.340
+So we have import CIS and it has some description here that you can read on your own.
+
+00:46.040 --> 00:47.780
+But the key thing that we want
+
+00:51.040 --> 00:55.710
+is to remove the comments from here.
+
+00:56.000 --> 00:57.440
+Just like that.
+
+00:57.680 --> 01:00.760
+And then we want to make sure that the directory.
+
+01:00.890 --> 01:04.010
+So Andre has a path
+
+01:07.180 --> 01:11.410
+portfolio so remember our directory was home user name.
+
+01:11.410 --> 01:22.000
+And then the name of our project next we want to make sure that we give the name as the name of our
+
+01:22.000 --> 01:22.560
+file.
+
+01:22.570 --> 01:25.370
+So in my case it was server dot pi.
+
+01:25.620 --> 01:33.860
+If you remember I have server dot pie right over here and we're exporting it as app.
+
+01:33.970 --> 01:38.690
+So the app is the variable and server is the file name.
+
+01:38.710 --> 01:43.220
+So if you have a different file name let's say you have run dot pie.
+
+01:43.240 --> 01:45.380
+Then you'd put run here.
+
+01:46.030 --> 01:53.830
+So let's do server let's see it save and let's go back to the Web.
+
+01:54.370 --> 02:00.190
+If I reload and run this we get an error.
+
+02:00.190 --> 02:06.040
+Now an interesting feature of Python anywhere is that we can actually look at the logs.
+
+02:06.150 --> 02:10.580
+So over here the log files we can see what errors or what the server is logging.
+
+02:10.630 --> 02:14.660
+So in our case let's look at the errors module not found error.
+
+02:15.070 --> 02:19.160
+No module named server all right.
+
+02:19.160 --> 02:20.570
+That's interesting.
+
+02:20.600 --> 02:22.570
+Let's see why that might be.
+
+02:22.640 --> 02:30.460
+So if we go back to our configuration file the reason that we got the error was well because I misspelled
+
+02:30.520 --> 02:33.490
+the path so it cannot find the server.
+
+02:33.490 --> 02:47.590
+So Port FO If I see this go back to web reload and click on our Web site Ho Lee moley.
+
+02:47.740 --> 02:56.320
+We have our portfolio project life that link over there I can share with anybody and they could see
+
+02:56.320 --> 02:59.440
+it on their computer if they're halfway across the world.
+
+02:59.710 --> 03:00.870
+Let's say in India.
+
+03:00.870 --> 03:01.180
+Yep.
+
+03:01.240 --> 03:03.580
+They can see my portfolio.
+
+03:03.580 --> 03:06.340
+But you want to know what the coolest part is.
+
+03:06.340 --> 03:12.520
+Well the fact that all of our pages work but also our contact form.
+
+03:12.610 --> 03:20.350
+So if I do something like let's make this a little bit bigger so you can see are two dot.com some subject
+
+03:20.350 --> 03:32.960
+line and then oh somebody super super excited I hit send that worked in the cool part is that next time
+
+03:33.380 --> 03:35.990
+let's say somebody contacted you.
+
+03:35.990 --> 03:42.210
+All you have to do is actually go back to Python anywhere.
+
+03:42.220 --> 03:44.500
+So let's go to a new page of Python anywhere
+
+03:48.600 --> 03:57.620
+go into the files and then check out the database dot CSP and look at that.
+
+03:57.620 --> 04:05.780
+You have a new entry into your CSP file and I can even save the file I can download the file so that
+
+04:05.780 --> 04:12.180
+later on a week from now I can check up on the progress and see how my portfolio is doing.
+
+04:13.600 --> 04:18.970
+And now I hope you started to see the power that comes with this
+
+04:21.830 --> 04:30.980
+we've created an entire web platform ourselves we've created the ACM all CSX and JavaScript files while
+
+04:31.070 --> 04:36.230
+we use some templates but we still modified them to our liking and you can continue to update them and
+
+04:36.230 --> 04:43.250
+change them to your liking but we also created a server ourselves that also contains a CSA v file that
+
+04:43.250 --> 04:50.720
+will be saved on this machine and we move that machine from just our computers to someplace like Python
+
+04:50.720 --> 04:58.500
+anywhere that has a dedicated server or a server space for us so that it's always running.
+
+04:58.850 --> 05:07.940
+And this is how things like databases and places like a W S Google Cloud Azure and any other database
+
+05:07.970 --> 05:10.370
+or server platform works.
+
+05:10.370 --> 05:12.500
+They allow you to use their machine.
+
+05:12.500 --> 05:18.540
+They make sure that they're going to run fast that they're always going to be on and databases allow
+
+05:18.540 --> 05:19.630
+you to safe things.
+
+05:19.740 --> 05:27.240
+So instead of saving items in a CSP we can save it and into a dedicated database so we can do more operations
+
+05:27.600 --> 05:30.290
+or we can store more information.
+
+05:30.450 --> 05:38.340
+But I hope that opens up the world of web development to you and how everything is connected in just
+
+05:38.730 --> 05:42.830
+a few hours we're able to create a pretty neat looking portfolio.
+
+05:42.900 --> 05:44.140
+Right.
+
+05:44.200 --> 05:50.470
+I mean yeah there were some configuration some issues but now that you know how to do it I bet you see
+
+05:50.470 --> 05:54.700
+a whole lot of possibilities of what you can do.
+
+05:54.700 --> 06:02.140
+You can now customize the site whichever way you want maybe learn a little bit more HCM L or CSX to
+
+06:02.200 --> 06:08.110
+make the Web site a little bit more to your liking maybe you want to add some javascript to make it
+
+06:08.110 --> 06:09.270
+even more interactive.
+
+06:10.260 --> 06:17.100
+Or maybe you want to explore different things like perhaps hosting this application in someplace other
+
+06:17.100 --> 06:24.280
+than Python anyway or maybe creating your own database the possibilities are endless.
+
+06:24.330 --> 06:26.700
+So I hope this was exciting to you.
+
+06:26.730 --> 06:33.620
+This is one of my favorite topics and it was a lot of things that we covered in a short amount of time.
+
+06:33.720 --> 06:39.870
+You're not going to be an expert web developer just from a few videos but I hope this at least shows
+
+06:39.870 --> 06:45.290
+you the world of web development and how you might want to be involved in this world.
+
+06:45.300 --> 06:47.130
+Good job getting this far.
+
+06:47.130 --> 06:48.900
+This was a really tough section.
+
+06:48.900 --> 06:50.000
+If your brain hurts.
+
+06:50.040 --> 06:50.730
+Don't worry.
+
+06:50.730 --> 06:54.220
+Go take a nap and I'll see you in the next video.
+
+06:54.220 --> 06:54.570
+Bye bye.

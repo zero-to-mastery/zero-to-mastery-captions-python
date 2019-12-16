@@ -1,0 +1,208 @@
+WEBVTT
+
+00:00.830 --> 00:01.590
+All right.
+
+00:01.610 --> 00:03.170
+I know what you're thinking.
+
+00:03.320 --> 00:04.530
+You're thinking Andre.
+
+00:04.610 --> 00:06.380
+I have no idea what you're talking about.
+
+00:06.380 --> 00:13.220
+What is machine learning you haven't really told me anything I have nothing to apply to.
+
+00:13.220 --> 00:20.690
+Well let's go back to this topic of machines and computers and the fact that they don't really understand
+
+00:20.780 --> 00:21.480
+words.
+
+00:21.560 --> 00:22.300
+Right.
+
+00:22.310 --> 00:26.450
+If I ask my computer hey is this a snake.
+
+00:26.450 --> 00:28.370
+Is this a python.
+
+00:28.400 --> 00:29.710
+My computer is going to.
+
+00:29.840 --> 00:38.060
+Well I have no idea what I'm talking about when I look at an image of a snake no matter what color it
+
+00:38.060 --> 00:45.470
+is no matter whether it's a cartoon or real life image or whether it has different directions with different
+
+00:45.470 --> 00:46.340
+animals in it.
+
+00:46.430 --> 00:57.760
+I can identify a snake right away our brains just know but to tell my computer what a snake is is almost
+
+00:57.880 --> 00:59.540
+impossible right.
+
+00:59.620 --> 01:02.220
+Because there's so many factors.
+
+01:02.320 --> 01:11.800
+A snake doesn't have legs and arms but an airplane doesn't have legs and arms a snake has scales.
+
+01:11.800 --> 01:19.080
+But then the computer is going to ask me what are scales but with machine learning we can actually teach
+
+01:19.440 --> 01:27.270
+a computer to know what a snake is or at least pretended like it knows.
+
+01:27.270 --> 01:29.790
+So how do we do this.
+
+01:29.800 --> 01:38.480
+Well you remember this diagram I hope it's simply what we do in programming that is we give an input
+
+01:38.570 --> 01:47.020
+let's say a list of one two three we give it to a function and there's an output of 2 4 6.
+
+01:47.030 --> 01:52.560
+So clearly this function multiplies our list items in our list by 2.
+
+01:52.730 --> 01:57.900
+And often our programs are procedural.
+
+01:58.160 --> 02:05.600
+That is we have if this then that do this then this type of conditions we tell the computer what to
+
+02:05.600 --> 02:16.510
+do we write as programmers the input and the function and all the computer does is actually just calculate
+
+02:16.570 --> 02:19.170
+using the input and the function the output.
+
+02:19.480 --> 02:25.900
+And it can do that really really fast for us instead of having a human do something when let's say a
+
+02:25.900 --> 02:31.170
+list is millions of items long machine learning changes.
+
+02:31.170 --> 02:43.330
+This idea it says hey give me the input and give me what you want the output to be that is give me all
+
+02:43.330 --> 02:45.100
+the data that you have.
+
+02:45.100 --> 02:48.010
+And by the way tell me what the answer is.
+
+02:48.070 --> 02:50.470
+Or at least what the output that you want.
+
+02:50.470 --> 02:58.690
+So in this case I want the input to be a list of 1 2 and 3 and the output to be a list of 2 4 and 6
+
+03:00.400 --> 03:10.060
+and then the interesting part is that as developers we give this input and output but with machine learning
+
+03:10.120 --> 03:15.240
+we say hey machine you figure out what this function is.
+
+03:15.670 --> 03:25.390
+Because if I give you let's say instead of a list A list of all these snake pictures or maybe animals
+
+03:25.600 --> 03:29.620
+and I want you to tell me if this image has a snake or not.
+
+03:29.620 --> 03:33.810
+Or maybe these 100 images which one of them have snakes.
+
+03:33.850 --> 03:37.610
+Well I don't know how to tell you how to do that.
+
+03:37.630 --> 03:41.180
+So instead you figure it out yourself.
+
+03:41.320 --> 03:43.490
+Here are all the pictures.
+
+03:43.600 --> 03:52.460
+And here is what I expect the output to be either snake or not snake and with machine learning the function
+
+03:52.610 --> 03:56.960
+is generated or created by the machine.
+
+03:56.960 --> 03:59.410
+Sounds really cool doesn't it.
+
+03:59.450 --> 04:05.640
+And this is machine learning it's simply a function.
+
+04:05.750 --> 04:12.410
+So instead of us writing the function like we have before with machine learning the machine writes the
+
+04:12.410 --> 04:19.490
+function we just give it the input and the output and the word function can be replaced with a model.
+
+04:19.490 --> 04:22.280
+You might have heard of the word machine learning model.
+
+04:22.370 --> 04:24.040
+That's all a model is.
+
+04:24.050 --> 04:32.340
+It's a function that receives an input and returns an output another word might be algorithm a machine
+
+04:32.430 --> 04:38.970
+learning algorithm a machine learning bought and at the end of the day it's a brain we're pretending
+
+04:39.150 --> 04:46.930
+that this machine is a brain that understands the inputs and gives us the desired output.
+
+04:46.930 --> 04:53.680
+Now the interesting side effect of this is that often when we talk about machine learning models these
+
+04:53.770 --> 05:01.210
+functions are really hard to understand because the computer comes up with this function as a human.
+
+05:01.300 --> 05:04.310
+It's hard to really understand how it works.
+
+05:04.420 --> 05:11.320
+And as these models get more and more complex it becomes harder and harder for us as developers to understand
+
+05:11.350 --> 05:12.390
+how it works.
+
+05:12.610 --> 05:19.030
+Which raises a lot of issues but we don't need to get into that now as you can see the main part of
+
+05:19.030 --> 05:27.910
+this is that in order to train this machine to create this function we have to give it data and for
+
+05:27.910 --> 05:29.200
+it to be really really good.
+
+05:29.290 --> 05:36.660
+We have to give it lots and lots of data and then we want to test to make sure that this data that we
+
+05:36.660 --> 05:39.130
+give in gives us the correct output.
+
+05:39.970 --> 05:47.020
+So at the end of the day machine learning is simply a computer writing its own function based on the
+
+05:47.020 --> 05:49.150
+inputs and outputs.
+
+05:49.180 --> 05:50.880
+That's pretty cool isn't it.
+
+05:50.890 --> 05:52.500
+I'll see you in the next video.
+
+05:52.670 --> 05:52.900
+Bye.

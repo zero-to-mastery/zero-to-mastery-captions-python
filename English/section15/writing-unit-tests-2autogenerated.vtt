@@ -1,0 +1,196 @@
+WEBVTT
+
+00:00.420 --> 00:01.600
+Welcome back.
+
+00:01.620 --> 00:05.620
+Let's talk about a few more neat things they can do with a unit test.
+
+00:05.730 --> 00:12.330
+And remember you can always go to the documentation on the Python Web site and learn more about some
+
+00:12.330 --> 00:13.310
+of the things that you can do.
+
+00:14.330 --> 00:21.590
+But notice here how at the end we added the if name main some of you may be wondering why this is useful
+
+00:21.590 --> 00:28.310
+because so far we've just ran it from the command line as a single file and that has been working but
+
+00:28.400 --> 00:35.810
+usually you have more than one file and you have each module tested with different functions.
+
+00:35.810 --> 00:36.400
+Right.
+
+00:36.410 --> 00:43.990
+So ideally you want to run all these tests in unison and the way you do this is to write Python and
+
+00:43.990 --> 00:51.250
+then dash em and then give it the unit test that you want to run.
+
+00:51.250 --> 00:59.800
+So now if I do this you see that everything is working let's say I add a new file here.
+
+00:59.840 --> 01:08.920
+Let's say touch test to drop by which is a sure command on Max to just create a new file.
+
+01:08.930 --> 01:14.090
+So now my desktop let's just copy this test that we occasionally have.
+
+01:14.090 --> 01:20.780
+Go to my desktop and open up this in sublime text.
+
+01:20.800 --> 01:32.040
+So now if I copy and paste this the exact same thing and I say this go back to my code and run unit
+
+01:32.040 --> 01:38.870
+test you see that I have eight tests now that are being run and because I've added this if name main
+
+01:39.170 --> 01:44.660
+I'm able to run all these tests with just one simple comment.
+
+01:44.690 --> 01:51.960
+Now another neat thing is that we can do something called Dash V which stands for verbose and that is
+
+01:51.960 --> 01:57.570
+that when we do this we actually get more information about the tests that we read.
+
+01:57.890 --> 02:03.740
+So it gives you a little bit more detail you see which tests we've run and which ones are OK which ones
+
+02:03.740 --> 02:10.600
+have failed as a matter of fact I can even add comments and dark strings to my test.
+
+02:10.610 --> 02:12.730
+So let's say test do stuff.
+
+02:12.830 --> 02:23.170
+I can say single code single code three times and simply say hi if I run this again with the dash for
+
+02:23.200 --> 02:25.520
+command.
+
+02:25.940 --> 02:29.710
+And this has to be on a single line I believe.
+
+02:29.810 --> 02:32.060
+Let's say that again and run this.
+
+02:32.060 --> 02:32.980
+Look at that.
+
+02:33.230 --> 02:38.200
+I also get some comments so maybe I wanted to add a few comments on my tests.
+
+02:38.270 --> 02:42.910
+I can add those as well what other neat thing can I do
+
+02:46.980 --> 02:58.040
+a another default method that we get with unit test is something called set up and setup allows us to
+
+02:58.040 --> 03:06.170
+run a piece of code that sets up before each call of the test.
+
+03:06.310 --> 03:13.270
+So for example whatever I write in here let's say I wanted to setup my test and just print about to
+
+03:13.270 --> 03:14.620
+test a function
+
+03:17.990 --> 03:21.170
+now because I have this if I run my code now
+
+03:25.860 --> 03:33.250
+you see that before each method I run the setup method first.
+
+03:33.250 --> 03:39.940
+So you see that I say about to run a function about to run a function about to run a function and about
+
+03:39.940 --> 03:40.800
+to run a function.
+
+03:40.960 --> 03:44.880
+And then we have our test to file that we haven't done any setup for it.
+
+03:44.890 --> 03:50.410
+So this is really really useful if you need to set up something before each function.
+
+03:50.410 --> 03:57.460
+Let's say you have some default variables maybe that you need to set up well in that case this is a
+
+03:57.460 --> 04:00.100
+very useful method.
+
+04:00.100 --> 04:01.900
+Another one just like setup.
+
+04:01.900 --> 04:15.150
+Usually you add at the bottom of the file and in here this is called a tear down and as the name suggests
+
+04:15.750 --> 04:21.090
+we run it at the end of each method that we call.
+
+04:21.120 --> 04:24.330
+So in here let's say cleaning up.
+
+04:24.360 --> 04:32.490
+I usually use do this to clean up some variables maybe reset some variables if I run this you see that
+
+04:32.520 --> 04:39.580
+I have now about to test a function and then we're cleaning up for each one of these methods.
+
+04:39.620 --> 04:48.120
+So these two are very very useful when setting up and tearing down tests now tear down you won't use
+
+04:48.210 --> 04:48.900
+as often.
+
+04:48.900 --> 04:54.600
+Usually you use it if you're testing something more complicated like a database but we won't worry about
+
+04:54.600 --> 04:55.220
+that too much.
+
+04:55.220 --> 05:01.180
+Now all right there you have it for tests as you can see at the end of the day.
+
+05:01.190 --> 05:09.980
+Tests are simply logical programs that we write rate is just a class and then we set up all these methods
+
+05:10.190 --> 05:16.160
+to try and test our code as much as possible in our case we just had one simple function.
+
+05:16.250 --> 05:24.090
+But by using test we're able to notice small things that can go wrong with the function and thus improve
+
+05:24.090 --> 05:30.150
+our code so that next time somebody comes another developer comes and tries to modify this function
+
+05:31.320 --> 05:36.470
+or maybe tries to call this function with something that is not right.
+
+05:36.630 --> 05:41.520
+Well our tests are going to fail and it's going to let the developer know hey you're doing something
+
+05:41.520 --> 05:42.250
+wrong.
+
+05:42.330 --> 05:48.820
+Somebody who wrote this function before you somebody that wrote these tests before you told you to use
+
+05:48.820 --> 05:50.710
+this function in a specific way.
+
+05:51.010 --> 05:57.420
+Very very useful in the next video we're going to do a fun little exercise to make sure we understand
+
+05:57.660 --> 05:58.620
+testing.
+
+05:58.620 --> 05:59.950
+I'll see in the next one.
+
+06:00.120 --> 06:00.350
+Bob.

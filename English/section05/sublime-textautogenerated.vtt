@@ -1,0 +1,202 @@
+WEBVTT
+
+00:00.450 --> 00:04.110
+Let's install Sun developer tools first one.
+
+00:04.110 --> 00:06.960
+And personally this is my favorite code.
+
+00:07.170 --> 00:14.340
+It's sublime text you can download based on whatever operating system you have.
+
+00:14.340 --> 00:23.070
+In my case it's a mac so it's OSX so I'll simply click on here and just open this up and it's going
+
+00:23.070 --> 00:24.900
+to install sublime text for me.
+
+00:25.110 --> 00:34.950
+Now Sublime Text has this model where it is free but every time you save maybe like every 20th time
+
+00:34.950 --> 00:41.850
+that you save Oh have a prompt says hey you should purchase Sublime Text so if you really really like
+
+00:41.850 --> 00:47.490
+it it's good to contribute and actually buy it and most of the time the workplace that you work at will
+
+00:47.670 --> 00:50.930
+actually cover the cost but you can also use it for free.
+
+00:50.930 --> 00:56.010
+You'll just get that annoying prompt every once in a while when you save saying hey buy but you can
+
+00:56.010 --> 01:00.020
+still have all the features that you want with the free version in my Mac.
+
+01:00.030 --> 01:07.260
+I'm going to drag it into applications and while I already have Sublime Text actually installed so I'm
+
+01:07.260 --> 01:10.830
+just going to say stop because well it's already installed.
+
+01:11.450 --> 01:16.640
+All right so that's Sublime Text and once we open it up
+
+01:20.910 --> 01:23.010
+it'll look something like this.
+
+01:23.620 --> 01:33.400
+It's a code editor that allows me to write just like a war document but it has this ability to format
+
+01:33.430 --> 01:38.340
+my code and make my code look better when I'm actually coding.
+
+01:38.350 --> 01:45.400
+If I go down to the bottom here and click you see that we have different languages that we can use in
+
+01:45.400 --> 01:54.620
+my case I want to use Python so that now if I do print look at that I have some color completion it
+
+01:54.620 --> 02:01.730
+gives me some hints and lets say I make a mistake here while there you go I get some highlighting saying
+
+02:01.730 --> 02:04.430
+hey matching bracket cannot be found.
+
+02:04.430 --> 02:09.810
+Make sure that you close this out so immediately you can see the usefulness of this.
+
+02:09.860 --> 02:17.480
+It tells me as I'm coding along what errors I'm making it makes the call pretty and generally is just
+
+02:17.480 --> 02:22.080
+a better experience to quote now with sublime texts.
+
+02:22.090 --> 02:25.740
+This python is actually version 2 of Python.
+
+02:25.960 --> 02:35.320
+So if I remove the brackets it doesn't give me an error because Python 2 while this is valid syntax
+
+02:36.240 --> 02:43.600
+so in order to upgrade this to Python 3 we have to install a few packages on a Mac.
+
+02:43.620 --> 02:52.530
+It's command shift P and you'll get this drop down menu on Windows L.B. control shift b but you can
+
+02:52.530 --> 03:00.280
+also just do it this way by hitting tools and just hitting command pallet and here we're going to say
+
+03:00.280 --> 03:06.860
+install packages and for installing packages we're gonna say Python 3
+
+03:09.750 --> 03:13.490
+and there's lots of packages that you can install to customize it.
+
+03:13.500 --> 03:17.660
+And there's tons of resources online of customizing your code editor.
+
+03:17.700 --> 03:19.760
+So everybody has their own preference.
+
+03:21.110 --> 03:26.750
+Now if I click over here I see that I now have Python 3 and if I click here.
+
+03:26.840 --> 03:27.170
+All right.
+
+03:27.170 --> 03:28.830
+Everything is good.
+
+03:29.910 --> 03:34.530
+And now we can just save this file we can call it.
+
+03:34.720 --> 03:35.470
+Hi Dad.
+
+03:35.470 --> 03:38.050
+Pie on our desktop.
+
+03:38.050 --> 03:43.030
+And when we save this sometimes and this will switch over to python.
+
+03:43.030 --> 03:45.730
+Now this shouldn't matter too much.
+
+03:45.730 --> 03:55.760
+We could also do tools command pallet and just set syntax with Python 3 and another interesting thing
+
+03:55.760 --> 04:02.930
+we can do is if we go to the command pallet once again I can say build with Python 3.
+
+04:03.220 --> 04:12.190
+When I click that look at that it's going to run this file for me and it's going to say whoa whoa whoa.
+
+04:12.230 --> 04:17.580
+There is an issue on line one says missing parentheses and call to print.
+
+04:17.590 --> 04:19.290
+Did you mean print Hello.
+
+04:19.390 --> 04:26.250
+How nice is that so we get to fix our errors.
+
+04:26.310 --> 04:33.440
+And now if we do command pallet or if you're on a Mac you do command shift P as you can see here or
+
+04:33.450 --> 04:36.060
+control shift B if you're on Windows.
+
+04:36.300 --> 04:42.080
+I can just say Bill with Python 3 and now look at that.
+
+04:42.360 --> 04:48.590
+Everything is running smoothly and it prints hello.
+
+04:48.680 --> 04:52.280
+For now we have a basic setup for Sublime Text.
+
+04:52.280 --> 04:57.710
+We can do a lot of things and you can google of how you might want to customize Sublime Text maybe you
+
+04:57.710 --> 05:03.350
+want to change some colors so you go to color schemes and maybe I don't know.
+
+05:03.470 --> 05:05.690
+Let's change it to Mariana and look at that.
+
+05:05.690 --> 05:07.220
+It looks pretty good.
+
+05:07.340 --> 05:09.710
+So lots of options here.
+
+05:09.740 --> 05:17.150
+This is one of my favorite code editors but I recommend finding your own testing different things out
+
+05:17.150 --> 05:19.160
+and finding why you like.
+
+05:19.160 --> 05:26.660
+Usually though the tool like a code editor doesn't make the programmer you just want to get comfortable
+
+05:26.660 --> 05:27.650
+with one of them.
+
+05:27.740 --> 05:31.440
+And from there you'll just write good code.
+
+05:31.730 --> 05:37.250
+So don't spend too much time customizing and making perfect because to me personally that's just a waste
+
+05:37.250 --> 05:37.910
+of time.
+
+05:38.120 --> 05:46.040
+Your time is better spent learning to code actually coding instead of finding just the best color scheme
+
+05:46.040 --> 05:47.110
+to have on your code.
+
+05:47.120 --> 05:47.450
+Ed.

@@ -1,0 +1,394 @@
+WEBVTT
+
+00:00.570 --> 00:01.440
+Welcome back.
+
+00:01.440 --> 00:07.620
+We just learned about modules but let's say our project is getting even bigger.
+
+00:07.620 --> 00:09.040
+We have this main file.
+
+00:09.060 --> 00:10.420
+We have some utility.
+
+00:10.520 --> 00:20.450
+But let's say that we're now working for Microsoft and we have a new let's say shopping functionality
+
+00:20.490 --> 00:25.900
+an entire let's say shopping area where you can buy Microsoft T-shirts.
+
+00:25.950 --> 00:33.850
+Well we can now create a folder so we can add folders to our project and inside of this folder.
+
+00:33.900 --> 00:42.950
+Let's say we have a new file and we'll call this the shopping cart.
+
+00:43.140 --> 00:47.280
+Dot pi.
+
+00:47.320 --> 00:53.350
+So now this shopping cart dot pi is a folder in our project.
+
+00:53.350 --> 00:55.790
+You see that our project is getting bigger and bigger.
+
+00:55.870 --> 01:03.970
+And let's say that here we just have a function called by and we give it an item and let's say here
+
+01:03.970 --> 01:09.750
+we we have a cart variable that let's say adds.
+
+01:09.840 --> 01:14.840
+It's not a very sophisticated buying system but for our example it should be fine.
+
+01:14.850 --> 01:19.300
+And then we just return the cart now.
+
+01:19.330 --> 01:26.530
+In here we have this by function and let's say in our main file.
+
+01:26.530 --> 01:33.580
+So up here we want to also import our shopping cart by function.
+
+01:33.670 --> 01:42.150
+How can we do that well if we tried to do shopping cart like this.
+
+01:42.150 --> 01:45.890
+Remember that's the name of our file.
+
+01:46.000 --> 01:50.070
+You see that I get an underline it says imported but unused.
+
+01:50.100 --> 01:50.460
+OK.
+
+01:50.560 --> 01:51.970
+So does that mean I can use it.
+
+01:52.000 --> 01:53.080
+Let's see.
+
+01:53.080 --> 02:01.930
+Most say shopping cart and if I click Run module not found error no module named shopping cart.
+
+02:02.160 --> 02:13.100
+You see what we've created here is what we call a package a package is simply a folder and we learned
+
+02:13.100 --> 02:22.550
+about module which is these files these Python files a package is a level up a package is a folder containing
+
+02:22.760 --> 02:27.720
+modules so you can have a package with multiple modules inside of them.
+
+02:28.280 --> 02:37.670
+So this shopping cart is a module but this shopping is a package so the way it works when we import
+
+02:37.850 --> 02:41.510
+from a package is we say the package name.
+
+02:41.510 --> 02:46.800
+So what's the package name it's shopping.
+
+02:47.040 --> 02:58.600
+And then we do a dot so dot shopping cart so package name and then the module name.
+
+02:58.610 --> 03:01.130
+Now if we do this let's see if this works.
+
+03:01.250 --> 03:05.960
+Let's say I do shopping dot shopping cart.
+
+03:05.960 --> 03:09.510
+Now if I print this let's make this a little bit smaller
+
+03:12.340 --> 03:13.230
+All right.
+
+03:13.560 --> 03:20.280
+Now I have access to the shopping cart module by importing the package shopping which is the folder
+
+03:20.500 --> 03:28.890
+and in the shopping cart a you notice once again we have a PI cache that was created for the shopping
+
+03:28.890 --> 03:33.960
+cart so let's see if we can use the BI function.
+
+03:34.000 --> 03:42.940
+So I'm going to say bye and then item I'll say I'm buying it just an apple if I click Run.
+
+03:42.960 --> 03:43.530
+There you go.
+
+03:43.530 --> 03:49.300
+I get my apple list and I was able to imported from a package.
+
+03:49.540 --> 03:56.560
+Now here's the thing I want to try and copy what we've just done into a real life scenario instead of
+
+03:56.560 --> 04:01.090
+using this Web site old Dot I.T. let's actually create our own project.
+
+04:01.300 --> 04:07.150
+I'm going to use pi Char and I recommend you use pi chairman's Well just for these next couple of various
+
+04:09.090 --> 04:15.400
+let's open up by picture and let's just create a new project here.
+
+04:15.430 --> 04:17.290
+Now we can call it whatever we want.
+
+04:17.290 --> 04:19.780
+So let's just call it modules for now.
+
+04:19.780 --> 04:22.170
+For our project you can see where it's being saved.
+
+04:22.390 --> 04:26.890
+And remember here we get to pick what interpreter we want.
+
+04:26.890 --> 04:30.330
+We're going to talk about this virtual and later on in the videos.
+
+04:30.460 --> 04:35.620
+But the key thing is to make sure that our base interpreter is using Python 3.
+
+04:35.980 --> 04:40.930
+In my case the Python 3 that we've downloaded and user user local.
+
+04:41.200 --> 04:46.770
+If you're on a Mac or Linux if you're on Windows this path will probably be different.
+
+04:46.780 --> 04:49.120
+Now we can just create a project
+
+04:53.120 --> 04:57.050
+and we see here we have our modules project.
+
+04:57.280 --> 05:01.770
+Now we're going to ignore all these folders for now we're going to talk about them later on.
+
+05:01.810 --> 05:05.560
+The key here is that we want to create a new file.
+
+05:05.890 --> 05:10.720
+I'm going just right click here and say new
+
+05:14.420 --> 05:23.720
+and we can just call it let's say main dot pi and notice here that I created in a folder called V and
+
+05:23.710 --> 05:24.120
+V.
+
+05:24.210 --> 05:25.560
+We'll get back to that shortly.
+
+05:26.340 --> 05:30.960
+Now let's make this a little bit bigger so we can see and we're going to copy whatever we've just done
+
+05:31.140 --> 05:32.170
+here.
+
+05:32.340 --> 05:33.900
+So I'm going to copy
+
+05:36.700 --> 05:40.430
+the main file like this that did not copy.
+
+05:40.430 --> 05:41.200
+Let's try that again
+
+05:45.090 --> 05:53.700
+like that and then we're also going to create a few more files so we'll create a folder so in here.
+
+05:53.740 --> 05:55.270
+I'm just going to say right click.
+
+05:55.360 --> 05:58.540
+Say New in right away.
+
+05:58.540 --> 06:01.140
+You see that it says Python package.
+
+06:01.360 --> 06:08.960
+I'm going to click on Python package or I can create a director if I want as well and when I click here
+
+06:09.080 --> 06:15.540
+let's name the package like we've done here as shopping all right.
+
+06:15.550 --> 06:21.490
+We get our shopping folder and in here let's right click.
+
+06:21.500 --> 06:27.010
+Say new new file and we will call this the shopping cart dot pie.
+
+06:27.020 --> 06:33.110
+So shopping cart dot by.
+
+06:33.180 --> 06:35.950
+And then finally we'll add our utility file.
+
+06:36.050 --> 06:39.670
+You know we're doing a lot but hey I'm trying to prove a point here.
+
+06:39.670 --> 06:42.030
+Trust me this is gonna be important.
+
+06:42.070 --> 06:44.270
+So utility dot pie.
+
+06:44.320 --> 06:45.160
+There we go.
+
+06:45.160 --> 06:47.660
+So we have the same setup that we have here.
+
+06:47.710 --> 06:49.050
+Let me copy this over as well.
+
+06:52.290 --> 06:53.420
+All right.
+
+06:53.550 --> 06:58.400
+And we copy let's make this bigger like that right.
+
+06:58.580 --> 07:06.470
+So we have our files just like we have in our Repsol except this time we're actually using an IDC.
+
+07:06.650 --> 07:13.400
+Now the reason I wanted to transfer over to the IDC is that there's an extra file here that we didn't
+
+07:13.400 --> 07:19.430
+see in the repo and the repo actually hides this away from us.
+
+07:19.460 --> 07:24.290
+You see this underscore in it dot pi far and it's completely empty.
+
+07:24.350 --> 07:26.190
+There's nothing in here.
+
+07:26.270 --> 07:34.400
+One of the rules of a package of a python package is that on the root of this package you have to have
+
+07:34.400 --> 07:38.990
+an underscore underscore in it underscore underscore dot pi.
+
+07:39.000 --> 07:47.090
+Now why is that well because the interpreter is going to read this and say oh this is a python package.
+
+07:47.510 --> 07:53.630
+Remember how when I right click here I said new and then I had an option of a directory or a python
+
+07:53.630 --> 07:59.170
+package by clicking Python package it automatically added this in it for us.
+
+07:59.180 --> 08:04.000
+So although here everything worked without a net.
+
+08:04.250 --> 08:07.470
+This is just something that reptile hides underneath the hood.
+
+08:07.480 --> 08:13.700
+Anytime you want to create a package you'll see that we need to have an Internet file and it can just
+
+08:13.700 --> 08:16.110
+be completely empty now.
+
+08:16.140 --> 08:22.000
+The beauty here with pie chart is that it does it for you which is really really nice OK.
+
+08:22.010 --> 08:25.360
+So let's run this code and make sure that it still works.
+
+08:25.370 --> 08:28.190
+So this is our main dot pie.
+
+08:28.280 --> 08:38.450
+I can simply run the code here by going to run and then selecting run let's run our main file and we
+
+08:38.450 --> 08:39.170
+get an error.
+
+08:39.200 --> 08:40.700
+Let's zoom in here
+
+08:43.810 --> 08:51.190
+and we see that module shopping does a shopping cart has no attribute buy and that is because we did
+
+08:51.190 --> 08:52.990
+not import the BI function here.
+
+08:53.110 --> 08:54.400
+So let's do that.
+
+08:54.430 --> 08:57.740
+Let's go to shopping cart buy.
+
+08:57.820 --> 09:04.470
+Make sure I copy that paste it in let's zoom that in.
+
+09:04.480 --> 09:10.730
+And by the way I'm zooming here on my touchpad I can just use two fingers to zoom in here if I click
+
+09:10.740 --> 09:16.860
+run again and this time once you ran it once you can just click on run again and there we have it.
+
+09:16.930 --> 09:21.000
+We have apple right here as the output.
+
+09:21.430 --> 09:27.280
+And it says process finished with exit code 0 in programming when something exits with code 0 it means
+
+09:27.400 --> 09:28.660
+there were no errors.
+
+09:28.660 --> 09:29.560
+If you get one.
+
+09:29.590 --> 09:32.220
+Well that's usually an error.
+
+09:32.230 --> 09:34.580
+All right so we have everything working.
+
+09:34.580 --> 09:38.090
+And this is now our setup.
+
+09:38.090 --> 09:40.630
+We have our main file.
+
+09:41.000 --> 09:47.540
+We have our other modules like utility and then we also have our packages and their packages because
+
+09:47.540 --> 09:54.290
+they have this init file and we have different modules into and as projects get bigger and bigger and
+
+09:54.290 --> 10:02.300
+we use ideas like Pi charm we organize our functionality our grouping into these packages and modules
+
+10:03.260 --> 10:10.850
+and really really good developers are able to organize code in really nice packages that makes sense
+
+10:10.880 --> 10:13.530
+really nice modules that make sense.
+
+10:13.700 --> 10:16.480
+And this is a skill that is really hard to teach.
+
+10:16.490 --> 10:22.000
+It just comes with practice by looking at other people's projects by working on projects.
+
+10:22.370 --> 10:29.300
+But the key thing is that you want to do what makes sense and when we start working on some of our final
+
+10:29.300 --> 10:34.460
+projects we have over 10 projects coming up that we're going to work on now with those ones.
+
+10:34.460 --> 10:38.410
+You're going to start to learn different ways to organize code as you follow along.
+
+10:38.420 --> 10:40.800
+So don't worry.
+
+10:40.880 --> 10:44.720
+Let's take a break and explore modules a little bit more in the next video.

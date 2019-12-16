@@ -1,0 +1,253 @@
+WEBVTT
+
+00:00.790 --> 00:04.570
+Let's talk about something called arguments and keyword arguments.
+
+00:04.570 --> 00:11.250
+I mean we've already seen that before right with a function we actually have this special characters
+
+00:11.250 --> 00:18.530
+that we can use called ARGs and star star key word args.
+
+00:18.580 --> 00:21.380
+How can we use these.
+
+00:21.390 --> 00:23.240
+Well let's have a look.
+
+00:23.400 --> 00:31.070
+Let's try and have a function let's say define and we'll call this a super func for a super function
+
+00:31.670 --> 00:38.140
+that receives some sort of arguments and these arguments that we're going to receive.
+
+00:38.150 --> 00:44.900
+And remember although I'm calling these args this itself is a parameter remember.
+
+00:44.900 --> 00:53.480
+But let's say that we want to just return some of the arguments and you might be wondering where.
+
+00:53.540 --> 00:59.080
+Some don't we have to define that function well some actually exists in Python as you can see over here.
+
+00:59.510 --> 01:02.770
+So we can just return the sum of the arguments.
+
+01:03.110 --> 01:04.610
+So let's try this.
+
+01:04.610 --> 01:08.890
+Let's say super func and give it arguments.
+
+01:08.880 --> 01:11.540
+One two three four five.
+
+01:11.560 --> 01:12.520
+If I click Run
+
+01:16.930 --> 01:17.780
+I get an error.
+
+01:18.100 --> 01:22.590
+Super func takes 1 positional argument but 5 where.
+
+01:22.590 --> 01:25.150
+Give it and that makes sense right.
+
+01:25.150 --> 01:32.990
+Like I only have one parameter here which is a positional argument that it accepts and I'm trying to
+
+01:32.990 --> 01:34.260
+sum this.
+
+01:34.310 --> 01:40.550
+So it only receives one but I'm giving it to all these things that it doesn't know but and this is where
+
+01:40.550 --> 01:51.500
+we can use something like this by adding a star to here we're saying hey this can accept any number
+
+01:51.680 --> 01:56.610
+of positional arguments like this as many as I want.
+
+01:56.810 --> 01:58.840
+As a matter of fact let's print this out.
+
+01:58.880 --> 02:12.700
+If I do print star ARGs and we run this function we see that the print star args gives us 1 2 3 4 5.
+
+02:12.790 --> 02:17.560
+These are all the parameters or the arguments that we get.
+
+02:17.560 --> 02:26.290
+And if I actually remove the star here and click Run look at that I actually get this as a couple.
+
+02:26.390 --> 02:33.260
+So args inside of this function is a topple of arguments that I give it.
+
+02:33.290 --> 02:34.770
+One two three four five.
+
+02:34.790 --> 02:36.730
+So some of the topple.
+
+02:36.740 --> 02:40.670
+One two three four five is going to give us the right answer.
+
+02:40.670 --> 02:42.890
+It's going to print for us
+
+02:46.380 --> 02:51.650
+the answer 15 very very cool.
+
+02:51.700 --> 03:00.490
+So this way we can extend and use our star args to have enough a function that can accept any number
+
+03:00.790 --> 03:03.390
+of arguments.
+
+03:03.400 --> 03:12.590
+So what is this one now well this one allows us to use keyword arguments for example let's say I have
+
+03:13.010 --> 03:17.990
+the star star key word args like this.
+
+03:17.990 --> 03:20.810
+And by the way this can technically be anything.
+
+03:20.810 --> 03:26.370
+So this is a variable that we're creating so I can name it who if I wanted to.
+
+03:26.450 --> 03:34.520
+But the standard is to name it ARGs and keyword args because other developers are using it this way
+
+03:34.530 --> 03:39.830
+and it's just the way it's done in the Python community now with the keyword arcs as you might have
+
+03:39.830 --> 03:40.600
+guessed.
+
+03:40.670 --> 03:55.440
+I can add keywords like num 1 equals 5 and then num two equals 10 so that if I print the key word ARGs
+
+03:55.620 --> 04:05.180
+and I click Run I get a dictionary of num one equals 2 Five and num two equals to 10.
+
+04:05.390 --> 04:19.700
+So I can actually do something like some plus sum of items in the keyword ARGs and grab the values right.
+
+04:19.740 --> 04:30.220
+We've seen that before and let's actually grab this and do a for loop and say items in keyword arcs
+
+04:30.850 --> 04:31.990
+dot values.
+
+04:31.990 --> 04:38.840
+Remember to grab the values over here and in here just add up the totals.
+
+04:38.900 --> 04:52.150
+So let's say that in here total equals or plus equals items and will add a total in here.
+
+04:52.200 --> 04:55.010
+That is initially zero.
+
+04:55.620 --> 05:12.120
+So that sum will be some args plus total if I run this I get 30 which looks about right now.
+
+05:12.170 --> 05:14.150
+This does look a little confusing.
+
+05:14.240 --> 05:15.960
+So let's go over it.
+
+05:16.040 --> 05:23.840
+We have the star args which allow us to grab these positional arguments and just some everything.
+
+05:23.840 --> 05:31.730
+And we also have keyword arcs which allow us to grab any number of keyword arguments and get a dictionary
+
+05:32.150 --> 05:38.060
+which comes as keyword arcs and then use them however we want in our case we're looping over all the
+
+05:38.060 --> 05:46.880
+values so items in keyword arc values and then I'm just going to total all those items have a total
+
+05:46.970 --> 05:50.390
+and just return the sum.
+
+05:50.440 --> 05:58.120
+Now this is again extremely useful because our super fund can now take as many arguments as many positional
+
+05:58.300 --> 06:02.310
+and keyword arguments as we want now.
+
+06:02.320 --> 06:03.700
+One final thing.
+
+06:03.700 --> 06:09.590
+There is a rule of the ordering that we can do of our parameters here.
+
+06:09.700 --> 06:10.940
+Right.
+
+06:10.960 --> 06:12.020
+So the order.
+
+06:12.050 --> 06:24.690
+The rule is this first in our parameters we have well our actual programs then we can do star arcs then
+
+06:25.290 --> 06:35.400
+default parameters then star star keyword parks.
+
+06:35.570 --> 06:36.890
+Let me show you what I mean.
+
+06:37.160 --> 06:43.280
+If we want to define this function we want to make sure that if we give it a parameter of let's say
+
+06:43.730 --> 06:54.340
+name that should come before Star arcs and if we have default parameters that should usually come after
+
+06:54.460 --> 06:54.810
+arcs.
+
+06:54.820 --> 06:56.320
+But before keyword arcs.
+
+06:56.320 --> 07:07.090
+So if I do let's say i equals high and make sure we add a comma here we now have following the rule.
+
+07:07.090 --> 07:12.310
+And by the way you would never actually write a function like this because well frankly you look super
+
+07:12.310 --> 07:12.960
+confusing.
+
+07:12.970 --> 07:18.850
+Usually you're only using two of these or maybe just one of these.
+
+07:19.060 --> 07:24.190
+But this way I can call this function with name Andy.
+
+07:24.640 --> 07:26.270
+Then my args.
+
+07:26.530 --> 07:34.150
+Then my default parameter which will be I equals to high which lets say we don't even pass in and then
+
+07:34.150 --> 07:41.990
+we have this so if we run here this still works we are just not using name.
+
+07:42.050 --> 07:50.460
+And I bet you see that I'm following the rule of Paramus args default parameters and then keyword arcs.
+
+07:50.690 --> 07:51.140
+All right.
+
+07:51.150 --> 07:53.440
+Hopefully your head doesn't hurt too much after this one.
+
+07:53.580 --> 07:55.810
+Take a break and I'll see you in the next one.
+
+07:55.830 --> 07:56.040
+Bobby.

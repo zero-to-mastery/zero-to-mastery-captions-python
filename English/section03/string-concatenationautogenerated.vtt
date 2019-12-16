@@ -1,0 +1,55 @@
+WEBVTT
+
+00:00.730 --> 00:01.940
+Welcome back.
+
+00:01.960 --> 00:07.870
+I want to quickly touch on the subject of what we call string concatenation.
+
+00:08.920 --> 00:17.030
+Yes programmers love creating really complex names when concepts may not be as complex.
+
+00:17.110 --> 00:20.440
+So what does string concatenation mean.
+
+00:20.440 --> 00:24.900
+Well it simply means adding strings together so I can do.
+
+00:24.940 --> 00:31.570
+Hello plus Andre and I've concatenated the string.
+
+00:31.570 --> 00:34.330
+I've added two strings together.
+
+00:34.330 --> 00:37.820
+So if I print this I get.
+
+00:37.870 --> 00:38.290
+Hello.
+
+00:38.470 --> 00:44.140
+ANDRE So if you ever hear people talk about string Coogan nation that's what they mean.
+
+00:44.570 --> 00:48.170
+We're concatenate ing strings by the way.
+
+00:48.200 --> 00:51.170
+What do you think will happen if I do.
+
+00:51.170 --> 00:51.930
+Hello.
+
+00:52.040 --> 00:52.550
+Plus
+
+00:55.320 --> 00:57.180
+I click Run.
+
+00:57.200 --> 00:59.260
+Hmm mm hmm.
+
+00:59.370 --> 01:09.450
+That's not good is it I get type error must be string not int so it looks like string concatenation
+
+01:09.810 --> 01:15.590
+only works with strings we'll explore that a little bit more in the next video.

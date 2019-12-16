@@ -1,0 +1,55 @@
+WEBVTT
+
+00:00.620 --> 00:03.390
+Let's learn another important key term.
+
+00:03.770 --> 00:10.430
+Well too for that matter one is expressions and the other one is statements.
+
+00:10.430 --> 00:14.190
+You're going to hear this a lot when talking to programmers so what do they need.
+
+00:14.990 --> 00:16.280
+Let's have a look.
+
+00:16.340 --> 00:25.400
+If we create a piece of code here let's just say IQ is one hundred IQ has lowered and then let's say
+
+00:25.880 --> 00:33.370
+user age is going to equal IQ divide by five an expression.
+
+00:33.450 --> 00:36.520
+Is this part of the code.
+
+00:36.670 --> 00:41.970
+It's a piece of code that produces a value.
+
+00:42.280 --> 00:50.030
+In our case this produces a value right because a hundred divided by five is going to equal 20.
+
+00:50.080 --> 00:59.740
+So this is an expression a statement on the other hand is an entire line of code not this entire thing
+
+00:59.890 --> 01:05.020
+but an entire line of code that performs some sort of action.
+
+01:05.110 --> 01:07.740
+In this case what action are we performing.
+
+01:08.050 --> 01:15.220
+Well the action is that we're calculating a hundred divided by five and then assigning that value to
+
+01:15.220 --> 01:17.190
+the variable user H.
+
+01:17.710 --> 01:20.780
+So this is an expression.
+
+01:21.190 --> 01:30.860
+This is a statement and also this is another statement so if you hear me mentioning these terms throughout
+
+01:30.860 --> 01:34.170
+the course hopefully now you know what they mean.
+
+01:34.280 --> 01:35.910
+I'll see the next one by.

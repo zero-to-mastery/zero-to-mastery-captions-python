@@ -1,0 +1,157 @@
+WEBVTT
+
+00:00.780 --> 00:01.110
+All right.
+
+00:01.110 --> 00:02.940
+It feels like it's never going to end.
+
+00:02.940 --> 00:09.420
+We have so many methods with less but like I said lists have a lot of methods because you can do a lot
+
+00:09.420 --> 00:09.990
+with them.
+
+00:10.020 --> 00:13.830
+It seems like a lot right now but trust me these are going to become second nature.
+
+00:13.830 --> 00:15.050
+So hang in there.
+
+00:15.090 --> 00:24.460
+I have a few more to show you the next one is called sort guess what sort is going to do if I click
+
+00:24.610 --> 00:29.570
+Run I get none.
+
+00:29.880 --> 00:37.650
+But remember sort sorts the list as you can imagine in place that means and modifies the list.
+
+00:37.650 --> 00:48.470
+So if I remove this up to here and then do a sort or do basket and I click Run look at that I get a
+
+00:48.470 --> 00:52.750
+sorted list where a D was moved in front of me.
+
+00:53.240 --> 01:02.970
+If I add let's say x at the beginning here and I click run it's going to move the X all the way to the
+
+01:02.970 --> 01:03.170
+end.
+
+01:03.390 --> 01:10.530
+It's going to sort the list in place for me again if I hover over it sees that it's going to not return
+
+01:10.530 --> 01:17.130
+anything which is why our print initially didn't work we had to print our basket not whatever this produces
+
+01:17.160 --> 01:19.960
+which doesn't produce anything.
+
+01:20.400 --> 01:28.280
+But what about this one if we go to built in functions I have something called sorted and if I do sorted
+
+01:28.380 --> 01:35.940
+and because it's a function not a method I can do sorted dot or basket.
+
+01:35.940 --> 01:42.220
+So around the brackets is just like print if I run this.
+
+01:42.450 --> 01:42.820
+All right.
+
+01:42.820 --> 01:55.110
+Nothing has changed but what if I remove this and put it in here if I click Run I get a b c d d e x.
+
+01:55.680 --> 02:01.910
+What if I comment this out so that we're not sorting it anymore we just have the basket and then we
+
+02:01.910 --> 02:04.590
+run this sorted function.
+
+02:04.700 --> 02:10.730
+If I run did you see that sorted.
+
+02:10.730 --> 02:20.890
+I know it's confusing why do they even have to but sorted produces a new array so if I do print basket
+
+02:20.890 --> 02:32.780
+here and I click Run the basket hasn't been modified the basket still remains the same.
+
+02:32.800 --> 02:35.850
+It's this one over here that's not sorted sorted.
+
+02:35.980 --> 02:39.880
+On the other hand doesn't modify the basket in place.
+
+02:39.880 --> 02:44.590
+Instead it creates a new copy of the basket and sorts it.
+
+02:44.590 --> 02:47.110
+It's almost as if we're doing this.
+
+02:47.110 --> 02:54.940
+We're saying new basket equals basket and then we're going to copy that basket.
+
+02:54.940 --> 03:04.630
+Remember list slicing and then we're performing new basket dot sort on this new list so that if I do
+
+03:05.660 --> 03:16.790
+new basket and I click Run we get the same thing so you have to be careful of certain actions that perform
+
+03:16.790 --> 03:22.720
+an action in place or create a completely new list to begin with.
+
+03:22.750 --> 03:31.670
+By the way there's also instead of this a dot copy method that we can use and if I run this again we
+
+03:31.670 --> 03:40.160
+get the same thing copy just as the name suggests copy the list for us and returns for us a new list.
+
+03:40.180 --> 03:40.770
+All right.
+
+03:40.770 --> 03:48.580
+One last one and that is basket dot reverse.
+
+03:48.670 --> 03:49.630
+What do you think this does.
+
+03:49.630 --> 04:00.290
+Based on the name well if I check out the basket here and click Run is that what you expected.
+
+04:01.830 --> 04:12.740
+It reverses the basket in place but notice that it's not like sort it's not sorting it's simply switching
+
+04:12.800 --> 04:15.910
+all the indexes into opposite sides.
+
+04:16.280 --> 04:22.380
+So D is now index of 0 E is now index of one index of 2 3.
+
+04:22.380 --> 04:23.660
+So on and so forth.
+
+04:23.780 --> 04:27.090
+So you can see here that it doesn't actually sort it.
+
+04:27.150 --> 04:38.360
+Instead while we might want to do is sort first then reverse and if we click Run we have a sorted reversed
+
+04:38.990 --> 04:40.350
+basket.
+
+04:40.420 --> 04:44.580
+This is a little tricky one that some interviewers might ask.
+
+04:44.590 --> 04:45.130
+All right.
+
+04:45.130 --> 04:46.790
+Good job getting this far.
+
+04:46.840 --> 04:49.340
+We're almost done with lists.
+
+04:49.340 --> 04:51.290
+So I'll see you in the next video by.

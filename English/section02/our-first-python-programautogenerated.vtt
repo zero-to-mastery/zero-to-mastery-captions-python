@@ -1,0 +1,298 @@
+WEBVTT
+
+00:00.860 --> 00:03.290
+Hey you're still sticking your round.
+
+00:03.290 --> 00:03.710
+That's good.
+
+00:03.710 --> 00:10.460
+I didn't bore you with all my talking but yes in this video finally we're going to write some python
+
+00:10.760 --> 00:11.540
+code.
+
+00:11.540 --> 00:12.190
+Holy moly.
+
+00:12.200 --> 00:12.610
+Thank God.
+
+00:12.620 --> 00:14.860
+I thought that was going to last forever.
+
+00:14.950 --> 00:15.670
+All right.
+
+00:15.770 --> 00:18.450
+So what is our first program going to do.
+
+00:19.190 --> 00:22.910
+Well let's create a very very simple function.
+
+00:23.570 --> 00:29.870
+And probably the first thing any programmer learns to do to print our own name.
+
+00:30.110 --> 00:39.230
+So in here once you have your rebel thought I.T. setup or remember you can also use got that Io we're
+
+00:39.230 --> 00:40.610
+simply going to write.
+
+00:40.610 --> 00:48.150
+Print and then you see over here that it gives us some information but all we want to do is write brackets
+
+00:49.260 --> 00:56.870
+a quote so we can do double quotes here or a single quote and just type your name.
+
+00:59.420 --> 01:08.440
+And if we click run on the right side we've just run our very first python program.
+
+01:08.610 --> 01:12.570
+Very exciting but what's happening here.
+
+01:12.570 --> 01:14.680
+Well let's let's look at everything.
+
+01:14.730 --> 01:17.550
+First of all if you're confused why.
+
+01:17.550 --> 01:20.850
+My thing is dark and yours might be light.
+
+01:20.970 --> 01:27.510
+It's because if I go to settings I've set my theme too light or too dark.
+
+01:27.510 --> 01:28.820
+I prefer the dark version.
+
+01:28.950 --> 01:34.380
+But you can change some of your settings you can change the font size if you want based on when you
+
+01:34.380 --> 01:35.300
+watch the video.
+
+01:35.310 --> 01:41.420
+This Web site the look might be different but most of the settings should be the same we see that we
+
+01:41.420 --> 01:52.750
+have a main dot pie which is the python extension any file that has a dot Pi or P Y is a python file.
+
+01:52.790 --> 02:00.180
+So while we've just written here on line one is a program that prints.
+
+02:00.350 --> 02:04.640
+In this case Andre now goy or in your case your own name.
+
+02:04.820 --> 02:12.800
+And we've written it to this file now wrap all that i t takes this file already has this interpreter
+
+02:13.740 --> 02:23.460
+for us it runs this piece of code gives this source code of main dot pi to the interpreter and runs
+
+02:23.460 --> 02:25.860
+it right here on our right side.
+
+02:26.190 --> 02:30.790
+If you look over here we're using python version three point six point one.
+
+02:30.960 --> 02:36.870
+And down below we see that we have Andre Bagley printed.
+
+02:37.100 --> 02:38.680
+That's awesome.
+
+02:38.780 --> 02:42.120
+So this is our code running.
+
+02:42.220 --> 02:50.440
+Remember this diagram all we've done is we have our main dot pi where we wrote print Andre Agassi we
+
+02:50.440 --> 02:58.780
+gave it to the interpreter that the ripple already provides for us that interpreter takes our code converts
+
+02:58.780 --> 03:07.460
+it into byte code in here he'll say Andre Agassi and then it runs it in the C Python VM which was on
+
+03:07.460 --> 03:13.880
+the right side that we saw and it finally prints our name because it tells the machine hey we want that
+
+03:14.030 --> 03:15.460
+text printed.
+
+03:15.620 --> 03:17.290
+So that's what we're seeing here.
+
+03:17.360 --> 03:24.230
+This is the C Python virtual machine essentially running this code and telling this machine Hey I want
+
+03:24.230 --> 03:25.820
+you to print this.
+
+03:26.080 --> 03:28.410
+All right but this isn't very exciting.
+
+03:28.420 --> 03:33.400
+I mean let's let's make this program a little bit more dynamic for our first program we want to do something
+
+03:33.400 --> 03:36.340
+more impressive than just print name.
+
+03:36.340 --> 03:40.900
+So I'm going to teach you a another thing we can do in Python.
+
+03:41.050 --> 03:51.270
+And it's called input now in here I can say input and you see that ripple it actually gives me some
+
+03:51.900 --> 03:58.450
+information saying that oh I have this you can just click here and this input over here.
+
+03:58.560 --> 03:59.700
+Well what can we do.
+
+03:59.850 --> 04:02.640
+This input is going to prompt a user.
+
+04:02.730 --> 04:10.050
+And if I hover over it you can see how it's giving me some information but input simply gives us a way
+
+04:10.050 --> 04:11.910
+to capture information.
+
+04:11.910 --> 04:24.800
+So let's say what is your name and if I run this code we see that we have our Python code running and
+
+04:24.800 --> 04:28.170
+it's asking me what is my name with this cursor here.
+
+04:28.310 --> 04:29.980
+So I can actually type something here.
+
+04:30.110 --> 04:36.190
+I can say Andre and if I hit enter.
+
+04:36.410 --> 04:37.970
+Well there you go.
+
+04:37.970 --> 04:41.720
+I've just typed in my own name.
+
+04:41.720 --> 04:42.860
+Nothing that exciting.
+
+04:42.920 --> 04:43.640
+Right.
+
+04:43.820 --> 04:51.420
+But this is where code becomes interesting because we can store this information on our computer.
+
+04:51.480 --> 04:57.570
+So again these are things that we're going to go over in detail in our basics Python section.
+
+04:57.780 --> 05:06.630
+But just to write our first code well let's assign this too memory that is let's say that name equals
+
+05:06.960 --> 05:11.760
+whatever is the input of what is your name.
+
+05:11.870 --> 05:20.560
+And then finally we can just print the name so remember the interpreter is going to take this first
+
+05:20.560 --> 05:24.750
+line it's going to ask what is your name.
+
+05:24.770 --> 05:32.750
+I'm going to type something that typed information is going to get assigned to name and then finally
+
+05:32.930 --> 05:35.280
+we print name.
+
+05:35.480 --> 05:37.560
+Remember an interpreter takes.
+
+05:37.610 --> 05:40.480
+Line by line converts code to bite code.
+
+05:40.490 --> 05:44.300
+And then finally runs it so let's give this a try.
+
+05:44.300 --> 05:46.820
+I'm going to click Run.
+
+05:46.840 --> 05:47.080
+All right.
+
+05:47.110 --> 05:48.550
+What's your name.
+
+05:48.550 --> 05:56.190
+My name is Andre do you see the I typed in my name.
+
+05:56.360 --> 05:59.230
+Hit enter and then it printed out.
+
+05:59.300 --> 06:05.090
+ANDRE So for the final feat let's greet.
+
+06:05.280 --> 06:10.070
+So we're going to say print Hello.
+
+06:12.490 --> 06:14.550
+And then plus name.
+
+06:14.710 --> 06:16.390
+Now don't worry about the syntax.
+
+06:16.400 --> 06:24.610
+We're gonna go over it but all we're doing is saying hello and then adding our name to the end of this
+
+06:25.720 --> 06:29.650
+so let's see what happens if I run this and say What is your name.
+
+06:30.160 --> 06:36.330
+My name is Andre and I hit enter I get Hello Andre.
+
+06:36.330 --> 06:44.300
+But no spaces so let's add a little space hit run again for the fourth time My name's Andre and says
+
+06:44.480 --> 06:54.300
+Hello Andre there it is our first python program now it's not very exciting because it is our first
+
+06:54.300 --> 07:01.200
+program we're just learning the steps here but I hope because we've covered some of these topics ahead
+
+07:01.200 --> 07:05.370
+of time that this isn't just pure magic right.
+
+07:05.580 --> 07:13.380
+You understand that this is source code this is main dot PI that we give to an interpreter that runs
+
+07:13.380 --> 07:19.680
+our code line by line and then executes our program.
+
+07:19.680 --> 07:22.370
+In this case are what is your name.
+
+07:22.410 --> 07:23.950
+Program.
+
+07:24.090 --> 07:27.080
+How cool is that.
+
+07:27.100 --> 07:28.670
+This is just the beginning.
+
+07:28.710 --> 07:31.730
+We're gonna get more and more advanced here.
+
+07:31.930 --> 07:33.830
+See if he can play around with this.
+
+07:33.850 --> 07:39.130
+We don't know that much about Python yet but I hope this gets you excited because while there's a lot
+
+07:39.130 --> 07:42.020
+more coding coming along I'll see in the next one.
+
+07:42.090 --> 07:42.640
+Bye bye.

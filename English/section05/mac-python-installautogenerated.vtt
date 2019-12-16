@@ -1,0 +1,166 @@
+WEBVTT
+
+00:00.480 --> 00:04.520
+It's happening after all the suspense all my talking.
+
+00:04.800 --> 00:05.240
+Yes.
+
+00:05.250 --> 00:05.740
+Yes.
+
+00:05.760 --> 00:11.510
+We're finally going to download python on our machines now.
+
+00:11.610 --> 00:18.540
+Based on what device you're using the installation may change but I'll provide videos for each one of
+
+00:18.540 --> 00:23.670
+the operating systems so I'm on a Mac right now.
+
+00:23.740 --> 00:32.170
+And if you're using a Mac or a Linux distribution you might have Python already installed on your machine.
+
+00:32.170 --> 00:32.710
+What do I mean.
+
+00:33.580 --> 00:37.450
+Well if you open something called your terminal.
+
+00:37.450 --> 00:49.650
+So if I'm on my Mac and do command space and I type in terminal press center well right over here if
+
+00:49.650 --> 01:01.810
+I type in Python and press enter you see that I enter something called a ripple or a read Val print
+
+01:01.810 --> 01:07.000
+loop where I can type Python commands like print
+
+01:11.590 --> 01:21.050
+and look at that it's working just like we had our reptile browser or Web site I can type Python here
+
+01:21.500 --> 01:28.250
+and most Macs come pre installed with Python but you might notice something here.
+
+01:28.250 --> 01:33.720
+Yep we're using python version to two point seven to be specific.
+
+01:33.770 --> 01:37.370
+Now as we've talked about that is an older version of Python.
+
+01:37.370 --> 01:40.370
+Ideally we want to install Python 3.
+
+01:40.550 --> 01:47.570
+So we're gonna need to go to Python dot org and install the latest version of Python which is three
+
+01:47.630 --> 01:48.980
+point seven.
+
+01:48.980 --> 01:54.830
+By the time you watch this video there might be a higher version maybe three point eight three point
+
+01:54.830 --> 01:55.780
+nine.
+
+01:55.820 --> 02:03.090
+Now like I said a language is always evolving but what I'm going to teach you in this course is going
+
+02:03.090 --> 02:10.020
+to work for any future versions of python so it doesn't matter if the numbers is a little bit off as
+
+02:10.020 --> 02:13.890
+long as you're installing python version 3 or up.
+
+02:13.890 --> 02:15.360
+You should be all good to go.
+
+02:15.510 --> 02:23.070
+In our case we're on a mac so we're going to just click install and you can see over here that the package
+
+02:23.130 --> 02:24.810
+is being installed.
+
+02:24.930 --> 02:32.980
+I'm going to open it up and just simply run through the commands one to install click through.
+
+02:33.000 --> 02:33.660
+Continue.
+
+02:33.840 --> 02:35.930
+Yes I agree to the license.
+
+02:35.940 --> 02:38.130
+I definitely read all that.
+
+02:38.160 --> 02:46.530
+Yes let's agree and we're going to just continue and install Python if you want to hide your password
+
+02:46.590 --> 02:47.740
+or your fingerprint.
+
+02:47.880 --> 02:49.560
+That works too.
+
+02:49.560 --> 02:54.500
+And you see that we're finally installing our Python interpreter.
+
+02:54.610 --> 02:55.290
+All right.
+
+02:55.290 --> 02:56.190
+There it is.
+
+02:56.190 --> 03:00.360
+We have Python three point seven installed.
+
+03:00.360 --> 03:03.270
+Now if everything worked as planned.
+
+03:03.270 --> 03:14.140
+If I go back to my terminal and I type Python you'll see that you have python version three point seven
+
+03:14.140 --> 03:16.580
+or version three or higher.
+
+03:16.670 --> 03:17.520
+That's good.
+
+03:17.540 --> 03:18.730
+No more Python 2.
+
+03:18.890 --> 03:22.090
+Now depending on your machine.
+
+03:22.160 --> 03:24.600
+Again this is why installations can get tricky.
+
+03:24.650 --> 03:31.280
+You might actually not have this work for example in order to exit out of here we'll say exit and then
+
+03:31.400 --> 03:41.700
+curly brackets you might have to type Python 3 and you'll see that you might have to specify exactly
+
+03:41.700 --> 03:46.410
+the version because if you just do Python it'll be a version too.
+
+03:46.440 --> 03:53.490
+Now if you encounter any problems installing python on your machine I will provide resources that you
+
+03:53.490 --> 04:00.210
+can see attached to this video or you can ask questions in our disk or channel or our Q and A form but
+
+04:00.330 --> 04:07.350
+it looks like we finally have our Python 3 installation on our computer remember we just installed our
+
+04:07.350 --> 04:17.720
+interpreter and our virtual machine our C Python VM in order to write Python and then evaluate that
+
+04:17.720 --> 04:19.840
+python code.
+
+04:19.850 --> 04:20.540
+Good job.
+
+04:20.540 --> 04:23.100
+Let's take a break and I'll see you in the next video Bye.

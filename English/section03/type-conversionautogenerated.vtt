@@ -1,0 +1,100 @@
+WEBVTT
+
+00:00.620 --> 00:01.500
+Welcome back.
+
+00:01.520 --> 00:10.280
+Remember in Python that string is written as SDR and this is a special word.
+
+00:10.310 --> 00:14.930
+Actually it's a built in what we call a function or a built in action that we can take.
+
+00:14.960 --> 00:26.450
+Now let me ask you this what happens if I do string 100 one hundred is clearly a number an integer but
+
+00:26.780 --> 00:36.860
+what if we run the string function on this let's find out let's do print here and then run this.
+
+00:36.860 --> 00:41.870
+If I click Run I get a hundred.
+
+00:41.930 --> 00:43.230
+All right.
+
+00:43.310 --> 00:51.800
+But is this an int or a string to find that out.
+
+00:51.860 --> 00:54.970
+Once again let's wrap this.
+
+00:55.190 --> 01:04.760
+So the answer of whatever this value is into type.
+
+01:05.000 --> 01:10.760
+I know this is a lot of brackets but remember we're evaluating this piece of code.
+
+01:11.120 --> 01:16.820
+So we're turning 100 into a string or running the string action and then we're going to check the type
+
+01:16.940 --> 01:19.850
+of this entire thing and then we're going to print it out.
+
+01:20.000 --> 01:25.130
+If I click Run I see that it's a String type.
+
+01:25.130 --> 01:29.580
+So we've converted one hundred into string using this.
+
+01:29.780 --> 01:34.430
+Now just to confuse you a little bit more what if we do something like
+
+01:38.630 --> 01:40.800
+like this all right.
+
+01:40.830 --> 01:41.850
+Even more brackets.
+
+01:41.850 --> 01:42.800
+What happens now.
+
+01:42.840 --> 01:52.390
+Can you guess while we convert a hundred into a string then convert it back into an integer and then
+
+01:52.390 --> 01:54.660
+we check the type of it which is a class INT.
+
+01:54.670 --> 01:55.630
+And then we print that.
+
+01:56.380 --> 02:07.420
+So remember this was the same as me saying A equals SDR one hundred and then B is going to equal int
+
+02:09.570 --> 02:19.230
+of A because we're evaluating this part and then I'm saying C is going to equal the type of whatever
+
+02:19.800 --> 02:21.580
+B is.
+
+02:21.670 --> 02:31.890
+And then finally we're printing C so that piece of code was the same as doing this very very cool.
+
+02:31.890 --> 02:37.300
+Now this is the idea of type conversion again.
+
+02:37.310 --> 02:41.630
+If I were to write that down it's called type conversion.
+
+02:41.690 --> 02:49.100
+We're converting the type of our data types and you can do that throughout programming and we'll talk
+
+02:49.490 --> 02:52.130
+a lot about this throughout the course.
+
+02:52.130 --> 02:59.210
+But it's the main reason we have things like SDR int we have things like float and many other data types
+
+02:59.210 --> 03:00.700
+that we're going to talk about.
+
+03:00.920 --> 03:02.800
+I'll see in the next video by.

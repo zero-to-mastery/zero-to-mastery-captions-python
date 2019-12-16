@@ -1,0 +1,415 @@
+WEBVTT
+
+00:00.520 --> 00:06.230
+Oh boy wasn't that last lesson super super fun with all that installation and setup and errors.
+
+00:06.280 --> 00:09.790
+Hopefully things will be a lot better as we move along.
+
+00:09.790 --> 00:12.680
+That was I say the hardest part.
+
+00:12.730 --> 00:17.950
+We're back here at the flask framework and the next thing we want to do is we want to go to the quick
+
+00:17.950 --> 00:24.070
+start guide and I know I could just code along and show you exactly how it is but I really want to show
+
+00:24.070 --> 00:28.870
+you the process of how you work as a developer because once you're done with this course you're going
+
+00:28.870 --> 00:32.820
+to be out in the world and you should know how to learn something new.
+
+00:33.370 --> 00:38.830
+Let's say at the next job somebody says hey I want you to use Django instead of flask.
+
+00:38.830 --> 00:40.020
+How do you learn it.
+
+00:40.060 --> 00:46.450
+Well you read the documentation so I just clicked on the quick start because I just want to build a
+
+00:46.450 --> 00:48.400
+server really really quick.
+
+00:48.400 --> 00:53.360
+And you see here that the minimal application is well it looks like this.
+
+00:53.380 --> 00:57.630
+So let's just copy the code from here and we'll talk about it line by line.
+
+00:57.630 --> 01:02.130
+Don't worry so I'm going to close off these index files.
+
+01:02.130 --> 01:06.480
+This script files in the CSF files we're in our virtual environment.
+
+01:06.600 --> 01:16.130
+Let's clear this and we can actually just create a new file so in our web server ledgers say new file
+
+01:16.220 --> 01:24.400
+and I'm going to say server dot pi so we have a new python file and we're going to copy and paste that
+
+01:24.400 --> 01:25.230
+code.
+
+01:25.270 --> 01:28.960
+So we're installing or we already installed.
+
+01:28.990 --> 01:36.970
+So I'm going to import flask from flask and then we do this funny thing called app equals flask and
+
+01:36.970 --> 01:47.570
+we use the flask class to instantiate an app and we do this underscore underscore name.
+
+01:47.570 --> 01:51.750
+Now when something is confusing I always like knowing what's happening.
+
+01:51.770 --> 01:57.430
+So I'm just gonna run underscore underscore name here and actually just printed up so we know what it
+
+01:57.430 --> 01:57.960
+is.
+
+01:59.210 --> 02:03.360
+And for now let's just comment out the bottom part of this.
+
+02:03.440 --> 02:05.280
+Just click save.
+
+02:05.540 --> 02:07.910
+I want to find out what this name is.
+
+02:09.070 --> 02:10.660
+So let's see if we can run this file.
+
+02:10.660 --> 02:19.140
+I'm going to say Python 3 and simply say server dot by O.
+
+02:19.170 --> 02:26.490
+And we're in the desktop right now so let's C.D. into web server that's clear and run that again.
+
+02:26.490 --> 02:29.620
+So Python 3 server up by.
+
+02:29.720 --> 02:37.800
+And there you go so our name in this case is made and why is that.
+
+02:37.800 --> 02:42.440
+Well because this is the main file that we're running this should really be a surprise.
+
+02:42.510 --> 02:42.840
+Right.
+
+02:44.470 --> 02:54.520
+So we've created an instance of a flask app or set up our flask app and this is our app.
+
+02:54.750 --> 02:59.920
+And where we run it from our command line it sets the name as the main.
+
+03:00.000 --> 03:04.560
+So that's the name of our app essentially.
+
+03:04.700 --> 03:04.930
+All right.
+
+03:04.930 --> 03:12.910
+So we've created our app our flask app and then we see that we're using what is this.
+
+03:12.950 --> 03:15.120
+This is a decorator right.
+
+03:15.140 --> 03:22.070
+We learned about this again one of the cool things about frameworks is that they give you what we call
+
+03:22.070 --> 03:24.370
+a higher level of abstraction.
+
+03:24.410 --> 03:30.140
+That means we don't necessarily need to know what this is doing what the code is doing underneath.
+
+03:30.140 --> 03:38.570
+We just know that this app dot wrote decorator gives us some extra tools for us to build a server.
+
+03:38.570 --> 03:45.650
+In this case it's going to say anytime we hit slash or what we call the route I want you to define a
+
+03:45.650 --> 03:53.180
+function called Hello World and return Hello World but let's go back to the documentation.
+
+03:53.470 --> 03:59.290
+Now one thing I want to note here is that when you call your python file make sure you don't call it
+
+03:59.290 --> 04:03.190
+flask dot PI because this would actually conflict with flask itself.
+
+04:03.190 --> 04:10.140
+So name it served up by or hollowed out by whatever you want just in case you get that error.
+
+04:10.160 --> 04:16.020
+Now the next part is to actually run our application our flask application.
+
+04:16.100 --> 04:21.830
+Now there's one other trick here that we need to do we need to run the flask wrong comment.
+
+04:21.860 --> 04:28.070
+So flask also gives us a command line run to actually run our server but we also see here that we need
+
+04:28.070 --> 04:30.240
+to export let's make this a little bit bigger.
+
+04:30.290 --> 04:35.110
+We need to export flask app equals to Hello Dot Pi.
+
+04:35.310 --> 04:39.760
+And as you can see here we just need to give it that environment variable.
+
+04:39.800 --> 04:47.490
+So a flask app just like this and if you're on Windows or partial it shows you what commands to run
+
+04:47.700 --> 04:53.690
+again I'll link to this resource so that you can copy and paste as well in my case I'll just do export.
+
+04:53.910 --> 05:02.730
+So copy and paste here and instead of Hello Dot pi I'm going to name it server dot pie and then we can
+
+05:02.730 --> 05:04.590
+do flask run.
+
+05:04.890 --> 05:11.830
+Now another option is to actually do Python dash and flask run but since we created a virtual environment
+
+05:12.220 --> 05:15.930
+we should be able to run flask run.
+
+05:15.960 --> 05:16.680
+All right.
+
+05:16.860 --> 05:18.060
+We get a little warning.
+
+05:18.060 --> 05:23.840
+This is a development server do not use it in production deployment.
+
+05:23.880 --> 05:24.170
+All right.
+
+05:24.210 --> 05:24.690
+That's good.
+
+05:24.690 --> 05:27.230
+We don't need to worry about because we're not doing production right now.
+
+05:27.230 --> 05:33.990
+This is just something on our computers and you see here that it's running on a GDP went to seven point
+
+05:33.990 --> 05:35.810
+zero point zero point one.
+
+05:35.910 --> 05:37.900
+This is the standard.
+
+05:37.920 --> 05:39.800
+It's what we call a local host.
+
+05:39.810 --> 05:44.400
+This is the U.R.L. or the address of the laptop.
+
+05:44.400 --> 05:45.720
+I'm working on it for you.
+
+05:45.720 --> 05:48.920
+That's the same thing with port five thousand.
+
+05:49.380 --> 05:56.020
+So if I copy this and open this up.
+
+05:56.210 --> 05:56.980
+What.
+
+05:57.050 --> 05:58.450
+Look at that.
+
+05:58.490 --> 05:59.660
+Are you kidding me.
+
+05:59.660 --> 06:03.350
+We just created our server with Hello world.
+
+06:03.350 --> 06:05.670
+Where is this coming from.
+
+06:05.670 --> 06:09.340
+Well it's coming from this right.
+
+06:09.360 --> 06:14.820
+The slash says Hey any time we do the root directory.
+
+06:14.820 --> 06:21.990
+So this is like saying here slash here anytime the browser requests for this end point it's going to
+
+06:22.050 --> 06:23.100
+hit our server.
+
+06:23.160 --> 06:23.700
+And look at that.
+
+06:23.730 --> 06:32.940
+It's actually logging out that one to seven point zero point zero one which is us we logged the century
+
+06:33.320 --> 06:39.080
+the app road is going to say hey hey somebody needs some of our resources some files some data.
+
+06:39.180 --> 06:39.810
+What should we do.
+
+06:40.230 --> 06:45.750
+Well we have this hello world function that we're going to run and we're going to run by returning hello
+
+06:46.020 --> 06:47.750
+world.
+
+06:47.750 --> 06:48.410
+That's right.
+
+06:48.410 --> 06:56.320
+We just created our very first server just to prove that I'm not making this up let's put your own name
+
+06:56.320 --> 07:01.630
+on it refresh and oh I'm refreshing and it's not working.
+
+07:01.630 --> 07:07.720
+And that is because you see here that I'm actually making these requests but the changes haven't been
+
+07:07.720 --> 07:08.120
+saved.
+
+07:08.140 --> 07:11.170
+We actually have to do control or command.
+
+07:11.200 --> 07:13.190
+See that's clear.
+
+07:13.300 --> 07:16.470
+And run the server again.
+
+07:16.510 --> 07:21.340
+So now fi refresh look at that.
+
+07:21.470 --> 07:23.610
+Now that's really cool.
+
+07:23.750 --> 07:25.440
+And I also want to show you that.
+
+07:25.460 --> 07:29.850
+See here it says serving flask app server dot pie.
+
+07:30.080 --> 07:31.790
+Remember when we ran the command
+
+07:35.210 --> 07:39.620
+this where we used flash cap equals server dot pie.
+
+07:39.650 --> 07:40.660
+This is what it's saying.
+
+07:40.660 --> 07:46.850
+We are able to do what we call an environmental variable and set flask cap which is going to get displayed
+
+07:46.850 --> 07:48.500
+here a server dot pie.
+
+07:48.560 --> 07:51.640
+So I could have called our app whatever we want.
+
+07:51.680 --> 08:01.480
+So if I go back here and just say super duper super duper hand I run.
+
+08:01.620 --> 08:06.890
+You see that my flask app is named Super duper.
+
+08:07.020 --> 08:12.680
+Now the other thing I don't like is the fact that every time I make a change I have to restart the server.
+
+08:12.960 --> 08:16.290
+And you can see here that the debug mode is off.
+
+08:17.130 --> 08:23.050
+I can actually turn on the debug mode by doing something like this.
+
+08:23.170 --> 08:31.900
+Once again we use the environment variable and if we go to debug mode in our documentation here you
+
+08:31.900 --> 08:39.820
+can see here that if we do flask and equals development which again is that oh the flask app will say
+
+08:40.370 --> 08:54.840
+env equals development and I run this again you'll see that I'm now in the debug mode on this is something
+
+08:54.840 --> 09:00.480
+that we use again just flasks this specific to make sure that it's in development mode and what this
+
+09:00.480 --> 09:11.490
+does is watch this as I change this and save it I go back and refresh Oh and I get an error.
+
+09:11.550 --> 09:14.160
+Again this is one of the cool things with the debugger.
+
+09:14.160 --> 09:22.100
+So if I make this a little smaller I get an error saying hey cannot import super duper Well that's because
+
+09:22.190 --> 09:29.590
+I just changed the name from super duper but it's actually trying to import this server dot Pi.
+
+09:29.600 --> 09:33.710
+And while we should probably name and server up by because it doesn't work.
+
+09:33.830 --> 09:37.550
+I only changed it just to show you what it does.
+
+09:37.550 --> 09:42.490
+So we can actually fix it again the debug mode as you can see gives us a lot of information.
+
+09:42.710 --> 09:51.040
+So I'm going to close the server fix my silly name from super duper to server dot pie.
+
+09:51.160 --> 09:56.800
+All right we're all good and then we're going to flask run.
+
+09:56.950 --> 10:00.050
+All right let's go back and refresh.
+
+10:00.080 --> 10:00.890
+There you go.
+
+10:00.890 --> 10:01.950
+Everything is all good.
+
+10:01.970 --> 10:07.560
+But the cool part is that now if I change this to just Hello.
+
+10:07.670 --> 10:09.530
+Save.
+
+10:09.670 --> 10:18.220
+Notice how the server notice the changes you see over here detected changes and automatically change
+
+10:18.220 --> 10:19.560
+things for me.
+
+10:19.600 --> 10:25.400
+So if I refresh look at that I don't have to restart the server and everything is working.
+
+10:25.600 --> 10:26.320
+Awesome.
+
+10:26.320 --> 10:32.440
+We have our basic server but we still have a bit more to go because we want to get to the point where
+
+10:32.440 --> 10:38.530
+we can actually serve important information like h mail files the SS files and JavaScript files.
+
+10:38.530 --> 10:40.870
+Let's explore that a little bit more in the next video.

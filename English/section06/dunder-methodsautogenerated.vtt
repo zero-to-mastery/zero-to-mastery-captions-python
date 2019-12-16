@@ -1,0 +1,316 @@
+WEBVTT
+
+00:00.940 --> 00:07.540
+You've waited a long time for this because I've avoided talking about these Dunder magic methods for
+
+00:07.540 --> 00:08.350
+a long time.
+
+00:08.380 --> 00:12.820
+In this video we're finally going to uncover what they do.
+
+00:12.820 --> 00:21.090
+Now we're able to see what our instance has as methods using the door method.
+
+00:21.370 --> 00:26.750
+And we told you that these were inherited from our base object class.
+
+00:26.770 --> 00:30.650
+Now these underscores our special methods.
+
+00:30.670 --> 00:38.360
+Remember how we have things like length for example that allows us to tell the length of an array.
+
+00:38.560 --> 00:46.580
+These are actually implemented using these Dunder methods they allow us to use Python specific functions
+
+00:46.850 --> 00:55.550
+on objects created through our class so let me show you what I mean we're going to create a new class.
+
+00:55.880 --> 00:59.350
+And this is going to be a toy class now.
+
+00:59.440 --> 01:05.800
+In here will define a toy and initialize it with self.
+
+01:05.880 --> 01:13.300
+Then we'll say that it has color and H now will say color equals to color.
+
+01:13.300 --> 01:15.700
+So these will be our attributes
+
+01:18.840 --> 01:22.320
+and H awesome.
+
+01:22.390 --> 01:24.010
+There's our class.
+
+01:24.010 --> 01:33.980
+Now let's say we want to create an action figure this action figure will be instantiated with toy let's
+
+01:33.980 --> 01:36.520
+say color of red and the ages.
+
+01:36.530 --> 01:37.150
+It's brand new.
+
+01:37.150 --> 01:38.990
+So it's 0.
+
+01:39.040 --> 01:45.650
+Now if I use something like let's say s t r that comes with this object.
+
+01:46.000 --> 01:57.430
+If I do SDR or action figure dot underscore underscore s t are like so and we print this
+
+02:01.430 --> 02:03.960
+we see that we get this.
+
+02:04.170 --> 02:11.430
+It's the exact same thing as us doing SDR action figure like this
+
+02:16.320 --> 02:22.210
+these double underscore Dunder methods are special methods that Python recognizes.
+
+02:22.320 --> 02:31.830
+For example the Dunder SDR this special method allows us to use action figure like this using the SDR
+
+02:31.830 --> 02:39.840
+built in function as a matter of fact if you go to the Python documentation under the special method
+
+02:39.840 --> 02:48.770
+names section you'll see that we can do basic customizations of these Dunder methods and it's a long
+
+02:48.770 --> 02:54.380
+list of all these Dunder methods that we can use.
+
+02:54.610 --> 02:58.810
+Now don't go and read every single one of them.
+
+02:58.900 --> 03:02.580
+There are a lot and you're not going to use them that often.
+
+03:02.590 --> 03:05.970
+There's only specific few cases that you're going to use them.
+
+03:06.070 --> 03:10.240
+And the idea is to know how to modify them and how they work underneath the hood.
+
+03:10.630 --> 03:18.040
+So let's go over a few examples for example let's modify what the as a star does.
+
+03:18.910 --> 03:31.220
+I'm going to define my own SDR here I'm going to call self and then in here I'm going to return something
+
+03:31.220 --> 03:31.650
+different.
+
+03:31.670 --> 03:32.710
+I'm going to return.
+
+03:32.720 --> 03:48.730
+Let's say an F string that is let's say self dot color if I run this I get red remember how I said not
+
+03:48.730 --> 03:51.160
+to modify Dunder methods.
+
+03:51.250 --> 03:53.400
+Well sometimes you're allowed to maybe.
+
+03:53.410 --> 04:00.220
+There are cases special cases where you want your class to behave a certain way just like dictionaries
+
+04:00.280 --> 04:05.300
+lists topples and all are objects and Python can behave in certain ways.
+
+04:05.380 --> 04:11.600
+How lists are where access with an index number and a dictionary was accessed with the key.
+
+04:11.650 --> 04:14.570
+Those are all implemented using these standard methods.
+
+04:14.950 --> 04:22.780
+And you see here that because we modified this the SDR now returns red when being called on action figure
+
+04:23.890 --> 04:28.120
+it doesn't change things other than with an action figure.
+
+04:28.120 --> 04:31.720
+If I run this you'll see that it still runs.
+
+04:31.720 --> 04:40.300
+Action figure like this because this is a string the SDR is only modified when we use it on this specific
+
+04:40.480 --> 04:47.210
+object like so what other neat things can we do.
+
+04:48.920 --> 05:01.180
+Well we can change the meaning of the length as well so length I can say self and in here I can just
+
+05:01.480 --> 05:02.140
+return
+
+05:05.950 --> 05:07.750
+now if I print
+
+05:10.420 --> 05:19.100
+length of action figure I click Run I get five very cool.
+
+05:19.370 --> 05:25.100
+By the way if this underline is getting a little annoying which frankly for me it's getting a little
+
+05:25.100 --> 05:25.800
+bit annoying.
+
+05:25.940 --> 05:31.130
+I'm going to click on settings here and just remove the code intelligence so won't tell me when my code
+
+05:31.130 --> 05:35.080
+is wrong but hopefully you can just debug it ourselves.
+
+05:35.110 --> 05:36.250
+All right.
+
+05:36.250 --> 05:37.360
+So there we go.
+
+05:37.360 --> 05:44.720
+We've just changed the length Dunder to return five let's keep experimenting.
+
+05:44.770 --> 05:50.260
+We can also do something like underscore underscore delete and delete.
+
+05:50.260 --> 05:55.030
+Well let's actually use the delete keyword which we actually haven't seen before.
+
+05:55.030 --> 05:55.960
+Delete.
+
+05:55.960 --> 05:59.400
+We can just say return deleted.
+
+05:59.540 --> 06:03.250
+You have to go like this and let's just do print here.
+
+06:03.470 --> 06:05.080
+Print deleted.
+
+06:05.210 --> 06:10.220
+If I click Run I see that I returned delete it.
+
+06:10.250 --> 06:12.140
+Now the delete keyword.
+
+06:12.150 --> 06:16.740
+I haven't really touched you because it's not something that you'll see a lot of.
+
+06:16.740 --> 06:24.230
+Usually this can cause some funny bugs in our programs that I like to personally avoid.
+
+06:24.360 --> 06:31.760
+But the the delete keyword deletes some sort of variable that we might have had in our program.
+
+06:31.760 --> 06:32.150
+All right.
+
+06:32.160 --> 06:33.580
+What else is there.
+
+06:33.690 --> 06:41.540
+Let's change this to use something called call and call is an interesting one.
+
+06:41.570 --> 06:46.260
+Let's say that with coal we're going to return and let's say yes.
+
+06:46.280 --> 06:54.090
+Question mark the neat thing about coal is that now it gives our toy class some super power.
+
+06:54.210 --> 07:03.210
+We can say action figure and then say well with coal we actually can now call the actual object with
+
+07:03.210 --> 07:07.190
+these brackets so using coal.
+
+07:07.230 --> 07:12.870
+I have this special way to call a function which by the way underneath the hood the way we're able to
+
+07:12.870 --> 07:16.260
+call functions is using this Dunder call.
+
+07:16.340 --> 07:19.240
+And if I click Run I get.
+
+07:19.240 --> 07:19.840
+Yes.
+
+07:19.870 --> 07:22.160
+How cool is that.
+
+07:22.250 --> 07:26.350
+All right one last one because I think you're starting to get the idea of this.
+
+07:26.520 --> 07:29.410
+Like I said these are all available in here.
+
+07:29.430 --> 07:33.480
+Usually you don't want to overwrite them but you just want to know that you have the power to do so
+
+07:33.690 --> 07:37.770
+if you choose the next one is called get item.
+
+07:37.770 --> 07:43.330
+So let's two define get item again.
+
+07:43.360 --> 07:52.420
+We're gonna use self at the first parameter and then let's say I for index and in here will return self
+
+07:53.110 --> 07:59.020
+dot and let's add an attribute before we add that I'm going to say self.
+
+07:59.020 --> 08:15.100
+Dot my dict for my dictionary and then add name equals to yo yo and less to has pets equal to False
+
+08:16.730 --> 08:20.150
+now using this I can say my
+
+08:23.900 --> 08:29.810
+and return the item based on the index that we give it so let me show you what I mean.
+
+08:30.570 --> 08:42.530
+If I now do print action figure dot and in here instead of doing the DOT we do the square brackets just
+
+08:42.530 --> 08:50.780
+like we would access perhaps getting a dictionary item we can now using the get item say What properties
+
+08:50.780 --> 08:51.230
+do we have.
+
+08:51.230 --> 08:51.710
+Name.
+
+08:51.720 --> 09:00.920
+So let's say a name and if I print this up I forgot to add a comma in here.
+
+09:00.920 --> 09:07.460
+Let's try that again and if I scroll down you can see I'm really good at reading errors.
+
+09:07.460 --> 09:15.950
+Name the name action figure is not defined because it's action figure not future that's better.
+
+09:16.030 --> 09:16.510
+Look at that.
+
+09:16.510 --> 09:23.980
+My name yo yo was being able to access using this bracket notation using the get item Dunder.
+
+09:23.980 --> 09:31.880
+Very very cool so these special magic methods are really interesting because it allows us to do some
+
+09:32.660 --> 09:42.410
+well some custom modifying of our classes and you can also understand how in Python are built in default
+
+09:42.410 --> 09:50.790
+types had access and abilities to have all these special syntax is we now have that power as well.
+
+09:50.950 --> 09:53.320
+Let's take a break and do a bit of an exercise.

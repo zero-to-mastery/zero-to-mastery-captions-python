@@ -1,0 +1,160 @@
+WEBVTT
+
+00:01.210 --> 00:01.720
+Welcome back.
+
+00:02.440 --> 00:09.010
+I wanted to answer this question that I get a lot of even from professional developers that have been
+
+00:09.010 --> 00:10.120
+in the field for years.
+
+00:10.120 --> 00:14.100
+So I want to tackle this question really quickly right now.
+
+00:14.230 --> 00:16.720
+Why are there so many programming languages.
+
+00:16.750 --> 00:21.970
+Why can we just have one language that does everything and everybody's happy and we don't have to worry
+
+00:21.970 --> 00:25.880
+about learning so many programming languages.
+
+00:25.960 --> 00:33.520
+And here's the thing in your career you don't need to know five 10 eight languages now you can be a
+
+00:33.520 --> 00:40.930
+really successful developer programmer with just want language just finding that speciality of yours
+
+00:41.770 --> 00:48.220
+and programming languages like Python Java and JavaScript offer a lot of opportunities where you don't
+
+00:48.220 --> 00:49.750
+need to learn another language.
+
+00:50.080 --> 00:52.620
+But why are there so many languages.
+
+00:52.810 --> 00:57.760
+If we go to Wikipedia These are the list of programming languages.
+
+00:57.910 --> 01:04.240
+And if you're looking through here you should be intimidated because there's no way in your lifetime
+
+01:04.300 --> 01:12.400
+you're going to learn all of these and while you won't most likely you're going to learn one two maybe
+
+01:12.400 --> 01:20.870
+three languages in your entire lifespan or career as a programmer and different programming languages
+
+01:20.930 --> 01:22.700
+are good for different things.
+
+01:22.700 --> 01:27.190
+Just like we have different tools to let's say build a house.
+
+01:27.320 --> 01:31.910
+You can't just build a house with a hammer you need different tools that are good at different things
+
+01:31.910 --> 01:34.170
+to assemble what you want.
+
+01:34.220 --> 01:40.790
+So it's impossible to build one ultimate language when we have so many applications so many mobile phones
+
+01:40.790 --> 01:45.200
+so many computers so many devices like cameras.
+
+01:45.200 --> 01:52.160
+So you have low level languages that we've talked about like assembly code or C and then we have higher
+
+01:52.160 --> 01:55.070
+level languages like Python and JavaScript.
+
+01:55.070 --> 02:06.350
+Now here's the thing python is usually slower than languages like C++ or C sharp or even Java and we
+
+02:06.350 --> 02:11.030
+don't need to get into technical details here but I do want to tell you about a tradeoff.
+
+02:11.420 --> 02:18.140
+You see you don't really want to write Python code for low level systems and hardware interactions.
+
+02:18.170 --> 02:22.970
+If you're taking this course while you're probably not even interested in that field you see Python
+
+02:23.390 --> 02:29.340
+although slower than some languages is good at one thing and does this really really well.
+
+02:29.720 --> 02:38.480
+That is developer productivity because python is so easy to learn or at least is very similar to the
+
+02:38.480 --> 02:39.770
+English language.
+
+02:40.010 --> 02:45.980
+It's become really really popular for developers to be productive and write code really really fast
+
+02:46.010 --> 02:53.870
+and less lines than something like C so A print Hello World for example in Python would take while just
+
+02:53.870 --> 02:58.260
+one line but all languages have their different strength.
+
+02:58.280 --> 03:02.710
+For example if you want to build an app on Android or an OS device.
+
+03:02.990 --> 03:08.600
+Well you're not really going to use Python but if you want to do machine learning maybe you want to
+
+03:09.020 --> 03:16.580
+build a web server maybe you want to do data visualizations build scripts that process thousands of
+
+03:16.580 --> 03:17.570
+Excel files.
+
+03:17.600 --> 03:22.760
+Well in that case you're going to use Python and we're going to cover what different things you can
+
+03:22.760 --> 03:25.580
+do with Python and what Python is really really good at.
+
+03:25.730 --> 03:29.630
+In this course as we explore different projects later on.
+
+03:29.630 --> 03:31.460
+But keep that in mind.
+
+03:31.460 --> 03:37.760
+The reason there's so many programming languages is that every programming language excels at some things
+
+03:38.090 --> 03:42.190
+and while doesn't do so well at others it's all about tradeoff.
+
+03:42.200 --> 03:44.010
+There is no ultimate language.
+
+03:44.150 --> 03:49.970
+And if a programmer tells you you hate my language is the best language they're probably junior developers
+
+03:49.970 --> 03:51.290
+that don't know what they're talking about.
+
+03:51.470 --> 03:56.270
+Everything is a pro and con everything has a tradeoff.
+
+03:56.270 --> 04:04.490
+And as programmers what really good senior programmers do is being able to detect what these pros and
+
+04:04.490 --> 04:10.760
+cons are and what tool to use for a specific problem something that throughout this course I'm going
+
+04:10.760 --> 04:11.960
+to try and teach.
+
+04:12.110 --> 04:13.560
+I'll see you in the next one.
+
+04:13.760 --> 04:13.950
+Bob.

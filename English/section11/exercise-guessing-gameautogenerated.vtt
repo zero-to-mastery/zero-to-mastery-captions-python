@@ -1,0 +1,493 @@
+WEBVTT
+
+00:00.780 --> 00:01.290
+Welcome back.
+
+00:01.830 --> 00:03.960
+How did you do with the random game.
+
+00:04.110 --> 00:06.010
+Were you able to solve it.
+
+00:06.090 --> 00:06.800
+Let's give it a try.
+
+00:06.790 --> 00:08.600
+Here now.
+
+00:08.630 --> 00:10.870
+I'm just going to use the test stockpile.
+
+00:10.940 --> 00:18.880
+Actually let's just rename it just so it's not confusing I'm going to rename it to random not random
+
+00:19.150 --> 00:27.200
+random game by all right now in here I want to be able to first of all.
+
+00:27.200 --> 00:29.810
+Well let's think about what we need.
+
+00:29.870 --> 00:42.850
+So the first thing we need is to generate a number one through 10 then while we need to do next is to
+
+00:42.910 --> 00:45.170
+get an input from user.
+
+00:45.210 --> 00:45.560
+Right.
+
+00:46.180 --> 00:48.350
+And then we want to do some sort of an input check.
+
+00:48.370 --> 01:04.240
+So let's say check that input is a number one through ten and then check if if number is the right guess.
+
+01:04.380 --> 01:08.550
+Otherwise ask again.
+
+01:08.560 --> 01:12.120
+So that seems like a good program that we can write.
+
+01:12.150 --> 01:14.200
+So how can we do this.
+
+01:14.250 --> 01:17.840
+Well the first task is to generate a number one to 10.
+
+01:17.940 --> 01:25.620
+I know that I'm definitely going to want to import the random library from here and specifically there
+
+01:25.620 --> 01:26.070
+Rand.
+
+01:26.070 --> 01:32.370
+And so I can just say from random import Rand and which we've seen.
+
+01:32.700 --> 01:34.650
+And here I can generate the numbers.
+
+01:34.770 --> 01:43.580
+So let's call it the answer is going to be Rand and from 1 to 10.
+
+01:43.610 --> 01:51.480
+So this is going to be our machine generated random number that we need to try and guess next is we
+
+01:51.480 --> 01:53.390
+have to get the input from the user.
+
+01:53.460 --> 01:54.760
+So how can we do this.
+
+01:54.870 --> 01:56.390
+Well simple right.
+
+01:56.460 --> 02:01.530
+We can get a guess as input from the user and we get the prompt.
+
+02:01.530 --> 02:08.600
+So we'll say guess a number one through 10 all right.
+
+02:08.600 --> 02:09.500
+So that's looking good.
+
+02:09.500 --> 02:12.880
+What about check that input that it's a number one to 10.
+
+02:13.040 --> 02:21.780
+So we have to do a bit of checking here now because we want to keep looping while the user is guessing.
+
+02:21.860 --> 02:26.740
+I'm going to do a while True loop that we have to make sure we break out of.
+
+02:26.750 --> 02:34.100
+So we don't have an infinite loop and in the first part of the while loop I want to check what the user
+
+02:34.100 --> 02:35.440
+inputs.
+
+02:35.450 --> 02:39.210
+So I'm going to say if guess.
+
+02:39.370 --> 02:44.180
+Well we know right away that the input is going to give us a string.
+
+02:44.260 --> 02:47.680
+So we have to make sure we convert this into an end first.
+
+02:47.710 --> 02:48.570
+So let's do that.
+
+02:48.580 --> 02:49.450
+I'm going to say
+
+02:52.330 --> 03:08.300
+Aunt gas is greater than 1 and it guess is less than eleven.
+
+03:08.390 --> 03:13.670
+So in our case let's do zero here because we want to make sure that if it's one it's still good if it's
+
+03:13.670 --> 03:17.390
+10 it's still good in that case.
+
+03:17.510 --> 03:22.940
+Well we can actually try and check if it's the right guess.
+
+03:23.040 --> 03:27.570
+Now what happens if this fails.
+
+03:27.600 --> 03:32.580
+What if the user enters a string that can't be turned into an end.
+
+03:32.880 --> 03:39.870
+For example if I go to my terminal here and I just turn on the Python interpreter and say it and then
+
+03:39.870 --> 03:47.550
+just give it some gibberish I get a value Error Invalid literal for int with base 10 I have no idea
+
+03:47.550 --> 03:48.460
+what you're trying to do.
+
+03:48.570 --> 03:51.490
+So we can check for a value error here.
+
+03:51.520 --> 03:55.630
+So what I'm going to say is to try
+
+03:58.740 --> 04:03.210
+this bit of code and for now we'll just pass in here.
+
+04:03.210 --> 04:12.570
+And if for some reason it doesn't pass and we'll check for value error then I'm going to print Please
+
+04:12.930 --> 04:13.950
+enter a
+
+04:16.790 --> 04:19.960
+a number awesome.
+
+04:20.120 --> 04:29.060
+So we're checking that the input is a number one to 10 so for now just to make sure that this is working.
+
+04:29.060 --> 04:30.050
+Let's just do this.
+
+04:30.170 --> 04:41.630
+Let's break out of this loop for print all good in here and break out of this loop considering that
+
+04:42.560 --> 04:45.680
+right now we're entering a number one to 10.
+
+04:45.840 --> 04:47.330
+Let's just make this a little bit smaller.
+
+04:47.330 --> 04:48.620
+Just so you can see it better.
+
+04:48.620 --> 04:58.260
+There you go and for here we'll just do continue because we'll just keep looping until well until we
+
+04:58.260 --> 04:59.860
+get the right answer.
+
+04:59.880 --> 05:07.530
+So again we're importing Rand and generating some random number one to 10 we're getting the guess from
+
+05:07.530 --> 05:08.320
+the user.
+
+05:08.490 --> 05:11.430
+And then we want to check that the input is a number one to ten.
+
+05:11.460 --> 05:20.000
+So I have a loop that I'm going to keep running and I'm going to ask is the number zero to eleven if
+
+05:20.000 --> 05:21.600
+it is then we're all good.
+
+05:21.650 --> 05:26.540
+If for some reason we get a valuer then we're going to say hey please enter a number.
+
+05:26.660 --> 05:28.070
+So let's just test that up.
+
+05:28.460 --> 05:31.370
+I'm going to go to my terminal or actually we can just run this here.
+
+05:31.460 --> 05:34.360
+Let's run it all right.
+
+05:34.400 --> 05:36.490
+Yes a number one to 10
+
+05:40.050 --> 05:41.890
+and I get all good.
+
+05:42.250 --> 05:44.330
+I think we need a couple of spaces here.
+
+05:44.330 --> 05:45.660
+It looks a little weird.
+
+05:45.740 --> 05:51.290
+So let's just say Guess a number want to 10 and get some spaces.
+
+05:51.320 --> 05:53.850
+Let's run that again.
+
+05:53.850 --> 05:54.360
+There you go.
+
+05:54.360 --> 06:02.430
+And I've actually already noticed in a bug that we need to fix if let's say I enter gibberish oh boy
+
+06:03.270 --> 06:09.830
+God Please enter a number please enter a number and we need to stop this because it's going to get destroyed
+
+06:11.370 --> 06:11.540
+right.
+
+06:11.540 --> 06:14.760
+So what happened here.
+
+06:14.760 --> 06:17.910
+Well we didn't break out of this loop.
+
+06:17.910 --> 06:24.560
+We continued and we just kept going wall to wall to wall through and we kept getting a value error.
+
+06:24.580 --> 06:26.810
+So you have to be careful here.
+
+06:26.900 --> 06:28.810
+Remember when we continue.
+
+06:28.950 --> 06:33.960
+It goes back to the try block or what back to the while loop and it's going to try this again but we're
+
+06:33.960 --> 06:37.170
+not asking for the input or a new input again.
+
+06:37.170 --> 06:41.660
+This is going to fail and then another value happens and then this is going to fail another valley error
+
+06:41.670 --> 06:42.360
+happens.
+
+06:42.450 --> 06:44.580
+So we need to put the gas
+
+06:47.350 --> 06:51.830
+inside here right inside of the tribe block.
+
+06:51.860 --> 07:01.070
+So now if I run this all right let's get the number let's give gibberish I got hey please enter a number.
+
+07:01.080 --> 07:02.690
+All right we'll enter a number will.
+
+07:03.260 --> 07:04.290
+We'll enter.
+
+07:04.290 --> 07:06.660
+How about zero.
+
+07:06.820 --> 07:07.040
+No.
+
+07:07.250 --> 07:13.720
+This doesn't work it's going to keep asking me because well the number that we entered.
+
+07:13.730 --> 07:16.900
+It's less than 1 to 10 but it's a wrong answer.
+
+07:16.910 --> 07:18.940
+We could check is wrong you know.
+
+07:18.980 --> 07:19.400
+Let's do that.
+
+07:19.400 --> 07:26.490
+Let's say else we'll say Hey Bozo.
+
+07:27.030 --> 07:29.060
+I said 1 to 10.
+
+07:29.670 --> 07:30.680
+I'll be a fun one.
+
+07:30.690 --> 07:35.230
+All right let's run this let's do zero.
+
+07:35.250 --> 07:36.830
+Hey Bozo I said I want to 10.
+
+07:36.840 --> 07:38.880
+All right let's do five
+
+07:41.640 --> 07:42.970
+I guess the number want to 10.
+
+07:42.990 --> 07:44.130
+Everything's good.
+
+07:44.130 --> 07:46.040
+All good.
+
+07:46.050 --> 07:46.710
+All right.
+
+07:46.770 --> 07:54.940
+So now what I'm going to do is just see if the guess matches whatever the answer right here is.
+
+07:55.110 --> 08:01.220
+Now before I do that you see here how the pie chart I.D. gives me a little hint.
+
+08:01.260 --> 08:06.660
+A yellow line that says hey this simplified chain comparison can actually be improved.
+
+08:06.660 --> 08:09.090
+It's why ideas are so powerful.
+
+08:09.090 --> 08:11.380
+And here I can actually simplify this.
+
+08:11.460 --> 08:26.320
+I can say if it guess is higher than zero and less than 11 then do this and look at that.
+
+08:26.320 --> 08:32.080
+I just simplify my code and the editor gave me a nice hint OK.
+
+08:32.110 --> 08:34.390
+Let's go through here.
+
+08:34.450 --> 08:42.760
+So instead of saying print all good let's say if this is the case we're going to have another conditional
+
+08:43.320 --> 09:07.750
+and say if the end gets equals to the answer we'll print your a genius and we'll break out of that now.
+
+09:07.760 --> 09:09.430
+Notice here how we're doing it.
+
+09:09.590 --> 09:16.910
+Guess a couple of times maybe a better way of doing it is to just do an end here so we don't repeat
+
+09:16.910 --> 09:24.290
+ourself and run the same function over and over and just have guests like this.
+
+09:24.370 --> 09:29.200
+So again we're cleaning up our code making it read more like English.
+
+09:29.200 --> 09:36.550
+That's nice and now if we run this guy say no let's say five.
+
+09:36.590 --> 09:42.080
+No that's not right let's do six seven eight nine.
+
+09:42.360 --> 09:43.460
+Guy's a tough cookie.
+
+09:43.460 --> 09:47.940
+One two three four.
+
+09:48.010 --> 09:50.780
+Oh come on is it 10 Wow.
+
+09:50.840 --> 09:57.830
+We are definitely not geniuses because we just ball tried 10 times but this looks like it's working.
+
+09:58.070 --> 10:05.250
+Let's make sure that we're actually working this properly by cheating a little bit.
+
+10:05.290 --> 10:16.080
+I'm going to actually print out here the answer so I see what the answer is before I type it in.
+
+10:16.120 --> 10:20.740
+Let's do that actually right here five click Run.
+
+10:20.740 --> 10:20.950
+All right.
+
+10:20.950 --> 10:26.530
+The numbers for if I type in for all right now I'm a genius first right.
+
+10:26.530 --> 10:29.270
+All right we're cheating but it looks like this is working.
+
+10:29.290 --> 10:31.150
+That's pretty cool.
+
+10:31.180 --> 10:38.590
+Now the last part here is that up until now I've used the input but I said I wanted to run it in a terminal
+
+10:39.630 --> 10:44.520
+and I want to be able to actually well give it parameters right.
+
+10:44.640 --> 10:51.750
+We give it the start parameter and the end parameter of randomness so we can make the game as hard as
+
+10:51.750 --> 10:54.540
+we want so that's pretty simple.
+
+10:54.550 --> 11:04.680
+We have the import system here and we simply say sis dot our GV the first parameter.
+
+11:04.680 --> 11:11.900
+Remember the first one is going to be the file name and then the third parameter and that's going to
+
+11:11.900 --> 11:13.880
+be the numbers that we giving it.
+
+11:14.570 --> 11:17.370
+So let's use this file now.
+
+11:17.600 --> 11:23.960
+Let's copy the code and just for this example because it's simpler we'll just add it to our Sublime
+
+11:23.960 --> 11:29.420
+Text file and looks like we have to do six dot ARG V here as well.
+
+11:29.420 --> 11:31.370
+Make sure we don't forget that.
+
+11:31.630 --> 11:36.390
+So let's fix that as well like that.
+
+11:36.430 --> 11:37.600
+That's better.
+
+11:37.610 --> 11:44.620
+And if we run this not int because remember the parameters that we're gonna give it are going to be
+
+11:44.620 --> 11:45.820
+turned into strings.
+
+11:45.880 --> 11:53.030
+So we just have to make sure that we convert this into an int like this.
+
+11:53.060 --> 12:00.720
+Now if we just copy this run this over here let's run it again.
+
+12:00.720 --> 12:07.110
+So I'm pressing up here because I remember as my previous command let's give that I go gets a number
+
+12:07.530 --> 12:09.430
+one or two let's go with one.
+
+12:09.450 --> 12:10.060
+There you go.
+
+12:10.080 --> 12:18.330
+I'm a genius and our program is now working our guessing game is now working very very cool.
+
+12:18.330 --> 12:24.390
+If you've got this good job if you did it well you can just take a look my code and hopefully see where
+
+12:24.390 --> 12:26.200
+you went wrong.
+
+12:26.220 --> 12:27.390
+Good job getting this far.
+
+12:27.570 --> 12:29.020
+I'll see in the next one by.

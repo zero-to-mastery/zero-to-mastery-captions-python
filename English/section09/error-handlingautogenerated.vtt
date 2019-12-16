@@ -1,0 +1,277 @@
+WEBVTT
+
+00:00.270 --> 00:06.630
+Air handling allows us to let the script continue running even if there is an error.
+
+00:06.630 --> 00:10.540
+Let's try an example to show you how we can do error handling and python.
+
+00:11.950 --> 00:17.380
+Let's say we wanted to create a program that allows us to take a user's input.
+
+00:17.440 --> 00:19.830
+Let's say that we ask the user for an H.
+
+00:19.840 --> 00:30.720
+So we use the Input Prompt and say What is your H and then here or we're going to do is just print the
+
+00:30.720 --> 00:31.220
+H.
+
+00:31.260 --> 00:32.970
+Nice and simple program.
+
+00:33.180 --> 00:37.410
+If I run this and I type in let's say 10.
+
+00:38.310 --> 00:39.210
+There you go.
+
+00:39.240 --> 00:41.070
+Everything is working.
+
+00:41.520 --> 00:47.580
+But what if I didn't enter a number and I go like this.
+
+00:47.640 --> 00:52.200
+Well that's still works but is that what I wanted to do with my program.
+
+00:53.230 --> 00:59.560
+Maybe I wanted to enter the age and calculate if they can play the game of not or not whether they're
+
+00:59.770 --> 01:03.480
+18 and over how can we fix this.
+
+01:03.720 --> 01:08.260
+Well one thing we can do is just to wrap this in an end.
+
+01:08.280 --> 01:08.550
+Right.
+
+01:08.550 --> 01:17.930
+So we convert whatever the user gives us into an integer so that if I run this and I type this Oh I
+
+01:17.930 --> 01:28.410
+get an error a value Error Invalid literal for int I'm trying to convert this into an integer but it's
+
+01:28.410 --> 01:31.000
+telling me that's an error I can't do that.
+
+01:31.020 --> 01:36.500
+So how can we fix this with error handling in Python.
+
+01:36.660 --> 01:38.270
+We can do it this way.
+
+01:39.300 --> 01:41.720
+We have the try loops.
+
+01:41.790 --> 01:49.320
+We have the try keyword which says hey I want you to try this piece of code and we have to make sure
+
+01:49.320 --> 01:55.380
+we indented so we try this piece of code now.
+
+01:55.390 --> 02:04.470
+Anything that happens inside of the try block I'm able to handle see where handling is coming from errors
+
+02:05.040 --> 02:18.760
+with the accept keyword and accept says hey if whatever's in here in the try block if anything errors
+
+02:18.770 --> 02:21.320
+out I want you to say something.
+
+02:22.130 --> 02:29.600
+So instead of having this read error that exits out of the program do something else do this so I'm
+
+02:29.600 --> 02:37.400
+going to say print Please enter a number.
+
+02:37.550 --> 02:46.780
+Let's see what happens now five click Run what is my age I'm going to just write gibberish and look
+
+02:46.780 --> 02:56.770
+at that I get Please enter a number I am handling my errors here by wrapping all of my code in a try
+
+02:56.770 --> 03:03.610
+block so I could have just copy pasted my entire file here put it inside of a try block and what's going
+
+03:03.610 --> 03:11.620
+to happen is instead of my program airing out before my program crashes it's going to run this code
+
+03:11.770 --> 03:18.970
+and then it's going to say hey if within this block anything happens we'll catch it in here with the
+
+03:18.970 --> 03:25.540
+except block and I can hear and do whatever I want.
+
+03:25.540 --> 03:29.670
+In my case I can say hey please enter our number but we have a problem.
+
+03:29.700 --> 03:30.480
+Right.
+
+03:30.730 --> 03:37.450
+The program just ended and we want this to keep running I have to click run again and ask for the H
+
+03:37.540 --> 03:45.590
+once again so how can you make sure that we keep running this until while that user actually enters
+
+03:45.590 --> 03:46.660
+something valid.
+
+03:48.030 --> 03:49.710
+Well we've seen this before.
+
+03:49.740 --> 03:55.900
+We can do a while loop and say while true Ron this
+
+03:58.890 --> 04:01.130
+and if this works.
+
+04:02.640 --> 04:06.360
+Well we're gonna hopefully get the H.
+
+04:06.360 --> 04:07.020
+Let's see that.
+
+04:07.020 --> 04:14.450
+If I click Run What's my age let's say no please entry no.
+
+04:14.450 --> 04:15.370
+What's your age.
+
+04:15.380 --> 04:16.660
+Let's try to break it again.
+
+04:16.680 --> 04:16.870
+No.
+
+04:17.030 --> 04:18.380
+Please enter a number.
+
+04:18.380 --> 04:19.210
+All right fine.
+
+04:19.250 --> 04:21.590
+My age is 10.
+
+04:21.590 --> 04:22.190
+There you go.
+
+04:22.190 --> 04:32.930
+I get the name 10 but oh it's still ask me What's my age ideally I want to break out of this true statement
+
+04:33.150 --> 04:33.910
+right.
+
+04:33.980 --> 04:36.070
+So how can I do that.
+
+04:36.080 --> 04:44.300
+Well I can use what we call in here an LS block which we've seen before but this works with a try except
+
+04:44.300 --> 04:51.320
+block we put it at the end it says Hey try this if there is an error do this.
+
+04:51.320 --> 04:56.730
+However if there is nowhere else do this.
+
+04:56.810 --> 05:01.100
+So in our case we can just say break you know what.
+
+05:01.100 --> 05:04.190
+We can even print thank you.
+
+05:04.190 --> 05:05.690
+Just so we're nice.
+
+05:05.690 --> 05:11.940
+If I stop this and run again and I give them my age.
+
+05:12.090 --> 05:13.280
+There you go.
+
+05:13.360 --> 05:13.960
+We're done.
+
+05:14.170 --> 05:24.390
+We broke out of the loop and everything is good in this try except else block can go anywhere we can
+
+05:24.390 --> 05:33.060
+wrap our entire file in a try except else block we can just added into our functions inside of our each
+
+05:33.090 --> 05:36.470
+individual functions whatever we want we can use.
+
+05:36.510 --> 05:44.680
+This is just another tool that Python gives us to handle errors but let me ask you something.
+
+05:44.680 --> 05:57.790
+What if I did instead of print H I did let's say 10 divided by the H if I run my program and I type
+
+05:57.790 --> 06:10.240
+in here zero and I enter Oh I get an error please enter a number but I did enter a number this is a
+
+06:10.240 --> 06:17.460
+buggy program although I'm typing a number it's still giving me the same error message.
+
+06:17.920 --> 06:21.050
+So how do we handle this how do we handle different errors.
+
+06:21.130 --> 06:32.800
+One where it is a value error and another one that is obviously a zero division error well in the except
+
+06:32.800 --> 06:40.810
+block I can simply give it what type of error I want to handle and remember these are built in errors
+
+06:40.810 --> 06:47.620
+in here that I can just copy and paste so in my case I want to say this is for a value error so that
+
+06:47.710 --> 06:53.890
+if I run my program and I type in 0 0.
+
+06:53.970 --> 07:03.270
+I get my error this except block only accepts value errors any other errors it does not care about him.
+
+07:03.390 --> 07:05.980
+So what can we do here.
+
+07:05.980 --> 07:14.350
+Well one option is to copy here and say hey let's add another accept and in this case I want a zero
+
+07:14.350 --> 07:29.440
+division error in case a user enters 0 you can say Please enter H higher than 0 so that if I run this
+
+07:29.440 --> 07:40.240
+now and I do zero I get please enter H higher than zero if I do some gibberish whoops if I do some gibberish
+
+07:41.200 --> 07:44.410
+I get Please enter a number if I finally enter a number.
+
+07:44.440 --> 07:45.000
+Look at that.
+
+07:45.010 --> 07:45.670
+Thank you.
+
+07:45.670 --> 07:48.840
+Everything is working.
+
+07:48.990 --> 07:57.950
+Now here's my question What happens if we enter another value area here and this value error is just
+
+07:57.950 --> 08:00.320
+going to say exclamation marks.
+
+08:00.740 --> 08:01.460
+What happens now
+
+08:06.210 --> 08:14.280
+I get Please enter a number because this except block is going to run only once as soon as it catches
+
+08:14.280 --> 08:23.700
+the error it's looking for it's going to run and then come back to the while loop so only one of the
+
+08:23.700 --> 08:31.090
+errors will be cut OK let's take a break and learn more about error handling in the next video by.

@@ -1,0 +1,301 @@
+WEBVTT
+
+00:00.850 --> 00:04.050
+It's time to finally start coding.
+
+00:04.320 --> 00:10.800
+And in this exercise we're going to be exploring some data that we're going to grab from Kaggle.
+
+00:10.900 --> 00:16.210
+It's time to do some coding so open up your Jupiter notebooks.
+
+00:16.210 --> 00:23.710
+Now in my case I already have some files here but usually it'll just be whatever files you have on your
+
+00:23.710 --> 00:24.610
+desktop.
+
+00:24.670 --> 00:30.310
+It doesn't really matter because we're going to create a new file here and make sure that the notebook
+
+00:30.340 --> 00:39.030
+is going to be in Python 3 so once you create that notebook title it whatever you want in our case we're
+
+00:39.030 --> 00:43.220
+going to be exploring some FIFA Soccer datasets.
+
+00:43.230 --> 00:52.220
+So let's just call it soccer now in order for us to learn about data science and machine learning.
+
+00:52.220 --> 00:54.060
+We remember our steps right.
+
+00:54.080 --> 01:02.270
+We have to import the data so we get the data from what we export last time which is Kaggle.
+
+01:02.370 --> 01:04.770
+If you haven't registered already.
+
+01:04.890 --> 01:06.130
+Make sure you do that.
+
+01:06.150 --> 01:08.730
+Otherwise just sign in.
+
+01:08.820 --> 01:15.680
+And once you're assigned and just go to datasets let's make this a little bit bigger and within the
+
+01:15.780 --> 01:18.190
+datasets again we can pick whatever we want.
+
+01:18.200 --> 01:25.580
+But I feel like checking out the FIFA 20 19 dataset Now I usually like looking at the scores here to
+
+01:25.580 --> 01:27.930
+make sure that it's a good dataset.
+
+01:27.950 --> 01:34.400
+In this case it looks like the FIFA 19 complete player dataset is looking pretty nice.
+
+01:34.400 --> 01:36.670
+We have two megabytes of data.
+
+01:36.970 --> 01:45.020
+It was uploaded eight months ago and it's a one file CSP file so you can actually click on quick look
+
+01:45.020 --> 01:48.710
+here and I'll show you some other information that you may need.
+
+01:48.710 --> 01:52.400
+In our case it's a CSP file so that's great but just a heads up.
+
+01:52.400 --> 02:04.060
+It is a bit of a big dataset so if we click on it we can just simply click on download and wait a little
+
+02:04.060 --> 02:04.480
+bit.
+
+02:04.510 --> 02:12.730
+As your data sets gets downloaded now I want you to unzip this file and put it on your desktop where
+
+02:12.730 --> 02:15.060
+your Jupiter notebook is.
+
+02:15.130 --> 02:21.010
+So you want it in the same folder as the soccer notebook that you just created.
+
+02:21.090 --> 02:30.570
+Let me do that.
+
+02:30.590 --> 02:40.670
+So now if I go to my home I see that I have data dot CSC which is the file that we imported from Kaggle.
+
+02:40.670 --> 02:44.210
+As you can see right now it looks like a massive amount of data.
+
+02:44.210 --> 02:49.560
+We can't really read it because it's in CSP format.
+
+02:49.700 --> 02:58.880
+Now if we go back to our soccer notebook we're going to use the pandas library to do our data analysis
+
+02:58.940 --> 03:02.300
+to see what we actually get from Kaggle.
+
+03:02.300 --> 03:08.750
+Now in our case we used Kaggle to grab our data but you can imagine that there's different ways to gather
+
+03:08.750 --> 03:15.590
+the data and you can for example like we saw use something like beautiful soup to scrape web pages so
+
+03:15.590 --> 03:20.960
+that you can understand it better so you can use any type of data possible.
+
+03:20.960 --> 03:27.800
+Ideally if it's in a CSP format then we can use pandas and really do some neat things with it.
+
+03:28.490 --> 03:31.490
+So let's take a look now.
+
+03:31.520 --> 03:41.700
+Luckily for us by opening Jupiter with Anaconda remember the anaconda navigator we actually have access
+
+03:41.760 --> 03:51.260
+to libraries like pandas automatically so all we have to do is simply say import pandas and we can do
+
+03:51.380 --> 03:56.470
+as PD just so we have a shorthand instead of typing out pandas every time.
+
+03:57.320 --> 04:09.290
+So if I do this I now have access to pandas and with pandas I can do read underscore CSP to actually
+
+04:09.350 --> 04:18.470
+read our CSP file and because our CSP file is in the same folder as our soccer notebook I can just simply
+
+04:18.500 --> 04:31.360
+give it the string data dot CSC which is what we have over here downloaded so if I run this I get my
+
+04:31.360 --> 04:39.350
+data right here and look at that I have my pretty data with nationality we have links to photos we have
+
+04:39.350 --> 04:45.270
+the name of the players the ideas the age and a ton of other things.
+
+04:45.290 --> 04:53.840
+Now the neat thing with PANDAS is that we get this output as what we call a data frame and pandas allows
+
+04:53.840 --> 04:59.610
+us to manipulate this data frame so that we can do interesting things with it.
+
+05:00.560 --> 05:10.370
+So usually what you'll see is you'll just create a variable data frame equals PD dot read CSP so that
+
+05:10.370 --> 05:18.050
+now this data frame is while we get down here all this information is now in our data frame variable
+
+05:18.950 --> 05:24.270
+and we can do interesting things and run different methods and properties on it.
+
+05:24.470 --> 05:35.520
+So for example if I do data underscore frame dot shape Oh give me more information about my data in
+
+05:35.520 --> 05:42.300
+this case you'll see that a couple object is not callable I get nice errors in my Jupiter notebook and
+
+05:42.300 --> 05:48.300
+that's because the shape is actually not a method but instead a property on data frame.
+
+05:48.390 --> 05:51.840
+So if I run this again look at that.
+
+05:51.840 --> 05:54.580
+This is the shape of my data.
+
+05:54.810 --> 06:03.780
+I have eighty nine columns and while a ton of rows now I can also do different things and this is the
+
+06:03.780 --> 06:10.670
+neat part about Jupiter is that I can just leave the input and output here and if I do a different cell
+
+06:10.670 --> 06:13.380
+block I'll still have this information.
+
+06:13.410 --> 06:16.480
+You'll still have imported pandas as PD.
+
+06:17.160 --> 06:24.030
+So if I do now data frame dot let's do describe
+
+06:26.600 --> 06:34.520
+I'll be able to run this and again it shows or describes the data that I have with describe.
+
+06:34.530 --> 06:36.780
+We get the count.
+
+06:36.780 --> 06:45.270
+So for example the overall age accumulated we get the mean age that is the average age of the players
+
+06:45.270 --> 06:46.800
+so twenty five.
+
+06:47.100 --> 06:53.370
+And we also get interesting things like maybe the oldest player is forty five the highest.
+
+06:53.370 --> 06:55.280
+Jersey number is ninety nine.
+
+06:56.630 --> 07:06.330
+And all this different type of data finally if I do something like data frame dot values and I run this
+
+07:08.980 --> 07:17.440
+I get all the values of my data and you see here that it's an array that has different players in it.
+
+07:17.620 --> 07:26.590
+So remember how I said libraries like no I work with arrays and lists in Python and help us manipulate
+
+07:26.590 --> 07:27.320
+them.
+
+07:27.430 --> 07:37.750
+Well as you can see our data frame is stored as an array of each individual player that we could potentially
+
+07:37.870 --> 07:45.570
+manipulate and what we've done here is we've simply imported the data.
+
+07:45.850 --> 07:51.700
+So we learned the first step of our small steps that is to import the data.
+
+07:51.820 --> 07:58.770
+We found the data and we used pandas to grab our data into a data frame.
+
+07:58.780 --> 08:03.150
+Now there are many different things they can do with pandas.
+
+08:03.460 --> 08:09.070
+And I want you to after this video I'm going to link to this resource so you can try different methods
+
+08:09.070 --> 08:17.360
+and properties on your data frames to see what type of things we can do so I want you to go through
+
+08:17.360 --> 08:20.480
+this exercise and just try different things.
+
+08:20.510 --> 08:27.210
+For example in filtering here we can try and learn about filtering our data frame.
+
+08:27.540 --> 08:36.070
+So again if I just copy paste this changes to our variable that we have so data frame and then we want
+
+08:36.070 --> 08:45.520
+to filter let's say let's look at the shape of our data or see what type of data we have you know what
+
+08:45.610 --> 08:49.180
+let's Let's filter by H.
+
+08:49.180 --> 08:58.800
+So I'm going to say data frame we're going to go by age and I'm going to say age is going to be older
+
+08:58.800 --> 09:02.200
+than let's to list you 40.
+
+09:02.220 --> 09:03.210
+If I run this
+
+09:06.570 --> 09:09.720
+hope and age should be capitalized here.
+
+09:09.720 --> 09:13.210
+So I've got a kicker if I run this again.
+
+09:13.260 --> 09:15.150
+There we go.
+
+09:15.190 --> 09:16.470
+I got a list.
+
+09:16.510 --> 09:24.010
+I grabbed the head which means just the first couple of people of players with age over 40.
+
+09:24.010 --> 09:30.130
+And I was able to do that just by looking at some of the pandas documentation and learning about filtering.
+
+09:30.760 --> 09:32.350
+So I want you to explore this.
+
+09:32.350 --> 09:34.110
+It's not too long.
+
+09:34.360 --> 09:41.590
+And try out different data manipulation techniques so that you get familiar with pandas again you don't
+
+09:41.590 --> 09:43.380
+need to memorize this often.
+
+09:43.570 --> 09:50.670
+You usually will just look at the documentation and grab the data that you need in the next video.
+
+09:50.700 --> 09:54.610
+We're going to try and solve an interesting problem with this dataset.
+
+09:54.780 --> 09:56.530
+I'll see in the next one by.

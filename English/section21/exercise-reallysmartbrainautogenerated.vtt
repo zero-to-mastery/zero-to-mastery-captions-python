@@ -1,0 +1,502 @@
+WEBVTT
+
+00:01.270 --> 00:05.850
+Our final project in the course and I want us to have a little bit of fun.
+
+00:05.980 --> 00:11.980
+This one is gonna be nice and quick but also a ton of fun that hopefully gets you excited about the
+
+00:11.980 --> 00:14.320
+power of machine learning.
+
+00:14.320 --> 00:22.960
+Now my personal opinion is that most of the machine learning moving forward is not about creating our
+
+00:23.080 --> 00:31.630
+own models or doing really complex math and statistics but instead it's in the ability of us to use
+
+00:31.750 --> 00:38.590
+pre-existing models to solve business problems to solve human problems.
+
+00:38.590 --> 00:45.370
+And I want to demonstrate this by using a great library called Image A.I. and as you can see here let's
+
+00:45.370 --> 00:46.840
+make this a little bit bigger.
+
+00:46.870 --> 00:54.580
+It's a python library built to empower a developer to build applications and systems with self-contained
+
+00:54.760 --> 01:03.160
+computer vision capabilities that is instead of us having to build a computer vision model all from
+
+01:03.160 --> 01:11.050
+scratch we can use pre existing tools to use something like this library to solve a problem or maybe
+
+01:11.050 --> 01:17.640
+create an entire business around a model that is freely accessible to us.
+
+01:17.720 --> 01:22.480
+And I'm going to show you this awesome library that's going to do some really neat things.
+
+01:22.720 --> 01:25.610
+So I'm going to link to this resource.
+
+01:25.690 --> 01:33.610
+But what we're going to do is we're going to create an image recognition app where we feed it some photos
+
+01:33.850 --> 01:40.610
+and it's going to be able to tell us exactly what that image has that's pretty cool right.
+
+01:40.620 --> 01:48.730
+Let's get started so if we read through the documentation it actually has a pretty good overview of
+
+01:48.850 --> 01:49.630
+what we can do.
+
+01:50.830 --> 01:55.380
+Now as you can see here we have to install a few things for us.
+
+01:55.840 --> 02:01.120
+So let's just copy this and I'll go over what some of these do.
+
+02:01.120 --> 02:08.080
+So where you're going to copy and paste make sure that you're using Pip version 3 based on your installation.
+
+02:08.320 --> 02:16.360
+We're using tensor flow and carry us and open CV which is an image processing library and tensor flow
+
+02:16.360 --> 02:19.660
+and tariffs are very popular.
+
+02:19.660 --> 02:21.800
+Machine learning libraries.
+
+02:21.800 --> 02:23.670
+Now we're going to install this.
+
+02:23.950 --> 02:31.460
+And as this is being installed it's quite a bit to install so just a heads up that these libraries tend
+
+02:31.460 --> 02:32.620
+to be heavier.
+
+02:32.780 --> 02:37.010
+And then we also want to install the image api library.
+
+02:37.370 --> 02:43.450
+So let's copy this and let's see if this is done nope it's still gone.
+
+02:43.450 --> 02:55.640
+Give it a bit of time let's clear this and run the image A.I. OK.
+
+02:55.920 --> 02:56.610
+All right.
+
+02:56.610 --> 03:04.020
+So hopefully we have these libraries installed and what we can do is well just simple image prediction.
+
+03:04.020 --> 03:13.320
+So I've created a folder here really smart brain that has an empty python file and three images that
+
+03:13.350 --> 03:15.390
+I'll attach to this lesson.
+
+03:15.450 --> 03:20.060
+We have a giraffe image a Godzilla image and a house image.
+
+03:20.130 --> 03:28.810
+So let's see how we can use the image A.I. library what we can do is say from Image A.I. we're going
+
+03:28.800 --> 03:41.380
+to use the prediction module and we're going to import the image prediction part of it.
+
+03:41.390 --> 03:48.650
+Now we also want to grab these files so I'll just do a simple import of the OS library so that I can
+
+03:48.650 --> 04:00.530
+say execution path will equal the OS dot get current working directory that is wherever I'm running
+
+04:00.530 --> 04:03.530
+this from get to whatever directory where we're in.
+
+04:03.560 --> 04:13.110
+So that's just saying President working directory I'll grab this directory for us so that's the execution
+
+04:13.110 --> 04:24.140
+path and we can instantiate the prediction image prediction that we just imported by saying image and
+
+04:24.140 --> 04:35.910
+this should be capital I make this a little bit bigger so I'm going to say image prediction to instantiate
+
+04:35.910 --> 04:39.020
+it and in here we can do some different things.
+
+04:39.190 --> 04:44.650
+If we go back to the library we're using the image prediction option here.
+
+04:44.650 --> 04:49.330
+Keep in mind that this library actually can do different things like object detection which is really
+
+04:49.330 --> 04:53.320
+really cool or video object detection.
+
+04:53.320 --> 04:56.670
+But for now we're interested in the image prediction.
+
+04:56.710 --> 04:58.900
+So if we go to tutorial and guide
+
+05:03.140 --> 05:07.320
+you'll see exactly here what we can do to do the predictions.
+
+05:07.370 --> 05:11.590
+So let's just copy this for now and go over what it does.
+
+05:11.600 --> 05:12.610
+Line by line.
+
+05:12.980 --> 05:21.770
+We have our prediction variable and we set the model type that is we decide what model we want to use.
+
+05:21.770 --> 05:25.990
+Now this library has a few models that we can use.
+
+05:26.390 --> 05:31.400
+And these are really popular models that are already pre-built.
+
+05:31.400 --> 05:38.450
+For example Google Brain team has this model that's created the Facebook A.I. research created this
+
+05:38.450 --> 05:44.210
+model for image processing and then resonate a very famous model by Microsoft.
+
+05:44.450 --> 05:51.350
+Now we'll use the squeeze net because as you can see the size of the model is quite small compared to
+
+05:51.350 --> 05:52.060
+the other ones.
+
+05:52.070 --> 05:55.160
+That is the downside of these models.
+
+05:55.160 --> 06:03.920
+Sometimes they can be heavy but the smaller the algorithm the faster the prediction time but the less
+
+06:04.070 --> 06:05.260
+the accuracy.
+
+06:05.270 --> 06:09.780
+So instead of using the resonant let's use squeezed net.
+
+06:10.100 --> 06:18.260
+So I'm going to change this to squeeze net next is to set the model path.
+
+06:18.450 --> 06:27.630
+So again we're using the OS to find the model that we want to use we actually have to download these
+
+06:27.630 --> 06:29.170
+models if we want to use them.
+
+06:29.310 --> 06:34.760
+So you can see here if I click on it I get a little download of the squeezed net.
+
+06:34.830 --> 06:41.780
+So again the more accurate ones are we'll just have more bytes of data that you have to download.
+
+06:41.810 --> 06:42.610
+So it's up to you.
+
+06:42.620 --> 06:44.990
+I'm going to use the squeeze net though.
+
+06:44.990 --> 06:48.080
+So now I get this file which I can move
+
+06:54.120 --> 06:55.700
+into my project folder.
+
+06:55.740 --> 06:57.000
+So let's go to desktop
+
+07:00.030 --> 07:06.260
+go to a really smart brain and then plug it in here.
+
+07:06.270 --> 07:11.950
+So again this is a binary file that we can just use as our model.
+
+07:11.970 --> 07:20.470
+I'm just going to copy the file path or the name so that instead of the resonant we'll use the squeezed
+
+07:20.470 --> 07:24.710
+net model.
+
+07:24.860 --> 07:33.990
+And then finally we want to load the model and then make some predictions if we go back to the documentation
+
+07:34.530 --> 07:40.860
+we can make the predictions by copying this piece of code we see that we have the predictions and the
+
+07:40.860 --> 07:41.820
+probabilities.
+
+07:41.820 --> 07:46.680
+That is how confident the model is in its prediction.
+
+07:46.680 --> 07:55.230
+And we're simply saying Hey predict image let's make this a little bit smaller predict image and we're
+
+07:55.230 --> 08:00.200
+gonna give it the image that we want to test in our case instead of one dodgy Peg.
+
+08:00.210 --> 08:01.490
+We'll say giraffe.
+
+08:01.590 --> 08:13.730
+So let's say giraffe dodge a peg and we'll keep result count at five and then finally we do a for loop.
+
+08:13.750 --> 08:19.930
+So for each prediction we're going to zip the predictions and probabilities and just print out the output
+
+08:20.050 --> 08:21.170
+that we want.
+
+08:21.340 --> 08:23.350
+Let's actually see what this does.
+
+08:23.350 --> 08:31.300
+I'm going to save this and run our brain dot pi.
+
+08:31.360 --> 08:34.690
+I have to say Python 3 brain dot pi
+
+08:37.570 --> 08:40.800
+so we get actually the answer here.
+
+08:41.110 --> 08:44.360
+But I want to talk about the area that you might encounter.
+
+08:44.380 --> 08:48.310
+So if you see over here I get some errors in my code.
+
+08:48.310 --> 08:52.860
+And again this is something that depends on the machine that you're running this from.
+
+08:52.870 --> 08:59.380
+You might have different issues but these are mostly warning based on my library versions that we've
+
+08:59.380 --> 09:06.620
+installed again depending on when you're watching these videos some of these warnings may appear to
+
+09:06.620 --> 09:14.660
+you based on again the tensor flow the open CV the image A.I. libraries that we use.
+
+09:14.750 --> 09:22.400
+Or I might even get issues with my CPSU that doesn't support instructions that this binary which is
+
+09:22.400 --> 09:31.220
+the H5 binary that we installed does not actually support but in the end we still get an answer right
+
+09:31.220 --> 09:31.940
+here.
+
+09:32.030 --> 09:40.390
+Let's make this a little bit bigger we get some looking good it looks like twenty eight percent it thinks
+
+09:40.390 --> 09:43.840
+that this is a You've roughed gross I don't even know what that is.
+
+09:43.840 --> 09:50.200
+Let's let's google image that I roughed GROSS Oh that's really funny.
+
+09:50.270 --> 09:50.930
+Look at that.
+
+09:50.930 --> 09:59.240
+So it thought that this is what the image was off and it was 28 percent confident it thought a what
+
+09:59.280 --> 10:00.740
+might have been a prairie chicken.
+
+10:00.770 --> 10:04.580
+That's 10 percent confidence a Cheeto a partridge.
+
+10:04.580 --> 10:04.810
+All right.
+
+10:04.820 --> 10:07.400
+So it didn't really get her right did it.
+
+10:07.400 --> 10:10.240
+That that image does look a little confusing.
+
+10:10.250 --> 10:15.010
+So unfortunately that model wasn't accurate enough.
+
+10:15.170 --> 10:18.020
+But see here what the code is doing right.
+
+10:18.230 --> 10:29.490
+The code when we loop says hey I want five results of your predictions and then I want you to grab the
+
+10:29.490 --> 10:36.880
+predictions and the probabilities the confidence that you have in these predictions and because squeezed
+
+10:36.890 --> 10:40.760
+net is not necessarily the most accurate.
+
+10:40.760 --> 10:43.190
+It didn't figure out the giraffe image.
+
+10:43.190 --> 10:44.470
+But what about Godzilla.
+
+10:44.480 --> 10:45.500
+That's another tough one.
+
+10:45.560 --> 10:47.470
+Let's do the Godzilla image.
+
+10:47.810 --> 10:51.860
+If I save and run this again let's clear
+
+10:55.600 --> 10:56.010
+again.
+
+10:56.030 --> 10:57.700
+We're waiting we're waiting.
+
+10:57.920 --> 10:59.090
+And there we go.
+
+10:59.090 --> 11:01.160
+We have American alligator.
+
+11:01.200 --> 11:03.560
+46 percent confidence.
+
+11:03.560 --> 11:05.190
+Does it look like an alligator.
+
+11:05.200 --> 11:05.540
+All right.
+
+11:05.540 --> 11:08.180
+That's not too bad actually.
+
+11:08.200 --> 11:12.310
+We also get the common iguana for 18 percent confidence.
+
+11:12.310 --> 11:12.760
+All right.
+
+11:12.760 --> 11:14.740
+Last one less to house.
+
+11:14.980 --> 11:19.670
+If we do house here save and hit run
+
+11:23.710 --> 11:29.210
+Hey look at that we get a boat house for 58 percent.
+
+11:29.540 --> 11:37.720
+By the way I also just downloaded the resonant model which is supposed to be a little bit more accurate
+
+11:37.810 --> 11:40.000
+is about 100 megabytes.
+
+11:40.000 --> 11:44.560
+So that took a bit of time but I want to see if the accuracy improves.
+
+11:44.560 --> 11:53.870
+So I just changed said bottle type as resonant and changed the path to now the new model that I have.
+
+11:53.870 --> 11:54.110
+All right.
+
+11:54.110 --> 11:55.500
+We don't need to open that.
+
+11:55.550 --> 11:56.900
+So let's give that a go.
+
+11:56.900 --> 12:01.190
+I'm going to run again.
+
+12:01.320 --> 12:08.070
+You see here that it took a little bit longer than previously because it is a bigger model but it looks
+
+12:08.070 --> 12:11.340
+like it thinks this is either a church or a boat house.
+
+12:11.340 --> 12:13.480
+But it's pretty sure it's a church.
+
+12:13.560 --> 12:13.830
+All right.
+
+12:13.830 --> 12:15.930
+It kind of looks like a church.
+
+12:15.930 --> 12:21.480
+What about the Godzilla image lost to Godzilla.
+
+12:21.590 --> 12:25.060
+See what they think of that.
+
+12:25.160 --> 12:29.030
+All right it's super confident that it's an American alligator.
+
+12:29.030 --> 12:29.360
+All right.
+
+12:29.380 --> 12:31.520
+Still not great but what about the giraffe.
+
+12:31.540 --> 12:38.220
+Let's let's check out the giraffe fire on this Oh boy.
+
+12:38.270 --> 12:41.270
+This is not that great either.
+
+12:41.270 --> 12:43.670
+So as you can see it's hit or miss.
+
+12:43.670 --> 12:51.620
+The idea is that this is never going to be perfect but ideally we create a model that is useful enough
+
+12:51.860 --> 12:58.040
+to derive some sort of business outcomes or positive business outcomes.
+
+12:58.040 --> 13:04.550
+Now this was just a little taste of what you can do with Python and machine learning the real power
+
+13:04.820 --> 13:13.040
+comes when you combine pre-built models that big companies have already built for us to use them to
+
+13:13.040 --> 13:16.580
+solve our day to day problems or our business problems.
+
+13:16.580 --> 13:19.040
+And that's why python is so popular right.
+
+13:19.580 --> 13:22.170
+It's the idea of the developer community.
+
+13:22.180 --> 13:32.020
+There are so many libraries so many tools that are given by the community to everybody who uses python.
+
+13:32.060 --> 13:38.080
+Python is popular because our possibilities are endless.
+
+13:38.300 --> 13:44.390
+As you saw there so many career opportunities so many different projects they can do.
+
+13:44.390 --> 13:50.690
+So I encourage you to explore this library explore other libraries and see how you can use python to
+
+13:50.690 --> 13:52.670
+make your life easier.
+
+13:52.700 --> 13:54.500
+I'll see in the next one by.

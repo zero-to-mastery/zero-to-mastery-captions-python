@@ -1,0 +1,307 @@
+WEBVTT
+
+00:00.890 --> 00:01.860
+Welcome back.
+
+00:01.880 --> 00:05.210
+We have our data but it's still kind of dirty.
+
+00:05.210 --> 00:07.180
+I mean we haven't really filtered.
+
+00:07.180 --> 00:10.280
+I only care about the stories with over 100 votes.
+
+00:10.430 --> 00:15.020
+And we also want a pretty way to display them.
+
+00:15.020 --> 00:16.520
+So let's work on that.
+
+00:16.520 --> 00:26.060
+I want to create a function and we'll call it create custom Hacker News and this create custom Hacker
+
+00:26.060 --> 00:36.540
+News is going to receive links and votes which we have about over here now in here.
+
+00:36.790 --> 00:44.630
+What we're going to do is we're going to create a new Hacker News list that is empty to start off with.
+
+00:44.740 --> 00:52.660
+And for now all I want to do is return the hacker news list.
+
+00:52.660 --> 01:00.430
+But within this list I only want to add the text and none of the ACM out.
+
+01:00.610 --> 01:03.840
+So for example for the links we only care about the title.
+
+01:03.910 --> 01:05.280
+So how can we do that.
+
+01:05.380 --> 01:07.600
+We want to loop through some things.
+
+01:07.630 --> 01:12.850
+What we're going to do is say for and we'll use enumerate here.
+
+01:12.850 --> 01:21.160
+So we're gonna have an index and then an item and in here we're going to enumerate.
+
+01:21.260 --> 01:26.180
+Remember we've seen the innumerate before which gives us an index as well.
+
+01:26.180 --> 01:30.490
+And we're going to enumerate the links and I'll show you why we want to enumerate.
+
+01:30.500 --> 01:41.680
+And the second so in here I want to grab the title of each link by simply doing this.
+
+01:41.700 --> 01:51.910
+We're going to say link of index or less changes to idea X. That's a little nicer.
+
+01:51.910 --> 02:00.980
+So we're going to grab the index of each link and we can use something in beautiful soup called get
+
+02:01.330 --> 02:02.210
+taxed.
+
+02:02.360 --> 02:07.750
+And this is going to get the text inside of the tech and just to get us started on this.
+
+02:07.760 --> 02:15.090
+I'm going to just simply say Hacker News dot append and add to the list the title so let's see what
+
+02:15.090 --> 02:20.400
+happens when I call this I'm going to say create custom Hacker News I'm gonna pass it the links and
+
+02:20.400 --> 02:21.570
+the votes.
+
+02:21.960 --> 02:28.030
+So let's save run this and it looks like I cannot spell enumerate here.
+
+02:28.030 --> 02:33.620
+So let's fix that should be a new merit with E.
+
+02:33.630 --> 02:36.060
+Let's try that again.
+
+02:36.100 --> 02:37.090
+All right.
+
+02:37.090 --> 02:39.780
+No errors but we want to ideally print this.
+
+02:39.790 --> 02:41.230
+So let's just say
+
+02:44.590 --> 02:45.780
+and see what we get.
+
+02:45.810 --> 02:49.070
+I'm going to run this.
+
+02:49.150 --> 02:49.860
+All right.
+
+02:49.990 --> 02:50.540
+Look at that.
+
+02:50.620 --> 02:57.880
+We have all of the texts the titles of our links.
+
+02:57.910 --> 02:58.360
+That's great.
+
+02:59.700 --> 02:59.950
+OK.
+
+02:59.970 --> 03:03.420
+But these titles are useless without a link.
+
+03:03.420 --> 03:04.190
+Right.
+
+03:04.200 --> 03:13.080
+And if you remember a link in an HMO is defined with what we call an H ref.
+
+03:13.160 --> 03:22.010
+This H ref attribute is the link that we can click to go to the next page or to the page of this title
+
+03:22.960 --> 03:28.310
+so we can also grab that and we can call it H ref.
+
+03:28.540 --> 03:39.310
+And this is going to equal lengths index and this time around we don't want to get the text.
+
+03:39.420 --> 03:41.710
+We want to get the attribute right.
+
+03:41.820 --> 03:50.430
+So we can actually say dot get and then grab the H ref and just in case there are no H refs or maybe
+
+03:50.430 --> 03:56.750
+the link is broken we can give a default in the second parameter and I'll just say not so that.
+
+03:56.820 --> 04:05.530
+Now this hack can use append if we just append let's say this time the H ref and I run this look at
+
+04:05.530 --> 04:08.340
+that we have all the links on the page.
+
+04:08.560 --> 04:09.150
+That's awesome.
+
+04:09.790 --> 04:12.660
+But how can we combine the title and a draft now.
+
+04:13.390 --> 04:16.180
+Well this should be fairly simple right.
+
+04:16.210 --> 04:17.670
+We can use a dictionary.
+
+04:17.770 --> 04:26.680
+So in our list we can append a dictionary that has the title which will be the title that we have here
+
+04:27.950 --> 04:38.110
+and then also have the link that will be the H ref right over here.
+
+04:38.150 --> 04:42.750
+So here now we'll have a dictionary with title and link.
+
+04:42.950 --> 04:48.100
+So if I save and run this again.
+
+04:48.220 --> 04:56.700
+Look at that we have a dictionary that has a link and also a title awesome.
+
+04:56.790 --> 05:04.110
+So we grab the information that we need we grab the link and the text none of the other stuff matters
+
+05:04.110 --> 05:04.580
+to us.
+
+05:04.680 --> 05:06.830
+But we still have the votes.
+
+05:06.910 --> 05:08.130
+So how can we do that.
+
+05:10.530 --> 05:11.270
+The votes.
+
+05:11.310 --> 05:16.580
+Well we can create a variable or instead of votes just to distinguish it from this.
+
+05:16.590 --> 05:22.290
+Let's just say points and points is going to be.
+
+05:22.570 --> 05:23.850
+Well what we're going to do.
+
+05:23.860 --> 05:28.470
+We're going to grab the votes index.
+
+05:28.500 --> 05:35.460
+Remember we're looping through this and we're simply going to say get taxed.
+
+05:35.550 --> 05:46.080
+Now let's see what we get initially when we do get taxed so in here I'm just going to print points and
+
+05:46.080 --> 05:46.700
+see what we get.
+
+05:46.980 --> 05:53.660
+And I'm going to remove the print from here just so we can focus on the points for now so I'm going
+
+05:53.660 --> 05:57.850
+to save and run.
+
+05:57.860 --> 05:58.460
+All right.
+
+05:58.580 --> 05:59.560
+We get an error.
+
+05:59.630 --> 06:05.560
+We get all these points but it looks like I get an error saying list index out of range.
+
+06:05.780 --> 06:11.810
+And this is a little gotcha that you're going to have to sometimes debug when scraping Web sites.
+
+06:11.870 --> 06:17.840
+But essentially what happened here is there is a story and this is a special one that actually doesn't
+
+06:17.840 --> 06:22.530
+have any votes which is very rare on the front page of Hacker News.
+
+06:22.700 --> 06:25.240
+But this one over here doesn't have any votes.
+
+06:25.250 --> 06:32.570
+So essentially what it's saying is I never grabbed the scores the points of this.
+
+06:32.660 --> 06:38.000
+So we have technically more links than we have votes.
+
+06:38.120 --> 06:42.320
+So by the time we get to the to the last link here.
+
+06:42.410 --> 06:45.950
+Well the list of votes is one less.
+
+06:45.950 --> 06:52.160
+So it's going to say hey I'm trying to grab the votes at the very end but there's no more votes.
+
+06:52.160 --> 06:58.550
+This list is shorter than the links list so we can just do a quick check here to make sure that when
+
+06:58.550 --> 07:04.740
+we grab these things that we only care about stories with votes.
+
+07:04.790 --> 07:11.030
+And luckily for us this is why we want to check if a story is more than 100 points the way we're going
+
+07:11.030 --> 07:12.070
+to do that.
+
+07:12.230 --> 07:15.260
+We're going to add an if statement right here.
+
+07:15.500 --> 07:21.740
+Now before we add the if statement we actually want to convert this into a number so we can say hey
+
+07:21.800 --> 07:32.630
+if a story has more than 100 points then we want to keep it and appended to our new how can use.
+
+07:32.630 --> 07:42.290
+So the first thing we want to do is to simply say that we want to convert this into an int but we also
+
+07:42.290 --> 07:51.500
+want to replace the points here the space points into well nothing so we can use the dot replace method
+
+07:52.370 --> 08:00.960
+and simply say hey anytime you see space points which is what we see over here I want you to replace
+
+08:00.960 --> 08:04.110
+that with just an empty string.
+
+08:04.140 --> 08:11.310
+So this is going to return for us a string that is a number and then convert it into an integer.
+
+08:11.340 --> 08:22.300
+So let's test it at let's close a bracket here hit safe and run our script and there you go.
+
+08:22.300 --> 08:23.880
+We have our numbers.
+
+08:23.920 --> 08:24.400
+That's great.
+
+08:24.670 --> 08:26.760
+But again we still have this error.
+
+08:26.800 --> 08:27.880
+So what can we do here.

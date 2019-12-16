@@ -1,0 +1,223 @@
+WEBVTT
+
+00:00.330 --> 00:08.460
+An unavoidable part of being a programmer is that your programs are going to give a lot of errors.
+
+00:08.580 --> 00:10.230
+You can't avoid bugs.
+
+00:10.230 --> 00:20.960
+You can't avoid programs breaking a simple print function here with let's say a misspelt word with let's
+
+00:20.960 --> 00:22.160
+say no comma.
+
+00:22.160 --> 00:23.370
+If I run this.
+
+00:23.540 --> 00:25.970
+We've been seeing this a lot right.
+
+00:25.970 --> 00:30.890
+We've been seeing a lot of this red throughout this course.
+
+00:30.890 --> 00:42.660
+A lot of these errors if I tried to add one plus let's say true click Run that works but then all of
+
+00:42.660 --> 00:54.150
+a sudden I decide to add hello to one and yet again we see that red this time a type error an error
+
+00:55.500 --> 01:06.520
+that crashes our program like this is called an exception and Python raises these exceptions whenever
+
+01:06.520 --> 01:10.070
+the interpreter says hey I have no idea what you're doing.
+
+01:10.180 --> 01:11.150
+Something's wrong.
+
+01:11.170 --> 01:12.680
+I don't know what I'm doing anymore.
+
+01:12.700 --> 01:18.360
+I'm going to stop whatever I'm doing and I'm going to give you an output.
+
+01:18.440 --> 01:21.320
+This is bad because right now we're just playing.
+
+01:21.320 --> 01:29.720
+But if we're Google and people depend on us to maybe check their email to watch YouTube videos if our
+
+01:29.720 --> 01:34.800
+programs have exceptions and they stop working and they error out that's bad.
+
+01:35.820 --> 01:38.640
+That could cost companies millions.
+
+01:38.670 --> 01:43.760
+So how can we handle these exceptions that crash our program.
+
+01:43.770 --> 01:47.180
+Well we need something called error handling.
+
+01:47.760 --> 01:54.060
+It's a natural part of being a programmer and a great programmer is able to handle errors in their program
+
+01:55.150 --> 02:01.570
+because instead of letting our programs just error we're able to handle them so that if we get something
+
+02:01.570 --> 02:07.400
+like a type error like this we can actually handle that error within our programs.
+
+02:07.540 --> 02:09.850
+And in this section we're going to learn all about them.
+
+02:10.480 --> 02:18.250
+But the key takeaway is that error handling allows us to let the python script continue running even
+
+02:18.250 --> 02:20.200
+if there are errors.
+
+02:20.200 --> 02:22.190
+Sounds pretty interesting right.
+
+02:22.210 --> 02:27.750
+Well before we get into that let's just talk about some of the errors that exist in Python.
+
+02:27.770 --> 02:29.290
+We've already seen type error.
+
+02:29.420 --> 02:35.150
+Where are we trying to do something between two different data types that aren't compatible such as
+
+02:35.150 --> 02:40.950
+adding int and string and these built in exceptions in Python.
+
+02:41.060 --> 02:44.670
+There's lots of them and I'll link to this resource you can take a look.
+
+02:44.720 --> 02:51.770
+But if I scroll through here you see attribute error and of file layer we keep going we have a name
+
+02:51.770 --> 02:52.200
+error.
+
+02:52.250 --> 02:57.850
+We have so many error reference errors just a ton.
+
+02:57.920 --> 03:01.610
+Let me just go through some of them that are quite common.
+
+03:01.760 --> 03:03.820
+One is a syntax error.
+
+03:03.920 --> 03:16.070
+If I do def and let's say who who and I forget to a semicolon here and I run this I get a syntax error.
+
+03:16.090 --> 03:18.300
+It's not a standard Python syntax.
+
+03:18.310 --> 03:26.900
+I have to fix my error I can also get something called a name error if let's say I use one plus name
+
+03:27.260 --> 03:33.810
+like this and I click name like this.
+
+03:33.810 --> 03:35.890
+You can see the red underline here.
+
+03:35.890 --> 03:38.790
+I get undefined name so that if I run this code
+
+03:42.160 --> 03:42.880
+I'll get a name.
+
+03:42.880 --> 03:47.540
+The name is not defined we've seen type error.
+
+03:47.840 --> 03:50.600
+But what about this.
+
+03:50.600 --> 03:53.370
+What do we have a list let's say.
+
+03:53.370 --> 03:55.170
+Ally.
+
+03:55.360 --> 03:56.910
+One two three.
+
+03:56.940 --> 03:57.930
+And I access.
+
+03:57.940 --> 04:07.840
+Ally let's say an index of 5 5 run this I get an index error list Index is out of range.
+
+04:07.980 --> 04:09.980
+What if we had a dictionary.
+
+04:10.110 --> 04:17.270
+So let's say we're creating a dictionary here we'll say a equals 1.
+
+04:18.450 --> 04:20.500
+And you know I will just leave it at that.
+
+04:20.520 --> 04:26.120
+So this will be a dictionary if I do dictionary here.
+
+04:26.200 --> 04:34.870
+And just try to access something that doesn't exist and I click Run I get a key error because I'm accessing
+
+04:35.020 --> 04:44.680
+a key that doesn't exist we can also have let's say five divided by zero which should give me a Zero
+
+04:44.680 --> 04:50.260
+Division error because I'm trying to divide by zero and well you just can't do that.
+
+04:50.290 --> 04:54.450
+So there's lots of errors or built in exceptions in python.
+
+04:55.120 --> 04:57.340
+Now you don't have to memorize any of these.
+
+04:57.490 --> 05:01.350
+Most of the time they'll come up in your program and you'll know what they mean.
+
+05:01.480 --> 05:04.810
+But you can always use this as a reference to read them.
+
+05:05.120 --> 05:14.290
+The question you should be asking yourself is how do we avoid these because most programs aren't just
+
+05:14.410 --> 05:16.570
+us typing information.
+
+05:16.570 --> 05:19.250
+Usually programs interact with the outside world.
+
+05:19.270 --> 05:19.940
+Right.
+
+05:20.020 --> 05:29.140
+When I log into my email I let a user use their email and password when I play a game I let a user control
+
+05:29.170 --> 05:30.550
+a character.
+
+05:30.550 --> 05:36.730
+So programs are constantly interacting with the outside world and they have to make sure that whatever
+
+05:36.820 --> 05:43.630
+input they get is the right type that they're expecting because if they receive something that they
+
+05:43.640 --> 05:54.270
+didn't expect like no and this number just happens to be let's say zero that we give it while this user
+
+05:54.270 --> 05:56.010
+broke our program.
+
+05:56.010 --> 06:03.840
+So we need to handle these situations where a user might give something bad that we wouldn't want in
+
+06:03.840 --> 06:09.670
+the next video we're going to explore how we can handle our errors I'll see in that one.

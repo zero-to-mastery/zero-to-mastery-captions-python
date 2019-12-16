@@ -1,0 +1,70 @@
+WEBVTT
+
+00:00.890 --> 00:02.160
+Welcome back.
+
+00:02.330 --> 00:06.680
+Databases exist for us to store data that persists.
+
+00:06.680 --> 00:13.320
+That is data that hopefully lasts for as long as we want it so we can analyze the data.
+
+00:13.400 --> 00:17.060
+Maybe we can grab it when we need it.
+
+00:17.390 --> 00:23.960
+And that's what databases do and most of the time when you're working with web development you have
+
+00:23.960 --> 00:28.090
+the front end that focuses on the browser side of things.
+
+00:28.100 --> 00:31.900
+So that is the CSA s the javascript the HMO.
+
+00:32.030 --> 00:39.230
+We have the backend which is usually the server side where we can use things like Python flask Django
+
+00:39.380 --> 00:47.870
+to build a server and then we also have this database side in the backend where the server communicates
+
+00:47.900 --> 00:54.950
+with something like Mongo D.B. a type of database to actually store this information.
+
+00:55.070 --> 01:01.670
+So instead of storing that information on an Excel file like we have been we can store it on an actual
+
+01:01.670 --> 01:04.760
+database which gives us a lot more power.
+
+01:04.970 --> 01:11.430
+Now again this isn't a course about databases so we don't need to fully go into the topic.
+
+01:11.660 --> 01:20.210
+If I go back to server dot pie in the submit form I want to wrap this in a try except block just so
+
+01:20.210 --> 01:23.280
+we can catch errors in a better way.
+
+01:23.300 --> 01:35.210
+So after the post I'll do a try block and we'll just indent this and we'll also do a except here
+
+01:38.210 --> 01:49.250
+and in here we'll just return if there's an error something or let's just say did not save to database
+
+01:50.500 --> 01:57.640
+so that as we're testing this out we know if something wrong has happened in our case we're going to
+
+01:57.640 --> 01:58.930
+check for the post.
+
+01:59.050 --> 02:05.500
+If it's not a post method then we have an else condition that's going to return something where I'm
+
+02:05.500 --> 02:05.940
+wrong.
+
+02:05.950 --> 02:11.240
+Try again and then we are going to try this piece of code.
+
+02:11.320 --> 02:14.650
+Otherwise we're going to return did not save to database.

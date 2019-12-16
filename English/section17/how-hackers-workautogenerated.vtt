@@ -1,0 +1,166 @@
+WEBVTT
+
+00:00.890 --> 00:02.130
+Welcome back.
+
+00:02.180 --> 00:04.750
+How are we going to build this stool.
+
+00:04.760 --> 00:09.470
+How are we going to know what passwords have been hacked and what does it really mean anyway.
+
+00:11.070 --> 00:14.050
+Well passwords get leaked all the time.
+
+00:14.160 --> 00:16.620
+We've heard about data breaches right.
+
+00:16.620 --> 00:21.660
+Facebook has been hacked with data breaches Equifax linked in Yahoo.
+
+00:21.660 --> 00:28.800
+All these big companies sometimes get their databases leaked and essentially what happens sometimes
+
+00:28.920 --> 00:34.460
+is are usernames and passwords get leaked to the public.
+
+00:34.650 --> 00:42.630
+And hackers what they do is they compile these lists of leaked usernames and passwords and essentially
+
+00:42.630 --> 00:46.760
+try to log in to different services.
+
+00:46.860 --> 00:54.030
+So there are databases or you can't think of them as massive Excel files of all emails and passwords
+
+00:54.060 --> 00:57.660
+that have ever been leaked throughout history.
+
+00:57.660 --> 01:04.980
+And there's actually a Web site created by somebody called Troy Hunt who's a very famous security researcher.
+
+01:05.160 --> 01:11.520
+And it's called Have I been Ponte and what you can do here is you can actually enter your email address
+
+01:11.670 --> 01:15.500
+and say let's go Andy at gmail dot com.
+
+01:15.540 --> 01:18.980
+Has this ever been leaked Oh no.
+
+01:19.000 --> 01:27.430
+It looks like it's been porn so it looks like it's been pawned on 88 breached sites and found 27 pastes
+
+01:28.430 --> 01:33.980
+what this means essentially is that this email has been part of a data breach.
+
+01:34.010 --> 01:39.480
+So maybe I used this e-mail as my Facebook log in.
+
+01:39.500 --> 01:45.770
+Well when Facebook got hacked and some users maybe stole user information.
+
+01:45.770 --> 01:53.880
+Well this email was part of it as a matter of fact out of for 88 breaches and if I go to passwords here
+
+01:54.360 --> 01:56.970
+you can actually do the same thing about passwords.
+
+01:57.180 --> 02:01.050
+I can check my password and you can see over here that it doesn't show.
+
+02:01.180 --> 02:04.380
+And I can click over here to see if it's been popped.
+
+02:04.410 --> 02:09.000
+Now I just enter some gibberish here and it looks like no no punished found.
+
+02:09.060 --> 02:10.530
+But why does this matter.
+
+02:10.530 --> 02:17.190
+Why do we care that e mails and passwords have been leaked hackers who use something called dictionary
+
+02:17.190 --> 02:20.100
+attacks a dictionary attack.
+
+02:20.190 --> 02:28.950
+Well kind of like a Python dictionary uses a massive dictionary with the key and value of let's say
+
+02:28.950 --> 02:37.950
+a username and password and just tries to log into Web sites using these massive lists of information
+
+02:39.970 --> 02:42.820
+and if your username and password has ever been leaked.
+
+02:42.850 --> 02:50.320
+Well a hacker simply runs what's called a brute force attack where it just loops through all these leaked
+
+02:50.320 --> 02:52.960
+usernames and passwords and tries to log in.
+
+02:52.960 --> 02:58.900
+So maybe going into Facebook and just looping through this massive list eventually they're going to
+
+02:58.900 --> 03:02.090
+hit something and be able to log in.
+
+03:02.120 --> 03:06.840
+Now here's the thing this isn't a web development course.
+
+03:06.890 --> 03:12.830
+I mean this course is about Python and although we have a section on web development what I can tell
+
+03:12.830 --> 03:18.830
+you is that most of the time even though I trust this Web site it uses something called HDD P.S. which
+
+03:18.830 --> 03:27.360
+is encrypted I or you should never really trust a Web site with your password.
+
+03:27.360 --> 03:36.000
+Yes maybe a big Web site like Facebook maybe Google we trust but ideally you don't want to send your
+
+03:36.000 --> 03:43.700
+password like this over the Internet because what's happening here as soon as I click this is that it's
+
+03:43.700 --> 03:46.460
+being transferred to a server somewhere in the world.
+
+03:46.550 --> 03:50.780
+It's traveling through the Internet wires and somebody could intercept it.
+
+03:51.200 --> 03:54.520
+So there's actually a more secure way of doing this.
+
+03:54.560 --> 04:02.090
+And this is why we're going to build this Web site actually gives us a password API for us to do this
+
+04:02.120 --> 04:03.470
+and check our passwords.
+
+04:03.470 --> 04:11.540
+But in a more secure way because sure we might trust this Web site but the best security is to trust
+
+04:11.750 --> 04:12.340
+no one.
+
+04:12.440 --> 04:18.890
+Right now what I'm about to show you and why we're going to do is actually a technique used by legitimate
+
+04:18.890 --> 04:21.670
+password managers like keeper one password.
+
+04:21.680 --> 04:24.890
+You might have heard of Blur sticky password.
+
+04:24.890 --> 04:28.920
+These are expensive password managers that keep your passwords secure.
+
+04:29.000 --> 04:32.180
+But we're going to build that ourselves because we're programmers.
+
+04:32.330 --> 04:39.680
+So in the next video we're actually going to start coding a bit and learning about this passwords API.
+
+04:40.100 --> 04:41.760
+I'll see in the next one by.

@@ -1,0 +1,100 @@
+WEBVTT
+
+00:00.570 --> 00:02.810
+Let's say that we've created our model now.
+
+00:02.850 --> 00:12.510
+We have our K and N dot predict function that we can now run whenever we want to perhaps use let's say
+
+00:12.510 --> 00:17.960
+a user inputs a whole new photo that we haven't seen before of an iris flower.
+
+00:18.000 --> 00:21.370
+And we want to predict what that flower type is.
+
+00:21.540 --> 00:22.350
+How can we do that.
+
+00:23.250 --> 00:25.200
+Well let's create a new variable here.
+
+00:25.200 --> 00:31.590
+Let's say a sample equals and create our own sample data.
+
+00:31.590 --> 00:35.120
+If we go to our data over here
+
+00:38.150 --> 00:45.480
+we see that the data set over here has 1 2 3 4 parameters.
+
+00:45.540 --> 00:48.620
+So this is an array that contains 5.1.
+
+00:48.720 --> 00:55.420
+Three point five one point four and zero point two so let's just enter some numbers here.
+
+00:55.510 --> 01:06.550
+Let's say that here we have three then five then four then two and then the second image has a parameter
+
+01:06.550 --> 01:11.380
+of 2 and 3 and 5 and 4.
+
+01:11.410 --> 01:22.570
+So that's our sample data we can now give our can then predict function which is our model.
+
+01:22.710 --> 01:33.150
+These sample data so let's say that's going to equal the predictions variable and let's just do something
+
+01:33.150 --> 01:37.030
+neat with some list comprehension here.
+
+01:37.110 --> 01:54.020
+We'll say that they predict species is going to equal the iris dot target names p for p which is a variable
+
+01:54.020 --> 02:04.190
+that we create in the predictions so I'm just using a little nice shorthand Python syntax to hopefully
+
+02:04.460 --> 02:06.780
+give us the prediction answers.
+
+02:06.800 --> 02:19.810
+So let's say print and then our predictions is going to be the predict species so that if I run this
+
+02:21.470 --> 02:23.440
+whoops What a mess up here.
+
+02:23.490 --> 02:26.830
+Targa names not Tiger names target names.
+
+02:27.180 --> 02:29.800
+Let's run that again.
+
+02:29.800 --> 02:30.580
+There you go.
+
+02:30.580 --> 02:32.390
+These are my predictions.
+
+02:32.410 --> 02:39.060
+So the first one is versus color and the second one was predicted to be Virginia.
+
+02:39.080 --> 02:41.990
+Well it's hard to say if it's right or wrong.
+
+02:42.050 --> 02:42.640
+Right.
+
+02:42.650 --> 02:47.330
+That's why we have a test dataset so that we know the answer to these questions.
+
+02:47.390 --> 02:53.900
+Ideally we have a human labeled these so that we can test and see if this was right or wrong.
+
+02:53.900 --> 02:58.490
+Right now we don't know if it's right or wrong but at least we know that it's making predictions and
+
+02:58.490 --> 03:06.290
+it's making predictions at a ninety six percent accuracy based on our white test data.
+
+03:06.560 --> 03:07.850
+Very very cool.

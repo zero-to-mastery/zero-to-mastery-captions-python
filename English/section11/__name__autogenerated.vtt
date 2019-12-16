@@ -1,0 +1,250 @@
+WEBVTT
+
+00:00.810 --> 00:01.590
+Welcome back.
+
+00:02.320 --> 00:08.710
+In order to finalize our understanding of modules we have to talk about an important concept which is
+
+00:08.770 --> 00:19.710
+this idea of main or specifically underscore underscore main because as you start developing in your
+
+00:19.710 --> 00:24.630
+career you're going to start to see a lot of code like this.
+
+00:24.630 --> 00:30.630
+Now this is one of the most common lines you're going to see when working with Python.
+
+00:30.630 --> 00:38.240
+And in this video I'm going to explain what it does because it is one of the most confusing topics especially
+
+00:38.240 --> 00:39.260
+for beginners.
+
+00:39.260 --> 00:42.990
+So for now I'm going to comment out and do a few things.
+
+00:43.010 --> 00:48.760
+We have our main dot pi file here and I want to do a few things.
+
+00:48.830 --> 00:57.710
+First I'm going to open up our shopping cart which is right here and at the top over here I'm just going
+
+00:57.710 --> 01:02.390
+to print because right now our file isn't doing anything.
+
+01:02.390 --> 01:10.800
+I'm going to say print underscore underscore name like this and I'm going to do the same for the utility
+
+01:11.190 --> 01:11.730
+dogpile.
+
+01:12.630 --> 01:16.330
+So at the top utility dot pi.
+
+01:16.340 --> 01:20.210
+Now if I run main here let's click Run here
+
+01:23.660 --> 01:27.760
+I get these two things printed.
+
+01:27.770 --> 01:37.890
+Now why is that well when I run a python file and usually we just run one file write the main file that
+
+01:37.890 --> 01:43.380
+we're working on in our case our main file just happens to be called Main dot pi.
+
+01:43.380 --> 01:48.510
+So when I click Run the interpreter goes line by line through here.
+
+01:48.510 --> 01:56.010
+The first thing it does is import the utility module and import these two files.
+
+01:56.230 --> 02:04.990
+So what it's going to do is go to the utility file and run this and automatically each file that we
+
+02:04.990 --> 02:08.660
+run or each module is given a name.
+
+02:08.660 --> 02:12.570
+When our case is the name or the module utility.
+
+02:12.680 --> 02:16.870
+So when you import something in Python it finds the module.
+
+02:17.210 --> 02:24.530
+It runs a code so it adds this code to memory because we're going to have to use multiply divide Emacs
+
+02:25.370 --> 02:26.840
+and then goes on to the next line.
+
+02:26.870 --> 02:31.510
+In our case it's this one where we import again from the shopping cart.
+
+02:31.610 --> 02:37.600
+So it's going to say Hey the name of this is shopping done more shopping dot shopping cart.
+
+02:37.610 --> 02:40.480
+Because that's the module name.
+
+02:40.510 --> 02:46.870
+And then finally it's going to go through here because by this point by line for these files have been
+
+02:46.870 --> 02:48.870
+run in there in memory now.
+
+02:48.880 --> 02:56.510
+Now the interpreter has access to divide multiply and all these functions that we've imported.
+
+02:56.570 --> 03:06.020
+Now here's my question What if I do here or at the end do print underscore underscore name on this main
+
+03:06.020 --> 03:16.000
+file if I run here you see that I get underscore underscore main is that what you expected.
+
+03:16.000 --> 03:24.490
+What if I change the name of this file let's say refactor and say rename.
+
+03:24.560 --> 03:25.040
+That's OK.
+
+03:25.070 --> 03:32.040
+We want to rename it and we'll rename it to let's say test dot pi.
+
+03:32.050 --> 03:34.090
+So now this is called test out pi.
+
+03:34.090 --> 03:42.470
+What do you think the underscore name of this is if I run here I still get underscore underscore mean
+
+03:44.050 --> 03:49.700
+so maybe this is turned to make sense now when you see the code.
+
+03:49.740 --> 03:56.740
+This if underscore underscore name equals to underscore underscore main underscore.
+
+03:56.760 --> 04:09.620
+So these are Dundas then do something and this the name main is given specifically to the file that
+
+04:09.620 --> 04:18.890
+we run because remember when we run a file when I do play or when I do in my terminal Python 3 and then
+
+04:18.890 --> 04:25.940
+say test dot Pi I run that one single file and that one single file imports different modules and runs
+
+04:25.940 --> 04:36.600
+them that one file that we run gets this default underscore underscore me so the reason you might see
+
+04:36.660 --> 04:45.240
+lines like this in Python is that sometimes we want to make sure that we run a module only if this is
+
+04:45.540 --> 04:56.700
+the module or the main module so I can say here print please run this and let's remove this print for
+
+04:56.700 --> 05:04.860
+now and click Run you see that this I get please run this but if I copy this code and let's say put
+
+05:04.860 --> 05:15.410
+it into utility like this and I click Run you see that please run this does not appear in utility only
+
+05:15.410 --> 05:20.850
+at the end when we're running this test because why.
+
+05:20.970 --> 05:25.880
+Well the name of this file is not me.
+
+05:25.950 --> 05:29.440
+The name remember is utility.
+
+05:29.550 --> 05:36.510
+So this is a good way for us to only run code of the main file.
+
+05:36.510 --> 05:41.080
+So this is a common structure as projects get bigger and bigger.
+
+05:41.250 --> 05:47.400
+Maybe we have code that we don't want to run unless it's the main file in our case.
+
+05:47.400 --> 05:54.970
+Let's say that we don't want to run any of these unless this is the main file being called.
+
+05:54.970 --> 05:57.830
+If I run this now you see that.
+
+05:57.840 --> 05:59.110
+Oh and I get an error.
+
+05:59.160 --> 06:08.130
+It says line one in module cannot import name multiply from utility because well we aren't able to import
+
+06:08.130 --> 06:17.380
+this because we didn't run this piece of code so let's revert that back come back here and while we
+
+06:17.380 --> 06:28.550
+can do now is actually wrap this entire thing like this so that we make sure that test only runs if
+
+06:28.880 --> 06:35.750
+well that only if this is the one being run it shouldn't get imported it should just be the main file
+
+06:35.810 --> 06:37.870
+that we run.
+
+06:37.950 --> 06:46.080
+Now remember when we had a class let's say we had a main file and we created a class let's say student
+
+06:47.540 --> 06:57.320
+and this student let's say doesn't have anything but when we do type of student and we do print here
+
+06:59.410 --> 07:09.180
+and I click Run well let's instantiate the students so let's say student 1 equals student and let's
+
+07:09.180 --> 07:16.920
+just get the type of the student if I click run do you remember how we have this underscore underscore
+
+07:16.920 --> 07:28.870
+mean dot student what it's saying is this class was created in the main file that we ran it for example
+
+07:28.900 --> 07:41.280
+I copy this added it to the utility like this and now in my main file I import utility
+
+07:44.670 --> 07:49.940
+and let's say utility dot SD 1 and do
+
+07:54.690 --> 08:01.070
+and then print what will happen then.
+
+08:01.190 --> 08:05.000
+Well we get class utility dot student
+
+08:07.840 --> 08:14.260
+so whenever we saw that main all that it was saying is hey this was a class that was created in the
+
+08:14.320 --> 08:15.660
+main file.
+
+08:15.900 --> 08:19.470
+Again this is one of those things that you're going to see a lot of.
+
+08:19.530 --> 08:26.460
+But at the end of the day all it means is I want to make sure that if this is the file that's being
+
+08:26.460 --> 08:33.810
+run because a file can be either run or it can be imported if this is the file that gets run it's the
+
+08:33.810 --> 08:36.540
+main file then do something.
+
+08:36.660 --> 08:44.740
+So it's a good way to check how our modules are being used whether imported or rent hopefully that made
+
+08:44.740 --> 08:46.220
+sense in the next video.
+
+08:46.240 --> 08:50.740
+We're going to talk about something exciting called built in modules.
+
+08:50.740 --> 08:51.780
+I'll see you on that one.
+
+08:51.930 --> 08:52.180
+Bye.

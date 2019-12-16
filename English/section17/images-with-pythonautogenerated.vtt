@@ -1,0 +1,364 @@
+WEBVTT
+
+00:00.690 --> 00:01.760
+All right enough talk.
+
+00:01.780 --> 00:07.570
+Let's process some images and use our Python knowledge.
+
+00:07.750 --> 00:14.140
+Now you might be thinking that image processing is something that you can do on your machine using something
+
+00:14.140 --> 00:17.920
+like Photoshop even using a simple editing software.
+
+00:17.920 --> 00:24.360
+But where this tool really shines is when we have to process hundreds thousands of images.
+
+00:24.400 --> 00:29.990
+You can do things really really fast with Python so let's get started with this.
+
+00:30.070 --> 00:38.200
+I've actually attached to this lesson a poke index for you and this poke index has all these cute little
+
+00:38.520 --> 00:39.170
+pockmarks.
+
+00:39.220 --> 00:44.590
+We have bubbles are we have Charmander we have Pikachu we have Squirtle it's great.
+
+00:44.590 --> 00:46.180
+They're all extremely cute.
+
+00:46.180 --> 00:51.280
+And by the way a little bonus just for taking this course no other course is going to teach you this.
+
+00:51.280 --> 00:51.970
+Get ready for it.
+
+00:52.030 --> 01:02.230
+You ready was our original name in Japanese is for shaggy done it Charmander ball Charmander is he took
+
+01:02.330 --> 01:09.630
+it and then pick it you while he could choose just peek at you and then Squirtle is then you got it.
+
+01:09.790 --> 01:10.370
+There you go.
+
+01:10.390 --> 01:11.740
+Free Japanese lesson.
+
+01:11.740 --> 01:13.960
+Bonus for this Python course.
+
+01:14.050 --> 01:17.420
+Yes this is that good of a course.
+
+01:17.440 --> 01:17.880
+All right.
+
+01:17.920 --> 01:21.490
+Let's get back to some serious stuff we have these images.
+
+01:21.490 --> 01:23.900
+Let's see what we can do with them.
+
+01:23.920 --> 01:30.310
+I'm going to have an image dog pie file so you can just create this on your own and I'm using sublime
+
+01:30.310 --> 01:31.720
+text here and my command prompt.
+
+01:31.750 --> 01:38.850
+But you can use whatever you want and what I'm about to show you is something that remember you can
+
+01:38.940 --> 01:43.190
+always reference in the official documentation when learning a library.
+
+01:43.200 --> 01:45.990
+There's nothing better than the official documentation.
+
+01:46.020 --> 01:46.770
+Right.
+
+01:46.800 --> 01:52.290
+And we see over here that the first thing we need to do is to actually import the module just like this
+
+01:53.930 --> 02:01.610
+so let's go back here and say from pill import Image.
+
+02:01.610 --> 02:04.030
+So now we can do something pretty exciting.
+
+02:04.190 --> 02:15.680
+The first thing we can do is say image equals image that we've imported and just simply say open now
+
+02:15.770 --> 02:19.910
+in here we just give it a file path that we want to open in our case.
+
+02:19.940 --> 02:22.110
+Let's open up Peek At You dot JPEG.
+
+02:22.160 --> 02:27.850
+So I'm going to say dot slash which means current directory.
+
+02:28.050 --> 02:31.610
+And remember we're in the image playground directory.
+
+02:31.710 --> 02:41.330
+And I want to go inside of the poke index folder so I'm going to say Poke index and say slash Peek At
+
+02:41.330 --> 02:41.890
+You.
+
+02:41.960 --> 02:43.460
+Make sure I spell peek at you right here
+
+02:46.470 --> 02:55.470
+dot JPEG and let's just print the image here to see what we get going to save and run this file.
+
+02:55.490 --> 03:04.300
+So I'm going to say Python 3 and run the image dot pi file
+
+03:07.100 --> 03:14.110
+images dot pi file because that's the name.
+
+03:14.150 --> 03:15.030
+There you go.
+
+03:15.050 --> 03:17.180
+We get an object here.
+
+03:17.180 --> 03:18.980
+You see it's a pill object.
+
+03:18.980 --> 03:24.500
+It's a JPEG image plugin JPEG image file and it tells me exactly what it is.
+
+03:24.500 --> 03:32.660
+So we've converted or opened up this JPEG into an image object that pillow gives us that we can now
+
+03:32.720 --> 03:33.440
+manipulate.
+
+03:34.160 --> 03:35.580
+So what can we do here.
+
+03:37.280 --> 03:42.360
+Well first let's just see the image dot format.
+
+03:43.010 --> 03:48.800
+And this property is going to say hey what is image format image format.
+
+03:48.800 --> 03:51.690
+It's a JPEG because well it's a JPEG.
+
+03:51.770 --> 03:52.310
+That's awesome.
+
+03:52.310 --> 03:56.560
+So we get different properties here but what about size.
+
+03:56.580 --> 03:58.100
+Can you tell us about the size.
+
+03:58.300 --> 04:02.610
+Well yeah the size of the image is 640 by 640.
+
+04:02.730 --> 04:03.410
+Awesome.
+
+04:03.420 --> 04:03.900
+That's good.
+
+04:03.900 --> 04:09.540
+We get some information what if we do mode here what does mode do.
+
+04:09.540 --> 04:16.940
+Let's see now we see that the coloring is in our G.B. so that's red green blue.
+
+04:17.090 --> 04:17.610
+All right.
+
+04:17.640 --> 04:20.780
+Awesome let's clear the console here.
+
+04:20.780 --> 04:22.160
+There you go.
+
+04:22.160 --> 04:30.140
+Now remember we're able to figure out what kind of functions methods properties and attributes this
+
+04:30.200 --> 04:32.560
+image has by doing the Jerk command.
+
+04:32.570 --> 04:32.870
+Right.
+
+04:32.990 --> 04:40.280
+So if I just remove this and do her over the image we get.
+
+04:40.300 --> 04:44.490
+While all the things that this image has given to us.
+
+04:44.590 --> 04:48.700
+And again this is something that we can check on the documentation Web sites as well.
+
+04:49.240 --> 04:49.430
+OK.
+
+04:49.450 --> 04:51.830
+But let's do something even more exciting.
+
+04:51.850 --> 04:59.090
+You know what I want to do I want to be able to maybe add some filters maybe blur things in here.
+
+04:59.110 --> 05:08.760
+Well pillow gives us this image filter that we can now filter the image with.
+
+05:08.760 --> 05:11.640
+So how can we use it.
+
+05:11.790 --> 05:19.460
+Well we can now have a filtered image and this filter image is going to equal the image that we've grabbed
+
+05:19.880 --> 05:22.440
+and we're going to say dot filter.
+
+05:22.820 --> 05:28.070
+And in here give it the image filter with some options.
+
+05:28.070 --> 05:30.680
+So here we can do different things.
+
+05:30.740 --> 05:32.960
+Let's do blur here.
+
+05:32.960 --> 05:34.440
+So capital blur.
+
+05:34.520 --> 05:38.480
+So now it's going to apply a filter of blurring.
+
+05:38.480 --> 05:44.510
+So let's see what happens if I do this I'm going to instead of printing I'm actually going to say image
+
+05:45.930 --> 05:48.630
+dot save.
+
+05:48.630 --> 05:51.720
+And this is going to save the filtered image.
+
+05:51.810 --> 06:01.950
+So let's do filtered image dot save and give it let's call it blur comma and then the extension that
+
+06:01.950 --> 06:05.080
+we want to say that it lets us do PMG here.
+
+06:05.390 --> 06:08.800
+We'll change it to a PMG file like this.
+
+06:08.820 --> 06:16.540
+And if I run this look at that we have a new file blurred dot PMG here.
+
+06:16.540 --> 06:20.290
+If I click on it pick it you is all blurred up.
+
+06:20.350 --> 06:24.800
+You can see the original image right here and the blurred image.
+
+06:24.970 --> 06:28.080
+How cool is that so let's do that again.
+
+06:28.080 --> 06:32.610
+Let's do something else let's do maybe smooth.
+
+06:33.060 --> 06:34.750
+Which is another filter that we can do.
+
+06:34.830 --> 06:35.910
+If I run this again
+
+06:40.840 --> 06:41.050
+all right.
+
+06:41.050 --> 06:42.980
+We see that the image is now.
+
+06:42.980 --> 06:46.680
+Well we can't really tell but it's smoother.
+
+06:46.820 --> 06:50.630
+That's a filter that usually works better with landscape images.
+
+06:50.630 --> 06:52.810
+We can also do something like sharpen.
+
+06:53.000 --> 06:56.870
+And again you can read the documentation to see different filtering so that we can do.
+
+06:56.870 --> 06:58.400
+But let's check this one out as well.
+
+06:59.660 --> 07:03.690
+We've got the original and then the sharpened one here.
+
+07:03.690 --> 07:09.880
+You know there's a bit of a notice Pikachu is looking very very sharp.
+
+07:09.980 --> 07:17.210
+Now the reason that I've converted this into a G is because PMG supports these image filters so you
+
+07:17.210 --> 07:22.220
+might get an error if you actually keep it as a jpeg you know what.
+
+07:22.310 --> 07:25.060
+While we're at it let me show you another thing that we can do.
+
+07:25.100 --> 07:33.170
+So instead of this filter image we can actually do something called convert and this converts the image
+
+07:33.200 --> 07:35.760
+to different formats.
+
+07:35.810 --> 07:42.020
+So one of the formats that we can actually do is something called grayscale which is with a capital
+
+07:42.050 --> 07:42.780
+L..
+
+07:42.800 --> 07:55.470
+So when I do convert like this this image and let's rename it to gray dot PMG if I run this my grade
+
+07:55.470 --> 08:03.690
+up to Pikachu is in black and white so you can also convert images to different formats.
+
+08:03.710 --> 08:08.570
+So remember we had the RG be red green blue format.
+
+08:08.570 --> 08:11.260
+There's different formats that you can convert images to.
+
+08:11.270 --> 08:12.930
+But this one looks pretty cool.
+
+08:12.950 --> 08:16.170
+We've just great out pikachu.
+
+08:16.270 --> 08:22.060
+Now this is just one picture that we've worked with but the power and what I'm going to show you in
+
+08:22.060 --> 08:30.760
+the upcoming videos is how we can apply let's say a function like this to hundreds and thousands and
+
+08:30.760 --> 08:34.040
+millions of images if we want and process them really fast.
+
+08:34.360 --> 08:36.730
+But for now I think this is enough.
+
+08:36.730 --> 08:42.000
+You can experiment and try different converts and try a different image filters on your own.
+
+08:42.070 --> 08:45.020
+And we're going to learn some more in the next video by.

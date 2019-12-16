@@ -1,0 +1,289 @@
+WEBVTT
+
+00:00.480 --> 00:00.770
+All right.
+
+00:00.780 --> 00:09.510
+This massive list finally finished being entered in memory but remember our key terms remember how I
+
+00:09.510 --> 00:23.070
+said a list is an adorable what was an admirable well an integral is any object in Python which we're
+
+00:23.070 --> 00:26.220
+able to loop through underneath the hood.
+
+00:26.280 --> 00:29.790
+It has the Dunder theater method.
+
+00:30.120 --> 00:39.000
+So when the object is created this itor allow us to have an ball object that can be iterated over to
+
+00:39.360 --> 00:49.380
+iterate something or iteration is the act of taking an item from an intolerable doing something to it
+
+00:49.470 --> 00:55.080
+then going to the next one when we use loops like for loops or while loops.
+
+00:55.080 --> 00:57.530
+We call that iteration.
+
+00:57.750 --> 01:01.960
+It's the process itself and generators
+
+01:04.590 --> 01:07.340
+are actually ignorable.
+
+01:07.450 --> 01:10.750
+That is everything that is a generator.
+
+01:10.960 --> 01:19.090
+Is it trouble you can iterate over them but not everything that is ignorable is a generator.
+
+01:19.090 --> 01:23.400
+For example a range is a generator.
+
+01:23.470 --> 01:31.570
+So that is always going to be ignorable but a list is an integral but it's not a generator.
+
+01:31.630 --> 01:35.440
+So a generator is a subset of an honorable.
+
+01:35.440 --> 01:36.600
+I know those are a lot of words.
+
+01:36.610 --> 01:38.710
+Hopefully you're still with me.
+
+01:38.710 --> 01:43.780
+The difference between a generator and a regular ignorable is the way we implement them.
+
+01:44.020 --> 01:54.050
+So let me show you a general way to create a generator let's clear this code and define our own generator
+
+01:54.770 --> 02:01.320
+and generators are usually functions just like range is a function.
+
+02:01.730 --> 02:04.010
+Generators are usually created this way.
+
+02:04.040 --> 02:12.580
+So let's say generator function and this generator function is going to have a for loop that is going
+
+02:12.580 --> 02:19.750
+to loop over a range just like we had before but the difference here.
+
+02:19.970 --> 02:22.250
+Let's actually bring back the code that we had previously
+
+02:25.930 --> 02:34.100
+just going to comment this out so we can see it in terms of difference the generator function is going
+
+02:34.100 --> 02:44.690
+to create let's say these many items but instead of returning like we would in a regular function we're
+
+02:44.690 --> 02:55.180
+going to use a keyword called yield and here we're going to Hield the eye so the item so.
+
+02:55.190 --> 02:58.430
+Notice the difference here.
+
+02:58.510 --> 03:08.690
+Now if we want just like here we can pass a number like this but instead of returning and appending
+
+03:09.260 --> 03:16.340
+this list and creating all this data we're going to use yield.
+
+03:16.370 --> 03:25.410
+Now what does yield do you see yield pauses the function and comes back to it when we do something to
+
+03:25.410 --> 03:26.970
+it which is called next.
+
+03:27.060 --> 03:34.800
+Something that will cover Shirley so yield says hey pause the function just yield I give I.
+
+03:34.960 --> 03:39.220
+And when you tell me to keep going again then I'll keep going.
+
+03:39.220 --> 03:41.200
+So how can we do this.
+
+03:41.260 --> 03:54.950
+Well I can say for item in the generator function I'm going to the item now here what's going to happen
+
+03:54.980 --> 04:01.820
+is we're going to loop over the generator function and we'll give it to the generator function.
+
+04:01.830 --> 04:09.310
+Let's say a thousand for now and we're going to print each item in the generator function because this
+
+04:09.310 --> 04:14.980
+is an admirable it's going to run and it's going to loop.
+
+04:15.220 --> 04:21.280
+And for every item in this number so that it's range we're going to yield why.
+
+04:21.370 --> 04:29.620
+So it's going to keep looping and looping and when we come back when we loop over we're going to run
+
+04:29.620 --> 04:35.320
+this and the yield comes back and runs again.
+
+04:35.350 --> 04:36.610
+Let me show you what I mean.
+
+04:36.680 --> 04:46.190
+I want to comment this out comment this out as well and just click run here.
+
+04:46.250 --> 04:52.010
+Did you see that what we just did here is similar to down here.
+
+04:52.010 --> 04:57.010
+But instead of having to create that list in memory it just kept going one by one.
+
+04:57.020 --> 05:01.740
+We only held one item in memory and we used it.
+
+05:01.750 --> 05:10.220
+However we wanted to in our case all we did was print item let's explore this Hield keyword a little
+
+05:10.220 --> 05:11.580
+bit more.
+
+05:11.720 --> 05:14.510
+What does it actually do.
+
+05:14.510 --> 05:17.690
+Let's say that we want to multiply this by two.
+
+05:17.720 --> 05:25.610
+Just like we did here in our original example with list but now instead of doing the for loop let's
+
+05:25.610 --> 05:35.250
+just call the function and say G equals generator function and we're gonna give it a 100.
+
+05:35.360 --> 05:46.520
+Now if I print G and I click Run you see that I get a generator object I remember this is just the standard
+
+05:46.520 --> 05:52.910
+way in Python that we can create a generator function using the range and the yield keyword but this
+
+05:53.000 --> 06:00.540
+Hield keyword gives us some power because if I just return here we're not going to get anything special
+
+06:01.560 --> 06:09.370
+as a matter of fact we're just going to get a value instead by using the yield keyword what we're able
+
+06:09.370 --> 06:19.810
+to do is to turn this into a generator function that can do well this I can say Next G.
+
+06:19.870 --> 06:33.600
+Now if I print next G in here and I click Run I get zero but here's the cool part if I do next G twice
+
+06:34.050 --> 06:46.250
+and then one time here and print it I get for Y is that remember the Hield keyword pauses the function.
+
+06:46.420 --> 06:57.050
+So what just happened here is I ran the function with 100 the first item in range 100 was zero.
+
+07:02.390 --> 07:11.180
+Now here before I was even able to run this it said hey this is a generator function.
+
+07:11.310 --> 07:19.590
+But the first time you run it give the output zero times 2 so that the very first time we run this function
+
+07:19.780 --> 07:25.090
+and I click Run I'll make sure we change that too I.
+
+07:25.220 --> 07:32.590
+This is just zero if I run it again like this.
+
+07:32.670 --> 07:37.390
+Then we have now I want you to iterate and go to 1.
+
+07:37.410 --> 07:39.510
+So 1 times 2.
+
+07:39.510 --> 07:40.590
+What is that.
+
+07:40.810 --> 07:42.090
+1 times 2.
+
+07:42.090 --> 07:43.640
+Let me fix that.
+
+07:44.160 --> 07:45.040
+Like this.
+
+07:46.860 --> 07:51.720
+Make sure this is I I get 2 because 1 times 2 is 2.
+
+07:52.230 --> 08:00.230
+If I run it again and I click Run I get 4 you see yield.
+
+08:00.280 --> 08:10.370
+Like I said before pauses the function and comes back to it when next is called so if it has a yield
+
+08:10.610 --> 08:14.230
+keyword it becomes a generator.
+
+08:14.470 --> 08:23.470
+It keeps track of this state what we call the value and it only keeps the most recent data in memory.
+
+08:23.560 --> 08:30.730
+For example 4 it remembers that because on let's say line 14 if I do print next G
+
+08:33.880 --> 08:40.880
+it remembers that previously this I was well for.
+
+08:41.140 --> 08:53.200
+So now even though this piece of code already ran if I run it on line 14 I get 6 because three times
+
+08:53.200 --> 08:56.330
+too well is six.
+
+08:56.330 --> 08:59.410
+Remember because it gets multiply by 2.
+
+08:59.440 --> 09:08.770
+So let me ask you this if let's say I only do a range of one here and you know let's just remove multiply
+
+09:08.770 --> 09:16.370
+by 2 if I do this and I run next more than well more than once.
+
+09:16.440 --> 09:26.850
+What is going to happen if I click Run here I get a stop iteration you see next can be called as many
+
+09:26.850 --> 09:37.740
+times as we want as many times until this range expires and when we exceed the number of items in the
+
+09:37.740 --> 09:46.570
+range well we get a stop iteration error to let us know that hey you can't call next anymore.
+
+09:46.580 --> 09:54.780
+We've reached the end of one and when we use for loops with ranges it actually did Texas underneath
+
+09:54.780 --> 09:56.410
+the hood for you.
+
+09:56.550 --> 10:03.570
+So we're able to run a function like this where we use range even though range is a generator because
+
+10:03.570 --> 10:09.960
+the for loop automatically says hey I'm going to stop looping as soon as I encounter this stop iteration
+
+10:10.380 --> 10:13.550
+but that's hidden away from us as users.
+
+10:13.710 --> 10:21.480
+Now this concept of generators is pretty hard to understand especially at first so you might have to
+
+10:21.480 --> 10:27.060
+look at this a couple of times but over the next couple of videos I want to convince you how powerful
+
+10:27.060 --> 10:28.000
+they are.
+
+10:28.050 --> 10:29.700
+I'll see in the next one by.

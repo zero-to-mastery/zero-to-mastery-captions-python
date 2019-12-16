@@ -1,0 +1,160 @@
+WEBVTT
+
+00:00.540 --> 00:03.680
+We know that there's four pillars of Opie.
+
+00:03.850 --> 00:06.010
+And we learned about encapsulation.
+
+00:06.060 --> 00:07.650
+What's the second one.
+
+00:07.650 --> 00:17.440
+Well it's called abstraction and abstraction means hiding of information or abstracting away information
+
+00:17.620 --> 00:21.170
+and giving access to only what's necessary.
+
+00:21.190 --> 00:27.220
+So whatever the user or the programmer or the machine is interested in that's the only thing we give
+
+00:27.220 --> 00:29.060
+access to everything else.
+
+00:29.110 --> 00:36.370
+We kind of hide it in a blanket underneath the hood because our users don't have to worry about it.
+
+00:36.390 --> 00:37.170
+Let me show you what I mean.
+
+00:38.620 --> 00:44.470
+If I go back to our old example here if so instead of having a dictionary we actually have a player
+
+00:44.470 --> 00:48.100
+character with a bunch of methods.
+
+00:48.100 --> 00:52.270
+Now abstraction can actually be seen here right.
+
+00:52.300 --> 01:04.690
+When I do player one dot speak you're seeing abstraction in action because when I click Run I get this
+
+01:04.690 --> 01:10.020
+string but when I call speak I don't really care how Speek is implemented.
+
+01:10.130 --> 01:15.950
+All I know is that player 1 has access to the speak method and I can use it.
+
+01:15.950 --> 01:19.020
+Same with when I'm using something like a couple.
+
+01:19.120 --> 01:19.560
+Right.
+
+01:19.580 --> 01:28.290
+If I have one two three and I do dot here I can do count to count how many items are in the couple.
+
+01:28.580 --> 01:36.960
+So if I do print and click Run well I have to give it a thing that we're looking for in our case let's
+
+01:36.970 --> 01:39.610
+look at one and let's add another one in here.
+
+01:39.610 --> 01:43.450
+If I click Run I get two.
+
+01:43.700 --> 01:48.880
+Now do I need to know how the count method was implemented.
+
+01:48.890 --> 01:50.710
+No I mean I can go look into it.
+
+01:50.720 --> 01:56.660
+I can look at the python documentation maybe the python code and understand how it's actually counting
+
+01:56.680 --> 01:59.800
+this but I don't really need to write.
+
+01:59.870 --> 02:07.790
+If we try to understand every single little piece our heads gonna explode sometimes all we need is a
+
+02:07.820 --> 02:14.690
+method or an attribute and just get access to it without having to worry about how it's being implemented
+
+02:15.320 --> 02:17.870
+which is really really nice.
+
+02:17.870 --> 02:20.570
+The same goes with built in functions right.
+
+02:20.570 --> 02:29.050
+If I do a length here and I click Run I get a length of 4 but I don't really need to know how length
+
+02:29.080 --> 02:30.820
+was implemented in Python.
+
+02:30.820 --> 02:39.420
+It's abstracted away from us and this is the power of O P it abstracts away things that we don't need
+
+02:39.420 --> 02:46.530
+to care about or at least it makes us more efficient so that we know that a works a certain way and
+
+02:46.530 --> 02:51.060
+we're not wasting our time learning or coding from scratch.
+
+02:51.060 --> 02:57.660
+If we had our iPhone for example well the camera feature on an iPhone it'll be nice for an app that
+
+02:57.660 --> 03:04.710
+we built to use it but we don't need to actually know exactly how the iPhone camera is coded on an iPhone.
+
+03:04.740 --> 03:05.220
+No.
+
+03:05.340 --> 03:12.090
+Instead the iPhone usually gives us a way to say camera dot take
+
+03:14.920 --> 03:23.260
+to actually allow us to take a picture without knowing how the Apple engineers actually coded the camera.
+
+03:23.380 --> 03:25.000
+So it's a very powerful concept.
+
+03:25.870 --> 03:26.240
+OK.
+
+03:26.420 --> 03:31.340
+So you're thinking I think I get a distraction but let me ask you this.
+
+03:31.540 --> 03:34.700
+Could I just do player one dot.
+
+03:34.720 --> 03:44.300
+Name equals two let's say exclamation marks and then player dot run or you know what.
+
+03:44.330 --> 03:57.990
+Let's two speak equals two to make sure it's player 1 Well if I now print and do Player 1 dot speak
+
+03:58.560 --> 04:07.930
+and I try to run this function let's see I get String object is not callable because speak has been
+
+04:07.930 --> 04:14.800
+modified speak has been modified to a string value instead of this actual function that we would have
+
+04:14.800 --> 04:26.440
+needed so that if I run just checking the speak attribute I get bu Mm hmm I mean abstraction is good
+
+04:26.740 --> 04:35.920
+but hold on a second here this is bad if I have a class that I've abstracted away but anybody can come
+
+04:35.920 --> 04:36.330
+along.
+
+04:36.430 --> 04:41.970
+Any programmer can come along and just remove all my hard work and overwrite it like that.
+
+04:42.010 --> 04:44.170
+Isn't that bad.
+
+04:44.310 --> 04:48.000
+Let's take a break and explore this topic a little bit more in the next video.

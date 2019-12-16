@@ -1,0 +1,109 @@
+WEBVTT
+
+00:01.240 --> 00:09.400
+So up until now we learned that strings can be accessed quite easily and using the square brackets we
+
+00:09.400 --> 00:12.310
+can access different parts of the string.
+
+00:12.370 --> 00:22.600
+And this idea of a start a stop and a step over is what we call slicing or String slicing because we
+
+00:22.600 --> 00:24.270
+can slice the string.
+
+00:24.280 --> 00:31.090
+However we like but we also need to learn another important term that's going to come up again and again
+
+00:31.090 --> 00:32.260
+throughout this course.
+
+00:32.260 --> 00:37.450
+And as a matter of fact it's an important concept that as you get more advanced into programming you
+
+00:37.450 --> 00:40.930
+really need to understand what is this concept.
+
+00:41.350 --> 00:44.630
+Well it's this idea of immutability.
+
+00:44.740 --> 00:48.550
+It's an important term in programming.
+
+00:48.650 --> 00:55.420
+What does immutability mean well strings in Python are immutable.
+
+00:55.540 --> 00:58.030
+That means they cannot be changed.
+
+00:58.360 --> 01:06.560
+What I mean by that now that we've assigned selfish this value this string.
+
+01:06.600 --> 01:09.480
+Well I can reassign it right.
+
+01:09.480 --> 01:21.870
+I can say selfish is a hundred now and if I print selfish and I click Run that works but if I instead
+
+01:22.140 --> 01:33.560
+do something like the first index of selfish is going to equal 8 and I click Run I get an error I get
+
+01:33.560 --> 01:39.980
+a type error saying String object does not support item assignment why is that.
+
+01:39.980 --> 01:43.250
+Because strings are immutable.
+
+01:43.380 --> 01:47.650
+That is I cannot change the value of this.
+
+01:47.680 --> 01:52.440
+Once it's created I can't just immediately change it to eight.
+
+01:52.450 --> 01:54.030
+One two three four five six seven.
+
+01:54.060 --> 01:54.320
+No.
+
+01:55.000 --> 01:56.540
+It has to stay the same.
+
+01:56.560 --> 02:06.310
+The only way that I can remove this or change this is to completely reassign the value so that in memory
+
+02:07.060 --> 02:15.070
+Python removes all of this from our bookshelf of memory and instead just assigns eight into the zero
+
+02:15.070 --> 02:19.900
+bookshelf and removes everything else because we don't use it anymore.
+
+02:19.930 --> 02:27.130
+Now this idea of immutability is something we'll explore more and more especially when we start talking
+
+02:27.130 --> 02:28.510
+about lists.
+
+02:28.540 --> 02:34.430
+But for now just remember that you can't reassign part of a string.
+
+02:34.660 --> 02:38.800
+Once created it exists like that in that form.
+
+02:38.800 --> 02:42.710
+The only way we can change it is to create something new.
+
+02:42.790 --> 02:48.940
+We can do selfish plus 8 and we can create it that way.
+
+02:48.940 --> 02:53.410
+But now this selfish is a whole new string.
+
+02:53.410 --> 03:04.360
+This no longer exists and a whole new shelf space was created for us to use this whole new string again.
+
+03:04.380 --> 03:10.380
+If this doesn't make sense to you or why it's important just yet Don't worry we'll get there.
+
+03:10.560 --> 03:13.090
+For now though I'll see in the next video by.

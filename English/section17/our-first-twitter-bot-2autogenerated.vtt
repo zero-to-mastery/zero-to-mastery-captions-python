@@ -1,0 +1,283 @@
+WEBVTT
+
+00:01.280 --> 00:02.030
+Welcome back.
+
+00:02.060 --> 00:03.600
+It's time to do something.
+
+00:03.620 --> 00:06.850
+Well actually productive with our Twitter board.
+
+00:06.920 --> 00:10.050
+So what can we do here.
+
+00:10.070 --> 00:11.660
+Well I want to create a board.
+
+00:11.660 --> 00:17.870
+This board is going to be well you want to be really nice to your followers and you want to follow back
+
+00:17.870 --> 00:18.660
+people.
+
+00:18.980 --> 00:21.730
+If you actually look I'm I'm pretty pretty horrible.
+
+00:21.730 --> 00:24.160
+I only have six people that I'm following.
+
+00:24.410 --> 00:30.500
+But if I had to go through all my followers and follow every single one of them that's that's over 10000
+
+00:30.590 --> 00:33.230
+clicks That's pretty manual task.
+
+00:33.230 --> 00:35.330
+Can we do that with with our bot.
+
+00:35.360 --> 00:41.300
+Well yeah you can't so let's do a super generous bot.
+
+00:41.960 --> 00:45.390
+So this generous bot is always going to follow back.
+
+00:45.440 --> 00:47.180
+How can you build this.
+
+00:47.180 --> 00:59.770
+Well we simply loop and say for follower in and then here T.P. gives us something called a cursor.
+
+00:59.800 --> 01:10.930
+Now what is this cursor if we go to the documentation here and I type in cursor we'll get while an actual
+
+01:10.930 --> 01:18.950
+cursor Trattoria if we read here we see that we use pages nation in a lot of Twitter API so whether
+
+01:18.950 --> 01:25.500
+we're going through timelines or user lists or messages we have to click through different pages.
+
+01:25.510 --> 01:25.860
+Right.
+
+01:25.870 --> 01:34.310
+Usually there's a lot of followers or a lot of timeline information so the cursor allows us to well
+
+01:34.320 --> 01:41.010
+essentially in an easy way go through everything on Twitter whether it's through an entire timeline
+
+01:41.070 --> 01:43.800
+or through an entire followers list.
+
+01:43.800 --> 01:47.820
+And they even give you a nice tutorial of how to use it.
+
+01:47.910 --> 01:51.380
+You can see over here for example let's make this a little bit bigger.
+
+01:51.420 --> 02:00.030
+We see that we can use the tweaked cursor to do API user timeline dot items to grab all the items on
+
+02:00.030 --> 02:00.540
+the timeline
+
+02:03.460 --> 02:12.410
+and so with the tippy cursor we can actually do API dot followers to grab all the followers and then
+
+02:12.410 --> 02:19.150
+we simply do dot items so that we can loop through all the followers.
+
+02:19.160 --> 02:24.560
+Now with this followers well let's just print them out now.
+
+02:24.580 --> 02:30.670
+I'm going to print followers or a follower in this case because we're looping through here and then
+
+02:30.670 --> 02:32.470
+just say dot name.
+
+02:32.500 --> 02:38.230
+Now the problem here is that when we do something like this when let's say we're looping through a lot
+
+02:38.230 --> 02:44.950
+of things we're going to be hitting the API over and over and over and Twitter is not going to like
+
+02:44.950 --> 02:45.300
+that.
+
+02:45.310 --> 02:47.210
+I mean this is a simple example.
+
+02:47.410 --> 02:54.070
+But when we constantly hit the Twitter API that's hitting the twitter servers which Twitter has to pay
+
+02:54.070 --> 02:54.730
+for.
+
+02:54.910 --> 03:01.120
+And if everybody in the world hit the Twitter API over and over and over fast with let's say Python
+
+03:01.450 --> 03:07.930
+that as we know on machines runs really fast well it's going to overload the servers and it's going
+
+03:07.930 --> 03:11.500
+to cost them a lot of money or crashed the servers.
+
+03:11.500 --> 03:17.650
+So they actually implement something called a rate limit where I'm only allowed to request the Twitter
+
+03:17.650 --> 03:24.100
+API let's say every couple of milliseconds so that it doesn't crash the server and tweet me actually
+
+03:24.250 --> 03:29.010
+allows us to work with this Twitter rate limit.
+
+03:29.110 --> 03:31.690
+So if I type in here rate limiter
+
+03:34.940 --> 03:42.470
+there's actually an error I can see here their rate limit error which is raised when the API method
+
+03:42.470 --> 03:50.420
+fails due to hitting the Twitter's rate limit tweet me over here allows us to use the rate limit error
+
+03:50.780 --> 03:57.910
+to say hey if we hit this error let's do something so I'm going to create a little helper function I'm
+
+03:57.910 --> 04:01.720
+going to say define limit handle.
+
+04:01.720 --> 04:09.400
+So we're gonna handle here the limit and we're going to pass it the cursor which is again the cursor
+
+04:09.400 --> 04:16.120
+that's going to patch eight or go through the entire data of API followers and we're going to do a while
+
+04:16.120 --> 04:22.750
+loop that says while this is true just keep yielding
+
+04:25.800 --> 04:37.940
+cursor dot next because cursor is a generator however whenever we keep calling next year which by the
+
+04:37.940 --> 04:38.770
+way internally.
+
+04:38.780 --> 04:44.090
+This is what the cursor is doing is just constantly calling next and just keeps going keeps going until
+
+04:44.090 --> 04:45.980
+we finish our followers.
+
+04:46.040 --> 04:57.650
+However if this is not the case well in that case I'm going to say except and we're going to wrap this
+
+04:57.650 --> 04:59.240
+in a try block actually.
+
+04:59.240 --> 05:08.830
+So I'm going to say try here so we can catch this error so try while true and then accept if we get
+
+05:08.830 --> 05:20.490
+a teepee dot rate limit error well in that case I want to pause and not hit the Twitter API so that
+
+05:20.500 --> 05:27.670
+we don't get in trouble and come back to it when we have finally gave it a bit of time so we can actually
+
+05:27.670 --> 05:34.890
+do that with a built in module in Python called time and time allows us to do something really useful
+
+05:34.890 --> 05:35.240
+here.
+
+05:35.280 --> 05:42.150
+I can do something called sleep which essentially says hey just pause this whatever it's happening just
+
+05:42.150 --> 05:44.910
+stay on this line for a few milliseconds.
+
+05:44.970 --> 05:50.400
+So if we do 1000 that's a 1000 milliseconds or one second.
+
+05:51.720 --> 05:56.910
+So now we have a limit handle or we can call it limit handler.
+
+05:57.420 --> 06:06.260
+And if we wrap the limit handler which receives a cursor so that is we just wrap this entire thing like
+
+06:06.260 --> 06:10.070
+so let's make this a little bit bigger.
+
+06:10.090 --> 06:11.390
+There you go.
+
+06:11.440 --> 06:17.650
+We now are able to not abuse and make sure that if we hit the rate limit we take a bit of a pass instead
+
+06:17.650 --> 06:18.730
+of just getting errors.
+
+06:19.240 --> 06:20.640
+So let's see if that worked.
+
+06:20.740 --> 06:24.100
+I'm going to save and run our piece of code.
+
+06:24.130 --> 06:30.880
+Let's clear here and run this.
+
+06:31.080 --> 06:32.010
+All right.
+
+06:32.040 --> 06:34.500
+Do you see how it's pausing right now.
+
+06:34.500 --> 06:40.750
+So as soon as we hit the rate limit it pauses and it just keeps going.
+
+06:40.750 --> 06:41.500
+And there you go.
+
+06:41.530 --> 06:45.930
+It's printing out all the followers that I have.
+
+06:45.940 --> 06:48.740
+That's pretty cool right now.
+
+06:48.750 --> 06:53.780
+I'm actually going to stop this because while it's it's still going through it.
+
+06:54.660 --> 07:01.240
+But what we can do now is we can actually follow back each of these individual people.
+
+07:01.410 --> 07:03.910
+Now in my case I'm not on Twitter that much.
+
+07:03.930 --> 07:07.560
+So let's just follow somebody here at random.
+
+07:07.560 --> 07:10.520
+Let's follow this user right here.
+
+07:10.530 --> 07:17.150
+I'm going to copy this user's name like this and I'm going to do something fun here.
+
+07:17.190 --> 07:26.730
+I'm going to say if follower dot name is equal to this person well then in that case I want to follow
+
+07:26.730 --> 07:39.230
+this person so I'm going to say follower dot follow which allows me to follow the user if I see this
+
+07:40.010 --> 07:42.460
+and run my code.
+
+07:43.010 --> 07:43.760
+It's running.
+
+07:43.760 --> 07:45.890
+It's running it's running like I say.
+
+07:45.890 --> 07:53.780
+It takes a bit of time because it has to go through the entire list but I'm going to pause the video
+
+07:53.780 --> 07:55.940
+and when this is done we're going to see if this worked.

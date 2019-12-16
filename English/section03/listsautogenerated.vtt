@@ -1,0 +1,169 @@
+WEBVTT
+
+00:00.850 --> 00:01.890
+Welcome back.
+
+00:01.900 --> 00:05.970
+Let's talk about our next data type and it's a big one.
+
+00:06.070 --> 00:09.830
+A very very useful one.
+
+00:09.840 --> 00:18.290
+It's called list and list is an ordered sequence of objects that can be of any type.
+
+00:19.800 --> 00:22.820
+So you can think of them as strings right.
+
+00:22.830 --> 00:30.750
+We had strings previously that we learned about except that each sequence of this string well was was
+
+00:30.750 --> 00:36.310
+a string was a letter or a number wrapped in quotation marks lists.
+
+00:36.320 --> 00:39.410
+On the other hand looks something like this.
+
+00:39.620 --> 00:47.810
+Let's say we create a variable ally and list we denote with square brackets and inside of these square
+
+00:47.810 --> 00:50.660
+brackets we can have different objects.
+
+00:50.660 --> 00:55.300
+So for example we can have one two three four five.
+
+00:55.340 --> 01:07.820
+We can also have let's say ally 2 AND THIS IS GOING TO HAVE A B C and it can have any collection of
+
+01:07.820 --> 01:17.690
+items that we want we can even mix and match and say that we have one two then a then maybe even the
+
+01:17.690 --> 01:30.370
+Boolean value true so all of these are lists now lists are extremely important and in other programming
+
+01:30.370 --> 01:35.010
+languages you might have heard the word arrays.
+
+01:35.170 --> 01:43.440
+So in Python lists are a form of array and later on when we get into the modules section of the course
+
+01:43.740 --> 01:50.220
+we will talk about the difference between lists and arrays but if you are coming from a different programming
+
+01:50.220 --> 01:59.760
+background then lists are like arrays in your language a collection of items Now the neat thing about
+
+01:59.760 --> 02:04.880
+lists is that it's the first data structure that we're learning now.
+
+02:04.950 --> 02:08.430
+What is a data structure.
+
+02:08.430 --> 02:12.720
+Data structure is a very important concept in programming languages.
+
+02:12.720 --> 02:22.590
+It's a way for us to organize information and data into let's say a folder or a cupboard or a box so
+
+02:22.590 --> 02:27.240
+that these data structures can be used with different pros and cons.
+
+02:27.240 --> 02:34.200
+For example you have a fridge where you store your food and fridges are really really good at putting
+
+02:34.380 --> 02:41.010
+your food inside keeping it cold and then taking it out or you might have a backpack a backpack is really
+
+02:41.010 --> 02:45.870
+really good to stuff everything in there but when you're looking for things in a backpack it's really
+
+02:45.870 --> 02:46.520
+really hard.
+
+02:46.890 --> 02:54.090
+So you can think of data structures similar to that a container around your data that has different
+
+02:54.090 --> 02:56.470
+pros and cons of accessing that data.
+
+02:56.490 --> 03:02.230
+Removing that data writing data but that's something we'll get into a little bit later.
+
+03:02.250 --> 03:10.920
+The key here is that the square brackets allow us to contain information and data like strings integers
+
+03:11.160 --> 03:15.730
+floats if we want to bullying us into a contained fashion.
+
+03:15.870 --> 03:17.850
+So let's think of a good example here.
+
+03:17.880 --> 03:25.950
+What if we had a shopping cart let's say where Amazon here and then Amazon has the Amazon shopping cart
+
+03:26.600 --> 03:29.590
+and then here we can collect different things that we want.
+
+03:29.760 --> 03:31.710
+Maybe we collect some.
+
+03:31.710 --> 03:34.470
+I don't know notebooks and you know what.
+
+03:34.530 --> 03:39.380
+Let's get some gadgets let's get some maybe some sunglasses.
+
+03:39.600 --> 03:47.990
+We can add different items here different strings different data into this cart and now just like we
+
+03:47.990 --> 03:53.750
+saw in strings we can access the Amazon cart in different ways.
+
+03:53.770 --> 04:02.230
+For example I can access it again with square brackets and simply say I want to item zero so fine print
+
+04:02.230 --> 04:07.760
+here and do Amazon cart look at that.
+
+04:07.800 --> 04:08.910
+I get notebooks.
+
+04:08.910 --> 04:14.520
+The second item I get sunglasses.
+
+04:14.580 --> 04:16.140
+What about the third item
+
+04:18.990 --> 04:20.370
+no list.
+
+04:20.430 --> 04:25.070
+Index out of range but this should make sense now.
+
+04:25.100 --> 04:31.150
+This is a list where we're accessing the index of but it only contains two items.
+
+04:31.150 --> 04:35.790
+So if we're going 0 1 to the third item nothing exists.
+
+04:35.800 --> 04:39.000
+So our program says if that doesn't work you're doing something wrong.
+
+04:40.300 --> 04:47.530
+And just like strings these list items are in memory in their separate bookshelf.
+
+04:47.530 --> 04:49.500
+Right but one right next to each other.
+
+04:49.510 --> 04:52.960
+So we can go 0 1 2 3 4 5.
+
+04:52.990 --> 04:56.210
+So on and so forth until the list ends.
+
+04:56.410 --> 04:56.870
+All right.
+
+04:56.920 --> 05:00.810
+Let's learn about lists a lot more in the next video by.

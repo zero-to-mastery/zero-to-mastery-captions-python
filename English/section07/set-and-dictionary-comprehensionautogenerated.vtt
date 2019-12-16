@@ -1,0 +1,211 @@
+WEBVTT
+
+00:00.410 --> 00:04.610
+Well let's talk about set comprehension and dictionary comprehension.
+
+00:06.330 --> 00:13.890
+Now this first one is actually quite easy to see because we can do the same thing that we've done with
+
+00:13.890 --> 00:14.550
+lists.
+
+00:14.550 --> 00:23.040
+We simply change these bracketed notation to a set which is a curly bracket like this so that if I do
+
+00:23.430 --> 00:29.400
+my list the first one I get a set.
+
+00:29.430 --> 00:30.790
+Same with the second one.
+
+00:30.990 --> 00:33.970
+If I go like this my list to
+
+00:36.700 --> 00:40.690
+just like that and I think you get the idea let's do one more on the final one.
+
+00:40.720 --> 00:41.800
+So my list for
+
+00:45.060 --> 00:50.640
+again you're able to do set comprehension on sets as well.
+
+00:50.640 --> 00:58.350
+A quick way for us to generate sets and remember sets only allow numbers that are not duplicate only
+
+00:58.350 --> 01:00.600
+unique items.
+
+01:00.660 --> 01:04.070
+What about dictionary comprehension.
+
+01:04.260 --> 01:16.280
+Well let's do something like this using the same formula we've used let's create a my dict and then
+
+01:16.280 --> 01:29.030
+here we're going to create a key and a value just like that and this key value can be acted upon.
+
+01:29.080 --> 01:36.100
+So in our case let's say we want to multiply the value by two or to the power of two.
+
+01:36.110 --> 01:41.140
+So this is what we want to create a key value pair.
+
+01:41.300 --> 01:44.650
+And the value gets acted upon now.
+
+01:44.680 --> 01:48.990
+In here I'm going to say another four loop four.
+
+01:49.030 --> 02:01.040
+So let's say key value and then in well and what what are we going to iterate over well let's think
+
+02:01.040 --> 02:02.030
+here.
+
+02:02.030 --> 02:07.970
+In order for us to create a dictionary we need both a key and a value.
+
+02:07.970 --> 02:08.600
+Right.
+
+02:08.600 --> 02:15.770
+So I need to pass it and it's horrible but I need to pass it an extra bowl like a dictionary that has
+
+02:15.770 --> 02:27.700
+both key and value so we can do something simple here we can say simple dictionary that will have a
+
+02:28.600 --> 02:40.390
+as one and B as two and now all we do is pass a simple dictionary in here as an admirable.
+
+02:40.710 --> 02:46.850
+We grab the key and values by doing dot items which we've seen before.
+
+02:46.850 --> 02:48.900
+And let's make this a little bit bigger.
+
+02:50.190 --> 02:50.670
+There you go
+
+02:53.730 --> 02:56.440
+the it all the way just so we're all clear.
+
+02:56.560 --> 03:04.510
+It's all on one line and now let's just see what happens and we'll go through it step by step.
+
+03:04.560 --> 03:15.150
+I'm going to copy this and paste it in if I click Run.
+
+03:15.270 --> 03:16.150
+Look at that.
+
+03:16.200 --> 03:22.170
+I have a new dictionary that has a equal to 1 and b equal to 4.
+
+03:22.170 --> 03:30.850
+Now let's go through it one by one just like we saw with list and set the first part is what we want
+
+03:30.850 --> 03:33.620
+to do with the data.
+
+03:33.750 --> 03:40.770
+In our case I wanted key and value which I was going to extract here in our for loop.
+
+03:40.770 --> 03:46.050
+I could have named this whatever I want though I could have done K envy and you might see this commonly
+
+03:46.110 --> 03:54.360
+in Python code just short term for key and value and then I wanted to do the power of two to the value.
+
+03:54.500 --> 03:57.380
+So then this is what I wanted to do.
+
+03:57.500 --> 03:58.880
+This is the action.
+
+03:58.880 --> 04:02.540
+This is the for loop that we did.
+
+04:02.540 --> 04:08.650
+So the for loop was hey extract the key in value using the dictionary dot items.
+
+04:08.660 --> 04:16.080
+Remember I needed to have two values so I can fill in key and value and then the value you multiplied
+
+04:16.080 --> 04:17.980
+by two or two the power of two.
+
+04:18.010 --> 04:27.100
+So we get that if for example I wanted to add an if statement and say Hey I only want you to add if
+
+04:27.550 --> 04:39.200
+the value is even so let's say modulo two equals zero only then I want you to add the dictionary if
+
+04:39.200 --> 04:45.450
+I click Run only that even value for gets added to the dictionary.
+
+04:45.560 --> 04:47.390
+Very very cool.
+
+04:47.450 --> 04:50.350
+Again this makes your code a little bit less readable.
+
+04:50.630 --> 04:57.470
+So it's just a shorthand for you to use and maybe if you see it in code you at least know what it is
+
+04:58.190 --> 05:04.700
+but you should be careful not to be overly clever and do these single line dictionary comprehension
+
+05:04.970 --> 05:08.770
+just because you can't just solidify our knowledge.
+
+05:08.810 --> 05:12.080
+Let's finish up with another example.
+
+05:12.220 --> 05:24.590
+What if instead I have this I want to do a four number in a list.
+
+05:24.590 --> 05:34.720
+One two three so we no longer have this dictionary but we still need to include a key and a value pair.
+
+05:34.720 --> 05:44.290
+Could I do it so that maybe the item is the key and the item multiplied by two is the value.
+
+05:44.290 --> 05:45.450
+How would we do that.
+
+05:45.490 --> 05:48.200
+Pause the video and give it a go if you want.
+
+05:48.220 --> 05:50.410
+Otherwise this is how we do it.
+
+05:50.590 --> 05:52.470
+We simply say no.
+
+05:52.660 --> 05:57.470
+Is the key and the value will be Num Times two.
+
+05:57.520 --> 05:58.650
+Just like that.
+
+05:58.780 --> 06:00.570
+Nothing too difficult.
+
+06:00.570 --> 06:01.410
+Right.
+
+06:01.480 --> 06:04.010
+If I click Run.
+
+06:04.220 --> 06:13.010
+There we go we're able to use comprehension as list comprehension is set comprehension.
+
+06:13.120 --> 06:20.980
+Dictionary comprehension is as a way to create lists with python as a way to create these data structures
+
+06:21.070 --> 06:23.580
+really fast with Python.
+
+06:23.670 --> 06:26.370
+Let's take a break and do an exercise in the next video.

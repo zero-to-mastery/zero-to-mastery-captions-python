@@ -1,0 +1,286 @@
+WEBVTT
+
+00:02.080 --> 00:11.170
+So we were able to submit our form and ideally now we have a way to capture that data that the user
+
+00:11.170 --> 00:14.820
+sent to the server once again.
+
+00:14.860 --> 00:21.210
+If I submit some sort of data and click sent I get form submitted her right now.
+
+00:21.220 --> 00:28.040
+If I open up the developer tools and refresh that you'll see that we have a few errors that we have
+
+00:28.040 --> 00:29.670
+to take care of.
+
+00:29.690 --> 00:32.920
+One is this form submitted.
+
+00:33.080 --> 00:39.800
+So if I scroll all the way down there's actually one thing I need to fix in order for my server to be
+
+00:39.800 --> 00:42.600
+able to read this data.
+
+00:42.730 --> 00:49.360
+We have to go into our contact dot HMO and we just have to make sure that all our inputs that is email
+
+00:49.750 --> 00:55.600
+text and the text area have a name attribute.
+
+00:55.600 --> 01:00.940
+And this is so we can actually grab the data on the back and I'll show you what I mean.
+
+01:01.330 --> 01:15.740
+So let's have name here as email name here as the subject and then name here
+
+01:18.370 --> 01:21.580
+as the message.
+
+01:21.580 --> 01:33.990
+So that if I save this now and I go back to my contacts and submit this again well we'll have to refresh
+
+01:33.990 --> 01:34.420
+you first.
+
+01:34.420 --> 01:45.130
+So let's refresh send some messages and if I click Submit now and we go to submit form
+
+01:50.540 --> 01:56.390
+you'll see that if I scroll all the way down I have a form data field.
+
+01:56.480 --> 02:05.100
+We now have email subject a message that we actually send all the way back to our flask application
+
+02:06.390 --> 02:09.390
+because we now gave it these name attributes.
+
+02:09.390 --> 02:11.560
+It knows what to send.
+
+02:11.570 --> 02:20.720
+So this is just a quick gotcha is just an Asian male form standard that we'll just have to add ourselves.
+
+02:20.940 --> 02:29.950
+Now if we go to the flask documentation we can access these values using the request dot form so if
+
+02:29.950 --> 02:39.800
+we go back and we go to server dock by we can do something like they say in the documentation.
+
+02:39.980 --> 02:47.090
+I can say if the request and this request is something that will have to import and which I already
+
+02:47.090 --> 02:49.840
+have done from flask.
+
+02:50.090 --> 02:59.600
+So if request method which is if we said that the method is going to be post which if we looked at the
+
+02:59.600 --> 03:04.950
+contact that HMO we have the method ask post.
+
+03:05.020 --> 03:18.220
+So if that's the case then I want you to grab that data by doing request DOD form and I can access different
+
+03:18.220 --> 03:24.490
+values like email or message like this.
+
+03:24.490 --> 03:33.160
+Now an easy way for us to grab this information is actually to do a method called to dict which is turning
+
+03:33.220 --> 03:36.250
+something the form data into a dictionary.
+
+03:36.250 --> 03:42.280
+So we're gonna get everything as a dictionary and then finally to make sure that we get this data.
+
+03:42.310 --> 03:51.580
+Let's just print data and we just got to return something so let's say return and I want you to return
+
+03:52.710 --> 03:54.510
+form submitted
+
+03:57.590 --> 04:02.240
+otherwise we'll just return.
+
+04:02.370 --> 04:05.430
+Something went wrong.
+
+04:05.430 --> 04:08.840
+Try again if we save this
+
+04:11.740 --> 04:19.720
+let's open up our terminal and let's go back to the form let's refresh.
+
+04:19.750 --> 04:24.360
+I'm going to close this for now and just submit our regular information.
+
+04:24.490 --> 04:32.180
+If I click sent form as submitted I have some errors here that we're gonna have to fix soon but if I
+
+04:32.180 --> 04:43.900
+scroll a little bit up look at that we have e-mail subject and message as a dictionary on our back end.
+
+04:43.900 --> 04:46.710
+We just transfer data to our Python app.
+
+04:46.720 --> 04:48.730
+How cool is that.
+
+04:48.930 --> 04:58.500
+Now the reason we get this error at the bottom is because right now when I submit a form I'm still requesting
+
+04:58.500 --> 05:01.120
+the five icon icon.
+
+05:01.140 --> 05:10.980
+Now if we go back to our application you'll notice that anytime we visit a new area our father Khan
+
+05:10.980 --> 05:13.960
+is not showing well.
+
+05:14.040 --> 05:18.040
+If we go back to our page let's go to index dot HMO.
+
+05:18.270 --> 05:20.420
+We'll see that in the link over here.
+
+05:20.430 --> 05:25.290
+We're looking for our feathered Khan dot icon in static assets.
+
+05:25.500 --> 05:30.650
+But if you remember we have our bolt dot icon right in the static folder here.
+
+05:30.750 --> 05:39.690
+So all we have to do is just either rename some of those files or in our case we can just move this
+
+05:40.260 --> 05:51.400
+call it Farrakhan that icon and move it into the static assets folder.
+
+05:51.410 --> 05:57.350
+Now if I refresh the page you'll see that I have my new bolt that icon.
+
+05:57.420 --> 06:06.880
+Finally I want to actually do something more interesting once a user submits a form.
+
+06:07.120 --> 06:10.570
+I want to have a little thank you message.
+
+06:10.680 --> 06:16.440
+Now there's many ways of doing this but the easiest way we're going to do is we're going to copy this
+
+06:16.440 --> 06:17.150
+entire file.
+
+06:17.220 --> 06:20.660
+So I'm just going to say duplicate and call it.
+
+06:20.910 --> 06:31.170
+Thank you Dot HMO now thank you dot HMO will be the exact same thing as the contact page that we created
+
+06:33.410 --> 06:36.170
+except instead of the form that we have.
+
+06:36.170 --> 06:41.290
+So let's grab this form information.
+
+06:41.290 --> 06:58.290
+So instead of having this for perhaps it will simply say thank you I will get in touch with you shortly.
+
+06:58.300 --> 07:05.560
+Now the cool thing that we can do here is that we can now redirect to the thank you page after they
+
+07:05.560 --> 07:12.910
+submit the contact form and that way we can do that is in the server up PI we can import let's make
+
+07:12.910 --> 07:18.280
+this a little bit smaller and it will import the redirect
+
+07:23.100 --> 07:30.910
+and all we have to do here instead of saying form submitted is we can say redirect to what route.
+
+07:30.930 --> 07:33.210
+Well it will redirect to.
+
+07:33.510 --> 07:43.380
+Thank you Dot H2 email like this again because thank you that HMO is in our templates and because our
+
+07:43.380 --> 07:49.120
+routes are setup to change dynamically we should be able to redirect to thank you.
+
+07:49.270 --> 08:01.020
+HMO fi save and let's save refresh submit some data on here quick send like that.
+
+08:01.020 --> 08:04.440
+Thank you I will get in touch with you shortly.
+
+08:05.230 --> 08:06.570
+How cool is that.
+
+08:06.700 --> 08:09.890
+And there's many cool things that we can do here right.
+
+08:10.090 --> 08:10.930
+Using the
+
+08:13.990 --> 08:21.190
+curly brackets like this if let's say we ask somebody to submit their user name or a name we can say
+
+08:21.280 --> 08:22.330
+thank you.
+
+08:22.330 --> 08:25.720
+With perhaps their actual name that be submitted.
+
+08:25.810 --> 08:28.280
+So something like Thank you Bob or thank you.
+
+08:29.920 --> 08:32.590
+But that's something we've already talked about for now.
+
+08:32.590 --> 08:39.640
+That looks pretty nice so I'm able to now submit a contact form
+
+08:43.080 --> 08:45.630
+make sure that you don't get any errors.
+
+08:45.720 --> 08:55.080
+So if I click on send look at that issue mail even tells me hey this has to be an email.
+
+08:55.130 --> 08:59.420
+Okay let's send in there we go.
+
+08:59.420 --> 09:00.750
+Everything is working.
+
+09:00.800 --> 09:09.710
+There are no errors we're submitting the form with all our data and we're receiving all that information
+
+09:12.390 --> 09:15.390
+right over here.
+
+09:15.400 --> 09:16.890
+How cool is that.
+
+09:19.470 --> 09:28.620
+So we now have our server dot pie setup to actually accept information and now we have our Web site
+
+09:28.740 --> 09:34.620
+that's able to well hopefully allow us to have clients message.
+
+09:35.400 --> 09:42.830
+But we need to do something with this data to store it somewhere because now this is in memory.
+
+09:42.820 --> 09:46.650
+Anytime I close the server this information is lost.
+
+09:46.680 --> 09:55.230
+Ideally we persisted somewhere or ideally we store it somewhere so that in the future we can go back
+
+09:55.260 --> 09:59.680
+maybe a week later and see who has submitted a form on our Web site.
+
+09:59.760 --> 10:01.110
+Let's do that in the next video.

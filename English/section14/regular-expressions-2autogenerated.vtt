@@ -1,0 +1,289 @@
+WEBVTT
+
+00:00.450 --> 00:01.560
+Welcome back.
+
+00:01.560 --> 00:07.980
+Up until now we've found just simple patterns simple tax patterns in our string.
+
+00:08.130 --> 00:15.800
+Nothing too crazy but we're regular expressions become really useful is for advanced patterns you see
+
+00:15.810 --> 00:22.950
+with regular expressions you can do some crazy patterns like let's say this and this looks like complete
+
+00:23.070 --> 00:24.100
+gibberish right.
+
+00:24.180 --> 00:27.660
+But this means something in regular expression.
+
+00:27.660 --> 00:33.510
+You can think of regular expression as an entire language in itself with different patterns that you
+
+00:33.510 --> 00:38.790
+use to find well patterns inside of text.
+
+00:38.820 --> 00:43.990
+Now the whole world of regular expression is really really complicated.
+
+00:44.040 --> 00:48.050
+As a programmer I don't expect you to learn all these patterns.
+
+00:48.120 --> 00:49.890
+You can see some of them here.
+
+00:49.950 --> 00:54.120
+We have special sequences that mean something like Slash D.
+
+00:54.120 --> 00:57.510
+Returns a match where the string contains digits number from zero.
+
+00:57.510 --> 01:02.850
+Tonight you have things like sets over here where you type in a regular expression.
+
+01:02.850 --> 01:10.200
+This it returns a match for any characters alphabetically between ANZ whether they're lowercase or uppercase.
+
+01:10.200 --> 01:19.000
+So there's all these little shortcuts and tricks they can write in a regular expression and things can
+
+01:19.000 --> 01:23.820
+get really really complicated so nobody actually memorize these things.
+
+01:24.010 --> 01:31.610
+You develop them as the need arises and as a matter of fact later on in the videos we'll do an exercise
+
+01:31.610 --> 01:37.730
+where we'll actually experiment with this and create a password checker and an email trick.
+
+01:37.750 --> 01:42.540
+Now one of the tools that I really really like is called Reg X one to one dot com.
+
+01:42.850 --> 01:45.070
+It's super super useful.
+
+01:45.070 --> 01:51.700
+All you do is will pick python and I'll give you regular expressions and a testing ground for you to
+
+01:51.700 --> 01:52.630
+test.
+
+01:52.630 --> 02:01.770
+For example if I wrote something like Hey how are you I can now enter a regular expression here and
+
+02:01.920 --> 02:03.510
+try things up.
+
+02:03.540 --> 02:09.970
+So for example if I type in hey how are you.
+
+02:10.070 --> 02:10.470
+Hmm.
+
+02:10.650 --> 02:12.610
+Well this doesn't really work.
+
+02:12.610 --> 02:17.660
+Maybe I can add some quotes around here but no.
+
+02:17.690 --> 02:23.120
+And it actually gives you some options and information as to what you can use.
+
+02:23.150 --> 02:30.980
+So for example let's say we wanted to check if well right here a character in arrange a to z or a doozy
+
+02:31.340 --> 02:40.100
+if I copy this and paste it in.
+
+02:40.330 --> 02:43.480
+It gives me four matches that I have in this case.
+
+02:43.480 --> 02:48.940
+I am checking to see hey does does it match any character doing a to z.
+
+02:48.940 --> 02:54.430
+Both lowercase and capitalize everything is matching right now you see over here that we have match
+
+02:54.430 --> 02:56.400
+one match to match three.
+
+02:56.470 --> 02:57.980
+So on and so forth.
+
+02:58.480 --> 03:06.170
+I can also group things so I can do brackets here and now this is the first capture and group and then
+
+03:06.170 --> 03:13.660
+I can do something else Sierra let's say in here I want let's say anything that is a.
+
+03:13.750 --> 03:15.610
+So what does it mean here.
+
+03:15.610 --> 03:18.750
+Well I have an explanation on the right hand side.
+
+03:19.090 --> 03:24.360
+The first capturing group says hey match a single character present in the list below.
+
+03:24.400 --> 03:32.140
+So it tells you a tizzy capital a desi and then the second capturing group is hey match a single character
+
+03:32.140 --> 03:40.610
+present in the list below which is a now in here I have to capture in group so the first capturing group
+
+03:40.640 --> 03:46.970
+and then the second capture group if I add a dot here which is a special meaning in regular expression
+
+03:47.000 --> 03:52.490
+if I hover over you see that it matches any character except for line Terminators.
+
+03:52.490 --> 03:54.190
+So what am I doing here.
+
+03:54.950 --> 03:57.670
+Well I'm first have hate.
+
+03:57.680 --> 04:04.730
+I want you to check for the first capturing group which is any single character in the range between
+
+04:04.790 --> 04:10.610
+a to z and then after that I want any character.
+
+04:10.610 --> 04:15.740
+And then after that I want you to search well for any matches of a.
+
+04:15.770 --> 04:25.070
+So this is why we match for we might match W because we're looking for any letter and then a space or
+
+04:25.070 --> 04:29.460
+any character and then an A.
+
+04:29.460 --> 04:38.100
+So now we have a full match which is W2 a and then we have a group one which is W because it matches
+
+04:38.100 --> 04:42.140
+the first group and then group 2 which matches the.
+
+04:42.330 --> 04:48.390
+Now I know this is confusing regular expressions is one of those things that it's really hard to figure
+
+04:48.390 --> 04:49.950
+out at first.
+
+04:49.980 --> 04:51.690
+So let me show you how we can use it.
+
+04:51.690 --> 04:58.410
+If I go to code generator here you'll see that I can actually just well give you a sample code that
+
+04:58.410 --> 04:59.670
+you can use in python.
+
+04:59.670 --> 05:10.030
+But what I like doing is actually copying this piece of text like this and going back to our code later
+
+05:11.680 --> 05:16.080
+and in the compile pasted it.
+
+05:16.390 --> 05:23.530
+Now you'll notice that there's an R here and R stands for a raw string because in Python something like
+
+05:23.530 --> 05:30.190
+a slash backslash has a special meaning because remember with backslash is that we can do special things
+
+05:30.190 --> 05:38.020
+like new line or tab an R says hey this is a raw string ignore everything that Python interpreter My
+
+05:38.020 --> 05:41.110
+interpret I want this to just be a pure string.
+
+05:41.110 --> 05:43.930
+So you'll see this along with regular expressions.
+
+05:43.930 --> 05:49.730
+Now if I run this code you see that I have s e a here.
+
+05:50.220 --> 06:01.370
+Again it's because I am searching for a letter followed by anything followed by a and if I have a group
+
+06:01.370 --> 06:10.760
+here which I'm searching through if I do group one I get s if I do group to
+
+06:14.070 --> 06:18.270
+I get a just like we did in our playground here
+
+06:21.140 --> 06:24.460
+another useful thing is in here.
+
+06:24.710 --> 06:27.740
+If you look at the quick reference you can actually search for things.
+
+06:27.740 --> 06:35.670
+So let's say I wanted to check if a test string has maybe starts with so I can type and starts here
+
+06:36.000 --> 06:42.540
+and you can see here that Oh it gives me a quick reference so if I do start of string it shows me hey
+
+06:42.840 --> 06:46.210
+use this character and I'll help you do start of string.
+
+06:46.290 --> 06:53.340
+So if I do let's say in here this carrot and say hey look at that.
+
+06:53.490 --> 06:55.030
+It matches it for me.
+
+06:55.170 --> 06:57.910
+So says hey assert position at the start of line.
+
+06:57.960 --> 07:00.660
+It explains exactly here how it works.
+
+07:00.660 --> 07:05.250
+And it tells me that I have a full match here now.
+
+07:05.270 --> 07:11.510
+Most of the time the way you'll be using regular expressions isn't like this would actually be quite
+
+07:11.510 --> 07:14.900
+hard if you're just figuring everything out yourself.
+
+07:15.050 --> 07:17.870
+Like I said nobody really memorize these things.
+
+07:17.870 --> 07:23.530
+You can see that we have quick references with common tokens that you can look through and understand.
+
+07:23.690 --> 07:31.380
+But a more practical way of actually learning about regular expressions is to see a real life use case.
+
+07:31.400 --> 07:36.680
+Now I'm going to leave some exercises for you that you can do if you want to learn about some of the
+
+07:36.680 --> 07:40.080
+common patterns from my experiences.
+
+07:40.100 --> 07:44.180
+This is not something that anybody is going to ask you about in an interview.
+
+07:44.180 --> 07:47.420
+You don't really have to memorize regular expressions.
+
+07:47.420 --> 07:49.520
+You just need to know what they do.
+
+07:49.520 --> 07:52.190
+So try the exercises if you want.
+
+07:52.190 --> 07:57.350
+Otherwise I'll see you in the next video to show you exactly how you would use regular expressions in
+
+07:57.350 --> 07:58.810
+a real life scenario.
+
+07:58.880 --> 07:59.650
+I'll see on that one.
+
+08:00.300 --> 08:00.480
+Bobby.

@@ -1,0 +1,337 @@
+WEBVTT
+
+00:01.750 --> 00:10.530
+Let me ask you this if you were a Web site owner would you want people to scrape your Web site.
+
+00:10.740 --> 00:13.030
+Would you want people to access your data.
+
+00:13.200 --> 00:18.110
+Maybe your Air B and B and you worked really hard to list these products.
+
+00:18.150 --> 00:20.130
+Different information on here.
+
+00:20.220 --> 00:25.800
+Is it fair that anybody can come and just grab this information and maybe make a copy of your Web site
+
+00:26.830 --> 00:29.140
+but not really right.
+
+00:29.170 --> 00:30.580
+I mean it depends.
+
+00:30.580 --> 00:37.790
+Most of the time you don't really want people scraping your Web sites although each mail and the data
+
+00:37.820 --> 00:40.570
+over a Web site is available to all of us.
+
+00:40.610 --> 00:46.050
+It's just how our internet works so that people can see different web pages.
+
+00:46.100 --> 00:50.480
+Most Web sites don't really want you scraping their data.
+
+00:50.570 --> 00:56.060
+Now there's actually a way that Web sites tell you what you can and can't screen.
+
+00:56.630 --> 00:59.270
+It's called Robots dot text.
+
+00:59.270 --> 01:07.130
+We simply say at the end of a U.R.L. slash robots Dot T X.
+
+01:07.970 --> 01:08.860
+Click enter.
+
+01:09.020 --> 01:17.000
+Look at that air B being B has a robots dot taxed robots dot text simply says hey if you're a robot.
+
+01:17.000 --> 01:23.330
+If you're a web scraper or a spider This is why you're allowed and not allowed to do.
+
+01:23.380 --> 01:27.500
+Does it mean that they'll prevent us if we break the rules.
+
+01:27.510 --> 01:29.340
+No they can't really prevent us.
+
+01:29.460 --> 01:36.960
+But this is a gray area where you want to be ethical here and only scrape the data that a Web site allows
+
+01:36.960 --> 01:37.460
+you.
+
+01:37.470 --> 01:43.590
+So if we look at robots tax you see here that Air B and B has created a tax file that tells us what
+
+01:43.590 --> 01:45.990
+you can and can't scrape.
+
+01:46.110 --> 01:53.250
+For example we look at the user agent here which says the Google bought Air B and B is telling Hey Google
+
+01:53.250 --> 02:01.710
+but you're allowed to scrape this information but we don't allow you to scrape account alumni calendar
+
+02:02.040 --> 02:05.040
+and you see that there's a lot of things that's disallowed.
+
+02:05.040 --> 02:07.310
+What about Bing search bot.
+
+02:07.440 --> 02:15.670
+Well bank you're allowed to do this but he can't scrape any of this data.
+
+02:15.770 --> 02:17.180
+We have Yandex board.
+
+02:17.180 --> 02:18.210
+What else do we have.
+
+02:18.230 --> 02:23.630
+We have by do spider and then we also have user agent Starr.
+
+02:23.660 --> 02:32.190
+That means anybody else anybody else you're allowed to scrape this but none of this information.
+
+02:32.190 --> 02:33.330
+All right let's go to another one.
+
+02:33.330 --> 02:34.940
+Let's go to you Demi dot.com.
+
+02:34.950 --> 02:43.620
+Here we see that anybody we don't want you to scrape or crawl through any of this information but we
+
+02:43.620 --> 02:51.240
+do allow you to access this API 2.0 course landing components.
+
+02:51.270 --> 02:52.820
+All right so that's too bad.
+
+02:52.860 --> 02:58.920
+It looks like you Demi doesn't really allow us to do anything other than this API 2.0 thing which will
+
+02:58.920 --> 03:02.390
+come back to what about Hacker News.
+
+03:02.390 --> 03:08.510
+We're going to build a project around hacker news so let's see if a hacker news allows us to scrape
+
+03:08.510 --> 03:10.840
+it.
+
+03:10.900 --> 03:11.420
+All right.
+
+03:11.440 --> 03:14.020
+So this list is a little bit smaller.
+
+03:14.050 --> 03:24.810
+We see that for all users we're disallowed to use these end points so it's saying as long as you don't
+
+03:24.870 --> 03:28.710
+use these once these you or else we're good to go.
+
+03:28.710 --> 03:36.280
+That is if we wanted to scrape just the home page which is right here.
+
+03:36.280 --> 03:45.220
+That's fine if we're trying to let's say go to comments that's fine too because this one wasn't in robots.
+
+03:45.260 --> 03:47.060
+Don't text again if you remember.
+
+03:47.060 --> 03:51.700
+If we go to robots dot text that's fine.
+
+03:51.730 --> 03:56.480
+The only thing that they ask is that we have a cruel delay of 30.
+
+03:56.680 --> 04:04.450
+That is if we're going to crawl their Web site we should have a pause so that we don't constantly use
+
+04:04.720 --> 04:10.930
+programs to hit the Web site because well this is going to overload their servers and maybe slow down
+
+04:10.930 --> 04:12.880
+their website.
+
+04:12.900 --> 04:14.640
+So what do we just learn.
+
+04:14.640 --> 04:18.820
+We learned that there is ethical and unethical ways of scraping Web sites.
+
+04:18.840 --> 04:21.870
+Yes you can scrape any Web site you want.
+
+04:21.870 --> 04:26.960
+And as a matter of fact there's chrome plugins if you Google Chrome plugin web scraper.
+
+04:27.080 --> 04:33.180
+There's a ton of Web scrapers that you can use that allow you to scrape Web sites without even writing
+
+04:33.180 --> 04:34.590
+a single line of code.
+
+04:35.370 --> 04:40.910
+It's a good thing to practice ethical programming.
+
+04:40.920 --> 04:46.040
+And that means checking the Web site's terms and condition before you scrape it checking their robots
+
+04:46.040 --> 04:53.840
+dot text to see what you can and can't scrape because usually the data you scrape from a Web site should
+
+04:53.840 --> 04:59.740
+not be used for commercial purposes because you're using somebody else's hard work too.
+
+04:59.750 --> 05:01.100
+Well perhaps make money.
+
+05:02.130 --> 05:08.730
+And this is why when we went to Hacker News and asked for a cruel delay of 30 seconds.
+
+05:08.730 --> 05:09.190
+Right.
+
+05:09.210 --> 05:14.910
+If you're requesting data from a Web site too aggressively with your program that's essentially spamming
+
+05:15.270 --> 05:18.850
+because this may break Hacker News.
+
+05:18.930 --> 05:26.430
+Now before we get into web scraping I want to note one other thing and that is this idea of an API if
+
+05:26.430 --> 05:31.160
+you remember when we accessed you Demi was robust text.
+
+05:31.170 --> 05:38.550
+They did tell us that there is some allowed areas that we can scrape or end points that we can use.
+
+05:38.610 --> 05:42.780
+You see some Web sites actually allow you to access data.
+
+05:42.780 --> 05:46.410
+For example you Demi gives us an instructor API.
+
+05:46.410 --> 05:51.900
+That is if you're an instructor on udemy you can actually use their API.
+
+05:51.900 --> 05:59.460
+You can see it right here so that you can get different data maybe you can get a course review list
+
+05:59.520 --> 06:10.560
+maybe a course questions list but if I go here and I enter this in my U.R.L. I'll get an invalid missing
+
+06:10.740 --> 06:11.880
+token.
+
+06:11.880 --> 06:18.120
+That is because right now I'm not an instructor or at least I haven't verified that I'm an instructor
+
+06:18.120 --> 06:19.060
+on udemy.
+
+06:19.290 --> 06:26.580
+It's going to say hey this data is only for valid instructors so I need to pass it a token to prove
+
+06:26.820 --> 06:28.270
+that I'm an instructor on you.
+
+06:28.290 --> 06:37.550
+Danny and a lot of Web sites give you what we call API or application programming interface access in
+
+06:37.580 --> 06:44.840
+a form like this called Jason to will give you the data that you need and some websites only allow you
+
+06:44.840 --> 06:54.500
+to do this if you're a valid user for example one of the most popular API is is this GitHub API where
+
+06:54.560 --> 07:02.510
+you can access different information from github but in order for us to use it we have to well create
+
+07:02.510 --> 07:07.340
+a user account and validate so that we are who we say we are.
+
+07:07.580 --> 07:16.100
+But then there's also Web sites like the Star Wars API that gives us free access that is anybody can
+
+07:16.100 --> 07:16.550
+use it.
+
+07:16.550 --> 07:18.890
+We don't need to verify that we are in user.
+
+07:18.890 --> 07:23.130
+We don't have to give a token when making a request.
+
+07:23.130 --> 07:25.250
+Instead we can just request data.
+
+07:25.640 --> 07:32.570
+So for example if I do the sloppy API and type in people and I hit enter
+
+07:35.490 --> 07:43.560
+Look at that I get all this data for free so that this well I can create an app around the star wars
+
+07:43.800 --> 07:50.070
+which is what's so IP stands for it stands for the Star Wars API and we can grab all this information
+
+07:50.220 --> 07:51.980
+that we want.
+
+07:52.130 --> 07:57.770
+We also have things like the Jason placeholder which I really like to use when building simple projects
+
+07:57.770 --> 08:04.070
+where we can get different information like photos you can see here that this is an API that gives us
+
+08:04.070 --> 08:13.260
+information with different photos that we can use maybe we have different posts that we can use and
+
+08:13.260 --> 08:20.460
+again these are what we call in Jason format which isn't HCM all but just a cleaned up version of data
+
+08:20.490 --> 08:22.140
+so people can use it.
+
+08:22.410 --> 08:27.690
+The easiest way to get data from a website is usually using an API.
+
+08:27.690 --> 08:34.890
+Sometimes websites allow us to just access it easily or they might have an API but it's only restricted
+
+08:34.890 --> 08:36.020
+to certain user.
+
+08:36.210 --> 08:38.330
+Maybe you have to register with their service.
+
+08:38.430 --> 08:41.050
+Maybe you have to pay for their API.
+
+08:41.160 --> 08:48.060
+Well in that case we have this but then there's also web scraping which is maybe a Web site doesn't
+
+08:48.060 --> 08:49.700
+give you access to an API.
+
+08:49.830 --> 08:57.060
+Maybe you want to just have that information for example Hacker News doesn't offer an API as far as
+
+08:57.060 --> 08:57.660
+I know.
+
+08:57.690 --> 09:05.070
+So instead we might want to just scrape the HMO or the Web site and see what we can use.
+
+09:05.100 --> 09:08.340
+So how can we scrape a web site using Python.
+
+09:09.120 --> 09:10.380
+Let's find out in the next video.

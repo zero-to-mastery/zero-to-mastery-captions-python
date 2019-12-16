@@ -1,0 +1,226 @@
+WEBVTT
+
+00:01.290 --> 00:02.060
+All right everybody.
+
+00:02.070 --> 00:04.560
+This is gonna be really really fun.
+
+00:04.560 --> 00:11.490
+We're going to create an actual contact page where users can submit contact information and enter a
+
+00:11.490 --> 00:15.780
+message so that they can contact you online.
+
+00:15.790 --> 00:22.620
+Now if we go to the Quick Start Guide on flask and we go to accessing request data.
+
+00:22.810 --> 00:32.240
+This actually shows you how to handle it and right over here in the request object is the code for us
+
+00:32.240 --> 00:35.840
+to actually grab information from the browser.
+
+00:35.840 --> 00:41.630
+Now there's even things like file uploads so we can get people to load their files and actually send
+
+00:41.630 --> 00:42.960
+it to our server.
+
+00:43.070 --> 00:46.530
+But for now let's just focus on this.
+
+00:46.620 --> 00:53.270
+I want to copy the code first and then we're gonna talk about what's happening.
+
+00:53.390 --> 00:56.640
+Let's go to our server dot pie.
+
+00:56.750 --> 00:59.570
+We have our basic roots right here.
+
+00:59.570 --> 01:05.820
+And let's add a another one like this.
+
+01:05.930 --> 01:13.610
+Now the only thing I care about right now is this part right here.
+
+01:13.610 --> 01:18.600
+I want to create a new route that I'll name for now.
+
+01:18.720 --> 01:26.900
+Submit form and this is something that will actually have to create it's going to have methods post
+
+01:26.930 --> 01:28.070
+and get.
+
+01:28.430 --> 01:36.170
+And again this is just the default get means the browser wants us to send information posts simply means
+
+01:36.170 --> 01:41.790
+that the browser wants us to save information but we won't worry about that for now.
+
+01:41.810 --> 01:52.980
+We also want to define a function called submit for and finally I want to just return for now a form
+
+01:53.280 --> 01:55.290
+submitted.
+
+01:55.450 --> 01:56.670
+Hooray.
+
+01:56.760 --> 02:00.360
+Message so that's our submit form.
+
+02:00.380 --> 02:05.470
+End Point but it's not doing anything right now.
+
+02:05.730 --> 02:10.150
+We're never calling this on the front end on the browser.
+
+02:10.210 --> 02:13.740
+So how can we get this to work.
+
+02:13.780 --> 02:20.860
+Well let's go to the contact dot HMO and figure out when we click the button.
+
+02:20.860 --> 02:24.700
+What happens and actually let's just search for it.
+
+02:24.700 --> 02:28.610
+If I go to title page you see that we have the send button.
+
+02:28.660 --> 02:33.210
+So when we hit send it we ideally send some information to the server.
+
+02:33.460 --> 02:36.700
+So let's command F and look for the send
+
+02:40.580 --> 02:41.630
+and look at that.
+
+02:41.630 --> 02:42.560
+It looks like it's over here.
+
+02:42.560 --> 02:45.240
+Let's make this a little bit bigger.
+
+02:45.290 --> 02:46.300
+Just like that.
+
+02:46.340 --> 02:53.610
+So we see what's going on we see that we have a button of type submit and this is the button that we're
+
+02:53.610 --> 02:55.520
+clicking to send.
+
+02:55.530 --> 02:59.980
+So it's online 74 now at the top here.
+
+03:00.330 --> 03:07.600
+We see that we have something called form and with form we have an action that we can take.
+
+03:07.610 --> 03:09.760
+This is standard HMO.
+
+03:09.920 --> 03:17.990
+When HMO was created the idea was to display pages but also using this form be able to send data to
+
+03:18.050 --> 03:22.180
+the server and we do that using this action attribute.
+
+03:22.220 --> 03:32.790
+And in here we can put post or get and if you remember that's exactly what we have here this end point.
+
+03:32.810 --> 03:39.280
+We'll be able to accept methods either again or post.
+
+03:39.360 --> 03:46.740
+Now we don't need to get into the details of what get versus posters but a good way of thinking about
+
+03:46.740 --> 03:53.860
+it is we can send data with get by simply attaching the information to the you are out in here.
+
+03:54.290 --> 03:59.690
+But ideally you don't want to send people's emails and message in the U.R.L..
+
+03:59.750 --> 04:06.140
+Ideally we want to send it in through some body of tax that's not so clear and obvious.
+
+04:06.140 --> 04:10.540
+So in our case we're gonna use post and I'll show you how this works.
+
+04:10.790 --> 04:15.520
+So we're going to have an action in here that is post.
+
+04:15.830 --> 04:26.000
+Now the way this actually works is we will have to call the submit form which by the way is what our
+
+04:26.160 --> 04:28.280
+endpoint is going to be.
+
+04:28.370 --> 04:31.550
+So that with a form when I click
+
+04:35.490 --> 04:44.670
+send over here it's going to run this you are all essentially submit form with a method
+
+04:47.550 --> 04:58.250
+that is post so the action submit form will be posted when I click send let's say this and double check
+
+04:58.250 --> 04:59.550
+that it works.
+
+04:59.630 --> 05:02.120
+So I'm going to say submit form here.
+
+05:02.120 --> 05:07.530
+I'm going to save and for now I'm just going to return forms submitted her right.
+
+05:07.670 --> 05:18.060
+If we go back and just write some gibberish let's actually refresh make sure it's new if I click send.
+
+05:18.270 --> 05:25.180
+Look at that I get form submitted her right and you see that the end point here is submit form.
+
+05:25.230 --> 05:29.330
+This was the action that we added in the ACM offer.
+
+05:29.520 --> 05:36.580
+Again if we go back open up the developer tools go to network here.
+
+05:36.660 --> 05:39.240
+Let's make this a little smaller.
+
+05:39.450 --> 05:48.420
+If I click send look at that in my network you see that we have the submit form if I click on it I get
+
+05:48.420 --> 05:50.860
+the response which is form submitted.
+
+05:50.880 --> 05:51.810
+Hurray.
+
+05:51.960 --> 05:58.230
+And if I go to headers you see that I did a post method because that's what I said.
+
+05:58.770 --> 06:02.560
+This is going to be me sending data to the server.
+
+06:02.640 --> 06:08.410
+You'd see that the content type is application x w w w form you are all encoded.
+
+06:08.460 --> 06:20.180
+This is just a standard data type that we can send when we use the form tag in H2 amount but we don't
+
+06:20.180 --> 06:28.060
+need to worry about that because we now have access to the data that the user sent.
+
+06:28.150 --> 06:35.380
+So in the next video we're going to try and capture the data that I sent to the server and actually
+
+06:35.470 --> 06:37.480
+read it with our Python code.
+
+06:38.260 --> 06:39.960
+I'll see in the next one by.

@@ -1,0 +1,268 @@
+WEBVTT
+
+00:00.360 --> 00:03.810
+So we've created this generous bot that follows back.
+
+00:03.900 --> 00:13.050
+But what about a narcissist but maybe a bot that loves your own tweets or loves a tweet based on some
+
+00:13.050 --> 00:14.310
+certain words.
+
+00:14.310 --> 00:16.320
+How can we built that.
+
+00:16.340 --> 00:25.760
+Well let's remove this generous bot for now or at least comment it out and leave it at the bottom.
+
+00:25.760 --> 00:30.920
+What do you want to do is let's say we want to search the keywords
+
+00:34.080 --> 00:41.110
+for now let's just search through number of tweets and we'll set it at 2.
+
+00:41.250 --> 00:53.120
+We'll get to what these mean and a second what we're gonna do here is I'm going to say for tweet in
+
+00:53.840 --> 01:01.250
+the tweet B dot cursor again this time around instead of going through followers I want to go through
+
+01:01.250 --> 01:02.300
+tweets.
+
+01:02.300 --> 01:06.690
+So in here I can do something called API dot search.
+
+01:06.770 --> 01:14.120
+If we go to the documentation here and we go to the API reference we see we have API dot search that
+
+01:14.120 --> 01:19.440
+returns tweets that match a specified query again.
+
+01:19.450 --> 01:30.090
+If I go back I can just say API dot search to search the tweets and we just search based on the term
+
+01:30.330 --> 01:31.610
+which is right here.
+
+01:31.650 --> 01:35.030
+Search Let's rename this just so we know it's different.
+
+01:35.130 --> 01:39.060
+Search string let's make this a little bit smaller.
+
+01:39.390 --> 01:47.870
+So this is going to be search string so we're gonna search the tweets with the search string of Python
+
+01:48.110 --> 01:51.860
+so we're gonna try and find all the tweets that contain the word python.
+
+01:52.610 --> 01:56.210
+And I'm also going to do items in here so we can loop through them.
+
+01:56.360 --> 01:58.560
+But within the items I can give it.
+
+01:58.580 --> 02:05.060
+How many items that we want to loop through in this case we just want to find the two tweets.
+
+02:05.120 --> 02:15.760
+So a number of items it's going to be two and in here we're gonna have another try block and this try
+
+02:15.760 --> 02:25.320
+block is just going to say tweet dot favorite to favorite the tweet that includes python and we'll just
+
+02:25.320 --> 02:35.450
+print to make sure that it worked I liked that tweet finally here we can also add the limit handler
+
+02:35.600 --> 02:41.090
+to this cursor but because we're only going through two items I think we should be fine although it's
+
+02:41.090 --> 02:46.550
+always a good idea to wrap the limit handler with a tweet cursor like we did before but I just want
+
+02:46.550 --> 02:54.140
+to keep this clean so you can see what's going on now in here we've printed this we'll do an asset block
+
+02:54.140 --> 03:01.700
+here that will say 3P dot to weepy here.
+
+03:01.720 --> 03:05.260
+So this is if the tweet be errors we'll just say as E.
+
+03:05.560 --> 03:13.120
+And in here we'll just print the reason for the error.
+
+03:13.170 --> 03:21.500
+And then finally if we get any stop iteration errors in that case we can just break out of the loop
+
+03:22.970 --> 03:25.630
+so let's save this and see if this works.
+
+03:26.420 --> 03:35.230
+Prone to open up my console and run.
+
+03:35.360 --> 03:36.310
+All right we got an error.
+
+03:36.350 --> 03:44.850
+We have to be has no attribute to BP error and that's because it should be too deep error again.
+
+03:44.880 --> 03:48.850
+Let's run this and oh boy.
+
+03:48.850 --> 03:50.380
+We have another error here.
+
+03:51.240 --> 04:01.940
+This time around there's no tweet dot favorite but if I go to the API and I do let's say favorite.
+
+04:02.240 --> 04:04.190
+I don't get any results.
+
+04:04.400 --> 04:06.240
+And this is because I'm Canadian.
+
+04:06.320 --> 04:14.150
+And fun fact if you're Canadian This is how you spell favorite but in the States you spell favorite
+
+04:14.360 --> 04:16.500
+like this with an Oh.
+
+04:17.060 --> 04:17.700
+There you go.
+
+04:17.720 --> 04:20.030
+We have a favorite method here
+
+04:22.800 --> 04:32.580
+so again fun fact I'm Canadian but also Romanian and that was my spelling error because while TB was
+
+04:32.610 --> 04:36.820
+obviously written by person speaking American English.
+
+04:36.830 --> 04:37.070
+All right.
+
+04:37.080 --> 04:37.970
+So let's give it a go
+
+04:41.020 --> 04:43.030
+and it looks like we have twice.
+
+04:43.030 --> 04:44.410
+I like that tweet.
+
+04:44.410 --> 04:54.970
+Let's go back to check of this work if I go back to let's say profile and look at likes.
+
+04:54.990 --> 04:55.770
+Look at that.
+
+04:55.860 --> 05:02.670
+I've liked a tweet that happened one hour ago that had the word python and another tweet that I have
+
+05:02.670 --> 05:05.550
+no idea what's saying but looks like there's python in here.
+
+05:05.580 --> 05:08.420
+Yeah look there's a python right over there.
+
+05:08.460 --> 05:10.690
+Hopefully none of these say anything bad.
+
+05:10.890 --> 05:12.470
+But look at that.
+
+05:12.480 --> 05:15.000
+You can see here that I've liked these tweets.
+
+05:15.000 --> 05:18.660
+I'm going to remove that just because I don't know if I should be like these.
+
+05:18.660 --> 05:19.230
+There you go.
+
+05:19.230 --> 05:21.060
+How cool is that.
+
+05:21.100 --> 05:29.380
+So now are narcissistic tweet can potentially just tweet anything that says our own name or like our
+
+05:29.380 --> 05:33.540
+own name if there's ever a tweet that has my own name.
+
+05:33.550 --> 05:34.260
+Well let's do that.
+
+05:34.270 --> 05:34.920
+Let's.
+
+05:35.080 --> 05:42.840
+Like the five tweets that have my own name and my narcissistic bought will hopefully work and look at
+
+05:42.840 --> 05:43.590
+that.
+
+05:43.650 --> 05:48.960
+This is kind of embarrassing but it looks like I've already liked two of those tweets.
+
+05:48.960 --> 05:51.410
+You have already favorite ad this status.
+
+05:51.510 --> 05:57.120
+But let's go back fi refresh here now.
+
+05:57.130 --> 05:57.900
+All right.
+
+05:58.000 --> 05:58.690
+Look at that.
+
+05:58.930 --> 06:05.770
+I have favorite ad all the tweets that include my names and looks like these ones I've already liked
+
+06:05.860 --> 06:06.640
+before.
+
+06:06.640 --> 06:08.710
+Very very cool.
+
+06:08.710 --> 06:13.500
+There is my narcissistic but and you can do different things here.
+
+06:13.520 --> 06:18.350
+For example I can re tweet as well if I wanted to instead of favorite.
+
+06:18.350 --> 06:24.380
+So now you know how on Twitter you always have those bots that somehow always read tweet something.
+
+06:24.380 --> 06:25.710
+Well this is what they do.
+
+06:25.730 --> 06:33.560
+They look for a keyword like Javascript or Python or whatever and they automatically retweeted.
+
+06:33.560 --> 06:41.420
+Very very cool as you can see this tweet library is very useful and combined with the Twitter API you
+
+06:41.420 --> 06:43.570
+can do some really interesting things.
+
+06:43.610 --> 06:49.670
+But again you want to be responsible here because there's a lot of ways that you can abuse and just
+
+06:49.670 --> 06:51.170
+spam people with Twitter.
+
+06:51.170 --> 06:53.880
+But hopefully now you see some use cases.
+
+06:53.900 --> 06:59.600
+For example if you want to follow back all your followers instead of clicking through every single profile
+
+06:59.810 --> 07:04.910
+you now have a programmer's way of solving that problem with good ol python.
+
+07:05.690 --> 07:07.450
+I'll see in the next one by.

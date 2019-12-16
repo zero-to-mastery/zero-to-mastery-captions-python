@@ -1,0 +1,187 @@
+WEBVTT
+
+00:00.480 --> 00:07.020
+Everything in Python is an object and in the next couple of videos we're going to talk about this idea
+
+00:07.110 --> 00:11.360
+of 0 P or object oriented programming.
+
+00:11.520 --> 00:19.740
+What it is what it's useful for and why it's such an important topic for us to become great developers.
+
+00:19.760 --> 00:25.310
+Now when I say everything in Python is an object what do I mean by this.
+
+00:25.310 --> 00:28.920
+Well remember are data types that we've talked about.
+
+00:28.940 --> 00:37.760
+If I click Run here you'll see that we have all our data types but we have this class keyword in front
+
+00:37.760 --> 00:38.570
+of it.
+
+00:38.670 --> 00:42.990
+And I mentioned previously that this is something that we're going to get into now.
+
+00:43.070 --> 00:53.600
+Everything here is an object because in Python everything is built by this class keyword and we're able
+
+00:53.600 --> 01:02.350
+to use different methods on our objects like this to perform some actions on them.
+
+01:02.360 --> 01:04.790
+So what is an object.
+
+01:04.790 --> 01:12.800
+Objects have methods like these and attributes that you can access with the DOT method.
+
+01:13.070 --> 01:20.810
+Now Object Oriented Programming allows us to go beyond what Python just gives us which are these data
+
+01:20.810 --> 01:21.500
+types.
+
+01:21.500 --> 01:29.630
+But wouldn't it be amazing if we can create our own and make Python even more powerful and using object
+
+01:29.630 --> 01:30.780
+oriented programming.
+
+01:30.860 --> 01:37.220
+And while we're going to learn the class keyword we're gonna be able to do just that so that the list
+
+01:37.220 --> 01:42.380
+over here can grow to our own custom objects.
+
+01:42.380 --> 01:45.970
+Now we're going to explore this topic of object oriented programming.
+
+01:45.980 --> 01:51.940
+What objects exactly are and what this class keyword is over the next couple of videos.
+
+01:52.160 --> 01:59.630
+But the key takeaway is that we're able to create our own types our own data types with different attributes
+
+01:59.660 --> 02:01.120
+and methods.
+
+02:01.130 --> 02:11.530
+Now why is this useful let's have a look at an example let's say we're working for Amazon and Amazon
+
+02:11.920 --> 02:13.780
+recently decided that hey you know what.
+
+02:13.780 --> 02:20.140
+We're going to have delivery drones that are going to deliver our customers packages a lot faster.
+
+02:20.140 --> 02:28.890
+But we need to code this drone right and up to this point we've learned that we can do that with basic
+
+02:29.160 --> 02:38.290
+functions conditional logic and just writing our code on a dot pi file but the problem is as code gets
+
+02:38.290 --> 02:40.540
+bigger and bigger and bigger.
+
+02:40.750 --> 02:42.310
+It's not just a one file.
+
+02:42.310 --> 02:44.160
+It's not just 10 lines of code.
+
+02:44.230 --> 02:50.890
+It becomes hundreds and thousands and millions of lines of code divided into different files code gets
+
+02:50.890 --> 02:57.100
+more and more complicated because we live in a world where technology is everywhere and programming
+
+02:57.100 --> 03:02.900
+something like a drone is quite complicated especially when it's a delivery drone.
+
+03:02.940 --> 03:09.150
+So how can we use object oriented programming to make this code more manageable.
+
+03:09.660 --> 03:17.310
+Well o p is what we call a paradigm that is it's a way for us to think about our code and structure
+
+03:17.310 --> 03:23.860
+our code in a way that is easier to maintain extend and write.
+
+03:23.940 --> 03:32.040
+So if we're writing a program about let's say that does drone delivery what we break it up into small
+
+03:32.040 --> 03:36.210
+pieces into little objects that represents the real world.
+
+03:36.210 --> 03:45.270
+For example I might code an object my own data type which is the propellers that allow the drone to
+
+03:45.600 --> 03:53.190
+fly and maybe another developer works on the camera and the vision part of the drone.
+
+03:53.190 --> 04:01.140
+Another developer can perhaps create the clause that hold the package and then another developer might
+
+04:01.140 --> 04:06.870
+be able to work on the signaling so that we're able to send signals from our drone to let's say Amazon
+
+04:06.870 --> 04:08.240
+headquarters and nowhere.
+
+04:08.280 --> 04:16.160
+All our drones are what we're doing here is we're breaking up functionality and data into different
+
+04:16.160 --> 04:22.550
+pieces that model the real world into separate objects so that different people can work on different
+
+04:22.550 --> 04:25.490
+parts and then we can just combine them afterwards.
+
+04:25.610 --> 04:31.790
+And the beauty is when we want to let's say create a delivery system that's not a drone.
+
+04:31.790 --> 04:39.590
+This time while it's a tank like delivery robot we can use the same pieces such as the camera and the
+
+04:39.590 --> 04:41.390
+claw and maybe the signaling.
+
+04:41.390 --> 04:50.090
+But we can just remove it so the propellers and use the tracks that lets say taxis and somebody else
+
+04:50.090 --> 04:58.640
+can code this part but we're able to use different pieces extend functionality from our drone into different
+
+04:58.970 --> 05:00.230
+objects.
+
+05:00.290 --> 05:06.020
+Now if you still don't understand 100 percent don't worry we're going to go over this over and over
+
+05:06.020 --> 05:07.600
+throughout the next couple of videos.
+
+05:07.610 --> 05:14.540
+The main takeaway is that OBE is a paradigm a way to think about our code a way for us to structure
+
+05:14.540 --> 05:22.910
+our code so that as it gets bigger and bigger we're able to be organized because we're not writing silly
+
+05:22.940 --> 05:24.200
+10 line codes.
+
+05:24.200 --> 05:27.680
+We're writing millions in lines of codes.
+
+05:27.680 --> 05:33.000
+Companies like Netflix have thousands of developers that are writing code every single day.
+
+05:33.080 --> 05:39.080
+They need a way to structure and organize this code so that what it just doesn't turn into complete
+
+05:39.080 --> 05:42.620
+chaos and complete spaghetti code.
+
+05:42.650 --> 05:46.460
+Let's take a break and learn more about OPI in the next video.

@@ -1,0 +1,157 @@
+WEBVTT
+
+00:00.730 --> 00:07.870
+Now what we've learned up until now at the end of the day all it did was create that function that our
+
+00:07.870 --> 00:12.370
+machine can use and predict any future input.
+
+00:12.520 --> 00:15.130
+And there's many applications of this right.
+
+00:15.160 --> 00:23.110
+We now have a function that as a programmer or a developer you can use throughout your code bases maybe
+
+00:23.110 --> 00:31.990
+on a Web site maybe on a robot to try and receive inputs and predict something whether that image is
+
+00:31.990 --> 00:38.000
+an image of a snake maybe a user sends a image that is not safe for work.
+
+00:38.080 --> 00:44.520
+Well maybe that predict model can predict and see if it should be uploaded or it shouldn't.
+
+00:45.220 --> 00:46.930
+But there's a problem here.
+
+00:47.430 --> 00:53.580
+You see right now we don't have that much data because we've only used a data set that has one hundred
+
+00:53.580 --> 01:02.100
+and fifty gross but in real life to train a really complicated model you have millions and millions
+
+01:02.100 --> 01:12.730
+of rows and this function of fitting and running the can dot fit takes a really really really long time
+
+01:14.250 --> 01:19.740
+and most of the time you're running these types of operations on something like a GP view or a graphical
+
+01:19.740 --> 01:27.750
+processing unit and sometimes in the cloud because you wouldn't be able to do it on a regular computer.
+
+01:27.810 --> 01:35.160
+Now this part is very very time consuming so you wouldn't want to every user that submits an image of
+
+01:35.160 --> 01:43.430
+a snake to actually run this function we call this model persistence and model persistence is important
+
+01:44.360 --> 01:48.670
+because next time we want to make a prediction we want to save this model.
+
+01:48.680 --> 01:53.900
+This function to a file and use that file for predictions.
+
+01:53.900 --> 02:01.250
+When you're on your iPhone and you're using let's say a machine learning feature it's not going to run
+
+02:01.280 --> 02:03.470
+and train the model right there.
+
+02:03.530 --> 02:11.670
+Ideally that models are already there on your phone and this idea of model persistence is important.
+
+02:11.690 --> 02:14.730
+So let me show you how to do that once again.
+
+02:14.810 --> 02:26.850
+So I could learn to the rescue with cycled learn I can say from so I could learn import job lip and
+
+02:27.130 --> 02:38.290
+now I can save my model using the job lab module by simply doing job lib dot dump and dump the model
+
+02:38.470 --> 02:45.610
+somewhere so we're going to dump the K and then which is our model.
+
+02:45.770 --> 02:53.720
+So we're going to dump K and then and we can call it whatever you want let's say M.L. brain dot job
+
+02:53.950 --> 02:54.370
+lib.
+
+02:54.410 --> 03:02.120
+That's the extension that we're going to have to use since we're using the job lib module and this stores
+
+03:02.270 --> 03:06.170
+the trained model in a file called a binary file.
+
+03:06.170 --> 03:07.340
+So if I run this
+
+03:10.240 --> 03:15.680
+oh and I get an error and that is because we have to do psychic learn dot externals.
+
+03:15.700 --> 03:19.600
+So this is just a way for us to import the job lab module.
+
+03:20.160 --> 03:24.280
+So if I run this again.
+
+03:24.310 --> 03:25.300
+There we go.
+
+03:25.300 --> 03:33.350
+If I now go to my Jupiter notebook you can see that I have a job lab file.
+
+03:33.610 --> 03:42.460
+So now in the future instead of me retraining the model I can just simply do a job or model since we
+
+03:42.460 --> 03:48.500
+assign it to a variable and say model equals job lab.
+
+03:48.550 --> 03:52.560
+Actually we don't even need the equals sign here and we can just dump this.
+
+03:52.570 --> 04:00.920
+So let's just run that and we can just assign and now to the model whenever we need it say model equals
+
+04:01.700 --> 04:13.500
+job lib dot load and load the name of the job lib that we want which is the small brain.
+
+04:13.520 --> 04:27.640
+So now if I do model dot predict on the let's say the X test data and I click Run look at that I get
+
+04:27.730 --> 04:36.430
+my predictions and if I now copy the code which was the sample that over here so I'll just cut that
+
+04:36.430 --> 04:39.680
+out and paste it in here.
+
+04:39.810 --> 04:49.110
+If I click Run there we go our model or and instead of predict we'll just do model dot predict if I
+
+04:49.110 --> 04:50.240
+click Run.
+
+04:50.610 --> 04:51.270
+Look at that.
+
+04:51.270 --> 05:00.090
+This still works so I was able to save my model so that I don't have to keep training it because that
+
+05:00.300 --> 05:07.890
+requires a lot of power so that my user whenever a user wants to use my model they just simply use the
+
+05:07.950 --> 05:17.100
+job lab load to load it up and then use the predict method and this is how models work in real life.
+
+05:17.170 --> 05:23.910
+And anytime we make an improvement to the model we simply just dump it again maybe to a user's phone
+
+05:24.240 --> 05:25.980
+so that they can use it.
+
+05:26.220 --> 05:32.610
+But this way only the business owners that have a lot of compute power can train the models as they
+
+05:32.610 --> 05:34.370
+get more and more complex.

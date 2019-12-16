@@ -1,0 +1,115 @@
+WEBVTT
+
+00:00.480 --> 00:05.930
+In order to finalize our understanding of functions we have to talk about scope.
+
+00:06.060 --> 00:10.880
+Another one of our key terms what is scope let's have a look
+
+00:13.770 --> 00:24.090
+scope is something present in a lot of programming languages and scope simply means what variables do
+
+00:24.090 --> 00:28.920
+I have access to.
+
+00:28.940 --> 00:37.740
+So what do I mean by that well we've seen this before right where I do print and then let's say Nate
+
+00:38.130 --> 00:47.770
+if I click Run I'll get an error a name error name name is not defined because well it doesn't exist
+
+00:47.900 --> 00:48.470
+right.
+
+00:48.580 --> 00:55.190
+And up to this point we haven't really discussed this but this is because of scope what variables do
+
+00:55.190 --> 01:00.100
+I have access to the Python interpreter says hey what do I have access to.
+
+01:00.140 --> 01:05.660
+And when we use something that it doesn't understand or doesn't have access to it's going to throw a
+
+01:05.660 --> 01:15.100
+name there or a variable is not defined our and scope in Python has what we call functional scope or
+
+01:15.100 --> 01:17.250
+function scope.
+
+01:17.320 --> 01:17.980
+What does that mean.
+
+01:18.610 --> 01:26.190
+Well up until now when we create a variable like total equals to a hundred.
+
+01:26.230 --> 01:29.360
+This is part of what we call global scope.
+
+01:29.440 --> 01:35.080
+That means anybody on this file has access to this total variable.
+
+01:35.110 --> 01:39.690
+I can use this inside of a conditional block I can use it inside of a function.
+
+01:39.820 --> 01:48.150
+It has global scope but when I say Python has function scope what I mean is that when we create a function
+
+01:48.810 --> 02:01.540
+and let's say we create total as some or let's say some func and we create total inside of the function.
+
+02:01.820 --> 02:09.400
+If I print Total here and I click Run I get the same thing name.
+
+02:09.410 --> 02:11.720
+Total is not defined.
+
+02:11.720 --> 02:14.830
+This is because of Python's function scope.
+
+02:14.990 --> 02:22.510
+Anytime we create a variable if it's not inside of a function then it is part of the global scope.
+
+02:22.530 --> 02:23.690
+We have access to it.
+
+02:23.790 --> 02:28.150
+But you see over here we get that red underline undefined name total.
+
+02:28.350 --> 02:38.140
+If let's say for example I had a condition if true then X equals to 10.
+
+02:38.270 --> 02:50.840
+If I do this and I say X and I click Run I have 10 because well although I have indentation the only
+
+02:50.840 --> 02:56.560
+time I create a new scope you can think of this as a new universe that we spot.
+
+02:56.760 --> 03:02.040
+Well we can only do that when we define a function like this.
+
+03:02.070 --> 03:08.400
+So think of scope as a new world that we create in our case when we create a function we create a new
+
+03:08.400 --> 03:14.400
+world that anything that's indented inside of the function is its own world that we don't really have
+
+03:14.400 --> 03:14.970
+access to.
+
+03:14.970 --> 03:23.010
+We can only use total if we indent print and it's part of this world.
+
+03:23.250 --> 03:24.780
+That's what scope is.
+
+03:25.110 --> 03:27.790
+Who has access to who.
+
+03:27.810 --> 03:33.030
+So let's take a break here and I want to play a little game in the next video where we try and figure
+
+03:33.030 --> 03:35.860
+out who has access to who.
+
+03:36.060 --> 03:37.370
+I'll see that one by.

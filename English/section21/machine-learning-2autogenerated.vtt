@@ -1,0 +1,166 @@
+WEBVTT
+
+00:00.940 --> 00:02.200
+Welcome back.
+
+00:02.200 --> 00:09.810
+We're now getting to the exciting step of creating a model how can we do this while We've split our
+
+00:09.810 --> 00:10.550
+data now.
+
+00:11.310 --> 00:18.420
+And luckily for us psychic learn comes a prebuilt with some tools for us to use to actually build this
+
+00:18.420 --> 00:19.560
+model.
+
+00:19.590 --> 00:26.640
+So what we can do is actually import from psychic could learn different types of algorithms that we
+
+00:26.640 --> 00:30.060
+can use to create our model.
+
+00:30.060 --> 00:38.770
+In our case we're gonna use the k Nabors classifier but just to show you if I go to cycle learn models
+
+00:39.400 --> 00:40.480
+or model selection
+
+00:43.900 --> 00:50.680
+you see that we have eight on of different types of things that we can do.
+
+00:50.790 --> 00:57.900
+We're going to use the nearest neighbors which is a very standard easy to use algorithm and I'll link
+
+00:57.900 --> 01:00.630
+to some resources so you can learn more about it.
+
+01:01.480 --> 01:07.400
+And specifically do the nearest neighbor classification which is going to do exactly this.
+
+01:07.480 --> 01:12.640
+It's going to try and divide up the data into different segments.
+
+01:14.090 --> 01:20.290
+But as you can see here we have so many models to pick from or so many algorithms to pick from.
+
+01:20.420 --> 01:28.000
+And one of the jobs of a machine learning engineer is to actually figure out which algorithm to use.
+
+01:28.100 --> 01:31.100
+But again this isn't a full machine learning course.
+
+01:31.160 --> 01:46.090
+So let's just use the neighbors module and from there import the K neighbors classifier hopefully idea
+
+01:46.290 --> 01:56.850
+I spelled out right now the way the K nearest neighbor classifier works is we can just use it as a function
+
+01:59.650 --> 02:03.490
+and all we have to give it is how many neighbors we want.
+
+02:03.490 --> 02:10.130
+That is how many classifications do we want in our case we know that there's three types of Iris flowers.
+
+02:10.180 --> 02:22.350
+So all I'm going to do is give it the parameter and neighbors of equal to three and then finally we're
+
+02:22.350 --> 02:35.080
+going to try and fit this data and use this algorithm by giving it the train dataset and the why train
+
+02:35.710 --> 02:43.580
+output so that if I run this well nothing comes out of it.
+
+02:43.840 --> 02:49.790
+Hopefully we've created our model but there's no way for us to test it.
+
+02:49.810 --> 02:56.870
+Right if we go back to our steps we need to check the output rate.
+
+02:56.910 --> 02:58.410
+We've created the model.
+
+02:58.470 --> 03:03.690
+Yes it's as simple as what we just did but we now need to check to see how good our model is.
+
+03:03.690 --> 03:06.540
+How good is our function.
+
+03:06.560 --> 03:20.500
+Well we can use the predict now to predict and try out our test so we can use the x test dataset and
+
+03:20.500 --> 03:28.740
+give it to the Y underscore predict variable which will be our predictions.
+
+03:28.740 --> 03:35.660
+So what the model predicts based on this new input x test data.
+
+03:35.800 --> 03:43.330
+Now the cool thing that we can do now is to actually compare the output of Y predictions that our model
+
+03:43.450 --> 03:47.130
+created with the actual answers.
+
+03:47.130 --> 03:51.680
+Because remember we created four different datasets right.
+
+03:51.690 --> 03:58.200
+We created the train data sets for x and y and also the test data sets.
+
+03:58.200 --> 04:09.600
+So for the X test we gave our new model the test data which we have the answers to and the model predicted.
+
+04:09.630 --> 04:14.220
+So this function was run to try and predict what type of flower might be based on.
+
+04:14.220 --> 04:20.010
+Remember the columns that we gave in and now we have our predictions.
+
+04:20.040 --> 04:27.270
+So we need to compare the predictions with the Y test variable and again so I could learn to the rescue
+
+04:27.570 --> 04:38.680
+has a nice tool for us to do that all we need to do is from psychic learn import metrics and we can
+
+04:38.680 --> 04:49.790
+now print the actual accuracy of our model and all we do is say metrics dot accuracy make sure I spelled
+
+04:49.790 --> 04:59.010
+out rate accuracy score and the function takes the Y test data which is the correct answers and the
+
+04:59.010 --> 05:04.160
+Y on the score predict which is the predictions that our model made.
+
+05:04.170 --> 05:14.160
+So if I run this I get an error because I haven't run the block with the Y predict variable being created.
+
+05:14.210 --> 05:19.530
+So let's do that and then run this and there we go.
+
+05:19.750 --> 05:28.750
+That's our accuracy metrics dot accuracy score tells us that it's ninety six percent correct.
+
+05:28.750 --> 05:31.020
+That's pretty amazing.
+
+05:31.210 --> 05:41.110
+Our model which we just created in honestly three lines of code is ninety six percent accurate.
+
+05:41.110 --> 05:51.350
+How cool is that so if we go over what we just did we imported the data we split the data into training
+
+05:51.410 --> 05:52.350
+and test set.
+
+05:52.490 --> 06:02.420
+We created a model by using the K nearest classifier and cycled learn we checked the output using the
+
+06:02.480 --> 06:08.000
+y prediction and why test variables and now we got the output.
+
+06:08.090 --> 06:13.650
+So now we can improve if we want our machine learning algorithm.
+
+06:13.940 --> 06:15.530
+So let's do that in the next video.

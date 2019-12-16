@@ -1,0 +1,280 @@
+WEBVTT
+
+00:00.710 --> 00:09.020
+Now one of the best ways in my opinion to actually use this soup object is to use the select method
+
+00:09.080 --> 00:18.200
+on it and select allows us to grab a piece of data from the soup that we just downloaded and created
+
+00:18.890 --> 00:22.590
+using what we call a CSX selector.
+
+00:22.640 --> 00:24.710
+Now this is a Python course.
+
+00:24.740 --> 00:28.210
+So we're not going to focus too much on CSX selectors.
+
+00:28.250 --> 00:31.330
+I will link to a resource so you can learn more about them.
+
+00:31.490 --> 00:40.710
+But a CSX selector allows us to access this data using well CSF selectors.
+
+00:40.730 --> 00:50.240
+So if I Google here CSF selectors you see here that well it's a list of different ways to grab elements
+
+00:50.690 --> 00:57.220
+on an HMO page we can use the class the idea the actual element.
+
+00:57.300 --> 01:06.480
+So let me show you how to do that I can say for example select a and what is this going to do.
+
+01:06.560 --> 01:12.640
+Well if I run this script it's going to select all the attacks.
+
+01:12.980 --> 01:13.250
+OK.
+
+01:13.280 --> 01:14.090
+That's nothing new.
+
+01:14.090 --> 01:15.180
+We've seen that before.
+
+01:15.320 --> 01:18.490
+We can do that for Dev as well if we want it to.
+
+01:18.770 --> 01:29.340
+But we can go beyond just an element and say we want to select let's say the class score so this class
+
+01:29.340 --> 01:33.140
+score can be accessed by using the dot notation.
+
+01:33.150 --> 01:38.490
+So dot score is going to grab all the scores on the page.
+
+01:38.490 --> 01:39.450
+So watch this.
+
+01:39.450 --> 01:49.190
+If I clear this and run here look at that I grabbed all the spam tags that have scores on them.
+
+01:49.190 --> 01:57.680
+So you see over here that this is just a list of all the spans because this span has a class of score
+
+01:58.400 --> 02:09.320
+this span has a class of score and we can do the same thing with ideas so if you wanted to grab this
+
+02:09.320 --> 02:16.840
+idea we simply say instead of a dot which stands for a class we do pound and then the idea.
+
+02:17.120 --> 02:18.530
+So if I run this
+
+02:22.370 --> 02:31.740
+we get this one span because this is the only one with this specific idea now I'll link to a resource
+
+02:31.740 --> 02:34.610
+where you can learn about more C assess selectors.
+
+02:34.740 --> 02:41.780
+They become really really powerful when you start selecting different complicated nested elements.
+
+02:41.790 --> 02:43.050
+Let me show you.
+
+02:43.230 --> 02:45.580
+Let's start to plan out what we want to do.
+
+02:46.290 --> 02:55.180
+Now in here I'm going to close this for now I want to grab the link over here so that is the title and
+
+02:55.180 --> 03:02.760
+the link of a story that has more than 100 points votes and everything else that doesn't have 100 points
+
+03:02.760 --> 03:03.930
+like this one.
+
+03:03.930 --> 03:05.230
+I just don't care about.
+
+03:05.370 --> 03:08.110
+So I'm just filtering Get out.
+
+03:08.160 --> 03:16.510
+So what we want to do is first of all grab this link and grab this votes.
+
+03:16.530 --> 03:19.770
+So we also list out how many votes this story has.
+
+03:19.770 --> 03:26.430
+So the way I'm going to do this is I'm going to right click click inspect what we know is that we want
+
+03:26.430 --> 03:31.440
+to grab this link that has a class of Story link.
+
+03:31.740 --> 03:38.700
+OK so just to double check if I go to this one over here and inspect you see that here.
+
+03:38.700 --> 03:42.210
+This one has a class of Story link as well.
+
+03:42.210 --> 03:48.510
+So let's just grab all the elements that have class story link and see what happens.
+
+03:48.610 --> 03:53.880
+I'm going to say dot Story link because dot means it's a class.
+
+03:54.480 --> 03:56.110
+And let's see what we get.
+
+03:56.110 --> 03:58.000
+I'm going to run the file
+
+04:00.730 --> 04:01.050
+and.
+
+04:01.060 --> 04:07.160
+All right we get a ton of lists but it looks like they're all a tax.
+
+04:07.180 --> 04:09.860
+So these are all links that we can use.
+
+04:09.970 --> 04:17.470
+It looks like this is a list so we can probably grab it using the square bracket 0 to grab the first
+
+04:17.470 --> 04:18.310
+element.
+
+04:18.460 --> 04:21.770
+Let's see if this works I'm going to go.
+
+04:22.250 --> 04:28.400
+I'm going to clear here and run this again.
+
+04:28.460 --> 04:29.160
+All right.
+
+04:29.390 --> 04:33.260
+Look at that visual information theory 2015.
+
+04:33.320 --> 04:35.390
+That's the first item in here.
+
+04:35.450 --> 04:42.780
+So it looks like Story link grabs us the tags the links for each one of these items.
+
+04:42.780 --> 04:43.000
+OK.
+
+04:43.010 --> 04:44.570
+What about votes.
+
+04:44.570 --> 04:46.130
+Let's grab the votes as well.
+
+04:46.130 --> 04:51.020
+I'm going to right click say inspect and what do we have here.
+
+04:51.060 --> 04:53.580
+We see that we have class of score.
+
+04:53.580 --> 05:06.410
+So let's just grab all the classes so I'm going to say that this is going to be links and that is well
+
+05:06.710 --> 05:11.620
+just instead of grabbing the first item I'm going to grab all the links and I'm also grabbing.
+
+05:11.660 --> 05:19.550
+I'm going to grab all the votes and all the votes are is going to be soup dot select and then grab what
+
+05:19.550 --> 05:20.300
+was it again.
+
+05:20.300 --> 05:21.750
+It was the score class.
+
+05:21.860 --> 05:27.830
+So I'm going to say grab all the elements that have the score class and just to make sure that this
+
+05:27.830 --> 05:28.520
+works.
+
+05:28.570 --> 05:33.770
+But let's just say print votes and grab the first item.
+
+05:33.860 --> 05:37.600
+So I'm going to run this and look at that.
+
+05:37.600 --> 05:45.670
+I have one hundred and eighty points because the first story well let's refresh the page because this
+
+05:45.670 --> 05:47.050
+may have changed.
+
+05:47.070 --> 05:47.280
+Yeah.
+
+05:47.320 --> 05:52.660
+It looks like C this Web site is constantly changing and now has one hundred and eighty two votes.
+
+05:52.660 --> 05:54.820
+So if I refresh here there you go.
+
+05:54.820 --> 05:56.800
+One hundred and eighty two points.
+
+05:58.530 --> 05:59.380
+Awesome.
+
+05:59.400 --> 06:07.710
+So we now have grabbed the two pieces of information that we really care about the links and the votes.
+
+06:07.710 --> 06:13.590
+And luckily they're all in order because each link the first link and the first vote is together.
+
+06:13.600 --> 06:16.160
+The second link and the second vote is together.
+
+06:16.290 --> 06:19.750
+So that's useful for us now.
+
+06:19.810 --> 06:25.180
+Just as a side note with beautiful soup we can keep chaining these right.
+
+06:25.270 --> 06:33.720
+For example I can now say votes dot get and get for example an attribute name.
+
+06:33.760 --> 06:43.990
+So for example I can grab a score over here and say Hey grab the score from here so that if I do print
+
+06:43.990 --> 06:50.930
+here and I run this well votes is a list.
+
+06:50.930 --> 06:52.940
+So we actually have to grab the first element.
+
+06:52.950 --> 07:00.610
+So let's just grab the first element run this again and we get none.
+
+07:00.620 --> 07:06.140
+Because while this is the value the attribute is I.D..
+
+07:06.140 --> 07:17.510
+So if I do get I.D. for example and I run this I now get the actual I.D. value so with beautiful soup
+
+07:17.540 --> 07:22.900
+you can keep chaining these we can keep selecting so I can say dot select here if I want.
+
+07:22.910 --> 07:24.730
+If we have even more information.
+
+07:24.980 --> 07:27.850
+But in our case we have the information that we need.
+
+07:27.890 --> 07:34.640
+It's time for us to go to the next step which is to try and combine these and make it more useful.
+
+07:34.640 --> 07:35.980
+So let's do that in the next video.

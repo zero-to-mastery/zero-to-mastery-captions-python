@@ -1,0 +1,172 @@
+WEBVTT
+
+00:00.630 --> 00:02.040
+Welcome back now.
+
+00:02.070 --> 00:04.630
+Up until now we saw the break.
+
+00:04.680 --> 00:10.500
+Key word that we can use to break out of a loop and you see here that we're able to loop with a for
+
+00:10.500 --> 00:13.070
+loop but with a while loop as soon as we break.
+
+00:13.080 --> 00:14.220
+We're done.
+
+00:14.220 --> 00:21.350
+We've just well broken out of the loop but could we do that in a for loop.
+
+00:21.360 --> 00:24.760
+Let's find out yep.
+
+00:24.880 --> 00:26.050
+Break.
+
+00:26.050 --> 00:36.610
+Keyword works in a for loop as well but there's actually two other things that we can use besides break.
+
+00:36.710 --> 00:47.720
+One is called continue and you can see here again blue highlighting if I do continue here and I click
+
+00:47.870 --> 00:49.990
+Run.
+
+00:50.050 --> 00:50.620
+There you go.
+
+00:50.620 --> 00:52.410
+We get our looping again.
+
+00:52.690 --> 00:59.780
+But you're thinking why why do we need this like it seems completely useless right.
+
+00:59.800 --> 01:01.270
+Well a break.
+
+01:01.420 --> 01:06.680
+When we use the break segment it breaks out of the current and closing loop.
+
+01:06.910 --> 01:12.050
+So when we used a break statement we broke out of this loop.
+
+01:12.100 --> 01:12.460
+Right.
+
+01:12.460 --> 01:16.540
+This whole while loop we just exited it and same with the for loop.
+
+01:16.540 --> 01:24.370
+We completely exited it however with a continue what we're saying is hey whatever happens when you hit
+
+01:24.370 --> 01:28.880
+this line continue onto the top of the enclosing loop.
+
+01:29.020 --> 01:31.150
+So the current closing loop What is it.
+
+01:31.180 --> 01:32.310
+It's this for loop.
+
+01:32.410 --> 01:40.580
+So it's going to go back to the for loop so that if I do something like print here so that we get it
+
+01:40.580 --> 01:50.810
+printed twice or you know what let's just move print down here like that and then.
+
+01:50.830 --> 01:51.700
+Same here.
+
+01:51.700 --> 01:56.620
+We're going to just print out the bottom after continue.
+
+01:56.620 --> 02:04.470
+If I click Run nothing gets printed because as soon as it sees continue it's going to say OK I'm going
+
+02:04.470 --> 02:10.620
+to go back to the loop and it's going to keep going keep going keep going until well the loop ends so
+
+02:10.620 --> 02:18.710
+that we never actually hit line 10 in line for so that becomes really useful and conditional logic as
+
+02:18.710 --> 02:19.780
+well.
+
+02:19.790 --> 02:28.100
+Finally the third one is called Pass and Pass is but not very useful.
+
+02:28.100 --> 02:36.700
+It essentially does nothing if I click run here and again it shows me here line 10 something's wrong.
+
+02:36.700 --> 02:45.040
+Well we have to move print up to the top so that while we don't get my list of index of three which
+
+02:45.160 --> 02:47.310
+doesn't exist.
+
+02:47.420 --> 02:55.250
+So again going back here if I click Run pass doesn't do absolutely anything it just essentially passes
+
+02:55.310 --> 02:56.330
+to the next line.
+
+02:57.200 --> 03:00.220
+So why is that ever useful.
+
+03:00.230 --> 03:07.480
+It's very rare that you'll see pass in your code but pass is a good way to have let's say a placeholder
+
+03:07.550 --> 03:13.940
+while you're coding for example you want to loop through the for loop but we don't know what we want
+
+03:13.940 --> 03:15.050
+to do yet in the code.
+
+03:15.080 --> 03:18.570
+Let's say that here we're still thinking about it.
+
+03:18.770 --> 03:29.430
+If I do this and I click Run I get an error here because what Whoa well expected an indented block because
+
+03:29.820 --> 03:34.650
+now the for loop or the python interpreters looking for the next.
+
+03:34.650 --> 03:36.170
+Like what am I supposed to do with the loop.
+
+03:36.180 --> 03:38.460
+I'm trying to loop and there's no code for me.
+
+03:38.550 --> 03:46.020
+So you can add a pass here to at least fill something for the for loop to say hey I'm thinking about
+
+03:46.020 --> 03:50.790
+it I'm just going to pass it for now just so you have something so you don't bug me and I'll come back
+
+03:50.790 --> 03:51.210
+to it.
+
+03:51.240 --> 03:54.740
+So if I click Run that still works.
+
+03:54.740 --> 04:00.230
+So pass is one of those place holders that we can use so that there is a line of code that does absolutely
+
+04:00.260 --> 04:02.330
+nothing that we can still pass through.
+
+04:02.330 --> 04:05.150
+Again a very rare thing to see in production code.
+
+04:05.160 --> 04:11.960
+But while you're developing some developers like using passed and there you have it break continue and
+
+04:11.960 --> 04:12.810
+pass.
+
+04:13.010 --> 04:14.290
+I'll see you in the next one.
+
+04:14.360 --> 04:14.580
+Bob.

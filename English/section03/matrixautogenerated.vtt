@@ -1,0 +1,118 @@
+WEBVTT
+
+00:00.530 --> 00:01.680
+Welcome back.
+
+00:01.700 --> 00:12.950
+I want to talk to you quickly about something called Matrix and a matrix is a way to describe 2D lists
+
+00:13.190 --> 00:15.550
+or multidimensional lists.
+
+00:15.560 --> 00:16.730
+What do I mean.
+
+00:16.730 --> 00:25.010
+Well I can create a matrix and this is a name that I just made so I can call it whatever I want but
+
+00:25.010 --> 00:29.760
+usually these are called Matrix in programming and it looks something like this.
+
+00:29.780 --> 00:36.240
+It's an array with another array inside of it so let's say for example
+
+00:39.510 --> 00:52.700
+I have one two three here and then another array one or listed two for six and then another array seven
+
+00:53.030 --> 00:57.030
+eight nine what's happening here.
+
+00:57.040 --> 00:59.660
+Well it's a two dimensional array.
+
+00:59.770 --> 01:08.060
+We have the main array and then we have sub arrays three arrays to be exact.
+
+01:08.070 --> 01:10.590
+Now why is this useful.
+
+01:10.590 --> 01:15.330
+And by the way this is two dimensional but we can have multiple ones.
+
+01:15.360 --> 01:25.220
+For example you can have another array inside of this array but why is this important these type of
+
+01:25.220 --> 01:33.560
+matrices come up a lot in topics like machine learning or image processing for example a computer doesn't
+
+01:33.560 --> 01:36.820
+really know what a photo of a dog is.
+
+01:37.040 --> 01:40.210
+The only thing it understands is zeros and ones.
+
+01:40.250 --> 01:48.860
+So a lot of photos for example let's say we had a very simple photograph of a giant X maybe this letter
+
+01:48.890 --> 01:54.420
+X well a computer can understand an image based on pixels on the screen.
+
+01:54.530 --> 02:09.770
+So maybe we can have 0 1 0 1 0 0 or sorry 1 here 0 here and then 1.
+
+02:09.820 --> 02:16.870
+And right now a computer can look at this and if this represented let's say a tiny little pixel here
+
+02:17.170 --> 02:22.690
+or maybe a pixel here or my screen the computer's going to say oh there's a one here.
+
+02:22.690 --> 02:31.030
+So that means I should make this green in this corner then dark here then green then dark green dark
+
+02:31.330 --> 02:40.240
+green dark green and a computer is able to draw let's say an X and this is a simple example and using
+
+02:40.450 --> 02:46.240
+matrices we can do a lot of these heavy calculations and that's how computers work underneath the hood
+
+02:46.240 --> 02:51.910
+when let's say for example it's trying to display something but the reason I wanted to talk about this
+
+02:51.910 --> 03:01.390
+here is when you want to access a multi dimensional list well you would do something like this let's
+
+03:01.390 --> 03:13.650
+say matrix access the first item in the matrix which in this case will be this first array because it's
+
+03:13.650 --> 03:19.420
+the first item and then let's say we want to access the zero in here or else change us to five.
+
+03:20.070 --> 03:24.380
+Well I'll do square brackets again and just do 0 1.
+
+03:24.390 --> 03:28.540
+So if I go one here and let's print that out
+
+03:33.700 --> 03:37.860
+and I click Run I get five.
+
+03:38.000 --> 03:40.420
+So it's accessing the first item in the array.
+
+03:40.460 --> 03:46.790
+So it's going to look at the first order array grab the first item which is right here and then grab
+
+03:46.790 --> 03:49.250
+the second item in that array.
+
+03:49.310 --> 03:57.480
+So 0 1 which is 5 and you can keep doing this if he had multi-dimensional arrays you can keep adding
+
+03:57.480 --> 04:04.720
+keep adding keep adding to access that information from an array or list.
+
+04:04.720 --> 04:10.130
+But remember in Python we want to use the term list I'll see in the next one.
+
+04:10.310 --> 04:10.540
+Bobby.

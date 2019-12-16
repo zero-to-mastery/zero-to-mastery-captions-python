@@ -1,0 +1,313 @@
+WEBVTT
+
+00:00.450 --> 00:01.590
+Welcome back.
+
+00:01.590 --> 00:07.530
+Now we're gonna be spending a good chunk of this course building some projects and using some built
+
+00:07.530 --> 00:16.380
+in Python modules as well as using some popular third party libraries from Python package index however
+
+00:16.410 --> 00:24.330
+I wanted to just show you a quick video on some of the useful modules that I personally like in the
+
+00:24.450 --> 00:32.240
+built in modules that we have from Python and some of these really useful modules actually allow us
+
+00:32.240 --> 00:36.120
+to have more data types in Python.
+
+00:36.170 --> 00:42.380
+Remember this list at the beginning of the course where I talked about the data types that comes with
+
+00:42.380 --> 00:50.990
+Python and then we learned about classes and how we're able to create our own data types our own objects
+
+00:51.260 --> 01:00.350
+in Python but we also have these specialized data types that come as well built into this python Standard
+
+01:00.350 --> 01:06.300
+Library which are really really nice and this can make our programs really really powerful.
+
+01:06.350 --> 01:11.120
+Now they're specialized because you're not going to see them everywhere but it's good to know that they
+
+01:11.120 --> 01:11.910
+exist.
+
+01:11.990 --> 01:20.990
+And I'm going to go over some of my favorite The first one I'm going to show you is the collection module.
+
+01:21.140 --> 01:29.840
+So the collection module is from collection or collections and there's three things that I really like
+
+01:29.840 --> 01:30.170
+here.
+
+01:30.250 --> 01:38.660
+So I'm going to say import I'm going to import the counter the default dictionary and then the ordered
+
+01:38.870 --> 01:39.440
+dictionary
+
+01:42.430 --> 01:48.850
+now notice how some of them are classes because they're capital letters and some of them look to be
+
+01:49.300 --> 01:56.680
+just a function and you can read up on the collections module by just again scrolling through here and
+
+01:56.680 --> 02:03.110
+just looking at collections and you can see all the ones that we have so in these collections.
+
+02:03.110 --> 02:11.160
+Let's start off with the first one a counter is extremely useful let's say I have a list that contains
+
+02:11.160 --> 02:21.860
+1 2 3 4 5 6 7 and I want to count how many items in a list if I do print counter you can see over here
+
+02:22.190 --> 02:23.420
+what it does.
+
+02:23.480 --> 02:27.710
+But essentially if I give it a list and click Run.
+
+02:27.750 --> 02:29.900
+All right what just happened here.
+
+02:31.340 --> 02:40.820
+It creates a dictionary where one has 1 2 has 1 3 has 1.
+
+02:40.970 --> 02:44.550
+What if we add another seven here let's say seven.
+
+02:44.660 --> 02:45.560
+If I click a run
+
+02:49.360 --> 02:54.220
+do you see that seven now has to.
+
+02:54.370 --> 03:04.120
+So what it does is it creates a dictionary that keeps track of how many times an item occurred in an
+
+03:04.140 --> 03:05.340
+admirable.
+
+03:05.350 --> 03:06.750
+So that seven occur twice.
+
+03:06.760 --> 03:14.860
+So seven has a value of two another way we can use this is let's say we have a sentence and say in the
+
+03:14.860 --> 03:16.860
+sentence I want to check.
+
+03:17.200 --> 03:21.280
+Well let's just write something I'll say blah blah blah.
+
+03:21.340 --> 03:23.790
+Thinking about Python.
+
+03:24.070 --> 03:34.830
+If I was to do a counter here and let's say give it a sentence if I click Run check that I see which
+
+03:35.400 --> 03:41.130
+letter occurred the most in our case H occurred five times.
+
+03:41.130 --> 03:46.200
+Space occurred five times and then B occurred four times.
+
+03:46.210 --> 03:56.480
+And this is really really cool because this type of calculation of a counter of turning an item like
+
+03:56.510 --> 04:06.110
+a list into what we call a hash map or a dictionary like this to keep count is actually a very useful
+
+04:06.170 --> 04:08.710
+function that you see all over programming.
+
+04:08.840 --> 04:12.610
+It actually helps a lot with optimization problems.
+
+04:12.710 --> 04:16.940
+Now we were not going to get into it there but I just wanted to show you that counter is something that
+
+04:16.940 --> 04:24.230
+is really really useful if you want to count duplicate users or duplicate emails counter can be really
+
+04:24.230 --> 04:26.400
+really useful.
+
+04:26.420 --> 04:27.550
+What about the next one.
+
+04:27.740 --> 04:31.130
+Default Dick God that's a really hard word to say.
+
+04:31.160 --> 04:31.670
+All right.
+
+04:31.790 --> 04:39.920
+So let's say we have a dictionary here and this dictionary will have while a very insignificant dictionary
+
+04:39.970 --> 04:46.880
+will have a one and B to what a simple dictionary.
+
+04:46.880 --> 04:56.750
+Now in here I can say dictionary dot or bracket a.
+
+04:57.040 --> 05:04.000
+And I'll be able to grab the value right if I click Run.
+
+05:04.190 --> 05:06.530
+And I did not spell dictionary right.
+
+05:06.530 --> 05:07.160
+Let's fix that
+
+05:11.880 --> 05:18.650
+let's comment this out for now because we don't need this you'll see that I get a value of one but if
+
+05:18.650 --> 05:27.400
+I tried to access something that doesn't exist like C I'll get an error with a default dictionary.
+
+05:27.400 --> 05:32.960
+I'm actually going to get a default value if something doesn't exist.
+
+05:33.310 --> 05:39.850
+So let's convert this into a default dictionary like this.
+
+05:41.520 --> 05:49.020
+And now if I run this we get an error first argument must be callable or not.
+
+05:49.050 --> 05:56.380
+So what default dict does is it allows us to access a key like this but give it a default value.
+
+05:56.550 --> 06:04.670
+In our case we need to give it something like a callable object in here and callable means something
+
+06:04.670 --> 06:06.740
+like a function that can be called.
+
+06:06.740 --> 06:11.750
+So if I do run I get zero.
+
+06:11.820 --> 06:12.720
+Why is that.
+
+06:12.720 --> 06:24.930
+Well when I run int like this with nothing inside of it we get zero so a shorthand way because this
+
+06:24.930 --> 06:29.160
+is going to be run is to give it a quick function that we're not going to use.
+
+06:29.160 --> 06:37.730
+So let's just do a lambda and just give it let's say five.
+
+06:37.740 --> 06:40.950
+So now if I run this let's do a dictionary here
+
+06:44.420 --> 06:49.360
+and let's try and grab something that doesn't exist.
+
+06:49.380 --> 06:51.440
+If I click Run I get five.
+
+06:51.900 --> 06:58.200
+So this is a common pattern you see with default dict we just give it a value or a callable object in
+
+06:58.200 --> 07:05.010
+our case we're just giving it this function a lambda function that simply returns 5 so I can even say
+
+07:05.690 --> 07:12.470
+in here doesn't does not exist.
+
+07:12.590 --> 07:15.720
+The second parameter will be whatever we want.
+
+07:16.010 --> 07:18.840
+And if I hit run I get.
+
+07:18.880 --> 07:23.570
+Does not exist even though I'm accessing a key that well doesn't exist.
+
+07:23.800 --> 07:32.780
+Now if I do a here and I click run everything worse I still get one and if I do B.
+
+07:34.290 --> 07:35.560
+I get run as well.
+
+07:35.610 --> 07:45.030
+Again another useful little data take next one is ordered dict and this one is another interesting one.
+
+07:45.390 --> 07:52.030
+An ordered dictionary retains the order that you insert into a dictionary.
+
+07:52.080 --> 07:52.960
+Let me show you.
+
+07:53.070 --> 07:59.600
+So if we have let's say dictionary and this dictionary will be an order dictionary.
+
+07:59.760 --> 08:01.430
+So this is how we create it.
+
+08:01.510 --> 08:13.890
+Now in here if I do d equals to a and this is going to equal to 1 and then D B is going to equal to
+
+08:13.890 --> 08:28.540
+2 and I now copy this and make a second dictionary let's say D2 D2 D2 and I check Hey print does D to
+
+08:29.350 --> 08:31.270
+equal D.
+
+08:31.480 --> 08:38.210
+Remember this is going to check for the values if I run this I get true.
+
+08:38.450 --> 08:46.390
+Yep they're equal but if I change the order of insertion here and I click Run I get false.
+
+08:47.200 --> 08:52.300
+Sorry this is not the same thing because it maintains the order.
+
+08:52.300 --> 08:59.770
+If this was a regular dictionary so let's say instead of what we have here I'm going to just simply
+
+09:00.160 --> 09:10.240
+create a dictionary and we'll just we'll just do a simple C here that has o say 100 and do the same
+
+09:10.240 --> 09:12.110
+for this one as well.
+
+09:12.220 --> 09:25.780
+D2 equals to this if I now run this I get true because all the keys and values are the same with a regular
+
+09:25.780 --> 09:26.810
+dictionary.
+
+09:26.950 --> 09:27.720
+We don't really care.
+
+09:27.730 --> 09:36.700
+There's no order and I mentioned this before to write a dictionary in Python has no sense of order although
+
+09:36.700 --> 09:42.540
+when we print out the keys we might get things in order as our dictionary gets larger and larger.
+
+09:42.550 --> 09:48.760
+There's no guarantee that when we print out all the keys that we're gonna get them in order.
+
+09:48.910 --> 09:53.020
+In the case of an ordered dictionary though we get that guarantee.
+
+09:53.140 --> 09:55.750
+Now there are some performance implications for those.
+
+09:55.810 --> 10:02.670
+However overall it can be useful in some situations right.
+
+10:02.780 --> 10:07.460
+A few more to go through but this video is getting long so let's take a break and I'll see in the next
+
+10:07.460 --> 10:08.520
+video by.

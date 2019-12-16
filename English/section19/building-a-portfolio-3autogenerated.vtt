@@ -1,0 +1,280 @@
+WEBVTT
+
+00:00.510 --> 00:01.510
+Welcome back.
+
+00:01.530 --> 00:05.180
+Let's make this a little bit more dynamic.
+
+00:05.200 --> 00:06.790
+We have our home wrote.
+
+00:06.970 --> 00:12.760
+But for all the other Asian male pages I'll be nice if this was generated dynamically so that we don't
+
+00:12.760 --> 00:21.520
+have to copy and paste code so let's delete all of these and instead use this little syntax that we
+
+00:21.520 --> 00:26.910
+learned about where we can dynamically accept different U.R.L. parameters.
+
+00:26.980 --> 00:29.680
+In this case we can just call it page name.
+
+00:30.640 --> 00:36.310
+And this page name should be a string right.
+
+00:36.320 --> 00:42.040
+So now we can use the string type to say I want the page name.
+
+00:42.140 --> 00:51.430
+So this is going to be a simple page and we want to render in the template the data that was entered
+
+00:51.430 --> 01:05.860
+in the U.R.L. so we can actually give it the page name here as the input and print out the page name
+
+01:05.860 --> 01:07.620
+here.
+
+01:07.880 --> 01:18.160
+Let's see if this works I'm going to save this go back to our home page and it works what if I do works.
+
+01:18.270 --> 01:18.710
+Look at that.
+
+01:19.160 --> 01:23.470
+If I go to about me about me works contact.
+
+01:23.520 --> 01:23.850
+All right.
+
+01:23.850 --> 01:26.520
+Contact is working but the CSF isn't being applied.
+
+01:26.520 --> 01:30.720
+So we have to update that and we still see the components.
+
+01:30.720 --> 01:30.920
+All right.
+
+01:30.930 --> 01:35.930
+So there's a few things that we need to fix but everything is working dynamically which is great.
+
+01:35.940 --> 01:42.300
+And you see that even index that Asia amount that we had issues with before is now working which is
+
+01:42.300 --> 01:43.110
+great.
+
+01:43.200 --> 01:45.740
+So let's fix a few things.
+
+01:45.780 --> 01:54.540
+We've now made our code super simple and easy to understand but there is a few bugs that we need to
+
+01:54.540 --> 01:56.060
+fix in our code.
+
+01:56.070 --> 01:59.280
+First is to remove the components.
+
+01:59.300 --> 02:04.610
+Now the reason this is happening is that each page if we screw up to the top.
+
+02:04.610 --> 02:09.390
+So let's go to the about page has the components link.
+
+02:09.390 --> 02:12.780
+So from each page we just have to remove the components.
+
+02:12.780 --> 02:20.290
+So let's go to contact remove the components here go to index.
+
+02:20.300 --> 02:22.390
+We've already removed the components for that one.
+
+02:23.000 --> 02:27.500
+If I go to work Work is a little bit different.
+
+02:27.710 --> 02:29.130
+We'll get back to that in a second.
+
+02:29.150 --> 02:36.590
+If we go to works and again at the top and the navigation the components we can just remove just like
+
+02:36.590 --> 02:38.250
+that.
+
+02:38.380 --> 02:43.150
+We also saw that the context page does I have CSX added to it.
+
+02:43.150 --> 02:49.240
+So again we go back and we add the static
+
+02:52.670 --> 02:53.580
+folder here.
+
+02:53.600 --> 02:55.760
+Same with the fab icon
+
+02:58.800 --> 03:03.490
+right over here and then the javascript file at the bottom
+
+03:08.340 --> 03:12.110
+if we save go back let's refresh
+
+03:14.920 --> 03:21.050
+and go to home if we go to works that works about me that works.
+
+03:21.050 --> 03:21.810
+Contact.
+
+03:21.830 --> 03:28.010
+Look at that how pretty is that all right now a few things that I want to fix here.
+
+03:28.040 --> 03:31.940
+One is that we see that the numbers don't match over here.
+
+03:31.940 --> 03:36.170
+We want them to ideally match rate.
+
+03:36.170 --> 03:40.820
+So we have this working but then about me and contact.
+
+03:40.880 --> 03:41.980
+That's kind of weird.
+
+03:41.990 --> 03:43.430
+Let's see why that is.
+
+03:43.660 --> 03:50.620
+If we go back we go to contact we see that in the navigation.
+
+03:50.650 --> 03:57.700
+We have one two three four which looks great but then at the bottom we see that the numbers contact
+
+03:57.700 --> 04:00.330
+me are a little bit off.
+
+04:00.400 --> 04:02.590
+So let's just do 0 4 4.
+
+04:02.590 --> 04:11.610
+Contact me if we go to about making sure that the about page or about me is 0 3.
+
+04:11.620 --> 04:13.660
+So let's do that.
+
+04:13.660 --> 04:22.020
+And now if I save and refresh we have contact me about me works and hope.
+
+04:22.060 --> 04:22.560
+All right.
+
+04:22.600 --> 04:23.550
+Two last things.
+
+04:23.590 --> 04:27.160
+And then we're going to get back to Python I promise one.
+
+04:27.190 --> 04:34.030
+I want to change this text so that it says my name and maybe I'm a python developer.
+
+04:34.750 --> 04:45.180
+So all we have to do is once again go to index dot A.T.M. and look for this text ad your site or app
+
+04:45.210 --> 04:49.880
+content here so we can see here it says Hello I'm James Dean French designer.
+
+04:49.890 --> 05:01.610
+So let's just say I'm Andre Natalie and let's say Python let's say expert sounds cooler working as a
+
+05:01.610 --> 05:04.370
+freelancer let's do an instructor.
+
+05:04.390 --> 05:05.830
+Because I am an instructor after all
+
+05:10.280 --> 05:18.610
+so that if I save and refresh How awesome is that super super simple.
+
+05:18.680 --> 05:21.080
+That looks pretty neat.
+
+05:21.190 --> 05:21.370
+All right.
+
+05:21.370 --> 05:23.630
+The last thing is the works part.
+
+05:23.890 --> 05:28.240
+If you look at my works and I click on discover.
+
+05:28.240 --> 05:28.570
+All right.
+
+05:28.570 --> 05:33.100
+So here you can add your own projects that you want.
+
+05:33.100 --> 05:41.140
+If I go to 0 6 I guess the links you're under aren't working since we only have one work.
+
+05:41.140 --> 05:44.140
+But let's say you wanted to add a different project.
+
+05:44.140 --> 05:52.710
+All we have to do is simply say work to dot HMO and link in 0 0 to here with work to.
+
+05:52.960 --> 05:54.580
+Let me show you how that's done.
+
+05:54.580 --> 05:59.070
+So let's go to work that HMO if we do.
+
+05:59.070 --> 06:01.650
+Control f and do 0 0 2.
+
+06:02.190 --> 06:04.080
+We see that these are the links.
+
+06:04.080 --> 06:06.670
+Look at that 0 0 2 0 0 3.
+
+06:06.690 --> 06:15.420
+So all we have to do is perhaps change the link here to work to dot HP AML so that it links to work
+
+06:15.420 --> 06:16.110
+too.
+
+06:16.170 --> 06:18.660
+Now that's something that you can do on your own.
+
+06:18.660 --> 06:24.030
+Again we don't want to focus too much on a sham on CSX because it's outside the scope of this course
+
+06:25.210 --> 06:30.510
+but as you can see we have a pretty neat Web site pretty fast.
+
+06:30.520 --> 06:36.520
+It only took us a couple of minutes and you now have a portfolio what page.
+
+06:36.640 --> 06:43.870
+But there is one big piece missing and one thing that python can really help us with that is this contact
+
+06:44.080 --> 06:45.090
+form.
+
+06:45.490 --> 06:50.800
+It wouldn't be a real portfolio Web site unless people can contact you right.
+
+06:50.800 --> 06:56.590
+Maybe employers or people that need work down can actually send you a message.
+
+06:56.740 --> 07:02.650
+So over the next couple of videos we're actually going to explore this where we're able to send information
+
+07:03.100 --> 07:08.360
+to our server and the backend and actually capture it and save it and store it somewhere.
+
+07:09.190 --> 07:10.800
+I'll see in the next one by.

@@ -1,0 +1,280 @@
+WEBVTT
+
+00:00.820 --> 00:01.870
+Welcome back.
+
+00:01.870 --> 00:07.490
+The next code editor we're gonna look at is a very very popular one.
+
+00:07.600 --> 00:10.220
+It's completely free.
+
+00:10.250 --> 00:16.860
+So I think right now it's probably the most popular code editor out there in the community.
+
+00:17.180 --> 00:23.900
+And I think you'll see why we can download it based on your machine so you can pick whatever computer
+
+00:23.900 --> 00:24.620
+you have.
+
+00:24.620 --> 00:29.290
+In my case we'll download it for Mac and it has a really really good get started.
+
+00:29.290 --> 00:34.580
+Guy again all these tools have a lot of information online for them.
+
+00:34.610 --> 00:41.530
+So again if you get stuck with downloads there's always a way for you to figure out how to solve these.
+
+00:41.540 --> 00:49.760
+Now keep in mind with code editors it doesn't just mean these are for Python both Sublime Text and Visual
+
+00:49.760 --> 00:55.880
+Studio code can write any sort of language programming language that you want.
+
+00:55.880 --> 01:04.310
+Like myself I usually like writing javascript as well so I can go back and forth between different languages
+
+01:04.400 --> 01:06.580
+but still use the same tools.
+
+01:06.650 --> 01:09.680
+So let's open up this code.
+
+01:09.680 --> 01:15.290
+We're going to install this and again on Windows will be very similar you'll go through an installer
+
+01:16.220 --> 01:24.350
+my case I'll add it to my applications my case it should appear somewhere around here click on that.
+
+01:24.600 --> 01:25.740
+And there you go.
+
+01:25.770 --> 01:28.280
+We have visual studio code.
+
+01:28.590 --> 01:31.650
+There's a lot more going on than sublime text.
+
+01:31.650 --> 01:37.530
+It's why I actually prefer Sublime Text there's just the less things happening on the screen but you
+
+01:37.530 --> 01:42.240
+can see over here that has some really nice features.
+
+01:42.240 --> 01:48.240
+For example we can create a new file here and we can just create let's say python file.
+
+01:48.720 --> 01:56.850
+So I'm going to command s and safe and just call it Hello Dot pie because we want to create a python
+
+01:56.850 --> 02:05.040
+file you'll see right away when I do that it's going to tell me Hey there's no Python interpreter selected
+
+02:05.400 --> 02:07.440
+you need to select a python interpreter.
+
+02:07.440 --> 02:10.480
+And luckily we actually learned what that means right.
+
+02:10.500 --> 02:15.050
+So let's select a python interpreter and look at that.
+
+02:15.300 --> 02:22.020
+It tells me that I have a choice because we've downloaded version three point seven but on my Mac I
+
+02:22.020 --> 02:24.840
+also have the pre installed two point seven.
+
+02:24.840 --> 02:28.410
+So luckily Visual Studio code tells me hey which one do you want to use.
+
+02:28.420 --> 02:32.880
+And I'm going to say I want to use Python three.
+
+02:32.890 --> 02:40.670
+There you go and I get another hint it says hey we also have a litter available for python.
+
+02:40.710 --> 02:43.140
+Do you want to install that extension as well.
+
+02:43.140 --> 02:44.600
+We'll get to that in a bit.
+
+02:44.730 --> 02:46.380
+But for now let's focus on this.
+
+02:46.470 --> 02:49.490
+If I do print Hello.
+
+02:49.680 --> 02:52.190
+Getting really creative with my code here.
+
+02:52.400 --> 02:53.800
+You see that again.
+
+02:53.810 --> 02:56.710
+I have syntax highlighting everything looks good.
+
+02:56.780 --> 02:59.600
+If I miss a bracket what happens.
+
+02:59.600 --> 03:00.950
+Do I get in years.
+
+03:00.950 --> 03:09.060
+What if I just write some gibberish here I'm not getting anything because well I don't have this pilot
+
+03:09.210 --> 03:18.550
+installed but again we'll get to lynching in a bit the cool thing about Visual Studio code is that you
+
+03:18.550 --> 03:21.940
+also have the terminal right here.
+
+03:22.080 --> 03:30.230
+You can actually if this isn't open for you you can just click terminal and just say new terminal now
+
+03:30.290 --> 03:38.440
+in here I'm going to close this for now I can run my Python code and let's make sure it is just a print
+
+03:40.090 --> 03:44.790
+I can say Python Hello Dot pi.
+
+03:45.020 --> 03:47.040
+I click Run.
+
+03:47.100 --> 03:48.770
+I didn't save this I'll make sure I save it.
+
+03:48.780 --> 04:02.210
+So it's the new version and run this again Python Hello your PI look at that it's all working now up
+
+04:02.210 --> 04:02.830
+to this point.
+
+04:02.870 --> 04:05.370
+We have this print Hello.
+
+04:05.510 --> 04:09.680
+We also know that we're running Python version three point seven.
+
+04:09.680 --> 04:18.070
+You can see here if I click on here I can select what interpreter I want to use and it also gives us
+
+04:18.220 --> 04:27.100
+a few tips such as Hey Lynch your pilot is not installed so let's install pilot pilot is a.
+
+04:27.100 --> 04:34.760
+That is it's almost as a spell checker for our code and letting us know is this syntax right.
+
+04:34.840 --> 04:39.440
+And there are many versions of winters available for Python pilot.
+
+04:39.490 --> 04:45.830
+Just happens to be one of the most popular and yes code by default suggests pilot.
+
+04:45.850 --> 04:54.180
+So let's install that once that's installed you see over here that everything is going through and now
+
+04:54.210 --> 04:55.680
+let's see if this works.
+
+04:55.770 --> 04:57.450
+So let's save this file.
+
+04:57.450 --> 04:59.790
+I'm going to say file save.
+
+04:59.880 --> 05:02.340
+And if I click on problems here.
+
+05:03.330 --> 05:09.790
+There are no problems detected so far but we know that the print should have brackets around it.
+
+05:09.810 --> 05:20.940
+So what we want to do here is go to view command pallet and we see right away that it says Python enabled
+
+05:21.110 --> 05:21.750
+lending.
+
+05:21.840 --> 05:29.280
+If I type Python here the python installer that we had at the beginning when we installed V.S. code
+
+05:29.790 --> 05:36.270
+installed a whole bunch of shortcuts and tools for us to use such as enable lending.
+
+05:36.270 --> 05:40.140
+So let's click on that and I'm going to say.
+
+05:40.730 --> 05:47.540
+If I save look at that in my problems it says missing parentheses and call to print.
+
+05:47.540 --> 05:48.640
+Did you meet.
+
+05:48.740 --> 05:49.610
+Did you mean print.
+
+05:49.610 --> 05:50.740
+Hello.
+
+05:50.750 --> 05:57.470
+I also get this little underline and it tells me exactly a what print does but also telling me what
+
+05:57.470 --> 05:59.270
+errors I need to fix.
+
+05:59.480 --> 06:02.360
+And you see that it's a pilot syntax error.
+
+06:02.450 --> 06:04.870
+So again I can just fix that.
+
+06:05.030 --> 06:06.680
+Nice and easy.
+
+06:06.700 --> 06:10.800
+Now if I save there's no problems everything is running fine.
+
+06:10.880 --> 06:18.120
+If I go to my terminal and do Python Hello Dot pie look at that.
+
+06:18.120 --> 06:25.170
+Everything is working nicely so this problem's panel is really nice for your code to be told hey something's
+
+06:25.170 --> 06:25.430
+wrong.
+
+06:25.430 --> 06:32.370
+For example if I miss a bracket here and I save the problems is going to tell me Hey hey there's something
+
+06:32.370 --> 06:38.340
+going on there's a syntax error and pilot is helping me solve that issue.
+
+06:39.280 --> 06:46.640
+By the way you might be asking yourself how come my editor Vasco doesn't look like this.
+
+06:46.730 --> 06:55.860
+For example if I go to extensions I have the Dracula official theme enable now which is a color theme
+
+06:55.890 --> 07:03.230
+that I have for Visual Studio code and let's click on this over here and just and just say disable all
+
+07:03.230 --> 07:10.100
+installed extensions you'll see that I just have a few extensions that allow my visual studio code to
+
+07:10.100 --> 07:11.180
+be customized.
+
+07:11.180 --> 07:16.270
+But in your case if you're just installing Visual Studio code it'll look something like this.
+
+07:16.400 --> 07:23.830
+But by installing the python package with the pilot we now have a fully abled idea.
+
+07:23.840 --> 07:28.010
+In a sense for us to write Python code I'll see in the next one.
+
+07:28.560 --> 07:28.760
+Bob.

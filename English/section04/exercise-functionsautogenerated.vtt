@@ -1,0 +1,142 @@
+WEBVTT
+
+00:00.570 --> 00:01.020
+All right.
+
+00:01.030 --> 00:02.400
+It's exercise time.
+
+00:02.410 --> 00:06.190
+Let's combine everything that we've learned into this challenge.
+
+00:06.250 --> 00:13.570
+What I want you to do is to create a function called the highest even and this function is going to
+
+00:13.570 --> 00:15.940
+take a list data.
+
+00:16.780 --> 00:20.190
+And this function for now we'll just pass.
+
+00:20.290 --> 00:25.800
+But I want you to fill in this part with whatever you think is going to allow us to achieve this.
+
+00:25.840 --> 00:38.500
+If I do print highest even and I give it a list of let's say 1 2 3 4 8 I want the highest even to be
+
+00:38.500 --> 00:40.060
+printed in this list.
+
+00:40.060 --> 00:42.140
+And actually let's do 10 here.
+
+00:42.220 --> 00:48.240
+So the highest even number in this list is 10 just for fun.
+
+00:48.240 --> 00:50.370
+That's at eleven as well.
+
+00:50.430 --> 00:58.200
+So the answer should be printed here as 10 so based on everything you've learned so far.
+
+00:58.210 --> 01:01.720
+Try to fill this part so that you create your own function.
+
+01:01.730 --> 01:04.420
+Hi Stephen pause the video here.
+
+01:04.420 --> 01:08.660
+Give it a try otherwise I'm going to go with the answer.
+
+01:08.700 --> 01:10.290
+So what I want to do here.
+
+01:10.350 --> 01:17.640
+Let's think about this is I want to make sure that first of all we only consider the numbers that are
+
+01:17.850 --> 01:27.890
+even in here so maybe what I'll do is create a new list called evens and events is going to be an empty
+
+01:27.890 --> 01:36.180
+list for now but I'm going to populate this with all of the even numbers so I'm going to remove three
+
+01:36.180 --> 01:40.090
+and 11 from this so let's do that.
+
+01:40.090 --> 01:53.500
+I'm going to say for item in ally if item modulo 2 equals zero which means it's going to be even then
+
+01:53.500 --> 01:59.110
+I'm going to even append the item.
+
+01:59.110 --> 02:03.120
+So I'm going to add it to this new list.
+
+02:03.350 --> 02:12.850
+And then finally in here once we have the Evens list I want to find the highest number.
+
+02:12.890 --> 02:20.390
+Now you can do this manually and go through it one by one or Python comes with a nice function called
+
+02:20.600 --> 02:21.410
+Max.
+
+02:21.410 --> 02:28.400
+And as you can see we give it an interval and it'll tell us what the max number is in our case we can
+
+02:28.400 --> 02:34.680
+just give it evens and remember we want to return something from this function.
+
+02:34.800 --> 02:37.620
+That is what is the highest number.
+
+02:37.650 --> 02:41.750
+Well we want to return whatever the max of the Evens is.
+
+02:42.030 --> 02:50.220
+If I run this I get 10 awesome looks like it's working.
+
+02:50.320 --> 02:56.230
+Now some of you may have gotten tricked and tried to return inside of the four.
+
+02:56.770 --> 03:05.830
+But if we do this remember that this still works but we actually return from the function when we hit
+
+03:05.860 --> 03:07.210
+our first item.
+
+03:07.300 --> 03:17.000
+If we had another item let's say two in here and I click Run we get two and why is that.
+
+03:17.000 --> 03:25.210
+Because I'm returning when we loop the first time through our item which will be two is to an even number.
+
+03:25.220 --> 03:25.760
+Yes it is.
+
+03:25.760 --> 03:34.050
+So we're going to append and then we're finally returning Max evens which only contains the item two.
+
+03:34.100 --> 03:39.410
+So you want to make sure here that the indentation really matters and if you're returning something
+
+03:39.650 --> 03:45.410
+from inside a loop you want to make sure that that's your intended behavior.
+
+03:45.530 --> 03:49.630
+You usually want to loop through something and then return.
+
+03:49.730 --> 03:55.450
+So make sure you don't prematurely exit the loop nice and simple.
+
+03:55.450 --> 03:59.250
+Remember your answer may be different than mine.
+
+03:59.290 --> 04:06.820
+There are many ways to go about this but hopefully by practicing this you have a better idea of functions.
+
+04:06.820 --> 04:14.330
+We now have a great utility function highest even that we can use all over our program.
+
+04:14.390 --> 04:17.690
+Good job getting this far and I'll see you in the next one up.

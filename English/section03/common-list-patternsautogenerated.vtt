@@ -1,0 +1,175 @@
+WEBVTT
+
+00:01.080 --> 00:02.240
+Welcome back.
+
+00:02.250 --> 00:07.710
+Let's talk about some useful tricks with lists that you'll see a lot in Python code.
+
+00:08.340 --> 00:12.130
+Well one we have already seen it's this idea of length.
+
+00:12.180 --> 00:19.320
+You're going to be using this a lot that is to figure out the length of a list which in our case is
+
+00:19.320 --> 00:20.980
+now seven.
+
+00:21.000 --> 00:25.920
+Another really useful trick is to reverse a list.
+
+00:25.920 --> 00:33.990
+Now I've already showed you how to reverse a list but sometimes you can do that with list slicing against
+
+00:33.990 --> 00:35.850
+something that we've seen in String slicing.
+
+00:36.090 --> 00:47.220
+So I can actually do basket and then semicolon semicolon negative one if I click run here.
+
+00:47.270 --> 00:57.110
+Is that what you expected let's go through this line by line I've sorted the basket so that it's from
+
+00:57.140 --> 01:00.950
+a all the way to Z and then I've reversed this.
+
+01:00.950 --> 01:03.740
+So it's an Z all the way to a.
+
+01:03.920 --> 01:11.370
+And then I've reversed the basket again so that instead of being in reverse it's now in order.
+
+01:11.390 --> 01:22.430
+ABC D E X and this list slicing creates a new list right.
+
+01:22.480 --> 01:32.570
+If I print basket here you'll see that the basket is the reversed version.
+
+01:32.570 --> 01:39.900
+The last action that we've taken on it versus list slicing that creates a new version.
+
+01:40.730 --> 01:45.810
+So this notation you'll see a lot with lists when you need to reverse the list.
+
+01:45.860 --> 01:53.220
+Or maybe you need to make a copy of the list like this or maybe you need a portion of the list.
+
+01:53.300 --> 02:01.420
+Another useful thing that you'll see a lot of is something called range let's comment this out for now.
+
+02:01.610 --> 02:08.060
+If I wanted to generate a list really quickly let's say from 1 to 100 I can do something like this.
+
+02:08.720 --> 02:13.970
+I can say range and then start and then stop.
+
+02:13.970 --> 02:19.510
+So let's do a hundred and if I print this
+
+02:23.260 --> 02:33.730
+and I run I get a range 1 to 100 but if I wrap this in a list which is going to create a new list for
+
+02:33.730 --> 02:40.260
+us and I click Run look at that I get a range from 1 all the way to ninety nine.
+
+02:40.280 --> 02:43.720
+Remember it's the start and then whatever to stop it.
+
+02:43.760 --> 02:46.440
+So before it hits 100 it's going to stop.
+
+02:46.670 --> 02:55.820
+Now if I remove this and just do one single thing I get a list starting from zero all the way to ninety
+
+02:55.820 --> 02:56.230
+nine.
+
+02:56.500 --> 03:03.490
+If I want a list that has a hundred and one items because it starts at zero I would just do one hundred
+
+03:03.550 --> 03:11.560
+and one end range is something we'll talk about a lot more especially when we talk about loops in programming
+
+03:12.490 --> 03:19.680
+but this is a great way of you to generate a list really really quickly especially a numbered list.
+
+03:19.690 --> 03:29.440
+Finally the last common thing that you'll see a lot is this idea of DOT join what is dot join join is
+
+03:29.440 --> 03:36.680
+actually something that works on strings it's a string method but it's often used this way.
+
+03:36.820 --> 03:42.580
+We have an empty string and this empty string.
+
+03:42.580 --> 03:47.040
+Let's say sentence and then we can do a sentence.
+
+03:47.040 --> 03:56.250
+Dot join and join takes what we call an automobile which is a list for now.
+
+03:56.250 --> 04:06.860
+And in here we can have a sentence like high My name is
+
+04:11.440 --> 04:17.060
+and now if I print sentence and I click run here.
+
+04:17.090 --> 04:17.390
+Hmm.
+
+04:17.780 --> 04:19.620
+I don't get anything.
+
+04:19.760 --> 04:21.420
+Let's figure out why.
+
+04:21.470 --> 04:27.520
+What if I type in an exclamation mark here and I click Run All right.
+
+04:27.520 --> 04:33.310
+It's printing out sentence but it looks like Doug join creates a new item for us.
+
+04:33.310 --> 04:40.990
+So let's just sign that to the new sentence.
+
+04:41.150 --> 04:45.290
+Now if I do new sentence and print that out
+
+04:48.390 --> 04:54.700
+we see that I get Hi my name is Jo Jo.
+
+04:54.840 --> 04:57.710
+So this is a little funky right.
+
+04:57.710 --> 05:06.620
+We have these exclamation marks between our items and join joins these little interval items.
+
+05:06.630 --> 05:10.070
+These lists by whatever is in front of it.
+
+05:10.230 --> 05:17.300
+So if we actually change this to an empty string click Run we now get this.
+
+05:17.340 --> 05:21.540
+If I add a space in between and click Run we get.
+
+05:21.550 --> 05:29.150
+Hi my name is Jojo and sometimes you'll notice this pattern a lot especially if you want to join and
+
+05:29.150 --> 05:33.270
+create a new string out of a list of items.
+
+05:33.320 --> 05:40.460
+Now a shorthand way of doing this is to actually not even bother with this and just doing an empty string
+
+05:41.970 --> 05:47.760
+dot joint and then joining all the list items.
+
+05:47.790 --> 05:48.930
+There we go.
+
+05:48.930 --> 05:52.090
+So all we're doing is combining lists into a strength.
+
+05:52.110 --> 05:56.800
+And this is a common pattern that you'll see a lot of I'll see in the next one by.

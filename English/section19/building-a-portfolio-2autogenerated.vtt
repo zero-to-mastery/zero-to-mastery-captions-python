@@ -1,0 +1,250 @@
+WEBVTT
+
+00:00.600 --> 00:01.480
+All right.
+
+00:01.490 --> 00:03.230
+Were you able to get that.
+
+00:03.250 --> 00:05.230
+If not don't worry.
+
+00:05.230 --> 00:11.590
+Let's go over what we need to do to get everything on our profile working so we obviously have an about
+
+00:11.920 --> 00:16.270
+80 mile page so that can just stay the same as it is now.
+
+00:16.300 --> 00:22.890
+We can call it about and if we copy and paste here do a another one let's say.
+
+00:23.020 --> 00:23.830
+What else do we have.
+
+00:23.830 --> 00:25.190
+We have work done.
+
+00:25.220 --> 00:30.160
+She must allow us to work dot HMO which will be work dot HMO.
+
+00:30.160 --> 00:32.470
+And let's just check that this works.
+
+00:32.470 --> 00:41.240
+I'm going to remove the old rope just so we have the home about and work HMO if I go back and let's
+
+00:41.240 --> 00:42.790
+go to home.
+
+00:42.800 --> 00:48.010
+Well it looks like we have a bit of an air and I did not change the function over here you see that
+
+00:48.020 --> 00:51.320
+I have both about so let's just call this work.
+
+00:51.350 --> 00:53.900
+If I go back and refresh.
+
+00:53.900 --> 00:56.970
+All right let's go to works.
+
+00:57.100 --> 01:01.130
+Well it's a work start HMO wise than that working.
+
+01:01.250 --> 01:03.370
+That is because it should be works.
+
+01:03.380 --> 01:04.760
+Dot HMO.
+
+01:04.860 --> 01:07.510
+Silly me.
+
+01:07.670 --> 01:08.750
+Let's go back.
+
+01:08.750 --> 01:12.520
+Let's refresh works.
+
+01:12.580 --> 01:13.070
+All right.
+
+01:13.230 --> 01:18.260
+Is working but once again the CSX is not being applied.
+
+01:18.410 --> 01:23.240
+If I go back and let's go to about me about me is working as well.
+
+01:23.240 --> 01:24.950
+But the CSX isn't being applied.
+
+01:25.250 --> 01:26.800
+And we know why that is.
+
+01:26.840 --> 01:34.860
+Once again if we go to works we have to update this to include the static folder
+
+01:40.990 --> 01:41.480
+awesome.
+
+01:41.530 --> 01:51.090
+And then we update the CSX page as well as well as the javascript page.
+
+01:51.120 --> 01:56.610
+So this is a lot of repetition but I'm just showing you so you understand what the thought process is
+
+01:56.610 --> 01:58.540
+and why we need to do this again.
+
+01:58.560 --> 02:00.350
+We'll just fix this as well
+
+02:05.430 --> 02:12.390
+and this one feel like I should have a song in the background as I do this so you don't get bored of
+
+02:12.390 --> 02:16.610
+me just doing this over and over but repetition is good.
+
+02:16.710 --> 02:17.610
+Right.
+
+02:17.610 --> 02:18.350
+All right.
+
+02:18.480 --> 02:29.890
+Last one the javascript file let's save go back to our server let's refresh.
+
+02:29.910 --> 02:30.330
+All right.
+
+02:30.390 --> 02:35.370
+Let's go to home oh looks like index that HMO is not working.
+
+02:35.370 --> 02:36.720
+So we've got a fix that as well.
+
+02:36.750 --> 02:42.320
+We have the root directory that's working that click on works.
+
+02:42.330 --> 02:42.790
+Mm hmm.
+
+02:42.810 --> 02:48.270
+Looks like the CSF didn't work less about the C above me about me is working so we missed something
+
+02:48.270 --> 02:49.610
+and works.
+
+02:49.610 --> 02:51.030
+If we go back to
+
+02:54.140 --> 02:57.600
+0 and that's because we have a work and works a shitty amount.
+
+02:57.700 --> 03:02.660
+So we have to make sure that we incorporate the works a small set of the work one.
+
+03:02.710 --> 03:08.560
+Not sure what this page does but I'm sure it's part of part of this.
+
+03:08.570 --> 03:15.990
+So again going into our works HMO doing the same thing we've been doing adding the static
+
+03:21.420 --> 03:22.200
+like so
+
+03:25.450 --> 03:32.640
+and all the way at the bottom for the javascript file as well let's go back.
+
+03:32.800 --> 03:35.040
+Go to works and hooray.
+
+03:35.050 --> 03:41.890
+Look at that all our works are being displayed but it looks like some of the images are not displaying
+
+03:44.150 --> 03:44.360
+now.
+
+03:44.360 --> 03:47.710
+Can you guess why that is well.
+
+03:47.770 --> 03:56.550
+If we go back to our works HMO and we look for images
+
+04:00.750 --> 04:09.380
+we see that here we have to add the static as well so again I'll add those to the images and just to
+
+04:09.380 --> 04:17.840
+make this faster I'll just copy this and do command f or control F to search for all instances of images
+
+04:18.620 --> 04:23.530
+and make sure that we add the assets in here an easy way of doing this.
+
+04:23.540 --> 04:31.010
+And this is what an I.D. can help you with or a text editor like Sublime Text is I can select the entire
+
+04:31.010 --> 04:42.380
+thing like this and do command control G and this actually selects all the instances and I have now
+
+04:42.410 --> 04:44.330
+multiple cursors.
+
+04:44.330 --> 04:53.990
+Now what I can do now is just add the static on all the instances as you can see at the bottom and the
+
+04:53.990 --> 04:59.820
+top here as well so that I don't have to repeat myself.
+
+04:59.830 --> 05:03.500
+Now let's go back refresh hand look at that.
+
+05:03.720 --> 05:11.890
+We have our projects displaying that's really really cool and just like that we have our templates now.
+
+05:11.920 --> 05:17.590
+We still have the components that we need to fix and the contact.
+
+05:17.700 --> 05:25.170
+Now the components we actually don't need because if you go to the preview here the components is just
+
+05:25.170 --> 05:30.880
+in a Schimmel template that you can just copy and paste based on what components you need.
+
+05:31.110 --> 05:33.750
+But we don't actually need that on our real portfolio.
+
+05:33.750 --> 05:39.240
+The only other one that we need is the contact page which is really really important because we're going
+
+05:39.240 --> 05:50.700
+to use that for our Python server so let's go back here let's remove the components dot ECMO or for
+
+05:50.700 --> 05:52.100
+now we can just keep it there.
+
+05:52.110 --> 06:02.280
+But in the index that 80 mile file we can go all the way down and in the navigation bar section you
+
+06:02.280 --> 06:09.990
+see over here how we have the components dot HMO we can just remove that just like that so we're not
+
+06:09.990 --> 06:11.870
+using it.
+
+06:12.090 --> 06:22.520
+Now one thing you may have seen me do is copy and paste code so that now we would have to do a another
+
+06:22.520 --> 06:26.610
+route that says contact and then once again do contact.
+
+06:26.780 --> 06:32.670
+But this is us repeating code based on what we've learned can we improve this.
+
+06:32.750 --> 06:39.350
+So this becomes more dynamic so that maybe when we add a new HDMI file to this profile we don't have
+
+06:39.350 --> 06:45.570
+to constantly just copy and paste the same code over and over try that and in the next video I'll show
+
+06:45.570 --> 06:46.590
+you how we can do that.

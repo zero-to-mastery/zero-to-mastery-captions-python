@@ -1,0 +1,106 @@
+WEBVTT
+
+00:00.680 --> 00:05.150
+I want to add a quick note about this constructor function.
+
+00:05.190 --> 00:10.260
+Remember this gets called every time we instantiate an object.
+
+00:10.260 --> 00:12.950
+And this is how we create custom object.
+
+00:13.020 --> 00:13.980
+Right.
+
+00:14.100 --> 00:19.110
+But an interesting thing that you can do here because you have control over how the instantiation happens
+
+00:19.350 --> 00:21.570
+you can do different safeguards.
+
+00:21.570 --> 00:25.060
+For example let's remove this for now because we don't need it.
+
+00:25.930 --> 00:29.160
+Or actually let's change this to let's to age.
+
+00:29.200 --> 00:38.140
+We want to check if the user is over 18 then we're going to run this otherwise while the program is
+
+00:38.140 --> 00:44.260
+going to error out because we only let people age 18 and over to play the game because let's say it's
+
+00:44.260 --> 00:50.530
+rated R so we can do different things in the constructor to make sure that we are instantiating the
+
+00:50.530 --> 00:52.150
+object the proper way.
+
+00:52.300 --> 00:59.640
+We can also give default parameters like name can be anonymous if we wanted to.
+
+00:59.650 --> 01:05.810
+If they don't provide a name and then age will be let's say 0.
+
+01:05.860 --> 01:06.950
+If they don't provide a name.
+
+01:07.870 --> 01:08.860
+So that here.
+
+01:08.860 --> 01:19.360
+Let's say I forget to instantiate Player 1 and Player 2 if I click Run I get an error Player object
+
+01:19.570 --> 01:24.320
+has no attribute name and this is on line eleven.
+
+01:24.580 --> 01:28.500
+Now why do we not have self Don name.
+
+01:28.510 --> 01:34.570
+Well because on line 17 you are trying to call shout but unfortunately we never instantiated this because
+
+01:34.990 --> 01:38.730
+when we don't provide anything the age is going to be 0.
+
+01:39.010 --> 01:43.820
+So we're never going to instantiate with these properties OK.
+
+01:43.850 --> 01:54.830
+So let's just give it time and then age is going to be 10 and let's just remove Player 2 for now if
+
+01:54.830 --> 01:55.550
+I do.
+
+01:55.670 --> 01:58.460
+Player 1 Got shut and I click.
+
+01:58.460 --> 01:58.790
+Run
+
+02:01.770 --> 02:06.420
+once again I get an error because well Tom is only 10 years old.
+
+02:06.540 --> 02:08.510
+We're not going to create this character.
+
+02:08.760 --> 02:14.730
+Now we're gonna talk about errors and maybe instead of just having this error out we can send a message
+
+02:14.730 --> 02:23.190
+saying Hey player is not old enough but for now I hope you see the power that comes with this idea of
+
+02:23.190 --> 02:31.740
+constructor and the instantiation of an object where we're able to add these different controls and
+
+02:31.740 --> 02:39.120
+safeguards to perhaps make sure that we receive their right data type in order to create the object
+
+02:39.390 --> 02:46.080
+or maybe the age is over 18 in order to make sure that when we actually instantiate this player one
+
+02:46.440 --> 02:49.200
+object we're doing it the right way.
+
+02:49.200 --> 02:52.380
+So this in it gives you a lot of control.

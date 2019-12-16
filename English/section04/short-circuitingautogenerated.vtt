@@ -1,0 +1,133 @@
+WEBVTT
+
+00:01.060 --> 00:05.020
+It's time to talk about another topic that sounds a lot more confusing.
+
+00:05.020 --> 00:07.550
+Short circuiting than it actually is.
+
+00:07.570 --> 00:13.010
+It's quite simple short circuiting looks something like this.
+
+00:13.030 --> 00:20.470
+Remember when I taught you the word and so we can use let's say for example is friend
+
+00:23.240 --> 00:37.030
+equals too true and let's say is user is equal to true and I can do an expression here saying is friend
+
+00:37.480 --> 00:43.530
+and is user now in here.
+
+00:43.550 --> 00:54.000
+When we run this let's printed here just so we can see if I run this I get true because both of these
+
+00:54.060 --> 01:05.560
+evaluate to TRUE SO THAT IF I HAD THIS AS AN F block let's say if it was if is friend and is user print.
+
+01:05.580 --> 01:09.790
+Best friends forever now.
+
+01:09.860 --> 01:19.070
+Short circuiting can be done when we use something like for which we haven't seen before but again you
+
+01:19.070 --> 01:23.080
+can see here that it's highlighted in blue so it is a keyword.
+
+01:23.180 --> 01:32.660
+A python keyword now or says if either one of these conditions are true then run this piece of code.
+
+01:32.800 --> 01:36.080
+So if I run this I get.
+
+01:36.280 --> 01:38.800
+Best friends forever.
+
+01:38.830 --> 01:40.090
+Now let me ask you this.
+
+01:40.180 --> 01:43.270
+Which operation do you think is more performance.
+
+01:43.270 --> 01:46.150
+The or or the end.
+
+01:46.150 --> 01:47.970
+Is there a difference.
+
+01:48.250 --> 01:51.790
+As a matter of fact there is because of short circuiting.
+
+01:52.030 --> 02:01.020
+You see when I do or here because I only care if either one of these is true the Python interpreter
+
+02:01.020 --> 02:09.480
+is going to say if it's friend and it's going to evaluate that and say oh this is this is true and then
+
+02:09.480 --> 02:14.610
+it's going to see the word or and it's going to say hey I don't care what this is.
+
+02:14.610 --> 02:19.150
+Maybe this is a really heavy operation or something that I need to look up.
+
+02:19.200 --> 02:25.910
+Well I don't really care because this is already true whether this is true or this is false.
+
+02:25.980 --> 02:31.840
+I don't really care because either way I'm going to have to print this as you can see it still prints.
+
+02:31.860 --> 02:39.710
+Best friends forever so short circuiting happens when the interpreter is smart enough to say I already
+
+02:39.710 --> 02:40.990
+did enough work.
+
+02:41.060 --> 02:44.020
+I don't care what this is this is just wasted work if I do it.
+
+02:44.050 --> 02:50.240
+So I'm going to short circuit and say hey I'm going to just ignore this and I'm going to start printing
+
+02:51.080 --> 02:57.290
+so using or is a little bit more efficient but again it depends on what you need.
+
+02:57.290 --> 03:06.330
+If you need to check if both is friend and is user true you'll have to use and but this works both ways
+
+03:06.330 --> 03:07.970
+with and as well.
+
+03:07.980 --> 03:16.230
+For example if its friend is false this is going to get short circuited because I'm going to say hey
+
+03:16.530 --> 03:19.890
+if his friend is false.
+
+03:19.890 --> 03:24.780
+Well I don't really care what is user is because there's no way that both of these are true.
+
+03:24.780 --> 03:30.590
+I've already seen that one of them is false so I'm going to ignore this and I'm going to print this.
+
+03:30.830 --> 03:35.730
+And when I say I I mean our good ole friend Python interpreter.
+
+03:35.860 --> 03:42.970
+Now this topic of short circuiting doesn't really get taught in beginner Python courses but now if you
+
+03:42.970 --> 03:50.080
+hear this maybe hear this in an interview as you can see it sounds a lot more difficult than it actually
+
+03:50.080 --> 03:50.340
+is.
+
+03:50.440 --> 03:53.830
+And frankly it makes a lot of sense right.
+
+03:53.830 --> 04:00.400
+We want our machines to be efficient and it is quite efficient due to short circuiting I'll see in the
+
+04:00.400 --> 04:01.370
+next one.
+
+04:01.430 --> 04:01.690
+Bobby.

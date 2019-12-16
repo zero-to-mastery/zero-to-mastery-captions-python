@@ -1,0 +1,91 @@
+WEBVTT
+
+00:01.950 --> 00:03.330
+Welcome back.
+
+00:03.360 --> 00:15.020
+I want to quickly talk about something called augmented assignment operator so we've learned that we
+
+00:15.020 --> 00:25.650
+can create variables like some value and we can assign it a data type in our case let's just assign
+
+00:25.650 --> 00:33.380
+it five there's something called augmented assignment operator that allows us to do something quite
+
+00:33.380 --> 00:34.100
+neat.
+
+00:34.100 --> 00:45.170
+Let's have a look so if this value I want to increase in let's say 5 plus 2 so add two to it I could
+
+00:45.710 --> 00:54.220
+do that or I could even use some value which is already five by the time it gets to line three and do
+
+00:54.220 --> 01:05.440
+something like this if I print some value and I click Run I'll get seven because five plus two equals
+
+01:05.440 --> 01:06.180
+to seven.
+
+01:06.220 --> 01:16.270
+So in memory some value points to seven but there's a neater way of doing this called augmented assignment
+
+01:16.300 --> 01:28.410
+operator instead of doing something like this I could just simply add a plus to the equals so we're
+
+01:28.410 --> 01:34.800
+going to say some value plus equals two is still going to equal seven.
+
+01:34.800 --> 01:40.650
+So it's the same thing as before and this school augmented assignment operator it's a shorthand of us
+
+01:40.890 --> 01:42.550
+doing something like this.
+
+01:42.690 --> 01:49.140
+We can also change this to something like minus which once again is like subtracting two from whatever
+
+01:49.140 --> 01:54.640
+the previous value of some value was.
+
+01:54.650 --> 01:57.400
+Now if I was to do this at the beginning here.
+
+01:57.440 --> 02:06.630
+So let's just do here and then comment this out and if I click Run I'll get an error because some value
+
+02:06.630 --> 02:07.480
+is not defined.
+
+02:07.500 --> 02:09.150
+We haven't really created anything.
+
+02:09.180 --> 02:17.690
+So in order for this to work we need to make sure that this variable has some previous value so we've
+
+02:17.690 --> 02:20.020
+learned about the plus the minus.
+
+02:20.030 --> 02:22.960
+And then finally we have the multiply.
+
+02:23.090 --> 02:26.780
+Once again if I run this we get 10.
+
+02:26.850 --> 02:35.550
+Remember this is just the same as us saying some value times to is just a shorthand form.
+
+02:35.630 --> 02:35.980
+All right.
+
+02:35.990 --> 02:39.800
+This was a quick video in case you see something like this in the wall.
+
+02:39.980 --> 02:41.630
+Now you shouldn't be afraid.
+
+02:41.630 --> 02:46.040
+Remember that the operator comes to the left of the equals sign.
+
+02:46.910 --> 02:48.570
+I'll see in the next one by.

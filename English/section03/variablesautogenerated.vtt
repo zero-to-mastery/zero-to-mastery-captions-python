@@ -1,0 +1,484 @@
+WEBVTT
+
+00:00.580 --> 00:01.120
+Welcome back.
+
+00:01.660 --> 00:08.590
+So we've just learned about the first two well kind of three because we also mentioned that there is
+
+00:08.680 --> 00:12.000
+such a thing as a complex number in python.
+
+00:12.430 --> 00:18.280
+But we talked about the main ones that end and float and there are still a few data types remaining
+
+00:19.530 --> 00:26.100
+but before we get to these we are missing an important concept and this is going to be our first important
+
+00:26.100 --> 00:27.380
+term in Python.
+
+00:27.660 --> 00:33.730
+And as a matter of fact in all programming languages it's called variables.
+
+00:33.740 --> 00:36.500
+Yep that's a term.
+
+00:36.520 --> 00:41.990
+Now if this is your first time learning a programming language you might not know what this means.
+
+00:42.070 --> 00:49.210
+If this isn't your first time well this is very simple because all languages have variables but what
+
+00:49.360 --> 00:49.900
+are they.
+
+00:49.900 --> 00:51.260
+Exactly.
+
+00:51.400 --> 00:56.170
+Well variables store information that can be used in our programs.
+
+00:57.070 --> 01:06.400
+So we can hold perhaps user inputs like values maybe when you log into facebook you need to hold some
+
+01:06.400 --> 01:13.050
+information such as your profile picture or maybe your date of birth in a variable.
+
+01:13.300 --> 01:20.280
+Variables are ways for us to store information on our computer so let's have a look at this.
+
+01:20.430 --> 01:28.830
+If we remove this and let's say I'm creating a quiz program and this quiz program maybe measures your
+
+01:28.860 --> 01:36.180
+IQ let's say you just took the quiz and you found out that your IQ is 190 quite high.
+
+01:36.180 --> 01:36.860
+Good job.
+
+01:37.350 --> 01:44.700
+But we need to store that information somewhere where we can do that with variables so that in Python
+
+01:44.790 --> 01:51.990
+all we need to do is name it whatever you want in our case there'll be IQ and we're going to say IQ
+
+01:52.350 --> 01:59.750
+equals one 90 and this IQ here is a variable.
+
+01:59.980 --> 02:02.650
+It is something that I just completely made up.
+
+02:02.860 --> 02:04.790
+I can name it whatever I want.
+
+02:04.870 --> 02:06.860
+That's a variable too.
+
+02:07.000 --> 02:14.230
+The idea is that once we assign to a variable that is we're saying One ninety is going to be assigned
+
+02:14.230 --> 02:15.310
+to IQ.
+
+02:15.310 --> 02:18.280
+I can now use it in my program whenever I want.
+
+02:18.280 --> 02:23.820
+For example I can later on print or make sure it's not cap.
+
+02:23.830 --> 02:25.870
+Let's do print IQ.
+
+02:26.230 --> 02:34.180
+And if I do that and click Run you see that I can use IQ so we can pretend here that a user takes a
+
+02:34.180 --> 02:41.200
+quiz find out their IQ is one ninety we can store that information in this variable and later on when
+
+02:41.200 --> 02:46.960
+they come perhaps online or try to use the program again they don't have to take the quiz all over because
+
+02:47.260 --> 02:55.360
+well we store that information in IQ and remember what I said at the beginning programs are simply data
+
+02:55.840 --> 03:02.620
+that's being stored that's being changed that's being removed and that's all programs are and variables
+
+03:02.620 --> 03:09.560
+are important concepts in Python and all languages now variables can also sometimes be called names.
+
+03:09.560 --> 03:16.500
+So this could be a name for example in assigning a value is also known as binding.
+
+03:16.700 --> 03:25.220
+That is where binding the value one to this variable so that when we request this variable later on
+
+03:25.220 --> 03:31.820
+in our program our computer knows how to look for this information it's going to say hey I know what
+
+03:31.820 --> 03:38.780
+IQ is I stored it somewhere a memory and it's going to go look for that and because it's being bound
+
+03:39.530 --> 03:43.490
+to a value it points to this value one ninety.
+
+03:44.400 --> 03:51.770
+And remember this number in memory gets stored as a binary representation in zeros and ones.
+
+03:51.800 --> 03:52.660
+Right.
+
+03:52.850 --> 03:58.220
+But it doesn't matter to us because however our machine stores it we don't care we just want to be able
+
+03:58.220 --> 03:58.960
+to retrieve it.
+
+03:59.150 --> 04:02.990
+And then when we printed to do well get one item.
+
+04:03.410 --> 04:11.630
+Now we're gonna be using variables all over the course but on top of just naming variables however we
+
+04:11.630 --> 04:12.570
+want.
+
+04:12.930 --> 04:20.210
+There is some best practices around variables of how you should write good variables and as a matter
+
+04:20.210 --> 04:26.850
+of fact these are specific rules that the Python community as a whole has that you'll just have to remember.
+
+04:26.870 --> 04:29.700
+So let's have a look at this variables.
+
+04:29.740 --> 04:38.120
+And remember this is the symbol for best practices are what we call snake case snake case means it's
+
+04:38.300 --> 04:45.530
+all lowercase and then spaces while they don't exist we use underscores variables must start with a
+
+04:45.550 --> 04:54.340
+lowercase or an underscore variables can be anything with letters numbers and underscores.
+
+04:54.410 --> 05:01.250
+But remember they have to start with lowercase and underscore that means we can't start a variable with
+
+05:01.250 --> 05:02.270
+a number.
+
+05:02.270 --> 05:04.640
+There are also case sensitive.
+
+05:04.640 --> 05:12.170
+That means if I create a variable but let's say this snake case this variable has a capital E instead
+
+05:12.170 --> 05:15.950
+of a lower Casey there'll be a different variable.
+
+05:16.150 --> 05:20.170
+And then finally you can't overwrite keywords.
+
+05:20.300 --> 05:24.210
+Let's go through these with some examples first.
+
+05:24.360 --> 05:27.360
+A variable has to be in the form of a snake case.
+
+05:27.480 --> 05:35.490
+That is if I want to call this user IQ I should technically have an underscore here instead of a space
+
+05:35.700 --> 05:38.630
+just to make sure that a programmer.
+
+05:38.730 --> 05:45.330
+Maybe I'm working on a team can read this variable so that's snakes.
+
+05:45.360 --> 05:51.740
+You also have to start your variables with either a letter or an underscore.
+
+05:51.780 --> 05:55.440
+So I can technically do this and I click Run.
+
+05:55.980 --> 06:00.570
+Well that's going to give me an error because I've changed a variable so now in order to access that
+
+06:00.570 --> 06:03.830
+variable you have to go like this.
+
+06:04.200 --> 06:11.450
+Now underscore in Python signifies a private variable something that will go over later on in the course.
+
+06:11.820 --> 06:19.470
+But usually you're starting your variables with a letter and afterwards yeah you can add numbers if
+
+06:19.470 --> 06:20.370
+you want in here.
+
+06:20.400 --> 06:21.690
+That's no problem.
+
+06:21.720 --> 06:23.180
+This is still going to work.
+
+06:23.190 --> 06:25.750
+This is a valid variable.
+
+06:25.850 --> 06:29.210
+Finally a variable is case sensitive.
+
+06:29.210 --> 06:33.320
+So if I do user IQ here and I do.
+
+06:33.320 --> 06:37.180
+Capital letters I can't access this
+
+06:41.610 --> 06:47.970
+like this because while it doesn't exist again it's case sensitive we have to make sure that we match
+
+06:50.290 --> 06:54.250
+and finally we don't want to overwrite key words.
+
+06:54.250 --> 06:55.900
+What does that mean.
+
+06:55.970 --> 06:58.550
+Key words in python.
+
+06:58.570 --> 07:00.790
+Well they already mean something in Python.
+
+07:00.790 --> 07:03.550
+For example this print is a keyword.
+
+07:03.550 --> 07:11.050
+You can see it highlighted in blue so that if I create a variable saying print equals one 90 and then
+
+07:11.050 --> 07:13.560
+I do print print.
+
+07:13.750 --> 07:21.580
+Let's see what happens we get an error because I can't really assigned to this variable because print
+
+07:21.850 --> 07:23.890
+already means something.
+
+07:23.910 --> 07:25.320
+Now I know what you're wondering.
+
+07:25.650 --> 07:27.780
+What are these keywords in Python.
+
+07:27.840 --> 07:32.070
+That's a simple Google search away and we'll learn these throughout our course.
+
+07:32.070 --> 07:40.100
+If we go to Python keywords by W3 schools you'll see that we have these keywords that each mean something
+
+07:40.250 --> 07:42.560
+in Python again.
+
+07:42.640 --> 07:46.390
+We'll go through these and we'll learn them throughout our course.
+
+07:46.390 --> 07:48.690
+And if you look it's not that intimidating.
+
+07:48.730 --> 07:50.080
+There's not that many.
+
+07:50.080 --> 07:53.640
+So as we practice you'll start to get familiar with them.
+
+07:53.740 --> 07:58.690
+But the easiest way to tell whether it's keyboard or an important word in in python.
+
+07:58.750 --> 08:05.200
+Well you see that it's highlighted in blue as soon as you create a variable that is unique.
+
+08:05.200 --> 08:11.260
+It's highlighted in white and this will be the case with whatever environment that you're typing code
+
+08:11.260 --> 08:14.430
+into as long as it's set up for python.
+
+08:14.440 --> 08:22.570
+Now beyond the python keywords there are different things like for example the I.A. for integer that
+
+08:22.570 --> 08:25.100
+we've learned so these.
+
+08:25.230 --> 08:26.700
+We're gonna get familiar with.
+
+08:26.700 --> 08:33.210
+So a good rule of thumb for variables is to make them really descriptive really say what your intention
+
+08:33.210 --> 08:38.900
+is and a good programmer is somebody that's able to name things really well with their variables.
+
+08:38.900 --> 08:43.950
+So if a new developer comes and looks at your code it's easily understood.
+
+08:44.730 --> 08:48.420
+Finally variables can also be reassigned.
+
+08:48.480 --> 08:57.900
+For example let's say we have IQ here of one 90 and then I decide to perhaps have another variable call
+
+08:57.900 --> 09:12.450
+it user page and for some reason I want to assign user H to perhaps have IQ divided by 4.
+
+09:12.460 --> 09:13.840
+Is that going to work.
+
+09:14.400 --> 09:15.310
+It should.
+
+09:15.350 --> 09:15.760
+Right.
+
+09:15.780 --> 09:26.110
+I'm saying user age is going to equal forty seven point five I'm using IQ which is 190.
+
+09:26.300 --> 09:30.180
+Dividing it by four and then assigning it to user age.
+
+09:30.400 --> 09:36.100
+I can maybe assign this to another variable called user age or called a.
+
+09:36.230 --> 09:45.280
+And once again I run this and it's printing the same thing so you can use variables to store that information
+
+09:45.310 --> 09:47.320
+and use it whenever you want.
+
+09:47.320 --> 09:54.130
+You can use it in operations you can use it to reassign it whatever your program needs.
+
+09:54.130 --> 09:59.980
+Now later on in the course we're going to learn about classes and classes actually have a different
+
+09:59.980 --> 10:03.760
+convention than this but we'll get to that later on.
+
+10:03.760 --> 10:09.890
+For now though I want to mention two small gotchas with variables that you should be careful with.
+
+10:09.940 --> 10:19.120
+For example there's an idea of constants and constants are those things that never change in a program.
+
+10:19.130 --> 10:26.090
+For example if we wanted to create a constant such as the value of pi let's say for now it's three point
+
+10:26.090 --> 10:27.300
+1 4.
+
+10:27.410 --> 10:34.460
+We can have it all in capitals and that's going to tell other programmers that hey this is a constant.
+
+10:34.460 --> 10:36.440
+This number is not meant to change.
+
+10:36.800 --> 10:41.180
+I mean we could change it if we want.
+
+10:41.180 --> 10:41.930
+There you go.
+
+10:41.930 --> 10:48.770
+I just made pi equal to zero so it was stored as three point one for a memory but then we overrode it
+
+10:48.830 --> 10:52.360
+and reassigned it the value of zero.
+
+10:52.370 --> 10:59.390
+You can still do that but a good convention is that if you see this that means this number or this value
+
+10:59.480 --> 11:01.100
+should never be changed.
+
+11:01.100 --> 11:05.750
+Another type of variable that you're gonna see and this is something we'll see later on in the course
+
+11:06.090 --> 11:06.920
+are the.
+
+11:06.980 --> 11:12.140
+It doesn't look like I just did double on discourse here but it's two underscores and we call these
+
+11:12.140 --> 11:12.950
+Dunder.
+
+11:13.010 --> 11:21.410
+And as you can see here we have some Dunder variables that Python has now we'll learn more about these
+
+11:21.410 --> 11:22.010
+later on.
+
+11:22.010 --> 11:27.350
+But the idea here is that these are meant to be left alone.
+
+11:27.380 --> 11:28.850
+You should not touch them.
+
+11:28.850 --> 11:37.700
+You shouldn't create a variable with two underscores like this and call it high high and assign it a
+
+11:37.700 --> 11:39.020
+value.
+
+11:39.020 --> 11:40.490
+I mean you still can.
+
+11:40.550 --> 11:43.980
+However this is generally not good practice.
+
+11:44.090 --> 11:50.240
+So you want to be careful with that but the one thing that I really want you to take away from this
+
+11:50.720 --> 11:56.750
+is that variables are really important concepts and programming naming variables is one of the most
+
+11:56.750 --> 11:59.240
+important skills we have as a programmer.
+
+11:59.300 --> 12:05.240
+I know it sounds silly but there's so many times that I read code that is so hard to understand simply
+
+12:05.240 --> 12:08.300
+because a programmer is not descriptive enough.
+
+12:08.690 --> 12:16.460
+So throughout the course we're gonna learn how to name things well so that our code reads like English
+
+12:17.590 --> 12:20.350
+and that's the whole point of writing a code.
+
+12:20.350 --> 12:27.310
+The point of writing good code is that it's readable and understandable by other programmers by the
+
+12:27.310 --> 12:28.540
+way to finish off.
+
+12:28.540 --> 12:30.600
+I just want to show you one quick trick.
+
+12:30.680 --> 12:37.090
+There's also a way that you might see in some code bases that uses something like this.
+
+12:38.300 --> 12:49.070
+He calls 1 2 3 and this simply is a way for us to rapidly assign values to variables multiple times.
+
+12:49.080 --> 13:00.440
+So for example if I do print a then print B then print C and I run this you see that I get 1 2 3.
+
+13:00.490 --> 13:06.470
+We assign value of 1 to a value of 2 to B and value 3 to c.
+
+13:06.690 --> 13:09.990
+Just a quick shorthand way that you might encounter.
+
+13:09.990 --> 13:12.170
+All right let's take a break and I'll see you in the next one.

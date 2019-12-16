@@ -1,0 +1,238 @@
+WEBVTT
+
+00:01.230 --> 00:08.380
+In this video we're going to setup our terminal to look nice along our newly setup sublime text as you
+
+00:08.380 --> 00:14.590
+know the terminal is just a text based way to communicate with the computer instead of the graphical
+
+00:14.590 --> 00:18.860
+user interface that we normally use as developers.
+
+00:18.940 --> 00:24.400
+You will spend a lot of time with the terminal especially as you become more and more senior in your
+
+00:24.400 --> 00:25.630
+role.
+
+00:25.630 --> 00:26.910
+So let's make it better.
+
+00:27.890 --> 00:32.240
+If we open up the terminal I have it open already for myself.
+
+00:32.370 --> 00:36.060
+You see that we have the word bash here.
+
+00:36.060 --> 00:41.670
+Bash is a type of shell that a terminal can have.
+
+00:41.670 --> 00:43.460
+And what do I mean by that.
+
+00:43.470 --> 00:50.670
+Well just as a name suggests it's just the casing around the terminal that is customizable.
+
+00:50.670 --> 00:53.850
+There's actually more than one shell.
+
+00:53.850 --> 00:55.550
+Bash is just one of them.
+
+00:55.680 --> 00:59.070
+One of my favorites are Oh my zest H.
+
+00:59.070 --> 01:06.960
+There's the fish shell and they all have different things that you can do with them but it's just another
+
+01:06.960 --> 01:10.550
+way to customize your workstation.
+
+01:10.800 --> 01:18.480
+Before I get into that let's just customize our bash the way we do that is we can first start off with
+
+01:18.630 --> 01:21.790
+getting something other than just having this to the lot.
+
+01:21.900 --> 01:31.530
+The way we do that is we type in Nano which is a text editor and then we do squiggly line slash dot
+
+01:31.540 --> 01:40.900
+bash underscore profile and here where we opened is a file that is the batch profile so that this is
+
+01:41.110 --> 01:43.040
+what our profile will look like.
+
+01:43.090 --> 01:48.760
+This file it gets read every time we open up the terminal in here we can put in a bunch of things that
+
+01:48.760 --> 01:50.440
+we want our terminal to do.
+
+01:50.470 --> 01:58.510
+One of the cool things that I really think is fun is updating your P.S. One variable and I'll link to
+
+01:58.510 --> 02:01.900
+this Web site and there's a bunch of examples here that we can use.
+
+02:01.900 --> 02:10.190
+Let's just pick one that like this one over here all we do is copy and paste this and within our batch
+
+02:10.190 --> 02:17.690
+profile we can just copy and paste and as you can see our P.S. 1 now equals a whole bunch of gibberish
+
+02:17.720 --> 02:19.090
+that we don't really need to worry about.
+
+02:19.280 --> 02:27.530
+And we see over here that to say we need to do control X then save modify we just press Y and then press
+
+02:27.560 --> 02:29.950
+enter okay.
+
+02:30.040 --> 02:39.770
+Nothing happens but the way we fix that is we now do source and then bash profile.
+
+02:39.870 --> 02:44.220
+It essentially reloads our profile now and look at that.
+
+02:44.220 --> 02:47.900
+We now have a cool little prompt to the left.
+
+02:48.000 --> 02:53.400
+So you can set up your piece want to display whatever you want if you want to your current directory
+
+02:53.400 --> 02:54.020
+to display.
+
+02:54.020 --> 02:56.160
+That's great if you want your user name to display.
+
+02:56.160 --> 02:57.840
+That's good as well.
+
+02:57.900 --> 03:00.350
+You can set up in a ton of ways.
+
+03:00.360 --> 03:05.190
+The other thing that the terminal lets you do if you click on something like add a background color
+
+03:05.820 --> 03:09.000
+you'll get a few things that you can change in your shell.
+
+03:09.060 --> 03:12.980
+You can change your color based on what you want.
+
+03:13.230 --> 03:20.370
+And if I bring this over here you can also click on the profile and actually it gives you a bunch of
+
+03:20.520 --> 03:22.820
+pre-built ones that look really cool.
+
+03:22.890 --> 03:24.540
+Let's do pro actually green.
+
+03:24.750 --> 03:26.830
+Again you can customize this as well.
+
+03:26.850 --> 03:33.480
+And as I mentioned a different operating system you have your own ways to customize it but every single
+
+03:33.480 --> 03:39.060
+one usually has a profile and a way to modify what gets displayed based on your needs.
+
+03:39.070 --> 03:47.610
+Now the one that I really really like is a shell that's different than bash and I've used this one before
+
+03:47.610 --> 03:51.600
+which is really really good it has a ton of themes that you can use.
+
+03:51.600 --> 03:54.080
+They have a bunch of options and you can play through them.
+
+03:54.180 --> 03:56.710
+The one that I really like is the fish shell.
+
+03:56.730 --> 03:58.060
+It's very simple.
+
+03:58.110 --> 04:06.010
+It has all the operating systems on it and I install it using homebrew for those on a Mac homebrew is
+
+04:06.460 --> 04:09.010
+a way to install anything from the web.
+
+04:09.010 --> 04:15.060
+So instead of me going to a Web site and installing something I can use a command line to download things.
+
+04:15.070 --> 04:21.580
+If you go to the homebrew Web site brewed out SDH You can actually just copy this link into your terminal
+
+04:21.790 --> 04:28.900
+copy and paste it press enter and it will install homebrew for you I already have this installed so
+
+04:29.110 --> 04:34.100
+I'll just exit that the way I install fish.
+
+04:34.120 --> 04:39.740
+You can see over here all I have to do is say brew install fish.
+
+04:39.920 --> 04:45.470
+And while this is happening I want to show you another option so we have the terminal over here.
+
+04:45.560 --> 04:52.930
+But I term which again is specific for Mac is really really nice and it's way more customizable than
+
+04:52.940 --> 04:53.720
+the terminal.
+
+04:53.810 --> 05:02.890
+So I prefer using a term to if I open this and double click and look at that.
+
+05:02.890 --> 05:13.050
+This looks way nicer already so let's just compare them side by side I have my let's make that a little
+
+05:13.050 --> 05:13.840
+bit bigger.
+
+05:13.920 --> 05:23.220
+I have the bash shell here and I have the fish shell here although they both are in the desktop right
+
+05:23.220 --> 05:24.240
+now.
+
+05:24.240 --> 05:27.520
+They're running on different shells.
+
+05:27.750 --> 05:36.540
+The fish Shell has just like we had with the bass profile has its own profile so you can set it up and
+
+05:36.540 --> 05:42.950
+you can set up which one gets activated when you first open up the terminal or ITER.
+
+05:42.960 --> 05:49.140
+What I recommend is to setup your workstation in a way that's nice to you.
+
+05:49.140 --> 05:56.630
+My preferred way is to use ITER and the fish show but if you want to use Bash that's great.
+
+05:56.630 --> 06:03.290
+The beauty here is that if I type in bash I get taken to the bash profile and if I type in fish I get
+
+06:03.290 --> 06:05.390
+back to fish.
+
+06:05.470 --> 06:12.260
+Item Also lets you just customize everything really nicely if I go to preferences you'll see here that
+
+06:12.380 --> 06:19.640
+I have appearance profiles where we can have colors set up and there's a ton more you can do with your
+
+06:19.640 --> 06:25.120
+terminal that I won't get into into this video because everybody has their own way of doing things.
+
+06:25.130 --> 06:34.520
+I just wanted to show you a basic setup so that now you have a nice environment that you can work in.
+
+06:34.590 --> 06:36.310
+I'll see in the next one by.

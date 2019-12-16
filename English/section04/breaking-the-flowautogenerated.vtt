@@ -1,0 +1,82 @@
+WEBVTT
+
+00:00.650 --> 00:01.850
+Welcome back.
+
+00:01.850 --> 00:05.480
+We learned about our basic Python data types.
+
+00:05.480 --> 00:12.400
+We also learned a little bit about some of the terms that we might use when talking about code.
+
+00:12.410 --> 00:18.860
+We learned a few best practices but most importantly we learned how to perform actions on these data
+
+00:18.860 --> 00:20.170
+types.
+
+00:20.180 --> 00:29.450
+We saw that there's built in functions that we can run on any data type such as the print function but
+
+00:29.450 --> 00:34.260
+we also learned that most of these data types have their own methods.
+
+00:34.430 --> 00:40.760
+That is that dot some sort of a name and then the brackets to perform some actions on them.
+
+00:40.760 --> 00:47.960
+Now we're still scratching the surface here but we now go into an area that gets really really exciting
+
+00:48.440 --> 00:57.980
+because up until now what we've been doing is this Every time we write code we do something here and
+
+00:57.980 --> 01:01.750
+then we go to the second line and do something else.
+
+01:02.000 --> 01:09.520
+And then finally go to the third line and do something else and so on and so forth our Python interpreter
+
+01:09.700 --> 01:19.570
+just went line by line 1 all the way to whatever line number we have on our DOT pi file and just ran
+
+01:19.570 --> 01:26.810
+the code and it ran it really fast because machines are good at that they run code really fast but we
+
+01:26.810 --> 01:34.670
+haven't discovered the true power of programming and specifically programming for machines.
+
+01:34.730 --> 01:41.960
+You see the power comes when we start to incorporate the idea of maybe running multiple lines over and
+
+01:41.960 --> 01:48.630
+over or maybe skipping a line and going from line want to line three and in this section we're going
+
+01:48.630 --> 01:56.490
+to talk about the idea of conditions and conditional logic we're going to talk about looping and loops
+
+01:57.120 --> 02:04.080
+where we can perform actions hundreds thousands millions of time over and over something that machines
+
+02:04.110 --> 02:05.990
+are really really good at.
+
+02:06.120 --> 02:13.680
+And that's when programming becomes really powerful because machines can do certain tasks a lot better
+
+02:13.830 --> 02:16.160
+and a lot faster than humans.
+
+02:16.200 --> 02:23.760
+So we're now going to break into a new world where instead of going from one to three everything in
+
+02:23.760 --> 02:24.320
+order.
+
+02:24.450 --> 02:30.000
+We're going to start to break some of that apart so that we have more control over our programs than
+
+02:30.000 --> 02:32.160
+just going line by line.
+
+02:32.160 --> 02:34.560
+Let's find out how to do that in the next video.

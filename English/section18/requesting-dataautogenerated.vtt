@@ -1,0 +1,199 @@
+WEBVTT
+
+00:00.760 --> 00:01.440
+All right.
+
+00:01.510 --> 00:06.130
+It's time to get started with our hacker news project now.
+
+00:06.140 --> 00:10.300
+The first thing we're gonna do is we're gonna set up our environment.
+
+00:10.460 --> 00:16.210
+In my case for this project I'm going to use Sublime Text but again use whatever text editor you want.
+
+00:16.280 --> 00:20.650
+I also have my terminal or command prompt here and I've created a scrape.
+
+00:20.690 --> 00:22.600
+Dot py file.
+
+00:22.670 --> 00:29.130
+Now the very first thing we need to do in order to scrape using Python is.
+
+00:29.180 --> 00:32.600
+Well we need to download beautiful soup.
+
+00:32.680 --> 00:35.360
+This is what allows us to scrape Web sites.
+
+00:35.950 --> 00:43.890
+So all I'm going to do is a pip three and I want to install beautiful soup for.
+
+00:44.020 --> 00:51.520
+This is the latest version I'll click enter and there you go awesome.
+
+00:51.570 --> 00:54.440
+We have beautiful soup installed.
+
+00:54.470 --> 00:58.980
+The other thing that we need is the requests library.
+
+00:59.030 --> 01:03.280
+Now we're gonna use the request library a lot in this course.
+
+01:03.350 --> 01:05.480
+If you don't have it on your computer already.
+
+01:05.480 --> 01:08.120
+Again we just use it using requests.
+
+01:08.300 --> 01:15.620
+It essentially allows us to grab a CML files like Hacker News.
+
+01:15.830 --> 01:26.600
+So what we're going to do is say Pip 3 install requests so once we have that what we're going to do
+
+01:26.600 --> 01:29.000
+and I'm going to show you why we had to download both.
+
+01:29.000 --> 01:38.360
+First thing we're going to do is to actually import request or requests and the other thing is the beautiful
+
+01:38.360 --> 01:39.000
+soup.
+
+01:39.050 --> 01:49.720
+Now the way we use beautiful soup is we say from B S for we want to import beautiful soup.
+
+01:49.810 --> 01:56.200
+I know it's kind of weird because we installed beautiful soup for but this is how we import it.
+
+01:56.380 --> 02:04.410
+Once we've installed it so from beans for import beautiful soup now why do we need these two things.
+
+02:04.420 --> 02:12.460
+Well beautiful soup actually allows us to use the AC Mel and grab different data so it allows us to
+
+02:13.030 --> 02:18.200
+use that data that we've gathered to do whatever we want to it to scrape it.
+
+02:18.910 --> 02:25.730
+But the requests module is actually what allows us to download initially that Asia now.
+
+02:25.990 --> 02:27.810
+So let me show you what I mean.
+
+02:27.940 --> 02:37.200
+The first thing we're going to do is create a new response variable and this response will be the requests
+
+02:37.560 --> 02:41.160
+and the U.R.L. that we want to grab the data from.
+
+02:41.580 --> 02:48.440
+So you can think of this as a web browser that we're using without the actual window because this is
+
+02:48.440 --> 02:50.950
+what Google Chrome is doing underneath the hood.
+
+02:50.960 --> 02:56.090
+It's trying to grab the information of that Web site from a server.
+
+02:56.150 --> 02:59.260
+So let's go back here and let's go to hack and use again.
+
+02:59.270 --> 03:03.230
+We're gonna copy this link and I'm going to paste it in here.
+
+03:03.230 --> 03:03.710
+There you go.
+
+03:03.710 --> 03:11.060
+Let's make this a little bit bigger like that and what we actually need to do here is to say dot get.
+
+03:11.080 --> 03:14.130
+So we want to get the information here.
+
+03:14.140 --> 03:18.070
+So we're doing a get request to grab this page.
+
+03:18.070 --> 03:27.470
+So that now if let's say a print response I say this and I run by saying Python 3 scraped up by all
+
+03:27.480 --> 03:30.780
+right I get a response a 200 response.
+
+03:30.780 --> 03:31.160
+But.
+
+03:31.530 --> 03:31.780
+Mm hmm.
+
+03:31.900 --> 03:33.690
+Well what does that mean.
+
+03:33.720 --> 03:42.910
+What we're essentially doing here is if I open up view developer and do developer tools I click on network
+
+03:42.910 --> 03:45.410
+here and let's make this a little bit bigger.
+
+03:45.460 --> 03:52.850
+There we go and I refresh this page I get a lot of information.
+
+03:52.860 --> 03:58.750
+But the main thing that we care about is this the first document news here.
+
+03:58.830 --> 04:02.160
+If I click over here you see that this is what we get.
+
+04:02.190 --> 04:09.940
+We get an HMO with all the data but we also saw here that the response was two hundred.
+
+04:10.110 --> 04:11.610
+That means everything's OK.
+
+04:11.610 --> 04:15.210
+The server responded with two hundred and eight gave us a document.
+
+04:15.330 --> 04:16.850
+This is what we just got.
+
+04:17.730 --> 04:22.050
+So in here we can actually say response dot text that we got.
+
+04:22.200 --> 04:24.730
+So let me run this again and look at that.
+
+04:24.870 --> 04:35.490
+We have our entire HMO file that displays the text in here because we don't care about styling right.
+
+04:35.510 --> 04:39.420
+We don't really care about styling maybe we don't even care about images.
+
+04:39.470 --> 04:41.680
+All we care about is the text.
+
+04:41.900 --> 04:51.530
+And for our purposes we care about the actual link as well as the votes that the story has so we grab
+
+04:51.560 --> 04:52.800
+this data.
+
+04:52.940 --> 04:59.150
+And now while we can do is use beautiful soup to clean up this data right now there's this is a lot
+
+04:59.150 --> 05:06.290
+of information we don't really need this do we or at least we want to remove all the information that
+
+05:06.290 --> 05:11.690
+we don't need such as stories that have less than 100 points for example this one over here with one
+
+05:11.690 --> 05:12.910
+hundred and seventy six points.
+
+05:12.920 --> 05:15.890
+We definitely care about so.
+
+05:16.020 --> 05:19.050
+Let's take a break and see how we can use beautiful soup next.

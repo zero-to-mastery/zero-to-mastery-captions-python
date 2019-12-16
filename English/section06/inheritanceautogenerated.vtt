@@ -1,0 +1,295 @@
+WEBVTT
+
+00:00.510 --> 00:04.190
+So we've talked about encapsulation about abstraction.
+
+00:04.260 --> 00:07.620
+What about the third pillar of Hopi.
+
+00:07.650 --> 00:17.850
+It's called inheritance and Inheritance allows new objects to take on the properties of existing objects.
+
+00:17.850 --> 00:20.880
+So you can inherit classes.
+
+00:20.880 --> 00:22.280
+Let's have a look at an example.
+
+00:22.350 --> 00:28.540
+Let's remove the previous code that we've had and go back to our game example.
+
+00:28.810 --> 00:33.890
+We want to create a new game and we have different types of users.
+
+00:33.970 --> 00:36.510
+So we have users that can be wizards that can be.
+
+00:36.510 --> 00:43.990
+Else that can be I don't know archers but all these users have some common functionality.
+
+00:43.990 --> 00:53.040
+And each one of the sub users like wizards elves archers have some common shared functionality.
+
+00:53.260 --> 00:56.370
+But then again different maybe attacks.
+
+00:56.440 --> 00:59.410
+So using OPI we can actually do inheritance.
+
+00:59.440 --> 01:09.040
+For example let's say we have a class user here and this user will have let's say a sign in function
+
+01:10.950 --> 01:12.790
+or sign in method.
+
+01:12.900 --> 01:19.200
+Once again it's going to receive self and then we'll just for now assume that we have some sort of a
+
+01:19.200 --> 01:28.200
+sign in here so let's just say for now print logged in because in order to play a game they have to
+
+01:28.200 --> 01:29.140
+be logged in.
+
+01:29.630 --> 01:30.420
+OK.
+
+01:30.450 --> 01:32.670
+Now you might be wondering Ho ho ho.
+
+01:32.670 --> 01:36.170
+Where is the init method here.
+
+01:36.180 --> 01:40.460
+Shouldn't we have that init method that gets run first.
+
+01:40.470 --> 01:48.540
+Well we could but if we don't have any variables or attributes that we want to assign to the user.
+
+01:48.660 --> 01:51.300
+Well in that case we wouldn't need an ID method.
+
+01:51.300 --> 01:53.940
+So for now we'll just say that we don't need.
+
+01:54.100 --> 01:58.870
+There's nothing that the user has other than this sign in method.
+
+01:58.980 --> 02:09.880
+Now let's say we want to create a bunch of subclasses so that we have a Class Wizard and for now we'll
+
+02:09.880 --> 02:16.360
+just do a pass here so that we don't have an empty class but it was still allow us to build it and then
+
+02:16.390 --> 02:27.470
+let's say we also have a class Archer that will pass to as well and make sure we have brackets here.
+
+02:27.480 --> 02:28.920
+Now here's the thing.
+
+02:28.920 --> 02:33.790
+Ideally all these wizards and archers are users as well.
+
+02:33.840 --> 02:34.410
+Right.
+
+02:34.440 --> 02:41.220
+So we have users and these users can have multiple forms.
+
+02:41.220 --> 02:43.370
+They can be wizards.
+
+02:43.680 --> 02:54.520
+They can be archers they can be ogres all the characters in our game but all of them let's say have
+
+02:54.520 --> 02:56.610
+to be signed in first.
+
+02:56.770 --> 03:05.650
+How can we make sure that all of these users or classes also have access to sign in.
+
+03:05.760 --> 03:08.000
+Well we can use inheritance.
+
+03:08.280 --> 03:12.480
+And how do we do inheritance quite easily actually.
+
+03:12.480 --> 03:18.390
+All we do is in the bracket pass the parent class that we want to inherit from.
+
+03:19.140 --> 03:22.760
+So let's say I do user here.
+
+03:22.900 --> 03:27.650
+Now let's collect run here no heirs everything is looking good.
+
+03:27.750 --> 03:32.880
+And by the way you see the green line here tells me that indentation is not a multiple of four because
+
+03:33.180 --> 03:35.170
+indentation should be for in Python.
+
+03:35.310 --> 03:36.590
+So it can just do this.
+
+03:36.780 --> 03:41.790
+But I like keeping it smaller just so it's easier to read okay.
+
+03:41.800 --> 03:44.230
+So let's instantiate a class here.
+
+03:44.290 --> 03:56.030
+I'm going to create a wizard one and then say wizard and run that wizard class.
+
+03:56.030 --> 04:07.660
+Now if I do print here and I do let's say print wizard if I click Run I see that the wizard object has
+
+04:07.660 --> 04:08.640
+been created.
+
+04:08.710 --> 04:11.450
+And what if I do dot sign in.
+
+04:11.590 --> 04:12.400
+I see that.
+
+04:12.440 --> 04:14.170
+Yeah it's actually there.
+
+04:14.170 --> 04:19.760
+If I do sign in and click Run hey I'm logged in.
+
+04:19.790 --> 04:21.070
+How cool is that.
+
+04:21.290 --> 04:30.850
+I inherited from the user class this functionality and this is really really powerful because now I
+
+04:30.850 --> 04:32.740
+can extend my wizard.
+
+04:32.740 --> 04:33.310
+Right.
+
+04:33.340 --> 04:46.340
+So let's say that this wizard has an init method which will be run when the wizard is created and will
+
+04:46.340 --> 05:00.890
+have a name and power and we get and in here will assign self name to equal name and then self dot power
+
+05:01.550 --> 05:15.240
+to equal power and let's also add a another method calling it attack and this attack method will simply
+
+05:15.450 --> 05:30.840
+print an F string that will say attacking with power of let's say self got power and then we're gonna
+
+05:30.850 --> 05:32.460
+do the same for the Archer.
+
+05:32.500 --> 05:42.640
+So I'm going to copy this code paste it in here and the Archer will have name and let's say instead
+
+05:42.640 --> 05:56.070
+of power we'll say that it has let's say number of arrows and number of arrows will be the new attribute
+
+05:56.250 --> 05:59.680
+that it gets and then the attack will have.
+
+05:59.730 --> 06:11.060
+Well attacking with arrows and then we'll have arrows left and arrows left to we'll just say Number
+
+06:11.060 --> 06:20.180
+of Errors and we can do something fun where the arrows decrease as every time you attack okay.
+
+06:20.250 --> 06:26.370
+So now that we have this let's make this a little bit smaller just so you can see there you go.
+
+06:26.370 --> 06:36.800
+Now that we have this let's instantiate the first wizard with let's say Merlin with the power of 50
+
+06:37.880 --> 06:39.050
+and then the Archer
+
+06:43.560 --> 06:53.730
+will be instantiated as Robin with let's say five hundred arrows more or less to one hundred errors.
+
+06:53.740 --> 07:03.700
+So now the wizard and the Archer are going to have well they'll have the sign in but they'll also have
+
+07:03.700 --> 07:13.890
+the attack but unique to their individual classes and they'll also have different properties.
+
+07:13.930 --> 07:15.000
+Let's have a look.
+
+07:15.070 --> 07:23.880
+If I was to do wizard dot Mr. Wizard one dot net will say
+
+07:26.990 --> 07:31.680
+and let me just turn back my code intelligence
+
+07:35.500 --> 07:38.770
+we'll see that we have a few errors here.
+
+07:38.870 --> 07:42.170
+What's the what's the say undefined name self.
+
+07:42.200 --> 07:45.420
+And that's because I forgot self in the brackets.
+
+07:45.590 --> 07:49.390
+So you remember we always have to give the first parameter self.
+
+07:49.640 --> 07:58.580
+If we scroll down we go to wizard dot we see that we have name power and attack if I click attack here
+
+07:59.470 --> 08:04.280
+and I run see that I'm attacking with power of 50.
+
+08:04.340 --> 08:08.210
+If I do Archer one dot attack
+
+08:10.970 --> 08:18.990
+in that case I'll get attacking with arrows arrows left one hundred but both of these have the sine
+
+08:18.990 --> 08:21.830
+in function at the same time.
+
+08:21.880 --> 08:23.910
+How cool is that.
+
+08:23.980 --> 08:30.470
+This is the power of inheritance we're keeping our code dry right.
+
+08:30.530 --> 08:36.760
+We're abstracting away the part of the code that they both share.
+
+08:37.190 --> 08:43.340
+But then changing things according to what each one needs.
+
+08:43.340 --> 08:49.670
+So for example I could have different methods and properties on wizard than the archer but also have
+
+08:49.700 --> 08:53.630
+a shared user's user functionality that they have.
+
+08:53.630 --> 08:56.840
+And this way keeps her code organized and clean.
+
+08:56.840 --> 09:00.280
+Now let's bring back the zoom in just so you can see it clear.
+
+09:00.560 --> 09:07.400
+Now this idea of inheritance is really really powerful and the key here is that we have a parent class
+
+09:07.880 --> 09:10.730
+and children classes.
+
+09:10.820 --> 09:19.190
+Now sometimes these children classes are called subclasses or derived classes because they're subclasses
+
+09:19.190 --> 09:23.650
+of user or derived from the user class.
+
+09:23.660 --> 09:26.510
+Let's explore this topic a little bit more in the next video.

@@ -1,0 +1,148 @@
+WEBVTT
+
+00:00.650 --> 00:08.960
+Let's talk about arguments versus parameters which is one of our key terms that we use when describing
+
+00:08.990 --> 00:10.500
+functions.
+
+00:10.520 --> 00:11.490
+Let's see what they mean.
+
+00:12.520 --> 00:17.020
+You see right now are say Hello Function is pretty generic.
+
+00:17.020 --> 00:17.860
+Very simple right.
+
+00:17.860 --> 00:19.690
+We're just while printing.
+
+00:19.750 --> 00:21.140
+Hello.
+
+00:21.210 --> 00:29.520
+It's kind of useful but not really the power of functions beyond just being able to call this multiple
+
+00:29.520 --> 00:38.190
+times because it only lives in one location in memory is this ability for us to make it dynamic for
+
+00:38.190 --> 00:40.250
+example in these brackets.
+
+00:40.380 --> 00:43.370
+I can give it what we call parameters.
+
+00:43.560 --> 00:47.430
+So in here we give it parameters
+
+00:50.340 --> 00:51.840
+inside of the bracket.
+
+00:51.840 --> 00:59.050
+So for example I can give it name which is a variable that I just made up I can call whatever I want
+
+00:59.320 --> 01:04.640
+and I can leave it like that or I can keep giving it parameters as many as I want I can keep adding
+
+01:04.640 --> 01:07.810
+a hundred if I wanted to so.
+
+01:07.870 --> 01:15.720
+In this case let's just say this is an emerging so these are two variables or parameters that I've created
+
+01:16.410 --> 01:23.090
+and this Say Hello Function is able to receive these two parameters.
+
+01:23.210 --> 01:24.260
+What does that mean.
+
+01:24.260 --> 01:28.870
+It means that we're able to use these variables inside of this function.
+
+01:29.000 --> 01:39.930
+For example I can create this as an F string and say hello and add the name.
+
+01:40.100 --> 01:43.940
+And then finally add the emoji.
+
+01:43.940 --> 01:49.920
+And because I have these parameters I can use them as variables inside of this code block.
+
+01:50.000 --> 02:00.470
+Now these parameters allow us to give the function when we call it what we call arguments.
+
+02:00.470 --> 02:05.720
+And by the way the confusion between parameters and arguments people usually say one when they mean
+
+02:05.720 --> 02:06.830
+the other.
+
+02:06.830 --> 02:09.980
+It's a little tricky so hang in there.
+
+02:09.980 --> 02:17.580
+Arguments are used as the actual values we provide to a function.
+
+02:17.810 --> 02:21.100
+So now and say hello I can give it a name.
+
+02:21.140 --> 02:27.050
+In my case let's just say hi to myself and then I can give it an emotion.
+
+02:27.350 --> 02:34.760
+And you see how my editor is giving me the hint that I should give it an emoji because while I defined
+
+02:34.760 --> 02:37.830
+it here again something that editors help us do.
+
+02:38.120 --> 02:41.330
+So let's just give it just a smiley face with the tongue out.
+
+02:41.420 --> 02:50.600
+Now these are arguments these are the actual value we provide to the function and the name of the variables
+
+02:50.600 --> 02:54.020
+that we use that we receive are called parameters.
+
+02:54.020 --> 03:01.220
+So parameters are used when we define the function and arguments are used when we call the function
+
+03:02.330 --> 03:11.450
+defined and call and by the way some people also like saying call or invoking the function or invoke
+
+03:11.630 --> 03:12.140
+the function.
+
+03:12.590 --> 03:15.380
+So if you ever hear those words you know what they mean.
+
+03:16.790 --> 03:27.610
+So if I run this I get Hello Andre with that smiley face and this is when functions get really powerful
+
+03:28.150 --> 03:34.060
+because we're able to not just make generic functions that always do the same thing but we can create
+
+03:34.100 --> 03:43.960
+a functions that do things based on what parameters we give it or what arguments we call it with so
+
+03:43.960 --> 03:54.130
+that now I can use these say Hello Function to say hello to my friend Dan and also my friend Emily.
+
+03:54.270 --> 04:02.090
+And if I click Run we've made our function more extensible we can use it in multiple places.
+
+04:02.220 --> 04:08.010
+And if we're designing a game well we've just use this to greet our users.
+
+04:08.010 --> 04:16.130
+And based on the user name I can use the same function over and over again we're keeping our code dry
+
+04:16.220 --> 04:18.660
+and clean by doing something like this.
+
+04:18.740 --> 04:21.840
+How cool is that.
+
+04:21.840 --> 04:24.570
+All right let's take a break and I'll see you in the next video.

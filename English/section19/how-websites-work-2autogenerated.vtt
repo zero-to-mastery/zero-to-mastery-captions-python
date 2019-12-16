@@ -1,0 +1,172 @@
+WEBVTT
+
+00:00.560 --> 00:07.640
+In the previous video we learned that a browser simply sends a request to a server somewhere in the
+
+00:07.640 --> 00:17.210
+world over internet using the HDP s protocol and then it receives those javascript AML and c assessed
+
+00:17.210 --> 00:21.870
+files so that it's able to display a Web site.
+
+00:21.880 --> 00:25.330
+Now how can we actually check this.
+
+00:25.370 --> 00:32.780
+Well I can actually go to view developer and this is using Google Chrome.
+
+00:32.780 --> 00:37.570
+So I recommend for this part to use Google Chrome so you can follow what I'm doing.
+
+00:37.730 --> 00:45.450
+If I go to developer tools here it's going to open up a little box here with some information for me.
+
+00:46.560 --> 00:54.930
+Now what I want to focus on is this network tab and this network tab is going to tell us what type of
+
+00:54.930 --> 00:57.860
+information we receive from the server.
+
+00:58.020 --> 01:04.770
+If I refresh here you'll notice that I get some data here.
+
+01:04.820 --> 01:07.250
+Now you want to make sure that there's no filter involved.
+
+01:07.280 --> 01:10.430
+So we want to say over here that we want everything.
+
+01:10.430 --> 01:12.740
+So there's no filter everything.
+
+01:12.740 --> 01:14.750
+There's no searching going on.
+
+01:14.750 --> 01:16.700
+And we can refresh again.
+
+01:16.700 --> 01:17.960
+And all right.
+
+01:17.960 --> 01:23.240
+We see a lot more files but this looks intimidating.
+
+01:23.240 --> 01:25.150
+Let's think about what we just learned.
+
+01:25.370 --> 01:33.040
+We learned that we first get an A CML file which happens to be this one.
+
+01:33.050 --> 01:35.530
+It says over here type document.
+
+01:35.530 --> 01:39.590
+And if I click over here this is an HMO document.
+
+01:39.890 --> 01:46.550
+So the response from the server when I hit refresh remember it communicated to a server somewhere in
+
+01:46.550 --> 01:50.420
+the world that had these files on that computer.
+
+01:50.420 --> 01:53.720
+And here we have our 80 mile file.
+
+01:53.720 --> 02:01.370
+If I'll scroll down look at that we can see over here the webcomic of romance sarcasm math and language
+
+02:02.000 --> 02:03.820
+which is right over here.
+
+02:03.920 --> 02:10.070
+Remember how I said A.T.M. is the text that gets displayed on a Web site.
+
+02:10.760 --> 02:17.480
+Well this is our HCM all here that the server responded with and the browser knows how to read this
+
+02:17.840 --> 02:21.160
+and display the text.
+
+02:21.180 --> 02:22.500
+What about the CSF.
+
+02:22.950 --> 02:29.940
+Well I can actually click on this CSF step here and show me all the CFS files that came from the server
+
+02:31.180 --> 02:35.050
+you see over here that this again looks a little bit different.
+
+02:35.140 --> 02:41.500
+It's in a different syntax than an HMO but all it does here is it gives me the stylus that I want.
+
+02:41.500 --> 02:44.060
+You can see over here we can pick background color.
+
+02:44.170 --> 02:48.910
+We can pick different position with left position.
+
+02:48.910 --> 02:57.570
+And this gives us the styling that we want on a Web site and then if we go to JavaScript we actually
+
+02:57.570 --> 03:02.710
+see the JavaScript files that this Web site uses.
+
+03:02.720 --> 03:05.270
+Now we don't have to worry about JavaScript here.
+
+03:05.430 --> 03:09.280
+JavaScript allows us to do some interactivity on this Web site.
+
+03:09.270 --> 03:11.820
+That for now we probably don't need to worry about.
+
+03:12.120 --> 03:18.090
+Now I do want to point out that there's a few other things in here like image and media and as you can
+
+03:18.090 --> 03:24.330
+see images we definitely have some images in here that we are using click on preview we can see the
+
+03:24.330 --> 03:25.390
+images.
+
+03:25.620 --> 03:29.610
+But at the end of the day the concept is the same.
+
+03:29.670 --> 03:36.580
+We have an HMO file which in our case is right over here.
+
+03:36.590 --> 03:43.370
+You see how the ACM all file is displayed without CSX which is just the textual textual data.
+
+03:43.370 --> 03:53.060
+We have the CSX which is the styling of our page and there's some javascript to make our page interactive
+
+03:53.720 --> 03:55.150
+and maybe some images.
+
+03:55.250 --> 04:02.630
+But at the end of the day all these things are actually just textual data that we receive from the server.
+
+04:02.630 --> 04:09.470
+So that means that in order for us to be able to build our Web site we need to create these three things
+
+04:10.260 --> 04:14.920
+an Asian male file a CSX file and a javascript file.
+
+04:14.990 --> 04:18.880
+Actually we don't even need a javascript file if we don't want any interactivity.
+
+04:18.950 --> 04:22.820
+We don't even need a CSX file if we don't want any styling.
+
+04:22.820 --> 04:25.510
+We can even just use an Asian alpha.
+
+04:25.580 --> 04:28.970
+So in the next video we're going to build our first Web site.
+
+04:28.970 --> 04:30.300
+I'll see on that one.
+
+04:30.350 --> 04:30.610
+Bobby.

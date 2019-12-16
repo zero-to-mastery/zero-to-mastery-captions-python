@@ -1,0 +1,232 @@
+WEBVTT
+
+00:00.450 --> 00:01.310
+Welcome back.
+
+00:01.320 --> 00:08.430
+We've learned the true power of Python and the true power Python comes from the community and the fact
+
+00:08.430 --> 00:14.250
+that there so many Python developers that we're able to leverage all these modules.
+
+00:14.250 --> 00:20.190
+All these libraries that people have built to really do really interesting things so that we can fast
+
+00:20.190 --> 00:25.650
+track our progress and build some really great projects really really fast something that we're definitely
+
+00:25.650 --> 00:27.380
+going to do in this course.
+
+00:27.450 --> 00:34.540
+But you may have a question this pie jokes that I just installed this library.
+
+00:34.920 --> 00:38.790
+I mean it has version zero point five point zero.
+
+00:38.790 --> 00:41.430
+And this is called versioning in Python.
+
+00:41.430 --> 00:48.870
+And in most programming languages where the first number is usually a version where if you have bug
+
+00:48.870 --> 00:57.600
+fixes you would go from zero to want to so that you update 5 will be a new release maybe some added
+
+00:57.600 --> 00:58.530
+features.
+
+00:58.710 --> 01:06.060
+And the last number or based on how you look at it the first number the major number is usually breaking
+
+01:06.060 --> 01:08.870
+changes or major versions.
+
+01:09.030 --> 01:16.590
+So pie jokes looks like it's fairly young it's zero point five but something like Pi code Sal that is
+
+01:16.590 --> 01:21.460
+2.5 looks like a mature library because they're in version two point five.
+
+01:22.050 --> 01:29.120
+And here's the thing libraries are maintained by people right by programmers.
+
+01:29.120 --> 01:31.720
+We're constantly making mistakes.
+
+01:31.730 --> 01:33.230
+There's always going to be bugs.
+
+01:33.260 --> 01:36.410
+There's goal always going to be things that you can improve upon.
+
+01:36.410 --> 01:42.800
+So these are always improving versions are always increasing.
+
+01:42.980 --> 01:50.690
+And when you start working on large projects you start installing different packages different modules
+
+01:51.740 --> 02:00.590
+that perhaps only work with certain versions together so that maybe pi jokes zero point five is fine.
+
+02:00.940 --> 02:07.610
+But on a new project two years from now I want to use pi jokes but the latest version of Pi jokes.
+
+02:07.720 --> 02:10.260
+Well what can I do in this case.
+
+02:10.330 --> 02:19.150
+I can uninstall let's say Pip 3 uninstall the old version of Pi jokes so let's say pi jokes
+
+02:22.690 --> 02:31.490
+and maybe have a new version of Pi jokes that I can install now what I do Pip three install pi jokes.
+
+02:31.690 --> 02:38.230
+This is going to give me the latest version or I could even do double equals and then give it a version
+
+02:38.230 --> 02:41.950
+like zero point four point zero.
+
+02:41.960 --> 02:49.540
+So now if I do Pip three list I have the older version of Pi Jos.
+
+02:49.550 --> 02:56.420
+Now the reason I'm showing you this is that sometimes you want for your different projects different
+
+02:56.510 --> 03:03.150
+versions of a library because maybe a project that you started five years ago really requires pi jokes
+
+03:03.150 --> 03:08.570
+zero point four and this new project that you're starting requires pi jokes.
+
+03:08.570 --> 03:12.130
+That's well let's say upgraded to version 2.
+
+03:12.170 --> 03:17.330
+So how do we do this because right now the way we've installed thinks there's only one version of my
+
+03:17.330 --> 03:19.290
+computer that I can use.
+
+03:19.370 --> 03:25.070
+This is what we use for what we call virtual environments.
+
+03:25.070 --> 03:32.450
+And it answers the question of hey how can we have two versions of all these packages of all these modules
+
+03:32.870 --> 03:37.870
+on the same machine and still have different projects using different versions.
+
+03:37.880 --> 03:47.240
+Well there's a tool that you can install called Pip and which allows you to use Pip and also this virtual
+
+03:47.270 --> 03:51.680
+end to install packages based on each project.
+
+03:51.680 --> 04:00.390
+So each project has its own packages or if you're using pi charm which I usually recommend especially
+
+04:00.390 --> 04:05.390
+on big projects you have virtual environments by default.
+
+04:05.430 --> 04:15.060
+Remember this V and folder well v env folder is a virtual environment created by Python.
+
+04:15.230 --> 04:22.030
+As a matter of fact let's say I want to create a new project here I can create a project.
+
+04:22.060 --> 04:32.170
+Let's say the or new jokes project and here if in the dropdown you see that I have a new environment
+
+04:32.200 --> 04:41.700
+using virtual health so I can use virtual EMP which is built into pi charm to create a virtual environment.
+
+04:41.730 --> 04:48.060
+You also see that I have something called Pip EMF which I mentioned but usually you select the virtual
+
+04:48.060 --> 04:48.800
+environment.
+
+04:48.990 --> 05:00.910
+And when you do create let's say this window is fine when we do create you'll see that new jokes has
+
+05:00.940 --> 05:03.370
+its own virtual environment.
+
+05:03.370 --> 05:10.980
+And now any library that I install in here will have its own package right in here.
+
+05:11.010 --> 05:13.510
+So it doesn't affect any other projects.
+
+05:13.710 --> 05:23.150
+If I go to PY The End dot c f g you see that the environment is setup with version three point seven.
+
+05:23.220 --> 05:24.620
+This is my home.
+
+05:24.930 --> 05:30.900
+And we're able to add packages right in here and you see that.
+
+05:30.920 --> 05:36.260
+No I don't have any pie jokes in here because this is a new project with a whole new environment.
+
+05:37.880 --> 05:45.040
+If I create a new file let's say in here we'll say new file and let's call it.
+
+05:45.040 --> 05:46.210
+Test test.
+
+05:46.230 --> 06:01.540
+Dot pi and let's say import pi jokes we'll say pi jokes dot get joke What was it Alice.
+
+06:01.600 --> 06:02.640
+Just copy this
+
+06:05.550 --> 06:09.190
+and if I run this will I get an error.
+
+06:09.200 --> 06:13.780
+No module named pi jokes because I have an entire virtual environment.
+
+06:13.790 --> 06:20.500
+It's like a separate universe where I can install here whatever I want so that it doesn't interfere
+
+06:20.500 --> 06:22.000
+with the outside world.
+
+06:22.060 --> 06:26.830
+And usually when you're you're working on project you want to create them in virtual environments like
+
+06:26.830 --> 06:27.880
+this.
+
+06:27.880 --> 06:33.880
+Again this may not seem like a big problem right now especially if you haven't worked in the industry
+
+06:34.420 --> 06:41.650
+but this trust me is a common problem where packages are constantly being updated and you have packages
+
+06:41.650 --> 06:45.430
+that depend on other packages that need to have certain versions.
+
+06:45.430 --> 06:52.270
+So a virtual environment to contain all the packages that you use into your project into this small
+
+06:52.270 --> 06:55.240
+little environment is really really important.
+
+06:55.300 --> 07:00.400
+And as you start working for bigger companies you'll notice that in your workplace they're definitely
+
+07:00.400 --> 07:02.480
+going to be using this system.
+
+07:02.620 --> 07:03.970
+That's a lot of talking for me.
+
+07:03.970 --> 07:06.130
+Let's take a break and I'll see you in the next one.
+
+07:06.370 --> 07:06.580
+By.

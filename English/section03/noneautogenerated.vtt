@@ -1,0 +1,70 @@
+WEBVTT
+
+00:00.830 --> 00:01.950
+Welcome back.
+
+00:02.000 --> 00:13.340
+When we talked about lists we saw our special type of none where some methods that worked on lists didn't
+
+00:13.340 --> 00:14.730
+really produce anything.
+
+00:14.750 --> 00:21.050
+They modified the lists in place but the output of whatever they were doing was this thing.
+
+00:21.050 --> 00:25.520
+None remember how we had in their output this none.
+
+00:25.520 --> 00:34.890
+What does that mean if you remember I mentioned none as a special data type that exists in Python and
+
+00:34.890 --> 00:41.090
+most languages have something like this to represent the absence of value in some other languages.
+
+00:41.190 --> 00:42.420
+You might have heard of.
+
+00:42.500 --> 00:43.130
+No.
+
+00:43.200 --> 00:48.300
+Which is another thing that again represents the absence of value.
+
+00:48.310 --> 00:50.950
+Now why is this useful.
+
+00:50.950 --> 00:55.170
+Well for now it's hard to really conceptualize it.
+
+00:55.210 --> 00:59.900
+We'll see it being used a lot more as we get further into the course.
+
+00:59.980 --> 01:08.110
+But I could do something like a equals none let's say for example we're just starting a video game and
+
+01:08.440 --> 01:17.570
+in this video game we have a user's weapons but when you're just turning the game there are no weapons
+
+01:17.660 --> 01:18.960
+that the user has.
+
+01:18.980 --> 01:24.830
+Well in that case we might want to assign the variable weapons maybe in our code or we use this variable
+
+01:25.100 --> 01:29.890
+but we also want to know that this user doesn't really have any weapons.
+
+01:29.900 --> 01:31.130
+It's not.
+
+01:31.130 --> 01:40.420
+So this is completely valid python if I run this I get none.
+
+01:40.770 --> 01:43.790
+And we'll explore this a little bit more throughout the course.
+
+01:43.800 --> 01:49.740
+Like I said but hopefully this way you're not intimidated when you see it as the name suggests it's
+
+01:49.740 --> 01:50.280
+just nothing.

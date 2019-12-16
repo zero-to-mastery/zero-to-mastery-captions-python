@@ -1,0 +1,187 @@
+WEBVTT
+
+00:00.520 --> 00:01.470
+Welcome back.
+
+00:01.500 --> 00:02.160
+A flask.
+
+00:02.170 --> 00:06.910
+Has this other tool called variable rules that we haven't talked about.
+
+00:07.560 --> 00:14.470
+And what variable rules allows us to do is to do something like this dynamic.
+
+00:14.470 --> 00:24.230
+So for example slash user slash with these greater than and less than signs and the user name.
+
+00:24.270 --> 00:33.580
+Now we'll get back to this in a second and some of this syntax but if we go back what we can do here
+
+00:33.790 --> 00:42.330
+in our server dot pie is perhaps let's remove this because we don't need it anymore inside of our hello
+
+00:42.330 --> 00:52.620
+world let's say that we want name in here or in our case user name.
+
+00:52.630 --> 01:01.100
+Now the neat thing is that flask is going to look at this and say oh this is something that we can pass
+
+01:01.100 --> 01:11.840
+on into this function so I can now say user name equals the user name that we receive.
+
+01:11.860 --> 01:18.140
+So let's say user name and let's just change this to name just so you see what the differences are.
+
+01:18.190 --> 01:28.030
+So I'm placing whatever I receive here into the hello world name parameter and now in my index dot HMO
+
+01:28.450 --> 01:38.200
+I can pass on this data by simply doing a second parameter and saying name equals to name.
+
+01:38.230 --> 01:51.010
+So now if I see this go back to my index dot HMO and put in name in here and if I go back to our home
+
+01:51.070 --> 01:58.300
+page if we go to our home page and I made a little mistake here.
+
+01:58.370 --> 02:00.810
+This should be over here.
+
+02:01.170 --> 02:07.760
+So it's saying user name from up here is going to equal a default if we want.
+
+02:07.770 --> 02:09.900
+So it's usually a good idea to have a default.
+
+02:09.900 --> 02:11.010
+I'll just do none for now.
+
+02:11.550 --> 02:20.400
+So that user name now is going to be user name in here like this.
+
+02:20.530 --> 02:27.900
+If I save go back I get a not found because we don't have a home page anymore but anytime I do let's
+
+02:27.900 --> 02:39.120
+say Andre I get look at that Andre on my page I get Bob and my good friend Sally how cool is that.
+
+02:39.120 --> 02:47.540
+So it's able to read that you U.R.L. and passing data this way and if we go to our flask documentation
+
+02:47.840 --> 02:53.450
+and we go to variable rules you see that we have different rules that we can apply.
+
+02:53.630 --> 03:04.070
+For example we can actually require to accept a positive integer or a string or a float a path so it
+
+03:04.070 --> 03:10.370
+accepts slashes or something called you you I.D. which is kind of like a unique identifier.
+
+03:10.730 --> 03:11.720
+So let's try that.
+
+03:11.720 --> 03:20.930
+Let's do a post I.D. here or in our case let's just copy this and say I also want the user name and
+
+03:20.930 --> 03:23.990
+then perhaps accept some sort of a number.
+
+03:23.990 --> 03:27.680
+So instead of post I.D. maybe it could be.
+
+03:27.950 --> 03:29.710
+I don't know actually post I.D. is good.
+
+03:29.750 --> 03:30.900
+Let's keep it like that.
+
+03:32.560 --> 03:36.700
+And let's make this a little bit bigger now in here.
+
+03:36.700 --> 03:46.170
+The second parameter can be the post I.D. that's going to equal to none to begin with.
+
+03:46.310 --> 03:58.170
+And we're also going to pass this as post I.D. that's going to equal the post I.D. I save this go to
+
+03:58.170 --> 04:06.060
+index dot HMO and in here let's do name and then we'll also do the post I.D. in here.
+
+04:08.220 --> 04:20.070
+Phi safe go back and I refresh well again because we've made are you are all very specific we'll just
+
+04:20.070 --> 04:23.180
+have to give some sort of a number and look at that.
+
+04:23.190 --> 04:28.090
+I have Sally too so that's her second blog post and the fifth blog post.
+
+04:28.110 --> 04:29.150
+So on and so forth.
+
+04:30.660 --> 04:33.650
+And if I do something that's not a number.
+
+04:33.960 --> 04:40.480
+So if I do some string I get not fund because I've made the rule using this syntax.
+
+04:40.480 --> 04:50.840
+So end with the call in saying that that this has to be an I.D. and I passed data down this way.
+
+04:50.860 --> 04:54.510
+So now we've created a full out server.
+
+04:54.630 --> 05:01.650
+We now are able to use you are ls to communicate with the server and ask for specific data for it to
+
+05:01.650 --> 05:11.070
+receive our server based on what you are all parameters we give it or endpoints is able to decide what
+
+05:11.130 --> 05:17.880
+resource to send to the front end so that it can display the appropriate information.
+
+05:18.300 --> 05:24.660
+But we can also do something interesting like perhaps when we submit a form to actually sent perhaps
+
+05:24.660 --> 05:33.150
+the user's name with the form so that when we send back a thank you note we can say Thank you Andre
+
+05:33.240 --> 05:33.870
+or thank you.
+
+05:33.900 --> 05:38.460
+Whatever the user name is very very cool.
+
+05:38.460 --> 05:45.950
+Now these variable rules as you can see there's a few of them and you can read through the documentation.
+
+05:46.110 --> 05:53.520
+You might also notice this syntax here which is the percent sign or percent S or percent D.
+
+05:53.700 --> 05:59.330
+This is actually a nother feature of Python that you can read about.
+
+05:59.580 --> 06:03.720
+But again it's not critical to your understanding of Python.
+
+06:03.720 --> 06:11.850
+For now though I think we have the basic skills necessary to start building our portfolio Web site because
+
+06:11.910 --> 06:19.890
+up until now frankly this Web site doesn't look that great so starting in the next video we're going
+
+06:19.890 --> 06:28.450
+to build a really really cool Web site something that looks well more like this so that by the end of
+
+06:28.450 --> 06:32.620
+it we can have a fully fledged portfolio Web site.
+
+06:32.710 --> 06:38.680
+And even though it seems like you haven't learned that much yet you actually have learned all the skills
+
+06:38.680 --> 06:41.720
+necessary to build something like this.
+
+06:41.740 --> 06:45.040
+Well kind of let's go explore some more in the next video.

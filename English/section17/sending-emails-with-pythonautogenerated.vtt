@@ -1,0 +1,166 @@
+WEBVTT
+
+00:00.630 --> 00:06.720
+It's time for another project and this time we're going to use Python to send emails.
+
+00:06.720 --> 00:07.350
+That's right.
+
+00:07.350 --> 00:10.570
+We can send e-mails with python.
+
+00:10.590 --> 00:14.580
+Now we'll explore why this might be useful later on.
+
+00:14.580 --> 00:22.500
+But I want to give you a heads up Python has a built in e-mail module and this module actually got updated
+
+00:22.530 --> 00:24.600
+with Python three point six.
+
+00:24.600 --> 00:30.370
+So I'm gonna show you the latest version when you google how to send e-mails with Python.
+
+00:30.450 --> 00:34.270
+You might see a lot of outdated ways to send e-mails.
+
+00:34.560 --> 00:39.020
+So just a heads up that you might see something different than what I'm about to show you.
+
+00:39.240 --> 00:44.630
+But as of recording this video this is the latest way to send emails.
+
+00:44.700 --> 00:44.900
+OK.
+
+00:44.910 --> 00:46.800
+So why might this be useful.
+
+00:47.900 --> 00:54.840
+Well imagine you have a list of e-mails that you've collected and you want to launch a new startup.
+
+00:54.890 --> 00:57.050
+You want people to know about your startup.
+
+00:57.110 --> 00:57.410
+Right.
+
+00:57.950 --> 01:04.730
+So we can create a program that sends e-mails to maybe hundreds thousands of people at the same time
+
+01:04.790 --> 01:11.050
+maybe a customized e-mail with their name to promote our product.
+
+01:11.060 --> 01:16.670
+Now we'll get into spamming and things like that later on but you might be thinking to yourself why
+
+01:16.670 --> 01:18.250
+do we need Python for this.
+
+01:18.260 --> 01:29.150
+For example there are tools like MailChimp that is a software subscription based product that allows
+
+01:29.150 --> 01:30.650
+us to do this.
+
+01:30.800 --> 01:35.710
+We can collect e-mails and also send customized e-mails.
+
+01:35.810 --> 01:36.460
+And you're right.
+
+01:36.500 --> 01:45.140
+Companies like MailChimp or Miller Lite or there's hundreds of them allow us to send lots of e-mails
+
+01:45.590 --> 01:51.110
+to potential customers to sale leads in order to try and grow our business.
+
+01:51.140 --> 01:55.980
+But I want to show you how to do with python because there are times that it might come in useful.
+
+01:56.060 --> 02:03.110
+So let's get to it and I'm going to use this project as an occasion for us to learn a few built in packages
+
+02:03.860 --> 02:05.710
+in python.
+
+02:05.720 --> 02:17.520
+Now the first one we're going to use is the SMP T.P. lib so S.M. T.P. lib module.
+
+02:17.660 --> 02:30.650
+And we're also going to say from email dot messages import email message and this should be email message.
+
+02:30.650 --> 02:37.460
+Again this is the e mail module that comes built in to Python.
+
+02:37.730 --> 02:43.640
+And actually I'll link over here where he shows you some of the legacy API so that is the out dated
+
+02:43.640 --> 02:50.580
+way to use things we're going to do the E stored messages way of sending e-mails.
+
+02:50.660 --> 02:53.430
+Now the other one is as empty P.
+
+02:53.830 --> 03:00.050
+Now SMP is going to allow us to create what we call an S teepee server.
+
+03:00.170 --> 03:09.180
+Anytime you send emails to anybody it needs to have a server that communicates the language of the email.
+
+03:09.290 --> 03:12.200
+And this is what is MTBE is useful.
+
+03:12.200 --> 03:21.020
+For example on a Web sites you might see HDP or HDP s as the protocol of communication between a browser
+
+03:21.230 --> 03:23.660
+and a server in the same way.
+
+03:23.740 --> 03:32.240
+Emails have their own protocol for communicating and that's through SMP P as a matter of fact the acronym
+
+03:32.330 --> 03:35.800
+stands for simple mail transfer protocol.
+
+03:35.960 --> 03:43.180
+It's a protocol or a standard for e mails to be sent from computer to computer.
+
+03:44.330 --> 03:50.480
+G.M. uses this Hotmail uses pretty much most email clients.
+
+03:50.680 --> 03:54.430
+I'm going to link to some resource if you want to read more about SMP.
+
+03:54.520 --> 04:02.210
+But the key thing is if we want to send an email we need as empty server now from here.
+
+04:02.280 --> 04:08.330
+We're going to dive into how to send our first e-mail before we get into that and the next video I want
+
+04:08.330 --> 04:11.760
+you to go ahead and create an email account.
+
+04:11.760 --> 04:18.600
+If you don't have one I'm going to use a dummy e-mail account a Gmail account that I just created because
+
+04:18.630 --> 04:24.870
+what we're going to do is we're going to have to log into this using a password our user name and actually
+
+04:24.870 --> 04:32.030
+send an email from this email account without actually using this browser.
+
+04:32.040 --> 04:37.910
+So go ahead and create a dummy Gmail account or you can use your regular one if you want.
+
+04:37.920 --> 04:43.170
+But I like to keep my passwords just away from everything and I don't really want to share my personal
+
+04:43.170 --> 04:45.660
+e-mail password with these so I'm going to use this one.
+
+04:45.660 --> 04:46.050
+All right.
+
+04:46.050 --> 04:48.990
+Let's take a break and send our first e-mail and the next video.

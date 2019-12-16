@@ -1,0 +1,331 @@
+WEBVTT
+
+00:02.570 --> 00:05.090
+So we've learned the basics of flask.
+
+00:05.090 --> 00:10.040
+We understand what servers do and we also know what browsers do.
+
+00:10.040 --> 00:13.400
+But let's be honest here this is kind of boring.
+
+00:13.400 --> 00:17.590
+I mean this is not impressive if you show this to a possible employer.
+
+00:17.630 --> 00:20.730
+They're going to look at you like a crazy person.
+
+00:20.960 --> 00:28.030
+So let's actually build a nice looking portfolio just based on what we've learned up until now.
+
+00:28.040 --> 00:31.130
+Now I have a little gift for you.
+
+00:31.130 --> 00:38.180
+That is the fact that you won't have to write your own HMO CSX and JavaScript because again this isn't
+
+00:38.210 --> 00:39.970
+a web development course.
+
+00:40.040 --> 00:47.300
+And luckily for us if you Google and you are online for something like free templates or a simple free
+
+00:47.300 --> 00:55.070
+templates you can find some really nice looking Web sites that you can just use for free.
+
+00:55.140 --> 01:00.150
+For example let's look at universe over here and I'll link to this resource so you can take a look for
+
+01:00.150 --> 01:01.200
+yourself as well.
+
+01:01.200 --> 01:13.860
+If I preview it check that out you have a nice little Web site or portfolio page that you can just use.
+
+01:13.910 --> 01:15.210
+How cool is that.
+
+01:15.410 --> 01:20.340
+And it's actually already tablet and mobile friendly.
+
+01:20.510 --> 01:23.200
+So everything is already pre-built for you.
+
+01:24.090 --> 01:25.320
+That's pretty cool right.
+
+01:25.320 --> 01:27.710
+So how can we use this.
+
+01:27.720 --> 01:30.000
+Well let's just download it.
+
+01:30.090 --> 01:37.800
+And by the way as you follow along you can actually use whichever one of these you want but for now
+
+01:37.890 --> 01:42.540
+let's just use the universe one just because there's a little astronaut here it looks pretty cool.
+
+01:42.540 --> 01:45.650
+Let's just download this and see what happens.
+
+01:45.660 --> 01:45.960
+All right.
+
+01:45.990 --> 01:51.840
+I get a little question saying how do we want to download that template in our case we want to pick
+
+01:51.930 --> 01:55.050
+a simple and there you go.
+
+01:55.050 --> 01:59.190
+We get a nice little zip folder and now we have this downloading.
+
+01:59.610 --> 02:07.740
+So let's open this up and oh boy that's a whole lot of files and folders.
+
+02:07.760 --> 02:09.630
+So what should we grab from here.
+
+02:11.780 --> 02:13.980
+Well there's a few things first.
+
+02:14.030 --> 02:15.940
+This is the sample page.
+
+02:15.980 --> 02:19.590
+We actually don't need this so let's just move it to trash.
+
+02:19.940 --> 02:22.050
+Next we have assets.
+
+02:22.100 --> 02:28.670
+These are well different assets for our page to work such as the astronaut page.
+
+02:28.670 --> 02:29.780
+So we'll keep that around
+
+02:32.600 --> 02:42.860
+and then we have our HDMI pages which we definitely need and then it looks like we have some javascript
+
+02:42.860 --> 02:45.500
+files and CSX files.
+
+02:45.530 --> 02:52.790
+Now there's a dot Jeezy here which is what we call a compressed file a g zipped compressed file.
+
+02:53.210 --> 02:59.810
+So this is just a way for the server to send a file or the javascript value which you can see is one
+
+02:59.810 --> 03:03.030
+hundred and thirty eight kilobytes but in a compressed form.
+
+03:03.080 --> 03:04.790
+So 44 kilobytes.
+
+03:04.790 --> 03:09.620
+So this way we're sending less data to the front end and then we also have something like map which
+
+03:09.620 --> 03:15.050
+actually helps us during debugging but in our case we don't need to worry about this for now.
+
+03:15.110 --> 03:23.450
+So let's just remove all the G's to and map files so we'll move those to trash so that we only have
+
+03:23.490 --> 03:29.770
+once the SS file and one JavaScript file and then all the other ones are HCM all files for our different
+
+03:29.890 --> 03:31.670
+pages.
+
+03:31.750 --> 03:38.400
+Now what we're going to do is we're going to copy this and move it to our project folder.
+
+03:38.510 --> 03:40.760
+Remember this folder over here.
+
+03:40.760 --> 03:48.170
+So ideally we move the HMO files into the templates and the static files.
+
+03:48.170 --> 03:52.910
+That is the CSF and JavaScript files and maybe the assets in here.
+
+03:52.910 --> 03:55.280
+So that is the images in here.
+
+03:55.280 --> 03:56.470
+So let's do that.
+
+03:56.510 --> 03:58.890
+I have my web server here.
+
+03:59.000 --> 04:08.130
+I'm going to first just copy and paste while we just copy and let's move all our HCM Mal files into
+
+04:08.130 --> 04:12.200
+our templates and you know what.
+
+04:12.220 --> 04:16.290
+Let's remove our existing templates as well because we don't need them anymore.
+
+04:16.290 --> 04:24.490
+We have the pretty atrium off on the and then just have all of these we have a new index that HMO that
+
+04:24.490 --> 04:26.870
+is going to be a lot prettier than our all Web site.
+
+04:26.890 --> 04:29.080
+So we want to use that.
+
+04:29.170 --> 04:38.210
+So let's move all that into templates and then let's do the J.S. and CSF file as well as the assets
+
+04:38.330 --> 04:43.250
+folder into the static awesome.
+
+04:43.290 --> 04:48.640
+So now that we have that setup let's go back to our project and look at that.
+
+04:48.660 --> 04:55.220
+We have a lot more HCM all that we have in Britain but luckily it's already created for us.
+
+04:55.350 --> 05:04.590
+Now the last bit of setup is that because we moved our files around we need to adjust the links between
+
+05:04.590 --> 05:09.010
+the ACM LCROSS javascript and all the asset files.
+
+05:09.090 --> 05:19.520
+So if we scroll which we go to index dot HMO we see that we're looking for the father con in assets
+
+05:19.700 --> 05:31.100
+fab icon but because this is in static folder we have to add static in here so let's find where else
+
+05:31.160 --> 05:37.090
+we're using the assets in here.
+
+05:37.100 --> 05:45.150
+All right so it looks like let's make this a little bit bigger so it looks like here for our background
+
+05:45.150 --> 05:52.800
+image we're once again looking for the space image but that's as we know in the static folder.
+
+05:53.020 --> 05:55.040
+And let's see where else we have.
+
+05:55.040 --> 06:01.020
+Well we have over here as well let's do static let's keep going.
+
+06:01.130 --> 06:01.790
+Static.
+
+06:01.790 --> 06:02.060
+All right.
+
+06:02.060 --> 06:02.890
+Everything is all good.
+
+06:02.890 --> 06:10.610
+Now we have the static folder and we have to make sure we add a slash in front of a dot dot just means
+
+06:10.970 --> 06:14.380
+current directory and then look in the static folder.
+
+06:14.510 --> 06:16.210
+So let's go back.
+
+06:16.400 --> 06:19.390
+Make sure we do that for everything.
+
+06:19.400 --> 06:24.260
+There we go and there we go.
+
+06:25.360 --> 06:27.820
+Now let's save this.
+
+06:27.820 --> 06:37.440
+And I don't think we're completely done yet but for now let's go into our server dot pi and for our
+
+06:37.450 --> 06:47.650
+home route let's remove what we've had before and let's just call it my home function.
+
+06:48.050 --> 06:50.180
+That takes no parameters.
+
+06:50.420 --> 07:00.720
+And instead it's just going to return for us our index dot A.T.M. with no past in parameters so let's
+
+07:01.110 --> 07:12.560
+save go back to our page or my Web site and see what we get when we refresh rate.
+
+07:12.580 --> 07:19.480
+That's a pretty pretty ugly Web site but it looks like at least we're displaying something.
+
+07:20.230 --> 07:26.120
+But right away we noticed that it looks like there's no CSX being applied.
+
+07:26.290 --> 07:32.700
+It looks like we have some mainstream all but the links aren't working either so once again this is
+
+07:32.700 --> 07:36.760
+because we have to update the links between the files.
+
+07:36.890 --> 07:44.390
+So what we'll do is actually go back to index start ECMO and in the head tag we see that we have our
+
+07:45.450 --> 07:47.660
+style sheet our CSX file.
+
+07:47.880 --> 07:59.370
+But again we have to update this to have it in the static folder as well as the javascript file which
+
+07:59.370 --> 08:06.700
+if we scroll all the way to the bottom we have the J.S. file here which once again will be in the static
+
+08:06.940 --> 08:11.150
+folder.
+
+08:11.170 --> 08:18.320
+All right let's save and go back and see if that makes things better.
+
+08:18.440 --> 08:19.490
+Look at that.
+
+08:19.490 --> 08:21.320
+That's pretty cool.
+
+08:21.400 --> 08:27.310
+Mind you this looks a little big because I increase the size of my web site by doing command plus and
+
+08:27.310 --> 08:33.260
+minus just so we can see better but that's pretty awesome.
+
+08:33.260 --> 08:35.890
+Now if I click on let's say works hmm.
+
+08:36.170 --> 08:40.970
+I get work workstation HMO does not exist.
+
+08:41.060 --> 08:42.720
+So how can we fix that.
+
+08:42.740 --> 08:44.030
+We already know how to do that.
+
+08:44.060 --> 08:44.330
+Right.
+
+08:45.920 --> 08:52.980
+All we need to do is to update these different routes so that it points to the appropriate template.
+
+08:53.210 --> 08:55.180
+Now in the next video I'll show you how to do that.
+
+08:55.190 --> 09:00.260
+But I want you to attempt to do this yourself because we've learned this by now.
+
+09:00.260 --> 09:08.410
+So try to make the Web site work exactly like we had it over here on our mash up templates and I'll
+
+09:08.410 --> 09:09.520
+see you in the next video.

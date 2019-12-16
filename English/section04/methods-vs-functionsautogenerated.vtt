@@ -1,0 +1,148 @@
+WEBVTT
+
+00:00.650 --> 00:06.020
+Hey long time no see it's it's been a while but I'm glad you're back and I'm I'm glad you're still hanging
+
+00:06.020 --> 00:06.700
+in there.
+
+00:06.800 --> 00:11.720
+Trust me thinks things are going to get a lot more fun once we actually start building applications.
+
+00:11.720 --> 00:15.710
+But we do have to go through the basics so hang in there.
+
+00:15.710 --> 00:23.060
+Now you may have heard me mention methods and functions before and I briefly touched on the subject
+
+00:23.090 --> 00:23.760
+right.
+
+00:23.810 --> 00:32.980
+We have functions like list print we have things like Max man what else do we have.
+
+00:32.990 --> 00:34.370
+We have input.
+
+00:34.370 --> 00:38.290
+These are all built in functions in Python.
+
+00:38.360 --> 00:40.800
+Python just comes with this and we're able to use them.
+
+00:41.330 --> 00:48.380
+And we also learned about functions that we can create ourselves custom functions like well some random
+
+00:49.610 --> 00:57.970
+stuff and I just created a function that does absolutely nothing I can just pass through and these are
+
+00:57.970 --> 01:06.640
+all functions because the way we call them is Well we say some random stuff and then we call it with
+
+01:06.640 --> 01:14.950
+the brackets and give it some sort of data or leave it empty but we also learned about methods and methods
+
+01:14.950 --> 01:22.170
+were different because the way we used them was using the dot notation we said Dot something.
+
+01:22.180 --> 01:32.580
+For example if we had a string hello and I do dot I get a list of all these methods that the string
+
+01:32.730 --> 01:34.880
+data type can use.
+
+01:35.010 --> 01:42.450
+These aren't things that we can use like this because if I do capitalize
+
+01:45.170 --> 01:49.370
+like this well it's going to give me an error.
+
+01:49.460 --> 01:55.920
+It's going to say well I'm going to get an error with Max because it's expecting an argument here bullets
+
+01:56.220 --> 02:04.910
+comet this out and click Run Again I get named capitalized is not defined because it's not a function
+
+02:05.360 --> 02:13.460
+it's a method and then method has to be owned by something and who owns a method well whatever is to
+
+02:13.460 --> 02:25.590
+the left of the dot in our case the string owns the method capitalized and that's what methods are they're
+
+02:25.940 --> 02:35.100
+built in objects that have methods such as strings dictionaries sets topples all the things we've talked
+
+02:35.100 --> 02:43.980
+about where as soon as we do dot we have access to all these methods they're owned by an object or a
+
+02:43.980 --> 02:44.510
+data type.
+
+02:45.150 --> 02:52.560
+And the fun thing is that there's a ways to build your own methods and I'll show you how to do that
+
+02:52.560 --> 02:58.680
+later on and when we start talking about classes but he can see here that our editors help us determine
+
+02:58.890 --> 03:01.040
+what type of methods that we can use.
+
+03:01.140 --> 03:09.600
+And again these are built into python and you can also learn about these methods that we can use by
+
+03:09.600 --> 03:11.610
+going to the Python documentation right.
+
+03:11.610 --> 03:19.860
+Python 3 documentation is going to have a ton of things for us if we go to library reference for example
+
+03:20.160 --> 03:22.770
+we can see here that we can learn about built in types.
+
+03:22.770 --> 03:26.260
+So let's go to let's go to the set types.
+
+03:26.490 --> 03:29.840
+And here you can see that we have set type.
+
+03:29.970 --> 03:31.470
+And it shows us how we can use it.
+
+03:31.680 --> 03:37.200
+Now Python doesn't have the easiest documentation to read for beginners unfortunately.
+
+03:37.320 --> 03:44.640
+So sometimes it's better to actually just Google instead of going through the actual documentation but
+
+03:44.640 --> 03:53.260
+you see here that the set type has clear has pop has remove if we want to use it we have update.
+
+03:53.400 --> 04:01.710
+And these are the methods that we can use but at the end of the day both methods and functions allow
+
+04:01.710 --> 04:09.780
+us to take actions right to take actions on our data types to have our programs do something.
+
+04:09.780 --> 04:15.150
+And although they have these different names and one has a dot in front of it and another one while
+
+04:15.150 --> 04:17.310
+we can just call it like this.
+
+04:17.310 --> 04:19.380
+The difference is very minimal.
+
+04:19.410 --> 04:24.580
+But keep that in mind when you hear people talking about methods and functions there is that difference.
+
+04:24.600 --> 04:29.610
+And like I said before we will get two methods when we talk about classes to show you how we can create
+
+04:29.910 --> 04:30.760
+our own.
+
+04:30.960 --> 04:32.170
+I'll see in the next one.
+
+04:32.330 --> 04:32.550
+Bob.

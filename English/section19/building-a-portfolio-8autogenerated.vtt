@@ -1,0 +1,487 @@
+WEBVTT
+
+00:00.550 --> 00:02.780
+Welcome back.
+
+00:02.800 --> 00:14.900
+We have our flask application that saves user contact information to a CSP file and this is all great.
+
+00:14.960 --> 00:17.440
+It's working really really nicely right.
+
+00:17.450 --> 00:19.170
+We have a beautiful Web site.
+
+00:19.190 --> 00:23.930
+We even have contact forms but there's a problem here.
+
+00:23.990 --> 00:31.370
+You see we're running the browser as well as the server on the same computer but this isn't a real life
+
+00:31.670 --> 00:41.390
+because if I give this a U.R.L. to a friend they're not going to be able to see it because this address
+
+00:41.570 --> 00:51.350
+points to local host saying local host like this it's the same thing by local host simply means your
+
+00:51.350 --> 00:52.550
+computer.
+
+00:52.550 --> 00:57.800
+So it's not like anybody else but us can access our app.
+
+00:57.950 --> 00:59.520
+That's not very fun is it.
+
+00:59.540 --> 01:05.900
+Ideally we can create this app so we can send it to all our friends our family members and possibly
+
+01:05.960 --> 01:07.540
+future employers.
+
+01:07.610 --> 01:10.890
+So how can we do this in this video.
+
+01:11.280 --> 01:19.640
+I'm going to show you a really fun easy way to deploy your application or your Web site online.
+
+01:19.680 --> 01:22.350
+We're going to use something called Python anywhere.
+
+01:22.590 --> 01:28.390
+And Python anywhere is going to allow us to host our files.
+
+01:28.500 --> 01:34.250
+That is all the files that we have here onto a server that they give us for free.
+
+01:34.260 --> 01:35.850
+So this is completely free.
+
+01:35.850 --> 01:41.710
+All you have to do is simply log in and you can click on sign up.
+
+01:41.800 --> 01:44.590
+You can see that they have a different pricing plans.
+
+01:44.590 --> 01:52.510
+So you can actually paid for their service but for a beginner plan where you can create one web application
+
+01:53.170 --> 01:54.830
+we can do that for free.
+
+01:54.970 --> 02:02.640
+So let's create a beginner account and create your username and password agree to the terms.
+
+02:02.650 --> 02:03.050
+Sure.
+
+02:03.070 --> 02:06.980
+I've read everything somebody else took my user name.
+
+02:06.980 --> 02:07.790
+How dare they.
+
+02:07.790 --> 02:11.460
+Let's go with Andre and so again create your own account.
+
+02:11.720 --> 02:12.780
+And there we go.
+
+02:12.830 --> 02:20.270
+We have our dashboard now the way Python anywhere it works is that we need to load up the files on a
+
+02:20.270 --> 02:21.220
+machine.
+
+02:21.260 --> 02:25.340
+Kind of like how we have our files over here on our computer.
+
+02:25.400 --> 02:30.290
+We need to somehow upload them to Python anywhere as computers.
+
+02:30.470 --> 02:39.720
+Now the way we can do that is using getup so I'm going to open up my github account.
+
+02:39.720 --> 02:45.920
+I'm going to click on new repositories and I'm going to create my project here.
+
+02:45.930 --> 02:55.120
+So let's just call it portfolio because it sounds kind of cool and all the trendy names are short like
+
+02:55.120 --> 02:55.420
+this.
+
+02:55.630 --> 02:58.180
+So this is my portfolio project.
+
+02:58.630 --> 03:05.950
+I'm going to keep it public and then initialize with every me and then create repository now.
+
+03:06.010 --> 03:11.820
+From here I'm going to clone this repository.
+
+03:11.820 --> 03:19.800
+If you have SS H set up you can copy the SSA or otherwise use H2 G.P.S. which might ask you for your
+
+03:19.920 --> 03:21.990
+GitHub password when you clone
+
+03:25.560 --> 03:29.430
+so all I have to do now is to open up a new terminal.
+
+03:30.030 --> 03:31.800
+Let's make this a little bit bigger
+
+03:34.620 --> 03:43.490
+and say Get clone and then copy and paste the Euro so that a clones are project now from here.
+
+03:43.490 --> 03:53.730
+If I open this we have our web server and then our portfolio which is our github account so we can just
+
+03:53.730 --> 03:56.510
+copy the files here.
+
+03:56.630 --> 04:03.500
+Now the ones that we actually need is we need the database CSC because these are going to be the files
+
+04:03.500 --> 04:07.150
+that we want to upload to Python anyway.
+
+04:07.220 --> 04:14.960
+So for now let's just select the CSP file the server dubbed Pi the static folder the templates folder
+
+04:16.290 --> 04:21.820
+because those are all the files that run our flash cap.
+
+04:21.900 --> 04:30.570
+Now if I copy and paste this in here you might be asking yourself what about what about the other files.
+
+04:30.580 --> 04:36.340
+Well there's a neat trick here because these files over here were created because of our virtual environment
+
+04:36.490 --> 04:37.950
+right.
+
+04:37.960 --> 04:41.820
+We have things like flask installed.
+
+04:41.960 --> 04:45.730
+We have libraries like Python three point seven.
+
+04:45.800 --> 04:48.150
+We have our PI cache folder.
+
+04:48.320 --> 04:53.630
+Essentially these folders created the virtual environment for us.
+
+04:53.630 --> 05:00.650
+However there's an interesting trick here that we can do we can run a command called Pip freeze and
+
+05:00.650 --> 05:08.120
+remember you might have to do Pip 3 based on what type of installation you have of Python on your machine
+
+05:08.600 --> 05:16.010
+but if you do Pip freeze with this little arrow and then requirements dog text.
+
+05:16.010 --> 05:21.870
+Notice what happens as that requirements are text gets added to my project.
+
+05:21.890 --> 05:24.270
+What's this.
+
+05:24.500 --> 05:31.250
+Do you see that I get it requirements dot text and this requirements dot text.
+
+05:31.250 --> 05:39.500
+If we click on it we see here that we have the requirements for our hop to work and the cool thing about
+
+05:39.500 --> 05:46.700
+this is that the flask and then the ginger for our templating which we actually include in our libraries
+
+05:46.730 --> 05:54.410
+here can now be used with their requirement thought text to not necessarily upload them to get hub but
+
+05:54.410 --> 06:02.600
+instead use this file as a way for us to install on any future machines any of these dependencies.
+
+06:02.600 --> 06:03.950
+I'll show you what I mean.
+
+06:04.040 --> 06:12.480
+For example what we could do is upload all of these files to Python anywhere right.
+
+06:12.620 --> 06:16.020
+But that's a lot of files and a lot of work.
+
+06:16.040 --> 06:24.200
+Instead we only upload the critical files that we wrote plus the requirements dot text and automatically
+
+06:24.860 --> 06:33.230
+Python anywhere is going to be able to install a flask and the ginger and all the other requirements
+
+06:33.830 --> 06:36.770
+by looking at their requirements dot text.
+
+06:36.770 --> 06:47.920
+So for now let's go back to our desktop and copy the requirements dot text as well into our portfolio
+
+06:48.400 --> 06:52.780
+page so we now have all the files that we need.
+
+06:52.790 --> 06:55.990
+Forget how far we go back.
+
+06:56.030 --> 07:05.920
+We can simply go into our portfolio folder and then simply say get add everything.
+
+07:06.830 --> 07:10.620
+Then get commit and give it some sort of a message.
+
+07:10.670 --> 07:16.230
+My port folio Web site.
+
+07:16.310 --> 07:17.500
+There we go.
+
+07:17.510 --> 07:20.570
+And then finally get push origin master
+
+07:23.630 --> 07:29.330
+and just like that if I go back to get hub and I refresh
+
+07:32.400 --> 07:41.690
+I have all my files for my portfolio project so using GitHub we can now upload really really easily
+
+07:41.930 --> 07:45.740
+to our Python anywhere dashboard.
+
+07:45.860 --> 07:53.870
+The way we're going to do this is to actually now clone this repo with all these files and we'll use
+
+07:53.900 --> 07:55.150
+a G.P.S..
+
+07:55.370 --> 08:02.530
+That's copy this and then go to our dashboard now in here in the console.
+
+08:02.660 --> 08:11.000
+We can hit bash so this will open up the terminal where our computer that is hosted by Python anywhere
+
+08:11.000 --> 08:12.100
+exists.
+
+08:12.110 --> 08:16.190
+Let's make this a little bit bigger in here.
+
+08:16.190 --> 08:23.750
+I can say get clone and clone this repo.
+
+08:23.750 --> 08:25.070
+There we go.
+
+08:25.070 --> 08:34.490
+And now if we do less and remember this is a Linux machine so Linux commands like LSD is going to work.
+
+08:34.490 --> 08:37.390
+So we see that we have the Rema text and that portfolio.
+
+08:37.490 --> 08:48.020
+So let's go into portfolio and we see here that we have look at that all our files on our machine.
+
+08:48.070 --> 08:57.060
+Now the cool thing is that if I go back to the dashboard and I go into my files you see here that in
+
+08:57.060 --> 09:05.580
+the directories I have a portfolio project which is my files that we've created.
+
+09:05.580 --> 09:06.980
+How cool is that.
+
+09:06.990 --> 09:10.520
+So I now have all the files necessary for me to run the app.
+
+09:11.490 --> 09:14.700
+But how can we run an app.
+
+09:14.730 --> 09:23.200
+Well we have a web app tab so remember with the free tier we get access to one free web app so let's
+
+09:24.130 --> 09:28.160
+open up the webcam and add a new Web site.
+
+09:28.330 --> 09:33.730
+So unfortunately with the free tier you can have custom domain names.
+
+09:33.730 --> 09:35.910
+That is a way for you to say.
+
+09:36.040 --> 09:36.990
+Andre Nagoya.
+
+09:36.990 --> 09:39.360
+Dot com or whatever Web sites you want.
+
+09:39.430 --> 09:44.080
+Instead they're going to generate one for you but that's something that you can look into on your own
+
+09:44.290 --> 09:45.340
+if you want to pay for it.
+
+09:45.670 --> 09:54.480
+But for now let's just use the free tier so we can select the python framework that we want to use and
+
+09:54.570 --> 10:00.710
+I'm actually going to do manual configuration we can pick whatever python version we want.
+
+10:00.870 --> 10:04.360
+Let's do three point six for now because that's what we've been using.
+
+10:04.410 --> 10:08.840
+And then finally click next.
+
+10:08.840 --> 10:09.890
+There we go.
+
+10:09.890 --> 10:13.740
+We have our Python project at this.
+
+10:13.760 --> 10:21.000
+Your real address but if I click on this all right I get a hello world.
+
+10:21.010 --> 10:24.080
+It's working but this isn't our portfolio.
+
+10:24.100 --> 10:30.100
+So how can we make that work there's a few things that we need to setup.
+
+10:30.290 --> 10:37.940
+First I'm going to link you to this tutorial on showing you how to set it up in case you have any problems.
+
+10:38.000 --> 10:47.730
+But let's go step by step first what we need to do is scroll down and enter the source code.
+
+10:47.730 --> 10:56.650
+So that is whereas the code that we're looking for if you remember let's go over here to files.
+
+10:56.850 --> 11:00.210
+We have our portfolio folder.
+
+11:00.210 --> 11:09.060
+So what we want to do in the web is to say that we want port so in here it's going to automatically
+
+11:09.060 --> 11:10.220
+create that link for us.
+
+11:10.230 --> 11:13.460
+So that's where our source code our server code exists.
+
+11:14.980 --> 11:22.450
+Now if we go back here we've gone in our code onto Python anywhere and then we have to set up our virtual
+
+11:22.450 --> 11:23.870
+environment.
+
+11:23.980 --> 11:25.890
+So we have to open up our console.
+
+11:25.930 --> 11:27.570
+Let's make this a little bit bigger.
+
+11:27.760 --> 11:30.240
+And then just run these comments.
+
+11:30.460 --> 11:40.080
+So in our case because we're using Python three point six we're just going to copy this go to our dashboard
+
+11:41.080 --> 11:43.210
+into the Bash once again.
+
+11:43.210 --> 11:51.520
+So that is the computer that we're going to serve our files from and then copy and paste to create a
+
+11:51.520 --> 11:55.810
+virtual environment called my virtual end.
+
+11:55.890 --> 12:06.840
+And while that's installing our next task is to install flask so once again we'll copy this so let's
+
+12:06.840 --> 12:08.730
+run pip install flask
+
+12:12.270 --> 12:20.740
+and you'll notice here as flask is being installed that we're now in a virtual environment.
+
+12:20.860 --> 12:28.300
+See here how says my virtual app which was what we told it to name our virtual environment and then
+
+12:28.300 --> 12:33.350
+the next step is to run this command.
+
+12:33.370 --> 12:39.940
+Well actually this command won't do anything because this command work on simply takes us to our virtual
+
+12:40.150 --> 12:43.330
+environment which we already have created.
+
+12:43.360 --> 12:49.510
+This is for next time whenever you let's say go back and open up the console to make sure that you're
+
+12:49.510 --> 12:52.300
+always working in our virtual environment.
+
+12:52.300 --> 13:02.610
+Now in here if I look at the files I have my portfolio project but I can also run using the requirements
+
+13:02.610 --> 13:06.380
+dot text that we have in case we have a lot of dependencies.
+
+13:06.510 --> 13:15.410
+We can actually run this command so that it reads our requirements dot text to install any dependencies
+
+13:17.840 --> 13:26.230
+couldn't open up the file because we have to see into our portfolio first and then run this command
+
+13:27.770 --> 13:33.230
+in our case we don't have that many requirements and everything is set since we installed flask.
+
+13:33.230 --> 13:38.480
+But this is how we can use the requirements of text to install all our dependencies.
+
+13:38.720 --> 13:45.690
+Awesome so going back to the tutorial we see that we've set up our virtual environment and we need to
+
+13:45.690 --> 13:51.720
+go to our Web tap to set up our virtual environments so that it knows where the Web tab to look for
+
+13:51.720 --> 13:53.280
+this environment.
+
+13:53.280 --> 14:01.460
+So going back we can now go to our Web and I know this is confusing this is what happens when you do
+
+14:01.460 --> 14:03.320
+configuration on a Web site.
+
+14:03.350 --> 14:09.290
+It's one of those things that you just have to learn or follow documentation in here in their virtual
+
+14:09.300 --> 14:10.750
+and.
+
+14:10.880 --> 14:19.030
+We will simply as they ask add the name of our virtual environment which is my virtual And
+
+14:22.600 --> 14:33.950
+so again we'll copy this and automatically it gives us the link now finally if we reload our application
+
+14:34.380 --> 14:41.100
+I'll take a few seconds but when it's done and I click I get the hello world.
+
+14:41.300 --> 14:47.230
+Something is still not right because we want to our server to be running right.
+
+14:47.260 --> 14:50.090
+So it serves us the index dot HMO.
+
+14:50.440 --> 14:54.690
+This video is getting long so let's take a break and see you in the next video.

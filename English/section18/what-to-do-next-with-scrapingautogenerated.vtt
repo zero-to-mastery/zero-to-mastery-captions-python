@@ -1,0 +1,127 @@
+WEBVTT
+
+00:00.600 --> 00:04.790
+You have just learned the basics of web scraping.
+
+00:04.830 --> 00:06.540
+It's pretty exciting isn't it.
+
+00:06.570 --> 00:09.960
+A lot of power at your hands at your fingertips.
+
+00:10.260 --> 00:15.720
+But let's say you want to go further learn more maybe become a professional web scraper.
+
+00:15.720 --> 00:16.170
+I don't know.
+
+00:16.230 --> 00:21.670
+Maybe that's why you wanted to do what are some things that I would recommend.
+
+00:21.670 --> 00:24.630
+Well get more familiar with beautiful soup.
+
+00:25.360 --> 00:32.130
+But keep in mind what I said at the beginning of this section ideally you don't even have to web scrape.
+
+00:32.150 --> 00:39.910
+Ideally you can use an API maybe the Web site that you want to get data from actually gives you an API.
+
+00:40.100 --> 00:51.490
+For example if I go to air B and B API you can see that SBB has announced an official API so we can
+
+00:51.490 --> 00:55.000
+actually perhaps read about what data.
+
+00:55.000 --> 01:00.390
+Air B and B just gives us access to and that should be your first stop.
+
+01:00.460 --> 01:04.500
+Maybe if you don't have that then you'll look at beautiful soup.
+
+01:04.690 --> 01:09.430
+The next thing you might want to look at is this framework called scrappy.
+
+01:09.430 --> 01:17.110
+Think of it as beautiful soup but with a lot more features a framework is essentially an entire kitchen
+
+01:17.150 --> 01:25.330
+and an entire tool belt that you can use to scrape Web sites and you use things like scrappy when you
+
+01:25.570 --> 01:31.900
+want to scrape massive web sites massive amounts of data a framework versus a library.
+
+01:31.930 --> 01:33.670
+Is that a framework.
+
+01:33.670 --> 01:37.630
+Almost it teaches a new language in itself.
+
+01:37.630 --> 01:44.170
+It gives you all the tools necessary to do everything that you want when it comes to scraping data.
+
+01:44.170 --> 01:46.910
+Beautiful Soup on the other hand is smaller.
+
+01:46.960 --> 01:47.710
+It's a library.
+
+01:47.710 --> 01:52.060
+So gives you a few nifty tools to do small things like what we've done here.
+
+01:52.240 --> 01:57.770
+Scrappy the framework well is an entire thing in itself.
+
+01:57.800 --> 02:00.380
+You can go through their documentation and tutorial.
+
+02:00.380 --> 02:05.960
+It takes a bit of time to get used to but if you want to do this maybe full time scrappy it's something
+
+02:05.960 --> 02:07.700
+that you should take a look.
+
+02:07.730 --> 02:11.660
+Finally what do you do with all this data.
+
+02:11.660 --> 02:19.100
+Eventually you might want to do something maybe store it in a text file in a CSP file something that
+
+02:19.100 --> 02:22.130
+we've talked about and we'll talk about in the course.
+
+02:22.130 --> 02:28.370
+But as he collected more and more data maybe using something like scrappy you might want to start looking
+
+02:28.370 --> 02:36.560
+into using what we call databases and databases allow us to store massive amounts of data and save it
+
+02:36.770 --> 02:40.360
+somewhere so that we can access it whenever we want.
+
+02:40.520 --> 02:47.600
+And there's a ton of databases something that is beyond the goal of this course but you may have heard
+
+02:47.600 --> 02:54.210
+of things like Mongo D.B. readies my Eskew El post Chris.
+
+02:54.210 --> 03:01.830
+These are all ways to store data store massive amounts of data and access it so you might want to learn
+
+03:01.830 --> 03:10.770
+about how to use a framework like scrappy and collect that data and store it somewhere on a database
+
+03:11.340 --> 03:14.800
+so that other people on your team can maybe access it.
+
+03:14.820 --> 03:21.030
+The possibilities are endless but if there's one thing that you're gonna take away from this is please
+
+03:21.030 --> 03:27.380
+be nice be ethical and don't do anything illegal because while I don't want to get in trouble and I'm
+
+03:27.390 --> 03:30.600
+sure you don't as well I'll see in the next one.
+
+03:30.800 --> 03:31.020
+Baba.

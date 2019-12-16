@@ -1,0 +1,190 @@
+WEBVTT
+
+00:00.800 --> 00:04.010
+One final pillar of Ohio Pete to go.
+
+00:04.010 --> 00:09.180
+We talked about encapsulation about abstraction and about inheritance.
+
+00:09.290 --> 00:16.670
+And then there's this fourth one that has a pretty tough word poli more fearsome.
+
+00:16.760 --> 00:17.870
+What does that mean.
+
+00:17.870 --> 00:24.910
+Well poorly means many and more fearsome means form so many forms.
+
+00:25.100 --> 00:29.600
+Now we know that methods belong to objects right.
+
+00:29.600 --> 00:37.960
+We use the self keyword to act upon the object that got instantiated now in python.
+
+00:37.970 --> 00:49.260
+This idea of polymorphism refers to the way in which object classes can share the same method name but
+
+00:49.500 --> 00:56.270
+those method names can act differently based on what object calls the now.
+
+00:56.300 --> 01:04.200
+That sounds extremely confusing so let's have a look at a code we have our user wizard and Archer classes
+
+01:05.380 --> 01:12.540
+and as I mentioned with polymorphism different object classes can share method names.
+
+01:13.150 --> 01:23.970
+So we have attack here that is shared but each one does something different based on the attribute.
+
+01:24.010 --> 01:27.110
+For example when I do wizard one attack.
+
+01:27.310 --> 01:39.200
+So let's do that wizard one dot attack if I click Run I get attacking with power of 60 because well
+
+01:39.500 --> 01:45.740
+wizard has a special meaning to its attack vs. Archer they're different
+
+01:48.460 --> 01:55.570
+so although they share the same method names because of the object that's calling it the output is going
+
+01:55.570 --> 01:56.520
+to be different.
+
+01:57.940 --> 02:01.240
+So we can actually do something quite interesting here.
+
+02:01.330 --> 02:13.850
+Let's say that I have wizard 1 and then we'll also have Archer 1 and Archer 1 will be Robin and Robin
+
+02:14.030 --> 02:22.190
+has 30 hours now what I can do here is actually called them in different ways.
+
+02:22.190 --> 02:31.520
+For example I can create an entire new function called player attack and this player attacks takes a
+
+02:31.820 --> 02:47.390
+character and in here we can say character dot attack and now if I run this code and say player attack
+
+02:48.260 --> 02:51.380
+wizard 1 and I run this
+
+02:54.550 --> 02:56.760
+I'll get attacking with power of 1.
+
+02:56.890 --> 03:07.700
+If I do player attack have Archer in here if I click Run you see that the same function gives me a different
+
+03:07.730 --> 03:13.670
+output even though we're calling the same thing because of the object that we pass into it.
+
+03:13.740 --> 03:14.910
+Polly Morpheus.
+
+03:15.590 --> 03:20.490
+Another way to demonstrate this is if we do a for loop.
+
+03:20.570 --> 03:34.240
+If I do for let's say character in and let's add wizard 1 and Archer 1 into a list and if I print here
+
+03:34.450 --> 03:44.830
+or religious run character dot attack 5 click Run here once again I have two different outputs even
+
+03:44.830 --> 03:52.590
+though I'm calling the same method because of the different objects and this is a really powerful concept
+
+03:52.900 --> 03:53.400
+right.
+
+03:53.490 --> 04:01.230
+Because we're able to customize this according to our specific needs even if let's say that the user
+
+04:01.470 --> 04:12.790
+had a attack method in this default attack method is let's say print do nothing because it's just a
+
+04:12.790 --> 04:19.460
+user even if I run these and let's say print wizard.
+
+04:19.460 --> 04:23.440
+1 let's say dot attack.
+
+04:23.440 --> 04:32.780
+If I click run it's going to override whatever the original attack was because we already have that
+
+04:33.020 --> 04:44.680
+method in our wizard class but let's say I wanted to have both user and Wizard run the attack method.
+
+04:44.740 --> 04:46.020
+How can I do this.
+
+04:47.010 --> 04:51.360
+Now this is something we'll explore a little bit more in the next video.
+
+04:51.360 --> 05:03.510
+But for now I can say user dot attack and give it self because I accept the user as my parameter in
+
+05:03.510 --> 05:04.200
+here.
+
+05:05.420 --> 05:10.320
+And then I can run user dot attack so let's see what happens here.
+
+05:10.430 --> 05:24.440
+If I click Run I have do nothing in attacking with power of 60 so polymorphism allows us to have many
+
+05:24.500 --> 05:25.290
+forms.
+
+05:25.400 --> 05:34.960
+It is the ability to redefine methods for these derived classes that is wizard and Archer and an object
+
+05:35.140 --> 05:44.530
+that gets instantiated can behave in different forms in different ways based on polymorphism and this
+
+05:44.530 --> 05:53.860
+is useful because we are able to modify our classes to our specific needs but also not have to repeat
+
+05:53.860 --> 06:00.800
+ourselves in case we want to use something like attack from user inside of wizard.
+
+06:00.830 --> 06:11.010
+So there you have it the four pillars of all p encapsulation abstraction inheritance and then finally
+
+06:11.220 --> 06:14.030
+polymorphism now.
+
+06:14.080 --> 06:19.470
+No amount of videos or books are going to teach you exactly when to use what.
+
+06:20.350 --> 06:26.190
+However the idea here is to understand that these powers exist with Opie.
+
+06:26.440 --> 06:30.570
+You're never going to say oh I need to implement polymorphism.
+
+06:30.630 --> 06:30.950
+No.
+
+06:30.970 --> 06:39.100
+Most of the time you're just coding along and it happens that your coding in a way that emphasizes polymorphism.
+
+06:39.250 --> 06:41.820
+This is just the power of copy.
+
+06:41.950 --> 06:47.770
+Although these are big words at the end of the day we've learned how to use them to structure our code
+
+06:48.040 --> 06:52.050
+in a way that is efficient and clean and that's the whole point.
+
+06:52.090 --> 06:55.260
+It's all about organizing our code.
+
+06:55.380 --> 06:59.630
+Now some of you may have been a little confused when I did this.
+
+06:59.670 --> 07:05.260
+User dot attack self in the next video I wanna explore this a little bit more.
+
+07:05.550 --> 07:07.190
+I'll see you on that one.

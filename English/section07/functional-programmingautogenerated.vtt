@@ -1,0 +1,46 @@
+WEBVTT
+
+00:00.790 --> 00:08.920
+Now we learned that as programmers we started to write code that was just pure procedural code to something
+
+00:08.920 --> 00:13.560
+more organized using something like object oriented programming.
+
+00:13.600 --> 00:21.340
+And we talked about how we had languages like Smalltalk that had this concept of classes and objects
+
+00:21.550 --> 00:28.490
+to organize our code into these functional boxes now around the same time.
+
+00:28.570 --> 00:36.320
+There were also this idea of a another paradigm called functional programming and languages like Scheme
+
+00:36.620 --> 00:40.480
+introduced this idea of functional programming.
+
+00:40.490 --> 00:46.940
+Now remember a paradigm is a way for us to think about our code and organize our code.
+
+00:47.030 --> 00:50.710
+And up until this point we learned about object oriented programming.
+
+00:50.870 --> 00:55.540
+In the next couple of videos I want to tackle this idea of functional programming.
+
+00:55.560 --> 01:01.500
+Now some of the concepts are different than object oriented programming but that doesn't mean that you
+
+01:01.500 --> 01:06.050
+have to pick one or the other or one is better than the other.
+
+01:06.060 --> 01:13.200
+Instead we can use the concepts from both to think like programmers and understand that there's tradeoffs
+
+01:13.260 --> 01:14.900
+pros and cons to each.
+
+01:14.940 --> 01:18.520
+And we're gonna try and explore that over the next couple of videos.
+
+01:18.690 --> 01:23.260
+So what is functional programming let's find out.

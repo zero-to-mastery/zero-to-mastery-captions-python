@@ -1,0 +1,373 @@
+WEBVTT
+
+00:01.260 --> 00:07.440
+Now the best way to learn is to actually see code in action so enough theory lets actually code our
+
+00:07.440 --> 00:09.120
+own class.
+
+00:09.230 --> 00:12.320
+I'm going to just delete everything and start from scratch.
+
+00:13.220 --> 00:19.490
+And let's say that we're working for a gaming company and this gaming company has well this wizard game
+
+00:19.490 --> 00:23.580
+that they want to create almost like Harry Potter.
+
+00:23.660 --> 00:26.750
+Now how can we think about it an object oriented programming.
+
+00:27.350 --> 00:32.510
+Well the first thing that we're going to need is we're going to have to have players right.
+
+00:32.510 --> 00:35.640
+Each player has a character that they need to play.
+
+00:35.720 --> 00:39.800
+So let's create a class here and call it player
+
+00:42.470 --> 00:43.000
+again.
+
+00:43.010 --> 00:50.900
+Notice the naming convention because it's a class another rule is that usually you want it to be singular
+
+00:51.200 --> 00:58.420
+not plural so you can't say player characters because I mean it's a blueprint from this blueprint.
+
+00:58.490 --> 01:01.910
+We're going to create many characters but those are gonna be objects.
+
+01:01.970 --> 01:06.620
+So player character single in singular.
+
+01:06.860 --> 01:13.310
+Now in here I'm going to do a few things and I'm going to warn you this is going to look confusing at
+
+01:13.310 --> 01:15.110
+first but bear with me.
+
+01:15.110 --> 01:16.660
+I will explain it.
+
+01:16.760 --> 01:24.640
+We're going to define a underscore underscore in it underscore underscore.
+
+01:24.640 --> 01:33.010
+Now in here we're going to say self and then give it a name the name of the character.
+
+01:33.310 --> 01:47.820
+From here we're going to do call in once again and simply say self dots name equals to name oh boy what
+
+01:47.820 --> 01:48.450
+just happened here.
+
+01:49.730 --> 01:56.120
+Again I'm going to hold off explaining what this does and just write a few more lines of code so that
+
+01:56.120 --> 01:58.280
+it makes a little bit more sense.
+
+01:58.400 --> 02:07.550
+I'm going to write a nother method in here and I'm going to define let's say a run method that each
+
+02:07.550 --> 02:16.280
+player can run in in here I'm going to once again have this weird self word and then simply inside of
+
+02:16.280 --> 02:23.370
+here say print.
+
+02:23.430 --> 02:24.150
+All right.
+
+02:24.300 --> 02:26.030
+So I've just created this class.
+
+02:26.040 --> 02:31.230
+It's still kind of confusing we don't really know what this in it is what the self is and this whole
+
+02:31.230 --> 02:42.540
+new look but let's ignore that for a second and simply say player one is going to equal player character
+
+02:42.990 --> 02:53.570
+and instantiate that player so that we can print player and see what's up with this player if I click
+
+02:53.570 --> 02:56.700
+Run.
+
+02:56.720 --> 02:58.510
+All right I get an error.
+
+02:58.640 --> 02:59.620
+It's a type error.
+
+02:59.630 --> 03:04.030
+It says in it missing one required positional argument.
+
+03:04.110 --> 03:05.790
+Name.
+
+03:05.890 --> 03:06.520
+All right.
+
+03:06.520 --> 03:11.530
+Let's take a break here and see what is happening here.
+
+03:11.590 --> 03:18.050
+You see this in it method is a special method.
+
+03:18.140 --> 03:21.050
+You see the two underlines here.
+
+03:21.050 --> 03:25.130
+This is called a Dunder method or a magic method.
+
+03:25.160 --> 03:27.630
+And we're going to have a video specifically about this.
+
+03:27.740 --> 03:37.060
+But when we're building a class you usually see this at the top and this is what's often called a constructor
+
+03:37.180 --> 03:46.730
+method or in init method and this is automatically called anytime we instantiate remember instantiate
+
+03:46.730 --> 03:51.270
+means is we're calling the class to create an object.
+
+03:51.290 --> 03:59.550
+So when I do this it's going to automatically run whatever is in this code block so when I run this
+
+03:59.850 --> 04:04.680
+you see that I'm getting the error on line 9 right here on line 9.
+
+04:04.680 --> 04:11.030
+And when I tried to instantiate the player character it runs in it.
+
+04:11.470 --> 04:13.210
+And then it tries to do self-doubt.
+
+04:13.210 --> 04:15.130
+Name equals to name.
+
+04:15.130 --> 04:21.370
+But the problem is that I'm not giving it to an argument name and that is because when we call in it
+
+04:22.060 --> 04:28.680
+we accept whatever is after self as the parameter name.
+
+04:28.870 --> 04:32.110
+So we need to give it a name of this character.
+
+04:32.200 --> 04:35.730
+So let's say the name is Cindy.
+
+04:35.920 --> 04:43.290
+If I click Run here all right it looks like I have a player character.
+
+04:43.570 --> 04:49.800
+And as a matter of fact it even shows me that it's an object at this memory location.
+
+04:49.800 --> 04:55.450
+So on our computers this is where the player character player 1 is located.
+
+04:55.450 --> 05:04.240
+Now very cool but what is this self keyword and what is this code online for.
+
+05:04.290 --> 05:13.380
+This is a way for us to define well self self refers to the player character.
+
+05:13.460 --> 05:18.960
+It's saying hey this is going to refer to this player character that we're going to create.
+
+05:18.960 --> 05:30.560
+Player 1 and I want self dot name to equal whatever the parameter name is so that if I do player dot
+
+05:30.680 --> 05:36.240
+name here and I click Run I get Cindy.
+
+05:36.490 --> 05:37.840
+And why is it Cindy.
+
+05:37.840 --> 05:44.650
+Well because I gave it the parameter player character and when I instantiate it I passed the name parameter
+
+05:45.310 --> 05:47.620
+the default parameter is self.
+
+05:47.620 --> 05:53.860
+When I do in it and in classes you see here that the default always the first parameter when we're defining
+
+05:53.890 --> 06:00.990
+a method is self and now I give name to self dot name.
+
+06:01.260 --> 06:11.060
+What if I remove this here and I click Run you see that it says object has no attribute name because
+
+06:11.060 --> 06:22.010
+in order for me to say hey I want player to have a name I need to say self dot because self refers to
+
+06:22.010 --> 06:23.470
+Player 1.
+
+06:23.480 --> 06:29.780
+So if you remember when we had a list we had to do dot and then we would say append.
+
+06:29.780 --> 06:36.150
+Well somebody wrote this append code and in the append code it's going to say self.
+
+06:36.410 --> 06:43.150
+Dot let's say add to the list and self refers to whatever's to the left of the dot.
+
+06:43.190 --> 06:50.010
+So this way it allows us to have a reference to something that hasn't been created yet.
+
+06:50.120 --> 06:57.020
+In this case Player 1 and let them know that hate when it's created when we instantiate then I want
+
+06:57.020 --> 07:05.380
+you to make sure that player 1 has this name attribute so that if I create a another player and a player
+
+07:05.650 --> 07:17.840
+Tom is going to be player to if I print player to Don name and I click Run I have two different players
+
+07:17.840 --> 07:24.860
+with two different names I was able to use the same piece of code but have different values because
+
+07:24.860 --> 07:32.450
+the self every time I instantiate this refers to first time player 1 then first second time player 2
+
+07:33.440 --> 07:38.930
+now self is one of those things that gets really really tricky to understand and you might need to watch
+
+07:38.930 --> 07:46.460
+this video a couple times but the key here should be evident to you that is I'm able to write code only
+
+07:46.460 --> 07:53.210
+once remember our principal drive do not repeat yourself and I'm able to make a dynamic by saying this
+
+07:53.270 --> 07:59.580
+data that we're going to create for the object is going to be dynamic and it's going to change based
+
+07:59.580 --> 08:08.610
+on what we give it so that I can create different players with different attributes but still use the
+
+08:08.610 --> 08:10.420
+same code.
+
+08:10.530 --> 08:12.500
+Now I can have multiple things here.
+
+08:12.510 --> 08:14.220
+I can have age for example.
+
+08:14.250 --> 08:18.480
+And once again I can say self-taught age equals age.
+
+08:18.630 --> 08:28.740
+And then Cindy will have to pass let's say 44 and Thomas 21 so that here once again if I do age
+
+08:31.870 --> 08:33.820
+they'll have different attributes.
+
+08:34.300 --> 08:43.330
+So remember these are attributes or properties that these objects have and you can access them by doing
+
+08:43.330 --> 08:47.660
+the dot notation and then accessing the property itself.
+
+08:47.710 --> 08:50.830
+You see that I don't have any brackets here because it's not a method.
+
+08:50.830 --> 08:55.910
+It's not taking action it's simply saying Hey I want to access this attribute.
+
+08:56.080 --> 09:03.880
+If I do dot here my editor will actually tell me and we'll have the symbol for hey you have access to
+
+09:03.880 --> 09:06.310
+the attribute age and name.
+
+09:06.350 --> 09:14.490
+And as a matter of fact I also have access to run the method so that if I click Run well remember a
+
+09:14.490 --> 09:15.570
+run is a method.
+
+09:15.570 --> 09:20.710
+So I get this bound method but it's not printing anything it's not taking the action.
+
+09:20.760 --> 09:26.310
+So we have to once again add the brackets hit run and look at that.
+
+09:26.310 --> 09:30.200
+I'm able to do run then I get none.
+
+09:30.540 --> 09:32.300
+Then twenty one.
+
+09:32.700 --> 09:39.000
+Why do we get this not because remember this is a function that doesn't return anything when a function
+
+09:39.000 --> 09:40.050
+doesn't return anything.
+
+09:40.050 --> 09:49.690
+What do we get we get not so maybe I can just say return done if I click Run.
+
+09:49.710 --> 09:50.760
+There you go.
+
+09:50.760 --> 09:52.020
+We have run none.
+
+09:52.120 --> 09:54.300
+Twenty one.
+
+09:54.330 --> 09:57.420
+Now one last thing before I end this video.
+
+09:57.420 --> 10:08.710
+The interesting thing here is if I do Player 1 and then player 2 and I print this and I click run you'll
+
+10:08.710 --> 10:17.280
+see that I get the player character but the object each of these objects Player 1 and Player 2 are at
+
+10:17.430 --> 10:26.580
+different memory location so I'm able to use one piece of code one blueprint to create multiple players.
+
+10:26.580 --> 10:28.690
+But these players are not the same.
+
+10:28.710 --> 10:33.510
+They're created from the same blueprint but they live in different places in memory.
+
+10:33.510 --> 10:35.010
+And that makes sense right.
+
+10:35.010 --> 10:38.010
+We don't want Tom and Cindy to be the same player.
+
+10:38.020 --> 10:40.170
+They're two different players.
+
+10:40.170 --> 10:47.340
+So this way we're able to keep things safe and anything I add to player two for example let's say Player
+
+10:47.340 --> 10:55.820
+2 can now attack and attack will just be a property that will be 50.
+
+10:55.820 --> 11:03.060
+Now if I do dot attack here you see that player too has attack.
+
+11:03.200 --> 11:13.110
+But if I do player one that attack I get an error object has no attribute attack.
+
+11:13.300 --> 11:19.390
+I hope you're starting to see the power of classes although it may be difficult to understand at first
+
+11:20.200 --> 11:27.280
+the power becomes evident when we are able to create this blueprint that we can now use over and over
+
+11:27.340 --> 11:34.420
+and over to create our own objects let's explore more in the next video.

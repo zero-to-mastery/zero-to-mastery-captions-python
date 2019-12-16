@@ -1,0 +1,400 @@
+WEBVTT
+
+00:01.070 --> 00:02.710
+And welcome back.
+
+00:02.720 --> 00:09.940
+We're gonna get into some more advanced tags and probably the most important tag that you'll use other
+
+00:09.950 --> 00:15.560
+than the ones that we've covered so far are tags that we need to create forms.
+
+00:15.770 --> 00:22.610
+As you know when you go to Web sites usually there's some sort of a log gain or registration form so
+
+00:22.610 --> 00:25.820
+we're gonna build that out today to get started.
+
+00:25.850 --> 00:28.740
+Let's just create a new file here.
+
+00:28.940 --> 00:38.910
+We'll save it and call it register dot H2 AML on our desktop perfect and we know that we want a nice
+
+00:38.910 --> 00:44.890
+team also we use our little shortcut and we'll title it register save that.
+
+00:45.090 --> 00:47.820
+And now in the index start a simple file.
+
+00:47.820 --> 00:57.970
+Let's add a another link that references register dot ACM L and L just say here.
+
+00:57.970 --> 00:59.430
+Register.
+
+00:59.430 --> 00:59.930
+All right.
+
+01:00.190 --> 01:05.090
+We'll save both of these files and let's refresh.
+
+01:05.320 --> 01:11.300
+We have register click register while we have nothing yet but it looks like it's working.
+
+01:11.330 --> 01:15.330
+Let's add this on our new line just because it looks pretty or that way.
+
+01:15.350 --> 01:19.500
+So to do that if you remember we're going to add a brake tag.
+
+01:19.670 --> 01:20.990
+So let's refresh.
+
+01:20.990 --> 01:21.620
+There you go.
+
+01:21.620 --> 01:25.090
+We have a new page and register.
+
+01:25.460 --> 01:34.520
+Let's build out this form for you go in to register dot a simple the way we write forms in a CML while
+
+01:34.520 --> 01:39.480
+conveniently there's a form tag.
+
+01:39.520 --> 01:44.840
+But this form tag itself it needs to have the actual form inside of it.
+
+01:44.840 --> 01:47.900
+So what kind of form elements do we have.
+
+01:47.900 --> 01:58.710
+Well again if we remember our good old friend w C. Let's type in forms and we can see over here that
+
+01:58.710 --> 02:03.480
+we have a shim or forms and refresh.
+
+02:03.590 --> 02:10.340
+We'll make that full screen and you can see over here that there's a ton of information on it but you
+
+02:10.340 --> 02:11.960
+can look that up yourself.
+
+02:11.960 --> 02:18.110
+For now I'm going to introduce you to the most common ones probably the ones that you'll use 90 percent
+
+02:18.110 --> 02:19.590
+of the time.
+
+02:19.770 --> 02:25.950
+The first one as we do with any form and let's go to that page for now is what we want to enter our
+
+02:25.950 --> 02:26.460
+name.
+
+02:26.490 --> 02:27.270
+So how do we do that.
+
+02:27.270 --> 02:40.230
+We have a input tag that has a type of text because well our name will be in text form and we can close
+
+02:40.230 --> 02:41.070
+that off.
+
+02:41.070 --> 02:43.440
+And it's actually a self closing tag.
+
+02:43.770 --> 02:47.390
+So now if I save and refresh.
+
+02:47.600 --> 02:47.800
+OK.
+
+02:47.820 --> 02:50.040
+We have a little box here.
+
+02:50.100 --> 02:52.130
+Hopefully you can see that but.
+
+02:52.500 --> 02:55.350
+Well we should probably title it because we won't know what to answer that way.
+
+02:55.350 --> 03:03.080
+So we're gonna put in here we're gonna say first name semicolon and save.
+
+03:03.090 --> 03:04.020
+Let's refresh.
+
+03:04.020 --> 03:05.110
+We have a first name.
+
+03:05.280 --> 03:08.540
+And now let's make this a little bit bigger.
+
+03:08.550 --> 03:09.400
+There you go.
+
+03:09.420 --> 03:14.950
+Now you can enter your name in here awesome.
+
+03:14.960 --> 03:17.960
+Well let's let's add another one for last name
+
+03:22.750 --> 03:27.160
+and again we'll have our input type.
+
+03:27.280 --> 03:29.740
+So that's an attribute and a value of text
+
+03:32.380 --> 03:35.240
+and if we refresh we have last name.
+
+03:35.260 --> 03:35.650
+OK.
+
+03:35.670 --> 03:41.650
+But it kind of looks ugly remember that h t email just reads line by line and doesn't really know that
+
+03:41.650 --> 03:42.940
+we want a space here.
+
+03:42.940 --> 03:52.660
+So again we can add a brake tag here and refresh and we have first name and last name.
+
+03:53.540 --> 03:53.930
+OK.
+
+03:53.980 --> 03:56.980
+That's that's fairly self-explanatory.
+
+03:56.980 --> 03:59.490
+Now what else do we have in a form.
+
+03:59.500 --> 04:01.510
+We have e-mail.
+
+04:01.690 --> 04:07.910
+So let's let's add another field which is email and we'll do input.
+
+04:08.080 --> 04:17.630
+Again type calls text or add another break here because we're gonna need that spacing and let's save
+
+04:17.960 --> 04:18.710
+refresh.
+
+04:19.130 --> 04:21.000
+Awesome OK.
+
+04:21.000 --> 04:28.480
+So we have our general registration form and obviously with any form we need some sort of buttons right
+
+04:28.560 --> 04:32.700
+like we need to submit this somewhere so we can register.
+
+04:32.700 --> 04:36.680
+Well again there's a nice input type for that.
+
+04:36.840 --> 04:40.290
+So we do input instead of a text type.
+
+04:40.290 --> 04:53.740
+There is a submit type so this if we add another break in here and I see this I refresh it has a smith
+
+04:53.740 --> 04:54.120
+button.
+
+04:55.170 --> 04:55.950
+Now.
+
+04:56.130 --> 04:58.710
+Where did this submit come from.
+
+04:58.710 --> 05:03.450
+Well when you put an input type submit it automatically creates a button.
+
+05:03.480 --> 05:07.460
+And if you don't specify what to say I'll just have this text.
+
+05:07.470 --> 05:08.870
+But we can change that.
+
+05:08.900 --> 05:18.970
+So we can put value and we'll put register save that refresh.
+
+05:19.040 --> 05:22.860
+We now have a register button OK.
+
+05:23.000 --> 05:32.630
+But what if we make mistakes in this field we write stuff and what we want to reset this for again.
+
+05:32.870 --> 05:42.970
+There's a now input for that and the type of that input as you can imagine is reset.
+
+05:42.980 --> 05:48.680
+So now if we close this and other break in here actually we can keep that on the same line.
+
+05:48.860 --> 05:52.530
+We'll save refresh and we have reset.
+
+05:52.530 --> 05:56.700
+So now if I type in anything in here and let's say I don't want to.
+
+05:56.820 --> 05:59.040
+Well I don't like this I need to reset the form.
+
+05:59.070 --> 06:03.630
+I can just click reset and it clears everything for us.
+
+06:03.710 --> 06:06.230
+You may be asking yourself you know what.
+
+06:06.230 --> 06:10.360
+What happens when we click register before we get into that.
+
+06:10.370 --> 06:15.800
+I want to just go through all the common input types and then we'll click registers to see what happens
+
+06:16.580 --> 06:23.720
+with the e mail we ideally want first of all for it to be required so that when you click register if
+
+06:23.720 --> 06:29.810
+you haven't provided an email it won't let you register and there's an attribute that we can use for
+
+06:29.810 --> 06:30.040
+that.
+
+06:30.050 --> 06:40.520
+And that is required and here we don't actually have to specify a value because automatically it's assumed
+
+06:40.520 --> 06:45.310
+that required equals to true which means that this form field is required.
+
+06:45.320 --> 06:55.490
+So if I say that I refresh and I leave it blank and I click register will say please fill out this field.
+
+06:55.540 --> 07:00.070
+Now we also want to make sure that it's a an appropriate email field.
+
+07:00.070 --> 07:06.120
+So if I type something like this we still want to make sure that you know this is an incorrect email
+
+07:06.130 --> 07:12.280
+we don't want to register so the input type of text that I told you for e-mail is actually wrong.
+
+07:12.320 --> 07:17.470
+There's a specific one that we can use which is as you can imagine email.
+
+07:17.480 --> 07:26.950
+So now if I refresh and type in something that's not an email and I click register I'll say please include
+
+07:26.950 --> 07:30.700
+an app and the immunologists very nice.
+
+07:30.740 --> 07:37.110
+It's kind of like magic it does this for you which is very very nice let's expand on our knowledge of
+
+07:37.170 --> 07:44.270
+inputs and add a few more fields that will most likely need usually one m no somebodies birthday.
+
+07:44.520 --> 07:52.710
+So let's add birthday here and for this input type let's do type
+
+07:55.450 --> 08:04.510
+date so if I say this and I refresh at that we have a nice little dick picker so I can pick anything
+
+08:04.510 --> 08:06.450
+in here.
+
+08:06.480 --> 08:06.810
+All right.
+
+08:06.810 --> 08:07.800
+What else do we need.
+
+08:07.800 --> 08:14.240
+We also need gender so we'll do input type and for gender.
+
+08:14.250 --> 08:22.430
+While there's no specific input type for gender but there is something called Radio and Radio is as
+
+08:22.430 --> 08:25.440
+the name suggest radio buttons.
+
+08:25.460 --> 08:28.940
+So now click refresh and.
+
+08:29.440 --> 08:33.610
+Well I have one radio button but we ideally want to have options right.
+
+08:33.610 --> 08:34.980
+So how do we do that.
+
+08:34.990 --> 08:43.210
+So for the radio we also need to say whether it's male or female let's have within the gender.
+
+08:43.270 --> 08:54.970
+We're gonna have a break over here in the line and we'll say input type radio and we'll say male.
+
+08:55.150 --> 09:02.370
+And we also want female and we also want
+
+09:05.460 --> 09:11.990
+and when we refreshes we have male female and other BI You see a problem here.
+
+09:12.000 --> 09:17.160
+I just click the radio buttons and I can't deselect them and ideally you can own.
+
+09:17.190 --> 09:20.120
+You should only be able to select one.
+
+09:20.370 --> 09:25.530
+And right now the way the radio buttons are they don't know of each other's exist and we want to make
+
+09:25.530 --> 09:32.010
+sure that they know that they're connected their family and only one of them can be picked.
+
+09:32.010 --> 09:36.760
+So how do we do that the way we do that is through the name attribute.
+
+09:37.470 --> 09:47.550
+So for the name we'll say gender and this name attribute needs to match on all the radio buttons so
+
+09:47.550 --> 09:54.030
+that they know they are together they're part of the gender input field.
+
+09:54.060 --> 10:03.630
+So if I safe here and refresh now you can see that I can only select one.
+
+10:03.650 --> 10:04.030
+All right.
+
+10:04.030 --> 10:04.810
+Perfect.
+
+10:04.810 --> 10:06.370
+What else should he have.
+
+10:06.370 --> 10:14.450
+Well let's say I really want to know if you have pets with pets.
+
+10:14.550 --> 10:18.700
+We're gonna have inputs type.
+
+10:18.990 --> 10:27.080
+Well we can have multiple pets so won't be radio buttons we want checkbox so checkbox we wanted to have
+
+10:27.740 --> 10:35.390
+cats or lizards but cat and we want to have
+
+10:38.540 --> 10:39.290
+can type today
+
+10:41.950 --> 10:48.170
+checkbox and we want to have dogs so let's save that.
+
+10:48.250 --> 10:51.190
+Let's refresh and look about.
+
+10:51.280 --> 10:57.960
+We have pets but this time is checkboxes which means I can select multiple.

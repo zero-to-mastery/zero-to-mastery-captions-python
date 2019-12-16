@@ -1,0 +1,262 @@
+WEBVTT
+
+00:00.560 --> 00:01.380
+Welcome back.
+
+00:01.400 --> 00:03.620
+Let's do a fun little exercise.
+
+00:03.740 --> 00:11.390
+We just got hired by a gaming company and we're creating this wizard game and this wizard game has the
+
+00:11.870 --> 00:16.150
+is magician in the user's profile.
+
+00:16.220 --> 00:18.530
+And for now we'll just set it to false.
+
+00:18.530 --> 00:21.800
+We also have is expert
+
+00:25.000 --> 00:28.390
+and whether this user is an expert at this game.
+
+00:28.390 --> 00:29.800
+We'll leave it at true for now.
+
+00:30.980 --> 00:33.800
+And then let's let's do this.
+
+00:33.830 --> 00:51.370
+Here I want you to check if both or check if magician and expert and if that's the case if true then
+
+00:51.700 --> 00:56.880
+I want you to print you are a master magician.
+
+00:57.310 --> 01:11.230
+And also I want you to check if magician but not expert if that's the case I want to just print at least
+
+01:11.380 --> 01:15.060
+you're getting there.
+
+01:15.130 --> 01:28.010
+And then finally let's do a check that says if you're not a magician I want to say Hmm well you need
+
+01:28.370 --> 01:32.290
+magic powers.
+
+01:32.520 --> 01:40.380
+Now I want you to use what you've learned about logical operators to create this conditional logic.
+
+01:40.380 --> 01:44.640
+You can pause the video if you want and try it yourself in a rebel.
+
+01:44.640 --> 01:50.080
+Otherwise I'm going to keep going with an answer but you should be able to solve this fairly easily
+
+01:50.110 --> 01:58.240
+if you've been following the videos and exercises so far so let's start with the first one where we
+
+01:58.240 --> 02:00.910
+say you are a master magician.
+
+02:00.910 --> 02:14.030
+So I'm going to say if is expert and is magician I'm going to print.
+
+02:14.030 --> 02:16.410
+You are a master magician.
+
+02:16.550 --> 02:22.550
+So I'm going to copy that and say print you are a master magician.
+
+02:22.550 --> 02:24.470
+Nothing too crazy here.
+
+02:24.740 --> 02:34.700
+And then next one I'm going to say if or I could even say l if if I want and again this is something
+
+02:34.700 --> 02:37.930
+that you can decide what you prefer.
+
+02:37.970 --> 02:44.600
+I usually like using elf if if it's part of the same concept as the first one.
+
+02:44.660 --> 02:50.030
+In this case yeah we're we're still trying to figure out what type of user it is.
+
+02:50.030 --> 02:55.840
+So we'll use Elif and we'll say l If we want to check if it's a magician.
+
+02:55.850 --> 02:59.930
+So that is is magician.
+
+02:59.960 --> 03:02.120
+So we're going to check if that's true.
+
+03:02.870 --> 03:08.400
+But we also want to check if well not an expert.
+
+03:09.210 --> 03:11.380
+Now how do we do this.
+
+03:11.400 --> 03:23.360
+I mean we could say use short circuiting and say is expert and even if this is false we can get true
+
+03:23.360 --> 03:24.840
+here because isn't magician.
+
+03:24.860 --> 03:28.400
+Short circuit and print this part.
+
+03:28.540 --> 03:29.720
+Elise you're getting there.
+
+03:33.970 --> 03:40.870
+Because the interesting here is that this code block is never going to run if both of these are true
+
+03:40.900 --> 03:48.220
+because in the first F block we're checking that so that as soon as this is true we're going to completely
+
+03:48.220 --> 03:51.890
+ignore the L F so we could do that.
+
+03:52.010 --> 03:58.650
+But this is a little bit hard to read because I really have to think about it.
+
+03:58.660 --> 04:04.540
+If I come back to the code or somebody else looks at my code it's not clear that unless I comment that
+
+04:04.600 --> 04:14.780
+I'm checking if it's magician but not expert because this will never run if his magician is false then
+
+04:15.350 --> 04:16.490
+that's what they're checking for.
+
+04:16.580 --> 04:19.480
+I know it's kind of confusing even saying it.
+
+04:19.790 --> 04:29.800
+So I prefer using something like this using and not and that reads a lot better right.
+
+04:29.800 --> 04:32.770
+It's it's it makes a lot more sense.
+
+04:32.890 --> 04:36.460
+Hey if this person is an expert and magician do this.
+
+04:36.460 --> 04:43.440
+Otherwise if this person is magician and not an expert then print this.
+
+04:43.690 --> 04:45.130
+That reads pretty nicely.
+
+04:45.130 --> 04:51.670
+And yes you can do this because remember not as simply checking and inverting whatever the boolean expression
+
+04:51.670 --> 04:51.880
+is.
+
+04:52.060 --> 04:58.470
+So this still evaluates to a Boolean that and can check.
+
+04:58.480 --> 04:59.940
+All right let's finish the final one.
+
+05:00.040 --> 05:03.070
+If you're not a magician you need magic powers.
+
+05:03.070 --> 05:05.050
+So how do we check here.
+
+05:05.050 --> 05:18.330
+Well we can do another L if and say Not is magician and if I run it like this and say print and we'll
+
+05:18.330 --> 05:19.500
+just copy here.
+
+05:19.620 --> 05:21.210
+You need magic powers
+
+05:24.420 --> 05:30.080
+and let's remove the comments for now just so we can see the blocks of code and we're going to test
+
+05:30.080 --> 05:33.050
+our program hopefully we coded it properly.
+
+05:33.050 --> 05:36.580
+Hopefully there's no bugs but let's have a look.
+
+05:36.620 --> 05:41.620
+If I run this you need magic powers.
+
+05:41.620 --> 05:42.460
+Why is that.
+
+05:42.460 --> 05:47.430
+Well if magician is false none of these are going to work.
+
+05:47.430 --> 05:52.060
+What if I change this to true and I click Run.
+
+05:52.080 --> 05:52.690
+All right.
+
+05:52.860 --> 05:57.900
+I am a master magician because I'm an expert as well as a magician.
+
+05:57.900 --> 06:04.360
+What if I turn this to false then I click Run hey at least you're getting there.
+
+06:04.550 --> 06:10.920
+I'm a magician but I'm not an expert yet I'm still I still need to improve my gameplay.
+
+06:10.990 --> 06:16.840
+Now you may have gotten a different answer than me and there's many ways to do this right.
+
+06:16.870 --> 06:23.980
+You could have used an L statement you could have used or conditional logic is all about writing code
+
+06:24.280 --> 06:29.190
+that makes sense not only to you but for other people reading your code.
+
+06:29.200 --> 06:35.400
+The idea is not to be extremely clever or really worry about short circuiting.
+
+06:35.410 --> 06:41.500
+Yes it can be more performance but a machine is so powerful that just a tiny bit of optimization there
+
+06:41.500 --> 06:47.010
+is usually not worth it when you're losing perhaps readability.
+
+06:47.080 --> 06:54.430
+So you want to make sure that your code reads like English and this is a topic that frankly a lot of
+
+06:54.430 --> 07:01.090
+beginner programmers have a hard time understanding where they tried to be as clever as possible write
+
+07:01.120 --> 07:07.840
+as little code as possible in the shortest possible lines when instead you want to focus on readability
+
+07:07.960 --> 07:14.690
+because a code that is easy to understand is a sign of a good developer.
+
+07:14.920 --> 07:19.570
+And I hope looking at this you're thinking yeah this is this is pretty easy.
+
+07:19.570 --> 07:23.950
+I mean this all makes sense but this is not the only way.
+
+07:23.980 --> 07:28.120
+Maybe my version of Y reads well is different than yours.
+
+07:28.150 --> 07:34.750
+The idea is to each of us try our best to make our code simple and nice and in programming.
+
+07:34.750 --> 07:36.810
+There is no one right answer.
+
+07:36.820 --> 07:45.010
+There are many ways to solve a problem but the key is to solve it in a simple manner that is readable.
+
+07:45.030 --> 07:47.180
+I hope you have fun and I'll see you in the next hour.

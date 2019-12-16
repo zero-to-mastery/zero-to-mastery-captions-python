@@ -1,0 +1,163 @@
+WEBVTT
+
+00:00.660 --> 00:01.730
+Welcome back.
+
+00:01.740 --> 00:05.670
+Let's continue our understanding of int and float.
+
+00:05.780 --> 00:12.320
+We talked about the idea of these two data types and how we can use operations on them that we're familiar
+
+00:12.320 --> 00:18.500
+with from math class plus a few ones that maybe we haven't seen before such as modulo or the double
+
+00:18.500 --> 00:23.670
+slash or the double multiply for the Power of Now.
+
+00:23.700 --> 00:30.390
+This is really cool because we can get our computers to do well math for us like a calculator right
+
+00:31.440 --> 00:37.070
+but a programming language also provides for us different actions that we can perform.
+
+00:37.380 --> 00:44.140
+Now besides these ones we also learned that there's a type action that we can take.
+
+00:44.130 --> 00:51.360
+There's a print action that we can take but there's also specific math type functions that enter and
+
+00:51.360 --> 00:56.600
+float are able to use that are built into python.
+
+00:56.660 --> 01:01.920
+Now these are called well math functions and functions.
+
+01:02.000 --> 01:08.940
+Something we'll talk about later on are these actions that we've been talking about remember our diagram
+
+01:08.940 --> 01:09.790
+here.
+
+01:09.870 --> 01:15.230
+We're starting to learn about the data types and the actions that we can perform on them.
+
+01:15.240 --> 01:21.870
+Now in most programming languages these actions are called functions and we have a whole section on
+
+01:21.870 --> 01:22.230
+them.
+
+01:22.290 --> 01:26.940
+But for now there's some functions that we can use.
+
+01:26.940 --> 01:28.800
+So this is a print function.
+
+01:28.800 --> 01:38.070
+This is a type function but there's specific math functions such as around and you see right away when
+
+01:38.070 --> 01:47.200
+I type Ripple is a tool like an idea that hints and tells us what we can add so says round and give
+
+01:47.200 --> 01:51.190
+me a number and maybe an digit.
+
+01:51.330 --> 01:53.110
+But let's just worry about the first one for now.
+
+01:53.400 --> 01:57.510
+So around if I do three point one and I round here
+
+02:00.760 --> 02:01.640
+two.
+
+02:02.010 --> 02:03.470
+Well that's not right.
+
+02:03.490 --> 02:04.010
+Right.
+
+02:04.050 --> 02:11.220
+That's actually the result from up here because we need to also tell it to perform with a function of
+
+02:11.310 --> 02:12.420
+print.
+
+02:12.690 --> 02:16.810
+Hey print to the screen whatever the result of this is.
+
+02:16.960 --> 02:21.280
+And just to make things easier to see I'm going to comment this out.
+
+02:21.330 --> 02:26.760
+So I'm just selecting everything and then pressing command slash or if you're on Windows control slash
+
+02:27.300 --> 02:37.260
+if I click Run I get three because I'm rounding down the number so let's say it was three point nine
+
+02:37.830 --> 02:46.570
+I click and I get four again I'm rounding the number another math function that's built into python
+
+02:47.290 --> 02:56.560
+is something called a B S and you see right away that I get a B.S. here and a B.S. returns the absolute
+
+02:56.590 --> 03:03.370
+value of the argument and again for those that aren't too familiar with math an absolute value simply
+
+03:03.370 --> 03:05.740
+means well no negative numbers.
+
+03:05.740 --> 03:10.340
+So an absolute value of negative 20 is 20.
+
+03:10.700 --> 03:15.520
+And now because we know about math functions I can start Googling right.
+
+03:15.610 --> 03:21.490
+I can say hey I'm a python programmer and I want to learn about math functions well I can go Python
+
+03:22.450 --> 03:28.860
+3 math functions and look at that right away.
+
+03:28.860 --> 03:33.560
+Google tells me that there is a ton that we can use.
+
+03:33.660 --> 03:35.630
+You don't have to memorize all of these.
+
+03:35.670 --> 03:39.890
+As a matter of fact some of these I've never ever used in my programming career.
+
+03:40.230 --> 03:44.300
+But it's good to know that they have these tools available to you.
+
+03:44.630 --> 03:50.250
+And as a programmer this is something that you'll have to get used to the idea that you won't actually
+
+03:50.250 --> 03:59.760
+memorize every single action that we can take for each data type because some of these are very rarely
+
+03:59.760 --> 04:00.180
+used.
+
+04:00.180 --> 04:02.340
+Some of them you'll never use in your career.
+
+04:02.340 --> 04:05.750
+The key is to understand how to google them how to find them.
+
+04:05.940 --> 04:10.650
+And throughout this course I will show you the important ones that you're going to see over and over
+
+04:10.920 --> 04:17.840
+and over but as a way for you to develop as a programmer at least you know that this is how you look
+
+04:17.840 --> 04:24.980
+for answers and find out that hey there's different math functions that we can use with numbers.
+
+04:24.990 --> 04:25.380
+All right.
+
+04:25.480 --> 04:28.580
+Let's take a break and continue in the next video by.

@@ -1,0 +1,184 @@
+WEBVTT
+
+00:00.450 --> 00:01.790
+Welcome back.
+
+00:01.800 --> 00:09.570
+So up until now we've learned the steps of machine learning and we learned the theory about machine
+
+00:09.570 --> 00:10.290
+learning.
+
+00:10.410 --> 00:16.230
+The last piece of the puzzle is what tools do we use in order to learn about machine learning so that
+
+00:16.230 --> 00:19.740
+we can finally start doing some exercise and projects.
+
+00:19.740 --> 00:28.770
+And this is why python is actually one of the most popular languages when using machine learning because
+
+00:28.920 --> 00:36.900
+Python has such a big community and it's such a easy expressive language as we've learned that it has
+
+00:36.900 --> 00:45.810
+a ton of libraries and modules that really help us do machine learning in a really fast efficient way.
+
+00:45.810 --> 00:50.970
+It's not that Python is just the only language that you can do machine learning in.
+
+00:51.180 --> 00:57.490
+It's that Python has the best tools available currently to do machine learning.
+
+00:57.630 --> 01:00.730
+So what are these tools.
+
+01:00.740 --> 01:09.080
+The first one is no by and none by is definitely a must when it comes to machine learning.
+
+01:09.230 --> 01:16.400
+It's a library that helps us to use lists and arrays and python and specifically multi-dimensional a
+
+01:16.400 --> 01:20.770
+race which are used very very often in machine learning.
+
+01:20.990 --> 01:29.750
+So we're gonna be using not by and then the next one is pandas and pandas is used for what we call data
+
+01:29.960 --> 01:38.240
+analysis pandas gives us an idea of this data frame which allows us the functionality to manipulate
+
+01:38.330 --> 01:42.380
+data in tabular structure with rows and columns.
+
+01:42.410 --> 01:47.690
+That is we get to usually read a CSP file using pandas.
+
+01:47.690 --> 01:55.250
+It's going to extract this data into something called data frame and you can do all these amazing transformations
+
+01:55.760 --> 01:59.090
+and aggregations using these data frames.
+
+01:59.090 --> 02:02.690
+And don't worry I'll show you how to do this in the next video.
+
+02:02.690 --> 02:09.800
+So we have not by for working with lists and race pandas for usually working with something like tabular
+
+02:09.800 --> 02:10.310
+data.
+
+02:10.370 --> 02:16.360
+So CSP files and then we have psyched learn and cycle learn.
+
+02:16.520 --> 02:18.550
+Is that really exciting.
+
+02:18.560 --> 02:26.570
+Create a model part where we import the psychic library and psych it comes pre-built with as you can
+
+02:26.570 --> 02:30.090
+see different algorithms that we can use.
+
+02:30.260 --> 02:31.760
+So we can do classification.
+
+02:31.760 --> 02:40.350
+We can do regressions we can do clustering just by importing this library and then we use something
+
+02:40.350 --> 02:48.420
+like map plot lib now map plot lib again is another library what we call a charting library.
+
+02:48.420 --> 02:57.210
+It allows us to visualize data in a nice way and there's many tools that are built on top of map load
+
+02:57.210 --> 03:04.250
+lib that help us visualize data in any different way that we want.
+
+03:04.250 --> 03:15.380
+Finally the two last crucial tools that we need is first of all Jupiter notebooks if you remember in
+
+03:15.440 --> 03:22.370
+the developer environment section we talked about Anaconda and how Anaconda by installing it gives us
+
+03:22.400 --> 03:29.910
+access to the Jupiter notebooks and Jupiter notebooks are really really useful because up until now
+
+03:29.960 --> 03:35.100
+we've written code and Pi charm or sublime taxed or visual studio code.
+
+03:35.310 --> 03:42.240
+But Jupiter notebooks are really really useful when we do machine learning or data science because as
+
+03:42.240 --> 03:51.030
+we'll see it allows us to step through our code and actually output and keep track of all these things
+
+03:51.030 --> 03:58.140
+that we've been doing and also see visualizations something that you can really do in a text editor
+
+03:58.140 --> 04:05.400
+like Sublime Text or picture so you can step through each data analysis stage and have these notebooks
+
+04:05.520 --> 04:12.600
+visualized and potentially even give to different people in your company so that you can create a story
+
+04:12.630 --> 04:14.220
+and shared with others.
+
+04:14.220 --> 04:23.180
+So it's a notebook that allows us to communicate better and it's a very critical tool that is pretty
+
+04:23.180 --> 04:27.890
+much standard now in the data science and machine learning field.
+
+04:27.890 --> 04:35.570
+And as you can see these are crucial tools in our tool belt that we're going to use throughout the next
+
+04:35.570 --> 04:40.340
+couple of videos but all of them work really really well with Python.
+
+04:40.400 --> 04:45.440
+And it's why Python has become such a standard in the machine learning community.
+
+04:45.470 --> 04:54.500
+The final piece of the puzzle though is that data right when we import the data and clean the data we
+
+04:54.500 --> 05:01.370
+talked about the most difficult part being the actual collection of the data in order for us to learn
+
+05:01.370 --> 05:02.390
+about machine learning.
+
+05:02.450 --> 05:04.990
+We actually need some data to work with.
+
+05:05.720 --> 05:13.940
+Now we're not Facebook or Amazon or Google or Apple but there's another useful tool called Kaggle and
+
+05:14.060 --> 05:21.620
+Kaggle is a community of machine learning experts where you can do competitions you can look at other
+
+05:21.620 --> 05:30.110
+people's Jupiter notebooks but it also has datasets that is we have free access to data to massive amounts
+
+05:30.110 --> 05:37.460
+of data that are openly accessible if you want to learn about crimes in Boston about the PGA Tour about
+
+05:37.460 --> 05:39.240
+gas prices in Brazil.
+
+05:39.620 --> 05:45.050
+You can actually download for free these datasets so that you can play around with machine learning
+
+05:45.470 --> 05:48.380
+and we're going to do just that in the next video.
+
+05:48.380 --> 05:55.220
+So for now make sure if you haven't get your Jupiter notebooks ready again check the developer environment
+
+05:55.220 --> 06:01.430
+section where I show you how to set this up and then create a free account on Kaggle because we're gonna
+
+06:01.460 --> 06:06.920
+start getting our hands dirty with some coding I'll see in the next one by.

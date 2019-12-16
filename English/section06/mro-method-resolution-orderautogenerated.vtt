@@ -1,0 +1,277 @@
+WEBVTT
+
+00:00.300 --> 00:04.500
+Well let's talk about something that sounds quite complicated.
+
+00:04.500 --> 00:10.540
+It's called M R O or method resolution order.
+
+00:10.560 --> 00:12.110
+What does it mean.
+
+00:12.180 --> 00:14.530
+We'll have an example here for you.
+
+00:14.550 --> 00:21.890
+Let's say we have a class of a class of B that inherits from class of a does absolutely nothing.
+
+00:22.170 --> 00:26.710
+And then we also have Class C that inherits again from a.
+
+00:26.970 --> 00:32.030
+And then finally a Class D then inherits from B and C.
+
+00:32.310 --> 00:35.380
+So we have two classes that do absolutely nothing.
+
+00:35.490 --> 00:41.580
+And then a class saying Class C that have the same class object attribute.
+
+00:41.910 --> 00:46.830
+And I've actually drawn out how this relationship looks like.
+
+00:46.830 --> 00:58.560
+You see that D has multiple inheritance from B and C and B and C inherit from a and MRO or method resolution
+
+00:58.680 --> 01:07.800
+order is a rule that Python follows to determine when you run a method which want to run when you have
+
+01:07.800 --> 01:17.000
+such complicated inheritance structure MRO is a rule that says hey do this do this and then do that.
+
+01:17.040 --> 01:19.620
+And that's the method that you should run.
+
+01:19.620 --> 01:20.540
+Let me show you what I mean.
+
+01:21.450 --> 01:25.070
+Let's say I wanted to do print D dot.
+
+01:25.070 --> 01:28.140
+Now what do you think will happen here.
+
+01:28.170 --> 01:36.710
+Let me move this out of the way or comment this out if I run this can you guess what's going to happen.
+
+01:38.020 --> 01:43.630
+If I click Run I get one.
+
+01:43.800 --> 01:45.440
+Is that what you expected.
+
+01:45.450 --> 01:55.810
+Let's look through this D inherits from B and C and then those inherit from me.
+
+01:55.810 --> 02:07.120
+So we get one because the MRO the method resolution order is that it doesn't go d b a instead it goes
+
+02:07.210 --> 02:11.810
+D B C A hmm.
+
+02:12.110 --> 02:19.400
+Let's think about this a little bit more MRO is simply saying what's first in line if things are common
+
+02:19.700 --> 02:24.920
+between classes methods or variables or attributes.
+
+02:24.920 --> 02:26.970
+What should I pick.
+
+02:26.970 --> 02:30.560
+And there's actually a good way for us to check this if I do M R O.
+
+02:31.010 --> 02:33.180
+And then run it like this.
+
+02:34.930 --> 02:39.070
+Cyclic run look at that.
+
+02:39.120 --> 02:45.090
+This is the order or the M R O of this class.
+
+02:45.090 --> 02:54.930
+It says hey I'm going to check D first if you call let's say D dot name or D dot num I'm going to check
+
+02:55.560 --> 02:56.970
+main dot D first.
+
+02:56.970 --> 03:03.600
+So I'm going to check this class then I'm going to check main dot B so I'm going to check B and then
+
+03:03.630 --> 03:04.720
+I'm going to check.
+
+03:04.830 --> 03:14.500
+C and then I'm going to check a and then finally I'm going to check the base class object again and
+
+03:14.500 --> 03:20.390
+we've seen that before it's the base class that all objects in Python inherit from.
+
+03:20.440 --> 03:27.190
+So that's the order that it checks for num if we pass all of these
+
+03:30.840 --> 03:39.360
+and I click Run I'll get in there D has no attribute num because it went through all this path even
+
+03:39.360 --> 03:42.710
+check the base object and never found none.
+
+03:43.440 --> 03:54.660
+If I did something like s t r if I click Run This works because it goes all the way through the inheritance
+
+03:54.660 --> 03:59.300
+chain and then gets to the base object and the base object actually has this.
+
+03:59.340 --> 04:06.070
+So it doesn't air out and yep you can use the Dunder string.
+
+04:06.160 --> 04:13.180
+Now I found a great example here to show you why inheritances can be confusing and why things like MRO
+
+04:13.630 --> 04:20.650
+you might want to avoid or at least be conscious of so let's copy this code
+
+04:24.520 --> 04:31.370
+and let's just remove all of this and we're going to play a little game.
+
+04:31.640 --> 04:37.570
+Now this syntax looks like this.
+
+04:37.570 --> 04:42.480
+So this is the inheritance model of what we just created.
+
+04:42.640 --> 04:45.370
+Looks pretty confusing doesn't it.
+
+04:45.370 --> 04:55.900
+So if we do em here and we check the MRO or method resolution order of an What do you think the order
+
+04:55.900 --> 04:56.850
+is going to be.
+
+04:56.860 --> 05:00.130
+Pause the video here and try to guess what the order will be
+
+05:03.270 --> 05:05.860
+let's do em dot MRO.
+
+05:05.970 --> 05:16.730
+And by the way another way of doing this is to use the Dunder MRO and let's print this.
+
+05:16.790 --> 05:22.560
+All right let's check this so the first thing we have is m all right.
+
+05:22.580 --> 05:29.500
+We check him and then we check B we check B all right.
+
+05:29.510 --> 05:31.430
+And then we check a.
+
+05:31.460 --> 05:37.250
+So we check a here and then we check x x over here.
+
+05:37.250 --> 05:43.190
+Then y then Z then the class object.
+
+05:43.400 --> 05:44.650
+Is that why you guessed.
+
+05:44.750 --> 05:45.590
+Let's look at the code
+
+05:48.460 --> 05:50.190
+why this order.
+
+05:50.410 --> 05:57.460
+Well the order is because of the way that we're passing in the parameters you see B is passed before
+
+05:57.490 --> 06:08.970
+a and c so that means the order of MRO is going to be B then A but hold on after being what was that
+
+06:10.710 --> 06:23.560
+while after B and A We have class X. Why did X come before Z so instead of going to Z let's make this
+
+06:23.560 --> 06:30.730
+a little bit bigger instead of going to while we would have thought would be Z it goes to x then y Lindsay
+
+06:31.000 --> 06:38.490
+then the object this is because of the algorithm that they use for doing MRO which is called depth for
+
+06:38.490 --> 06:39.550
+a search.
+
+06:39.600 --> 06:47.070
+Now this is beyond the scope of the course but as you can see it's quite a bit confusing and as a matter
+
+06:47.070 --> 06:56.140
+of fact Python actually changed the MRO rules from what we had previously in younger versions of python.
+
+06:56.280 --> 07:02.360
+So this is another one of those things that got updated but the reason I'm showing you this is because
+
+07:02.570 --> 07:10.030
+you're never going to get tested on this stuff if you're writing code where the inheritance looks like
+
+07:10.030 --> 07:10.470
+this.
+
+07:10.780 --> 07:16.690
+I argue that you're writing bad code because this is overly complicated.
+
+07:16.780 --> 07:24.650
+We haven't even written any code actually inside of these classes and it's already confusing so MRO
+
+07:24.740 --> 07:29.160
+is there as a way to define what order you're going to inherit in.
+
+07:29.240 --> 07:36.350
+And you can always use the MRO function or Dunder to check this but the reason I brought it here is
+
+07:36.350 --> 07:38.490
+not just trying to confuse you.
+
+07:38.510 --> 07:41.000
+The reason is that it exists.
+
+07:41.000 --> 07:46.760
+However you should not structure your code in this way.
+
+07:46.790 --> 07:48.950
+This doesn't mean that this doesn't happen in the world.
+
+07:49.310 --> 07:55.070
+Yes it does but at least you have a way of checking and maybe debugging your code when you see a problem
+
+07:55.070 --> 07:56.390
+like this.
+
+07:56.390 --> 08:02.210
+I'll leave a resource for you about MRO if you're really curious and you really want to understand how
+
+08:02.210 --> 08:06.620
+this algorithm works and how this order is actually determined.
+
+08:06.620 --> 08:14.780
+But the key takeaway is that this is the way that Python works to determine hey when you call a method
+
+08:15.380 --> 08:18.170
+or an attribute.
+
+08:18.400 --> 08:23.900
+This is how I'm going to look up the hierarchy of inheritances.
+
+08:23.960 --> 08:24.990
+All right.
+
+08:24.990 --> 08:26.130
+If your brain hurts.
+
+08:26.130 --> 08:26.670
+Don't worry.
+
+08:26.760 --> 08:30.000
+So does mine take a break and I'll see you in the next video.
+
+08:30.010 --> 08:30.470
+Bye bye.

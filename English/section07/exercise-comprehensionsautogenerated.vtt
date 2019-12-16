@@ -1,0 +1,166 @@
+WEBVTT
+
+00:01.020 --> 00:02.650
+Welcome back.
+
+00:02.670 --> 00:11.160
+Remember this exercise that we did a few videos ago where we had some list with letters and I wanted
+
+00:11.160 --> 00:17.760
+you to find the duplicates and return them in a list of duplicates in our case.
+
+00:17.760 --> 00:30.040
+We wrote this function with loops that returned B and end because both B and n were duplicates in the
+
+00:30.040 --> 00:32.220
+list.
+
+00:32.230 --> 00:38.630
+Now this is gonna be a tough one using what you learned about comprehension.
+
+00:38.650 --> 00:42.850
+Is there a way to do this neater.
+
+00:42.970 --> 00:48.260
+For example I want you to say duplicates like this.
+
+00:50.550 --> 00:58.160
+And create a comprehension in here that returns this exact same answer.
+
+00:58.310 --> 01:06.060
+B And N so that if I print duplicates just in one line I can find the duplicates.
+
+01:06.290 --> 01:13.520
+You can use set comprehension you can use list comprehension dictionary comprehension whatever you need.
+
+01:13.520 --> 01:14.510
+Give it a go.
+
+01:14.600 --> 01:16.300
+Really think about it.
+
+01:16.340 --> 01:19.340
+You can pause the video because otherwise I'm gonna go with the answer.
+
+01:20.680 --> 01:27.420
+What I'm going to do is let's remove this and just start here.
+
+01:28.950 --> 01:34.310
+Now the first thing I want to do is I want to create a list comprehension.
+
+01:34.350 --> 01:36.450
+What should I do here.
+
+01:36.450 --> 01:44.880
+Well first I know that I'm going to create a variable so let's just call it X and here I'm not going
+
+01:44.880 --> 01:46.350
+to modify any of this.
+
+01:46.380 --> 01:49.050
+I'm just going to keep X the way it is.
+
+01:49.140 --> 02:00.140
+So X is going to represent a B and C then B then D and I'm going to loop over and say for x in the list
+
+02:00.440 --> 02:12.050
+some list I want to only add the items that are repeated so how can I check for that well we can do
+
+02:12.050 --> 02:24.290
+an if statement and in here I'm going to say well some list dot count remember count tells us how many
+
+02:24.290 --> 02:28.940
+times an item appears in the list.
+
+02:28.940 --> 02:36.790
+So we just give it the X parameter so a to let us know Hey how many times that is a appear in the list.
+
+02:36.800 --> 02:38.970
+How many times does B appear in the list.
+
+02:39.020 --> 02:40.820
+How many times the C does B.
+
+02:40.820 --> 02:41.860
+So on and so forth.
+
+02:43.730 --> 02:52.820
+And R if statement should check if the number is greater than 1 right.
+
+02:52.880 --> 02:55.220
+So let's see what happens when I return this.
+
+02:55.220 --> 03:01.640
+If I click run like that I get b b and n all right.
+
+03:01.830 --> 03:07.540
+That's good but I want to only have them once.
+
+03:07.540 --> 03:15.670
+I only need B and I don't need to know that well I don't need a list of four letters.
+
+03:15.870 --> 03:16.920
+So how can we do this.
+
+03:17.460 --> 03:21.870
+We know that we can create a set like this right.
+
+03:21.960 --> 03:29.630
+I can say set and wrap it in here so that the entire list gets turned into a set.
+
+03:29.640 --> 03:33.420
+So we give this to the set and then what happens.
+
+03:35.810 --> 03:38.610
+Oh and this needs to be brackets right.
+
+03:38.620 --> 03:40.480
+Because this is a function.
+
+03:40.600 --> 03:43.900
+So this is the set function that Python gives us.
+
+03:43.900 --> 03:53.220
+So if I run this look at that I have an and b almost done because well this is now a set.
+
+03:53.220 --> 03:55.770
+I asked you to return me a list.
+
+03:55.770 --> 03:57.500
+So what should we do.
+
+03:57.510 --> 04:05.430
+Well we now can create a list of that set if I click Run.
+
+04:05.450 --> 04:06.530
+There we go.
+
+04:06.530 --> 04:10.250
+We have our duplicates all in one line.
+
+04:10.250 --> 04:17.220
+Mind you a very long line and maybe this isn't the most readable code but that's pretty cool.
+
+04:17.270 --> 04:18.610
+Now this is a tough one.
+
+04:18.620 --> 04:20.950
+Maybe you didn't get it the first time around.
+
+04:21.150 --> 04:22.540
+It's OK.
+
+04:22.730 --> 04:25.340
+This is just something that you have to practice.
+
+04:25.340 --> 04:30.020
+You have to do a bunch of problems and you'll get used to eventually as you progress through your career
+
+04:31.060 --> 04:32.610
+but that's it for comprehension.
+
+04:33.640 --> 04:35.180
+I'll see you in the next video.
+
+04:35.470 --> 04:35.680
+By.

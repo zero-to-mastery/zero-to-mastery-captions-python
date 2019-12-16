@@ -1,0 +1,196 @@
+WEBVTT
+
+00:00.650 --> 00:05.570
+So when should you use a while loop and when should you use a for loop.
+
+00:05.570 --> 00:08.810
+And it really depends on the problem you're trying to solve.
+
+00:09.770 --> 00:17.730
+For example in a for loop I could do four item in let's say a list.
+
+00:17.930 --> 00:20.720
+One two three.
+
+00:20.930 --> 00:25.750
+And just looking at this code you know right away that it's going to be looped over three times.
+
+00:25.820 --> 00:26.810
+Right.
+
+00:27.020 --> 00:33.920
+And I could say here print item but he can do this in a while loop as well.
+
+00:34.960 --> 00:38.500
+I can say I equals to zero.
+
+00:38.710 --> 00:51.190
+And then while I is less than let's say the length of the list that is one two three well in that case
+
+00:51.220 --> 01:04.420
+I want you to print I or the item and then increment I by 1 if I run this I see that.
+
+01:04.550 --> 01:11.230
+Well technically here we're incrementing the eye which is the value but let's say we had a list up here.
+
+01:11.360 --> 01:16.700
+So my list and this list will be 1 2 3.
+
+01:16.910 --> 01:25.850
+Well my list can be iterated with a for loop or can be iterated with a while loop and we simply say
+
+01:26.060 --> 01:36.060
+my list at index of I and if I run this I get the same results.
+
+01:37.830 --> 01:46.820
+But which one do you think is better first off while loops are very flexible.
+
+01:46.820 --> 01:52.220
+We can do a lot because we have this conditionals team and we can loop more than three times if we really
+
+01:52.220 --> 01:52.640
+wanted to.
+
+01:52.820 --> 01:57.650
+So in that case while loops are more powerful but for loops are simpler.
+
+01:57.650 --> 01:57.990
+Right.
+
+01:57.990 --> 02:02.610
+Like this code reads it really nicely and really well it makes sense.
+
+02:02.630 --> 02:07.520
+We just want to loop over something that we already know how many times we want to loop over three times
+
+02:07.970 --> 02:08.800
+with a while loop.
+
+02:08.810 --> 02:13.520
+We have to create this variable and we have to make sure we remember to increment the variable so we
+
+02:13.520 --> 02:19.880
+don't get an infinite loop so with a while loop you need to make sure we remember to halt the loop at
+
+02:19.880 --> 02:21.200
+some point.
+
+02:21.350 --> 02:32.180
+So my rule is usually this for simple loops or iterating over editable objects for loops are great but
+
+02:32.300 --> 02:38.060
+let's say you're not sure how many times you want to loop over something you're not really sure how
+
+02:38.060 --> 02:41.800
+long it's going to take for looping.
+
+02:42.500 --> 02:46.960
+So you want to say while something is true just keep looping.
+
+02:47.070 --> 02:53.460
+For example let's say we're trying to go through an email list that we've collected on a Web site and
+
+02:53.460 --> 02:57.530
+for each email list we want to send an email.
+
+02:57.540 --> 03:04.050
+Well while the list is still there let's just keep sending emails.
+
+03:04.110 --> 03:11.310
+There are many many cases but one of the most useful ways to use the while loop is like this.
+
+03:13.860 --> 03:27.050
+It's to say while true do something and make sure that at the end we break hold on.
+
+03:27.190 --> 03:28.570
+What's happening here.
+
+03:29.230 --> 03:32.490
+I'm saying while true wouldn't that create an infinite loop.
+
+03:32.500 --> 03:37.810
+I mean true is always going to be true and you'd be right if you noticed that.
+
+03:37.810 --> 03:40.020
+But again we have a break statement here.
+
+03:40.030 --> 03:48.780
+So at the end after rerun line 3 it's going to break but now we can do something powerful like input
+
+03:48.900 --> 03:49.570
+here.
+
+03:49.680 --> 03:56.280
+And if you remember an input is going to ask us for a prompt to enter something so I can say hey input
+
+03:56.850 --> 04:05.590
+say something and if I click run it's going to say Hey say something you know let's add semicolon here
+
+04:05.620 --> 04:10.100
+or call in here and illustrate that again and look at that it's saying Say something.
+
+04:10.120 --> 04:11.590
+I'm on line 3 right now.
+
+04:11.590 --> 04:13.090
+So I'm going to say hi
+
+04:16.300 --> 04:21.170
+and just see that we just broke out of the loop.
+
+04:21.360 --> 04:22.650
+It only asked me once.
+
+04:22.650 --> 04:26.760
+Even though this was true as soon as we got to line four I was done.
+
+04:26.760 --> 04:34.630
+But what if I remove this and I click run if I say something I say hi.
+
+04:34.720 --> 04:36.070
+And then in asking me again.
+
+04:36.250 --> 04:40.330
+Hi hi I'm telling Hi.
+
+04:40.330 --> 04:42.690
+And it keeps asking me asking me asked me.
+
+04:42.820 --> 04:45.230
+And we have an infinite loop.
+
+04:45.490 --> 04:49.900
+But the interesting thing here is that we can use conditional logic right.
+
+04:49.900 --> 05:02.280
+What if we said response here and collect whatever the responses and say if the response is equal to
+
+05:02.460 --> 05:12.860
+let's say by then I'm going to break so that if I run this again I say hi.
+
+05:13.100 --> 05:17.880
+Keeps asking me and you know what I'm getting annoyed with you machine I'm going to say bye.
+
+05:18.110 --> 05:21.290
+It's going to exit it out for me.
+
+05:21.350 --> 05:23.600
+How cool is that.
+
+05:23.600 --> 05:30.620
+So while loops are extremely useful for tasks like this where looping can happen for a long time you
+
+05:30.620 --> 05:32.860
+don't know how many times it's going to happen.
+
+05:33.020 --> 05:38.060
+But this is something that you're just going to have to get used to with practice eventually.
+
+05:38.170 --> 05:44.300
+And I promise you this happens where you'll figure out when to use while when to use for loop but at
+
+05:44.300 --> 05:47.490
+the end of the day use whatever solves your problem.
+
+05:47.690 --> 05:49.340
+I'll see in the next one by.

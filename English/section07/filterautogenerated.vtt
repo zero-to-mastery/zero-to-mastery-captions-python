@@ -1,0 +1,154 @@
+WEBVTT
+
+00:00.590 --> 00:01.890
+Welcome back.
+
+00:01.910 --> 00:08.130
+Let's talk about filter now based on the name you should guess what it does.
+
+00:08.130 --> 00:16.020
+It filters things for us so with map we always got the same number of items back right.
+
+00:16.020 --> 00:23.480
+We have three items and we got back three items we just mapped over each item with filter.
+
+00:23.610 --> 00:26.840
+We can sometimes receive less than what we gave it.
+
+00:26.870 --> 00:35.480
+We're filtering some of our results so let's create a new function instead of multiply by two.
+
+00:35.500 --> 00:40.220
+I want to create a function in this function.
+
+00:40.220 --> 00:42.390
+What are we going to do to the items.
+
+00:42.500 --> 00:52.580
+Let's say if items are check if odd so we're going to say hey are these numbers odd and only return
+
+00:52.580 --> 00:53.900
+the odd numbers.
+
+00:53.900 --> 01:03.470
+So check what is going to receive an item and this item is going to be acted upon.
+
+01:03.630 --> 01:05.790
+And once again we have to return something.
+
+01:05.790 --> 01:08.610
+What are we going to return.
+
+01:08.610 --> 01:18.300
+Well the filter function is going to try and receive a true and false value or a boolean value whether
+
+01:18.300 --> 01:21.560
+it should be filtered or it should not.
+
+01:21.570 --> 01:31.470
+So if we want to check if a number is on well we can say item modulo 2 because modulo 2 is going to
+
+01:31.470 --> 01:32.930
+divide the number by two.
+
+01:33.120 --> 01:39.610
+And if it equals zero then it's even right.
+
+01:39.630 --> 01:42.870
+So I can say doesn't equal zero.
+
+01:42.870 --> 01:47.170
+So if the remainder doesn't equal zero it's going to be odd.
+
+01:47.370 --> 01:50.310
+And we just simply return this.
+
+01:50.570 --> 01:57.710
+Again this is going to evaluate into a boolean expression and based on the boolean expression filter
+
+01:57.710 --> 02:03.980
+is going to say if it's true I'm going to keep it in the list if it's not I'm going to remove it or
+
+02:04.220 --> 02:06.550
+not add it to the new list.
+
+02:06.650 --> 02:09.190
+So let's check this out instead of map.
+
+02:09.200 --> 02:10.630
+Let's do a filter.
+
+02:10.880 --> 02:17.310
+And here we'll do check out or you know what I don't like this name.
+
+02:17.340 --> 02:19.920
+Let's do only odd
+
+02:24.560 --> 02:34.560
+if I run this look at that I've filtered and remove the too because that's an even number again.
+
+02:34.610 --> 02:41.390
+Notice here how I'm not calling the function because filter accepts a function or what we call a function
+
+02:41.390 --> 02:47.690
+signature that is hey just tell me where I can find what memory space I should go to for what action
+
+02:47.690 --> 02:48.560
+to take.
+
+02:48.740 --> 02:55.200
+And it's going to say hey give me the data and I'm going to go and run this function on each item.
+
+02:55.730 --> 03:03.420
+So when we go to one it's going to run this function with one as the argument one divided by two.
+
+03:03.430 --> 03:06.160
+Well that definitely doesn't give us a remainder of 0.
+
+03:06.220 --> 03:08.110
+So that's going to return true.
+
+03:08.140 --> 03:14.740
+And that means I'm going to add it to the new list that we create when we get to 2 though because this
+
+03:14.800 --> 03:22.250
+is going to return false it's not going to add it to the list again.
+
+03:22.390 --> 03:29.650
+If let's say we have a list of users in that case we might want to filter out based on user starting
+
+03:29.650 --> 03:40.220
+with the name A we can use the filter function to filter through all the user names and only have a
+
+03:40.220 --> 03:46.970
+new list with the user names with letters starting with a another very useful function.
+
+03:46.970 --> 03:49.280
+And as you can see we kept everything pure.
+
+03:49.370 --> 03:56.040
+It creates a new list for us it doesn't modify the original list so we're keeping that functional paradigm
+
+03:56.190 --> 03:57.330
+in mind.
+
+03:57.390 --> 04:03.000
+And once again the beauty with both map and filter is look how simple the functions become.
+
+04:03.000 --> 04:05.100
+Everything is just nice and simple.
+
+04:05.100 --> 04:09.810
+And mind you they can get a little bit more complicated about all we need to know is Hey what should
+
+04:09.810 --> 04:13.560
+I do to the item and why should I return.
+
+04:13.560 --> 04:18.270
+That's the only thing that they're concerned about instead of having these massive massive functions
+
+04:18.270 --> 04:20.550
+that tried to do everything.
+
+04:20.570 --> 04:22.850
+All right let's talk about zip next.

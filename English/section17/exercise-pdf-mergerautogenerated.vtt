@@ -1,0 +1,154 @@
+WEBVTT
+
+00:01.060 --> 00:01.940
+Welcome back.
+
+00:01.960 --> 00:08.830
+It's time for us to do something more useful and what I want to do is actually combine PDX so I have
+
+00:08.830 --> 00:10.120
+this dummy.
+
+00:10.330 --> 00:18.130
+And then I also have this two page PDA and maybe we have a scenario where we want to combine PD FS to
+
+00:18.130 --> 00:22.430
+form just one super PDA how can we do that.
+
+00:22.570 --> 00:25.990
+Well let's create a python program.
+
+00:26.110 --> 00:32.560
+What I want to do is I want to be able to call Python 3 PD F and then give it some arguments maybe to
+
+00:32.560 --> 00:44.050
+be able to say dummy dot PD F and then combining it with two page dot PD f and you know what let's combine
+
+00:44.080 --> 00:50.050
+tilt dot PD F as well and we can just keep adding and adding and adding different PD FS and combining
+
+00:50.050 --> 00:50.560
+them.
+
+00:50.560 --> 00:51.320
+Wouldn't that be cool.
+
+00:51.940 --> 00:54.070
+Well let's do that.
+
+00:54.160 --> 01:01.790
+The first thing I'm going to do is import the CIS module so that we can get the arguments.
+
+01:01.840 --> 01:10.080
+So I'm going to say inputs is going to equal CIS dot arc the and I'm going to do a little trick here.
+
+01:10.170 --> 01:19.080
+I'm going to say 1 and then call and remember this is going to grab all the arguments besides the first
+
+01:19.080 --> 01:26.920
+one which is our python file but it's going to grab all of these into a list called inputs so we can
+
+01:26.920 --> 01:30.270
+include as many PDX as we want from here.
+
+01:30.310 --> 01:38.470
+Let's create a function just to have our code be clean so I'm going to remove this and call a function
+
+01:38.660 --> 01:48.040
+PD f combining this PD off combined is going to take a PDA off the list which is going to be our inputs.
+
+01:48.490 --> 01:51.030
+And what should we do here.
+
+01:51.680 --> 01:54.590
+The first thing I want to do is just make sure my code works.
+
+01:54.590 --> 02:06.760
+So I'm going to do a for loop and say PD F in PD F list and we're just going to print the PD F so again
+
+02:06.790 --> 02:08.090
+just to test our code.
+
+02:08.140 --> 02:09.210
+Let's see if this works.
+
+02:09.220 --> 02:16.040
+I'm going to run this code well and we have to call our function.
+
+02:16.040 --> 02:23.400
+So it's a PDA f combined air and just give it the inputs so I'm going to run this.
+
+02:23.740 --> 02:26.060
+And there we go our three PD Fs.
+
+02:26.080 --> 02:26.730
+That's great.
+
+02:26.920 --> 02:34.980
+But we want to actually combine these so the way to do this is we actually have a merger object with
+
+02:34.980 --> 02:36.610
+P Y PD F.
+
+02:36.810 --> 02:51.940
+So this merger object we can say P Y PD f dot PD f file merger so that gives us a merger object and
+
+02:51.940 --> 02:55.780
+the cool thing is that this is gonna be really simple.
+
+02:55.780 --> 03:03.550
+All we have to do here is within our loop say merger dot append
+
+03:06.940 --> 03:12.940
+so this just tells us hey merge everything into this merger object the PDL said we're going to loop
+
+03:12.940 --> 03:20.530
+through and at the end of the loop this merger is going to have all of these three PBS and all we need
+
+03:20.530 --> 03:36.730
+to do is say merger dot right and just write the new PD F as well let's call it Super dot PD F so let's
+
+03:36.730 --> 03:40.930
+see if this works I'm going to run.
+
+03:41.070 --> 03:44.830
+And did you see that we now have a super PDA.
+
+03:45.540 --> 03:46.560
+If I open this
+
+03:51.920 --> 03:57.740
+all right we have the dummy PDA F and we see over here we have four pages we have dummy PDA f we have
+
+03:57.860 --> 04:06.340
+the simple PDA file that has two pages and we have our rotated dummy PDA file.
+
+04:06.380 --> 04:15.520
+How cool is that and notice here that we didn't have to even do the with open as file and then actually
+
+04:15.520 --> 04:22.090
+write we can just use the merger data right method to write our file.
+
+04:22.090 --> 04:29.090
+So we have a PDA of combining if we're working on a book for example and maybe we have different people
+
+04:29.090 --> 04:34.800
+working on different chapters I can just run it through this function now and combine my entire PDA
+
+04:34.800 --> 04:40.120
+off into one very very cool or at least I think it's cool.
+
+04:40.130 --> 04:42.810
+I hope you find this interesting as well.
+
+04:43.040 --> 04:44.120
+But you know what.
+
+04:44.210 --> 04:47.360
+Let's go even higher in the next video.
+
+04:47.360 --> 04:51.650
+I want to do something that's actually I think quite useful.
+
+04:51.650 --> 04:54.320
+So let's take a break and I'll see you in the next one.

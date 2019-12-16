@@ -1,0 +1,55 @@
+WEBVTT
+
+00:00.740 --> 00:07.390
+You've just learned about image processing and image processing is similar to video processing.
+
+00:07.430 --> 00:15.640
+They're both essentially analyzing a frame of an image and doing something with that data.
+
+00:15.650 --> 00:17.790
+So where do you go from here.
+
+00:17.840 --> 00:23.720
+Well we can use libraries like pillow which are really great for simple images or you can use something
+
+00:23.720 --> 00:29.250
+like open CV and open CV is a very powerful library.
+
+00:29.300 --> 00:35.680
+As a matter of fact open CV is used with machine learning like self-driving car.
+
+00:35.780 --> 00:41.090
+You can see over here somebody built an open CV Python neural network autonomous RC car.
+
+00:41.240 --> 00:42.020
+Yes.
+
+00:42.140 --> 00:49.430
+What we learned although is just scratching the surface leads us to learn about autonomous driving and
+
+00:49.430 --> 00:50.490
+machine learning.
+
+00:50.510 --> 00:53.020
+Now we have a section on machine learning in this course.
+
+00:53.030 --> 00:54.530
+So we're going to dive deeper into that.
+
+00:55.010 --> 01:02.300
+But with this newfound knowledge you can even explore libraries like open CV if you're interested in
+
+01:02.300 --> 01:10.940
+this topic to learn how to analyze images and how to maybe use machine learning to do exciting things
+
+01:11.150 --> 01:17.600
+in the field of this I'm leaving up to you to explore on your own.
+
+01:17.600 --> 01:22.830
+Again the beauty with python is that you can go in so many directions throughout your career.
+
+01:23.060 --> 01:27.170
+But for now we still have lots more to learn so I'll see you in the next one.
+
+01:27.170 --> 01:27.560
+Bye bye.

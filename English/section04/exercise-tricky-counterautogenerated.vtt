@@ -1,0 +1,109 @@
+WEBVTT
+
+00:00.830 --> 00:01.840
+Welcome back.
+
+00:01.850 --> 00:02.370
+Let's try it.
+
+00:02.370 --> 00:04.490
+A simple exercise.
+
+00:04.490 --> 00:13.730
+I want you to build a simple counter and this counter is going to count the items in our list.
+
+00:13.730 --> 00:14.720
+What does that mean.
+
+00:14.720 --> 00:22.210
+Well let's say I have a list and this is a reserved word.
+
+00:22.220 --> 00:29.260
+Remember it's an actual word in Python so let's name it my list as a variable.
+
+00:29.380 --> 00:42.600
+And this list has 1 2 3 4 5 6 7 8 9 what I want you to do is using looping to loop over this editable
+
+00:42.750 --> 00:49.030
+list and sum up the total of the list pauses the video if you need to.
+
+00:49.120 --> 00:59.460
+Otherwise let's see how we can do that what I'll do is create a counter variable that will equal to
+
+00:59.460 --> 01:15.810
+zero to start off with and then I'll say for item in my list I'm going to counter equals counter plus
+
+01:16.470 --> 01:24.360
+item and then at the end I'm going to print counter.
+
+01:24.560 --> 01:32.840
+Let's see if this works I'm going to hit run and I get fifty five which if my quick math is right should
+
+01:32.840 --> 01:34.490
+be should be correct.
+
+01:34.550 --> 01:39.850
+Now when doing this exercise you may have gotten tripped up a bit.
+
+01:40.040 --> 01:41.610
+So let's think about this.
+
+01:41.680 --> 01:48.860
+Some of you may have made an error where you did the print here but if you did the print here you remember
+
+01:48.860 --> 01:55.790
+that it's going to get looped over it's part of this code block because of the indentation and it's
+
+01:55.790 --> 02:03.880
+going to print as many times as there are items so you have to make sure that the indentation is like
+
+02:03.880 --> 02:07.110
+this so that you get the total.
+
+02:07.130 --> 02:15.410
+The other thing that you noticed is that in order for you to keep a counter or a total of all these
+
+02:15.470 --> 02:22.850
+items you had to make sure that you had a variable outside of the loop because the loop runs the code
+
+02:22.970 --> 02:26.630
+over and over and you needed something on the outside.
+
+02:26.690 --> 02:35.510
+That doesn't change because if you moved the counter to zero here well every time the counter would
+
+02:35.510 --> 02:37.150
+be reset to zero.
+
+02:37.220 --> 02:41.030
+So that by the time we get to 10 counter would be zero.
+
+02:41.030 --> 02:44.070
+So you get zero plus 10 which equals 10.
+
+02:44.270 --> 02:54.380
+And then you'd get well 10 so you have to be careful here that the indentation is an indication of us
+
+02:54.500 --> 02:59.930
+looping and when you loop something and you want to keep a tally or total of something that you have
+
+02:59.930 --> 03:07.490
+these issues of making sure that what you want to loop over is inside of this code block but why you
+
+03:07.490 --> 03:12.590
+don't want to if you want to have some sort of information that's outside of this loop that you keep
+
+03:12.590 --> 03:16.970
+it like this if you weren't tricked by this question.
+
+03:17.020 --> 03:19.330
+Good job if you were.
+
+03:19.330 --> 03:21.230
+Don't worry it's all part of learning.
+
+03:21.280 --> 03:22.550
+I'll see in the next one.
+
+03:22.780 --> 03:23.020
+Bob.

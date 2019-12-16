@@ -1,0 +1,76 @@
+WEBVTT
+
+00:00.800 --> 00:01.920
+Welcome back.
+
+00:02.030 --> 00:07.610
+One of the common patterns when working with files is to actually put them in a try except block.
+
+00:08.090 --> 00:20.200
+So in here we can say try and actually put them like this and try out to see if the file exists so we
+
+00:20.200 --> 00:33.940
+can say except and let's say file not found error which we've seen before and here I can say as air
+
+00:34.750 --> 00:40.600
+and inside we'll say print file does not exist.
+
+00:41.570 --> 00:48.560
+So that now if I run this and remember in our current directory we don't have sad dot text.
+
+00:48.560 --> 00:53.990
+If I run this I get an error file does not exist.
+
+00:53.990 --> 00:56.470
+We can even raise this error if we wanted to.
+
+00:56.470 --> 00:59.470
+So we can say raise error.
+
+00:59.550 --> 01:01.530
+So now it works as expected.
+
+01:01.620 --> 01:07.010
+I'll get filed does not exist and then give a file not found error.
+
+01:07.020 --> 01:11.810
+So this is a common way to work with files to handle different errors.
+
+01:11.820 --> 01:24.960
+Another common one with files is this idea of an I O error and an IO error usually happens when the
+
+01:24.990 --> 01:32.040
+computer or the machine you're on has some issue reading or writing or doing any sort of IO operation
+
+01:33.270 --> 01:43.070
+so you can have something like Hyo error in here and raise that error if you want again.
+
+01:43.080 --> 01:54.500
+If I run this file not found error if for some reason I give it a weird mode to do I get an unsupported
+
+01:54.520 --> 01:55.410
+operation error.
+
+01:55.420 --> 02:03.490
+The options are endless but I hope by now you have an idea of how to do file IO but let's do a fun exercise
+
+02:03.490 --> 02:09.430
+because up until now we haven't really done anything exciting we just read a bunch of text from a file
+
+02:09.430 --> 02:13.330
+and that was it nothing that creator.
+
+02:13.330 --> 02:13.830
+Right.
+
+02:13.870 --> 02:20.650
+So let's do something fun in the next video we're going to try and build a translator.
+
+02:20.650 --> 02:21.070
+That's right.
+
+02:21.610 --> 02:23.080
+I'll see in the next video.
+
+02:23.160 --> 02:23.330
+Bob.

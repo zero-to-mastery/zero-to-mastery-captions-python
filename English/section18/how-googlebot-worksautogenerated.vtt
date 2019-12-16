@@ -1,0 +1,172 @@
+WEBVTT
+
+00:00.570 --> 00:01.150
+Hey there.
+
+00:01.240 --> 00:07.840
+I want to add a quick note about what we just saw with Air being beat and how search Web sites like
+
+00:07.840 --> 00:12.020
+being bi do and Google actually work.
+
+00:12.090 --> 00:20.790
+Now you may have noticed that the user agent Google bought is well what Google uses to index Web sites.
+
+00:20.790 --> 00:21.480
+What does that mean.
+
+00:22.290 --> 00:26.950
+Well Google the way it works remember is a search engine.
+
+00:27.000 --> 00:34.340
+What it does is it tries to figure out all the Web sites on the web and index them.
+
+00:34.350 --> 00:44.400
+That is create a essentially a database of all these web pages so that when I google soup recipes google
+
+00:44.400 --> 00:49.240
+gives me a Web site that has soup recipes now.
+
+00:49.250 --> 00:53.390
+How does it know what Web sites have soup recipes.
+
+00:53.390 --> 00:55.860
+Well it uses this Google Bob.
+
+00:56.240 --> 00:58.730
+And this is how Google got started.
+
+00:58.730 --> 01:07.130
+What they did was they had a crawler that is a program that crawled Web sites and read Web sites kind
+
+01:07.130 --> 01:12.130
+of like we're about to do with web scraping to understand what the Web site is about.
+
+01:12.260 --> 01:19.940
+If the Web site mentioned the word soup recipes or had different tacks to relate it to soup recipes.
+
+01:20.240 --> 01:24.500
+Well Google board is going to say this Web site is about soup recipes.
+
+01:24.500 --> 01:26.060
+So when Andre's searches.
+
+01:26.060 --> 01:34.650
+Soup recipes I know that these Web sites are the ones that we want to show in and this is what Google
+
+01:34.650 --> 01:42.570
+and being and bi do all do they have their own bots and they're constantly crawling Web sites to see
+
+01:42.660 --> 01:46.550
+what is the most relevant Web site to give to a user.
+
+01:46.560 --> 01:53.610
+So everybody here is saying Hey Google but when you come crawl my web site don't crawl any of these
+
+01:53.610 --> 01:56.050
+things because I don't want you to.
+
+01:56.100 --> 01:59.630
+But anything else that's not here you can crawl.
+
+01:59.790 --> 02:06.870
+Now if you actually look through here this is not everything on Air B and B because Air B and B wants
+
+02:06.870 --> 02:09.060
+Google to crawl the Web site.
+
+02:09.060 --> 02:09.590
+Right.
+
+02:09.600 --> 02:17.310
+If I search for vacation homes in Costa Rica Air B and B is interested for Google to post an Air B and
+
+02:17.310 --> 02:20.200
+B link to the top of the search.
+
+02:20.310 --> 02:28.230
+So what they disallow here is mostly user specific thing that Google shouldn't have access to like maybe
+
+02:28.260 --> 02:37.580
+reservations or payments but there's a lot of other endpoints that are actually allowed for Google bought
+
+02:37.850 --> 02:39.300
+to search.
+
+02:39.350 --> 02:46.550
+For example Google bought is most likely allowed to look at all the houses available in Costa Rica and
+
+02:46.550 --> 02:51.260
+actually ranked them so that when I type in Costa Rica house rental.
+
+02:51.470 --> 02:59.420
+Well Google bought is going to say hey everybody has a link to Costa Rica houses will give that to this
+
+02:59.420 --> 03:00.050
+user.
+
+03:00.050 --> 03:03.200
+So anything that's not in this list.
+
+03:03.200 --> 03:07.890
+Well we're allowed to use one tricky thing is that we see this allow here.
+
+03:08.120 --> 03:15.380
+What this allow means it says hey calendar here is actually a disallowed endpoint.
+
+03:15.440 --> 03:18.740
+However we allow inside of the calendar.
+
+03:18.740 --> 03:22.390
+This I call folder you can access that one only.
+
+03:22.550 --> 03:24.980
+But if it's not mentioned here.
+
+03:24.980 --> 03:29.060
+So if anything in here on this list is not mentioned.
+
+03:29.060 --> 03:30.310
+That is a lot.
+
+03:30.320 --> 03:34.440
+So for example Air B and B dot slash that's allowed.
+
+03:34.460 --> 03:40.040
+Because that wasn't on the list if I maybe click on experiences.
+
+03:40.250 --> 03:47.850
+This is allowed because this dash S slash S slash experiences was not on the list.
+
+03:47.900 --> 03:55.130
+So a Web site either has a robot stuck text file because maybe it doesn't want specific things scroll
+
+03:55.820 --> 04:03.470
+or if it doesn't have a robust text file or just leaves it empty it means hey I don't care.
+
+04:03.620 --> 04:05.410
+Google you can rank my Web site.
+
+04:05.420 --> 04:06.740
+You can crawl my Web site.
+
+04:06.770 --> 04:07.640
+That's good too.
+
+04:07.670 --> 04:11.210
+And that's why I Air B and B had different information here.
+
+04:11.240 --> 04:16.610
+We had specifically for Google board for being bought for all these search engines but also for everybody
+
+04:16.610 --> 04:23.600
+else maybe programmers like us that want to scrape the Web site there you know we secretly learn how
+
+04:23.810 --> 04:26.540
+Google and other search engines work.
+
+04:26.540 --> 04:27.620
+Pretty cool right.
+
+04:27.620 --> 04:29.480
+All right let's get back to the topic at hand.

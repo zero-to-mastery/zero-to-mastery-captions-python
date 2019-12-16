@@ -1,0 +1,118 @@
+WEBVTT
+
+00:00.620 --> 00:06.000
+Welcome back let's talk about a important term when it comes to programming.
+
+00:06.270 --> 00:11.530
+And that is operator precedents.
+
+00:11.550 --> 00:13.030
+Now what does that mean.
+
+00:13.230 --> 00:17.540
+Again we're using our knowledge from math class.
+
+00:17.610 --> 00:28.530
+It's the idea that if I do 20 plus three times four it means that different operators have precedence
+
+00:28.590 --> 00:30.560
+over different ones.
+
+00:30.620 --> 00:40.600
+That is we multiply this first equals to twelve and then 20 gets added to twelve because the Python
+
+00:40.600 --> 00:44.880
+interpreter is going to follow a basic set of rules.
+
+00:45.000 --> 00:59.130
+For example if I do 20 minus three here and let's print this out click Run I get eight because three
+
+00:59.130 --> 01:06.260
+times four gets evaluated first which equals to 12 and then subtracted from 20.
+
+01:06.300 --> 01:14.340
+It's not that this goes first and then we multiply 17 by four and this operator precedents shouldn't
+
+01:14.340 --> 01:14.880
+be new.
+
+01:14.880 --> 01:15.210
+Right.
+
+01:15.210 --> 01:22.620
+If you've taken any sort of math class you understand that this is how well math works and this works
+
+01:22.620 --> 01:24.740
+the same in all programming languages.
+
+01:24.780 --> 01:28.390
+So the order is this first.
+
+01:28.590 --> 01:30.270
+We follow the brackets.
+
+01:30.270 --> 01:33.600
+So whatever is wrapped in a bracket we do first.
+
+01:33.600 --> 01:38.190
+The second is we do the power of.
+
+01:38.190 --> 01:43.410
+So whatever is done in the power of will be after parentheses.
+
+01:43.560 --> 01:55.970
+For example if I do parentheses here and then to the power of let's say two or less two plus two to
+
+01:55.970 --> 01:57.550
+the power of two.
+
+01:57.590 --> 02:05.950
+Well the first operation that will happen is 20 minus three because that's the first precedence.
+
+02:06.140 --> 02:13.890
+And then we do two to the power of two because that's the next precedence and then only after we do
+
+02:13.890 --> 02:16.170
+that we add these two together.
+
+02:16.170 --> 02:21.560
+If I click Run I get twenty one which again makes sense.
+
+02:21.580 --> 02:35.170
+Seventeen plus four after the power of we have the multiplication and division and then finally the
+
+02:35.170 --> 02:40.040
+last precedence is addition and subtraction.
+
+02:40.050 --> 02:42.660
+Now this isn't going to be a math class.
+
+02:42.690 --> 02:44.560
+Some people really love math.
+
+02:44.580 --> 02:46.570
+Some people really don't.
+
+02:46.710 --> 02:51.780
+But I want to just give you this basic understanding of operator precedence.
+
+02:51.810 --> 02:52.590
+When you see it.
+
+02:52.620 --> 02:55.400
+We'll do some exercises here to get accustomed to it.
+
+02:55.470 --> 02:59.880
+But trust me this is as mathy as we're gonna get in this course.
+
+02:59.880 --> 03:03.300
+The math part of the course is well just here.
+
+03:03.450 --> 03:07.900
+It's gonna get a lot more interesting as we learn about different data types.
+
+03:08.070 --> 03:09.390
+I'll see in the next one.
+
+03:09.420 --> 03:09.830
+Bye bye.

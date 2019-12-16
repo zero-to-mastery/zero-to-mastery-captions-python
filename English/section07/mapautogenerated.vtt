@@ -1,0 +1,181 @@
+WEBVTT
+
+00:00.420 --> 00:01.530
+Welcome back.
+
+00:01.560 --> 00:08.940
+I want to talk to you about some useful functions that we get that actually allow us to think in a functional
+
+00:08.940 --> 00:20.610
+programming paradigm the name of these functions are map filter zip and reduce.
+
+00:21.700 --> 00:31.320
+And these are very very useful very common functions that you write a lot when you're a python program.
+
+00:31.390 --> 00:39.690
+So let's explore them first one we're going to start with map and map actually allows us to simplify
+
+00:39.710 --> 00:48.380
+the code that we have here of multiply by two you see with map I have it available as a function as
+
+00:48.380 --> 00:56.210
+a built in function and we see here that we give the first parameter a function and then the second
+
+00:56.210 --> 01:03.840
+parameter is an honorable a good way to think about it is we want to take some sort of action here.
+
+01:03.860 --> 01:08.740
+So a function and then the data that we want to take action upon.
+
+01:08.750 --> 01:12.640
+So let's say in our case 1 2 3.
+
+01:12.680 --> 01:18.160
+So what action do we want to take on 1 2 3.
+
+01:18.170 --> 01:21.190
+Well we want to multiply by two.
+
+01:21.230 --> 01:28.170
+So let's say multiply.
+
+01:28.250 --> 01:32.260
+Now I have to move this down because we have to define the function first
+
+01:36.870 --> 01:39.030
+and run it like this.
+
+01:39.030 --> 01:41.610
+So instead of printing this let's do
+
+01:46.950 --> 01:58.770
+like this if I run it I get a map object at this memory location and map automatically gives us this
+
+01:58.860 --> 02:08.310
+object that it has created in this memory so in order for us to actually view it we have to turn it
+
+02:08.400 --> 02:18.500
+into a list like this so if I run this it says on line for into object is not ignorable.
+
+02:18.690 --> 02:28.870
+Well it's because with map we no longer need to do this creation of a list then appending to a list.
+
+02:29.160 --> 02:37.710
+You see the neat thing about Knapp is that I give it some data and then this data gets acted upon by
+
+02:37.710 --> 02:49.000
+this and all we need to do with the map function is to have a function that returns this part item times
+
+02:49.140 --> 02:49.480
+2.
+
+02:50.050 --> 03:01.730
+So instead of having all of this code all we need to do is say return item times to so let's change
+
+03:01.730 --> 03:06.960
+this parameter to item and look at the code a little bit more in detail.
+
+03:07.850 --> 03:13.850
+So with the map I say hey I want you to run the function multiply by 2.
+
+03:13.850 --> 03:19.610
+Notice here that I don't even have the brackets because I don't need to call it map does it for me.
+
+03:19.700 --> 03:21.920
+Map just says hey just give me the function.
+
+03:21.950 --> 03:23.090
+I'll take care of the rest.
+
+03:23.900 --> 03:25.830
+So I'm not calling the function here.
+
+03:26.030 --> 03:28.810
+The map is going to call the function for me.
+
+03:28.850 --> 03:36.800
+I'm just saying hey when I call map like this I want you to use this function at this memory address
+
+03:37.490 --> 03:39.280
+and use this data.
+
+03:39.290 --> 03:42.340
+Remember our functional programming paradigm.
+
+03:42.500 --> 03:46.160
+We have data that gets acted upon.
+
+03:46.160 --> 03:48.790
+So we separate those two out.
+
+03:48.850 --> 03:57.760
+Now this function is going to take each one of the items in our era bowls in our case first time around
+
+03:57.850 --> 04:05.910
+item will be one then two then three and then all we need to do is to return what effect we want to
+
+04:05.910 --> 04:09.190
+have on that item in our case it's two.
+
+04:09.190 --> 04:17.650
+So by doing this map automatically runs this function for us and loops through all the items in the
+
+04:17.650 --> 04:24.530
+interval and returns for us a new map object that we're going to convert into a list.
+
+04:24.700 --> 04:30.880
+If I run this I get 2 4 6.
+
+04:30.910 --> 04:44.550
+Now here's the neat part if I do let's say my list and I say 1 2 3 and I change my list over here like
+
+04:44.550 --> 04:45.350
+this.
+
+04:45.510 --> 04:55.730
+And at the end also print my list if I click run you'll see that my list hasn't changed.
+
+04:55.810 --> 05:02.060
+Remember a pure function is a function that doesn't affect the outside world.
+
+05:02.330 --> 05:15.510
+And this way map allows us to create a whole new list that doesn't modify my list so my list is immutable
+
+05:15.510 --> 05:15.780
+right.
+
+05:15.810 --> 05:23.880
+We don't change it and all it does is not function takes care of it and returns a new list for us but
+
+05:23.880 --> 05:25.640
+we don't affect the outside world.
+
+05:25.680 --> 05:29.200
+There's no side effects in this function.
+
+05:29.310 --> 05:37.920
+We're simply just multiplying item to item by two but creating a new list out of this and every time
+
+05:37.920 --> 05:47.490
+we give it the same input it's going to result in the same output very very cool and map is extremely
+
+05:47.490 --> 05:54.330
+useful because anytime we have something that we can iterate over and we want to change let's say we
+
+05:54.330 --> 06:04.170
+have emails or usernames and we need to update the user names to let's say a b all capital letters in
+
+06:04.170 --> 06:11.970
+that case we can iterate and using the math function change it all the user names in our list to let's
+
+06:11.970 --> 06:18.270
+say capital letters map is going to be one of those functions that you use a lot in your programming
+
+06:18.270 --> 06:25.380
+career and I hope you can see here how clean and nice it is again using functional programming paradigms
+
+06:26.390 --> 06:28.160
+let's move on to the next one.
+
+06:28.160 --> 06:30.260
+Let's talk about filter next.

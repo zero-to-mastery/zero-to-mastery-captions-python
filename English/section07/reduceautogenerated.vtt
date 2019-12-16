@@ -1,0 +1,241 @@
+WEBVTT
+
+00:00.720 --> 00:08.070
+Let's talk about the last one reduce and this is a bit advanced and it might be a little bit difficult
+
+00:08.070 --> 00:13.950
+to grasp at first but it's good to know that it exists and you can learn more about it by practicing
+
+00:13.950 --> 00:17.100
+it and reading some documentation on your own.
+
+00:17.100 --> 00:22.790
+Now reduce doesn't come as part of the Python built in function.
+
+00:22.980 --> 00:27.020
+In order for us to use reduce we have to do something like this.
+
+00:27.420 --> 00:32.610
+Now you've never seen this before and this is something we're going to get to in the modules section
+
+00:32.610 --> 00:33.620
+of the course.
+
+00:33.720 --> 00:39.810
+But essentially what's happening here is when we downloaded Python interpreter and the python package
+
+00:40.410 --> 00:47.790
+in our case this reptile already does it for us we can import something from these funky tools and funk
+
+00:47.790 --> 00:58.190
+tools are what we call a tool belt that we can use for functional tools that comes with the python installation.
+
+00:58.320 --> 01:02.780
+And from there there's a specific function that we can import.
+
+01:02.820 --> 01:09.480
+So I'm saying hey from funk tools from this tool belt I want you to import the reduce function so that
+
+01:09.480 --> 01:13.950
+we can use it in our code again something that we'll cover later on in the course.
+
+01:13.950 --> 01:18.680
+So for now just copy and paste this line next.
+
+01:18.700 --> 01:26.920
+Let's remove some of our list and here use reduce now with reduce.
+
+01:26.920 --> 01:30.800
+We're gonna need a few things first.
+
+01:30.910 --> 01:37.510
+We need the function and then we need the sequence or the data.
+
+01:37.560 --> 01:40.030
+So what's the function going to be.
+
+01:40.230 --> 01:43.860
+First of all our data will be our my list.
+
+01:43.860 --> 01:52.070
+So I'm going to say my list and the reduced function allows us to do something interesting.
+
+01:52.200 --> 02:01.270
+I can give it let's say a function and this function we'll call it the accumulator and the accumulator
+
+02:01.270 --> 02:04.070
+takes two parameters.
+
+02:04.090 --> 02:06.490
+And remember this is going to be called by reduce.
+
+02:06.550 --> 02:12.430
+So reduce is going to be in charge of giving these two parameters from the data that we give it which
+
+02:12.430 --> 02:13.900
+is my list.
+
+02:14.140 --> 02:21.450
+The first parameter is going to be what we call the accumulator or in my case the ICC.
+
+02:21.730 --> 02:30.740
+And then here is going to be the item now where it gets really interesting is that when we first pass
+
+02:30.920 --> 02:41.690
+my list from the reduce we'll get the first item the first item will be in this parameter however what's
+
+02:41.840 --> 02:47.200
+this HCC initially well if I just remove the brackets here
+
+02:50.120 --> 02:58.690
+and show you reduce you see that we have the function the sequence which in our case will be our list
+
+02:59.440 --> 03:05.470
+and then the initial an initial is what the accumulator is going to be.
+
+03:06.100 --> 03:11.950
+So once again let's say that we're gonna have the accumulator function that we're not going to call
+
+03:11.950 --> 03:14.020
+yet reduce is going to do that for us.
+
+03:14.080 --> 03:21.380
+I'm going to give it the list or the data that we want to iterate over and then I'm going to give it
+
+03:21.470 --> 03:30.750
+an initial value of 0 so we have 3 parameters here or three arguments that we give it.
+
+03:30.830 --> 03:32.330
+Let me close the brackets.
+
+03:32.420 --> 03:41.770
+Mary you make this a little bit bigger here and make sure that I can spell now in here the first item
+
+03:41.860 --> 03:50.820
+will be whatever is the first item in my list and then the accumulator is going to default to zero if
+
+03:50.820 --> 03:51.950
+we don't give it anything.
+
+03:51.960 --> 03:56.440
+Or in our case we have said that the accumulator is going to be zero.
+
+03:56.520 --> 04:04.920
+So the first thing we're gonna do is we're going to return accumulator plus item OK so let's go through
+
+04:04.920 --> 04:08.910
+this one by one I'm actually going to print here.
+
+04:09.140 --> 04:13.490
+The accumulator and the item just so we can see and then I'm going to run this code
+
+04:16.470 --> 04:25.850
+line 15 into object is not ignorable and this is a little tricky but we actually don't need the list
+
+04:25.880 --> 04:28.920
+anymore because reduce is gonna do something interesting for us.
+
+04:29.000 --> 04:35.540
+So let's just remove this for now and just return whatever reduce gives us and the print.
+
+04:35.540 --> 04:39.580
+If I click Run.
+
+04:39.620 --> 04:39.860
+All right.
+
+04:39.890 --> 04:41.580
+So what just happened.
+
+04:41.630 --> 04:42.570
+Let's have a look.
+
+04:43.650 --> 04:52.050
+Reduce allows us to reduce something some sort of value from the editable that we give it.
+
+04:52.080 --> 04:53.450
+So let's go step by step.
+
+04:53.490 --> 05:02.970
+We have my list and my list is going to be applied to accumulator through reduce the accumulator is
+
+05:02.970 --> 05:09.690
+going to take my list and the first thing it's going to do in the first pass through is going to say
+
+05:09.690 --> 05:12.510
+Hey what's my accumulator going to be.
+
+05:12.510 --> 05:14.410
+I'm going to set it to zero.
+
+05:14.520 --> 05:18.110
+So the first pass through accumulator is going to be zero.
+
+05:18.240 --> 05:22.920
+An item is going to be one which is what we see over here.
+
+05:23.250 --> 05:27.290
+And we're going to add it 0 plus 1.
+
+05:27.310 --> 05:31.890
+So now we have returned 1.
+
+05:31.930 --> 05:35.460
+Now the second pass to what's going to happen.
+
+05:35.590 --> 05:44.820
+The second pass through the accumulator is going to be what this returned so the next pass to whatever
+
+05:44.850 --> 05:48.450
+this is returned is going to be filled into accumulator.
+
+05:48.450 --> 05:57.160
+So in our case the 0 plus 1 will be 1 an item will be two one plus two is going to be three.
+
+05:57.300 --> 05:59.910
+So one plus two equals two three.
+
+05:59.910 --> 06:03.730
+So the next time around the accumulator is going to be three.
+
+06:03.810 --> 06:11.460
+And while we pass through is going to be three as well as you can see here and three plus three is six
+
+06:12.180 --> 06:19.080
+we've just accumulated all these values and returned one single number six.
+
+06:19.080 --> 06:28.250
+We've reduced our list into some sort of data that we've manipulated using in our case accumulator.
+
+06:28.260 --> 06:38.240
+But I could have done anything I wanted here so if for example I change this to not equal 10 what do
+
+06:38.240 --> 06:48.030
+you think will happen if I click Run I get 16 because I started my initial accumulator with 10 so it
+
+06:48.030 --> 06:56.590
+was 10 Plus 1 then so on and so forth now reduces really really powerful because you can do a lot of
+
+06:56.590 --> 06:57.240
+things with it.
+
+06:57.250 --> 07:05.230
+It's really really flexible and actually underneath the hood functions like a map filter are actually
+
+07:05.230 --> 07:11.350
+using this reduce underneath the hood so you can actually build your own map and filter function using
+
+07:11.530 --> 07:18.790
+reduce again reduce is a little hard to understand at first and it does take a bit of practice to really
+
+07:18.820 --> 07:25.390
+use it but it's one of those things that advanced programmers really really love and you'll see more
+
+07:25.390 --> 07:29.470
+and more of throughout your career as you get better and better.
+
+07:29.470 --> 07:30.880
+I'll see you in the next one.
+
+07:30.900 --> 07:31.180
+Bye bye.

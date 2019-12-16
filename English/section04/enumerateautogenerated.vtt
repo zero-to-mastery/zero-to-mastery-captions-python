@@ -1,0 +1,136 @@
+WEBVTT
+
+00:00.860 --> 00:06.680
+Let me show you another useful function that we'll use just like a range.
+
+00:06.680 --> 00:08.550
+Mind you it's not as common as range.
+
+00:08.570 --> 00:13.820
+Range you'll see it a lot in Python code but this other one is still very useful.
+
+00:13.970 --> 00:16.950
+And it's called enumerate.
+
+00:17.120 --> 00:18.680
+Now what does it do.
+
+00:18.680 --> 00:19.790
+Let's have a look.
+
+00:19.850 --> 00:28.690
+I can do a for loop and I'll say 4 and we'll say character in enumerate and then enumerate.
+
+00:28.700 --> 00:32.840
+We wrap around something that well we want to enumerate.
+
+00:32.870 --> 00:34.510
+So let's see what that means.
+
+00:34.580 --> 00:37.410
+It returns and enumerate to object.
+
+00:37.620 --> 00:41.060
+So interval must be an other object that supports iteration.
+
+00:41.060 --> 00:45.300
+So we have to give it something that enumerate can iterate over.
+
+00:45.320 --> 00:50.540
+So this time around let's just do a a string that says hello.
+
+00:50.540 --> 00:58.400
+Now enumerate is special because what it's going to give us is it's going to take an editable object
+
+00:58.430 --> 01:03.790
+and gives you an index counter and the item of that index.
+
+01:04.040 --> 01:04.970
+What I mean by that.
+
+01:05.570 --> 01:09.910
+Well you can actually say I comma character.
+
+01:10.010 --> 01:18.020
+So we're unpacking this and we're saying hey print I and character.
+
+01:18.020 --> 01:27.090
+If I click Run look at that I get Hello iterated over again.
+
+01:27.100 --> 01:31.770
+If we don't have enumerate then we would have just gotten Hello.
+
+01:31.900 --> 01:42.670
+But we also because we use enumerate we get this eye or index of each item and where it is in the index
+
+01:43.660 --> 01:54.380
+so that if I had a list here let's say 1 2 3 again I'm able to use and access the index number of the
+
+01:54.380 --> 01:57.140
+item as well.
+
+01:57.220 --> 01:59.260
+What if we had a couple
+
+02:04.800 --> 02:15.970
+again we get the index number so enumerate is very useful if you need the index counter of the item
+
+02:16.000 --> 02:25.500
+that you're looping through so let's do a little exercise let's say that we want to create a script
+
+02:25.800 --> 02:30.410
+that enumerates a list of numbers 1 through 10.
+
+02:30.420 --> 02:35.760
+So we'll use range to create that I'm going to say list and then I'm going to say range.
+
+02:35.790 --> 02:43.140
+I know there's a lot of functions here range that is one hundred and actually list to that and I want
+
+02:43.380 --> 02:50.440
+to be told what the index of the number 50 is.
+
+02:50.440 --> 02:53.700
+So pause the video if you need to do that.
+
+02:53.910 --> 02:58.830
+Now here I want it so that let me make this a little bit bigger.
+
+02:58.920 --> 03:05.070
+I want it so that we only print the index of let's say the value 50.
+
+03:05.130 --> 03:09.300
+I want to know where 50 is in the list.
+
+03:09.300 --> 03:14.030
+Now again this is a simple example seeking probably already guess what the answer is.
+
+03:14.160 --> 03:22.740
+But how would you code this so that only in here we get the index of 50 or it says the index of 50 is
+
+03:22.800 --> 03:25.960
+whatever positive video if you want to give it a go.
+
+03:25.980 --> 03:39.000
+Otherwise let's try this I'm going to do a conditional and says if character is equal to 50 then I'm
+
+03:39.000 --> 03:52.040
+going to print index or I'm going to do an F string and I'll say that the index of 50 is and then I'll
+
+03:52.100 --> 03:57.260
+add the index in here so that if I run
+
+04:00.230 --> 04:11.230
+I get index of 50 is 50 and just to confirm if for example I just print here and let's say print I in
+
+04:11.440 --> 04:22.170
+character I click Run we see that map we have the index is the same as the numbers again not too difficult
+
+04:22.230 --> 04:29.130
+of a question but you see here that we're able to extract this information again not as useful as range
+
+04:29.190 --> 04:31.200
+but you will see it occasionally in code.
+
+04:31.200 --> 04:36.470
+So I wanted to make sure that you're not surprised by it as you can see it's not that difficult.

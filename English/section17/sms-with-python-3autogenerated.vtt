@@ -1,0 +1,301 @@
+WEBVTT
+
+00:00.510 --> 00:01.680
+Welcome back.
+
+00:01.710 --> 00:07.530
+So I've just found exactly the code that I need to send myself a text message.
+
+00:08.430 --> 00:09.510
+Let's give that a go.
+
+00:09.510 --> 00:18.220
+I'm going to copy and paste into my S M S dot pi file that I just created in my tax me folder and all
+
+00:18.220 --> 00:22.720
+right that looks like it's the code that I need.
+
+00:22.720 --> 00:29.560
+Now before I do this it looks like this gives me a nice dashboard to test on my code before I actually
+
+00:29.560 --> 00:30.310
+run it myself.
+
+00:30.940 --> 00:39.500
+So I'm going to here in this to field actually put my phone number down.
+
+00:39.580 --> 00:40.960
+Now I'm going to blur this out.
+
+00:41.110 --> 00:45.180
+I don't want people text me because I'm already bad at answering text as it is
+
+00:49.300 --> 00:54.970
+and the body over here will say hey are you not.
+
+00:54.970 --> 00:56.020
+Let's go.
+
+00:56.020 --> 00:57.940
+Hello.
+
+00:57.940 --> 00:58.640
+There we go.
+
+00:58.660 --> 01:02.120
+And we see over here that it actually updates right over here.
+
+01:02.320 --> 01:04.570
+So let's make their request and see what happens
+
+01:07.520 --> 01:14.560
+so I get a 400 bad request the two number is not a valid phone number.
+
+01:14.560 --> 01:16.740
+And that's because I forgot the prefix.
+
+01:16.750 --> 01:22.540
+Let's do a make request again.
+
+01:22.610 --> 01:22.990
+All right.
+
+01:23.000 --> 01:23.830
+And I get an error.
+
+01:23.840 --> 01:30.260
+The number is unverified trial accounts cannot send messages to unverified numbers.
+
+01:30.440 --> 01:34.760
+So I have to verify my number that they gave me.
+
+01:34.790 --> 01:39.840
+That's kind of annoying but Maria let's let's do that all right.
+
+01:39.840 --> 01:47.130
+So after a bit of searching I saw over here that we can go to phone numbers and in the verified caller
+
+01:47.130 --> 01:49.750
+I.D. I have to verify my number.
+
+01:49.740 --> 01:54.440
+So I actually have to enter my real phone number so that they can verify it.
+
+01:54.450 --> 02:01.190
+I guess this is so that people can just spam random phone numbers which makes sense.
+
+02:01.230 --> 02:03.360
+So let's see where is Canada here.
+
+02:03.570 --> 02:05.400
+And I'm going to hide my number again
+
+02:08.120 --> 02:13.390
+and I guess or we can I don't want you to call me so let's do text instead.
+
+02:13.510 --> 02:17.970
+Oh I have to enter it again.
+
+02:18.010 --> 02:18.190
+All right.
+
+02:18.190 --> 02:22.990
+Text me Yep I got a verification code.
+
+02:23.310 --> 02:24.050
+Submit.
+
+02:24.150 --> 02:26.730
+That's kind of cool I got a text on my phone.
+
+02:26.730 --> 02:26.970
+All right.
+
+02:26.970 --> 02:28.470
+So I have my verified number.
+
+02:28.500 --> 02:31.500
+Let's go back to where were we.
+
+02:31.500 --> 02:43.460
+We were doing our project get started all right and we have to do hello and we'll use python again
+
+02:47.030 --> 02:47.570
+okay.
+
+02:47.690 --> 02:49.980
+Let's make their request and see what happens.
+
+02:52.230 --> 02:52.810
+Hey.
+
+02:52.960 --> 02:54.370
+Two hundred and one created.
+
+02:54.460 --> 02:55.960
+Their request was successful
+
+02:58.480 --> 03:00.000
+and holy moly.
+
+03:00.010 --> 03:08.170
+I'm I'm going to post this on the screen but I just got a text from William says hello.
+
+03:08.170 --> 03:09.070
+Not mind you.
+
+03:09.070 --> 03:12.010
+It says that a sent from a 12 year old trial account.
+
+03:12.010 --> 03:18.910
+So obviously when I have a fully paid non trial account it wouldn't say this but this is awesome.
+
+03:18.910 --> 03:21.380
+I just received a text.
+
+03:21.420 --> 03:21.660
+All right.
+
+03:21.670 --> 03:24.580
+So I didn't even have to open anything really.
+
+03:24.580 --> 03:27.790
+I can just copy and paste this into
+
+03:30.510 --> 03:31.820
+my project file.
+
+03:32.730 --> 03:38.490
+I just need to copy the author token which in here they automatically include by I am assume that I
+
+03:38.490 --> 03:41.550
+can get the author tokens somehow from here.
+
+03:41.550 --> 03:46.610
+Let's see how we can grab it the two settings.
+
+03:49.750 --> 03:58.610
+I'll search off token leads to authorized apps there should no not there.
+
+03:58.620 --> 03:59.600
+Where could it be.
+
+03:59.610 --> 04:04.270
+Must go to user settings.
+
+04:04.280 --> 04:09.380
+No that's not it.
+
+04:09.780 --> 04:10.290
+That's silly.
+
+04:10.290 --> 04:12.390
+Look at that in the dashboard auth token.
+
+04:12.390 --> 04:17.040
+I can just click view definitely going to hide that.
+
+04:17.060 --> 04:17.780
+After this
+
+04:21.850 --> 04:29.590
+so now ortho can I can just paste it in here and I can change the body to whatever I want so I'll say
+
+04:30.220 --> 04:36.540
+I can't believe this works.
+
+04:36.620 --> 04:47.300
+Now the other thing is is we have to download the Twilio library so let's just say Pip 3 install Twilio
+
+04:52.340 --> 04:52.710
+all right.
+
+04:52.710 --> 04:56.380
+And this is now installed and let's run this file.
+
+04:56.400 --> 05:01.140
+I'm going to say Python 3 s m s dot pi
+
+05:05.430 --> 05:05.970
+all right.
+
+05:07.110 --> 05:08.290
+Looks like it may have worked.
+
+05:08.290 --> 05:10.710
+Let's see oh boy.
+
+05:10.750 --> 05:12.490
+I am taking a screenshot of this.
+
+05:12.500 --> 05:13.640
+That definitely worked.
+
+05:13.640 --> 05:15.600
+I just received a text message.
+
+05:15.620 --> 05:16.810
+How cool is that.
+
+05:17.180 --> 05:26.590
+Now the reason I showed you this text tutorial is not because you really learn anything from it.
+
+05:26.630 --> 05:31.730
+I just wanted to show you my thought process when I work through things that maybe I haven't encountered
+
+05:31.760 --> 05:32.660
+before.
+
+05:32.780 --> 05:34.320
+It's a lot of trial and error.
+
+05:34.430 --> 05:35.600
+Knowing where to look.
+
+05:35.600 --> 05:42.170
+For example I knew that Twilio was a popular tool for text messaging but even googling you're most likely
+
+05:42.170 --> 05:47.840
+going to come across Twilio and then it's all about reading about their API and what you can do and
+
+05:47.840 --> 05:52.910
+most of them like 20 years if they're big enough have really good documentation where you basically
+
+05:52.910 --> 05:55.230
+don't even have to code.
+
+05:55.330 --> 06:01.510
+Now the beauty here is that in a couple of minutes I was able to send myself a text message and now
+
+06:01.510 --> 06:04.590
+there's so many use cases that you can think of.
+
+06:04.660 --> 06:11.170
+Again we want to start thinking like programmers how can we use this maybe when we receive an email
+
+06:11.170 --> 06:13.240
+from an important person.
+
+06:13.360 --> 06:20.590
+Maybe when we get a specific tweet that we're interested in maybe we can receive a text using the Twilio
+
+06:20.590 --> 06:21.940
+API.
+
+06:22.000 --> 06:26.830
+Maybe you have a portfolio Web site and you want to get a text.
+
+06:26.830 --> 06:33.220
+Anytime somebody completes your contact form or maybe orders your product from your startup landing
+
+06:33.220 --> 06:34.210
+page.
+
+06:34.210 --> 06:40.690
+The possibilities are endless but with that you've just learned how to send yourself a text message.
+
+06:40.690 --> 06:43.320
+That was a lot of fun but I think we deserve a break now.
+
+06:43.420 --> 06:44.930
+So I'll see you in the next video.

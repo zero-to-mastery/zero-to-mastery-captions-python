@@ -1,0 +1,166 @@
+WEBVTT
+
+00:00.420 --> 00:01.650
+Welcome back.
+
+00:01.680 --> 00:07.330
+Now if you remember let's have something different here so we have unique keys.
+
+00:07.380 --> 00:09.880
+If you remember we have to have a unique keys.
+
+00:09.900 --> 00:18.360
+So let's say this is great and this is a I don't know let's say a basket and we can access basket like
+
+00:18.360 --> 00:22.700
+this if I click Run get one two three.
+
+00:22.770 --> 00:25.830
+But what if we don't know what this dictionary is.
+
+00:25.830 --> 00:32.640
+Maybe a dictionary is something well somewhere else where we can't see but we want to know if this let's
+
+00:32.640 --> 00:34.470
+call this user.
+
+00:34.470 --> 00:45.140
+If this user has maybe property like H So do they have this H key.
+
+00:45.320 --> 00:46.490
+Well if I click Run
+
+00:49.360 --> 00:51.160
+I get an error key error.
+
+00:51.160 --> 00:58.990
+H H doesn't exist but remember errors in our programs and this is something we'll cover later on are
+
+00:59.080 --> 00:59.930
+not good.
+
+00:59.990 --> 01:05.490
+They're going to stop the program as soon as the python interpreters enters an error.
+
+01:05.560 --> 01:11.200
+It's going to kick out of the program and say hey you have an error and it's going to completely ignore
+
+01:11.200 --> 01:16.540
+what's underneath it here we don't have anything but in a real life program we want to avoid these errors
+
+01:16.570 --> 01:18.780
+because it stops execution.
+
+01:18.820 --> 01:26.520
+So another good way to access a key and to see if it even exists is to use dot get and guess what does
+
+01:26.560 --> 01:29.910
+get is did you guess a method.
+
+01:29.910 --> 01:31.320
+Well there you go.
+
+01:31.350 --> 01:39.160
+Dog get is a method on the object or the dictionary in Python.
+
+01:39.270 --> 01:50.020
+So here if we do get age and do run I get none.
+
+01:50.090 --> 01:51.720
+So my program doesn't error.
+
+01:51.740 --> 01:54.200
+It just says hey there is nothing there.
+
+01:54.260 --> 01:55.490
+It's an absence of value.
+
+01:55.610 --> 01:57.970
+And we've learned what none means by now.
+
+01:58.040 --> 02:02.330
+So that's a really nice way to avoid those errors by the way.
+
+02:02.330 --> 02:06.920
+If let's say there's no age in the user but you want to have a default value.
+
+02:06.920 --> 02:08.290
+You can do something like this.
+
+02:08.390 --> 02:16.510
+So you add a comma and then here you say whatever you want as the default value so let's forget that.
+
+02:16.790 --> 02:20.990
+If I click Run I get 55.
+
+02:21.610 --> 02:29.440
+Because now I'm saying Hey grab the h from the user dictionary if age doesn't exist on the user dictionary
+
+02:29.710 --> 02:31.120
+use 55.
+
+02:31.150 --> 02:42.550
+So now we have 55 but if the user already has age and I click Run I get 20.
+
+02:42.600 --> 02:50.190
+So this is Hey in case age doesn't exist at a default value that's really really nice.
+
+02:50.190 --> 02:55.140
+Now I'm going to show you another way to create a dictionary which is not very common in most of the
+
+02:55.140 --> 02:59.550
+time you want to use this syntax but just so you're aware of it.
+
+02:59.670 --> 03:01.050
+Here's another way.
+
+03:01.050 --> 03:05.870
+Let's say we have a new user so User 2.
+
+03:06.480 --> 03:13.890
+I can create here a dictionary by saying dict which again is a built in function.
+
+03:13.890 --> 03:15.750
+And in here look at that.
+
+03:15.750 --> 03:20.640
+It shows me Hey this is going to create a new empty dictionary and we can create different values key
+
+03:20.640 --> 03:29.970
+variable value pairs and we simply say I want the key to equal the value.
+
+03:29.970 --> 03:35.740
+So in my case let's just say that I want the name to equal
+
+03:39.000 --> 03:49.180
+if I now print out user to well before I click Run I see that I have a red underline and by the way
+
+03:49.210 --> 03:50.800
+if you see here pi flakes.
+
+03:50.920 --> 03:55.840
+That's something called linking something we'll talk about when we talk about developer environments.
+
+03:55.840 --> 04:01.090
+We're using this Lintner that tells you whenever you make errors in Python and it says keywords can
+
+04:01.090 --> 04:10.450
+be an expression that just means that hey the keyword needs to be well just a variable that we create.
+
+04:10.460 --> 04:21.310
+So if I click Run here look at that I have name John John so we've create a user with this key value
+
+04:21.550 --> 04:22.480
+pair.
+
+04:22.720 --> 04:27.430
+Now like I said this way of creating dictionaries is not very common.
+
+04:27.430 --> 04:32.380
+Most of the time you'll do something like this but at least now you know that this is why this built
+
+04:32.380 --> 04:36.250
+in function exists I'll see in the next one.
+
+04:36.510 --> 04:36.740
+By.

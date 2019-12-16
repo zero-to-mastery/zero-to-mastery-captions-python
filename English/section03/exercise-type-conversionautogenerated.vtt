@@ -1,0 +1,256 @@
+WEBVTT
+
+00:00.640 --> 00:01.740
+Welcome back.
+
+00:01.750 --> 00:08.830
+So up until now we've learned about integers floats strings and volume values.
+
+00:08.830 --> 00:12.580
+So let's try and tie some of those things together.
+
+00:12.670 --> 00:14.740
+Let's imagine you are Facebook.
+
+00:15.430 --> 00:17.350
+How do you think Facebook works.
+
+00:17.380 --> 00:26.480
+Underneath the hood when it comes to your profile well would have let's say a variable called name.
+
+00:26.880 --> 00:33.450
+And this will have your name and then they'll probably have a variable with your age.
+
+00:34.520 --> 00:41.770
+Let's say 50 not actually 50 but I'm pretending to be for this case just so I sound wiser and then let's
+
+00:41.770 --> 00:45.320
+say relationship status.
+
+00:45.430 --> 00:49.900
+So again we also have relationship status on Facebook.
+
+00:50.110 --> 00:57.280
+And for now let's say single so that's my Facebook profile right there.
+
+00:57.280 --> 01:03.490
+Now if we wanted to perhaps change that let's say my relationship status all of a sudden goes from single
+
+01:03.490 --> 01:05.020
+to It's complicated.
+
+01:05.590 --> 01:07.560
+Well that's an easy fix.
+
+01:07.600 --> 01:12.650
+We would just do relationship status equals to.
+
+01:12.820 --> 01:15.470
+It's complicated.
+
+01:15.470 --> 01:20.710
+I remember because of the single quote we'll have to do backslash
+
+01:24.450 --> 01:27.620
+it's complicated.
+
+01:27.850 --> 01:35.420
+And now if I print my relationship status you'll see that it's been updated to It's complicated.
+
+01:35.420 --> 01:36.750
+I am no longer single.
+
+01:36.830 --> 01:40.980
+Hooray but this is pretty simple.
+
+01:40.990 --> 01:45.310
+Let's do something more complicated and this is going to be a fun exercise.
+
+01:45.310 --> 01:56.630
+Let's create a program that guesses your age let's use the input method that we've seen before.
+
+01:56.930 --> 02:05.560
+Remember the input method allows us to type something in here and receive it as input so we can assign
+
+02:05.560 --> 02:06.610
+that to a variable.
+
+02:06.640 --> 02:16.570
+So let's say this variable is going to be birth year and that's going to equal the input that's going
+
+02:16.570 --> 02:22.630
+to ask when or what year where you
+
+02:28.640 --> 02:30.000
+now from here.
+
+02:30.110 --> 02:34.690
+I want you to pause the video and try to solve this yourself.
+
+02:34.760 --> 02:40.940
+How can you make it so that at the end of this program you're going to get asked what year where you're
+
+02:40.940 --> 02:48.080
+born you're going to type in your ear and then it's going to print out your age is whatever the ages.
+
+02:48.830 --> 02:50.070
+So positive video.
+
+02:50.210 --> 02:54.680
+Try and solve this on your own mind you there is a bit of a trick in here.
+
+02:54.680 --> 03:01.700
+So if you get stuck try to google around and figure out what the issue may be.
+
+03:01.700 --> 03:09.550
+Again part of being a programmer is trying to solve these problems that you don't know the answers to.
+
+03:09.550 --> 03:12.570
+All right let me show you my solution.
+
+03:12.590 --> 03:19.590
+We have our birth year here that we're going to store in a variable and now we're going to calculate
+
+03:19.590 --> 03:30.420
+the h I'm going to say H equals Well it's going to equal the current year let's say 20 19 and then 20
+
+03:30.420 --> 03:38.970
+19 here is going to get subtracted from whatever the birth year that you entered.
+
+03:39.750 --> 03:51.300
+So let's enter that and then we're simply going to say print your age is and we want to use an F string
+
+03:51.300 --> 03:52.000
+here.
+
+03:52.020 --> 03:58.010
+So I'm going to add an F here and then simply say
+
+04:02.740 --> 04:08.050
+if I run this I get what year were you born.
+
+04:08.100 --> 04:12.030
+I was born in nineteen eighty six.
+
+04:12.070 --> 04:13.080
+Hmm.
+
+04:13.120 --> 04:21.160
+We get an error and if you try this yourself you may have encountered this air we get something called
+
+04:21.340 --> 04:26.590
+a Type here and there's lots of errors that you can get in Python.
+
+04:26.590 --> 04:32.410
+Again we have a section on air so don't stress too much about it but if you read here it says unsupported
+
+04:32.530 --> 04:40.850
+operant type has for minus int and string.
+
+04:41.390 --> 04:44.280
+Let's try and debug this.
+
+04:44.300 --> 04:49.580
+It looks like we're using minus on an integer and a string.
+
+04:49.580 --> 04:52.800
+So let me print out here.
+
+04:53.120 --> 05:06.530
+The type of birth year if I run this and let's enter in nineteen eighty six I get class String and this
+
+05:06.530 --> 05:15.350
+is a little gotcha because what input does is it asks you for an input but that input that I wrote 1
+
+05:15.350 --> 05:16.750
+9 8 6.
+
+05:16.750 --> 05:23.610
+Well that actually gets converted to a string and assigned to birth year.
+
+05:23.620 --> 05:33.490
+So what that means is that we're trying to subtract a number or a string from a number.
+
+05:33.600 --> 05:42.350
+So how do we solve this issue well you'd have to turn this into an integer and this is something that
+
+05:42.350 --> 05:52.130
+we saw previously what we need to do is to convert this into an integer with using the int function
+
+05:53.350 --> 06:05.440
+so let's try that if I remove this and click Run I'll say 1986 and look at that.
+
+06:05.680 --> 06:13.630
+Your age is 33 we've created a program that was able to tell your age based on that year that you were
+
+06:13.630 --> 06:14.860
+born.
+
+06:14.860 --> 06:22.450
+Now this may have been tricky to you but it teaches an important concept in programming that is sometimes
+
+06:22.450 --> 06:30.490
+you storing data into different data types and sometimes you need those different data types to interact
+
+06:30.760 --> 06:34.810
+together so you'll see a lot of problems.
+
+06:34.880 --> 06:41.390
+Well you have to convert a data type and this is a very common one where you take an input that's a
+
+06:41.390 --> 06:49.530
+string and then you convert it to something like an integer so you can perform a mathematical operation.
+
+06:49.530 --> 06:55.110
+And that's why if you remember we gave you a list of all our data types in Python.
+
+06:55.110 --> 07:00.930
+The fundamental data types and all of them were blue because well each one of these our actions are
+
+07:00.930 --> 07:04.230
+functions that we can use.
+
+07:04.310 --> 07:13.160
+For example I converted the birth year into integer but I could have also converted this to a float
+
+07:13.400 --> 07:21.920
+for example and if I run this it would still work because Python knows that well we can use integers
+
+07:21.950 --> 07:27.380
+and floats in mathematical operation but you can see here that it's converted into a float.
+
+07:27.380 --> 07:33.210
+Now if we convert this into a boolean and I click Run
+
+07:36.470 --> 07:40.990
+Your age is twenty eighteen that's really confusing right.
+
+07:41.000 --> 07:45.920
+Well that's because this gets turned into true.
+
+07:46.160 --> 07:54.060
+And underneath the hood Python does something weird where a true value is converted to one because boolean.
+
+07:54.110 --> 07:58.040
+Remember it's 1 or 0 true or false.
+
+07:58.040 --> 07:58.530
+All right.
+
+07:58.610 --> 08:00.850
+Hopefully this didn't confuse you too much.
+
+08:00.860 --> 08:03.070
+It's something that will encounter throughout the course.
+
+08:03.110 --> 08:05.920
+Don't worry we'll get more and more practice.
+
+08:06.140 --> 08:11.540
+However I hope you get to practice this a little bit to really understand what's going on because although
+
+08:11.540 --> 08:18.020
+this is a couple of lines of code the principles that we use here we're going to use throughout bigger
+
+08:18.020 --> 08:22.390
+and bigger code bases so I guess I'll see in the next one by.

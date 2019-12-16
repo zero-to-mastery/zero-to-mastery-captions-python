@@ -1,0 +1,187 @@
+WEBVTT
+
+00:00.390 --> 00:01.340
+Hello.
+
+00:01.370 --> 00:09.030
+And let's talk about testing testing you see is an important concept in programming not just Python
+
+00:10.210 --> 00:15.910
+although we start off writing simple script files with few lines of code when we start getting into
+
+00:15.910 --> 00:16.980
+the real world.
+
+00:17.110 --> 00:24.160
+You start getting thousands and millions of lines of code hundreds of Python files worked on by many
+
+00:24.160 --> 00:30.400
+people from different divisions in a company and most likely all of them starting a different time.
+
+00:30.400 --> 00:37.030
+The company all the code changes happening over time at different times as people work on the project
+
+00:37.270 --> 00:44.460
+as the complexity of the code and the size of the code increases it becomes harder and harder for someone
+
+00:44.460 --> 00:47.520
+to fix a bug that may arise.
+
+00:47.520 --> 00:53.310
+Let's say you come into a project that has been around for years you may modify something that may modify
+
+00:53.490 --> 01:00.510
+a another part of the app that you deem and think of and you start creating all these bugs with new
+
+01:00.510 --> 01:03.160
+features that you introduce into the app.
+
+01:03.330 --> 01:10.050
+The longer that the code stays in a project the more likely it is to be touched by different developers.
+
+01:10.050 --> 01:12.380
+So you see the problem here right.
+
+01:12.450 --> 01:20.520
+For companies this is a huge problem because you're most likely always growing your product and adding
+
+01:20.520 --> 01:22.890
+more and more lines of code.
+
+01:22.890 --> 01:28.410
+That means that there's just going to keep making this giant monster that becomes harder and harder
+
+01:28.710 --> 01:38.730
+to tame and debug and it costs companies a lot of money luckily for us we have something called testing
+
+01:40.090 --> 01:46.000
+and testing can help us solve this problem as the name suggests.
+
+01:46.010 --> 01:52.370
+Testing is a method in software development where individual units of source code such as functions
+
+01:53.030 --> 01:56.570
+are tested to see whether they work properly.
+
+01:56.570 --> 02:01.910
+Although it may not be a big part of a coding interview a lot of companies usually don't think about
+
+02:01.910 --> 02:03.790
+testing when interviewing people.
+
+02:03.890 --> 02:08.120
+It becomes more and more important as you go through your career.
+
+02:08.320 --> 02:14.020
+For example in my case when I first started out as a programmer I didn't know that much about testing
+
+02:14.050 --> 02:15.670
+before I got hired.
+
+02:15.970 --> 02:20.740
+But the importance of testing grew more and more as I progressed in my career.
+
+02:20.950 --> 02:27.140
+And it's one of those things that has made me a better developer so if you want to become a senior programmer
+
+02:27.320 --> 02:33.940
+and if you want to have a long lasting career you really need to master the skill because remember every
+
+02:33.940 --> 02:39.190
+serious company is going to have tests and they'll want you to write tests for your code.
+
+02:39.910 --> 02:43.740
+So let's explore this idea of testing a little bit more.
+
+02:43.960 --> 02:50.220
+You see a test is simply a nother python file now.
+
+02:50.250 --> 02:59.300
+In my case over here I have a main dot pi and a test dot pi file on my desktop right here usually you
+
+02:59.300 --> 03:03.850
+have a test file like this accompanying one of your files.
+
+03:03.890 --> 03:12.200
+So for example if you had a hundred files of Python or modules then each of those modules will have
+
+03:12.200 --> 03:15.270
+its own test file that you can run tests with.
+
+03:15.950 --> 03:22.160
+Now this file that we're going to be writing never actually runs in production.
+
+03:22.160 --> 03:29.360
+It's a file that we run to make sure that before we release this main dot pi file to production that
+
+03:29.480 --> 03:31.320
+everything is working properly.
+
+03:31.370 --> 03:33.560
+So this is only for development.
+
+03:33.620 --> 03:40.990
+We would never actually well the customers will never see this file now before we actually start writing
+
+03:40.990 --> 03:42.090
+some tests.
+
+03:42.100 --> 03:46.450
+I do want to remind you that we did learn a few ways to debug our code right.
+
+03:46.450 --> 03:54.550
+We learned about things like piloting that we installed in our visual studio code to link to our code
+
+03:54.580 --> 04:00.190
+and check the syntax and small errors as we type our code.
+
+04:00.190 --> 04:06.010
+We also saw how the online repo that we used use another thing called Pi flex which is just another
+
+04:06.160 --> 04:09.900
+lender and then we also saw that pie chart.
+
+04:10.030 --> 04:13.740
+Our IDC also had built in lending.
+
+04:13.780 --> 04:23.700
+We also learned that we have something called Auto pep 8 or PEP 8 which is the standard style guide
+
+04:23.700 --> 04:31.510
+for python and this allows us to make sure that our code meets a style that the Python community has
+
+04:31.510 --> 04:32.540
+agreed on.
+
+04:32.560 --> 04:39.400
+These are the simple tools that allow our code to be checked for simple styling issues or simple mistakes
+
+04:39.790 --> 04:49.340
+such as not declaring a variable but these only get you so far and testing is a higher level up a way
+
+04:49.340 --> 04:53.630
+to after you do lending after you do something like pep 8.
+
+04:53.750 --> 04:56.810
+After you've met all those requirements and your file runs.
+
+04:56.810 --> 05:02.150
+Testing is a way to actually check even more of your code.
+
+05:02.230 --> 05:06.280
+So how do we write these tests that I keep talking about and not coding.
+
+05:06.280 --> 05:07.240
+Well let's find out.
+
+05:08.020 --> 05:13.900
+Luckily for us there is a built in module from the standard library that we can use.
+
+05:13.900 --> 05:23.660
+And it's called unit test so in the next video we're gonna start writing some tests writing some sample
+
+05:23.660 --> 05:28.640
+code and show you exactly how they benefit us as programmers.
+
+05:28.760 --> 05:30.510
+I'll see in the next one by.

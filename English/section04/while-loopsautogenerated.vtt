@@ -1,0 +1,232 @@
+WEBVTT
+
+00:00.330 --> 00:01.230
+Welcome back.
+
+00:01.230 --> 00:07.680
+Up until now we've learned that with looping we can use four but there's actually a another way for
+
+00:07.680 --> 00:08.670
+us to loop.
+
+00:08.670 --> 00:17.340
+And it's called instead of a for loop a while loop and while loop is a little different in that we say
+
+00:17.400 --> 00:24.140
+while a condition is happening do something.
+
+00:25.080 --> 00:27.870
+So you can see that there's a bit of a difference here.
+
+00:27.900 --> 00:41.010
+For example I can say that while zero is less than 50 do something or I can say for example I equals
+
+00:41.010 --> 00:53.380
+to zero and I'm going to say while i is less than 50 print I now if I ran this program what do you think
+
+00:53.380 --> 00:56.540
+will happen let's find out if I click Run
+
+00:59.990 --> 01:00.470
+right.
+
+01:00.500 --> 01:01.130
+Do you see that.
+
+01:01.670 --> 01:05.660
+I don't know if you can tell but I'm scrolling right now through all of this.
+
+01:05.660 --> 01:12.350
+It's looping looping looping looping looping and you see that the programming still running as a matter
+
+01:12.350 --> 01:19.640
+of fact I have to stop it because what it was doing is it was looping and looping and looping because
+
+01:19.640 --> 01:25.910
+if we look at the code well zero is always going to be less than 50.
+
+01:25.910 --> 01:34.880
+So what happened was while this was true we printed AI and then the Python interpreter went back to
+
+01:34.940 --> 01:37.850
+line 2 says hey is zero still less than 50.
+
+01:37.930 --> 01:38.080
+Yeah.
+
+01:38.220 --> 01:38.520
+OK.
+
+01:38.570 --> 01:41.600
+Next line print is zero still less than 50.
+
+01:41.610 --> 01:43.420
+Yeah ok next line print.
+
+01:43.490 --> 01:46.150
+And it kept going keep going keep going.
+
+01:46.190 --> 01:50.190
+Now this is what we call an infinite loop.
+
+01:50.330 --> 01:53.780
+That is the program doesn't know when to stop.
+
+01:53.780 --> 01:58.370
+I mean we're telling it to just keep going forever for eternity.
+
+01:58.580 --> 02:00.710
+And I have some safeguards in place here.
+
+02:00.720 --> 02:08.480
+But if you did this in code you'd get this infinite loop until your program crashes if you actually
+
+02:08.480 --> 02:09.910
+ran this code.
+
+02:10.070 --> 02:16.250
+Well it's going to keep running until the machine just doesn't have enough power anymore enough resources
+
+02:16.460 --> 02:18.310
+to keep doing this over and over.
+
+02:18.320 --> 02:20.350
+Everything has limits right.
+
+02:20.360 --> 02:26.660
+So with a while loop we have to be really careful this infinite loop can be very dangerous.
+
+02:26.690 --> 02:35.510
+So how can we solve this we had this idea of a break statement and break is.
+
+02:35.560 --> 02:39.150
+Well just another key word in Python.
+
+02:39.550 --> 02:47.560
+And as it as you may have guessed if I click Run look at that it only runs once as soon as Python sees
+
+02:47.710 --> 02:51.830
+break it's going to say All right break out of the wild.
+
+02:52.030 --> 02:55.940
+So it's kind of go to line five and it's going to say I got nothing there.
+
+02:55.940 --> 02:56.920
+Program's done.
+
+02:57.070 --> 03:01.330
+I'm going to exit out of the program but OK.
+
+03:01.360 --> 03:06.300
+What if I want this to be looped 50 times.
+
+03:06.400 --> 03:08.430
+How can we solve that issue.
+
+03:08.440 --> 03:20.590
+Think about well we can just simply say I equals I plus 1 and then make sure that we change this too.
+
+03:20.650 --> 03:27.220
+I now what's going to happen if I click Run we stop.
+
+03:27.330 --> 03:34.440
+Well at forty nine we've done it 50 times we've lived through it 50 times because we kept incrementing
+
+03:34.530 --> 03:42.100
+I over and over so that I each time we came back to the Loop was incremented by 1.
+
+03:42.180 --> 03:47.190
+Now a shorthand for this we've seen it before is to do plus equals one.
+
+03:47.250 --> 03:51.170
+So that if I run look at that same thing.
+
+03:51.190 --> 03:58.670
+So we're also able to break out of the while loop as long as we're able to turn a condition into force.
+
+03:58.750 --> 04:00.830
+So you'll see this a lot as well.
+
+04:02.110 --> 04:09.730
+So to jump out of a while loop you can either turn the condition false or you can break out of the while
+
+04:09.730 --> 04:11.560
+loop.
+
+04:11.570 --> 04:18.230
+Now another interesting thing that we can do with a while loop is we can have else blocks.
+
+04:18.230 --> 04:24.980
+And here we can say print done with all the work.
+
+04:25.310 --> 04:28.830
+And if I click run here at the very end.
+
+04:28.830 --> 04:31.270
+Look at that done with all the work.
+
+04:31.530 --> 04:33.750
+And this should read like English right.
+
+04:33.840 --> 04:41.070
+While I is less than 50 keep looping through here and as soon as we get to the last part where I becomes
+
+04:41.070 --> 04:48.530
+50 where 50 is no longer less than 50 Python interpreter is going to say all right I don't care about
+
+04:48.530 --> 04:49.580
+anything under there.
+
+04:49.610 --> 04:52.640
+Let's go to the next line and I get otherwise.
+
+04:52.670 --> 04:55.650
+So in this case we don't have anything else happening.
+
+04:55.790 --> 05:03.070
+We can print done with all the work but you're probably asking yourself.
+
+05:03.070 --> 05:04.830
+Hold on.
+
+05:05.020 --> 05:15.470
+Can't I just not do this and just make sure my indentation is at the end click Run and that that works
+
+05:15.470 --> 05:15.890
+right.
+
+05:15.890 --> 05:20.020
+Why would I ever want to write else here.
+
+05:20.100 --> 05:22.770
+What else is a special case here.
+
+05:22.770 --> 05:25.590
+There is one thing that is useful.
+
+05:25.590 --> 05:35.230
+That is if we added a for example a break statement here and I click run you'll see that to the else
+
+05:35.380 --> 05:47.610
+statement does not print and that is because the else block will only execute if there isn't a break.
+
+05:47.640 --> 05:54.970
+That is if the while condition turns to false then it's going to keep going and do the else.
+
+05:55.200 --> 06:00.570
+But if there is a break it's going to break out of this whole thing and go to the eighth line.
+
+06:01.050 --> 06:09.120
+So a little gotcha here that you won't see else too often next to while but there is that special case
+
+06:09.120 --> 06:17.400
+where else is use when you want to make sure that this will be executed only if there isn't a break
+
+06:17.540 --> 06:18.420
+statement.
+
+06:18.720 --> 06:25.320
+Only if the loop is finished doing whatever it's doing without the breaks then let's take a break and
+
+06:25.320 --> 06:27.390
+explore while loops a little bit more.

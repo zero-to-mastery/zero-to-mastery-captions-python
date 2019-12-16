@@ -1,0 +1,61 @@
+WEBVTT
+
+00:00.790 --> 00:01.360
+All right.
+
+00:01.520 --> 00:02.350
+I'm back.
+
+00:02.360 --> 00:08.840
+That took a lot longer than I expected so I changed my sleep time to three hundred and for some reason
+
+00:09.020 --> 00:13.160
+while I was running the script that user decided to unfollow me.
+
+00:13.220 --> 00:18.390
+So we had to select a different user which was a jasmine.
+
+00:18.980 --> 00:25.670
+And I also added a break statement in here so that it didn't keep looping again it was taking forever
+
+00:25.670 --> 00:28.150
+so I just did a little shortcut here.
+
+00:28.280 --> 00:31.490
+Now hopefully I have followed back.
+
+00:31.520 --> 00:33.180
+Let's have a look.
+
+00:33.210 --> 00:33.420
+All right.
+
+00:33.420 --> 00:37.990
+Looks like I have an extra and Yep look at that.
+
+00:38.110 --> 00:45.200
+I have this person I've just followed her back so you can see how this might be useful.
+
+00:45.260 --> 00:49.970
+You might just follow everybody and remove this if statement.
+
+00:49.970 --> 00:55.520
+Maybe you're a little pretentious and you only want to follow back people based on their follow counts
+
+00:55.760 --> 01:06.930
+so you might want to do something like If follower dot followers count is let's say higher than a hundred
+
+01:07.310 --> 01:09.050
+then you follow back.
+
+01:09.050 --> 01:12.460
+So there's a lot of things that you can do here but that's pretty cool.
+
+01:12.470 --> 01:19.100
+We created our first bought the generous but in the next video.
+
+01:19.100 --> 01:28.290
+I want to do a another little fun tool what we call a narcissist but so let's see how that works in
+
+01:28.290 --> 01:28.880
+the next video.

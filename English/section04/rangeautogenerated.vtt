@@ -1,0 +1,175 @@
+WEBVTT
+
+00:01.420 --> 00:10.540
+When looping in Python one of the most common tools is this range function that we get out of the box
+
+00:10.540 --> 00:18.850
+with Python and you see here that range well is a Range object a special type of object in Python that
+
+00:18.850 --> 00:27.610
+returns an object that produces a sequence of integers from start to stop let's explore that are a little
+
+00:27.610 --> 00:41.480
+bit more if I print here a range and I say range one hundred and I click Run I get range of zero to
+
+00:41.570 --> 00:44.310
+one hundred.
+
+00:44.730 --> 00:47.270
+So it looks like a tulpa but it's not.
+
+00:47.280 --> 00:54.750
+It's a Range object and it's a special type of object and a range you can give it like this which gives
+
+00:54.750 --> 00:59.500
+you a default of zero to whatever you give it which is 100.
+
+00:59.850 --> 01:02.910
+Or you can just simply Type 0 one.
+
+01:03.230 --> 01:11.100
+And if I click Run it's the same thing but where range becomes really useful and you'll see this in
+
+01:11.310 --> 01:19.200
+99 percent of cases in Python is in for loops you see besides topples and lists and sets and dictionaries
+
+01:19.200 --> 01:19.910
+and strings.
+
+01:20.070 --> 01:22.830
+You can iterate over a range.
+
+01:22.830 --> 01:32.730
+So for example if I do for i in range and there's a say item or in our case letters to number in range
+
+01:33.900 --> 01:43.470
+and in here I do print no if I run this you'll see that I'll get numbers 1 to 100.
+
+01:43.570 --> 01:46.100
+And why is this useful.
+
+01:46.120 --> 01:54.100
+Well using a range I was able to loop a hundred times as you can see all the way till 99 because our
+
+01:54.100 --> 02:02.080
+count starts at 0 and we're able to loop as many times as I want so I can tell the loop maybe we want
+
+02:02.080 --> 02:08.380
+to loop a certain number of times maybe you won't want to loop 10 times where I can tell the loop how
+
+02:08.380 --> 02:18.410
+many times to run it's extremely useful maybe here we're performing some action where it says I don't
+
+02:18.410 --> 02:26.720
+know email the email list so we want to send 10 emails to an email less for example.
+
+02:26.720 --> 02:34.610
+Well again I can just click Run and I sent that email while a bunch of times 10 times.
+
+02:34.610 --> 02:41.420
+Another neat trick is that while you might not even need no great we're not really using it in our code
+
+02:42.050 --> 02:48.560
+and often while you'll find in python programs is If a programmer doesn't need this variable you just
+
+02:48.560 --> 02:52.090
+do an underscore and this is just a variable.
+
+02:52.130 --> 03:01.540
+I mean you could use it like this and you'll still get these numbers but it just indicates to other
+
+03:01.540 --> 03:04.380
+people that hey I don't really care what this variable is.
+
+03:04.390 --> 03:07.720
+I'm just trying to use range so that we can loop over things.
+
+03:07.750 --> 03:14.020
+Let's say 10 times now range also comes with a third parameter.
+
+03:14.400 --> 03:16.880
+And what that is is they step over.
+
+03:16.890 --> 03:18.240
+So if I do too.
+
+03:18.420 --> 03:18.950
+And by the way.
+
+03:18.950 --> 03:20.370
+Default is one here.
+
+03:20.370 --> 03:29.990
+If I do two it jumps from zero to 10 by two which is very very handy.
+
+03:31.230 --> 03:32.570
+So what is the range.
+
+03:32.700 --> 03:38.670
+Well range creates a special kind of object that we can iterate over OK.
+
+03:38.680 --> 03:41.250
+What if I do minus.
+
+03:41.410 --> 03:41.960
+Right here.
+
+03:41.980 --> 03:44.350
+What if I do minus one.
+
+03:44.350 --> 03:50.800
+Well if I run this Hmm that's not going to work because well let me show you why.
+
+03:51.560 --> 03:56.570
+If I change this to zero and 10 and I do minus one
+
+04:01.100 --> 04:10.740
+it's going to go in the opposite direction but if I did just ten and zero that's not going to work.
+
+04:10.950 --> 04:16.770
+If we want to do something in reverse we just have to make sure that we add that minus one or if we
+
+04:16.770 --> 04:19.590
+want to step back twice.
+
+04:19.680 --> 04:21.300
+Then we click Run.
+
+04:21.300 --> 04:26.260
+So you have a lot of options to play with the range.
+
+04:26.400 --> 04:30.070
+You can do ascending descending one final thing.
+
+04:30.340 --> 04:32.690
+Another place that you might see ranges.
+
+04:32.740 --> 04:38.530
+And like I said most of the time they're in for loops but he can also do something interesting like
+
+04:38.560 --> 04:52.990
+let's say a range of 10 and then if we wrap this in a list remember a list function allows us to convert
+
+04:52.990 --> 04:54.340
+something to a list.
+
+04:54.340 --> 05:03.990
+If I run this does you see that let's simplify this so that this range is going to just be too if I
+
+05:03.990 --> 05:13.110
+click Run you see that I loop two times and in here I'm going to print first of all I'm going to create
+
+05:13.110 --> 05:21.000
+a range and it a rebel object that has 10 items and then I'm going to convert that into a list so you
+
+05:21.000 --> 05:24.270
+can see here zero to nine into a list.
+
+05:24.600 --> 05:33.870
+So this is a quick way to create a list that ball has integers a neat trick that you'll definitely use
+
+05:33.900 --> 05:37.830
+along your program or journey I'll see in the next one.
+
+05:37.860 --> 05:38.270
+But by.

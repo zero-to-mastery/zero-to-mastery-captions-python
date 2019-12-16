@@ -1,0 +1,133 @@
+WEBVTT
+
+00:00.540 --> 00:02.080
+Welcome back.
+
+00:02.080 --> 00:08.040
+This was probably an exercise that sounded a lot more complicated than it actually was.
+
+00:08.080 --> 00:14.710
+So hopefully most of you were able to solve it if you didn't by the time you watch this video you're
+
+00:14.710 --> 00:19.190
+going to say to yourself oh that was so simple I should've figured it out.
+
+00:19.390 --> 00:21.510
+So don't worry we'll get there.
+
+00:21.520 --> 00:28.020
+Let's see how we can do that well if we go to Hacker News you might notice something when you click
+
+00:28.020 --> 00:35.330
+on more when you click on more you actually get a new you are all here with.
+
+00:35.400 --> 00:40.570
+Well you see the query string which is a question mark here that says Pete too.
+
+00:40.710 --> 00:44.540
+So if I do p equals three here we go to pastry.
+
+00:44.880 --> 00:48.340
+We go to page four and so on and so forth.
+
+00:48.420 --> 00:56.670
+So all we actually need is just this link and all we need to do is go all the way up to our code.
+
+00:56.670 --> 01:01.550
+Let's minimize this for now and simply just duplicate what we've just done.
+
+01:02.890 --> 01:10.750
+We grab a second response and this response will be requests start get.
+
+01:10.960 --> 01:25.140
+And this link with page two from here we simply grab this soup and recreate it as soup to and that's
+
+01:25.150 --> 01:30.740
+going to be from the response to the text again.
+
+01:30.840 --> 01:33.700
+What we'll do here is We'll duplicate this code.
+
+01:33.720 --> 01:38.910
+And again if you notice that this could be more efficient maybe we can extract this into a function
+
+01:39.150 --> 01:47.890
+that's good you sound to notice these things so here we're just going to do links to subtext to well
+
+01:47.950 --> 01:58.150
+you'll grab from our soup too and well soup to and we can now just combine these two things by simply
+
+01:58.330 --> 02:05.190
+calling let's call it mega links which will combine these links with the second links.
+
+02:05.200 --> 02:10.630
+So we're combining the two pages and we'll do the same for mega subtext
+
+02:13.610 --> 02:23.780
+which you'll be subtext plus subtext to and because we've written our code in nice functions all we
+
+02:23.780 --> 02:26.940
+need to do now is replace our parameters.
+
+02:26.990 --> 02:27.760
+Right.
+
+02:27.800 --> 02:35.980
+All we need to do at the bottom here is say mega links and mega subtext.
+
+02:35.980 --> 02:39.540
+If I see this this should now work.
+
+02:39.590 --> 02:40.210
+Let's have a look
+
+02:47.560 --> 02:51.640
+go and classic me made a bit of a spelling error.
+
+02:51.660 --> 02:55.080
+If we go over here it's not moving the subtext.
+
+02:55.080 --> 03:01.900
+It's mega subtext let's run this again you'll see here that it takes a little bit longer.
+
+03:01.900 --> 03:04.210
+Again because we're going to two pages.
+
+03:04.210 --> 03:05.770
+But look at that.
+
+03:06.040 --> 03:10.930
+We have our hacker news using two pages.
+
+03:10.930 --> 03:15.820
+You can see that it's clearly longer and we have a story here with nine hundred and fifty one votes.
+
+03:15.820 --> 03:18.120
+I should I should definitely read that.
+
+03:18.250 --> 03:22.890
+How to access quality of garments sounds very important.
+
+03:22.980 --> 03:30.810
+And there you have it you have now just covered the basics of scraping as you can see it's very specific
+
+03:30.840 --> 03:33.420
+to a Web site that you want to scrape.
+
+03:33.420 --> 03:40.020
+Remember you want to check to make sure that A you are able to scrape the Web sites by checking the
+
+03:40.020 --> 03:47.610
+terms and conditions of that Web site and robots dot text and try to use the data in well not nefarious
+
+03:47.610 --> 03:48.140
+ways.
+
+03:48.150 --> 03:54.390
+Be nice be ethical in the next video we're going to talk a little bit about how to expand on this and
+
+03:54.600 --> 04:00.830
+what you might want to try if you want to get more and more involved with web scraping.
+
+04:00.870 --> 04:02.430
+I'll see you on that one by.

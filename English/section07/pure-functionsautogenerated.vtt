@@ -1,0 +1,298 @@
+WEBVTT
+
+00:02.040 --> 00:05.180
+What is a pure function.
+
+00:05.380 --> 00:08.800
+Well it pure function looks like this.
+
+00:08.800 --> 00:10.300
+We have a function.
+
+00:10.480 --> 00:17.170
+So instead of a box that we had before of objects of all these functionalities instead think of this
+
+00:17.170 --> 00:25.180
+as just a simple function and let's say we give it a list containing 1 2 and 3 if we give this input
+
+00:25.630 --> 00:32.590
+into this function what we would expect with a pure function is for something to happen to this input
+
+00:32.800 --> 00:36.430
+that every time results in the same thing.
+
+00:36.430 --> 00:43.310
+So let's say we multiply this by two we would receive two four and six now.
+
+00:43.560 --> 00:45.650
+A pure function has two rules.
+
+00:46.600 --> 00:55.560
+One is that given the same input it will always return the same output that is every time we give one
+
+00:55.590 --> 01:00.160
+two and three to this list we give it to a function that we create.
+
+01:00.160 --> 01:02.980
+It should always return the same output.
+
+01:02.980 --> 01:10.440
+So if I run this function millions of times with the same input it should result in the same output.
+
+01:10.600 --> 01:16.870
+And the second point is this idea of a function should not produce any side effects.
+
+01:16.960 --> 01:24.630
+What are side effects side effects are things that a function does that affect the outside world.
+
+01:24.640 --> 01:30.700
+For example if I was to print something inside of this function it affects the outside world.
+
+01:30.700 --> 01:37.880
+Right because I'm printing something onto a screen the screen is the outside world or for example if
+
+01:37.940 --> 01:43.820
+this function was touching a variable that lived outside of a different scope.
+
+01:43.820 --> 01:44.990
+That's a side effect.
+
+01:45.680 --> 01:48.910
+Let's have a look at code to understand this concept a little bit more.
+
+01:49.460 --> 01:54.830
+Let's say we had a function and then this function will multiply.
+
+01:56.210 --> 01:59.260
+By 2 a list.
+
+01:59.390 --> 02:09.440
+So let's just say an ally which will be our list and in here what we want to do is loop over the item
+
+02:10.620 --> 02:20.010
+in the list and then each item we want to multiply and append to a new list.
+
+02:20.220 --> 02:30.980
+So let's create a new list that will be an empty list and in here we'll say new list dot append and
+
+02:31.040 --> 02:35.390
+do item multiply by 2.
+
+02:35.660 --> 02:43.480
+And then finally at the end of this function we want to return the new list let's give this a go.
+
+02:43.500 --> 02:49.890
+If I say multiply by 2 and give it to 1 2 3 and let's print out
+
+02:52.620 --> 03:00.940
+here the output if I click Run I get 2 4 6.
+
+03:00.990 --> 03:03.080
+Is this a pure function.
+
+03:03.120 --> 03:04.310
+Let's think about this.
+
+03:04.410 --> 03:14.920
+The first rule given the same input that is 1 2 and 3 it will always return the same output no matter
+
+03:14.920 --> 03:16.860
+how many times I run this.
+
+03:17.020 --> 03:20.840
+It's always going to give me the same output.
+
+03:21.040 --> 03:23.260
+So okay we pass the first test.
+
+03:23.350 --> 03:28.200
+What about the second test that it produces no side effects.
+
+03:28.210 --> 03:36.390
+Does this produce any side effects does this touch anything in the outside world.
+
+03:36.430 --> 03:37.710
+Think about it.
+
+03:37.940 --> 03:38.930
+No it doesn't.
+
+03:38.930 --> 03:39.740
+Right.
+
+03:39.740 --> 03:49.130
+Nothing in the outside world matters to this function because everything is contained in here if for
+
+03:49.130 --> 04:03.010
+example instead of having print here we simply have print in here if I click Run we get the same output
+
+04:03.040 --> 04:06.510
+but does this have side effects.
+
+04:06.530 --> 04:07.970
+Well yes it does.
+
+04:07.970 --> 04:11.750
+It interacts with the outside world which is the print statement.
+
+04:11.870 --> 04:20.140
+The print statement tells me hey I'm going to print on whatever the display this machine has in our
+
+04:20.140 --> 04:25.660
+case it's going to print here but we don't really know what print statement does because it interacts
+
+04:25.660 --> 04:27.190
+with the screen on this side.
+
+04:27.880 --> 04:31.200
+So this has side effects.
+
+04:31.350 --> 04:35.280
+We give control to print but we don't know what print is going to do.
+
+04:37.020 --> 04:46.370
+Another example that I can give you is this what if we have a new list here that we actually define
+
+04:46.910 --> 04:47.510
+outside
+
+04:50.600 --> 04:54.420
+so that we have new list like this.
+
+04:54.560 --> 05:04.740
+If I click Run I still get to 4 6 but does this have side effects.
+
+05:04.750 --> 05:06.150
+Well yes it does.
+
+05:06.160 --> 05:12.460
+It interacts with the outside world and what's outside of this world of a function which remember is
+
+05:12.460 --> 05:13.340
+the scope.
+
+05:13.450 --> 05:19.150
+Well it interacts with this new list it a pants to this new list.
+
+05:19.150 --> 05:29.980
+So if a programmer comes along and maybe before we run this function we decide to say new list we change
+
+05:29.980 --> 05:39.260
+it to an empty string Well when I run this function I get an error because now this new list is a String
+
+05:39.350 --> 05:48.350
+object so the new list that lives in the outside world of this function can be modified by another developer
+
+05:48.560 --> 05:49.970
+or by a program.
+
+05:49.970 --> 05:51.200
+And we wouldn't know about it.
+
+05:51.380 --> 05:54.730
+And when we run this function it's going to give us an error.
+
+05:54.800 --> 05:56.740
+It has a side effect.
+
+05:56.840 --> 06:06.610
+So ideally we contain our functions and make them pure because as you can see we're never going to have
+
+06:06.640 --> 06:10.950
+a bug or an error in our code unless we wrote something wrong here.
+
+06:10.960 --> 06:16.300
+But because we don't care about the outside world because everything that we give as an input is always
+
+06:16.300 --> 06:20.130
+going to produce a good output it's going to be pure.
+
+06:20.170 --> 06:28.180
+Now it's hard to really understand why this is such a powerful concept without having a bit of experience
+
+06:28.180 --> 06:29.190
+in the workplace.
+
+06:29.200 --> 06:38.240
+But let me just tell you this that when you have pure functions you have less buggy code you're able
+
+06:38.240 --> 06:40.120
+to test your code better.
+
+06:40.130 --> 06:49.610
+It's easier to understand your code and overall you have these benefits of not having different parts
+
+06:49.880 --> 06:56.570
+of your code touching each other and affecting each other which makes your life as a programmer so much
+
+06:56.570 --> 06:57.440
+easier.
+
+06:57.440 --> 07:02.810
+So this idea of pure functions is really important but the one thing I want you to take away from this
+
+07:03.050 --> 07:08.600
+is that pure functions is more of a guideline than an absolute.
+
+07:08.600 --> 07:15.890
+It is impossible to have pure functions everywhere because if a function doesn't affect the outside
+
+07:15.890 --> 07:16.660
+world at all.
+
+07:17.120 --> 07:22.610
+Well we wouldn't have any programs we wouldn't be able to display things we wouldn't be able to save
+
+07:22.610 --> 07:25.660
+things such as our game profile.
+
+07:25.850 --> 07:29.490
+So it's impossible to have pure functions everywhere.
+
+07:29.510 --> 07:35.780
+However when you can wherever you can functional programming teaches us that your functions are good
+
+07:36.950 --> 07:43.850
+try to create pure functions and only have few non pure functions that maybe interact with the outside
+
+07:43.850 --> 07:50.480
+world that we can go back to whenever we have bugs in our code because most likely those are the ones
+
+07:50.690 --> 07:58.430
+that are going to have bugs than pure functions like this to finalize our concept of functional programming.
+
+07:58.530 --> 08:07.020
+If for example this was our Wizard from the previous videos with functional programming we would have
+
+08:07.050 --> 08:24.090
+a wizard object or wizard dictionary that had name let's say Merlin and power of 50 and instead of containing
+
+08:24.090 --> 08:32.800
+these in a class I would have different methods such as attack and this wouldn't be a method it would
+
+08:32.800 --> 08:39.340
+be a function because it doesn't live inside of a class in functional programming.
+
+08:39.340 --> 08:47.260
+They say hey we don't need to combine data with functions let's keep those separated let's just create
+
+08:47.290 --> 08:53.140
+pure functions that can be passed anything like a character
+
+08:55.730 --> 09:02.270
+and this way we keep those two things separate so that we can focus on pure functions and we can focus
+
+09:02.270 --> 09:03.360
+on data.
+
+09:03.710 --> 09:07.780
+So that's where the difference is at the end of the day.
+
+09:08.030 --> 09:13.850
+It's all about trying to keep our code clean and avoiding bugs in our code.
+
+09:13.850 --> 09:21.730
+A big problem that programmers have all the time so it's just a different way of thinking let's learn
+
+09:21.730 --> 09:22.930
+some more in the next video.

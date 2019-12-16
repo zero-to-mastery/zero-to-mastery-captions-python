@@ -1,0 +1,154 @@
+WEBVTT
+
+00:00.900 --> 00:05.850
+I want to talk to you about another way to do conditional logic.
+
+00:05.850 --> 00:17.150
+We saw the F L F and then the else statement but there's another way called the ternary operator.
+
+00:17.290 --> 00:26.650
+Now this is still the same as the else f or if else statements but it's a shortcut so you can only use
+
+00:26.650 --> 00:33.550
+these on certain conditional logic so it doesn't mean that hey this is just the an entirely new way.
+
+00:33.550 --> 00:39.940
+This is a shortcut in a sense for you to make your code a little bit cleaner.
+
+00:39.940 --> 00:40.940
+Let's have a look.
+
+00:41.020 --> 00:46.290
+By the way these ternary operators can also be called conditional expressions.
+
+00:46.510 --> 00:50.840
+And when you hear the word expression that should mean something to you right.
+
+00:50.860 --> 00:56.470
+It's an expression because it evaluates to a value.
+
+00:56.470 --> 01:03.910
+So a ternary operator or a conditional expression is an operation that evaluates to something based
+
+01:03.910 --> 01:06.570
+on the condition being true or not.
+
+01:06.700 --> 01:08.800
+And it's actually a new feature of Python.
+
+01:08.830 --> 01:10.560
+As of version two point four.
+
+01:10.570 --> 01:22.450
+So let's have a look the way we use this is to say is condition if this is true then do this.
+
+01:22.450 --> 01:24.520
+So this is the condition if true.
+
+01:24.520 --> 01:28.540
+And bear with me here it is a little bit confusing at first.
+
+01:28.750 --> 01:36.890
+We say if and here we give condition otherwise condition
+
+01:39.710 --> 01:40.530
+else.
+
+01:40.570 --> 01:41.320
+All right.
+
+01:41.390 --> 01:48.520
+That is that is a little confusing so look let's go through it so the f is going to check this condition
+
+01:49.210 --> 01:51.250
+so it doesn't actually start with here.
+
+01:51.310 --> 01:59.080
+It's going to say hey if this condition now this is going to evaluate to their true or false if it's
+
+01:59.080 --> 02:01.860
+true then we're going to do this.
+
+02:02.050 --> 02:04.720
+Otherwise we're going to do this.
+
+02:04.720 --> 02:08.210
+So let me show you an example of how that would work.
+
+02:10.170 --> 02:14.250
+Let's say we're trying to determine if well if a user is your friend.
+
+02:14.280 --> 02:17.330
+So we'll say is a friend.
+
+02:17.570 --> 02:21.150
+And here we can set to True or false for a friend.
+
+02:21.160 --> 02:28.590
+Maybe we can check on Facebook if users can message you or on Twitter whether Twitter users can give
+
+02:28.590 --> 02:30.240
+you direct messages.
+
+02:30.240 --> 02:36.120
+Well here and let's do can message.
+
+02:36.380 --> 02:40.220
+And here we can do our ternary operator.
+
+02:40.220 --> 02:49.010
+We're going to say message aloud If so this is if the condition is true the condition is hey is this
+
+02:49.010 --> 02:50.960
+person your friend.
+
+02:50.960 --> 02:53.350
+Otherwise condition.
+
+02:53.360 --> 02:54.140
+That is false.
+
+02:54.140 --> 03:03.320
+Well I'm going to say not allowed to message and you can see here that this is a one liner though it
+
+03:03.320 --> 03:04.360
+looks like two lines.
+
+03:04.370 --> 03:09.530
+But you can see over here that it's not really is just that we're wrapping so we can see the entire
+
+03:09.530 --> 03:17.860
+code so let's run this and see what can message prints.
+
+03:17.940 --> 03:27.960
+If I run this message is allowed because well we've assigned message aloud to Ken message because while
+
+03:27.960 --> 03:36.260
+the condition was true if this person wasn't my friend and I run this not allowed to message because
+
+03:36.250 --> 03:42.780
+of the condition that if condition evaluates to false I know the ordering here can be a little bit confusing
+
+03:42.780 --> 03:49.710
+so you might have to look at it a couple times and you do need to use it a few times to really remember
+
+03:49.710 --> 03:59.970
+it but this is the general rule condition if true if condition else condition if not a false if false
+
+04:00.830 --> 04:02.220
+can't spell.
+
+04:02.240 --> 04:03.140
+All right.
+
+04:03.210 --> 04:10.530
+A nice shorthand way to do something when a condition is either true or false or evaluates to true or
+
+04:10.530 --> 04:11.790
+false.
+
+04:11.790 --> 04:13.850
+All right I'll see you in the next video.
+
+04:13.860 --> 04:14.070
+Bobby.

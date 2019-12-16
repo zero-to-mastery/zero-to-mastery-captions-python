@@ -1,0 +1,139 @@
+WEBVTT
+
+00:00.700 --> 00:01.980
+Welcome back.
+
+00:01.990 --> 00:07.930
+What I haven't told you is that when learning about object oriented programming again and not just in
+
+00:07.930 --> 00:15.980
+Python but in any programming language that supports O P paradigm is this idea of four pillars of all
+
+00:15.990 --> 00:21.580
+p the four things that object oriented programming does really really well.
+
+00:21.710 --> 00:28.630
+And as a matter of fact we've actually learned the first one and that is the idea of encapsulation.
+
+00:28.880 --> 00:38.540
+What is encapsulation encapsulation is the binding of data and functions that manipulate that data and
+
+00:38.540 --> 00:49.790
+we encapsulate into one big object so that we keep everything in this box that users or code or other
+
+00:49.790 --> 00:58.520
+machines can interact with in this data and functions are what we call attributes and methods right.
+
+00:58.770 --> 01:08.040
+We're able to encapsulate the functionality over player character by having name and age data or attributes
+
+01:08.490 --> 01:15.850
+and also have functions that can act upon this name and age.
+
+01:15.870 --> 01:31.240
+So for example I can have a method in here that says shout or speak and this speak method can now use
+
+01:31.540 --> 01:34.350
+the name in age.
+
+01:34.450 --> 01:54.680
+I can say my name is self dog named and I am self dot age years called so that if I do player one dot
+
+01:55.460 --> 02:07.790
+speak and I run this My name is Andre and I am 100 years old I'm encapsulating the functionality if
+
+02:07.790 --> 02:17.520
+I didn't have this class I would have well some variables and then two functions but by using encapsulation
+
+02:17.850 --> 02:24.660
+I've packaged this up into a blueprint that I can create multiple objects so so that when other people
+
+02:24.660 --> 02:34.140
+see my code they know hey this is an entire object that I can interact with I can use in certain ways
+
+02:34.140 --> 02:36.910
+that player character describes.
+
+02:37.260 --> 02:42.390
+And we've also seen this in our built in Python data types right.
+
+02:42.510 --> 02:51.680
+When I create a string like this because of the encapsulation I have all this functionality available
+
+02:52.100 --> 03:00.590
+to me all these methods that I can access so that if I do let's say capitalize it will capitalize all
+
+03:00.590 --> 03:01.910
+my strings.
+
+03:02.180 --> 03:08.150
+I have all this functionality encapsulated for me to use.
+
+03:08.310 --> 03:15.220
+Now why do we want to package data and functions into attributes and methods.
+
+03:16.110 --> 03:18.790
+Well because this gives us extra power right.
+
+03:18.810 --> 03:29.830
+If for example this player character doesn't have any actions any methods and just had attributes or
+
+03:29.950 --> 03:34.010
+in that case this is kind of like a dictionary right.
+
+03:34.040 --> 03:45.400
+It's kind of useless if I print player one here and I click Run I have this player object but I can
+
+03:45.400 --> 03:59.390
+access name like this and I can also access h like this but I can't really do anything to it.
+
+03:59.470 --> 04:07.990
+I could have the same dictionary here let's say Player 2 that is going to equal a dictionary that has
+
+04:08.740 --> 04:20.840
+name of Andre and then age of 100 and the only real difference between the two is the way I access this
+
+04:20.840 --> 04:28.310
+information instead of the dot notation I use the bracket notation to access the keys
+
+04:33.130 --> 04:44.420
+so that when I click Run off to make sure that I do two here for a player to if I click Run Again it's
+
+04:44.420 --> 04:46.030
+the same thing.
+
+04:46.120 --> 04:52.330
+Sure I can do it this way but it's kind of useless why not just create a dictionary if all I want is
+
+04:52.330 --> 05:00.080
+data but using this way I'm combining things packaging things up into those instances.
+
+05:00.100 --> 05:08.890
+And to those boxes that can be useful and also things that have meaning great because our world is full
+
+05:08.890 --> 05:12.520
+of data and actions right.
+
+05:12.520 --> 05:20.200
+Even a tree for example if we had a tree class in our real world the tree would have maybe whether it
+
+05:20.200 --> 05:28.620
+was an evergreen or a perennial all have whether it has lease or does it how tall it is.
+
+05:28.660 --> 05:31.830
+I'll have all that information but also actions right.
+
+05:31.900 --> 05:33.630
+I can cut down a tree.
+
+05:33.730 --> 05:42.520
+The tree can grow the tree can extend its roots so this way we're able to mimic what happens in the
+
+05:42.520 --> 05:45.180
+real world with our code.
+
+05:45.250 --> 05:48.570
+So that is encapsulation and we've seen it.
+
+05:48.760 --> 05:51.690
+But let's talk about our second pillar in the next video.

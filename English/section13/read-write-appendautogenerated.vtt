@@ -1,0 +1,259 @@
+WEBVTT
+
+00:00.900 --> 00:07.260
+Up until this point we've learned how to read files but we had this annoying thing with the cursor and
+
+00:07.260 --> 00:10.120
+then we had to close the file.
+
+00:10.230 --> 00:12.590
+So how can we fix this.
+
+00:12.600 --> 00:19.620
+Well a better way to actually do something like this and do file IO with python is with the built in
+
+00:19.680 --> 00:20.840
+with statement.
+
+00:20.880 --> 00:23.990
+Let me show you instead of what we had before.
+
+00:24.090 --> 00:34.960
+What we're gonna say is with open the name of the file and say as whatever the variable you want.
+
+00:34.990 --> 00:42.910
+So my file so now with open you can actually do something like this but you don't have to worry about
+
+00:43.210 --> 00:47.960
+closing so most of the time you want to use the With statement.
+
+00:47.960 --> 00:52.070
+This is the proper way to work with files in Python.
+
+00:52.070 --> 01:01.410
+And if I save here and run my script I get an error because I forgot the column here.
+
+01:01.490 --> 01:02.790
+If I run again.
+
+01:02.810 --> 01:03.710
+There you go.
+
+01:03.710 --> 01:07.590
+I get my output and I don't need to close my file.
+
+01:07.610 --> 01:09.110
+Everything is down for me.
+
+01:09.260 --> 01:12.810
+So this is a standard way to read a file.
+
+01:12.860 --> 01:15.320
+Now what if we wanted to write to a file.
+
+01:15.320 --> 01:25.400
+So far we've only read and actually underneath the hood open has a default parameter called mode equals
+
+01:25.790 --> 01:37.300
+to R which stands for read so with mode are we are able to read files when we don't specify the mode
+
+01:37.870 --> 01:46.690
+it automatically just assumes we're reading but if we wanted to write to a file we can simply do w for
+
+01:46.900 --> 01:57.770
+write so if I run this you see that I get an error now unsupported operation not readable because well
+
+01:57.920 --> 02:05.880
+the file can only be written so in order for me to read and write I can write R W right.
+
+02:05.940 --> 02:09.260
+Well let's see.
+
+02:09.350 --> 02:11.860
+No that's actually not how it works.
+
+02:11.860 --> 02:17.770
+You think it'll be RW but this is a bit of a trick in order to read and write.
+
+02:17.790 --> 02:31.410
+We do read plus so that if I run this all right I'm reading and writing and I get an empty list because
+
+02:31.740 --> 02:33.990
+this is now empty.
+
+02:33.990 --> 02:34.180
+Okay.
+
+02:34.200 --> 02:41.210
+So let's write to a file here let's make this a little bit smaller just so we can see that's better.
+
+02:43.140 --> 02:52.650
+Let's say that in this file I want to have text and in this text I'm going to say my file thought right
+
+02:54.460 --> 02:57.550
+and I can write whatever piece of text I want.
+
+02:57.550 --> 03:06.180
+So let's say Hey it's me.
+
+03:06.330 --> 03:17.060
+So now in here if I do print text and I run this I get you'll love it.
+
+03:17.120 --> 03:17.720
+Mm hmm.
+
+03:17.740 --> 03:18.530
+What is this you love.
+
+03:21.190 --> 03:21.370
+Well.
+
+03:21.380 --> 03:23.820
+This is a really important right now.
+
+03:23.840 --> 03:25.170
+Well we want to focus on is.
+
+03:25.190 --> 03:26.780
+Hey it's me.
+
+03:26.780 --> 03:28.300
+I've read into a file.
+
+03:28.370 --> 03:33.770
+Okay so let's say I wanted to open the file again and actually write again.
+
+03:33.770 --> 03:43.620
+Let's say this time around I'm going to write a smiley face if I run this and go back.
+
+03:43.730 --> 03:44.530
+All right.
+
+03:44.840 --> 03:54.560
+It looks like I wrote to the file but oh is this what we wanted when we write something to a file.
+
+03:54.730 --> 03:56.440
+The cursor resets.
+
+03:56.440 --> 04:05.930
+Remember when we open a file the cursor goes to 0 and we write to the file and if there's something
+
+04:05.930 --> 04:08.540
+already existing in there while we overwrite it.
+
+04:08.540 --> 04:10.190
+So we have to be careful.
+
+04:10.250 --> 04:19.780
+And by the way this text file just gave us that we wrote two characters the smiley face Okay so how
+
+04:19.780 --> 04:20.560
+can we fix this.
+
+04:20.560 --> 04:25.530
+How can we make sure that we don't break what we have previously which is hey it's me.
+
+04:25.720 --> 04:28.940
+And I just want to add a smiley face at the end.
+
+04:28.960 --> 04:38.620
+Well we can use the append mode the append mode is a and this appends to the end of the file if I run
+
+04:38.620 --> 04:40.120
+this look at that.
+
+04:40.150 --> 04:43.820
+Hey it's me with a smiley face it appends to the end.
+
+04:43.960 --> 04:46.100
+So that's the append mode.
+
+04:46.330 --> 04:55.230
+Again we can use w to write and if I run this it adds a smiley face.
+
+04:55.250 --> 05:01.510
+Now why did it not do like last time and overwrite the existing thing.
+
+05:01.520 --> 05:12.450
+Well it's because of our mode w allows us to write to a file previously when we did read and write.
+
+05:12.590 --> 05:16.880
+What happened was we read the file.
+
+05:16.880 --> 05:18.710
+Let's run this again.
+
+05:18.710 --> 05:20.600
+Actually let's go back to hey it's me.
+
+05:20.600 --> 05:21.550
+The way it was.
+
+05:21.790 --> 05:23.030
+And if I run this again
+
+05:26.110 --> 05:36.980
+because we did read and write the cursor was set to zero and overrode it versus if we just did the right
+
+05:38.060 --> 05:45.720
+it will assume this is a new file and we just want to well just add the smiley face if I click Run here
+
+05:46.350 --> 05:48.550
+you see that now is just smiley face.
+
+05:48.600 --> 05:53.970
+So you want to be careful that you use the right mode based on what you need.
+
+05:54.000 --> 06:02.710
+Now let's say we wanted to create a file that doesn't exist let's have a file called Happy dot text
+
+06:04.070 --> 06:08.820
+or actually no less to set and this writes a sad face.
+
+06:08.820 --> 06:10.830
+But remember we don't have this on our desktop.
+
+06:10.830 --> 06:15.530
+If I clear this and look at our desktop we don't have a sad dot text.
+
+06:15.540 --> 06:27.550
+If I do read plus here so read and write and I run this I get a file not found here if I do a right
+
+06:27.760 --> 06:31.320
+here and I run this all right.
+
+06:31.340 --> 06:32.380
+It looks like it worked.
+
+06:32.390 --> 06:36.780
+If I look at the files I have a sad text now.
+
+06:36.800 --> 06:44.500
+So now if I open it I have it sat face text so right.
+
+06:44.520 --> 06:50.600
+Also creates a new file if it doesn't exist already or over writes the existing one.
+
+06:50.640 --> 06:55.050
+So you want to be careful once again with the mode if whether you want to append whether you want to
+
+06:55.050 --> 06:57.530
+read whether you want to read and write.
+
+06:57.840 --> 07:03.040
+But most of the time the most common ones are read write and append.
+
+07:03.180 --> 07:08.250
+Now in the next video I want to talk about this idea of a file.
+
+07:08.430 --> 07:14.100
+I've ridden text files for now but we could have written anything we could have done a dot pie file
+
+07:14.280 --> 07:15.370
+if I wanted to.
+
+07:15.450 --> 07:21.110
+But what about accessing files that are in different locations such as inside of folders.
+
+07:21.180 --> 07:23.040
+We can explore that topic in the next video.

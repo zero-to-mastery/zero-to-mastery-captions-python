@@ -1,0 +1,265 @@
+WEBVTT
+
+00:00.980 --> 00:07.100
+In the previous video we learned that Opie is what we call a paradigm a way to think about our code
+
+00:07.130 --> 00:09.290
+and structure our code.
+
+00:09.290 --> 00:15.940
+And I'm going to link to this excellent article from Wikipedia about the history of programming languages.
+
+00:16.030 --> 00:25.070
+You see we started with basic programming languages we have things like assembly language that was really
+
+00:25.130 --> 00:27.500
+low level really close to machine code.
+
+00:28.500 --> 00:35.340
+We had things like COBOL and then we slowly as we started writing more and more code in the 60s and
+
+00:35.340 --> 00:39.810
+70s we started to establish some of these fundamental paradigms.
+
+00:39.810 --> 00:46.530
+And one of the big paradigms that came to be especially with these small talk programming language was
+
+00:46.530 --> 00:53.040
+this idea of object oriented programming or an object oriented language.
+
+00:53.040 --> 00:58.470
+You see up until that point we wrote what we call procedural code.
+
+00:58.470 --> 01:06.300
+What that means is that if we look at a python file for example a procedural code was just like a procedure
+
+01:07.450 --> 01:13.780
+we simply had lines of one through let's say a hundred and we just went from the top of the line to
+
+01:13.780 --> 01:14.970
+the bottom of the line.
+
+01:15.010 --> 01:19.720
+We had conditionals maybe loops but everything was Do this do that.
+
+01:19.720 --> 01:27.130
+It was us telling the machine Hey just do exactly this one I'm about to tell you with the introduction
+
+01:27.130 --> 01:32.220
+of object oriented paradigms this changed a bit.
+
+01:32.420 --> 01:40.010
+We started saying hey let's model something in our code that represents a real world object.
+
+01:40.070 --> 01:47.900
+For example if I'm about to code a car I would create a car object that has data on what color it is
+
+01:47.930 --> 01:54.430
+what type of engine it has how many seats it has but also actions like methods that we can take on it
+
+01:54.440 --> 02:03.350
+such as the car can go forward it can go backward it can open the door and instead of having these line
+
+02:03.350 --> 02:12.440
+by line procedural code we can think in terms of models real world blueprints because as humans we organize
+
+02:12.440 --> 02:21.500
+things think of a room think of a factory by organizing things and having different groups in a specific
+
+02:21.500 --> 02:28.300
+location working together that's a better way to think as well as to run things.
+
+02:28.310 --> 02:30.680
+So how would this look in python.
+
+02:31.910 --> 02:40.120
+Well Python is an object oriented language or can be which means that it's able to support or be ideas.
+
+02:40.130 --> 02:46.490
+This idea of objects and modeling and we've seen this when we use the type we see that everything is
+
+02:46.490 --> 02:49.570
+an object because we use this class keyword.
+
+02:50.270 --> 02:55.990
+But what is this class keyword in Python.
+
+02:56.000 --> 03:04.490
+I can create my own data type my own class by simply saying class and then afterwards I can name it
+
+03:04.580 --> 03:05.760
+whatever I want.
+
+03:06.080 --> 03:09.100
+Let's say class big
+
+03:12.380 --> 03:12.810
+now.
+
+03:12.830 --> 03:18.010
+Right away you see here that the naming convention is different than what we've seen before.
+
+03:18.110 --> 03:26.180
+We're going to make sure that it's capitalized which is the standard we want to let programmers know
+
+03:26.180 --> 03:32.690
+that this is going to be a class and we're not using the snake case we're using what we call camel case
+
+03:32.750 --> 03:41.480
+which is every new word is a capital letter and then here we use the colon and then in here we write
+
+03:41.630 --> 03:42.760
+our code.
+
+03:42.830 --> 03:49.190
+Now I'm not going to write the code right now I'm just going to pass but right there I've just created
+
+03:49.220 --> 03:55.010
+a new class so that if I do let's say for example type
+
+03:58.350 --> 04:03.670
+big object and I click Run well I still get type.
+
+04:04.050 --> 04:10.620
+Because right now what we've created is this class which is a blueprint but we haven't actually created
+
+04:11.100 --> 04:12.480
+the object.
+
+04:12.480 --> 04:14.690
+I know the wording can get confusing but bear with me.
+
+04:14.730 --> 04:16.420
+I will explain this.
+
+04:16.500 --> 04:29.570
+We can now create let's say object one equals two big object and then run this class so that if I do
+
+04:29.570 --> 04:33.500
+type object here Object 1 and I click Run
+
+04:36.530 --> 04:40.730
+I get class big object.
+
+04:40.730 --> 04:47.150
+You can ignore the main here for now because we're going to talk about it later but you see here that
+
+04:47.150 --> 04:50.450
+I've just created my own object.
+
+04:50.450 --> 04:56.940
+Now let's think about what just happened here because it is a lot to understand.
+
+04:57.170 --> 04:59.400
+You see an object oriented programming.
+
+04:59.400 --> 05:03.820
+There's this idea of a class and an object.
+
+05:03.950 --> 05:06.810
+Now a class is this.
+
+05:06.970 --> 05:11.500
+It's the blueprint the blueprint of what we want to create.
+
+05:11.570 --> 05:16.940
+What are the basic attributes that is properties that our class has.
+
+05:16.940 --> 05:21.620
+What are some basic methods or actions that our class can take.
+
+05:21.680 --> 05:29.390
+And then from this blueprint I'm able to create different objects over and over using this as the building
+
+05:29.390 --> 05:30.440
+block.
+
+05:30.470 --> 05:40.510
+So this blueprint is what we call a class which we define what the class keyword and this class can
+
+05:40.510 --> 05:41.950
+be instantiated.
+
+05:41.950 --> 05:47.080
+That is the action of creating different instances.
+
+05:47.080 --> 05:49.480
+And what are these instances.
+
+05:49.480 --> 05:52.480
+These are all objects.
+
+05:52.580 --> 05:57.530
+Now the naming here is something that you're gonna have to get used to and all object oriented programming
+
+05:57.530 --> 05:59.470
+languages have this language.
+
+05:59.540 --> 06:05.870
+So you'll just have to understand what somebody says Hey I just instantiated a class.
+
+06:05.930 --> 06:12.640
+It means Hey I just created a new instance a new object so looking at this diagram.
+
+06:12.680 --> 06:14.880
+Let's go back to the code that we just wrote.
+
+06:15.200 --> 06:28.270
+We've created here a class or a blueprint and then here this double bracket is US instantiating the
+
+06:28.270 --> 06:37.060
+class and saying Hey class use whatever you have code in here and instantiated and create a new object.
+
+06:37.060 --> 06:45.870
+So we're creating a new object by instantiating this class and this is exactly what we're doing with
+
+06:45.870 --> 06:47.990
+something like a list right.
+
+06:48.030 --> 06:55.740
+I can create multiple lists over and over and over and every time I create a list I have access to all
+
+06:55.740 --> 07:05.310
+of these methods and sometimes even attributes that I can use and this way I save a lot of time instead
+
+07:05.310 --> 07:16.620
+of coding it myself in in the same way I can create multiple objects here object to object three just
+
+07:16.620 --> 07:24.150
+like that and now I have three different objects that I can use based on this blueprint.
+
+07:24.450 --> 07:30.150
+Now the blueprint right now doesn't have anything because while I can add code here later and we're
+
+07:30.150 --> 07:31.990
+gonna do that in the next video.
+
+07:32.160 --> 07:36.760
+But the beauty is let's think about efficiency here.
+
+07:36.930 --> 07:38.800
+You see the blueprint itself.
+
+07:38.810 --> 07:44.970
+The class is going to be stored in memory so Python interpreter is going to say hey big object it's
+
+07:44.970 --> 07:46.930
+going to be the blueprint for this.
+
+07:46.980 --> 07:54.990
+So I'm going to store all that code in memory but every time I create an object I don't have to rewrite
+
+07:54.990 --> 07:57.000
+the code or do anything like that.
+
+07:57.060 --> 08:00.750
+I can simply say hey go in memory to where big AI objectives.
+
+08:00.900 --> 08:06.510
+And just run that code so that again we're keeping our code dry.
+
+08:06.510 --> 08:12.960
+We have one place that allows us to instantiate our code into objects.
+
+08:12.960 --> 08:16.700
+Let's take a break and expand on this class in the next video.

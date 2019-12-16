@@ -1,0 +1,199 @@
+WEBVTT
+
+00:00.520 --> 00:01.710
+Welcome back.
+
+00:01.780 --> 00:04.400
+I have a new problem for you.
+
+00:04.540 --> 00:07.530
+I'm using a Web site here called on Splash dot com.
+
+00:07.990 --> 00:12.760
+It's an awesome Web site where you can actually download for free really good images.
+
+00:12.760 --> 00:15.640
+Maybe you want to have a new background for your Web site.
+
+00:15.640 --> 00:18.130
+Maybe a new background for your desktop.
+
+00:18.130 --> 00:25.320
+Anyway I found this space man image and I've downloaded it and I'll link to this image as well.
+
+00:25.600 --> 00:32.580
+Or you can pick whatever image you want from on Splash dot com and you'll see here that this image is
+
+00:32.670 --> 00:34.430
+three point eight megabytes.
+
+00:34.440 --> 00:35.630
+It's massive.
+
+00:35.730 --> 00:44.430
+And maybe I want to bring it down in size maybe do a 400 by 400 a thumbnail that I can use for my profile
+
+00:44.430 --> 00:44.810
+picture.
+
+00:44.820 --> 00:46.680
+So people know that I'm an astronaut.
+
+00:47.580 --> 00:48.330
+How can we do that.
+
+00:48.720 --> 00:51.180
+Well let's go back to our code.
+
+00:51.240 --> 00:58.560
+We have this Astro dot JPEG image and you can see over here I'm scrolling through it it's it's absolutely
+
+00:58.560 --> 00:59.570
+massive.
+
+00:59.580 --> 01:00.080
+OK.
+
+01:00.330 --> 01:03.670
+So let's make this smaller.
+
+01:03.810 --> 01:13.460
+I'm going to instead of pocket X say I want to grab the Astro dot JPEG image and we don't want to do
+
+01:13.520 --> 01:20.630
+any of this so I'm going to remove that and first of all let's just print what the image sizes just
+
+01:20.630 --> 01:21.200
+so we're clear.
+
+01:21.230 --> 01:23.970
+So I'm going to run this and we see that.
+
+01:24.000 --> 01:34.470
+Yep it's a pretty big image so all I'm going to do is say new image is going to be image dot resize
+
+01:36.620 --> 01:40.640
+and again a top all that says 400 by 400.
+
+01:40.670 --> 01:43.210
+And we've seen this before right.
+
+01:43.240 --> 01:52.500
+So now if I save this let's say new image dot Save and I'll call it thumb.
+
+01:52.550 --> 02:01.360
+Now dot fi save this and run this.
+
+02:01.440 --> 02:02.220
+All right.
+
+02:02.220 --> 02:02.650
+Look at that.
+
+02:02.670 --> 02:08.570
+We have a thumbnail dot JPEG that's actually great.
+
+02:08.590 --> 02:11.500
+Look at that it's tiny compared to the massive one we had.
+
+02:11.500 --> 02:18.520
+But one thing that I don't know if you can notice is that because the image did not have the same width
+
+02:18.970 --> 02:20.450
+and height.
+
+02:20.500 --> 02:26.950
+What happened was it is actually a little bit compressed so it lost his aspect ratio.
+
+02:26.980 --> 02:29.040
+The image looks kind of squished in.
+
+02:29.740 --> 02:31.420
+So how can we fix that.
+
+02:31.450 --> 02:34.070
+And this is a common problem with images right.
+
+02:34.090 --> 02:41.750
+If we make things smaller and smaller or we change the aspect ratio let's say 400 by 200.
+
+02:41.960 --> 02:44.310
+So if I save this and go to the image.
+
+02:44.450 --> 02:48.110
+Well yeah look at the images all squished up.
+
+02:48.110 --> 02:55.130
+How can we fix it well in this case so we can actually use a useful thumbnail method.
+
+02:55.510 --> 03:03.490
+So instead of saying resize if you want to keep the aspect ratio we can say thumbnail and this thumbnail
+
+03:04.240 --> 03:13.640
+will be 400 by two hundred so if I save and run this again we'll get an error non type object has no
+
+03:13.640 --> 03:21.560
+attribute safe and that is because thumbnail actually doesn't return a new image it just modifies the
+
+03:21.560 --> 03:22.340
+current one.
+
+03:22.370 --> 03:31.050
+So in here we can just say image dot thumbnail and then we'll say image dot safe.
+
+03:31.060 --> 03:39.800
+So if I run this and we go back to thumbnail look at that we have a thumbnail but it keeps the aspect
+
+03:40.130 --> 03:47.150
+ratio so even though I said four hundred by two hundred it's going to try and do its best to keep that
+
+03:47.150 --> 03:50.390
+aspect ratio and maybe not give the exact opposite that I want.
+
+03:50.840 --> 03:54.140
+So let's just bring it back to 400 by 400.
+
+03:54.140 --> 03:55.060
+Run it again.
+
+03:55.130 --> 03:56.450
+And there you go.
+
+03:56.450 --> 04:00.830
+We have our thumbnail and the astronaut is not squished.
+
+04:00.830 --> 04:02.230
+Very very useful.
+
+04:02.240 --> 04:09.380
+So the thumbnail one is really really useful maybe if you want to create a profile picture for Facebook
+
+04:09.410 --> 04:13.780
+or Instagram or any other social media platform that you might have.
+
+04:14.030 --> 04:20.620
+And it just gives a couple of width and height and this is the maximum value.
+
+04:20.720 --> 04:27.860
+So it's never going to go over 400 and 400 but thumbnail is going to automatically do anything within
+
+04:27.920 --> 04:29.720
+the range up to 400.
+
+04:29.720 --> 04:40.620
+But keeping the aspect ratio so if I actually do here print image dot size and I run this you'll see
+
+04:40.620 --> 04:42.570
+that that's exactly what happens.
+
+04:42.600 --> 04:48.760
+It's intelligently deciding what the best size for the image is.
+
+04:48.930 --> 04:49.490
+All right.
+
+04:49.590 --> 04:54.410
+Let's take a break and in the next video we're gonna do a fun little exercise.
+
+04:54.540 --> 04:56.140
+I'll see that one by.

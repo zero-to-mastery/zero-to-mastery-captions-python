@@ -1,0 +1,118 @@
+WEBVTT
+
+00:00.360 --> 00:08.900
+Let's talk about our next developer fundamentals and this one is understanding data structures a really
+
+00:08.900 --> 00:16.550
+good programmer is a programmer that is able to decide what data structure to use when up until now
+
+00:16.550 --> 00:22.070
+we've learned about dictionaries and lists and we'll learn about a couple more throughout the course
+
+00:22.820 --> 00:28.970
+but a really good programmer a programmer who's experienced is able to understand what the tradeoffs
+
+00:28.970 --> 00:30.630
+are when to use what.
+
+00:30.740 --> 00:35.870
+And although I can give you a list of this is when you should do this and this is when you should use
+
+00:35.870 --> 00:37.450
+maybe dictionaries.
+
+00:37.490 --> 00:40.720
+The thing is this takes practice and experience.
+
+00:40.760 --> 00:45.400
+So throughout our course and then the exercises that we're going to do the projects we're going to build
+
+00:45.410 --> 00:46.210
+at the end.
+
+00:46.280 --> 00:51.950
+I hope that this idea of understanding when to use what data structure makes sense to you.
+
+00:52.250 --> 00:54.260
+But let's go back to our example.
+
+00:54.500 --> 01:01.370
+When should you use a list and when should you use a dictionary Well the first thing we have to realize
+
+01:01.760 --> 01:06.180
+that a dictionary is not sorted right.
+
+01:06.260 --> 01:09.740
+A list has order it has zero one indexes.
+
+01:09.740 --> 01:10.990
+So on and so forth.
+
+01:11.090 --> 01:13.570
+A dictionary has no order.
+
+01:13.610 --> 01:21.230
+So maybe if you want to have a list of people and line your shop well you should probably use a list.
+
+01:21.290 --> 01:29.480
+But maybe you have a user that is playing a game and that user has first name maybe weapons maybe an
+
+01:29.540 --> 01:31.630
+H that doesn't have to be ordered.
+
+01:31.730 --> 01:34.020
+So you might use a dictionary.
+
+01:34.280 --> 01:39.380
+Also you'll notice that dictionaries hold more information than lists right.
+
+01:39.620 --> 01:43.670
+Because lists only have that single value.
+
+01:43.940 --> 01:45.270
+That is a list.
+
+01:45.290 --> 01:52.490
+Has the index and then whatever the value is in here we have a dictionary inside of a list which is
+
+01:52.490 --> 01:54.520
+holding a lot of information.
+
+01:54.650 --> 02:00.600
+Deep down a list is simply an index in some sort of a value here.
+
+02:00.650 --> 02:01.300
+Right.
+
+02:01.340 --> 02:04.560
+Versus a dictionary that holds a lot more information.
+
+02:04.640 --> 02:05.830
+It holds a key.
+
+02:05.840 --> 02:10.700
+So this could be the weapons of that user.
+
+02:10.700 --> 02:21.060
+Hello can be the greeting of that user maybe is Magic is another information about that user.
+
+02:21.110 --> 02:24.290
+So we're able to have both keys and values in a dictionary.
+
+02:24.310 --> 02:26.790
+So it holds a lot more information.
+
+02:26.940 --> 02:32.160
+And as we learn different data structures you'll have these different pros and cons.
+
+02:32.160 --> 02:35.910
+You'll start to understand as to when to use what.
+
+02:35.910 --> 02:36.630
+All right.
+
+02:36.630 --> 02:38.670
+There's another developer fundamentals.
+
+02:38.670 --> 02:40.110
+I'll see in the next one by.

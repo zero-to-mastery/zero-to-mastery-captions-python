@@ -1,0 +1,175 @@
+WEBVTT
+
+00:00.650 --> 00:02.500
+Hey they're surprised to see you there.
+
+00:02.590 --> 00:06.620
+So we just finished an entire section on Python.
+
+00:06.640 --> 00:08.390
+We learned the python language.
+
+00:08.470 --> 00:11.900
+We learned the syntax and we can write Python now.
+
+00:11.920 --> 00:12.700
+That's awesome.
+
+00:12.700 --> 00:14.570
+But here's the thing.
+
+00:14.620 --> 00:17.470
+Do you feel ready for the real world.
+
+00:17.470 --> 00:24.960
+Do you know what to do with this newfound skill you see when you're first learning a language a really
+
+00:24.960 --> 00:32.070
+hard jump is to learn the syntax and the rules of the language and then understanding how you can use
+
+00:32.070 --> 00:37.140
+that in the real world to make your life better.
+
+00:37.140 --> 00:46.270
+To improve a product to create value for a company that you work for and a lot of developers have this
+
+00:46.420 --> 00:52.760
+crossroads that they encounter once they learn their first language and that is what now.
+
+00:52.780 --> 00:54.670
+What projects do I build.
+
+00:54.670 --> 00:56.620
+How is this useful.
+
+00:56.620 --> 01:02.070
+Where can I use Python if you've gotten this far in the course.
+
+01:02.070 --> 01:04.930
+This slide should make sense to you by now.
+
+01:04.930 --> 01:12.610
+Because if I asked you the question where can you write Python code and have it work.
+
+01:12.610 --> 01:15.640
+The answer should be pretty obvious right.
+
+01:15.700 --> 01:24.160
+Because if we have a python file or multiple files that is modules and we have a python interpreter
+
+01:24.400 --> 01:33.580
+or compiler then by having these two things we can run them anywhere that has a machine that has a computer
+
+01:34.510 --> 01:42.170
+we can run it on our own computers our own laptops like we have been throughout the course we can even
+
+01:42.170 --> 01:49.130
+run Python code on mobile again as long as we have an interpreter and some Python scripts we can run
+
+01:49.130 --> 01:50.360
+those on mobile.
+
+01:50.420 --> 01:55.110
+And if you google running Python on mobile you'll see just how to do that.
+
+01:55.250 --> 02:01.760
+You can run Python on servers and servers at the end of the day are just computers.
+
+02:01.760 --> 02:10.010
+So any computer any machine that understands ones and zeros is able to run Python code as long as we
+
+02:10.010 --> 02:15.280
+have these two pieces and this is where the power comes in.
+
+02:15.560 --> 02:25.010
+The power is that we now are able to use Python to do the tasks that as humans maybe we're not as good
+
+02:25.010 --> 02:33.930
+as machines that is automating things doing things that are really repetitive doing them really fast.
+
+02:33.960 --> 02:42.960
+That's why machines are so powerful maybe they're not as creative as humans maybe they can't speak or
+
+02:43.140 --> 02:51.570
+write fictional novels but what they're really really good at are calculations simple tasks that they
+
+02:51.570 --> 02:56.440
+can do thousands millions billions of times in a matter of seconds.
+
+02:56.640 --> 03:05.880
+Something that humans can't do and we use python to help us as humans to be more productive to create
+
+03:05.880 --> 03:14.870
+things so that our machines run our Python code and make our lives easier and throughout the next couple
+
+03:14.870 --> 03:18.940
+of sections we're going to try and answer that for you.
+
+03:19.050 --> 03:26.460
+That is we're going to show you where you can apply Python whether it is to your day to day life whether
+
+03:26.460 --> 03:32.670
+it is to work for a company or maybe you want to create your own startup.
+
+03:32.700 --> 03:37.980
+We're going to show you how you can apply the knowledge that you've just gained into different projects
+
+03:38.250 --> 03:45.840
+your own personal projects for example because this is where Python shot python is one of the most popular
+
+03:45.840 --> 03:50.850
+programming languages because it can be applied to lots of things.
+
+03:50.850 --> 03:52.050
+How many things.
+
+03:52.050 --> 03:53.790
+Well we can do web development.
+
+03:53.790 --> 03:55.260
+We can do image processing.
+
+03:55.260 --> 03:57.240
+We can send e-mails with Python.
+
+03:57.240 --> 03:59.330
+We can even send texts with Python.
+
+03:59.430 --> 04:01.700
+We can do machine learning with Python.
+
+04:01.740 --> 04:03.680
+We can create our own twitter bots.
+
+04:03.720 --> 04:10.220
+We can do data visualization and data analysis we can do something called Data scraping.
+
+04:10.330 --> 04:14.020
+We can just do any general scripting with Python.
+
+04:14.020 --> 04:24.310
+We can do automation and we can process files like PDX Excel files and many others and we're actually
+
+04:24.310 --> 04:30.110
+going to show you and build projects around all of these topics in the upcoming sections.
+
+04:30.170 --> 04:30.400
+I know.
+
+04:30.400 --> 04:37.660
+Very exciting seems kind of overwhelming but the goal is now that we have the foundation of Python I
+
+04:37.660 --> 04:45.670
+want to show you where we can apply this skill so that by the end we have all the tools necessary for
+
+04:45.670 --> 04:54.130
+you to dominate the world as a python programmer and have this tool that you can utilize in anything
+
+04:54.280 --> 04:55.650
+that you want.
+
+04:55.660 --> 04:58.020
+It's a bold statement but it's very exciting.
+
+04:58.150 --> 05:02.560
+And I think you're going to really like these next sections let's get started.

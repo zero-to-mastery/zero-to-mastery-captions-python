@@ -1,0 +1,265 @@
+WEBVTT
+
+00:00.500 --> 00:01.900
+Can you believe it.
+
+00:01.910 --> 00:06.530
+I hope I didn't put you to sleep but we're almost there.
+
+00:06.560 --> 00:11.720
+We have one last main data type set and then we're done.
+
+00:11.720 --> 00:15.100
+I know I know this isn't the most exciting topic.
+
+00:15.110 --> 00:20.090
+Trust me this is the hardest part when you're starting out and you're just learning these things without
+
+00:20.090 --> 00:20.830
+understanding.
+
+00:20.870 --> 00:22.130
+Why do I need this.
+
+00:22.190 --> 00:27.410
+How am I going to build the next game How am I going to build the next Netflix how we're going to build
+
+00:27.740 --> 00:30.250
+the next coolest Apple app.
+
+00:30.470 --> 00:34.940
+You're looking at this and thinking I just learned a bunch of theory I feel like I'm in math class all
+
+00:34.940 --> 00:35.810
+over again.
+
+00:36.050 --> 00:36.920
+I know trust me.
+
+00:36.920 --> 00:37.630
+I went through this.
+
+00:37.640 --> 00:39.670
+I was a self-taught programmer as well.
+
+00:39.680 --> 00:42.530
+These are the Lego blocks that builds our foundation.
+
+00:42.530 --> 00:48.470
+Once we learn these we can move on to new things and you'll see that once you climb this little mountain
+
+00:48.890 --> 00:52.440
+things become so much easier and you'll realize the power.
+
+00:52.550 --> 00:58.580
+When we start building these projects toward the end of the class where you're going to say oh all these
+
+00:58.580 --> 01:04.370
+blocks that we learned all this frankly boring part is all going to make sense.
+
+01:04.370 --> 01:05.570
+So hang in there.
+
+01:05.570 --> 01:07.020
+It's supposed to be hard.
+
+01:07.040 --> 01:13.220
+It's supposed to be tough but you'll see very soon why this is so powerful and why what we've just learned
+
+01:13.220 --> 01:19.440
+is going to allow us to build some really awesome things and create some really awesome programs.
+
+01:19.520 --> 01:23.250
+So let's finish off with the last one.
+
+01:23.450 --> 01:32.380
+The last data type the last data structure that we'll see in Python at least from the main ones and
+
+01:32.390 --> 01:41.430
+it's called set and sets are simply on ordered collections of unique objects.
+
+01:41.840 --> 01:42.820
+Let's have a look.
+
+01:42.890 --> 01:47.250
+Let's create a my set and my set.
+
+01:47.480 --> 01:50.660
+We create with curly brackets like a dictionary.
+
+01:50.660 --> 01:54.130
+But instead of a dictionary we don't have key value pairs.
+
+01:54.140 --> 02:00.430
+Instead we just have values like One two three four or five.
+
+02:00.560 --> 02:01.230
+That's it.
+
+02:01.280 --> 02:03.890
+That's a set we just created a set.
+
+02:03.950 --> 02:11.890
+But remember the definition I gave you set is an unordered collection of unique objects.
+
+02:11.900 --> 02:12.920
+What does that mean.
+
+02:12.920 --> 02:22.810
+Well if I print this and say my set and I click Run I get a set but if I had let's say another five
+
+02:22.810 --> 02:34.160
+in here and I click Run it only returns the unique sets or unique items you see in a set.
+
+02:34.160 --> 02:35.430
+There's no duplicates.
+
+02:35.450 --> 02:42.430
+Everything has to be unique so this fire just never gets added to a set.
+
+02:42.450 --> 02:49.590
+For example you can add things to a set like my set and then I can say dot add and give it a value like
+
+02:49.810 --> 02:59.670
+100 and then let's say I do my set dot add and then give it to if I click Run here I see that I was
+
+02:59.670 --> 03:08.790
+able to add a hundred but two well to wasn't really added because my set already contained that data.
+
+03:08.790 --> 03:10.510
+It's on ordered.
+
+03:10.800 --> 03:16.660
+I mean we've created one two three four five here but there's no real order to it.
+
+03:16.650 --> 03:19.380
+There's no bookshelf in our memory space.
+
+03:19.380 --> 03:21.240
+That is right next to each other.
+
+03:21.240 --> 03:28.350
+These are all over the place in memory but a set is able to find them because they're all unique.
+
+03:28.350 --> 03:35.640
+So they're all in just one location in memory so let me ask you this and this is going to be a fun little
+
+03:35.640 --> 03:42.680
+exercise if I gave you an array and let's say this array contained.
+
+03:42.680 --> 03:49.610
+Well this right here and I want you to return an array with no duplicates.
+
+03:49.650 --> 04:01.580
+So I want everything in let's say let's call it my list and a programmer has already created this OK
+
+04:01.890 --> 04:14.150
+and then your task is to create or return a list or a collection that has only unique items.
+
+04:14.160 --> 04:17.350
+How would you go about converting this into a set.
+
+04:17.400 --> 04:19.010
+Well we've seen this before.
+
+04:19.050 --> 04:30.500
+We have a set function and we simply wrap my list in that set and that's printed out i click Run.
+
+04:31.980 --> 04:32.850
+Check it out.
+
+04:32.850 --> 04:40.220
+We have formed a new set from a list and I've removed all duplicate values.
+
+04:40.250 --> 04:42.140
+When would this be useful.
+
+04:42.140 --> 04:45.110
+Imagine if we had user names right.
+
+04:45.230 --> 04:49.160
+Or email addresses where collecting email addresses on our startup page.
+
+04:49.280 --> 04:52.100
+But we don't want to have duplicate emails.
+
+04:52.130 --> 04:58.190
+We might want to convert this a list of emails to a set and remove any duplicates so we're not sending
+
+04:58.190 --> 04:59.730
+emails over and over.
+
+04:59.780 --> 05:01.930
+So that's really cool.
+
+05:01.940 --> 05:02.960
+What about this.
+
+05:02.960 --> 05:03.770
+Can I.
+
+05:03.920 --> 05:06.520
+Let's change this into a set.
+
+05:06.740 --> 05:11.950
+So let's call it my set going to change this into a set.
+
+05:11.950 --> 05:12.520
+There you go.
+
+05:13.880 --> 05:21.280
+And then what if I wanted to access my set at index of 0 set.
+
+05:21.330 --> 05:23.520
+Object does not support indexing.
+
+05:23.520 --> 05:28.950
+Well again you can think of it more as a dictionary in order to access a set.
+
+05:28.950 --> 05:33.730
+We have to grab by the item that's in it.
+
+05:33.810 --> 05:37.590
+That's the key to getting the information from memory.
+
+05:37.590 --> 05:47.220
+The way we would check if something exists is we simply say hey is one in my set.
+
+05:47.220 --> 05:59.090
+And we run this and we get true we can also do length of my set and we get 5 again.
+
+05:59.380 --> 06:02.860
+Nothing too crazy but one two three four five.
+
+06:02.860 --> 06:07.360
+Remember it only counts the unique things because this will never gets entered.
+
+06:07.360 --> 06:12.480
+It's a set and alternatively we can also convert this into a list.
+
+06:12.580 --> 06:22.840
+If I click Run here you'll see that I now have my set as a list and then we can also do let's say my
+
+06:22.930 --> 06:34.650
+set dot copy and actually copy my set into something let's say new or new set and then this will be
+
+06:34.740 --> 06:39.810
+completely different or a new copy then this original one.
+
+06:39.900 --> 06:51.110
+So let's test the set this new set if I use a method that we may have seen before which is my set dot
+
+06:51.380 --> 06:59.630
+clear which as you can imagine clears the set and I click Run I have that new set but when I try and
+
+07:00.470 --> 07:11.540
+print are all set which was my set it's going to be empty an empty set but the true power of sets comes
+
+07:11.600 --> 07:19.460
+in the next couple methods that I'm going to show you and sets have quite a few methods but don't worry
+
+07:19.850 --> 07:22.100
+most of them are quite similar.
+
+07:22.130 --> 07:23.990
+So let's explore that in the next video.

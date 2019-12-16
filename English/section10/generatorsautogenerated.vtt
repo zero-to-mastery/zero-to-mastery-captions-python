@@ -1,0 +1,130 @@
+WEBVTT
+
+00:00.390 --> 00:03.080
+Let's talk about generators.
+
+00:03.510 --> 00:08.570
+A very important key term and quite an advanced topic.
+
+00:08.820 --> 00:18.020
+What are they generators are available in Python and allow us to generate a sequence of values over
+
+00:18.200 --> 00:19.430
+time.
+
+00:20.060 --> 00:21.340
+What does that mean.
+
+00:21.350 --> 00:22.810
+Well it's export.
+
+00:22.850 --> 00:27.560
+You see we've actually learned a generator before.
+
+00:27.590 --> 00:29.720
+Do you remember range.
+
+00:29.880 --> 00:43.110
+Well range is a generator but what is that a generator is a special type of thing in Python that allows
+
+00:43.110 --> 00:46.500
+us to use a special keyword called yield.
+
+00:46.620 --> 00:49.990
+And it can pause and resume functions.
+
+00:50.040 --> 00:53.170
+So let me demonstrate this with a nice little example.
+
+00:53.360 --> 01:03.450
+You see when we use something like range vs. something like list let's say we convert a range into a
+
+01:03.450 --> 01:07.830
+list like so a list.
+
+01:07.870 --> 01:14.950
+What it does is actually create a giant list let's say of 100 items in memory in our computers memory
+
+01:15.610 --> 01:26.540
+versus a range it creates them one by one let me show you if I create a function let's call it make
+
+01:27.170 --> 01:39.540
+list and this make list is going to accept a number and this make list well we'll say result equals
+
+01:39.540 --> 01:41.080
+an empty array.
+
+01:41.460 --> 01:53.610
+Then I'm going to say for i in range of n we're going to add result dot append and let's just multiply
+
+01:53.610 --> 01:57.280
+it for fun AI times to.
+
+01:57.490 --> 02:08.720
+And then finally we return the result you see when we make a list like we just did here we're essentially
+
+02:08.720 --> 02:20.230
+doing this we're using range to create a list and return result which will live in memory so let's say
+
+02:20.230 --> 02:31.090
+that here with make list I'm going to say my list is going to equal make list one hundred when I print
+
+02:32.300 --> 02:46.070
+my list and I click Run go and make sure my parameter here is the right name and make sure I can spell
+
+02:46.130 --> 02:46.640
+append
+
+02:50.730 --> 02:56.400
+we get our list but this list over here lives in our memory.
+
+02:56.400 --> 03:02.040
+My list is pointing to a location in memory.
+
+03:02.180 --> 03:06.170
+So this is taking up space right now.
+
+03:06.170 --> 03:14.780
+Now range is a generator and a generator is a little bit different because this is not being held a
+
+03:14.780 --> 03:15.340
+memory.
+
+03:15.440 --> 03:25.220
+When we do this for loop this range doesn't create on its own a giant list of let's say 0 to ninety
+
+03:25.220 --> 03:33.140
+nine and then it starts iterating no with the for loop it's going to say hey as a range I'm going to
+
+03:33.140 --> 03:39.980
+give you first the number zero then I'm going to give you the number one then number two the number
+
+03:39.980 --> 03:42.400
+three the number four all the way to one hundred.
+
+03:43.330 --> 03:53.360
+So in memory it never ever creates this list like we have with while my list and this can get pretty
+
+03:53.360 --> 03:59.930
+hectic right let's say we want to create a giant list now let's say that I want to create a list with
+
+04:00.290 --> 04:15.370
+well this entire array if I wanted to say print here this giant list and I click Run oh boy you see
+
+04:15.370 --> 04:24.520
+that that's a lot of memory that I'm using up and once it's done which it's still gone.
+
+04:24.580 --> 04:31.590
+Only then can I use this list and it's going to access that list in memory and then we're able to use
+
+04:31.590 --> 04:38.920
+it a more efficient way is to use a generator and actually generate these wanted a time without taking
+
+04:39.010 --> 04:48.210
+space in memory now in order for us to learn how to do that with generators and how to actually use
+
+04:48.210 --> 04:54.090
+them we need to go to the next lesson and revisit some old knowledge I'm going to let this complete
+
+04:54.450 --> 04:57.270
+in the meantime I'll see you in the next video by.

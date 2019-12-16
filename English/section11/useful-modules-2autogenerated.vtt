@@ -1,0 +1,226 @@
+WEBVTT
+
+00:00.690 --> 00:03.690
+Another really useful module that you might use.
+
+00:03.780 --> 00:11.360
+Actually quite often in your programming career is the date time module and as the name suggests it
+
+00:11.360 --> 00:17.150
+allows us to manipulate date values which is really really useful.
+
+00:17.150 --> 00:24.290
+So let me just show you quickly how that would work I can say from date time and in here.
+
+00:24.290 --> 00:35.640
+Well there is a ton of functionality but you can do simple things like date time dot time and give it
+
+00:35.820 --> 00:36.890
+in here some options.
+
+00:37.800 --> 00:41.530
+Oh and make sure I import here like that.
+
+00:42.300 --> 00:53.580
+So that now if I look at time print here if I click Run I get a time of zero but if I in here let's
+
+00:53.580 --> 01:01.230
+say I do the time is five forty five and let's say two seconds if I click Run
+
+01:04.100 --> 01:11.210
+I get five forty five and two seconds I get the time so I can create time objects here which is really
+
+01:11.210 --> 01:21.850
+really nice another useful one is the date and date gives us some really useful things like today hey
+
+01:21.970 --> 01:25.420
+what's today well today.
+
+01:25.420 --> 01:26.230
+Hint hint.
+
+01:26.230 --> 01:33.340
+This is what I'm recording this video so I get a date object that I can now use.
+
+01:33.410 --> 01:39.290
+Which is really useful maybe a user signs up for your startup and you want to make sure that when they
+
+01:39.290 --> 01:42.470
+sign up you want to keep track of what day they started on.
+
+01:42.530 --> 01:45.770
+Maybe they got a membership and it expires in 30 days.
+
+01:45.770 --> 01:52.670
+Well we can use the daytime module to keep track of that and there's lots of things that we can do with
+
+01:52.670 --> 01:59.930
+dates as you can imagine there's things like time zones and different time data that we can manipulate.
+
+01:59.960 --> 02:03.070
+Very very useful.
+
+02:03.100 --> 02:10.600
+I almost forgot this one but remember when we built our decorator our performance decorator that measures
+
+02:10.600 --> 02:13.860
+how long of a time a function takes.
+
+02:13.870 --> 02:17.030
+Well we used a module here didn't we.
+
+02:17.080 --> 02:19.240
+And this is another one of my favorite modules.
+
+02:19.240 --> 02:21.990
+It's the time module and we can use it.
+
+02:22.030 --> 02:29.770
+Well like this it tells us the time and we can use two instances of the time to essentially figure out
+
+02:29.800 --> 02:37.690
+what the difference between the time instances are again and now they're really useful one.
+
+02:37.710 --> 02:38.250
+All right.
+
+02:38.250 --> 02:41.820
+I think we have time for one more because these videos could last forever.
+
+02:41.820 --> 02:43.160
+I could just keep showing you these.
+
+02:43.170 --> 02:48.720
+But like I said these are modules that you're going to use whenever a need arises.
+
+02:48.720 --> 02:53.050
+You're going to start googling and find out hey I need to get date information.
+
+02:53.070 --> 03:00.490
+Well you're going to start googling and find out that there's a date module or there's a date pi package.
+
+03:00.530 --> 03:01.190
+All right.
+
+03:01.190 --> 03:13.120
+The last one is called an array and we have an array package that we can use from what the array module
+
+03:14.500 --> 03:15.480
+now in here.
+
+03:15.610 --> 03:16.480
+What is an array.
+
+03:16.870 --> 03:23.790
+And this is something that I may have mentioned because lists in Python are sometimes called arrays
+
+03:23.800 --> 03:27.520
+and other languages but there are a little bit different.
+
+03:27.670 --> 03:37.150
+You see lists in Python are what we call just dynamic that is any time we need data into a list we can
+
+03:37.150 --> 03:38.760
+make it as big as we want.
+
+03:38.800 --> 03:43.330
+We can just incrementally increase this list and fill up our memory.
+
+03:43.360 --> 03:51.040
+And we've seen that before when we tried to let's say print out a massive list arrays that Python gives
+
+03:51.040 --> 03:55.600
+us actually take up less memory and perform faster.
+
+03:55.630 --> 04:01.240
+So if you have a large list and let's say you don't want to use generators you can improve it with an
+
+04:01.240 --> 04:08.990
+array and that is because when we create an array it sets how much memory we can use in our machine.
+
+04:09.010 --> 04:11.950
+Now this is a pretty big computer science topic.
+
+04:11.950 --> 04:16.210
+You can learn about arrays online or something why other courses.
+
+04:16.210 --> 04:23.380
+But for now the way we would use it is like this we'd say array and we first have to give it a type
+
+04:23.380 --> 04:23.940
+code.
+
+04:24.040 --> 04:30.220
+So a type code with an array is what type of data is this array going to hold.
+
+04:30.250 --> 04:36.010
+And this is part of the optimization by telling it what type of data we're going to hold.
+
+04:36.010 --> 04:38.080
+The memory is better used.
+
+04:38.080 --> 04:40.870
+So for example if I go to the array
+
+04:43.450 --> 04:50.100
+module in here you see that we have different type codes and if I wanted let's say an integer.
+
+04:50.110 --> 04:56.780
+So that is if I want a signed end or maybe I want to float and usually we want something like a signed.
+
+04:56.790 --> 05:03.910
+And so this is a python integer and it shows you what the minimum size in bytes is.
+
+05:03.910 --> 05:10.120
+But let's say we want small numbers so I can say hey the type code is going to be I it's going to be
+
+05:10.570 --> 05:15.500
+a signed integer and then I'm just going to give it one two three.
+
+05:15.520 --> 05:24.580
+So now if I have an array like this and I print array if I click Run.
+
+05:24.770 --> 05:25.250
+There you go.
+
+05:25.250 --> 05:32.340
+We have an array but I can access it just like I would a list very very cool.
+
+05:32.340 --> 05:35.880
+And this is a little bit more performing than lists.
+
+05:35.880 --> 05:41.790
+Again if you don't want to use generators if you have a massive list this is a quick easy way to optimize
+
+05:41.790 --> 05:42.750
+your code.
+
+05:42.840 --> 05:45.210
+The possibilities are endless.
+
+05:45.210 --> 05:49.100
+There are so many packages that we can use so many built in tools.
+
+05:49.110 --> 05:54.280
+The key thing is searching for it and looking for it when the problem arises.
+
+05:54.330 --> 05:58.500
+But there's no way that you can memorize all of these as you progressed through your career.
+
+05:58.500 --> 06:03.840
+There'll be certain ones that keep coming up that you'll just get used to but you just have to trust
+
+06:03.840 --> 06:04.430
+me on this.
+
+06:04.440 --> 06:09.570
+This is one of those things that just comes with experience and as you code more and more so the best
+
+06:09.570 --> 06:12.930
+way to learn these is to just keep coding.
+
+06:13.060 --> 06:14.380
+I'll see you in the next one.
+
+06:14.470 --> 06:14.800
+But by.

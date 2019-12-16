@@ -1,0 +1,139 @@
+WEBVTT
+
+00:00.930 --> 00:01.990
+Welcome back.
+
+00:02.040 --> 00:06.110
+Let's do an exercise where we check for duplicates in a list.
+
+00:06.390 --> 00:17.160
+So I have some list here and I want you to be able to check this list and print whatever the duplicate
+
+00:17.160 --> 00:18.730
+values are.
+
+00:18.750 --> 00:24.840
+In this case we see that and has duplicates and also B has duplicates.
+
+00:24.840 --> 00:31.070
+So I want you to print B and D as a list in here.
+
+00:31.090 --> 00:34.840
+How would you go about doing that pause the video.
+
+00:34.840 --> 00:35.910
+Give it a go.
+
+00:35.920 --> 00:37.950
+Otherwise I'm going to keep going with the answer.
+
+00:38.770 --> 00:44.050
+And by the way you're not allowed to use sets for this.
+
+00:44.050 --> 00:51.280
+So for this exercise you can use the data structure sets instead you have to just use conditionals and
+
+00:51.280 --> 00:56.390
+loops that we've learned in the past couple of videos so give it a try.
+
+00:56.420 --> 01:02.480
+Pause the video and when you're ready I'm going to go ahead with the answer first.
+
+01:02.510 --> 01:07.900
+I'm going to create a variable called duplicates and this is going to be an empty list that we're going
+
+01:07.900 --> 01:11.210
+to populate with any duplicate values.
+
+01:11.240 --> 01:22.180
+Next I'm going to loop over this list songlines say for value in some list and in here while what can
+
+01:22.180 --> 01:22.990
+we do.
+
+01:23.380 --> 01:34.330
+This is a tough one but what I'm going to do is say if some list dot count remember count allows us
+
+01:34.330 --> 01:39.130
+to count how many times an item in a list exists.
+
+01:39.130 --> 01:45.550
+And I'm going to say value so that some list dot count and I give it a.
+
+01:45.640 --> 01:46.650
+It's going to come from me.
+
+01:46.660 --> 01:50.260
+How many times a happens in the list.
+
+01:50.260 --> 01:51.920
+Very very useful.
+
+01:52.060 --> 01:55.200
+Again if you didn't come up with that there's many solutions to this problem.
+
+01:55.210 --> 01:57.310
+So there's no one right answer.
+
+01:57.370 --> 02:00.150
+I'm just showing you how I would have done it.
+
+02:00.250 --> 02:03.130
+Now here I'm going to say if that's greater than one.
+
+02:03.220 --> 02:05.890
+In that case that means there's a duplicate.
+
+02:05.950 --> 02:09.740
+So I'm going to add it inside of the duplicates.
+
+02:10.030 --> 02:16.390
+So let's just go ahead and say dot append because I want to append an in here.
+
+02:16.420 --> 02:25.100
+Say value and at the end of all this let's just print duplicates.
+
+02:25.110 --> 02:26.920
+Now let's see if this works.
+
+02:27.030 --> 02:30.860
+I'm going to click Run and all right.
+
+02:30.860 --> 02:38.110
+I get both B and N but I don't need this duplicates.
+
+02:38.120 --> 02:40.550
+I just need to know what are the duplicates.
+
+02:40.550 --> 02:44.360
+I just need one instance of B in one instance of N.
+
+02:44.990 --> 02:59.750
+So while we can do here is do another if statement and say if value is not in duplicates and yes this
+
+02:59.750 --> 03:05.950
+is a bit of a trick you may remember that not is the opposite right.
+
+03:05.960 --> 03:14.090
+So we're checking hate is value and duplicates and not essentially says hey if value is not in duplicates
+
+03:14.090 --> 03:21.980
+it reads like English and this is going to evaluate to TRUE and FALSE and then finally make sure that
+
+03:21.980 --> 03:23.300
+we get the indentation rate.
+
+03:23.360 --> 03:25.860
+We're going to append the value.
+
+03:25.940 --> 03:37.900
+So if I click Run I get B and n again if he didn't get this right away don't worry it can get tricky
+
+03:37.910 --> 03:42.650
+and this is one of those things that you just need to keep practicing but you see here that I was able
+
+03:42.650 --> 03:52.400
+to use loops I was able to use logical operators like not and conditionals like if statements to solve
+
+03:52.640 --> 03:54.500
+a problem in just a few lines of code.

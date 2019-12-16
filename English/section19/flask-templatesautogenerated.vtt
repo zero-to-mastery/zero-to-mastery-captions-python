@@ -1,0 +1,274 @@
+WEBVTT
+
+00:00.420 --> 00:01.450
+Welcome back.
+
+00:01.500 --> 00:08.400
+So we have our well frankly really boring Web site but we've created our server.
+
+00:08.400 --> 00:10.770
+But what else can we do.
+
+00:10.800 --> 00:15.250
+A server usually accepts a request from the browser.
+
+00:15.290 --> 00:23.930
+Right now up until now we've done what we call a route route that is the home road because in here we
+
+00:23.930 --> 00:25.370
+haven't written anything.
+
+00:25.370 --> 00:32.730
+But sometimes in a Web site you might see something like blog write and if I hit enter you see that
+
+00:32.740 --> 00:38.560
+not fun that you are all was not found on the server again.
+
+00:38.600 --> 00:46.110
+That's because right now our server is only waiting to hear for the route request.
+
+00:46.110 --> 00:48.590
+But if we type something like blog.
+
+00:48.810 --> 00:51.470
+Well there's no function here that cares about that.
+
+00:51.470 --> 00:55.200
+So it seems that there's nothing to care about and moves on.
+
+00:55.680 --> 00:59.440
+So let's create a blog wrote as well.
+
+00:59.670 --> 01:04.690
+I'm going to copy paste and just stay that hey we want to listen to the blog end point.
+
+01:04.830 --> 01:15.910
+This is going to be called let's call it blog and say these are my thoughts on blogs fi save again.
+
+01:15.920 --> 01:19.950
+We have the debugger mode so I don't need to restart fi refresh now.
+
+01:20.180 --> 01:21.140
+Look at that.
+
+01:21.140 --> 01:25.670
+These are my thoughts on blogs and if I go to their root directory I get.
+
+01:25.760 --> 01:26.640
+Hello.
+
+01:26.720 --> 01:29.300
+We now have multiple routes.
+
+01:29.300 --> 01:30.450
+How cool is that.
+
+01:30.830 --> 01:38.170
+By the way if we open up the developer tools go to developer tools open up the network and just refresh
+
+01:38.170 --> 01:43.670
+year you see that we're getting a document ignored this part.
+
+01:43.760 --> 01:47.340
+This is just the developer tools in the plugins that I have.
+
+01:47.540 --> 01:50.270
+But this is what we get back.
+
+01:50.270 --> 01:54.010
+We just get a simple document a response which is a text.
+
+01:54.230 --> 02:02.790
+And if I go to headers and I actually scroll down you see that I requested this your URL.
+
+02:03.010 --> 02:12.490
+I got a status of two hundred and I see here that the content type that the server responded with was
+
+02:12.490 --> 02:15.870
+something called text HMO.
+
+02:15.870 --> 02:22.310
+Now this is something that flask does for us you see over here that I just sent a string.
+
+02:22.980 --> 02:29.010
+But the flask automatically converts that to H2 and also that the browser can understand it as a matter
+
+02:29.010 --> 02:40.640
+of fact if I go to elements here you see here that I have my HMO with a body of hello inside of so that's
+
+02:40.640 --> 02:47.980
+something that we get automatically which is really really nice but now we can start doing some really
+
+02:47.980 --> 02:49.450
+neat things.
+
+02:49.570 --> 03:00.300
+For example let's create a another wrote and this time let's say I want the blog from let's say 2020
+
+03:00.840 --> 03:04.780
+about dogs can I do that.
+
+03:04.800 --> 03:05.890
+Well yeah absolutely.
+
+03:05.910 --> 03:12.900
+Let's say blog to and this says this is my dog.
+
+03:12.950 --> 03:16.150
+Very very engaging blog posts there.
+
+03:16.160 --> 03:21.380
+So now if I go back I do blog.
+
+03:21.380 --> 03:26.780
+All right I get that if I do blog 2020 let's say dogs I get.
+
+03:26.780 --> 03:33.430
+This is my dog awesome so I can have multiple routes like this.
+
+03:33.530 --> 03:38.120
+What if I remove this and have two blocks with the same end point
+
+03:40.890 --> 03:51.480
+if we go back and just go to blog I get these are my thoughts on blogs because once a hits a wrote that
+
+03:51.510 --> 03:58.740
+it sees which online nine it sees it's going to automatically just return and forget about the rest.
+
+03:59.280 --> 04:08.710
+So let's bring our dogs blog post back but you know what's a shame because we have this beautiful website.
+
+04:08.710 --> 04:10.060
+I'm being sarcastic here.
+
+04:10.090 --> 04:15.690
+This beautiful Asian male Web site that we've created with CSX and JavaScript.
+
+04:15.700 --> 04:22.720
+Wouldn't it be nice if instead of me just sending out text I can actually send those could I do that.
+
+04:22.720 --> 04:23.730
+Well yeah you can.
+
+04:24.830 --> 04:34.790
+You see flask has a another thing called render underscore template and this render template function
+
+04:34.940 --> 04:38.600
+is going to allow us to actually send the ACM alpha.
+
+04:39.110 --> 04:40.690
+So let's say the home wrote.
+
+04:40.730 --> 04:46.910
+Now instead of hello is going to do something different instead it's going to run the render template
+
+04:46.970 --> 04:55.220
+function that comes with flask and then here we give it the HMO file that we have so we can give it
+
+04:55.250 --> 05:03.070
+a route in our case because it's in the same folder as the server file.
+
+05:03.070 --> 05:08.520
+We can just do index dot hasty amount fight run this.
+
+05:08.630 --> 05:09.900
+Let's see if this works.
+
+05:10.160 --> 05:14.520
+If I go back to my home wrote I get an error.
+
+05:14.630 --> 05:22.460
+Let's read the error template not font index dot ECMO.
+
+05:22.780 --> 05:28.110
+So it's tried to look for index not a shemale and it didn't find it.
+
+05:28.140 --> 05:29.780
+That's not good is it.
+
+05:29.940 --> 05:44.040
+What if we do a dot slash which means current directory grab the index dot H2 HDL fi save and refresh.
+
+05:44.120 --> 05:47.300
+I still get the error.
+
+05:47.480 --> 05:52.270
+Again this is another thing that you'd have to just learn as you read the documentation.
+
+05:52.370 --> 05:59.450
+But the reason that this is not working is because flask automatically when you say render template
+
+05:59.750 --> 06:03.350
+tries to look in a folder called templates.
+
+06:03.350 --> 06:04.540
+So let's create that.
+
+06:04.550 --> 06:08.030
+I'm going to say new folder.
+
+06:08.100 --> 06:19.080
+Call it templates and put all my HMO files in this case the single HMO file that I have when I say move
+
+06:20.010 --> 06:24.730
+and put it in the templates folder.
+
+06:24.760 --> 06:33.400
+So now it's in here and let's save go back and refresh and look at that.
+
+06:33.450 --> 06:35.440
+I am a web master.
+
+06:35.760 --> 06:37.480
+Everything is working.
+
+06:37.560 --> 06:48.040
+If I go to blog I get these are my thoughts on blogs but my HMO file that I've created is working perfectly
+
+06:49.100 --> 06:58.150
+how awesome is that and flask use this this idea of templates to add multiple ACM alphas.
+
+06:58.260 --> 07:00.980
+So for example I can create a new file.
+
+07:01.110 --> 07:03.180
+Let's just say duplicate here.
+
+07:03.180 --> 07:09.670
+So I'm going to duplicate this file and call it a about Dot HMO.
+
+07:09.790 --> 07:19.920
+And this about that HMO is going to say about me and let's go into server dot pi and have the root folder
+
+07:20.400 --> 07:27.980
+index start HRT mouth and perhaps add another out say about Dot HMO.
+
+07:27.980 --> 07:29.910
+And yes I can do that as well.
+
+07:30.020 --> 07:38.220
+And in here we'll grab the about Dot HMO let's call it whatever we want let's say about function and
+
+07:38.230 --> 07:41.520
+if I go back go to
+
+07:45.570 --> 07:49.910
+well it's not going to work because remember I added the DOT HMO.
+
+07:49.980 --> 07:50.670
+There you go.
+
+07:50.670 --> 07:53.180
+About me awesome.
+
+07:53.210 --> 07:53.810
+This is great.
+
+07:53.810 --> 08:00.620
+We're starting to learn about different routes and how servers work and we're able to send our ACM off.
+
+08:00.650 --> 08:04.350
+But what about the JavaScript files and the CSF files.
+
+08:04.370 --> 08:07.160
+How can we do that in the next video we'll find out.

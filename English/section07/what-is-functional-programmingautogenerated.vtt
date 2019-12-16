@@ -1,0 +1,106 @@
+WEBVTT
+
+00:01.610 --> 00:10.320
+So what is functional programming functional programming is all about separation of concerns which object
+
+00:10.350 --> 00:12.400
+oriented programming does as well.
+
+00:12.450 --> 00:12.760
+Right.
+
+00:13.320 --> 00:19.800
+It's all about packaging our code into separate chunks so that everything's well organized in each part
+
+00:19.800 --> 00:26.700
+of our code and each part is organized in a way that makes sense based on functionality.
+
+00:26.700 --> 00:32.670
+So when we say separation of concerns we mean each part concerned the self with one thing that it's
+
+00:32.670 --> 00:33.890
+good at.
+
+00:33.900 --> 00:39.840
+We remember in our object oriented programming section how we had classes to divide up attributes and
+
+00:39.840 --> 00:48.780
+methods of let's say a wizard class and an archer class and functional programming has this idea as
+
+00:48.780 --> 00:56.120
+well of separating concerns but they also separate data and functions.
+
+00:56.190 --> 01:01.510
+That's how a functional programmer views the world instead of combining methods and attributes.
+
+01:01.560 --> 01:05.050
+We separate them up because they're two separate things.
+
+01:05.130 --> 01:12.960
+There's data and this data gets interacted and acted upon but we're not going to combine both data and
+
+01:12.960 --> 01:18.630
+functions as one piece in an object like we saw with object oriented programming.
+
+01:18.660 --> 01:25.650
+Now there is no correct definition for what is and isn't functional but generally functional languages
+
+01:25.650 --> 01:33.420
+have an emphasis on simplicity where data and functions are concerned because in most functional programming
+
+01:33.420 --> 01:41.820
+paradigms we don't have this idea of classes and objects instead functions operate on well-defined data
+
+01:41.820 --> 01:49.580
+structures like lists and dictionaries that we saw rather than belonging that data structure to an object.
+
+01:50.460 --> 01:56.160
+But at the end of the day the goal of a functional programming paradigm is the same as object oriented
+
+01:56.160 --> 01:56.930
+paradigm.
+
+01:57.060 --> 02:05.190
+It's the idea of making our code clean and understandable easy to extend that is we can grow our code
+
+02:05.700 --> 02:09.690
+and make it better and better and have others come and extend our code.
+
+02:09.780 --> 02:11.940
+It's easier to maintain.
+
+02:11.940 --> 02:18.120
+It keeps our code dry so that we are not repeating ourself as well as keeping our code memory efficient
+
+02:18.120 --> 02:21.630
+because we're not storing information all over the place.
+
+02:21.720 --> 02:27.510
+Now when we come to functional programming we have a very important pillar.
+
+02:27.510 --> 02:33.420
+And unlike object oriented programming where we had those four pillars of encapsulation abstraction
+
+02:33.630 --> 02:36.390
+inheritance and polymorphism.
+
+02:36.390 --> 02:42.510
+If you want to break things down in functional programming it all comes down to this concept of pure
+
+02:42.870 --> 02:44.340
+functions.
+
+02:44.340 --> 02:47.600
+And this is something that we're going to explore over the next couple of videos.
+
+02:47.790 --> 02:54.660
+But the idea here is that there is a separation between data of a program and the behavior of a program.
+
+02:55.620 --> 02:59.380
+So let's find out more about pure functions.
+
+02:59.430 --> 03:00.230
+What did they mean.
+
+03:00.240 --> 03:00.840
+What are they.

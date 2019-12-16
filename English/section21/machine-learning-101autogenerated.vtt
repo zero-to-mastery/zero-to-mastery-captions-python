@@ -1,0 +1,319 @@
+WEBVTT
+
+00:00.870 --> 00:01.860
+All right all right.
+
+00:01.860 --> 00:06.690
+I think it's time for us to actually start practicing some of these skills instead of just talking about
+
+00:06.690 --> 00:12.450
+theory because I know right now everything looks super complicated.
+
+00:12.480 --> 00:15.170
+You think that to be a machine learning expert.
+
+00:15.420 --> 00:21.690
+You have to have a PHC and you have to be really really smart with math and statistics but often that's
+
+00:21.690 --> 00:23.600
+not really the case.
+
+00:23.610 --> 00:30.600
+So in this video I want to show you what it actually means to do machine learning or data science.
+
+00:31.170 --> 00:34.070
+So in this machine learning one to one.
+
+00:34.110 --> 00:38.270
+Let's talk about what a machine learning expert does.
+
+00:38.400 --> 00:43.980
+The first thing that a person does is to usually import
+
+00:46.660 --> 00:54.190
+that is we have some sort of a CSP file and we're going to import that data and we know how to do that
+
+00:54.190 --> 00:55.270
+with Python right.
+
+00:55.270 --> 01:01.240
+We import a CSP data file so that we can use it in our program.
+
+01:01.240 --> 01:01.780
+And don't worry.
+
+01:01.810 --> 01:09.220
+These are the steps that we're actually going to show you when we do our upcoming projects.
+
+01:09.220 --> 01:11.900
+So the first thing is to import the data.
+
+01:12.160 --> 01:15.480
+Next what do we do.
+
+01:15.500 --> 01:21.540
+Well we clean the data that is in an ideal world.
+
+01:21.590 --> 01:31.310
+We have perfect data all the columns all the rows of a CSP file are filled in and everything is perfect.
+
+01:31.430 --> 01:33.580
+But that's often not the case.
+
+01:33.590 --> 01:36.680
+Sometimes you have missing labels.
+
+01:36.680 --> 01:43.400
+Sometimes you have missing cells or data and sometimes we have just unusable data that's really really
+
+01:43.400 --> 01:44.090
+bad.
+
+01:44.090 --> 01:51.410
+So we ideally clean the data so that when we use it later on it's not going to give us any errors or
+
+01:51.410 --> 01:53.290
+make bad predictions.
+
+01:53.390 --> 01:58.520
+Now number three what does a machine learning expert do.
+
+01:58.520 --> 02:05.070
+Well we split the data and this is an interesting one.
+
+02:05.170 --> 02:14.800
+We usually split the data into what we call a training set and a test set.
+
+02:14.830 --> 02:22.530
+What does this mean well splitting the data simply means just deciding we have let's say a hundred rows
+
+02:22.650 --> 02:32.280
+of excel and we decide that the 80 rows are going to be our training set while we give the machine to
+
+02:32.280 --> 02:33.210
+learn from.
+
+02:33.210 --> 02:40.380
+And then the last 20 rows are going to be the test set because we have to tell the machine whether it
+
+02:40.380 --> 02:42.460
+got the answer right or wrong.
+
+02:42.540 --> 02:50.090
+So we need a way for us to test with our pre-existing data whether our model is good or bad.
+
+02:50.130 --> 02:52.170
+Again this is something that we'll explore.
+
+02:52.170 --> 02:57.550
+But usually you split your data your Excel sheet into a training set.
+
+02:57.570 --> 03:04.560
+What we use as input and then the test set what we use to test the output that that machine learning
+
+03:04.560 --> 03:10.740
+function gives us and that's really easy to do we just decide hey 80 percent of the data is going to
+
+03:10.740 --> 03:17.020
+be training set and 20 percent is the test set up until now these three things are pretty easy right.
+
+03:17.040 --> 03:26.280
+And as we'll see they are quite easy next is we create a model.
+
+03:26.300 --> 03:26.780
+All right.
+
+03:26.780 --> 03:29.260
+This one sounds really really hard right.
+
+03:29.270 --> 03:35.570
+We just went from splitting data to all the set and we're creating this function this model that our
+
+03:35.570 --> 03:37.500
+program creates.
+
+03:37.580 --> 03:46.310
+But the funny thing is is that most likely what you do when you create a model is to import an algorithm
+
+03:46.640 --> 03:50.020
+you're not going to write the algorithm from scratch yourself.
+
+03:50.240 --> 03:58.040
+Usually you use a library like cycle learn which we're actually going to use to simply do an import
+
+03:58.280 --> 04:05.960
+and then decide what algorithm you want to use like decision trees or K nearest neighbor and we'll actually
+
+04:05.960 --> 04:09.290
+see how to do that in an upcoming exercise.
+
+04:09.290 --> 04:10.760
+So that's really nice.
+
+04:10.760 --> 04:18.290
+Somebody has already built an algorithm for us that creates the model based on our training set and
+
+04:18.710 --> 04:26.420
+the running joke is that when people think about machine learning expert they think of all these mathematical
+
+04:26.420 --> 04:33.440
+equations that people do but most of the time it's people just simply importing from a library an algorithm
+
+04:33.740 --> 04:36.460
+that's a one liner next.
+
+04:37.010 --> 04:42.980
+What do you think we do well we check the output right.
+
+04:43.010 --> 04:45.650
+We create the model that is the function.
+
+04:45.650 --> 04:54.560
+We have the input which is the training set and then we check the output of this model with our test
+
+04:54.980 --> 04:57.260
+set so the test set.
+
+04:57.290 --> 05:05.470
+We're going to say hey is the output matching what we expected so once we check the output what do we
+
+05:05.470 --> 05:09.320
+do while we improve.
+
+05:09.320 --> 05:14.900
+So most likely the first time around it's not going to get it completely right.
+
+05:14.900 --> 05:21.350
+So based on a test set we say hey we can probably improve something so as a machine learning expert
+
+05:21.830 --> 05:24.350
+you might give it extra inputs.
+
+05:24.350 --> 05:31.250
+That is maybe an extra column in the Excel file or you might want to change the model or the algorithm
+
+05:31.250 --> 05:34.820
+that you used to create this model.
+
+05:34.820 --> 05:35.570
+That's it.
+
+05:35.570 --> 05:40.620
+These are the six steps of what you do and you just repeat these steps.
+
+05:40.640 --> 05:45.830
+Now we'll come back to these and I'll link to this in the resource so that you can always have it in
+
+05:45.830 --> 05:46.700
+the back of your mind.
+
+05:47.450 --> 05:51.690
+But right now you just learn something really really fundamental.
+
+05:52.070 --> 05:54.040
+You see Facebook here.
+
+05:54.110 --> 05:58.820
+This is pretty much how they run their machine learning pipeline.
+
+05:59.660 --> 06:01.980
+And this diagram now should make sense.
+
+06:02.000 --> 06:06.750
+Just on those six steps that we talked about we define their goals.
+
+06:06.770 --> 06:09.860
+That is what do we want to accomplish.
+
+06:09.980 --> 06:20.430
+We gather the data we pass the data that is we clean it we split it into training data and testing data.
+
+06:20.480 --> 06:27.680
+We then do model creation and we experiment with different algorithms and then we finally test our data
+
+06:27.890 --> 06:37.350
+see how accurate it is based on our testing data and then we just go back and try different things until
+
+06:37.500 --> 06:43.920
+our model or our function is in line with what we defined as a goal.
+
+06:43.920 --> 06:44.830
+Isn't that cool.
+
+06:44.880 --> 06:50.670
+You just learn how Facebook is machine learning structure works.
+
+06:50.700 --> 06:54.370
+Now let me ask you one question before I end this video.
+
+06:54.480 --> 06:58.610
+What do you think the hardest part of this entire process is.
+
+06:58.710 --> 07:01.680
+I made it sound very very easy right.
+
+07:01.680 --> 07:03.010
+Think about it.
+
+07:03.120 --> 07:05.120
+Ready for the answer.
+
+07:05.150 --> 07:13.520
+The hardest part is actually grabbing the data because the more data we have the better the more inputs
+
+07:13.520 --> 07:14.140
+we have.
+
+07:14.210 --> 07:22.560
+The more training sets we can have so that we can improve the model and yes we can decide what algorithm
+
+07:22.560 --> 07:28.050
+to use to create a model what inputs to use during the training set.
+
+07:28.050 --> 07:35.690
+But the more data we have the more options we have as machine learning experts and it's really tough
+
+07:35.690 --> 07:43.580
+to collect good data or what we call data set and companies like Google and Facebook are really really
+
+07:43.580 --> 07:52.340
+valuable because they're the only ones that can collect that much data and that's why machine learning
+
+07:52.670 --> 07:59.750
+is pioneered by these companies that have large sets of data because you and I just simply don't have
+
+07:59.750 --> 08:04.340
+enough data to really make machine learning worth it.
+
+08:04.340 --> 08:09.950
+Most companies don't actually need machine learning or can even implement good machine learning because
+
+08:10.010 --> 08:11.760
+they don't have enough data.
+
+08:12.020 --> 08:19.280
+You need big companies like Amazon to use machine learning because they're the only ones to have access
+
+08:19.280 --> 08:24.320
+to that data and that's why they're so valuable they can share their model.
+
+08:24.320 --> 08:30.440
+They don't care but they usually keep their data private because that's what gives them a competitive
+
+08:30.470 --> 08:31.850
+advantage.
+
+08:31.850 --> 08:32.210
+All right.
+
+08:32.330 --> 08:35.210
+So now we know the steps of machine learning.
+
+08:35.420 --> 08:42.230
+The next is to learn what tools we can use to do these steps so that we can finally start learning and
+
+08:42.230 --> 08:45.770
+building our own machine learning models.
+
+08:45.920 --> 08:47.720
+I'll see in the next one by.

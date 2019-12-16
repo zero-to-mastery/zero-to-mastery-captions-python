@@ -1,0 +1,466 @@
+WEBVTT
+
+00:00.420 --> 00:02.810
+Let's talk about a very important topic.
+
+00:02.820 --> 00:11.160
+If you want to be a great programmer and that is called debugging you see nobody writes perfect programs.
+
+00:11.160 --> 00:13.560
+It's honestly impossible.
+
+00:13.560 --> 00:17.820
+We're always going to make mistakes and programs are constantly being improved.
+
+00:17.880 --> 00:25.340
+We constantly improve our code as we find more and more mistakes because programs are full of errors
+
+00:25.410 --> 00:30.430
+or what we call bugs or exceptions at runtime when the code is running.
+
+00:30.430 --> 00:39.480
+You see the act of finding and removing these bugs or errors from our code is called debugging and a
+
+00:39.480 --> 00:46.770
+big chunk of our time as programmers is debugging code whether it's our own code or other people's code
+
+00:47.070 --> 00:50.000
+and figuring out Hey how come this doesn't work.
+
+00:50.190 --> 00:57.990
+And the senior developers are really really good at debugging so let's talk about in this video about
+
+00:57.990 --> 01:02.940
+some of my recommendations for debugging and what some good practices are.
+
+01:03.030 --> 01:08.220
+Now keep in mind that you get better at debugging code as you code more and more so the best thing you
+
+01:08.220 --> 01:13.310
+can do is to just keep practicing keep writing Python code.
+
+01:13.430 --> 01:15.110
+So what are some of my tips.
+
+01:15.110 --> 01:19.290
+Well first you definitely want to use some lending.
+
+01:19.640 --> 01:25.880
+And what is limiting what we've talked about is right when we set up our developer environment limiting
+
+01:26.390 --> 01:31.410
+allows us to detect as we code some issues with our code.
+
+01:31.490 --> 01:40.850
+For example if I do num plus four here and I get a read underline I see here that the PI flakes Lintner
+
+01:41.270 --> 01:44.210
+notices before I even run my code that hate.
+
+01:44.250 --> 01:46.120
+There's an undefined named num.
+
+01:46.700 --> 01:54.140
+So linking allows us to find these errors before we even run our code and we saw that we can use I.D.
+
+01:54.140 --> 02:01.520
+like Pi charm that has linking already built in or use a sublime text or visual studio code and install
+
+02:01.520 --> 02:07.140
+packages and extensions like Pi lent to actually have lending in our code.
+
+02:07.220 --> 02:09.720
+That is a really really important tool.
+
+02:09.800 --> 02:17.230
+Next I recommend always using some sort of an idea or editor.
+
+02:17.740 --> 02:23.470
+Because these editors and ideas especially the ones that are specific for python like pie chart have
+
+02:23.530 --> 02:29.430
+all these built in tools for us to use such as auto formatting based on pep 8.
+
+02:29.440 --> 02:34.750
+Remember these style official style guide that the Python community has.
+
+02:34.840 --> 02:43.790
+It allows us to detect errors in our code with let's say highlighting and formatting of our code so
+
+02:43.790 --> 02:48.410
+it becomes easy for us to detect any errors before we even run the code.
+
+02:48.410 --> 02:55.280
+Finally you want to be able to learn to read errors and this is something that I tried to practice with
+
+02:55.280 --> 02:55.520
+you.
+
+02:55.520 --> 03:06.670
+As we've learned Python for example if I do four plus let's say gibberish here and I click Run right
+
+03:06.670 --> 03:16.360
+away I see Hey on line six there's an error in my main dot pi file there's a type error and I see here
+
+03:16.360 --> 03:25.990
+that I'm trying to add int and a string so we're able to read errors and understand what they mean maybe
+
+03:25.990 --> 03:36.740
+I do something like this if I click Run I get a syntax error and a syntax error I know means that hate
+
+03:37.070 --> 03:42.530
+Python interpreter is trying to read my code but what you just wrote is not python.
+
+03:42.530 --> 03:45.940
+I have no idea what you're doing here.
+
+03:45.940 --> 03:49.240
+I see that it's end of line while scanning string literal.
+
+03:49.300 --> 03:54.580
+So I'm trying to read this string and all of a sudden the program ends like you're supposed to end the
+
+03:54.580 --> 03:54.980
+string.
+
+03:55.000 --> 04:01.420
+Remember so being able to read these errors is really really important.
+
+04:01.680 --> 04:04.130
+And we've discussed some of them in this course.
+
+04:04.200 --> 04:09.480
+Some of the most common ones like syntax error where you're just writing something that Python interpreter
+
+04:09.480 --> 04:10.340
+doesn't understand.
+
+04:10.980 --> 04:18.750
+We have something like name error right where we use a variable that doesn't exist so Python doesn't
+
+04:18.750 --> 04:19.190
+understand.
+
+04:19.200 --> 04:24.190
+Hey I have no idea what name is what's what's the value of name.
+
+04:24.220 --> 04:25.710
+We have things like type error.
+
+04:25.720 --> 04:34.550
+That is when we mismatch data type and do let's say a string plus for we have things like value air
+
+04:35.620 --> 04:42.160
+we have things like here where we're trying to access a key that doesn't exist or attribute error where
+
+04:42.160 --> 04:47.770
+we're trying to access the method of a object and that method doesn't exist.
+
+04:47.880 --> 04:53.520
+Now these errors are something that we've been seeing throughout the course and we're going to see a
+
+04:53.520 --> 04:54.570
+few more.
+
+04:54.670 --> 05:01.740
+I would say that there's about 15 to 20 errors that are really really common that show up 90 percent
+
+05:01.740 --> 05:03.270
+of the time.
+
+05:03.450 --> 05:07.360
+And if you remember you can always go to the Python documentation to learn about them.
+
+05:07.500 --> 05:09.740
+But this just comes with practice.
+
+05:09.900 --> 05:14.430
+If you see an error that you've never seen before I recommend going to the documentation and reading
+
+05:14.430 --> 05:15.230
+up on it.
+
+05:15.420 --> 05:22.800
+Once you see it usually tend to remember when it comes up next but let me show you my favorite way to
+
+05:22.800 --> 05:34.880
+debug code and it's called P D B or Python debugger and PDB is a built in module in Python right here
+
+05:36.320 --> 05:36.740
+again.
+
+05:36.800 --> 05:43.460
+Remember our built in module are part of the standard library that Python comes with and PDB is the
+
+05:43.460 --> 05:49.440
+python debugger for interactive interpreters and you can read about it here.
+
+05:49.520 --> 05:57.570
+But let me show you what it does see PDB is extremely useful because it allows us to interact with the
+
+05:57.570 --> 06:08.710
+code so previously when we had a function let's say we have function ad and we have num one num two.
+
+06:08.850 --> 06:18.320
+And then this function simply returns num one plus num to now before if we wanted to let's say debug
+
+06:18.320 --> 06:27.350
+this code and let's say we're adding four plus some gibberish and it's giving us an error the first
+
+06:27.350 --> 06:34.820
+step that I would take is most likely adding a print in here so I could say print Hey what's what's
+
+06:34.820 --> 06:40.890
+going on let me see number one and number two and what it's giving and print is a really really quick
+
+06:40.890 --> 06:43.530
+way an easy way to debug your code.
+
+06:43.710 --> 06:51.930
+I use that all the time but PDB gives us a little extra boost so we can use it like this.
+
+06:51.930 --> 07:00.810
+We simply import PDB and instead of using something like a print function we can simply say let me add
+
+07:00.810 --> 07:01.650
+a space in here.
+
+07:01.710 --> 07:11.180
+We can simply say PDB for Python debugger and then say set trace and set trace I would say is the most
+
+07:11.270 --> 07:16.480
+useful method that we have on this PDB object that we import it.
+
+07:16.580 --> 07:18.650
+You see when I run set method
+
+07:22.360 --> 07:28.930
+it now gives me an interactive Python debugger that I can now type commands in here and actually test
+
+07:28.930 --> 07:30.290
+on my code.
+
+07:30.460 --> 07:36.510
+And here's the interesting part right now in this PDB I'm right inside of line eight.
+
+07:36.560 --> 07:39.440
+So my code tried to run but then it paused.
+
+07:39.440 --> 07:45.620
+As soon as it said PDB said trace and now I'm in this world and I can test out what's going on so I
+
+07:45.620 --> 07:48.100
+can actually say hey number one what is it.
+
+07:48.350 --> 07:49.460
+Well number one is four.
+
+07:49.460 --> 07:50.910
+What about num 2.
+
+07:50.930 --> 07:57.050
+Well num 2 is a string and I can be like oh I'm trying to add a string and an end to this this doesn't
+
+07:57.050 --> 07:57.640
+work.
+
+07:57.740 --> 08:00.830
+So I can detect errors this way as well.
+
+08:00.830 --> 08:06.290
+Now this PDB interactive actually has a ton of useful things.
+
+08:06.290 --> 08:14.480
+So if I type and help here you see that I have commands that I can use in the PDB.
+
+08:14.480 --> 08:16.540
+So I have a ton here.
+
+08:16.610 --> 08:22.430
+I have access to which I'm assuming is going to excite me out of this PDB Python debugger but I also
+
+08:22.430 --> 08:26.590
+have things like let's say list.
+
+08:26.630 --> 08:27.880
+Let's see what list does.
+
+08:27.890 --> 08:34.480
+So when I type in list here and right now the Web site is really not showing me too much but hopefully
+
+08:34.490 --> 08:38.980
+can still see list and I get some sort of an output.
+
+08:38.990 --> 08:42.240
+I see that I get a list of my code and.
+
+08:42.430 --> 08:45.820
+OK but let's say I don't know exactly what list does.
+
+08:45.860 --> 08:55.820
+Well PDB allows us to type help and then list and when we do that it actually gives us the documentation
+
+08:55.910 --> 09:00.620
+just like we have here if we go to a let's say list
+
+09:03.400 --> 09:06.880
+let's see list list list list right here.
+
+09:06.880 --> 09:09.630
+It gives me the documentation right in here.
+
+09:09.670 --> 09:12.630
+So it says list source for the current file.
+
+09:12.680 --> 09:12.910
+All right.
+
+09:12.910 --> 09:15.730
+So it just lists the source code that we wrote.
+
+09:16.150 --> 09:17.160
+OK let's go.
+
+09:17.200 --> 09:19.240
+What else is there.
+
+09:19.240 --> 09:27.980
+Well we also have something like step or S for short and step is really really cool let's actually use
+
+09:27.980 --> 09:37.470
+clear to bring this up to the top so I'm going to say clear so that it clears all breaks let's do let's
+
+09:37.550 --> 09:39.470
+make this a little bit bigger so you can see.
+
+09:39.500 --> 09:39.920
+There you go.
+
+09:40.100 --> 09:40.690
+That's better.
+
+09:40.730 --> 09:47.170
+Right so now I can actually do something like step and step is going to allow us to go to the next line.
+
+09:47.180 --> 09:53.430
+So again if we make this a little bit bigger step is going to say hey go to line nine.
+
+09:53.550 --> 09:54.420
+So let's see what happens.
+
+09:54.420 --> 10:02.920
+I'm going to type in step and I got step twice so let's try step and look at that.
+
+10:02.920 --> 10:09.640
+I go to the next line in my code and it gets me a you get a typo error the error that we got.
+
+10:09.700 --> 10:11.250
+So let's add another line here.
+
+10:11.260 --> 10:16.480
+Let's say that we're trying to add four plus five here or four.
+
+10:16.480 --> 10:30.100
+Multiply by five and assigning assign it to a T variable if I stop this and run this again I'm now inside.
+
+10:30.200 --> 10:39.930
+Over here if I type in t I get a name the t is not defined because while I'm inside the code here on
+
+10:39.930 --> 10:40.350
+line eight.
+
+10:40.350 --> 10:42.720
+But we have a red line nine yet.
+
+10:42.810 --> 10:44.900
+So let's do step.
+
+10:45.330 --> 10:53.240
+And now I'm on the next side so if I do t now I get Hey T equals 20.
+
+10:53.300 --> 10:53.640
+Awesome.
+
+10:53.960 --> 10:58.200
+So step I can step through the code which is really really useful.
+
+10:58.220 --> 11:03.620
+I also have things like continue which lets me continue through the code until I return something.
+
+11:03.620 --> 11:06.800
+And I continue and exit out of PDP and look at that.
+
+11:06.830 --> 11:16.620
+I get the air let's run this again another useful command is a and a actually gives me all the arguments
+
+11:16.950 --> 11:18.720
+of the current function that we're in.
+
+11:18.720 --> 11:19.730
+So look at that.
+
+11:19.770 --> 11:21.150
+I get all the arguments.
+
+11:21.150 --> 11:23.420
+Which again is really useful.
+
+11:23.430 --> 11:29.860
+There's also the command w which shows me the context of the current line.
+
+11:29.870 --> 11:40.700
+It is executing so you can see here where we are we're in the add function we called it with these arguments
+
+11:41.600 --> 11:45.910
+and we're now about to run this line.
+
+11:46.130 --> 11:51.770
+And then finally as we're debugging this all right I think I finally see that we have an error we should
+
+11:51.770 --> 11:59.830
+have given it a number so I can now just exit out of here and simply fix this to five.
+
+11:59.870 --> 12:07.760
+So now I can just remove my PDB and everything should be working fine with my code awesome.
+
+12:07.990 --> 12:12.790
+So PDB is awesome to step through your code and debug and try different things.
+
+12:12.790 --> 12:19.900
+It does require a bit of practice but after a day of just playing around with PDB you will become really
+
+12:19.900 --> 12:21.130
+really good at debugging.
+
+12:21.160 --> 12:28.750
+So after this video I recommend that you write PDB and hopefully you have a large enough python file
+
+12:28.750 --> 12:35.710
+they can just step over and experiment with different commands using help using list to see what you
+
+12:35.710 --> 12:40.450
+have available to you actually want to show you one last thing.
+
+12:40.480 --> 12:49.960
+So let's say we go back to our code our PDB said trace I click Run could I do something like this where
+
+12:50.110 --> 12:53.460
+I noticed that I Taipei and I have.
+
+12:53.500 --> 13:02.260
+All right my code is working but could I change numb to two now equal some gibberish.
+
+13:02.390 --> 13:08.620
+Well let's see if I do next now let's do next to run this final line.
+
+13:10.260 --> 13:11.180
+I get an error.
+
+13:11.460 --> 13:19.770
+So I'm also able to change variables in here and write Python code to perhaps test out my functions.
+
+13:19.800 --> 13:26.740
+This is now working I can test out hey what happens if we change this variable to another value again.
+
+13:26.840 --> 13:27.890
+Very very useful.

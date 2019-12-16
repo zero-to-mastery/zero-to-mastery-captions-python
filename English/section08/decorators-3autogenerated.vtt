@@ -1,0 +1,217 @@
+WEBVTT
+
+00:00.510 --> 00:02.110
+Let me ask you a question.
+
+00:02.340 --> 00:14.850
+What happens if this Hello Function actually took a parameter let's say a string or a greeting and a
+
+00:14.850 --> 00:18.750
+greeting was going to be printed here.
+
+00:18.810 --> 00:21.830
+Let's remove the bye for now.
+
+00:21.960 --> 00:25.020
+Would this still work if I run.
+
+00:25.020 --> 00:27.870
+Hello pause the video and think about it
+
+00:32.460 --> 00:32.880
+no.
+
+00:33.200 --> 00:38.730
+That's an error if you can try to pause the video here and see if he can solve this.
+
+00:38.750 --> 00:42.440
+How can we make this allow arguments.
+
+00:42.440 --> 00:45.560
+I see that on line five right here.
+
+00:45.560 --> 00:51.590
+It says Line 5 Hello is missing one required positional argument greeting.
+
+00:51.890 --> 00:54.660
+Because when we actually call hello.
+
+00:54.920 --> 00:57.980
+Worse expecting to have a parameter brought here.
+
+00:58.010 --> 01:00.040
+We're not giving it any arguments.
+
+01:00.140 --> 01:06.010
+How can we solve this while the one way is to just simply say
+
+01:09.230 --> 01:10.130
+greedy right.
+
+01:10.130 --> 01:11.710
+Or we can say whatever we want.
+
+01:11.720 --> 01:21.740
+We can say X and then this wrapper function receives the parameter so that if I click Run
+
+01:25.140 --> 01:30.810
+line 13 is now giving me an error because well now we need to actually give it a greeting so let's say
+
+01:31.440 --> 01:34.750
+hi if I click Run.
+
+01:34.880 --> 01:35.730
+All right.
+
+01:35.790 --> 01:40.690
+This works and I hope this makes sense right.
+
+01:40.700 --> 01:42.660
+We're calling hello with Hi.
+
+01:43.560 --> 01:54.040
+So this function Hello gets past we then receive as argument the X..
+
+01:54.110 --> 01:54.810
+Right.
+
+01:54.810 --> 02:02.800
+Remember underneath the hood my decorator is saying a equals my decorator.
+
+02:02.800 --> 02:04.760
+And hello.
+
+02:04.760 --> 02:11.070
+Right so all we're doing is running my decorator.
+
+02:11.080 --> 02:16.600
+Hello which now turns into their wrapped function.
+
+02:16.770 --> 02:22.620
+And when we do the wrapped function a we give it an argument of Hi.
+
+02:22.620 --> 02:28.020
+So the wrapped function accepts this parameter and then runs the function.
+
+02:28.020 --> 02:28.350
+Hello
+
+02:31.170 --> 02:36.840
+but here's the question what if greeting also had an IMO G that it accepts
+
+02:39.720 --> 02:44.290
+so we're printing greeting and then the emoji.
+
+02:44.370 --> 02:45.300
+Hmm.
+
+02:45.390 --> 02:46.290
+What do we do.
+
+02:46.290 --> 02:52.200
+Well again we'd have to create another parameter and then another parameter.
+
+02:52.200 --> 02:56.970
+And then here call it with let's say a smiley face by click Run
+
+03:00.360 --> 03:00.710
+well.
+
+03:00.800 --> 03:02.050
+This should be a string.
+
+03:02.270 --> 03:04.870
+If I click Run this works.
+
+03:05.040 --> 03:06.390
+But this is hectic.
+
+03:06.390 --> 03:12.930
+Every time I need to change parameters Well it's I have to modify this.
+
+03:12.930 --> 03:18.810
+And what if we had keyword arguments like default high.
+
+03:18.870 --> 03:24.330
+There's actually a pattern here that we can use that makes things really really simple for us.
+
+03:25.030 --> 03:33.940
+And all we do is this we do the Star args which we have seen which takes all positional arguments and
+
+03:33.940 --> 03:40.870
+then star star keyword args which takes all the keyword arguments.
+
+03:40.870 --> 03:50.720
+And we call the function by saying star args to unpack all the positional arguments and star star key
+
+03:51.200 --> 03:55.880
+word args to unpack all the keyword arguments.
+
+03:55.980 --> 03:58.530
+Now if this looks confusing don't worry.
+
+03:58.560 --> 04:04.320
+This is just a pattern that you can just copy and paste and remember but now check this out.
+
+04:04.320 --> 04:12.470
+I can do emoji equals to let's say Scarface as a keyword argument.
+
+04:12.800 --> 04:23.540
+And now if I just pass high like this and hit run and let's just remove this as well since we don't
+
+04:23.540 --> 04:31.090
+need it we'll call hello properly because we have the decorator and then click Run look at that.
+
+04:31.230 --> 04:34.920
+I get high with the sad face.
+
+04:35.020 --> 04:35.940
+No.
+
+04:36.230 --> 04:42.260
+The reason this is called a decorator it's because it's a famous pattern in programming.
+
+04:42.260 --> 04:44.950
+It's called the decorator pattern.
+
+04:45.230 --> 04:49.100
+And this is the decorator pattern.
+
+04:49.230 --> 04:57.690
+It gives our decorator flexibility so that we're able to pass as many arguments as we want into our
+
+04:57.690 --> 05:04.460
+wrapped function by using star arcs and keyword arcs and then unpacking them like this inside of a function
+
+05:05.460 --> 05:13.790
+and this syntax lets say if we DB didn't even have the print statements this syntax is why decorators
+
+05:13.790 --> 05:22.130
+are so powerful by just using these lines of code we're able to add functionality using the decorator
+
+05:22.130 --> 05:30.220
+pattern to decorate our functions and the decorator patterns are used all over programming.
+
+05:30.480 --> 05:36.090
+So it's a very very powerful concept to finish off the lesson on decorator.
+
+05:36.120 --> 05:42.840
+I want to talk to you about some of the ways that decorators can be useful in some of the common locations
+
+05:42.900 --> 05:49.080
+that we're gonna see decorator patterns in our code and we're going to build our own performance decorator
+
+05:49.140 --> 05:54.380
+that's gonna be able to tell us how our functions perform how fast they are.
+
+05:54.810 --> 06:00.560
+And I promise you by the end of that video decorators are going to make sense to you and you're gonna
+
+06:00.570 --> 06:07.010
+be able to explain to other people and other friends why we should use decorators in our programs.
+
+06:07.020 --> 06:08.380
+I'll see you now.
+
+06:08.540 --> 06:08.790
+Bobby.

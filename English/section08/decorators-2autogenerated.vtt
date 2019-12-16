@@ -1,0 +1,241 @@
+WEBVTT
+
+00:00.640 --> 00:03.800
+Let's finally write our own decorator.
+
+00:03.940 --> 00:12.210
+Remember a decorator super charges our function it's simply a function that wraps another function and
+
+00:12.210 --> 00:14.970
+enhances it or changes it.
+
+00:15.120 --> 00:19.150
+But the best way for me to explain what it is is to actually code our own.
+
+00:19.620 --> 00:21.240
+So let's do that.
+
+00:21.240 --> 00:30.740
+Let's define a my decorator and this decorator is going to accept a function.
+
+00:30.870 --> 00:34.660
+Right away we should know that this is a higher order function.
+
+00:34.770 --> 00:41.830
+Now in here inside of here we're going to call the function.
+
+00:42.050 --> 00:48.740
+But before we do that we're actually going to wrap this function in another function.
+
+00:48.740 --> 00:53.280
+So we're going to say define the wrap function.
+
+00:53.330 --> 01:05.390
+So this is just a wrapper and this wrap function is going to be a function that simply runs this func.
+
+01:05.510 --> 01:09.530
+And then finally we'll just return wrap function.
+
+01:10.280 --> 01:13.330
+And notice here that I'm not calling it I'm just returning it.
+
+01:13.340 --> 01:18.190
+So that later on somebody can use it OK.
+
+01:18.260 --> 01:20.810
+Now let's say we have a simple function.
+
+01:21.050 --> 01:21.410
+Hello.
+
+01:22.310 --> 01:28.430
+And this simple function just prints hello.
+
+01:28.500 --> 01:31.120
+What a useless function.
+
+01:31.160 --> 01:34.630
+Now why is this useful.
+
+01:34.730 --> 01:42.740
+Because now I can use this as decorator Python as soon as we write an A in front of this is going to
+
+01:42.740 --> 01:47.320
+say hey this is going to be a decorator and a decorator.
+
+01:47.360 --> 01:54.140
+As long as we follow the syntax of accepting a function having a wrapper function calling the function
+
+01:54.740 --> 01:57.710
+and returning the wrapper function can be used.
+
+01:57.710 --> 01:59.990
+So if I do my decorator.
+
+02:00.320 --> 02:02.660
+See how it's all blue.
+
+02:02.780 --> 02:09.830
+Now this decorator can actually be used on top when defining our functions.
+
+02:09.830 --> 02:17.630
+So if we want to use my decorator on the Hello Function we use it like this so that when I call.
+
+02:17.630 --> 02:18.200
+Hello.
+
+02:18.200 --> 02:24.020
+Next in my program I click Run I get.
+
+02:24.170 --> 02:32.320
+Hello OK I know what you're thinking you're thinking this is a complete waste of time Andre.
+
+02:32.320 --> 02:34.420
+Why did I have to do all of that.
+
+02:34.420 --> 02:40.840
+I could have just done this just to find the hello and that was it.
+
+02:40.910 --> 02:41.840
+I'm so confused.
+
+02:42.650 --> 02:47.550
+Well here's the thing what we just did with the decorator
+
+02:50.870 --> 02:52.950
+hasn't changed anything.
+
+02:53.000 --> 03:04.910
+It works exactly as expected but what it allows us to do is that now we can add extra functionality.
+
+03:04.910 --> 03:12.360
+Remember how I said that decorators is a function like my decorator that wraps.
+
+03:12.680 --> 03:13.930
+That is here.
+
+03:14.300 --> 03:19.150
+Another function which is the function that we pass in and enhances it.
+
+03:19.360 --> 03:22.710
+So how can we enhance Hello.
+
+03:22.750 --> 03:26.200
+Well we can do anything inside of this wrapped function.
+
+03:26.320 --> 03:35.980
+For example I can say print and then we'll just print some stars in here and maybe print another set
+
+03:35.980 --> 03:48.180
+of stars in here so that when I call run boom we've just super boosted ah Hello Function how cool is
+
+03:48.180 --> 03:57.720
+that and this is why decorators are useful by just adding this one line I'm able to super boost a function
+
+03:57.960 --> 04:10.400
+so that lets say I create a another function called by and this by is going to print See Ya Later bye
+
+04:10.430 --> 04:13.330
+calling bye here and clicking run.
+
+04:14.670 --> 04:19.640
+Well nothing changes but if I wanted to super boost it just like the Hello.
+
+04:20.040 --> 04:29.040
+All I need to do is just copy the decorator and use it here as well so that if I run it there we go.
+
+04:29.060 --> 04:38.290
+We have super boosted R by this is the power of decorators by just using this syntax.
+
+04:38.370 --> 04:43.230
+I can add extra functionality to other functions.
+
+04:43.290 --> 04:47.180
+Now I know what you're thinking and I know I also keep saying that a lot.
+
+04:47.190 --> 04:52.440
+It's like I can read minds but you're thinking this is a lot of magic.
+
+04:52.440 --> 04:55.650
+How does Python interpreter do all of this.
+
+04:55.650 --> 05:01.200
+It seems like well magic right underneath the hood.
+
+05:01.230 --> 05:02.640
+All it does.
+
+05:02.790 --> 05:08.160
+Well let me show you based on what we've learned so far about functions because they're first class
+
+05:08.280 --> 05:10.020
+citizens right.
+
+05:11.040 --> 05:20.710
+All we're doing is literally this we're saying variable a equals hello
+
+05:23.500 --> 05:31.350
+and wrapping this hello and calling it with my decorator so I'm saying my decorator
+
+05:36.410 --> 05:39.920
+and then after that I am running a like this
+
+05:42.790 --> 05:46.310
+so let's say this was hello to.
+
+05:46.420 --> 05:56.740
+Well I'm just running it like so so that if I run this everything still works.
+
+05:56.740 --> 06:08.510
+All I'm doing is wrapping my Hello Function with my decorator and assigning it to a variable so if we
+
+06:08.510 --> 06:15.440
+go step by step we see that my decorator receives a function in our case the Hello Function.
+
+06:15.440 --> 06:20.880
+It then returns this wrapped function that has hello in here.
+
+06:20.930 --> 06:27.410
+So we return this wrap function so hello to now equals this wrapped function.
+
+06:27.770 --> 06:32.960
+And then this wrap function gets called and what is a K called with.
+
+06:33.020 --> 06:39.650
+Well it prints this then it runs the Hello Function and then it prints this.
+
+06:39.750 --> 06:44.210
+It's the same as doing something like this.
+
+06:45.280 --> 06:47.490
+We simply call it again.
+
+06:47.740 --> 06:54.590
+If I run this it works that looks strange doesn't it but it should make sense.
+
+06:54.600 --> 07:02.040
+We're calling the first function and the first function returns another function and then we call the
+
+07:02.550 --> 07:05.390
+next return function which is wrap.
+
+07:05.490 --> 07:08.050
+Function.
+
+07:08.260 --> 07:15.760
+Now the reason decorators are useful is because instead of doing this and frankly looking confusing
+
+07:16.240 --> 07:22.290
+I can just add the at my decorator and we don't need to do all of this.
+
+07:22.440 --> 07:30.450
+Ah hello gets automatically wrapped by my decorator but essentially this is what the outside is doing.
+
+07:30.580 --> 07:34.390
+See nothing magic about it now.
+
+07:34.500 --> 07:44.090
+Right now this is nice but I bet you're still wondering why decorators are useful so in order to really
+
+07:44.390 --> 07:48.790
+finalize our understanding of decorators let's take a break and I'll see you in the next video.

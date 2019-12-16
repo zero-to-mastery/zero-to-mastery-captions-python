@@ -1,0 +1,289 @@
+WEBVTT
+
+00:00.120 --> 00:06.050
+Let's talk about file i o what is I O mean.
+
+00:06.150 --> 00:12.130
+You'll see this a lot in programming I O stands for input output.
+
+00:12.340 --> 00:19.660
+You see most of the times machines are not communicating in just one environment for example.
+
+00:19.660 --> 00:27.370
+So far we've been writing our code in a let's say an editor like Sublime Text that I have here or PI
+
+00:27.370 --> 00:35.440
+charm or an online reptile but usually you want to interact with different parts of the system maybe
+
+00:35.440 --> 00:42.520
+you want to speak to another Web site maybe you want to speak to something that's on your desktop maybe
+
+00:42.520 --> 00:48.910
+a file maybe two different machines are communicating with each other maybe you're speaking to a database
+
+00:49.600 --> 00:58.720
+Io simply means hey I want you to input something from the outside world and output something into the
+
+00:58.720 --> 01:07.560
+outside world and one of the most common ways that we use things like IO is through reading files you
+
+01:07.560 --> 01:13.800
+might think about Python and how wouldn't it be nice if we can perhaps write a script that compresses
+
+01:13.830 --> 01:22.920
+images while we need Io then I need to input an image and then I need to up but the compressed image
+
+01:24.030 --> 01:31.710
+maybe I want to work with the PDUFA and maybe add a watermark to all my PDA pages while then we input
+
+01:31.920 --> 01:35.540
+a PD F and output a new version of a PDA.
+
+01:35.820 --> 01:42.390
+So this is a very common task that we see a lot of and reading and writing files is a very important
+
+01:42.900 --> 01:48.590
+tool in our tool belt and by the way we have a projects coming up where we actually are going to use
+
+01:48.590 --> 01:58.430
+this with PD FS but for now how can we do this file input output with Python well Python has a built
+
+01:58.490 --> 02:07.650
+in function that allows us to open and write to files and it's simply called Open.
+
+02:07.650 --> 02:08.360
+Nice and easy.
+
+02:09.300 --> 02:12.680
+So using open we can do something like this.
+
+02:12.960 --> 02:17.110
+I can create a sample text file in our desktop.
+
+02:17.130 --> 02:23.570
+So I'm going to use my terminal here so if we look at present working directory I'm on a desktop.
+
+02:23.570 --> 02:27.850
+If you're on Windows then you might have to do some different commands in here.
+
+02:27.860 --> 02:32.840
+But by now you should be pretty familiar that you can create a file if you wanted to.
+
+02:32.840 --> 02:38.630
+Now I can do this manually or in my terminal I can actually do if you're on a Mac you can just do touch
+
+02:38.660 --> 02:42.220
+and then I'll say test dot text.
+
+02:42.440 --> 02:51.770
+So if I do else here you see that I have a test dot text file and a script dot file and again just to
+
+02:51.770 --> 02:57.330
+double check if I go to my desktop yep I have these two right here.
+
+02:57.330 --> 03:10.170
+Perfect now in here we can simply say in our script file open and the name of the file in our case it's
+
+03:10.440 --> 03:17.970
+test make sure it's string test dot text just like that.
+
+03:18.010 --> 03:27.190
+Now I can assign this to a variable calling it my file and now we have well the file object so let's
+
+03:27.190 --> 03:31.270
+check this out if I do here print my file.
+
+03:31.270 --> 03:32.130
+Let's see what happens.
+
+03:32.530 --> 03:38.440
+I'm going to run my code so let's say Python 3 and then run script dot Pi
+
+03:41.570 --> 03:49.490
+I get an object a text Io wrapper I get the name which is text I get mode which I'm not sure what it
+
+03:49.490 --> 03:56.300
+is yet we'll learn and then encoding which is how this file is encoded which is UTF 8 most of the files
+
+03:56.300 --> 03:59.480
+are usually encoded in UTF 8.
+
+03:59.540 --> 03:59.860
+All right.
+
+03:59.890 --> 04:03.240
+So how can I actually read this file.
+
+04:03.350 --> 04:14.930
+All we need to do is my file has a dot read method on it so that if I run this now will I get a blank
+
+04:15.260 --> 04:16.030
+piece of space.
+
+04:16.040 --> 04:19.000
+Because there's nothing on this test dot text file.
+
+04:19.220 --> 04:20.400
+So let's write something.
+
+04:20.720 --> 04:24.860
+I'll open this file and sublime text and just write.
+
+04:24.890 --> 04:29.580
+Hi my name is Andre Agassi.
+
+04:29.750 --> 04:31.640
+I got really really creative with this one.
+
+04:31.640 --> 04:32.680
+Good job.
+
+04:32.690 --> 04:35.320
+All right let's go back.
+
+04:35.360 --> 04:39.980
+So now if I read this file that I'm able to read.
+
+04:39.980 --> 04:41.240
+Hi my name is Andre.
+
+04:41.420 --> 04:42.760
+And now there you go.
+
+04:42.770 --> 04:44.930
+I've read my file.
+
+04:44.960 --> 04:46.120
+Nice and easy.
+
+04:46.220 --> 04:55.720
+Now if I run this again let's just read this multiple times I click Run hmm.
+
+04:56.230 --> 05:02.080
+I'm able to read the first time around but these two times I'm not reading anything.
+
+05:02.080 --> 05:12.540
+Why is that will this open function has this idea of a cursor that is you can only read the file once
+
+05:13.570 --> 05:17.160
+and once you open it returns a file object.
+
+05:18.380 --> 05:23.840
+And the contents of the file you can read and the contents of the file are read with a cursor just like
+
+05:23.840 --> 05:31.340
+you see here one by one and printed onto the screen but by the end of this first reading the cursor
+
+05:31.340 --> 05:33.200
+is going to be at the end of the file.
+
+05:33.590 --> 05:39.530
+So now when it tries to read it's going to be end of the file and nothing will be left there.
+
+05:39.560 --> 05:43.880
+So the way we get around this is to do something like this.
+
+05:43.940 --> 05:54.740
+We simply say my file dot seek which moves our cursor to whatever index we want in our case seek 0.
+
+05:54.820 --> 05:56.730
+So if I run this now.
+
+05:56.830 --> 05:57.670
+There you go.
+
+05:57.670 --> 06:03.840
+And if I move the cursor back and I save and run this.
+
+06:03.840 --> 06:04.230
+All right.
+
+06:04.230 --> 06:05.840
+That's a lot better now.
+
+06:07.080 --> 06:13.970
+And this is just to demonstrate that Python uses this idea of a cursor to read a file.
+
+06:13.990 --> 06:25.350
+Now another unique thing that I can do is to do read line so that if I run this it reads the line.
+
+06:25.350 --> 06:34.280
+But let's say our text file has different lines so how are you let's say a smiley face in here.
+
+06:34.450 --> 06:39.300
+If I now read the line I get.
+
+06:39.310 --> 06:40.770
+Hi my name is Andre.
+
+06:40.890 --> 06:42.340
+I read the line again.
+
+06:42.430 --> 06:43.580
+Hi my name is Andre.
+
+06:43.600 --> 06:48.900
+Because I get each line I only get the first line.
+
+06:49.310 --> 06:57.090
+If I print this multiple times and I run this all right that's better I get.
+
+06:57.100 --> 06:58.690
+Hi my name is Andre smiley face.
+
+06:58.690 --> 06:59.920
+How are you.
+
+06:59.920 --> 07:03.040
+Again the cursor keeps moving right.
+
+07:03.070 --> 07:05.740
+So I can just keep reading the lines.
+
+07:05.740 --> 07:15.330
+Another thing that I can do is to just say read lines if I run this I get a list that contains the entire
+
+07:15.330 --> 07:22.980
+file reads all the lines and you see here that I have Hi my name is Andre Nagoya I have a new line here
+
+07:23.490 --> 07:29.440
+a smiley face a new line remember this is escape sequencing and then how are you.
+
+07:29.550 --> 07:32.340
+And no new line here because there's no new line.
+
+07:32.340 --> 07:37.970
+It's the end of the file so these are extremely useful.
+
+07:38.070 --> 07:45.410
+Maybe we can use regular expressions to search for a piece of text in a file that's pretty useful right.
+
+07:47.730 --> 07:53.700
+Now the very last thing we need to do and this is a little annoying so I'll show you how we don't need
+
+07:53.700 --> 08:01.950
+to do it in the future but you actually have to manually close the file after you've opened it with
+
+08:02.520 --> 08:08.990
+open so you can use it somewhere else and the program is just a good standard.
+
+08:09.050 --> 08:13.720
+So while you have to do is say my file dot close after you're done with it.
+
+08:15.700 --> 08:19.710
+You tell your computer hey you need to stop whatever you're doing.
+
+08:19.740 --> 08:21.710
+I'm not interested in the file anymore.
+
+08:21.720 --> 08:22.560
+We're done with it.
+
+08:22.560 --> 08:24.240
+You can use it somewhere else.
+
+08:24.270 --> 08:28.790
+So usually we do something like this and we're all done.
+
+08:28.820 --> 08:31.270
+Let's take a break and learn some more in the next video.

@@ -1,0 +1,169 @@
+WEBVTT
+
+00:00.860 --> 00:01.970
+Hey welcome back.
+
+00:01.970 --> 00:09.450
+I want to take a quick second to talk about this idea of data transfer from servers to the browsers.
+
+00:09.740 --> 00:17.810
+Now we saw that when we opened the developer tools we can go to the Network tab and actually see what
+
+00:17.900 --> 00:21.470
+type of data gets sent from the server.
+
+00:21.470 --> 00:28.940
+And here we saw that there's different types but we mainly talked about the HDMI all CSX and javascript
+
+00:29.750 --> 00:33.590
+but we also see that there is a few other types in here.
+
+00:33.590 --> 00:45.120
+If I click on let's say the HMO there's this field called content type that says it's a text ACM Alpha.
+
+00:45.150 --> 00:53.010
+Now this is something quite important because it uses something called a MIME type and it stands for
+
+00:53.010 --> 00:56.490
+multi-purpose Internet mail extensions.
+
+00:56.520 --> 01:03.300
+Sounds very impressive doesn't it and you see here and I'll link to this resource and let's make this
+
+01:03.300 --> 01:10.980
+a little bit bigger that browsers use this mind type not the file extension to determine how to process
+
+01:11.010 --> 01:12.060
+a you are well.
+
+01:12.240 --> 01:20.280
+So they look at the content type that our flask app actually automatically sends to the browser to determine
+
+01:20.280 --> 01:25.220
+what to do with that file so that they know hey is it an Asian file.
+
+01:25.260 --> 01:26.630
+Is it a CSF file.
+
+01:26.640 --> 01:30.590
+Is it a javascript file now at the end of the day.
+
+01:30.630 --> 01:38.280
+All this data that we're transferring it's all just text but they can be in different forms and the
+
+01:38.280 --> 01:42.470
+browsers can interact with them in different ways.
+
+01:42.490 --> 01:50.010
+For example if we scroll all the way down here we have different types but we want to focus on the important
+
+01:50.070 --> 01:52.990
+mind types for web developers.
+
+01:53.190 --> 01:55.230
+We have things such as plain text.
+
+01:55.230 --> 01:58.810
+We have CSX we have HMO.
+
+01:59.030 --> 02:10.630
+We have Javascript so that if I go to the javascript file here and I go to content type I see that.
+
+02:10.640 --> 02:17.990
+Yep it's application javascript and we see here that there's a little note about why it's application
+
+02:18.140 --> 02:22.090
+javascript here instead of text javascript.
+
+02:22.170 --> 02:29.630
+Either way this way the browser knows I'm about to read a javascript file do some certain things because
+
+02:29.630 --> 02:32.000
+it is a javascript file.
+
+02:32.030 --> 02:35.550
+Now if we keep scrolling down there's also image types.
+
+02:35.600 --> 02:43.460
+So again if we look at the images let's say the PMG again if we scroll down we see that it's an image
+
+02:43.490 --> 02:45.820
+PMG at the end of the day.
+
+02:45.890 --> 02:51.900
+It's actually text that we receive from the server but in a way that it can be read as APM EGFR.
+
+02:52.520 --> 02:58.520
+So based on this knowledge Web sites work by sending all this data and letting the browser take care
+
+02:58.520 --> 03:07.400
+of while building the page for us now so far we've only talked about HMRC SS and JavaScript and usually
+
+03:07.400 --> 03:14.720
+that's how Web sites are displayed but there's different ways that we can also use servers such as what
+
+03:14.720 --> 03:16.640
+we call API endpoints.
+
+03:17.450 --> 03:25.080
+So right here I have the swampy dot CEO which stands for the Star Wars API and what it does.
+
+03:25.100 --> 03:28.210
+As you can see here is it sends us data.
+
+03:28.210 --> 03:33.050
+So instead of displaying a Web page it just sends us information.
+
+03:33.080 --> 03:43.210
+So for example if I copy this like so and then let's say we do people over here so let's do people.
+
+03:43.470 --> 03:44.350
+If I hit enter
+
+03:47.490 --> 03:57.790
+Look at that I get this data and this content type is will be called Jason and Jason is just this format
+
+03:58.240 --> 04:01.580
+of data that we can use in our applications.
+
+04:01.600 --> 04:09.400
+So again a Web site might take this data and perhaps display the name Luke Skywalker on the front page
+
+04:10.530 --> 04:19.470
+so this end point instead of sending a schmaltzy SS in JavaScript just sends us this Jason data because
+
+04:19.530 --> 04:24.670
+at the end of the day all a server does is sent some data right.
+
+04:24.690 --> 04:29.590
+It serves data we can send all sorts of things.
+
+04:29.660 --> 04:38.120
+For example this robo hash Web site if I do let's say anything I want in here and I hit enter it sends
+
+04:38.120 --> 04:40.490
+me a random image of a robot.
+
+04:40.520 --> 04:49.190
+If I change anything in the Sandpoint I get a different robot so web developers and mobile developers
+
+04:49.490 --> 04:57.740
+use this idea of servers all around the world to try and grab information grab data from a server and
+
+04:57.740 --> 05:02.630
+display something useful on a browser.
+
+05:02.630 --> 05:05.870
+And I hope this shows you the power the servers have.
+
+05:06.140 --> 05:07.980
+We can do anything.
+
+05:08.000 --> 05:16.860
+The options are limitless and we can build all sorts of servers with Python to do all sorts of things
+
+05:16.860 --> 05:18.120
+for us.
+
+05:18.210 --> 05:20.730
+All right let's get back to our portfolio Web site.

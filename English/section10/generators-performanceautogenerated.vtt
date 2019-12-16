@@ -1,0 +1,151 @@
+WEBVTT
+
+00:00.870 --> 00:01.310
+OK.
+
+00:01.350 --> 00:03.890
+I can't see you but I know what you're feeling.
+
+00:03.960 --> 00:07.700
+You're doubting me right now you're thinking generators are useless.
+
+00:07.740 --> 00:11.600
+You keep saying that they're fast and performance but I don't really get it.
+
+00:11.640 --> 00:17.590
+This yellow keyword and this next and honestly it just it just doesn't make sense.
+
+00:18.530 --> 00:21.470
+Let me convince you that their true power.
+
+00:21.470 --> 00:27.050
+I'm going to select all of these and just delete them because I want to go back to an example that we've
+
+00:27.050 --> 00:28.190
+used before.
+
+00:28.220 --> 00:37.180
+Remember when we created the decorator performance in our decorator section using this performance decorator
+
+00:37.270 --> 00:38.980
+let's minimize it.
+
+00:38.980 --> 00:50.170
+I have to functions for us a longtime function that uses a range and another longtime function that
+
+00:50.230 --> 01:01.180
+uses a range and then converts it into a list so remember one creates a list and then from that list
+
+01:01.240 --> 01:03.790
+that's created a memory on our computers.
+
+01:03.790 --> 01:10.630
+It's going to go one by one and multiply things by five versus a range which is a generator that comes
+
+01:10.630 --> 01:17.560
+built into python that is going to just one by one hold zero in memory and multiply by five.
+
+01:17.590 --> 01:23.860
+Hold one in memory but multiply by five and keeps going keeps going keeps going and removes from memory
+
+01:23.860 --> 01:26.000
+any old numbers.
+
+01:26.110 --> 01:33.010
+What do you think the performance of both of these will be let's test it out and by the way I'll link
+
+01:33.010 --> 01:36.230
+to the exercise so you can test that out yourself and play around.
+
+01:36.370 --> 01:43.980
+So let's do longtime and then longtime to place your bets.
+
+01:44.020 --> 01:44.680
+Get ready.
+
+01:44.740 --> 01:54.520
+Let's find out the first function longtime took one point six seconds and then the second function took
+
+01:54.760 --> 01:56.680
+almost twice as long.
+
+01:56.680 --> 01:58.380
+That's a pretty big difference.
+
+01:58.480 --> 02:01.680
+Right but right away we can tell.
+
+02:01.690 --> 02:02.590
+All right.
+
+02:02.590 --> 02:07.610
+This is definitely more performance than well long time too.
+
+02:07.660 --> 02:09.880
+Let's run it again just to test our assumptions.
+
+02:09.880 --> 02:11.470
+Make sure it's correct.
+
+02:11.470 --> 02:15.420
+This time it took one point eight and then two point six.
+
+02:15.430 --> 02:15.950
+All right.
+
+02:16.030 --> 02:18.490
+This is so much faster.
+
+02:18.700 --> 02:26.350
+Even though they both do the same thing and think of this if you were Google think about how much data
+
+02:26.380 --> 02:33.050
+Google has if you're working at Google and imagine if this was even bigger if this was even longer.
+
+02:33.400 --> 02:42.380
+If you can't perform a task that much faster use up a lot less resources than what Google has.
+
+02:42.380 --> 02:49.130
+I mean they would love you because with generators were able to not hold things in memory not have to
+
+02:49.130 --> 02:59.760
+consume all that resources and instead process data efficiently and look over here I was able to solve
+
+03:00.090 --> 03:03.210
+this function in 16 seconds.
+
+03:03.210 --> 03:08.450
+I mean yeah that took a long time but long time to actually could even make it.
+
+03:08.490 --> 03:10.190
+It killed the process.
+
+03:10.260 --> 03:17.500
+If this was a Google server that's a server that just died and is completely useless so generators are
+
+03:17.500 --> 03:28.450
+really really useful when calculating large sets of data particularly if we're using long loops where
+
+03:28.450 --> 03:33.810
+we don't really want to store that memory and we don't need to calculate everything at the same time.
+
+03:33.850 --> 03:42.760
+Maybe one by one and a lot of libraries in Python underneath the hood use generators instead of using
+
+03:42.760 --> 03:49.530
+lists because there's so much faster so remember to create a generator.
+
+03:49.550 --> 03:57.920
+All we have to do is create a generator function that we want and then in here we can just simply loop
+
+03:57.950 --> 04:07.170
+over some value that perhaps we give it to arrange or we can just accept as parameter and all we need
+
+04:07.170 --> 04:19.610
+to do is simply yield that result and do whatever we want in this block but make sure we pause the function
+
+04:20.060 --> 04:26.870
+so that later on it can be used as a generator function so we can do something like a for loop and say
+
+04:26.870 --> 04:32.030
+item in Gen function and give it some sort of parameter.

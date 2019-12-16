@@ -1,0 +1,244 @@
+WEBVTT
+
+00:00.950 --> 00:05.400
+So in order to fix this we have to change our strategy.
+
+00:05.480 --> 00:12.230
+Instead of grabbing the points we should grab what we call the subtext and the subtext is well what
+
+00:12.230 --> 00:19.730
+comes underneath the title because every single title has these subtext and underneath it we have the
+
+00:19.730 --> 00:26.630
+score now in our case the top one over here doesn't actually have the score.
+
+00:26.630 --> 00:29.390
+You see here that we have the subtext but there is no score.
+
+00:30.020 --> 00:33.800
+So what we can do is do a little extra check.
+
+00:34.100 --> 00:41.990
+If we go back to our code we can now change this a little bit so that instead of having the votes here
+
+00:43.680 --> 00:51.550
+what we can do is grab the subtext and this is going to be the subtext class that we're going to grab
+
+00:51.640 --> 00:56.080
+to make sure that all links are going to have the subtext.
+
+00:56.080 --> 01:06.060
+So let's select subtext and in here we're going to change our strategy to say that hate the votes that
+
+01:06.060 --> 01:15.340
+I want or in our case the vote because we're looping through here is going to equal the subtext at the
+
+01:15.340 --> 01:29.030
+place our looping through and we're going to select the class of scores so remember if we scroll down
+
+01:30.010 --> 01:37.350
+class of score is what we want and that's going to be our vote.
+
+01:37.360 --> 01:41.570
+Now remember there are some cases where the vote won't be there.
+
+01:41.630 --> 01:52.870
+So while we can do now is say hey if the vote has no length because remember we're going to get an array
+
+01:54.260 --> 01:58.140
+if this length is zero that's going to evaluate to false.
+
+01:58.310 --> 02:03.280
+But if it's not zero then I want you to do all of this.
+
+02:03.320 --> 02:11.330
+So now our vote instead of doing index here we can just say the vote get tax and replace the points
+
+02:11.510 --> 02:17.150
+but it's only going to run if the vote list exists.
+
+02:17.150 --> 02:18.300
+So let's test this out.
+
+02:18.320 --> 02:19.070
+I'm going to run
+
+02:22.290 --> 02:26.070
+and we have to change our parameters from votes here to subtext.
+
+02:26.070 --> 02:26.920
+So let's do that.
+
+02:26.940 --> 02:37.090
+Let's say subtext subtext Phi save and run this again we get list object has no actually get taxed because
+
+02:37.120 --> 02:42.910
+again we get an array here so we have to grab the first element in the array.
+
+02:42.910 --> 02:44.860
+Remember because we're grabbing the subtext.
+
+02:44.860 --> 02:53.490
+So if I run this again all right it looks like we finally have our points and no errors.
+
+02:53.500 --> 02:54.070
+That's awesome.
+
+02:55.770 --> 03:00.900
+So you see here when you're web scraping you're testing out your assumptions and maybe you make some
+
+03:00.900 --> 03:06.090
+mistakes so you want to adjust and fix them based on what the Web site does.
+
+03:06.180 --> 03:14.020
+Now in here the last thing I want to do is to actually add the vote into our hacker news point here.
+
+03:14.040 --> 03:15.600
+So let's remove the print here
+
+03:19.230 --> 03:20.520
+and I'm going to add
+
+03:25.280 --> 03:25.850
+votes
+
+03:28.720 --> 03:32.110
+as the well the points that we get here.
+
+03:32.110 --> 03:33.250
+Let's make this a little smaller.
+
+03:33.250 --> 03:37.020
+Just so you can see perfect.
+
+03:37.090 --> 03:39.640
+So we have this how can you spend.
+
+03:39.640 --> 03:44.520
+So let's test it up now before I show you I want to show you something.
+
+03:44.530 --> 03:49.940
+When it comes to enumerate why did we use enumerate.
+
+03:49.950 --> 03:56.400
+Well it's because in here we have two lists the links and the subtext.
+
+03:56.550 --> 04:03.270
+And we're only renew my rating over the links list and subtext.
+
+04:03.300 --> 04:05.190
+What is now being enumerated.
+
+04:05.190 --> 04:13.140
+So what happens here is we need the index so that we can access this subtext within our loop because
+
+04:13.140 --> 04:20.480
+otherwise well if we didn't enumerate there's no way to grab both links and subtext items.
+
+04:20.850 --> 04:25.230
+So for example in here my links can just be converted to item
+
+04:28.220 --> 04:36.250
+item but subtext so we'll just have to use the index that we have here hopefully that makes sense.
+
+04:36.400 --> 04:39.660
+Now let's print this and see what it looks like.
+
+04:39.810 --> 04:46.190
+I'm going to print hit save and let's run our script
+
+04:49.080 --> 04:54.500
+and we have a little mistake here we got to make sure that the curly brackets are outside.
+
+04:54.890 --> 05:01.680
+If I run this all right we see that we get our data and let's just check.
+
+05:01.680 --> 05:07.240
+We have title about security issues on TLC which has a vote of 3 0 7.
+
+05:07.350 --> 05:09.050
+Let's just check that on the page.
+
+05:09.190 --> 05:17.410
+If I scroll down about the security issue on TLC which has three hundred and seven votes.
+
+05:17.410 --> 05:17.750
+Awesome.
+
+05:17.920 --> 05:21.930
+So this seems to be working our script is working.
+
+05:22.000 --> 05:28.810
+Wonderful Now the last thing I want to add here is this whole printing is a little ugly.
+
+05:28.910 --> 05:32.960
+And ideally we can print things nicely to the terminal.
+
+05:32.990 --> 05:41.300
+Well we have a module a built in module that we can use in Python called Pretty print.
+
+05:41.300 --> 05:46.050
+And we can just import it like this P print now.
+
+05:46.050 --> 05:47.040
+Check this out.
+
+05:47.370 --> 05:56.030
+If instead of print here I do p print dot P print.
+
+05:56.070 --> 06:02.150
+Let's see if we notice a difference.
+
+06:02.210 --> 06:03.050
+All right.
+
+06:03.050 --> 06:04.560
+It's a little neater now.
+
+06:04.610 --> 06:09.940
+We have a little bit of more spacing and while it's a lot cleaner than it was before.
+
+06:09.950 --> 06:10.780
+That's really nice.
+
+06:11.820 --> 06:19.380
+Now the other thing is as we mentioned we only care about the votes that have over 100 so let's add
+
+06:19.380 --> 06:20.560
+another if statement here.
+
+06:20.580 --> 06:22.490
+Let's make this a little bit bigger.
+
+06:22.770 --> 06:27.970
+And within the points here we'll just say if points
+
+06:30.630 --> 06:38.340
+are higher than ninety nine then we'll append to our updated hacker news.
+
+06:38.550 --> 06:40.470
+Let's save give this a go
+
+06:43.580 --> 06:44.060
+all right.
+
+06:44.060 --> 06:50.260
+It looks like we only have stories that have over 100 points so it's nice and clean.
+
+06:50.270 --> 06:51.270
+A lot smaller now.
+
+06:51.650 --> 06:53.490
+Awesome.
+
+06:53.500 --> 06:55.690
+Now there's a few more things I want to add to this.
+
+06:55.690 --> 07:02.020
+Ideally these votes are ranked so we have the highest vote at the top and at the bottom the lowest vote
+
+07:03.210 --> 07:07.310
+this way it's easier for me to decide what story I should read first.
+
+07:07.650 --> 07:09.780
+Let's explore that in the next video by.

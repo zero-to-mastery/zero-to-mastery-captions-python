@@ -1,0 +1,151 @@
+WEBVTT
+
+00:01.060 --> 00:02.500
+Welcome back.
+
+00:02.500 --> 00:09.580
+Up until now I've been blabbering on about what machine learning is and I hope you have a bit of an
+
+00:09.580 --> 00:14.050
+idea of why we have it and why it's useful.
+
+00:14.170 --> 00:21.040
+But at the end of the day the only reason that we care about machine learning is that we're able to
+
+00:21.040 --> 00:26.290
+use machines to predict results based on incoming data.
+
+00:26.290 --> 00:27.340
+That's it.
+
+00:27.340 --> 00:29.440
+Now this idea of machine learning.
+
+00:29.440 --> 00:30.280
+And don't worry.
+
+00:30.280 --> 00:35.590
+I know we keep talking about theory but I promise we're gonna get some coding exercises first.
+
+00:35.740 --> 00:43.330
+But I do want to talk quickly about some of the machine learning categories that you often see and keep
+
+00:43.330 --> 00:51.430
+in mind what I said that is machine learning is simply about predicting results based on incoming data.
+
+00:51.640 --> 00:55.820
+And all these subcategories simply do that.
+
+00:55.840 --> 01:03.820
+For example we have the idea of a supervised learning which is a subset of machine learning in this
+
+01:03.880 --> 01:05.500
+supervised learning.
+
+01:05.500 --> 01:09.400
+The data that we received already has CATEGORIES.
+
+01:09.400 --> 01:13.840
+THINK OF IT AS A CSC files with rows and columns label.
+
+01:13.840 --> 01:22.410
+We have labeled data and a test data that is label so we know if our function is right or wrong.
+
+01:22.480 --> 01:30.310
+So in a supervised learning scenario we can do things like classification to decide is this an apple.
+
+01:30.310 --> 01:38.020
+Or is this a paper machine learning model simply draws a line to decide Hey this is an apple and this
+
+01:38.110 --> 01:46.360
+is a pair or we might do something called regression instead of classification based on inputs.
+
+01:46.550 --> 01:54.680
+For example predicting stock prices another way that we might use supervised learning is for example
+
+01:54.680 --> 02:03.740
+to hire engineers based on inputs based on years of experience based on maybe age maybe where they live
+
+02:04.040 --> 02:11.810
+what type of computers they have all these sorts of inputs that are labeled can be used in a supervised
+
+02:11.870 --> 02:17.570
+learning system to decide should I hire this engineer or should I not.
+
+02:17.600 --> 02:25.370
+Now sometimes we have data that doesn't have labels and this is called on supervised learning.
+
+02:25.370 --> 02:32.690
+Again think of it as a CSP file without perhaps the column names labeled sometimes with things like
+
+02:32.690 --> 02:33.820
+clustering.
+
+02:33.980 --> 02:39.170
+We need to create these groups or at least the machine to create these groups.
+
+02:39.200 --> 02:45.490
+For example we give it a bunch of data points and then the machine decides oh this is a group.
+
+02:45.530 --> 02:52.550
+This is a group and this is a group or we can have something like association rule learning where we
+
+02:52.550 --> 03:00.890
+associate different things to predict what a customer perhaps might buy in the future when groups don't
+
+03:00.890 --> 03:01.760
+exist.
+
+03:01.760 --> 03:04.310
+We call it unsupervised learning.
+
+03:04.310 --> 03:10.910
+We can't tell the machine that they are right or wrong like we can when we do apples versus pears since
+
+03:11.000 --> 03:17.050
+there are no true categories but we let the machines just create these categories for us.
+
+03:17.060 --> 03:24.010
+Finally we have this idea of reinforcement learning and reinforcement learning is really interesting
+
+03:24.040 --> 03:31.130
+because it's all about teaching machines through trial and error through rewards and punishment so the
+
+03:31.130 --> 03:38.930
+program simply learns a game by playing it millions of times until well it gets the highest score it
+
+03:38.930 --> 03:45.650
+doesn't know what it's doing at first but then it tries to maximize the score and eventually figures
+
+03:45.650 --> 03:51.260
+out that hey maybe I should try and move where the ball is coming.
+
+03:51.860 --> 03:58.250
+So this is seen for skill acquisition or real time learning and you see it a lot in machine learning
+
+03:58.250 --> 04:01.220
+programs that play for example video games.
+
+04:01.220 --> 04:06.830
+Now I'll link to a resource so that you can dive into these topics more deeply and we'll actually talk
+
+04:06.830 --> 04:12.890
+about this a little bit more and understand them a lot better once we go through some of the exercises.
+
+04:12.890 --> 04:20.060
+But the idea here is that machine learning has different categories and different ways to accomplish
+
+04:20.090 --> 04:29.700
+its goal and topics like neural networks decision trees support vector machines K nearest neighbor are
+
+04:29.700 --> 04:39.450
+simply algorithms that are used with these sub fields in order to come to these predictions but remember
+
+04:39.690 --> 04:47.520
+the key thing all of these what they're doing is trying to learn from the data that it receives and
+
+04:47.520 --> 04:51.610
+predict something I'll see in the next one.
+
+04:52.180 --> 04:52.470
+Bobby.

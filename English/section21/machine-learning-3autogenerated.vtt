@@ -1,0 +1,196 @@
+WEBVTT
+
+00:01.830 --> 00:08.230
+We've just created our model remember a function that gives us the desired output.
+
+00:08.520 --> 00:11.640
+And right now we want to improve on our model.
+
+00:11.700 --> 00:13.180
+So how can we do that.
+
+00:13.890 --> 00:16.080
+Well there's a few things right.
+
+00:16.200 --> 00:23.600
+If you remember all we've done is split our data into test and train.
+
+00:23.610 --> 00:29.850
+But one of the things we can do as a machine learning engineer is decide how much data to give it to
+
+00:29.850 --> 00:30.640
+train.
+
+00:30.660 --> 00:38.190
+For example if I decided that I want to 80 percent of the data to be the test data and only 20 percent
+
+00:38.220 --> 00:45.870
+to be the shape or the train data that is the model will have less data to learn from.
+
+00:46.260 --> 00:53.700
+If I hit run here and then let's run the rest of the blocks and then finally this one you see that my
+
+00:53.700 --> 00:58.560
+accuracy went down because I'm testing less data.
+
+00:58.680 --> 01:00.180
+That's not very good is it.
+
+01:00.180 --> 01:10.260
+But what if we just give it less data to test what happens then if I click run on all of these and run
+
+01:10.260 --> 01:15.340
+here I get a 100 percent accuracy.
+
+01:15.400 --> 01:20.430
+Does that mean that this is the best option well not really.
+
+01:20.440 --> 01:21.160
+Right.
+
+01:21.160 --> 01:26.710
+Because what happens now is that our test size is super super small.
+
+01:26.710 --> 01:31.110
+We only have 15 inputs that we're testing.
+
+01:31.330 --> 01:37.530
+And yeah we got 100 percent because we're learning from one hundred thirty five data entries.
+
+01:38.530 --> 01:48.150
+But because our test data is so small although we got 15 out of 15 we can't be certain that our model
+
+01:48.180 --> 01:52.060
+is that accurate because well we only tested it 15 times.
+
+01:52.110 --> 01:58.020
+So this is a tradeoff of how much data do you want to training with and how much data do you want to
+
+01:58.020 --> 01:58.670
+test with.
+
+01:59.150 --> 02:01.910
+And that's why companies really value data.
+
+02:01.980 --> 02:08.290
+The more data we have the more we can train our models OK.
+
+02:08.300 --> 02:11.710
+What else can we do to improve this well.
+
+02:11.720 --> 02:21.400
+Another thing we can do is with the parameters in here of the K nearest neighbors classifier is to perhaps
+
+02:21.940 --> 02:23.230
+do four.
+
+02:23.560 --> 02:28.170
+If I hit run here and run again.
+
+02:28.290 --> 02:29.000
+All right.
+
+02:29.040 --> 02:39.040
+Are accuracy is a little bit lower now because we're only testing for three types three classes.
+
+02:39.040 --> 02:46.900
+Ideally we match that with our nearest neighbours instead if I do for what it actually does if we go
+
+02:46.900 --> 02:55.210
+to our nearest neighbors classifier it's creating four segments for us to evaluate when instead we only
+
+02:55.210 --> 03:01.180
+need the three Iris FA types so let's keep that to three.
+
+03:01.420 --> 03:02.950
+What other things can we do.
+
+03:03.760 --> 03:13.110
+Well another thing if we can collect more data is to perhaps have more columns or parameters these are
+
+03:13.110 --> 03:20.250
+sometimes called features and the more features that a machine has to look at the more information it
+
+03:20.250 --> 03:21.280
+can have.
+
+03:21.300 --> 03:24.040
+That doesn't mean that the more features the better.
+
+03:24.150 --> 03:30.240
+But it does mean that maybe if there was a another feature that we can look at for the flowers there's
+
+03:30.300 --> 03:35.220
+a better model that we can build to predict what type it is.
+
+03:35.220 --> 03:37.160
+So that's another way to improve it.
+
+03:38.910 --> 03:48.510
+Finally the most interesting part is the actual algorithm that we use in this case we used K Nabors
+
+03:48.540 --> 03:56.760
+classifier which I just told you that we're gonna use but we can use any type of algorithm we want if
+
+03:56.760 --> 03:59.660
+we go to the psychic learn library.
+
+03:59.910 --> 04:02.160
+There's different things that we can do.
+
+04:02.190 --> 04:09.880
+For example we can do a decision tree if we want to and use a decision tree classifier.
+
+04:10.120 --> 04:11.980
+So how can we do that.
+
+04:12.040 --> 04:14.770
+Well I simply import something different.
+
+04:15.940 --> 04:25.720
+I can import the decision tree classifier and instead of the K neighbors classifier we now use the decision
+
+04:25.720 --> 04:29.530
+tree classifier which we don't need to give it any parameters.
+
+04:29.560 --> 04:35.030
+And if I now run this groups I have to change this to tree.
+
+04:35.150 --> 04:42.870
+So if I run this and we run our accuracy test all right.
+
+04:42.900 --> 04:47.820
+I get nine point three three pretty much the same as we had before.
+
+04:48.140 --> 04:51.430
+And if we change this to 50 let's run this one more time
+
+04:55.280 --> 04:56.510
+point nine two.
+
+04:56.570 --> 05:06.230
+But if you remember when we had the neighbors classifier with the same parameters of test size of point
+
+05:06.230 --> 05:16.480
+two are accuracy was actually better this time around we got 100 percent accuracy and you'll notice
+
+05:16.480 --> 05:19.890
+that this constantly shifts as we train our model.
+
+05:19.990 --> 05:26.020
+Sometimes it gets it right sometimes it doesn't because it's constantly learning but you see that the
+
+05:26.020 --> 05:34.460
+accuracy with the K neighbors classifier is a little bit better so this way we are able to improve our
+
+05:34.460 --> 05:43.400
+model so that we can now perhaps try these steps all over again until our model is perfect enough or
+
+05:43.400 --> 05:47.840
+at least close to perfect enough for us to make business decisions.
+
+05:48.740 --> 05:50.490
+Very very cool right.
+
+05:51.410 --> 05:53.310
+Let's do a few more things in the next video.

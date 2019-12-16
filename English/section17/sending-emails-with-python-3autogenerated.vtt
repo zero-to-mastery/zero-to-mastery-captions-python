@@ -1,0 +1,280 @@
+WEBVTT
+
+00:00.870 --> 00:02.270
+Welcome back.
+
+00:02.280 --> 00:10.530
+We want to improve our program so that instead of just sending a generic email like this I want to customize
+
+00:10.530 --> 00:11.910
+it to each individual.
+
+00:11.910 --> 00:18.510
+Imagine if we have a database of all these users all their e-mails as well as their first name.
+
+00:18.510 --> 00:23.670
+Ideally we're able to customize the e-mail to each specific person.
+
+00:24.210 --> 00:26.930
+So how can we do that.
+
+00:27.150 --> 00:35.440
+Well we're going to use an ace CML based e-mail so we can send text e-mails which just have text like
+
+00:35.440 --> 00:40.400
+we've seen or we can send something more dynamic like HMO.
+
+00:40.410 --> 00:45.550
+Now this isn't an HMO of course and it's something that will go into a little bit more in-depth when
+
+00:45.550 --> 00:55.550
+we talk about web development but in here I have a very very basic HMO document and this HMO document
+
+00:55.550 --> 01:02.240
+just has a body where we want the content of our e-mail to be now in here.
+
+01:02.240 --> 01:10.840
+I wrote you just won so much money and then with a dollar sign me you can write whatever you want in
+
+01:10.840 --> 01:11.530
+here.
+
+01:11.530 --> 01:16.670
+But I want you to pay attention to the dollar sign because we're going to do something neat here.
+
+01:16.690 --> 01:24.100
+We're going to actually update this to reflect a variable a python variable that we can substitute and
+
+01:24.100 --> 01:26.320
+customize dynamically.
+
+01:26.320 --> 01:32.060
+Now how are we going to do that well if we go back to our e-mail.
+
+01:32.300 --> 01:39.020
+I want to introduce you to two new packages built in packages in Python that we can use.
+
+01:39.050 --> 01:43.700
+One is called the template or string template.
+
+01:43.700 --> 01:48.410
+So from the string module we can import
+
+01:51.770 --> 02:00.200
+and what this template does if we go to the documentation right here we have a string dot template class.
+
+02:00.350 --> 02:05.360
+And what we're allowed to do is as you can see here using the dollar sign
+
+02:08.200 --> 02:13.630
+we can substitute the variables inside of text.
+
+02:13.630 --> 02:21.800
+You can see over here there if we zoom in a little bit we have a template object with who likes what.
+
+02:21.800 --> 02:28.720
+And we can substitute these dollar signs deals with who.
+
+02:28.830 --> 02:39.300
+So who equals to Tim we can do template who likes what he to us and then substitute who with Tim and
+
+02:39.390 --> 02:43.060
+what with Kapow.
+
+02:43.070 --> 02:48.520
+So this is gonna be very very useful and this is what we're doing with index that HMO.
+
+02:48.540 --> 02:54.840
+We have a dollar sign name and ideally we're able to update this but we have a problem here.
+
+02:54.840 --> 02:58.140
+This is a well that's an HMO file.
+
+02:58.140 --> 03:00.720
+It's an index dot HCM alpha.
+
+03:00.960 --> 03:07.090
+So how can we read this converted to a template and substitute it.
+
+03:07.110 --> 03:15.470
+Well we have another module that we're going to import and this is going to be called Path lib from
+
+03:15.800 --> 03:16.220
+path
+
+03:19.480 --> 03:27.250
+so this path lib and this path that we import is actually very similar to something we've seen before
+
+03:27.250 --> 03:29.320
+which is OS dot path.
+
+03:29.320 --> 03:37.990
+So we could have also imported the operating system OS module and use the path method because what it
+
+03:37.990 --> 03:43.650
+allows us to do is to access this index that 80 mile file.
+
+03:43.760 --> 03:54.740
+So this is what it's going to look like we can have an HMO variable that equals path and then give it
+
+03:54.800 --> 04:04.200
+index start HMO because we're in the same folder and this path now gives us access to index that HMO
+
+04:04.710 --> 04:15.040
+and we can use the read text method on it to read it as a text as a string.
+
+04:15.050 --> 04:21.560
+Now I'm going to leave a resource as to why we want to use path lib instead of OS stop path mainly because
+
+04:21.560 --> 04:30.050
+we have this read text method but there's a great article here why you should be using path lib versus
+
+04:30.050 --> 04:38.580
+the OS path module that I'll link to and you can read on your own at the end of the day though both
+
+04:38.580 --> 04:47.370
+of these libraries will be useful and there's no right or wrong just pros and cons so we have this string
+
+04:47.550 --> 04:53.240
+but now we want to update so that the name variable will be something custom.
+
+04:53.250 --> 05:03.070
+So what we're going to do is wrap this and template so it becomes a template object.
+
+05:03.140 --> 05:03.740
+That's it.
+
+05:03.740 --> 05:07.730
+So we have this a Schimmel that is a template.
+
+05:07.730 --> 05:14.710
+And if you remember once we have this template string we can use the dot substitute to give it.
+
+05:14.750 --> 05:22.890
+Well while we want to substituted with so instead of setting content like this instead I'm going to
+
+05:22.890 --> 05:28.470
+change this and say I want to Ayesha Mel dot substitute
+
+05:31.500 --> 05:40.010
+to equal name which is remember the variable over here to have it equal.
+
+05:40.270 --> 05:48.570
+Let's go with Tintin and by the way this substitute can have multiple parameters so we can do it with
+
+05:48.570 --> 05:59.090
+keyword arguments or we can even do it as a dictionary like this so we can say name will be Tintin and
+
+05:59.090 --> 06:06.920
+then we can add multiple variables if this Asian male file had multiple variables multiple maybe name
+
+06:06.950 --> 06:10.790
+age maybe a greeting whatever we want.
+
+06:10.850 --> 06:16.890
+So let's leave it like that let's safe here and see if this works.
+
+06:16.950 --> 06:23.080
+I'm going to send once again and this time around I want to actually send it to my email account so
+
+06:23.860 --> 06:28.630
+we'll actually blur this out so you don't see my personal email address.
+
+06:28.630 --> 06:29.390
+All right.
+
+06:29.650 --> 06:30.370
+All good boss.
+
+06:30.370 --> 06:31.940
+It looks like we didn't get any years.
+
+06:31.960 --> 06:34.690
+Now let's check my e-mail account.
+
+06:34.690 --> 06:39.660
+A look at that under important and unread mind you.
+
+06:39.660 --> 06:42.190
+For you you might get it in your spam folder.
+
+06:42.240 --> 06:46.560
+I have an e-mail for myself saying Hey I just one thousand dollars
+
+06:50.600 --> 06:57.950
+and the last thing we need to do when we substitute is we have to tell it hey this set content is going
+
+06:57.950 --> 06:59.750
+to be HMO.
+
+06:59.750 --> 07:08.250
+So the way we do that is in the second parameter we say this is going to be HMO.
+
+07:08.370 --> 07:10.520
+So it's not text like it was before.
+
+07:10.590 --> 07:16.080
+It's going to be a sham also pass it accordingly and set content accordingly.
+
+07:16.080 --> 07:19.140
+So if I save this and we run
+
+07:21.910 --> 07:24.600
+looks like we didn't get any errors.
+
+07:24.610 --> 07:36.320
+That's good and if we go back to the G.M. client Hey looks like I have a message that I've won a million
+
+07:36.320 --> 07:36.790
+dollars.
+
+07:36.830 --> 07:38.100
+That's really great.
+
+07:38.150 --> 07:39.310
+Mind you for yourself.
+
+07:39.320 --> 07:41.200
+You might find this in your spam folder.
+
+07:41.300 --> 07:45.210
+So again make sure you check your e-mail.
+
+07:45.320 --> 07:51.590
+Otherwise if I click on this look at that you just won so much money.
+
+07:51.590 --> 08:02.970
+Tintin how cool is that so just like that we're able to programmatically send e-mails customized e-mails.
+
+08:03.040 --> 08:05.280
+Now there's many applications of this.
+
+08:05.570 --> 08:13.390
+Maybe anytime a customer buys a product from your company you want to send them a personal e-mail a
+
+08:13.390 --> 08:16.460
+greeting saying hey thanks for buying our product.
+
+08:16.720 --> 08:23.590
+Or maybe you want to get yourself a reminder where every morning you send your cell phone e-mail saying
+
+08:23.710 --> 08:27.330
+hey get up and tidy your bed.
+
+08:27.370 --> 08:28.890
+There are so many applications.
+
+08:28.930 --> 08:31.500
+This is the cool part about Python right.
+
+08:31.510 --> 08:33.540
+You can do anything you want.
+
+08:33.640 --> 08:34.810
+The world is your oyster.
+
+08:34.870 --> 08:39.490
+So hopefully this was exciting because we have a lot more than the next video.
+
+08:39.510 --> 08:39.730
+Bobby.

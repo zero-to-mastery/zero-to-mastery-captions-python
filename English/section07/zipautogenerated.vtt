@@ -1,0 +1,109 @@
+WEBVTT
+
+00:00.870 --> 00:02.720
+Let's talk about zip.
+
+00:02.730 --> 00:04.290
+How can we use zip.
+
+00:05.280 --> 00:14.630
+Well let's create a new function and the zip function works kind of like a zipper.
+
+00:14.750 --> 00:22.640
+We need to lists or to iterate balls and we can zip them together.
+
+00:22.660 --> 00:24.210
+Let me show you what I mean.
+
+00:24.340 --> 00:34.860
+Let's say I have my list and then your list and this your list will have 10 20 and 30.
+
+00:34.950 --> 00:37.760
+Make sure that it's a list.
+
+00:37.770 --> 00:52.360
+There you go and in here with the zip function I can simply run zip and in here I give it as many it
+
+00:52.360 --> 00:53.970
+troubles as I want.
+
+00:53.970 --> 00:56.260
+In our case two edibles.
+
+00:56.310 --> 01:01.020
+So I'm going to give it my list and your list.
+
+01:02.540 --> 01:04.180
+Let's close that out.
+
+01:04.280 --> 01:08.630
+Add one more bracket and in fact click Run
+
+01:13.900 --> 01:15.560
+what just happened here.
+
+01:15.670 --> 01:25.870
+Zip like a zipper takes the two it dribbles and grabs the first item from each and zips them together
+
+01:26.140 --> 01:27.010
+like a zipper.
+
+01:27.040 --> 01:37.900
+So 1 and 10 get added to a couple together then two and 20 get added to topple together and then three
+
+01:37.900 --> 01:41.450
+and 30 get added to a couple together.
+
+01:41.470 --> 01:49.620
+What if this was a couple like this and I click Run does it matter.
+
+01:49.620 --> 01:54.820
+It's an ignorable it's going to zip the items together.
+
+01:54.860 --> 01:58.930
+Now this may not seem that useful to you now.
+
+01:59.090 --> 02:05.600
+It's actually a very important function that because it's so generic can be used in so many different
+
+02:05.600 --> 02:06.710
+things.
+
+02:06.740 --> 02:15.020
+For example if we had from a database we collected all the user names from one column in a database
+
+02:15.260 --> 02:22.700
+and then maybe from another part of the database we collect all of the phone numbers and they were all
+
+02:22.700 --> 02:23.980
+in the same order.
+
+02:24.050 --> 02:33.230
+Well we can combine these into a temple using zip that has the user name and the phone numbers attached
+
+02:33.230 --> 02:42.660
+to them and create a whole new data structure and if I had a another list here let's say their list
+
+02:46.550 --> 02:57.380
+and this one has five four and three I can add again their list as well.
+
+02:57.380 --> 03:03.230
+And if I click Run you see that I can keep zipping things together.
+
+03:03.230 --> 03:14.920
+So zip iterate over each one of these lists or data structures and zip them together once again noticing
+
+03:14.920 --> 03:19.090
+that we don't modify any of our current data.
+
+03:19.180 --> 03:22.130
+Instead we create a whole new one.
+
+03:22.270 --> 03:25.060
+Very very nice.
+
+03:25.100 --> 03:26.190
+What about reduce.
+
+03:26.840 --> 03:28.340
+Let's find out more in the next video.

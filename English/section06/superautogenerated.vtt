@@ -1,0 +1,133 @@
+WEBVTT
+
+00:00.390 --> 00:01.530
+Welcome back.
+
+00:01.530 --> 00:09.840
+In the previous video I showed you how to call a method from a subclass of the parent class.
+
+00:09.840 --> 00:17.840
+So in our case we did user dot attack in order to run the attack method and use it.
+
+00:17.860 --> 00:22.950
+Now I've removed the attack method from now because I want to try something different.
+
+00:23.050 --> 00:28.500
+I want to create a init function in here in this init function.
+
+00:28.510 --> 00:39.020
+We'll take self and then let's say that the user will receive let's say email because a all the users
+
+00:39.020 --> 00:45.110
+of our game need to have emails and in here we'll just say self.
+
+00:45.250 --> 00:54.730
+Dot email will equal the email nice and simple now in here.
+
+00:56.290 --> 01:01.420
+If I was to run this code and let's remove user data attack for now.
+
+01:01.420 --> 01:03.020
+So we have the same wizard.
+
+01:03.250 --> 01:10.360
+We just added this or sorry this in it init and we have our wizard one.
+
+01:10.420 --> 01:20.580
+So if I run wizard here and let's say we want to run wizard one dot email if I click Run
+
+01:23.860 --> 01:29.270
+I get wizard object has no attributes email.
+
+01:29.630 --> 01:37.330
+But I thought the user is going to be called when we create the wizard.
+
+01:37.420 --> 01:37.690
+Right.
+
+01:37.700 --> 01:46.840
+When we instantiate wizard 1 Well the thing is although we might inherit let's say for example if I
+
+01:46.840 --> 01:55.100
+do dot we might inherit the sign in from the user.
+
+01:55.110 --> 02:03.930
+And if I click Run we see that we inherit that the wizard already has an IT function already a constructor
+
+02:04.260 --> 02:07.340
+right.
+
+02:07.390 --> 02:19.360
+So how can we solve this well one way is to just add email here rate and just have the email attribute
+
+02:19.390 --> 02:21.220
+just right down here.
+
+02:21.220 --> 02:23.670
+But what's the problem with this.
+
+02:23.680 --> 02:25.520
+Well it's inefficient right.
+
+02:25.540 --> 02:30.120
+Because if I create an archer class I'll have to do the same thing.
+
+02:30.250 --> 02:37.480
+And when we know that all these attributes are going to be the same on all of our subclasses we want
+
+02:37.480 --> 02:42.380
+to do it here so what's a more efficient way of doing this.
+
+02:44.040 --> 02:49.680
+Well we want to call the init method of the user from inside here.
+
+02:49.680 --> 02:50.000
+Right.
+
+02:50.010 --> 02:53.660
+Because every time we instantiate a new wizard.
+
+02:53.820 --> 02:57.890
+Well this init function is going to be called.
+
+02:58.000 --> 03:14.340
+So the way to do that is to say user dot underscore underscore in it and then give it the self and then
+
+03:14.760 --> 03:26.660
+email and then the e mail is something that we pass in so that if I did go down here I can say Merlin
+
+03:27.470 --> 03:40.130
+at gmail dot com is going to be the email so that now if I do let's say dot email for Wizard 1 and I
+
+03:40.130 --> 03:53.800
+click Run I get Merlin's email once again all we did was we called the init method of the user inside
+
+03:53.800 --> 03:54.540
+of the wizard.
+
+03:54.550 --> 04:04.360
+So when we instantiated a new wizard we ran this function and inside of this function we ran that user
+
+04:04.360 --> 04:10.380
+dot in it and passed in the email that we passed in as an argument.
+
+04:10.420 --> 04:15.620
+And here now this is one way of doing it.
+
+04:15.910 --> 04:17.580
+And then there's another way.
+
+04:17.880 --> 04:25.660
+And it's called super and it's a keyword as you can see it's being highlighted here and all we do is
+
+04:25.660 --> 04:35.570
+run super and super is referring to the superclass or the class above wizard which is user and this
+
+04:35.570 --> 04:43.900
+is actually a new addition as of Python 2.0 to with super we actually no longer need the self.
+
+04:43.920 --> 04:52.560
+So our code looks even cleaner and all we pass is this and if we click Run we still get the right answer
+
+04:53.190 --> 05:00.550
+super allows us to refer to user this way and not have to worry about passing self.

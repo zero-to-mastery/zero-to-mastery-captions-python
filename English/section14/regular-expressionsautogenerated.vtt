@@ -1,0 +1,271 @@
+WEBVTT
+
+00:00.680 --> 00:07.260
+Let's talk about regular expressions now regular expressions aren't unique to Python.
+
+00:07.430 --> 00:10.960
+As a matter of fact you see them all of our programming languages.
+
+00:11.150 --> 00:16.220
+But I'm going to teach you regular expression just quickly because they are very useful especially when
+
+00:16.220 --> 00:23.690
+you're doing let's say validation like checking that somebody and has entered the right e-mail or you
+
+00:23.690 --> 00:31.640
+have password requirements or you want to check if a piece of string exists in a piece of text.
+
+00:31.670 --> 00:35.450
+So this is something that we're going to explore in this video.
+
+00:35.450 --> 00:36.950
+Regular expressions.
+
+00:36.950 --> 00:38.240
+What are they.
+
+00:38.240 --> 00:43.190
+Well luckily for us Python comes with a regular expression module.
+
+00:43.190 --> 00:46.380
+Remember regular expressions aren't Python specific.
+
+00:46.430 --> 00:53.660
+You can use them pretty much in any language but they're very useful for finding things in a piece of
+
+00:53.660 --> 01:09.070
+text so let's say we have a string here and we can say string search inside of this text please.
+
+01:09.100 --> 01:10.880
+There we go.
+
+01:10.930 --> 01:13.790
+Now let's say I wanted to search for something here.
+
+01:14.140 --> 01:21.150
+First of all could I do something like this could I say search in string
+
+01:24.290 --> 01:25.430
+let's print here
+
+01:29.290 --> 01:37.020
+and if I click Run I get true and this is a simple way for us to search something inside of a string.
+
+01:37.060 --> 01:40.030
+So why do we even need regular expressions.
+
+01:40.030 --> 01:45.940
+Well regular expressions are a little bit more powerful than just this because maybe we want to search
+
+01:45.940 --> 01:53.040
+how many times search occurs in the string or maybe we have a complicated string let me show you what
+
+01:53.040 --> 01:53.790
+I mean.
+
+01:54.300 --> 02:02.760
+The way we use something like regular expressions is using this format so I can say Archie dot and then
+
+02:02.760 --> 02:05.110
+in here use search.
+
+02:05.480 --> 02:09.940
+And as you can see here we give it a pattern and a string and some flags.
+
+02:09.980 --> 02:18.960
+We'll talk about that a little bit later so all we need to say is what pattern do you want to do.
+
+02:18.970 --> 02:25.780
+Well I want to search if this exists in the string so I can say this and then give it the actual string
+
+02:26.970 --> 02:28.130
+in our case.
+
+02:28.140 --> 02:29.300
+Well this is our string.
+
+02:29.400 --> 02:39.680
+So if I run this well let's print out what happens here so as to print if I click Run.
+
+02:39.740 --> 02:40.970
+All right.
+
+02:40.970 --> 02:48.980
+I get what I call a match object a regular expression gives us an output not just true or false but
+
+02:48.980 --> 02:55.800
+an actual object that tells us a little bit more information about this and you can see over here one
+
+02:55.800 --> 02:57.200
+of the information is the span.
+
+02:57.210 --> 03:03.630
+So where it occurs in the string it occurs at index of 17 and ends at index of 21.
+
+03:03.660 --> 03:05.230
+So that's really useful.
+
+03:05.250 --> 03:11.470
+Let's store this information and just say a here.
+
+03:11.500 --> 03:19.910
+So what can we do with this match object while the first thing we can do is to check what we have.
+
+03:19.910 --> 03:24.020
+So we have first of all span which we've seen.
+
+03:24.050 --> 03:25.280
+And if I run this
+
+03:28.210 --> 03:32.940
+it tells me where the string occurs as a couple.
+
+03:32.960 --> 03:36.140
+So index of 17 to index of 21.
+
+03:36.350 --> 03:47.330
+I can also do start and start well tells me when the text starts and I can also do group or actually
+
+03:47.450 --> 03:56.820
+I can also do and to show me where it ends and then I can also do group and group returns the part of
+
+03:56.820 --> 04:01.810
+the string where there was the match and let's say there was another this in here.
+
+04:01.920 --> 04:03.670
+If I click Run you see that.
+
+04:03.730 --> 04:11.950
+Well it only gives me that piece of or part of the strength that there was the match now group is really
+
+04:11.950 --> 04:21.980
+useful when we're trying to do multiple searches so in our case we are just doing one search so we have
+
+04:22.010 --> 04:24.080
+a pattern that we're trying to match.
+
+04:24.080 --> 04:31.030
+But there's way that we can do multiple searches within the one line but before I show you that.
+
+04:31.090 --> 04:37.080
+What happens if we do something that doesn't exist such as this with a capital S..
+
+04:37.410 --> 04:45.580
+If I click Run I get an error because now a is going to be none.
+
+04:45.750 --> 04:50.080
+Because if the regular expression doesn't find anything it's going to return None.
+
+04:50.130 --> 04:54.270
+So it's either going to return a match object or not.
+
+04:54.270 --> 04:58.360
+Now how can we make this more advanced.
+
+04:58.360 --> 05:03.480
+Well one thing we can do is to create a pattern that we want to check for.
+
+05:03.490 --> 05:11.840
+So let's say a pattern here and this pattern we're going to use regular expression dot com pop and the
+
+05:11.840 --> 05:16.860
+compile is going to allow us to give just like we did here a pattern.
+
+05:16.850 --> 05:22.340
+So let's say in here I simply want to check for this.
+
+05:22.340 --> 05:30.380
+Now this pattern I can use instead of just doing Ari does search I can just use the pattern.
+
+05:30.380 --> 05:36.430
+Now to do the search for me so again if I run this
+
+05:39.280 --> 05:44.620
+well now I don't have to pass it this I need to just pass it the string that we want to search
+
+05:48.050 --> 05:54.500
+see that this is being captured and I can use pattern now everywhere multiple times.
+
+05:54.530 --> 06:01.600
+So let's say I can do pattern dot all the methods that we have we have quite a lot actually.
+
+06:01.610 --> 06:05.310
+Let me show you some of the useful ones we have.
+
+06:05.370 --> 06:11.920
+Find all which finds all the instances of the match.
+
+06:11.950 --> 06:17.740
+So let's say in here Be quick run look at that.
+
+06:17.740 --> 06:29.230
+I have this and this so I get both instances of this inside of a list I can also do something like for
+
+06:29.230 --> 06:35.860
+match and full match while making sure that everything matches fully.
+
+06:35.890 --> 06:45.400
+So if I click Run here let's print see here click Run I get none because I don't get a full match in
+
+06:45.400 --> 06:48.600
+order for full match to return the match.
+
+06:48.670 --> 06:51.880
+It has to be the exact string that we're searching.
+
+06:51.880 --> 06:55.280
+So if I click Run there you go.
+
+06:55.330 --> 06:57.830
+I get a match object now.
+
+06:57.840 --> 07:04.690
+Now let's say I have a question mark in here instead of an exclamation mark if I click Run it's not
+
+07:04.900 --> 07:14.950
+if I have exclamation mark and then maybe something else afterwards I still get not we also have another
+
+07:14.950 --> 07:22.180
+option which is match and match as you can see matches 0 or more characters at the beginning of the
+
+07:22.180 --> 07:28.480
+string so if I do string here and I print D.
+
+07:28.640 --> 07:31.490
+Well actually let me change this up.
+
+07:31.520 --> 07:33.310
+Let's do here.
+
+07:33.620 --> 07:41.430
+Andre in the string that we're actually comparing and in fact click Run I still get a match object versus
+
+07:41.460 --> 07:48.180
+if I do see which uses a full match which gives me a none.
+
+07:48.190 --> 07:56.050
+Because well we only want an exact match here versus a match that matches the string and then doesn't
+
+07:56.050 --> 07:58.020
+care what comes afterwards.
+
+07:58.030 --> 07:59.790
+So this is extremely useful.
+
+08:00.490 --> 08:07.780
+But up until now I mean we get a couple of methods that we can use which are quite useful but this doesn't
+
+08:07.780 --> 08:10.260
+seem that that powerful.
+
+08:10.270 --> 08:14.750
+Why do all languages have regular expressions why do we really care.
+
+08:14.760 --> 08:19.990
+Well in the next video we're going to explore this idea of pattern and how we can do some really advanced
+
+08:20.110 --> 08:21.070
+patterns.
+
+08:21.250 --> 08:23.070
+I'll see in the next video by.

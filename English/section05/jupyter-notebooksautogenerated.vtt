@@ -1,0 +1,439 @@
+WEBVTT
+
+00:01.150 --> 00:03.930
+Let's talk about the very last one.
+
+00:04.240 --> 00:06.740
+The Jupiter notebooks.
+
+00:07.060 --> 00:15.070
+Now this one is really really interesting and it's very popular with data scientists and machine learning
+
+00:15.070 --> 00:18.670
+people because well let me show you.
+
+00:18.700 --> 00:27.460
+Instead of explaining in order for us to use Jupiter notebooks we can actually go to Anaconda dot com.
+
+00:27.460 --> 00:29.510
+No this isn't a snake Web site.
+
+00:29.530 --> 00:39.880
+This is a distribution a platform that allows us to download a ton of tools that Python engineers use
+
+00:40.900 --> 00:45.820
+and like I said before a lot of data scientists a lot of people who are working with machine learning
+
+00:46.210 --> 00:53.110
+would download Anaconda because it comes with all these tools that we need to be productive instead
+
+00:53.110 --> 00:55.300
+of downloading them one by one.
+
+00:55.360 --> 00:56.230
+And here's the thing.
+
+00:56.710 --> 01:00.050
+You can actually just download python with Anaconda.
+
+01:00.070 --> 01:06.940
+So if we didn't go to Python dot org initially and just went to Anaconda and clicked download Well that
+
+01:06.940 --> 01:09.180
+was going to install Python for us as well.
+
+01:09.250 --> 01:15.160
+But I wanted us to go through the official way of downloading it instead of Anaconda because we want
+
+01:15.160 --> 01:17.410
+to understand how things work.
+
+01:17.470 --> 01:24.700
+So in here all we have to do is click download and you'll be able to download the anaconda distribution
+
+01:25.540 --> 01:30.940
+and you can see that it's the most popular python in our data science platform and you can see that
+
+01:30.940 --> 01:36.880
+when you download Anaconda it comes with a lot of things that we're going to use throughout the course
+
+01:37.210 --> 01:39.250
+such as Jupiter notebooks.
+
+01:39.250 --> 01:46.420
+It comes with different plugins like num Pi or bouquet or pandas or even tensor flow.
+
+01:46.420 --> 01:49.150
+A lot of things that data scientists use.
+
+01:49.300 --> 01:55.510
+Now if you scroll down it will detect whatever machine you're on so you can download based on your version
+
+01:56.460 --> 02:01.410
+so if you're on a Windows you might have to click windows and make sure you download version three point
+
+02:01.410 --> 02:02.790
+seven or higher.
+
+02:02.790 --> 02:08.220
+And based on whatever computer you have most of you will probably have 64 bit.
+
+02:08.220 --> 02:12.430
+That's something dependent on your machine if you're on Linux again.
+
+02:12.480 --> 02:15.230
+You'll have different options as well.
+
+02:15.240 --> 02:23.090
+Now you can click on download here or you can even click on documentation read more and go to installation
+
+02:24.710 --> 02:25.140
+here.
+
+02:25.160 --> 02:31.110
+We'll have a step by step guide on how to install Anaconda.
+
+02:31.110 --> 02:32.390
+Now I want to give you a warning.
+
+02:32.400 --> 02:37.770
+You don't have to do this optional number two step which is to verify data integrity.
+
+02:37.800 --> 02:43.020
+This is something that you do for security reasons to make sure that you're downloading the right package.
+
+02:43.050 --> 02:44.430
+So that is completely optional.
+
+02:44.430 --> 02:51.530
+You can skip it over and you can walk through the steps to make sure that you install it properly.
+
+02:51.540 --> 02:58.530
+Now one of the things that you'll get is this option especially on Windows to add Anaconda to my path
+
+02:58.620 --> 03:05.010
+environment variable I recommend and they do as well to not click here because remember we've installed
+
+03:05.010 --> 03:07.670
+Python initially already.
+
+03:07.800 --> 03:13.440
+So by clicking that and adding it to the path it's going to conflict with an older version of Python
+
+03:13.440 --> 03:16.110
+that you may have installed a couple of lessons ago.
+
+03:16.110 --> 03:22.650
+So make sure you follow this this guide and you see that Anaconda a recently announced that they're
+
+03:22.650 --> 03:25.680
+going to include pie charm for Anaconda as well.
+
+03:25.680 --> 03:30.720
+So again if in the previous video Oh you've already downloaded pi charm you can skip over this step
+
+03:30.720 --> 03:31.170
+as well.
+
+03:32.010 --> 03:34.970
+So that's the thing with the windows with Mac.
+
+03:34.980 --> 03:36.930
+Again it's very self-explanatory.
+
+03:36.930 --> 03:41.220
+You just click through the process install and everything will be done for you.
+
+03:41.310 --> 03:48.720
+And if you're on a Linux machine you will have to use your terminal and essentially have to run this
+
+03:48.720 --> 03:52.440
+command that they'll give you in order to run Anaconda.
+
+03:52.500 --> 03:57.550
+Remember we want to use Anaconda three because we want to use Python version 3.
+
+03:57.590 --> 04:01.530
+Now once you have installed Anaconda I'm going to give you a warning.
+
+04:01.580 --> 04:04.490
+It's a pretty big distribution.
+
+04:04.490 --> 04:05.720
+It is quite big.
+
+04:05.930 --> 04:11.100
+So if your computer doesn't have enough memory doesn't have enough storage.
+
+04:11.120 --> 04:16.220
+There is another option which is many Condor which is a smaller version of Anaconda.
+
+04:16.250 --> 04:22.850
+That doesn't come with all these packages and most likely in this course you can get away with just
+
+04:23.090 --> 04:25.310
+running mini conduct as an option.
+
+04:25.310 --> 04:28.050
+Now let's say you've installed Anaconda.
+
+04:28.220 --> 04:32.560
+You should have it in your applications right here.
+
+04:32.570 --> 04:39.680
+All you need to do is simply click on it and it's going to launch Anaconda for you.
+
+04:39.760 --> 04:46.780
+Now it might take a little while just to get everything set up but once it's on look at that you have
+
+04:46.780 --> 04:53.250
+the anaconda navigator and you have a few things here that you might recognize such as V.S. code.
+
+04:53.310 --> 04:56.400
+You can actually install it through here.
+
+04:56.540 --> 05:01.220
+You can use things like spider another IDC like pie chart.
+
+05:01.340 --> 05:06.170
+You can also have things like our studio if you want to get into our programming and really focus on
+
+05:06.170 --> 05:15.310
+data sites but the one we're really interested in is the Jupiter notebook Jupiter notebooks are extremely
+
+05:15.310 --> 05:21.970
+popular notebooks that if you're doing any sort of data science or machine learning with Python you're
+
+05:21.970 --> 05:23.120
+for sure using.
+
+05:23.200 --> 05:26.190
+I love them and you'll see why in just a second.
+
+05:26.500 --> 05:32.380
+Now you might have to install this if it wasn't installed but otherwise once installed you can just
+
+05:32.380 --> 05:38.380
+click on launch and let's see what happens.
+
+05:38.450 --> 05:39.380
+Did you see that.
+
+05:39.740 --> 05:48.290
+It opened up my browser my default browser and it took me to local host 8 8 8 8.
+
+05:48.320 --> 05:54.920
+Now if this doesn't happen for you automatically you might have to just type in manually into the browser
+
+05:55.040 --> 05:56.980
+local host 8 8 8 8.
+
+05:57.110 --> 06:00.770
+But otherwise it's going to open up this for me.
+
+06:00.770 --> 06:04.590
+Which right now if you look at it we're in our desktop.
+
+06:04.640 --> 06:07.360
+I can open my Python files if I want to.
+
+06:07.430 --> 06:08.410
+If I click on them.
+
+06:08.540 --> 06:09.110
+Look at that.
+
+06:09.170 --> 06:14.710
+I get my Python files that I can edit and type things into.
+
+06:14.810 --> 06:17.740
+But this isn't really why we want to use Jupiter notebooks.
+
+06:17.840 --> 06:21.390
+Instead we want to create a new Jupiter notebook.
+
+06:21.390 --> 06:32.170
+Want to click on new and make sure that we select Python 3 once I click on python 3 we get a new Jupiter
+
+06:32.170 --> 06:37.090
+notebook and this notebook which is untitled can.
+
+06:37.130 --> 06:38.970
+Well we can just name it.
+
+06:39.170 --> 06:45.610
+My first notebook I'm going to rename and check this out.
+
+06:46.000 --> 06:49.850
+If I go to my desktop I have some folders here.
+
+06:49.870 --> 06:56.860
+I have a hidden folder which is the checkpoints folder which is Jupiter notebooks keeping track of my
+
+06:56.860 --> 06:57.580
+files.
+
+06:57.880 --> 07:06.630
+And then I also have my first notebook dot IP y and b this stands for I Python notebooks which is what
+
+07:06.630 --> 07:08.570
+Jupiter notebooks used to be called.
+
+07:08.670 --> 07:13.500
+As you notice they are not that P Y Python files.
+
+07:13.560 --> 07:22.410
+There's a special type of file the I Python notebook file which can be opened with Jupiter notebooks.
+
+07:22.430 --> 07:29.240
+Now the reason we have a browser here is that Jupiter notebooks needs a gooey or graphical user interface
+
+07:29.240 --> 07:30.920
+for us to write this.
+
+07:30.920 --> 07:34.310
+It's not a code editor where we had the code edited our screens.
+
+07:34.430 --> 07:40.730
+Instead it's using the browser to allow us to run this program even though it's using the browser though
+
+07:41.030 --> 07:43.040
+you're able to run this flying.
+
+07:43.190 --> 07:50.530
+So if you're on an airplane you can still run your Jupiter notebooks and practice coding.
+
+07:50.630 --> 07:59.540
+Now the way Jupiter notebook works is using these cells so these cells can print or I can write different
+
+07:59.960 --> 08:09.380
+code in Python so if I do this I can click Run and look at that right away it gives me the output and
+
+08:09.380 --> 08:15.810
+now I have a second cell where I can say let's say four plus five if I run this.
+
+08:16.190 --> 08:16.610
+Look at that.
+
+08:17.030 --> 08:19.670
+I run a different cell with a different output.
+
+08:19.850 --> 08:26.750
+Now instead of us always constantly running run we can also just use the shortcut shift and enter to
+
+08:26.750 --> 08:28.170
+actually run the code.
+
+08:28.250 --> 08:33.450
+So let's say for example we're doing is five greater than four.
+
+08:33.500 --> 08:37.650
+I can run shift enter and it gives me the answer right away.
+
+08:37.670 --> 08:42.380
+Now the beauty here is that it's almost like creating notes for yourself.
+
+08:42.440 --> 08:43.170
+Right.
+
+08:43.220 --> 08:49.640
+I'm able to run different cells see different outputs get immediate response to my code instead of in
+
+08:49.640 --> 08:55.650
+a code editor or an I.D. where I had to write everything in one file and everything ran at once.
+
+08:55.700 --> 09:02.090
+And as we get into machine learning and data science and data visualization we'll actually see that
+
+09:02.150 --> 09:07.610
+we use Jupiter notebooks because they're so easy to visualize these results.
+
+09:07.610 --> 09:14.420
+Now one other thing with Jupiter notebooks that it's really really nice is this idea of the notebook
+
+09:14.780 --> 09:21.350
+where instead of just always having code which you can see over here if I click on the drop down menu
+
+09:21.440 --> 09:35.300
+and click markdown I can now type text like this is my first Python or Jupiter notebook and I can write
+
+09:35.390 --> 09:41.800
+different sort of notes here and once done I can do shift enter and look at that.
+
+09:41.800 --> 09:48.970
+I have my notes in this book so that maybe as you're learning for the rest of the course you can have
+
+09:48.970 --> 09:56.410
+different Jupiter notebooks to take notes run code verify it and we'll be extremely organized and you
+
+09:56.410 --> 10:03.890
+can even post this on github and share them with other community members and all we have to do now is
+
+10:04.040 --> 10:10.670
+well it automatically saves so you can see over here that anytime we open Jupiter notebooks let's actually
+
+10:10.670 --> 10:11.540
+do that.
+
+10:11.540 --> 10:15.610
+I'm going to close this close this as well.
+
+10:16.590 --> 10:17.850
+Yes let's quit.
+
+10:17.850 --> 10:23.960
+I'm going to open Jupiter notebooks one more time by clicking on Anaconda.
+
+10:24.090 --> 10:32.240
+It's initializing takes a bit of time but eventually I can launch my Jupiter notebook again.
+
+10:32.360 --> 10:38.270
+It's going to open up my Jupiter notebook on local host.
+
+10:38.450 --> 10:47.690
+You'll see over here that the local host has changed to 8 8 8 9 so that may happen if for example local
+
+10:47.690 --> 10:50.820
+host 8 8 8 is already taken.
+
+10:50.900 --> 10:59.420
+But if I click here on the Jupiter notebook remember the I Python notebook I go back to my Jupiter notebook
+
+10:59.480 --> 11:02.330
+with all my text all my files.
+
+11:02.330 --> 11:04.690
+How cool is that.
+
+11:04.820 --> 11:07.260
+And by the way going back to this local host.
+
+11:07.310 --> 11:14.420
+The reason that this is actually still taken is well if you look over here I have two terminal windows
+
+11:15.020 --> 11:24.840
+because I technically didn't close the session or the server from last time so because I did that Anaconda
+
+11:24.870 --> 11:29.310
+automatically said oh the local host 8 8 8 8 is already taken.
+
+11:29.310 --> 11:32.330
+So let's just increase the number 2 8 8 8 9.
+
+11:33.060 --> 11:41.150
+So you want to make sure that you close these once you are done and when I do that it tells me connection
+
+11:41.150 --> 11:46.230
+failed because we've stopped the server it no longer works.
+
+11:46.250 --> 11:53.410
+So if I type something here you see that I get a star and it's not doing anything if I do four plus
+
+11:53.410 --> 12:00.150
+five again it's not running because the server is no longer running.
+
+12:00.170 --> 12:00.800
+All right.
+
+12:00.800 --> 12:02.830
+Let's take a break and I'll see you in the next one.

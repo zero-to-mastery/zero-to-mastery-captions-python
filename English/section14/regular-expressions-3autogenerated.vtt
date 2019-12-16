@@ -1,0 +1,316 @@
+WEBVTT
+
+00:01.050 --> 00:02.490
+Welcome back.
+
+00:02.490 --> 00:08.730
+Up until now we talked about regular expressions quite loosely and I mean you should understand that
+
+00:08.820 --> 00:12.290
+it helps us match different things together.
+
+00:12.360 --> 00:18.240
+But the problem is well how can I really apply this to real life scenarios.
+
+00:18.240 --> 00:25.940
+Well a good use case is perhaps when you're collecting e-mails maybe you're creating a startup.
+
+00:26.010 --> 00:30.990
+The startup wants to collect let's say e-mails of interested customers.
+
+00:30.990 --> 00:37.260
+Now we want to make sure that whoever is interested in our startup enters a proper email addresses.
+
+00:37.380 --> 00:37.890
+Right.
+
+00:37.890 --> 00:45.360
+Because we don't want anybody to fill our databases or our excel sheets with random words.
+
+00:45.360 --> 00:48.140
+We want to make sure that something is a correct email.
+
+00:48.150 --> 00:55.580
+Otherwise it says hey this is not an incorrect e-mail please try again and regular expression is a great
+
+00:56.060 --> 00:58.350
+thing to use for validation.
+
+00:58.490 --> 01:05.930
+And just making sure that whatever a user inputs or whatever and other machine inputs into your code
+
+01:06.470 --> 01:14.380
+is in the correct form so let me show you an example of how I would do this let's say I want to do an
+
+01:14.500 --> 01:15.740
+email validation.
+
+01:16.450 --> 01:26.290
+Well the first thing I would do is simply type in Python email validation projects and here you see
+
+01:26.290 --> 01:32.800
+here that we have a lot how to check for a valid email addresses and pretty much the first couple of
+
+01:32.800 --> 01:35.280
+answers are going to be what you're looking for.
+
+01:35.290 --> 01:39.640
+I like this one e-mail address regular expression that works ninety nine point nine nine percent of
+
+01:39.640 --> 01:40.310
+the time.
+
+01:40.420 --> 01:48.650
+That's good enough for me so in here you see that we have some idea of what we can use.
+
+01:48.660 --> 01:52.950
+If I scroll down looks like we have a regular expression for different languages.
+
+01:52.950 --> 01:53.250
+All right.
+
+01:53.280 --> 01:55.050
+Let's do Python.
+
+01:55.050 --> 02:04.390
+I'm simply going to copy this and now in here let's go to our regular expression 1 to 1 and just copy
+
+02:04.390 --> 02:07.630
+this in here.
+
+02:07.640 --> 02:12.970
+Now I get an error because you see here that the R is already included because I've selected Python
+
+02:12.970 --> 02:13.390
+here.
+
+02:13.390 --> 02:20.660
+So let's just remove the brackets again if we hover over here.
+
+02:20.800 --> 02:23.920
+It's going to tell us about each thing that it's trying to do.
+
+02:23.920 --> 02:25.990
+And we also have the explanation.
+
+02:25.990 --> 02:28.080
+So this is how I like using regular expression.
+
+02:28.090 --> 02:30.750
+I find something online that people have used in the past.
+
+02:30.760 --> 02:33.850
+I don't try to reinvent the wheel and then try to understand it.
+
+02:34.150 --> 02:41.290
+So just to test this out if I type in an email address here look at that I get a match and get a full
+
+02:41.290 --> 02:47.630
+match and it matches the group let's go one by one first I see that I have the brackets.
+
+02:47.650 --> 02:51.840
+So this is the capturing group I'm trying to capture one data point.
+
+02:52.090 --> 02:54.580
+If let's say I enter another e-mail here
+
+02:58.120 --> 02:59.500
+that's not going to capture it.
+
+02:59.500 --> 03:04.810
+If I go like this it's not going to capture it because while while we're looking for one capture and
+
+03:04.810 --> 03:09.950
+group OK next I see that it's asserting a position at the start of the line.
+
+03:09.950 --> 03:17.730
+So at the start of the line we want to make sure that it captures this so it matches a single character
+
+03:17.730 --> 03:19.230
+present in a set.
+
+03:19.260 --> 03:21.980
+So this e-mail can be anything.
+
+03:21.980 --> 03:23.370
+It could be letters.
+
+03:23.520 --> 03:24.890
+It could be numbers.
+
+03:24.930 --> 03:29.580
+And then finally it could be underscore it could have a dot in there.
+
+03:29.670 --> 03:30.090
+It could have.
+
+03:30.090 --> 03:32.040
+Plus it could have minus.
+
+03:32.040 --> 03:34.880
+And then finally plus is a quantify.
+
+03:35.010 --> 03:37.970
+So it matches between one and unlimited times.
+
+03:37.980 --> 03:42.240
+So this string can be as long as I want and it's still going to work.
+
+03:42.300 --> 03:49.740
+It's going to accept plus minus it's going to accept underscore but it's not going to accept an exclamation
+
+03:49.740 --> 03:52.820
+mark because it's not in here.
+
+03:52.920 --> 03:53.190
+All right.
+
+03:53.190 --> 03:54.570
+So that's good.
+
+03:54.570 --> 03:55.500
+What about next.
+
+03:55.500 --> 03:57.720
+Well the next part is the outside.
+
+03:57.720 --> 03:59.120
+It's literally the outside.
+
+03:59.130 --> 04:06.330
+We have to make sure we have it and then after the outside again once again we have the characters that
+
+04:06.330 --> 04:11.740
+we can use with a plus at the end to say hey you can have as many of these as you want.
+
+04:11.820 --> 04:14.290
+Perfect next.
+
+04:14.390 --> 04:19.010
+We have a special one matches the character dot literally.
+
+04:19.220 --> 04:23.540
+So because dot and regex if I remove it actually mean something.
+
+04:23.540 --> 04:32.440
+It matches any character one we want to make sure that the DOT well is exactly what we're looking for.
+
+04:32.480 --> 04:40.700
+There needs to be a dot for let's say dot com or dossier or dot net or dot org if instead I didn't have
+
+04:40.700 --> 04:41.600
+this slash.
+
+04:41.630 --> 04:43.290
+This could be any character.
+
+04:43.340 --> 04:46.790
+This is still a matching string without a dot.
+
+04:46.790 --> 04:57.200
+So again special character right here and again it actually gives you explanation so if you scroll down
+
+04:57.200 --> 05:01.510
+through here I'll tell you exactly what it does.
+
+05:01.520 --> 05:01.740
+All right.
+
+05:01.760 --> 05:08.460
+After the dot once again we have anything that we want within these square brackets.
+
+05:08.550 --> 05:14.430
+Then as long as we want and then finally this dollar sign says hey it has to end with this.
+
+05:14.430 --> 05:16.230
+This is the end of the line
+
+05:20.080 --> 05:26.470
+so using just that we're able to figure out exactly how to do an email validation.
+
+05:26.470 --> 05:35.200
+So all I need to do now is let's say go to code generator copy this piece of code.
+
+05:35.410 --> 05:40.990
+Again we're using a raw string because we want to make sure that Python interpreter just doesn't try
+
+05:40.990 --> 05:43.000
+to add any special abilities to it.
+
+05:43.270 --> 05:47.690
+We just want to make sure that this is a raw string.
+
+05:47.820 --> 05:49.330
+Make sure hand that.
+
+05:49.410 --> 05:49.920
+All right.
+
+05:49.920 --> 05:50.780
+Perfect.
+
+05:50.790 --> 05:52.940
+So now is side of this string.
+
+05:53.040 --> 06:01.510
+Let's say I have an e-mail address that a user sends me such as B at B dot com if I just remove all
+
+06:01.510 --> 06:03.570
+of these and just do a pattern
+
+06:06.130 --> 06:08.000
+and let's just simply do.
+
+06:08.110 --> 06:10.740
+Well let's just check if a exists.
+
+06:10.750 --> 06:13.200
+If I click Run.
+
+06:13.340 --> 06:13.840
+All right.
+
+06:13.910 --> 06:20.290
+This matches but if somebody gives me a wrong e-mail address or something that's not formatted properly
+
+06:20.330 --> 06:25.740
+let's say just like this and I click Run I get none.
+
+06:25.860 --> 06:32.490
+So I could do an if statement saying hey if there's no matching object to all then tell them sorry.
+
+06:32.490 --> 06:33.710
+Try again.
+
+06:33.810 --> 06:42.850
+Very very cool so I have an exercise for you using what you've just learned and definitely your Google
+
+06:42.850 --> 06:47.460
+skills because with regular expressions you will Google you're not going to memorize any of this.
+
+06:47.470 --> 06:54.130
+I mean I don't what I want you to do is to create also a password checker.
+
+06:54.280 --> 06:57.700
+So the password has to have a few requirements.
+
+06:57.700 --> 07:03.530
+So the password has to be at least eight characters long.
+
+07:04.270 --> 07:10.900
+And it can contain any sort of letters
+
+07:13.330 --> 07:16.030
+numbers and you know what it can contain.
+
+07:16.030 --> 07:18.340
+How about these symbols.
+
+07:18.370 --> 07:23.550
+That's a so write a regular expression just like this.
+
+07:23.550 --> 07:31.450
+Using this regex one to one and in the next video we're going to try and do this as well I'll see in
+
+07:31.450 --> 07:32.760
+the next one by.

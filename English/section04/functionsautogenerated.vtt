@@ -1,0 +1,298 @@
+WEBVTT
+
+00:00.940 --> 00:03.910
+It's time to talk about functions.
+
+00:03.940 --> 00:12.610
+This is where things get really interesting because up until now we've seen functions write functions
+
+00:12.700 --> 00:17.410
+where things like print like list bullion.
+
+00:17.530 --> 00:24.580
+We even saw the input function to get the input of whatever the user types and those allowed us to perform
+
+00:24.940 --> 00:27.400
+actions on our data types.
+
+00:27.520 --> 00:32.740
+But the true power comes when we can start creating our own functions.
+
+00:32.740 --> 00:33.160
+That's right.
+
+00:33.160 --> 00:35.950
+We're not limited to whatever Python gives us.
+
+00:35.950 --> 00:40.900
+We're able to create our own functions and use them in our programs.
+
+00:40.900 --> 00:48.830
+So let's learn how to do that the way we create a function in Python and functions by the way existent
+
+00:48.920 --> 00:50.610
+all programming languages.
+
+00:50.630 --> 00:52.820
+They're very very important.
+
+00:52.820 --> 01:01.790
+If we do D F that lets the Python interpreter know that we're about to define a function D F is short
+
+01:01.790 --> 01:02.610
+for define.
+
+01:02.780 --> 01:08.210
+So the interpreter is going to say all right they're about to define a function what's the function
+
+01:08.210 --> 01:09.510
+going to be.
+
+01:09.530 --> 01:11.880
+Well we can create whatever we want.
+
+01:11.960 --> 01:17.150
+We use the same naming case as we do with variables to define our functions.
+
+01:17.150 --> 01:19.350
+So let's create a function again.
+
+01:19.520 --> 01:22.130
+We'll call it say hello.
+
+01:22.130 --> 01:24.100
+Just a variable that I created.
+
+01:24.110 --> 01:31.050
+But this time it's a function because we use the def keyword now in here and say hello.
+
+01:31.120 --> 01:36.010
+We also add the brackets to let the interpreter know that this is something that we're going to take
+
+01:36.070 --> 01:36.760
+action.
+
+01:36.970 --> 01:40.430
+Or this is going to perform an action on a data type.
+
+01:40.510 --> 01:46.750
+We use the Colin and then within this block of code we can say print
+
+01:50.200 --> 01:52.590
+and that is a function.
+
+01:52.870 --> 01:54.010
+If I click Run
+
+01:56.970 --> 01:59.160
+nothing happened.
+
+01:59.390 --> 02:05.290
+Why is that well we've created the say hello function.
+
+02:05.290 --> 02:08.800
+We've defined it and now it's living somewhere in memory.
+
+02:08.800 --> 02:16.000
+On our machine however in order to use a function remember just like we used the print function we have
+
+02:16.000 --> 02:18.160
+to call it with the brackets.
+
+02:18.160 --> 02:24.030
+So after we define a function we say Say hello.
+
+02:24.340 --> 02:27.090
+And did you notice how my ripple.
+
+02:27.340 --> 02:34.840
+As soon as I said say actually gives me the say hello command because I've created it and you see this
+
+02:34.840 --> 02:39.020
+purple box which shows that it's a function.
+
+02:39.100 --> 02:45.250
+Well we now have it available for us to use just like we had the print function available for us to
+
+02:45.250 --> 02:46.140
+use.
+
+02:46.150 --> 02:57.760
+So if I do say hello and run it with the brackets and I click Run I get Hello how cool is that by the
+
+02:57.760 --> 03:06.410
+way what happens if I run it without the brackets and I click Run nothing happens because remember in
+
+03:06.410 --> 03:14.800
+order for us to take an action we have to let the interpreter know hey I want to run say hello.
+
+03:14.950 --> 03:22.780
+Now the reason functions are so powerful is because of the principle that we've talked about.
+
+03:22.890 --> 03:23.590
+Right.
+
+03:23.680 --> 03:31.090
+The idea of dry which stands for do not repeat yourself functions are really really useful when you
+
+03:31.090 --> 03:34.480
+have things that you want to do over and over.
+
+03:34.480 --> 03:35.900
+For example the print function.
+
+03:35.950 --> 03:37.630
+We've used it a lot.
+
+03:37.630 --> 03:44.700
+Imagine if we had to code that ourselves every single time and say what print function does.
+
+03:44.890 --> 03:48.810
+Luckily Python gives us print because it's such a useful tool.
+
+03:49.420 --> 03:56.230
+But if in our program we want to say hello multiple times and you can imagine this actually being a
+
+03:56.230 --> 04:02.350
+lot more complicated and maybe 10 lines of code instead of writing those 10 lines of code over and over
+
+04:02.650 --> 04:10.300
+I can just define it as a function and use it anywhere I want in my program for example remember this
+
+04:11.140 --> 04:18.530
+where we had a picture and we printed a Christmas tree.
+
+04:18.600 --> 04:26.640
+Imagine if we wanted to run this multiple times well in order to do that I would copy and paste this
+
+04:26.640 --> 04:30.350
+code and then add it again.
+
+04:30.380 --> 04:34.670
+And if I click Run I now have two Christmas trees.
+
+04:34.690 --> 04:35.100
+That's.
+
+04:35.100 --> 04:36.710
+Look at that twenty six lines of code.
+
+04:36.720 --> 04:40.710
+I just copy and pasted the same thing over and over with a function.
+
+04:40.710 --> 04:54.820
+We can do something like this I can say define show tree Colin and we now have a function but remember
+
+04:55.030 --> 04:58.000
+the indentation in Python right indentation is important.
+
+04:58.000 --> 05:03.550
+We have the semicolon we're defining a function so we have to create that code block inside saying hey
+
+05:03.610 --> 05:05.320
+whatever is indented here.
+
+05:05.320 --> 05:06.550
+That's part of this function.
+
+05:07.300 --> 05:16.500
+So now that we have the show tree check this out I can say show tree run it again maybe let's run it
+
+05:17.070 --> 05:17.700
+three times
+
+05:20.690 --> 05:24.200
+if I click Run.
+
+05:24.300 --> 05:25.910
+How cool is that.
+
+05:25.950 --> 05:31.620
+I'm able to do the same thing over and over by just calling this function.
+
+05:31.620 --> 05:34.600
+And that's the power of functions.
+
+05:34.710 --> 05:37.790
+Functions allow us to keep our code dry.
+
+05:37.950 --> 05:46.360
+We don't repeat ourselves and reuse things that our machines can do over and over and the beauty is
+
+05:46.360 --> 05:49.150
+that this stays in memory for us.
+
+05:49.150 --> 05:53.430
+Show tree now means something to this program because we've created it.
+
+05:53.470 --> 05:58.480
+So we have our own custom action that we can take.
+
+05:58.540 --> 06:03.420
+Now what happens if I move a show tree here to the top
+
+06:06.780 --> 06:07.100
+well.
+
+06:07.130 --> 06:11.850
+If I run this I'll get an air name their name.
+
+06:11.850 --> 06:14.420
+Show tree is not defined.
+
+06:14.490 --> 06:16.080
+Why is that.
+
+06:16.080 --> 06:23.220
+Well because our interpreter goes line by line at first says all right picture equals to this value
+
+06:23.970 --> 06:28.030
+and then it goes to line eleven and says run show tree.
+
+06:28.170 --> 06:30.760
+But we haven't defined show tree yet.
+
+06:30.810 --> 06:36.410
+So the Python interpreter is going to air out and say hey I have no idea what show tree is.
+
+06:36.420 --> 06:37.890
+What are you talking about.
+
+06:38.040 --> 06:44.700
+Instead with a function we need to make sure that we define the functions at the beginning.
+
+06:44.700 --> 06:52.110
+So that Python interpreter says all right show tree now means this I'm not going to run it I'm not going
+
+06:52.110 --> 06:54.830
+to use it yet I'm just going to keep it in memory.
+
+06:54.960 --> 07:01.530
+And when I finally come across show tree I'll know that it means something I'm going to grab it from
+
+07:01.530 --> 07:06.720
+memory using show tree and then I'm going to run it using the brackets.
+
+07:06.810 --> 07:16.290
+For example if I do print show tree without anything without the brackets if I click Run you see that
+
+07:16.290 --> 07:17.380
+I get function.
+
+07:17.400 --> 07:20.250
+Show tree at this location.
+
+07:20.310 --> 07:22.470
+This is just the location in memory.
+
+07:22.470 --> 07:27.610
+This is the bookshelf where we store that show tree function.
+
+07:27.690 --> 07:35.030
+Very very cool and functions are an important powerful concept in programming and in the next video
+
+07:35.300 --> 07:38.400
+we're going to extend this and explore this a little bit more.
+
+07:38.780 --> 07:39.530
+I'll see in the next one.

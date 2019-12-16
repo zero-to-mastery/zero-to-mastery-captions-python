@@ -1,0 +1,91 @@
+WEBVTT
+
+00:00.360 --> 00:02.120
+Promise to not get mad at me.
+
+00:02.280 --> 00:07.980
+But there's actually one other thing I forgot to mention before we can talk about decorators.
+
+00:07.980 --> 00:09.660
+I know I'm building the suspense.
+
+00:09.660 --> 00:13.280
+I know you're just thinking hey hey Ondrej tell me what a decorator is.
+
+00:13.290 --> 00:14.200
+You're wasting my time.
+
+00:14.460 --> 00:15.670
+But one more thing.
+
+00:15.690 --> 00:17.100
+Quick video I promise.
+
+00:18.060 --> 00:29.550
+We have to understand this idea of a higher order function that is a higher order function for HFC for
+
+00:29.550 --> 00:30.210
+short.
+
+00:30.300 --> 00:31.780
+Sounds super important.
+
+00:31.780 --> 00:37.570
+Right a higher order function can be one of two things.
+
+00:37.750 --> 00:48.660
+It could either be a function let's say the great function that accepts a another function so this right
+
+00:48.660 --> 00:52.270
+here is a higher order function.
+
+00:52.290 --> 00:56.640
+It's a function that accepts inside of its parameters.
+
+00:56.640 --> 01:05.860
+Another function another way it can be a higher order function is if its a function that returns another
+
+01:05.860 --> 01:06.790
+function.
+
+01:06.790 --> 01:18.820
+If we define let's say a greet two that just runs normally but instead returns another function.
+
+01:18.820 --> 01:29.240
+So let's say in here we have define func and this define func let's say just returns five and we return
+
+01:29.240 --> 01:30.090
+the function.
+
+01:30.140 --> 01:37.400
+This is a higher order function a higher order function is any function that either accepts a function
+
+01:38.150 --> 01:43.610
+as a parameter or returns a function.
+
+01:43.610 --> 01:47.940
+And if you're thinking hey is that map function that we talked about.
+
+01:47.990 --> 01:49.390
+Is that a higher order function.
+
+01:49.400 --> 01:51.110
+Because it accepts a function.
+
+01:51.410 --> 01:53.130
+Yep that's a higher order function.
+
+01:53.240 --> 01:57.800
+So ways reduce or filter.
+
+01:57.800 --> 02:01.720
+These are all higher order functions.
+
+02:01.760 --> 02:03.010
+All right I promise.
+
+02:03.050 --> 02:08.390
+In the next video we're going to talk about why this is important and what decorators are.
+
+02:08.720 --> 02:09.510
+I'll see in that one.

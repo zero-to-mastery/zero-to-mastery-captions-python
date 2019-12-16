@@ -1,0 +1,145 @@
+WEBVTT
+
+00:00.600 --> 00:01.740
+Welcome back.
+
+00:01.780 --> 00:11.610
+Let's figure out how to add CSX and javascript to while our index dot HMO because if you remember we
+
+00:11.610 --> 00:23.020
+are using script and CSX and here now once again with flask if we go to let's say CSX we see that there's
+
+00:23.110 --> 00:31.060
+static files static files simply means it's a file that's never going to change.
+
+00:31.240 --> 00:33.300
+That is CSX in JavaScript.
+
+00:33.310 --> 00:39.970
+Usually once we send them out they're not going to change their static and you see over here that with
+
+00:40.240 --> 00:46.650
+flask we have to store the files on the false system as static slash style dots.
+
+00:46.650 --> 00:47.140
+Yes yes.
+
+00:47.140 --> 00:50.850
+So we need to create a static folder.
+
+00:50.910 --> 00:55.620
+Again this is something that you just have to get used to but let's say in here we'll create just like
+
+00:55.620 --> 01:04.500
+we did with templates we're going to create a static folder so that the floss gap knows to look in here
+
+01:04.500 --> 01:06.270
+for CSX and JavaScript files.
+
+01:06.270 --> 01:18.580
+So I'm going to move the javascript file to the static folder and do the same with the CSX file so once
+
+01:18.580 --> 01:25.850
+again move that to static.
+
+01:25.860 --> 01:30.040
+Now if I just say this and run you'll see that it won't actually work
+
+01:33.610 --> 01:34.000
+well.
+
+01:34.090 --> 01:35.690
+Why is that.
+
+01:35.840 --> 01:43.340
+Can you figure it out again because we haven't talked too much about Asia Mellon CSX and JavaScript.
+
+01:43.380 --> 01:44.940
+Don't worry if you don't get this.
+
+01:44.940 --> 01:50.780
+But if you remember in our index that HMO file we reference to these files inside of here.
+
+01:50.970 --> 01:54.250
+But the file parts have now changed.
+
+01:54.280 --> 01:57.840
+They're now in the static folder
+
+02:00.960 --> 02:01.690
+like this.
+
+02:01.710 --> 02:08.810
+So I have to say static script does J.S. fine now go back
+
+02:12.370 --> 02:14.630
+and refresh.
+
+02:14.780 --> 02:16.000
+Hey look at that.
+
+02:16.150 --> 02:22.390
+My beautiful green Web site for let's say this is Christmas Web site is now working.
+
+02:22.480 --> 02:24.220
+If I open up the developer tools
+
+02:27.600 --> 02:30.170
+go to network and refresh.
+
+02:30.280 --> 02:31.590
+Hey check that out.
+
+02:31.590 --> 02:33.830
+I have my document.
+
+02:33.840 --> 02:35.920
+Then I have my J.S. file.
+
+02:36.200 --> 02:39.450
+And why is there no CSX.
+
+02:39.450 --> 02:40.800
+Let me refresh again.
+
+02:40.800 --> 02:42.600
+Oh there it is right over there.
+
+02:42.630 --> 02:44.800
+We have style CSX.
+
+02:44.850 --> 02:49.570
+We have J.S. and we have the document awesome.
+
+02:49.710 --> 02:55.440
+If you're wondering why we're getting this little fatty Con Air that the con is the little icon that
+
+02:55.440 --> 03:01.920
+shows up on tabs over here so we can actually even add our own father icon if we wanted to and send
+
+03:02.070 --> 03:09.330
+images in the way we would do that is to again in our End Point blitz instead of the blog.
+
+03:09.420 --> 03:17.920
+I'm going to say the con that dot ICL for icon and we can just send it an image.
+
+03:17.920 --> 03:18.800
+Mm hmm.
+
+03:18.810 --> 03:21.470
+How will we go about doing this.
+
+03:21.510 --> 03:26.160
+I'm going to show you the answer in the next video but I want you to give it a try and figure out how
+
+03:26.160 --> 03:31.240
+you can send an image back to this end point so that we don't get this error.
+
+03:31.260 --> 03:36.930
+And when a browser automatically requests for this which all browsers do it's going to show up a little
+
+03:36.930 --> 03:38.280
+icon over here for us.
+
+03:38.280 --> 03:43.140
+So pick whatever icon you want and see if I can solve it in the next video I'll show you the answer.

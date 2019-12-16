@@ -1,0 +1,154 @@
+WEBVTT
+
+00:00.860 --> 00:07.640
+I want to add a quick note about this spacing that we see in this code.
+
+00:07.850 --> 00:11.180
+Now this isn't just for python.
+
+00:11.180 --> 00:14.450
+In other languages you'll always see this.
+
+00:14.450 --> 00:23.730
+You're not going to see that every single line of code always starts as well in the first space different
+
+00:23.730 --> 00:25.850
+languages will use this differently.
+
+00:25.890 --> 00:32.960
+But in order to organize code usually you'll see some indentation like this now.
+
+00:33.060 --> 00:43.540
+Python however is unique because the indentation in spaces that we see here makes the interpreter see
+
+00:43.540 --> 00:46.390
+it and say Hey this means something.
+
+00:46.420 --> 00:52.840
+The interpreter would actually see the space and say because there's space here I know that this is
+
+00:52.840 --> 00:58.570
+part of the if block in other languages like Javascript.
+
+00:58.570 --> 01:06.070
+Well you have something similar but usually you'll have an if statement and then some condition followed
+
+01:06.070 --> 01:13.120
+by make sure I spell condition right followed by something like a curly brace and in here whatever is
+
+01:13.120 --> 01:20.710
+in here you can see that I still get the space and I can do whatever I want but javascript interpreter
+
+01:21.160 --> 01:28.720
+doesn't really care that they're spaces if I want I could write my code just on the one line like this.
+
+01:28.720 --> 01:36.640
+And it's still valid a javascript code so people usually do the spacing more for style purposes.
+
+01:36.640 --> 01:43.810
+Python on the other hand is not just for styling that would do this but because the interpreter actually
+
+01:43.810 --> 01:49.990
+finds meaning in the spaces which is actually one of the big selling point with Python.
+
+01:49.990 --> 01:54.610
+It's very clean there's no extra stuff here that makes it difficult.
+
+01:54.610 --> 01:56.770
+I mean it's just English right.
+
+01:56.800 --> 02:04.990
+If it's old and if is licensed then print this is just really nice to read and really clean.
+
+02:05.140 --> 02:12.360
+Now if you notice you're my editor and we're going to talk about editors and ideas in an upcoming section.
+
+02:12.550 --> 02:20.920
+But if you're using the proper tools this automatically is created for you now in the programming world.
+
+02:20.920 --> 02:26.160
+There's this debate about tabs and spaces and we're going to get into it.
+
+02:26.220 --> 02:29.310
+It's frankly a little bit silly that is.
+
+02:29.310 --> 02:37.800
+Some people prefer to hear if they want to create a space they might use spaces or they might use tabs
+
+02:38.700 --> 02:40.770
+at the end of the day with Python.
+
+02:40.770 --> 02:48.990
+The rule is we can use spaces you can use the tab but the idea that if you use spaces you usually use
+
+02:49.080 --> 02:52.740
+for spaces is just a standard.
+
+02:52.740 --> 03:02.530
+Now if you notice here I actually don't have four spaces it's two spaces here and that is because up
+
+03:02.530 --> 03:07.660
+until now Well I've just been following along whatever this editor gives me.
+
+03:07.750 --> 03:11.480
+But if you look over here there's an auto format button.
+
+03:11.740 --> 03:19.840
+If I click on this it automatically formats my code into the appropriate format and you see right over
+
+03:19.840 --> 03:23.740
+here that I now have four spaces.
+
+03:23.740 --> 03:26.410
+But you see that the code still works.
+
+03:26.410 --> 03:33.730
+Again it's because at the end of the day the important part is that there is a distinction between hierarchies.
+
+03:33.730 --> 03:34.900
+That is the top.
+
+03:35.020 --> 03:41.010
+And then maybe the children but the interpreter itself is going to notice these spaces.
+
+03:41.020 --> 03:52.350
+So you do have to be careful because based on where this print is as soon as I add a tab in here and
+
+03:52.360 --> 03:57.740
+I click Run what I get is old and is licensed.
+
+03:57.800 --> 04:04.820
+But as soon as one of this is false and I click Run you see that.
+
+04:04.850 --> 04:05.290
+OK.
+
+04:05.300 --> 04:05.670
+OK.
+
+04:05.670 --> 04:09.740
+He runs only if this condition fails again.
+
+04:09.770 --> 04:15.570
+If previously both of these were true I only get the first line printed.
+
+04:15.570 --> 04:21.270
+So that little space here changes the outcome of my program.
+
+04:21.330 --> 04:23.720
+So you have to really be careful with this.
+
+04:23.850 --> 04:30.420
+And luckily your editor or where you code is going to help you out with this but it is a gotcha that
+
+04:30.420 --> 04:33.440
+if you're just starting out you want to be mindful of.
+
+04:33.570 --> 04:34.200
+All right.
+
+04:34.200 --> 04:36.320
+No more debates about spaces and tasks.
+
+04:36.420 --> 04:38.150
+I'll see in the next video by.

@@ -1,0 +1,196 @@
+WEBVTT
+
+00:00.830 --> 00:02.070
+Welcome back.
+
+00:02.090 --> 00:06.950
+Let's talk about formatting that is code formatting.
+
+00:06.950 --> 00:15.320
+A very important tool that comes with a lot of I.D. and you can also add extensions to code errors like
+
+00:15.380 --> 00:18.690
+Visual Studio code to format code.
+
+00:18.740 --> 00:26.900
+Now in order for us to talk about that we have to talk about Python pep and if you google Python pep
+
+00:27.200 --> 00:34.370
+you'll get something like this pep stands for Python enhancement proposals.
+
+00:34.440 --> 00:41.010
+These are proposals that the community the python developer community gives in order for us to have
+
+00:41.010 --> 00:43.530
+a standardized way to write code.
+
+00:43.530 --> 00:50.190
+And one of the more popular ones if you scroll down is what we called the PEP 8.
+
+00:50.220 --> 00:54.040
+You can see that there's a lot of pap numbers.
+
+00:54.030 --> 01:00.090
+Well pep 8 is the most popular one and it's a style guide for python code.
+
+01:00.090 --> 01:08.220
+It tells us this is what good clean Python coach you look like but luckily for you you don't have to
+
+01:08.250 --> 01:11.460
+click through here and read every single thing.
+
+01:11.460 --> 01:17.000
+I mean it is a lot code editors and ideas help us with this.
+
+01:17.040 --> 01:18.780
+Let's have a look.
+
+01:18.840 --> 01:22.300
+I have a piece of code here in my Hello Dot pie file.
+
+01:23.130 --> 01:30.240
+I mean it doesn't look that bad but how do we know for formatting the code according to pep 8.
+
+01:30.240 --> 01:37.110
+Well very easily we can run our command pallet or we can use a shortcut here.
+
+01:37.110 --> 01:39.810
+Command shift P or control shift p.
+
+01:39.840 --> 01:49.760
+If you're on Windows and then if we type in format document and click here we'll get hay for matter
+
+01:49.890 --> 01:51.720
+auto Pip rate is not install.
+
+01:51.720 --> 02:00.030
+Do you want to install it and auto Pip 8 is a popular package with the s code or extension that gives
+
+02:00.030 --> 02:01.780
+us the pep 8 format.
+
+02:02.010 --> 02:06.820
+So let's install this now.
+
+02:07.150 --> 02:11.210
+Let's once again run the format.
+
+02:11.290 --> 02:19.130
+Document and did you see that our code changed quite a bit.
+
+02:19.150 --> 02:27.400
+We have some spaces some formatting that went on and it did that automatically because of pep 8.
+
+02:27.570 --> 02:37.160
+As soon as I change something let's add some spaces here like that make our code just formatted really
+
+02:37.160 --> 02:37.730
+strange
+
+02:41.970 --> 02:48.750
+I click save and let's once again commence shift B format document.
+
+02:48.770 --> 02:59.400
+Now let's save this and here pep 8 formatting style was added for example with pep 8.
+
+02:59.460 --> 03:04.100
+It recommends that when you write functions that you have two spaces following it.
+
+03:04.350 --> 03:08.280
+So two spaces after every function once again.
+
+03:08.290 --> 03:17.230
+If I remove this and do format document you see that a space is added because of our auto pep 8 package.
+
+03:17.260 --> 03:19.030
+Very very cool.
+
+03:19.030 --> 03:22.870
+And you can also set this up so it does this automatically on safe.
+
+03:23.290 --> 03:27.860
+I'll leave that one to you to customize your editor and the way that you want.
+
+03:27.880 --> 03:32.120
+Now if we go to pie chart pie chart.
+
+03:32.330 --> 03:34.870
+Again we have the same code over here.
+
+03:34.870 --> 03:39.760
+Just larger text already has this installed for us as a matter of fact.
+
+03:39.760 --> 03:42.660
+You can see the underline here and says pep hate hate.
+
+03:42.940 --> 03:46.810
+I expected two blank lines after class or function definition.
+
+03:46.810 --> 03:48.970
+So it actually tells you that.
+
+03:49.230 --> 03:49.660
+All right.
+
+03:49.660 --> 03:57.300
+This is not good according to paid or maybe we can add extra spaces here and right away.
+
+03:57.300 --> 03:58.390
+Look at that pay pay.
+
+03:58.680 --> 04:01.940
+Multiple spaces after keyword we don't want that.
+
+04:02.100 --> 04:05.010
+Now all we have to do here is simply go to
+
+04:08.270 --> 04:12.020
+and reformat code and you can also see the shortcut available.
+
+04:12.020 --> 04:13.580
+If I do this.
+
+04:13.730 --> 04:15.970
+Look at that the code was reformatted.
+
+04:15.980 --> 04:20.140
+Let's make this a little smaller and everything seems to be working.
+
+04:20.330 --> 04:22.370
+And I also get a little error.
+
+04:22.460 --> 04:24.160
+This is not pep 8.
+
+04:24.170 --> 04:27.050
+Again it's another suggestion by the editor.
+
+04:27.080 --> 04:29.540
+Tell me that you've created a new function.
+
+04:29.540 --> 04:39.290
+Some but some actually exists in Python so you're almost overwriting this again a really really neat
+
+04:39.380 --> 04:42.230
+feature of pie chart and you know what.
+
+04:42.230 --> 04:50.090
+Just because we have a little bit of time just to show you how you can use a yes code to just save or
+
+04:50.090 --> 05:01.760
+format on save I can simply go to preferences settings and type in format and if I scroll to format
+
+05:01.790 --> 05:08.760
+on safe I can click on that you can see that changes have been automatically implemented.
+
+05:08.820 --> 05:12.850
+So now every time I do command s and save look at that.
+
+05:12.960 --> 05:22.880
+If formatted for me so that we can make sure that we write clean Python code according to the standards.
+
+05:23.030 --> 05:24.890
+Let's take a break and I'll see you in the next one.
+
+05:25.540 --> 05:25.730
+Bobby.

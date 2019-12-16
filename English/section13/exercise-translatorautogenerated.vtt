@@ -1,0 +1,457 @@
+WEBVTT
+
+00:00.240 --> 00:00.590
+All right.
+
+00:00.600 --> 00:04.440
+It's time for an exercise and I think this is going to be fun.
+
+00:04.440 --> 00:09.600
+I want to use what we've learned up until now to build a translator.
+
+00:09.600 --> 00:12.520
+Let's say somebody gives you a massive text file.
+
+00:12.930 --> 00:18.450
+I mean in our case this is gonna be the text file but you can grab any text file that you want.
+
+00:18.450 --> 00:19.920
+It doesn't have to be a text file.
+
+00:19.920 --> 00:20.850
+It can be anything.
+
+00:20.850 --> 00:22.080
+It could be a PI file.
+
+00:22.080 --> 00:30.060
+It could be just a word document and type in a bunch of sentences in here whatever you want.
+
+00:30.690 --> 00:32.400
+And just save it.
+
+00:32.400 --> 00:35.300
+In my case I just have this now.
+
+00:35.340 --> 00:42.740
+Somebody just told you hey I want you to translate this into let's say Japanese based on what you just
+
+00:42.740 --> 00:47.840
+learned about modules and files in Python.
+
+00:47.840 --> 00:54.080
+Can you build a tool that allows us to run a command through that file read it and then translated into
+
+00:54.080 --> 00:55.220
+Japanese.
+
+00:55.250 --> 01:01.460
+Now if you really want to get challenged you can pause the video and try it out or if you want a hint
+
+01:01.790 --> 01:04.410
+what module or library to use.
+
+01:04.430 --> 01:11.280
+Well then keep watching because I'm going to show you the recommended package to use OK.
+
+01:11.480 --> 01:20.480
+So what I actually did was I googled Python off line translate using the PI by index.
+
+01:20.480 --> 01:26.540
+Now I wanted an off line translation service because if you look there's something like google translation
+
+01:26.540 --> 01:27.280
+that you can do.
+
+01:27.350 --> 01:35.020
+But what that does is actually make a call to the Google servers to do google translate for you.
+
+01:35.210 --> 01:39.460
+And that gets pretty complicated when we talk about API as an API keys.
+
+01:39.560 --> 01:42.050
+Something that we're going to worry about later on in the course.
+
+01:42.140 --> 01:48.950
+I wanted something off line so I can download the translation service off line and just be able to use
+
+01:48.950 --> 01:50.060
+it right here.
+
+01:50.060 --> 01:58.950
+So the one that I found was as I was Googling I think it was called this one yeah.
+
+01:59.000 --> 02:04.890
+So this is just the translation service it looks like it has some stars and forks on get hops.
+
+02:04.900 --> 02:05.750
+I always like that.
+
+02:05.750 --> 02:08.310
+I always like checking out the repository.
+
+02:08.630 --> 02:10.550
+So translate python.
+
+02:10.790 --> 02:11.720
+Everything looks good.
+
+02:11.720 --> 02:19.280
+You can read about the documentation here hasn't been updated in two years really but you know what.
+
+02:19.530 --> 02:20.650
+It's it's not that bad.
+
+02:20.670 --> 02:22.050
+L do the job.
+
+02:22.150 --> 02:28.840
+So using this package you can try and read through the documentation and see if he can figure out how
+
+02:28.840 --> 02:33.760
+to solve this problem of translating that file into Japanese.
+
+02:33.760 --> 02:34.970
+You can puzzle video here.
+
+02:34.990 --> 02:35.650
+Give it a go.
+
+02:35.650 --> 02:39.180
+Otherwise I'm going to provide the answer.
+
+02:39.280 --> 02:44.350
+Now the first thing I'm going to do is before I even install this I want to make sure I can read this
+
+02:44.350 --> 02:44.860
+file.
+
+02:44.860 --> 02:55.530
+So once again I'm going to say try and I'll have a file with open.
+
+02:56.050 --> 02:57.480
+We'll see where the file is.
+
+02:57.490 --> 03:08.050
+Let's say else we have the test file right in here so we can just do dot slash and say test dot text
+
+03:09.660 --> 03:11.400
+and then I'll say as my
+
+03:16.710 --> 03:22.630
+well that the mode as read for now because we just want to read the file.
+
+03:22.940 --> 03:28.560
+But at least this way we're being explicit and we're saying hey this is exactly what we want to do.
+
+03:28.590 --> 03:39.150
+And then finally I'll just for now print my file just to know that it's working and we'll add some exceptions
+
+03:39.150 --> 03:39.890
+in here.
+
+03:40.010 --> 03:42.390
+It's except not exception.
+
+03:42.390 --> 03:56.130
+And we can just let's say do file not found error say as E and we'll just for fun say here print check
+
+03:56.310 --> 03:59.390
+your file path.
+
+03:59.420 --> 04:03.100
+Sally and leave it at that.
+
+04:03.140 --> 04:09.640
+If I run this code let's say Python 3 script dot Pi.
+
+04:10.460 --> 04:11.060
+All right.
+
+04:11.060 --> 04:16.360
+I have my name is Andre awesome let's install the package.
+
+04:16.360 --> 04:19.930
+So over here I can see that I have to install translate.
+
+04:19.960 --> 04:21.970
+That's what the package is called.
+
+04:21.970 --> 04:31.660
+Now I'll use Pip 3 in my case to make sure that I'm using the python version 3 and say install translate.
+
+04:31.930 --> 04:38.610
+Now I've actually done this before just because while I tested this out beforehand so it's already installed
+
+04:40.950 --> 04:46.810
+so let's clear that out and read about how we can use this package so you can see here the usage.
+
+04:46.810 --> 04:48.740
+So I can use it from the command line.
+
+04:48.790 --> 04:49.120
+Okay.
+
+04:49.120 --> 04:50.300
+That's that's interesting.
+
+04:50.300 --> 04:51.970
+But I want to use it as a module.
+
+04:52.000 --> 04:52.240
+Okay.
+
+04:52.240 --> 04:52.990
+Here you go.
+
+04:52.990 --> 04:55.150
+Use as a Python module.
+
+04:55.210 --> 04:56.680
+So it shows you exactly what to do.
+
+04:56.680 --> 04:59.120
+So we import it first.
+
+04:59.140 --> 05:00.040
+So let's do that.
+
+05:00.040 --> 05:06.540
+I'm going to import this library.
+
+05:06.610 --> 05:06.820
+All right.
+
+05:06.850 --> 05:15.330
+So now we have the translator and we can use a translator like this all right.
+
+05:15.340 --> 05:16.660
+So we have the translator.
+
+05:16.720 --> 05:22.060
+So we create the translator class and we want to say to what language.
+
+05:22.060 --> 05:24.790
+All right what languages are available.
+
+05:24.820 --> 05:30.350
+Let's go to the read the docs here for documentation and see if they have Japanese in here.
+
+05:30.370 --> 05:31.190
+Let's see.
+
+05:31.390 --> 05:35.680
+Search docs Japanese All right.
+
+05:35.680 --> 05:36.550
+That doesn't help us.
+
+05:36.550 --> 05:37.900
+Let's look at overview.
+
+05:37.900 --> 05:43.390
+And by the way I'm showing you the thought process that I usually have when I look through things because
+
+05:43.390 --> 05:48.220
+sometimes people show you what the answer is without showing you the process or hopefully this is useful.
+
+05:48.360 --> 05:48.540
+OK.
+
+05:48.550 --> 05:50.210
+So I'm looking through here.
+
+05:50.210 --> 05:56.590
+It doesn't look like they're providing a list of of languages although I see it here available languages.
+
+05:56.590 --> 06:03.670
+It looks like it's we using this wikipedia page as a reference and oh yeah these are the short terms
+
+06:03.670 --> 06:05.790
+for the languages that it's using.
+
+06:05.800 --> 06:06.780
+All right.
+
+06:06.940 --> 06:07.480
+So
+
+06:10.840 --> 06:16.810
+based on this it looks like this is the standard that they're using but actually while reading the documentation
+
+06:16.840 --> 06:20.970
+I see that this is there's a J A I'm assuming this is Japanese.
+
+06:20.970 --> 06:22.300
+So let's do that.
+
+06:22.300 --> 06:24.570
+I'm going to say J.
+
+06:24.580 --> 06:25.260
+A.
+
+06:25.270 --> 06:25.630
+All right.
+
+06:25.660 --> 06:30.520
+And then let's see go back to the documentation here
+
+06:33.900 --> 06:35.100
+let's look at overview.
+
+06:35.100 --> 06:36.090
+Let's go back actually
+
+06:39.650 --> 06:39.920
+OK.
+
+06:39.950 --> 06:48.440
+So once I've created the translator I've given it the language all we need to do is say translator dot
+
+06:48.530 --> 06:50.600
+translate and give it what we want to translate.
+
+06:50.720 --> 06:51.300
+OK.
+
+06:51.440 --> 06:52.060
+Nice and easy.
+
+06:52.050 --> 06:58.360
+So in here because my file that I read is going to give us the output that we saw.
+
+06:58.370 --> 07:01.720
+I'm going to say text equals my file.
+
+07:01.920 --> 07:09.500
+I read and simply do the translation equals to.
+
+07:09.770 --> 07:10.610
+What was it again.
+
+07:10.610 --> 07:13.400
+It was translator translate so let's just copy that
+
+07:16.500 --> 07:20.230
+so translator translate and we want to give it the text.
+
+07:20.560 --> 07:24.120
+So let's see that.
+
+07:24.280 --> 07:27.380
+That's what I wanted to do was to text.
+
+07:27.400 --> 07:28.670
+All right.
+
+07:28.680 --> 07:34.370
+So if everything works hopefully it does maybe it doesn't the first time around let's give it a go.
+
+07:34.440 --> 07:38.490
+If I run Python 3 script up by
+
+07:41.380 --> 07:43.600
+well we definitely forgot to print here.
+
+07:43.660 --> 07:45.900
+Looks like we're not getting any errors which is good.
+
+07:45.910 --> 07:48.370
+So let's do a print Translation
+
+07:51.530 --> 07:55.140
+Let's run this again.
+
+07:55.200 --> 07:56.270
+Look at that.
+
+07:56.310 --> 07:58.110
+Well that's you know now Iowa unloaded.
+
+07:58.110 --> 07:58.800
+Now go ahead.
+
+07:58.820 --> 08:02.920
+This by the way I feel like I've been talking a lot and you haven't really talked back to me.
+
+08:02.940 --> 08:04.400
+But let's get to know each other.
+
+08:04.410 --> 08:07.440
+Actually I learned Japanese before I even learned English.
+
+08:07.440 --> 08:08.650
+Fun fact about me.
+
+08:08.670 --> 08:10.760
+All right let's get back to the topic at hand.
+
+08:10.830 --> 08:12.690
+This is working this is actually pretty cool.
+
+08:12.690 --> 08:21.830
+Let's finalize this by actually converting this file to a translated version so I'm going to say I'm
+
+08:21.830 --> 08:35.150
+going to read this file and once I'm done with this translation I'm going to with open I'm going to
+
+08:35.150 --> 08:36.120
+create new file.
+
+08:36.170 --> 08:39.890
+Call it let's say test dash J.
+
+08:39.910 --> 08:53.040
+For Japanese dot text the mode is going to be to write and I'm going to say as my file and in here I'm
+
+08:53.040 --> 08:59.330
+going to simply say or let's do my file too.
+
+08:59.420 --> 09:05.990
+So it's not a named conflict and say simply let's make this a little bit bigger just so you can see
+
+09:07.520 --> 09:15.820
+and in here we'll just say my file to dot right and write the translation.
+
+09:15.840 --> 09:17.000
+All right let's see if this works.
+
+09:17.030 --> 09:18.080
+I'm going to run it again
+
+09:21.210 --> 09:22.100
+OK.
+
+09:22.150 --> 09:30.000
+Now if we go to our desktop there's a test dot J text and look at that.
+
+09:30.200 --> 09:33.630
+We have a translated file in Japanese.
+
+09:33.880 --> 09:35.020
+Take my car.
+
+09:35.060 --> 09:36.410
+My name should be in cut the corner.
+
+09:36.440 --> 09:37.560
+But hey this.
+
+09:37.640 --> 09:39.530
+This still works pretty cool right.
+
+09:39.530 --> 09:41.750
+Hopefully you got this far if you didn't.
+
+09:41.750 --> 09:48.260
+You see the power of reading and writing files and also using libraries to do different things to your
+
+09:48.260 --> 09:48.850
+data.
+
+09:49.870 --> 09:51.910
+Very very cool.
+
+09:51.910 --> 09:54.200
+Let's take a break and I'll see you in the next section.

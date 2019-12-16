@@ -1,0 +1,127 @@
+WEBVTT
+
+00:00.730 --> 00:01.920
+Welcome back.
+
+00:01.930 --> 00:08.830
+In order to learn about web scraping let's actually build a useful project that we can actually use
+
+00:08.950 --> 00:11.520
+and maybe even add to our portfolio.
+
+00:11.590 --> 00:20.290
+What I want to build is a nicer version of Hacker News You see every morning as a programmer I wake
+
+00:20.290 --> 00:26.740
+up and I usually read hacker news because it's a great way for myself to stay up to date with the industry
+
+00:26.770 --> 00:30.500
+and just learn about general programming news.
+
+00:30.520 --> 00:35.770
+They have some really really nice articles here and a lot of programmers use Hacker News as a way to
+
+00:35.770 --> 00:37.930
+stay up to date with the industry.
+
+00:37.930 --> 00:42.370
+This page has a ton of information.
+
+00:42.370 --> 00:49.120
+As a matter of fact every time you refresh it's a new topic new you think if I go to the new tab here
+
+00:49.120 --> 00:56.350
+for example you see that these stories as I refresh news stories get added constantly.
+
+00:56.560 --> 01:03.460
+So it's a very fast paced Web site because a lot of people post news links here to get traction because
+
+01:03.670 --> 01:05.190
+there's so many readers here.
+
+01:05.290 --> 01:12.130
+Now in order for me not to get overwhelmed I usually only like reading or checking out the stories that
+
+01:12.130 --> 01:13.940
+have over 100 points.
+
+01:13.990 --> 01:21.950
+That is they've been uploaded by users so let's build the tool using web scraping that when I wake up
+
+01:21.950 --> 01:28.220
+in the morning instead of having to scroll through and find out all the stories that have over 100 points
+
+01:28.520 --> 01:32.770
+because those are the most popular ones maybe the most important ones.
+
+01:32.930 --> 01:42.920
+Let's scrape this data and then remove all the stories that well have less than 100 points so that I
+
+01:42.920 --> 01:46.570
+can only focus on the important news article.
+
+01:46.590 --> 01:48.070
+Sounds pretty exciting right.
+
+01:48.080 --> 01:53.990
+That's a great use of Python to make our life easier now after we're done with this project there are
+
+01:53.990 --> 01:56.390
+many ways to apply this knowledge.
+
+01:56.390 --> 02:04.430
+For example one of the things that Hacker News has is every month they have a who's hiring where companies
+
+02:04.430 --> 02:07.680
+post job opportunities for programmers.
+
+02:07.700 --> 02:15.650
+So a good project might be to actually scrape this data of companies posting different job opportunities
+
+02:15.950 --> 02:22.250
+and maybe try and figure out what the trends are what type of programmers are the most in demand.
+
+02:22.370 --> 02:25.010
+Hey are Python programmers the most in demand.
+
+02:25.070 --> 02:32.990
+Maybe by scraping and finding how many times the word python gets mentioned or maybe is Java or Javascript
+
+02:32.990 --> 02:33.770
+programmers.
+
+02:33.770 --> 02:41.720
+The most common and maybe you can create a Web site that tracks the trends of different posts to see
+
+02:42.170 --> 02:46.610
+well what skill you should be learning to stay up to date and make sure that it's the most in demand
+
+02:46.610 --> 02:47.450
+skill.
+
+02:47.540 --> 02:51.100
+Just an idea but let's focus on this for now.
+
+02:51.410 --> 02:59.390
+In order for us to scrape this Web site we want to use a tool called Beautiful Soup and beautiful soup
+
+02:59.600 --> 03:01.220
+is what we can use in Python.
+
+03:01.220 --> 03:06.290
+It's a library that we can use in Python to scrape Web sites.
+
+03:06.380 --> 03:13.130
+They have a very old school web site here but it's a very useful tool that most web scraping projects
+
+03:13.130 --> 03:14.160
+use.
+
+03:14.270 --> 03:17.560
+So in the next video we're going to get our hands dirty.
+
+03:17.570 --> 03:25.260
+We're going to learn about beautiful soup and start creating our web scraping project with Hacker News.
+
+03:25.270 --> 03:25.930
+Let's get started.

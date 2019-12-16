@@ -1,0 +1,76 @@
+WEBVTT
+
+00:00.670 --> 00:05.110
+Let's talk about a possible career path when you know python.
+
+00:05.560 --> 00:09.070
+And one is testing and automation.
+
+00:09.340 --> 00:11.290
+Now what is that.
+
+00:11.410 --> 00:14.600
+Why would we use this well.
+
+00:14.600 --> 00:21.560
+Think about it if let's say you had a company that was working on an app you want to make sure that
+
+00:21.560 --> 00:29.850
+this app works properly and what a lot of companies do is hire people who can help with testing.
+
+00:29.850 --> 00:36.180
+Now we have a section on testing with python in this course where we write to unit test through code
+
+00:37.240 --> 00:45.040
+but usually when people work with applications we're human users we perhaps touch the screen.
+
+00:45.040 --> 00:51.440
+If the app is on an iPad perhaps we scroll through and submit a form.
+
+00:51.660 --> 00:59.280
+We need to test and automate these steps to make sure our applications work and companies hire Python
+
+00:59.280 --> 01:02.460
+developers in order to help with automation.
+
+01:02.460 --> 01:08.820
+You see through programming we can actually interact with something like a browser or an app and mimic
+
+01:08.850 --> 01:13.970
+human actions to make sure that the application works as expected.
+
+01:13.980 --> 01:16.350
+Now this isn't just for phone apps.
+
+01:16.350 --> 01:19.440
+This works all across software.
+
+01:19.440 --> 01:24.870
+If you're working with software you want to make sure that it works properly and instead of hiring thousands
+
+01:24.870 --> 01:26.350
+of people to test your app.
+
+01:26.400 --> 01:28.100
+I mean you could totally do that.
+
+01:28.110 --> 01:34.290
+You can also through code mimic thousands millions of users playing through your app and testing out
+
+01:34.290 --> 01:35.130
+your application.
+
+01:35.910 --> 01:42.870
+So in the next couple of videos I'm going to show you how a testing automation person might work with
+
+01:42.870 --> 01:44.040
+Python.
+
+01:44.040 --> 01:45.920
+It's gonna be a fun one through code.
+
+01:45.930 --> 01:48.490
+We're going to perform actions on the browser.
+
+01:48.570 --> 01:49.170
+Let's get started.

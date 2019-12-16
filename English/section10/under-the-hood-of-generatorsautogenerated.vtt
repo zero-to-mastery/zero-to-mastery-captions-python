@@ -1,0 +1,268 @@
+WEBVTT
+
+00:00.420 --> 00:01.510
+Welcome back.
+
+00:01.530 --> 00:04.950
+I want us to understand how things work underneath the hood.
+
+00:04.950 --> 00:12.120
+So I'm going to show you two examples of implementing our own for loop and then implementing our own
+
+00:12.360 --> 00:14.710
+range function.
+
+00:14.730 --> 00:21.580
+So the first one is our for loop song I say special for loop underneath the hood.
+
+00:21.680 --> 00:24.380
+All it's doing is receiving an.
+
+00:25.400 --> 00:33.420
+And then we're gonna say iterator is going to equal an irritable.
+
+00:33.530 --> 00:43.110
+Now for us to have an interval we have what we call an inner function that accepts the variable we just
+
+00:43.110 --> 00:45.990
+passed now.
+
+00:46.020 --> 00:52.880
+This inner function is going to allow us to use the next function on this eatable.
+
+00:53.130 --> 00:54.360
+So stay with me.
+
+00:54.510 --> 01:06.920
+I'm going to say While true I want to try and in this try block will say iterator and we can perform
+
+01:06.950 --> 01:16.680
+let's say some sort of operation here if we want or we can just call next iterator you know let's print
+
+01:16.680 --> 01:22.720
+something here just so we see what the iterator is.
+
+01:22.830 --> 01:30.060
+And then finally I want us to stop when we have the stop iteration exception.
+
+01:30.210 --> 01:36.740
+Remember the one that we saw where there's no more items in the ignorable and here we simply can just
+
+01:37.010 --> 01:44.160
+break and make sure that I have the column set correctly.
+
+01:44.160 --> 01:51.330
+So now if I do special for loop and give it a list of one two three and I click Run
+
+01:54.290 --> 02:06.280
+check it out I loop through some ignorable objects using next and you see that this object exists in
+
+02:06.280 --> 02:13.830
+the same memory space even though we're constantly looping through it through one two three.
+
+02:13.870 --> 02:16.870
+So this is how for loops work underneath the hood.
+
+02:16.870 --> 02:24.920
+When we do for let's say num in and then give it a list it's going to go through everything it's going
+
+02:24.920 --> 02:33.230
+to turn it into an admirable and it's going to keep running and keep calling next iterator on it over
+
+02:33.230 --> 02:40.520
+and over and over until we finish the end of the line and then break out of the loop and how do we check
+
+02:40.520 --> 02:42.980
+the actual values of the iterator.
+
+02:42.980 --> 02:49.730
+Well remember the next function is going to output whatever the item is next.
+
+02:49.730 --> 03:01.450
+So if I do print here and I click Run I get one two three so I can just do times two if I wanted to
+
+03:01.750 --> 03:03.380
+click Run.
+
+03:03.520 --> 03:04.270
+And there you go.
+
+03:04.390 --> 03:09.720
+Are Special for loop just multiplied our list by two.
+
+03:09.940 --> 03:17.700
+That's it that's all for loops really work but what about ranges can we create our own range.
+
+03:17.810 --> 03:21.890
+Function we absolutely can.
+
+03:22.140 --> 03:29.980
+And this is a fun one let's create a class and this class because at the end of the day we're just going
+
+03:29.980 --> 03:33.640
+to create an object that has actions that we can do.
+
+03:34.580 --> 03:41.680
+So I'll say my Jen for my generator and this is going to mimic what our range does.
+
+03:41.720 --> 03:49.910
+So I'm going to have a class and this class will have a init function.
+
+03:50.270 --> 03:55.970
+We'll have a self a first and last.
+
+03:55.980 --> 04:03.600
+So this is how a range we're able to say start with this and end with this and in here we'll do the
+
+04:03.630 --> 04:13.130
+typical s dot first equals to first and then self dot last equals to last.
+
+04:13.190 --> 04:19.610
+And I'm using a class here because remember we're just creating our own data type our own special range
+
+04:20.030 --> 04:24.040
+in python.
+
+04:24.050 --> 04:32.360
+Now we have our simple generator and ideally we want to be able to say Jen equals and instantiate my
+
+04:32.360 --> 04:36.950
+Jen to have let's say zero to hundred.
+
+04:37.070 --> 04:49.520
+Just like we would with a range and ideally we can say for I and Jen and print high because I mean that's
+
+04:49.520 --> 04:53.530
+how we're able to use ranges right.
+
+04:53.680 --> 04:56.710
+So how can I make this work.
+
+04:56.740 --> 05:07.190
+Well we can use our Dunder methods so remember how we have the inner to get an iterator and use next
+
+05:07.280 --> 05:07.780
+on them.
+
+05:07.770 --> 05:19.820
+Well we have a define Dunder that is inner and outer allows us to create an arable so in our case I'll
+
+05:19.820 --> 05:26.480
+say self and here I'm just going to return the actual class.
+
+05:26.690 --> 05:37.120
+Like so and then finally we want to be able to run the next function on our Jen because we saw how for
+
+05:37.120 --> 05:41.920
+loops work we need to be able to use the order and then the next on the.
+
+05:42.340 --> 05:47.020
+So once again we can use a Dunder method which is conveniently called
+
+05:50.780 --> 05:53.080
+and this is built into python.
+
+05:53.430 --> 05:54.660
+So if I do hear self
+
+05:57.690 --> 06:04.080
+and all we want to do here is to let her know how we want next to work.
+
+06:04.410 --> 06:11.190
+Well I'll say if we need some sort of state or data to keep track of where we are.
+
+06:11.220 --> 06:14.550
+Remember how generator functions remember where they are.
+
+06:14.580 --> 06:18.000
+Well we can create a class object attribute.
+
+06:18.000 --> 06:21.220
+So I can say current equals to zero.
+
+06:21.270 --> 06:29.100
+So this is where we are currently on our iteration and say My Jen dot current.
+
+06:29.610 --> 06:33.540
+As long as that is less than self.
+
+06:33.550 --> 06:41.040
+Dot blast which will be the hundred here if that's the case.
+
+06:41.120 --> 06:53.920
+Well I want a number to equal my Jen dot current I want to increase my Jen dot current by 1 because
+
+06:53.920 --> 06:58.810
+we want to say hey we're moving up to the next location and then return
+
+07:01.500 --> 07:05.550
+the number because that's how next works underneath the hood.
+
+07:05.600 --> 07:06.260
+Right.
+
+07:06.320 --> 07:13.610
+We increment our current location by one and we're simply returning the number which is well in our
+
+07:13.610 --> 07:22.080
+case it's going to be zero and we want to keep going keep going keep going well until current is no
+
+07:22.080 --> 07:23.820
+longer bigger than last.
+
+07:23.820 --> 07:32.730
+In that case we're simply going to raise a stop iteration because there's no more things to iterate
+
+07:32.910 --> 07:34.210
+over.
+
+07:34.300 --> 07:38.030
+Let's see if this works I'm going to run this
+
+07:41.390 --> 07:42.340
+and look at that.
+
+07:42.600 --> 07:50.730
+It's all working I was able to loop through my generator and print high from zero all the way to ninety
+
+07:50.740 --> 07:52.580
+nine again.
+
+07:52.590 --> 08:00.620
+If we go back to our example here and I know this is a little hard to look at it at first but all I
+
+08:00.620 --> 08:08.200
+did was say I want an IT function to have the option of first and last and I'm going to want to be able
+
+08:08.200 --> 08:12.460
+to iterate through this object that I'm going to create.
+
+08:12.700 --> 08:18.700
+And I also want to be able to use the next which for loop if you remember from our previous example
+
+08:19.000 --> 08:26.310
+needs so I'm going to say for item in Jen just loop through it I'm able to live through it because this
+
+08:26.310 --> 08:34.950
+is now an iterator and I'm able to use the next value on it because I allow us to loop and constantly
+
+08:34.950 --> 08:44.220
+increase by 1 until we keep returning the number keep returning the number until my gender current becomes
+
+08:44.220 --> 08:50.170
+one hundred and a hundred is not less than a hundred which is self don't last.
+
+08:50.190 --> 08:57.260
+So it's going to raise a stop iteration the for loop automatically catches us so it doesn't erode out
+
+08:57.600 --> 09:05.630
+and it stops looping that's how things work underneath the hood with Branch.
+
+09:05.790 --> 09:11.370
+Now you don't need to know this you're not going to be asked in your day to day to implement this but
+
+09:11.370 --> 09:14.180
+I wanted to show you that this is how things work.
+
+09:14.250 --> 09:15.110
+I think that's important.

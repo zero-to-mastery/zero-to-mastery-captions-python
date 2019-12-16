@@ -1,0 +1,202 @@
+WEBVTT
+
+00:00.600 --> 00:06.810
+It's time to talk about decorators another key term in Python.
+
+00:07.140 --> 00:11.340
+And we've actually seen decorators before.
+
+00:11.360 --> 00:14.220
+Do you remember when we were building classes.
+
+00:14.360 --> 00:21.090
+I taught you that there was a class method and a static method.
+
+00:21.410 --> 00:25.220
+And I said hey don't don't worry about this we'll talk about this later.
+
+00:25.220 --> 00:26.870
+Well this is now.
+
+00:26.960 --> 00:29.660
+Later decorators look like this.
+
+00:29.660 --> 00:34.870
+They have the ad sign and then some sort of name following it.
+
+00:35.240 --> 00:42.680
+But in order for us to fully understand what decorators are we have to talk about functions in Python
+
+00:43.430 --> 00:45.810
+and why they're so powerful.
+
+00:45.840 --> 00:53.100
+This is the neat thing about Python in Python functions are what we call first class citizens.
+
+00:53.220 --> 00:55.980
+That is they can be passed around like variables.
+
+00:55.980 --> 01:00.320
+They can be an argument inside of a function.
+
+01:00.360 --> 01:03.700
+They act just like well variables.
+
+01:03.720 --> 01:04.190
+Let me show you.
+
+01:04.770 --> 01:14.250
+If I create a Hello Function which frankly is completely useless because all it does is say if you if
+
+01:14.400 --> 01:22.040
+I do this remember I said functions are pretty much just variables in Python.
+
+01:22.050 --> 01:26.730
+Again something that is not always the case with all programming languages.
+
+01:26.730 --> 01:42.910
+So if I wanted to I can say greet equals to hello so that if I print greet and I run this I get Hello
+
+01:43.930 --> 01:54.260
+What if I just pass Hello like this if I run this well I get the function location in memory so I'd
+
+01:54.260 --> 01:57.290
+have to use greet like this and run it right.
+
+01:57.320 --> 02:04.030
+We have to call the Hello Function OK what if we do this.
+
+02:04.090 --> 02:08.700
+What if I say delete Hello.
+
+02:08.830 --> 02:13.060
+A keyword in Python that deletes that function.
+
+02:13.200 --> 02:14.490
+What do you think will happen.
+
+02:14.520 --> 02:19.520
+Let's see if I run this.
+
+02:19.670 --> 02:20.980
+Is that what you expected.
+
+02:21.900 --> 02:26.130
+Did you expect Grete to still work.
+
+02:26.140 --> 02:30.910
+The interesting thing about Python is that I create.
+
+02:30.910 --> 02:31.740
+Hello.
+
+02:32.020 --> 02:34.400
+And this is now created in memory.
+
+02:34.630 --> 02:41.030
+When we get to line four I say hey greet is going to point to Hello.
+
+02:41.080 --> 02:48.310
+So hello can still be called down here I can still say hello because hello is the name of the function
+
+02:48.340 --> 02:56.980
+that points to that location and memory but when I do delete Hello All it does is say hey I'm going
+
+02:56.980 --> 03:05.980
+to delete this function this name reference to this function that's in memory however because greet
+
+03:06.280 --> 03:15.640
+a whole nother variable is still pointing to this function I'm going to delete the hello word so if
+
+03:15.640 --> 03:26.900
+I go Hello like this I'm going to get an air name Hello is not defined however the greet is still pointing
+
+03:27.020 --> 03:29.660
+in memory to this location.
+
+03:29.660 --> 03:35.180
+So python is smart enough to say Hey you told me to delete Hello I'll delete the name Hello.
+
+03:35.180 --> 03:41.260
+But I'm not going to delete the function because Grete is still pointing to it.
+
+03:41.600 --> 03:51.500
+So functions in Python act just like variables do their first class citizens we can also pass functions
+
+03:53.030 --> 03:55.220
+around inside of arguments.
+
+03:55.220 --> 03:56.020
+Right.
+
+03:56.060 --> 03:57.790
+If I say hello.
+
+03:57.860 --> 04:07.420
+And then this hello receives another function that calls let's say function like this.
+
+04:07.500 --> 04:19.020
+Well I can create a great function lets say define greet and this function is just going to print still
+
+04:19.020 --> 04:19.290
+here.
+
+04:21.990 --> 04:38.220
+Now in here if I call hello with greet or just so we're clear let's just say a equals to Hello greet.
+
+04:38.220 --> 04:44.100
+And if I print a what will happen that still works.
+
+04:44.450 --> 04:51.560
+Because what happens is I say Hey call the function Hello OK I'm calling the function Hello.
+
+04:51.560 --> 04:53.330
+With the argument.
+
+04:53.330 --> 04:54.010
+Greet.
+
+04:54.020 --> 05:00.710
+So we go here and we say hey run function and what's function we want to call this function right.
+
+05:00.730 --> 05:02.000
+Because we have these brackets.
+
+05:02.150 --> 05:05.480
+So we jump to what function is which in our case is great.
+
+05:05.510 --> 05:13.370
+So we go over here and say hey just print this we didn't have to call it in here because the hello function
+
+05:13.370 --> 05:14.630
+calls it for us
+
+05:17.440 --> 05:20.240
+so why did I just teach you all of that.
+
+05:20.260 --> 05:27.310
+What does that have to do with decorators decorators are only possible because of these features.
+
+05:27.580 --> 05:35.170
+This ability of functions to act like variables act like first class citizens in Python.
+
+05:35.170 --> 05:41.650
+And when we start learning about decorators underneath the hood they're using this power of functions
+
+05:42.690 --> 05:48.120
+now and then upcoming videos we're going to talk about how to create our own what they mean and expand
+
+05:48.180 --> 05:59.120
+on this idea of a decorator but here is a short form of what decorators do decorators supercharge our
+
+05:59.120 --> 06:10.240
+function if we had are let's say hello function here by adding some sort of a decorator like this we
+
+06:10.240 --> 06:19.940
+can supercharge our function and add extra functionality to it it lets the Python interpreter know I
+
+06:19.940 --> 06:26.750
+want this Hello Function to have some extra features but let's explore this topic a little bit more
+
+06:26.990 --> 06:27.680
+in the next video.

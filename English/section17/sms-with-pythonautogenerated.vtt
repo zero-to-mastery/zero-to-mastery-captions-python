@@ -1,0 +1,145 @@
+WEBVTT
+
+00:00.630 --> 00:01.310
+Hey hey.
+
+00:01.410 --> 00:05.310
+We have another project that we need to work on now.
+
+00:05.310 --> 00:11.340
+This project is a little unique because it's well it's gonna be a simple project but I'm going to attempt
+
+00:11.340 --> 00:14.910
+to do this with no rehearsal.
+
+00:14.940 --> 00:16.640
+I haven't really tried this before.
+
+00:16.650 --> 00:25.740
+I want to show you exactly what my process is when I'm exploring an idea let's say I want to send myself
+
+00:25.830 --> 00:27.320
+a text message.
+
+00:27.390 --> 00:27.990
+That's right.
+
+00:28.080 --> 00:31.440
+Using python I want to receive a text message on my phone.
+
+00:31.980 --> 00:34.620
+And there's some interesting use cases right.
+
+00:34.650 --> 00:43.440
+You can perhaps create a python script that checks the stock price of let's say Apple and maybe sends
+
+00:43.440 --> 00:46.860
+you a text that this is now a good time to buy Apple.
+
+00:46.860 --> 00:56.660
+When the ticker symbol gets to a certain price or maybe when we create our portfolio in the web development
+
+00:56.660 --> 01:03.770
+section of this course and we'll have a contact form for our clients to contact us maybe when that happens
+
+01:03.770 --> 01:07.370
+or we want to send ourselves a text message as well.
+
+01:07.370 --> 01:10.490
+So this is a very very useful thing to know.
+
+01:10.610 --> 01:12.590
+But how can we do that.
+
+01:12.590 --> 01:22.160
+Well luckily it's all about APIs and Tulio is the go to when it comes to anything related to communications
+
+01:22.220 --> 01:27.530
+whether it's tax the voice or audio Twilio is a great API for you to use.
+
+01:27.560 --> 01:36.410
+Now if I click on Twilio here again we see that some big companies are using it but we're also going
+
+01:36.410 --> 01:39.770
+to have to sign up to the service.
+
+01:39.900 --> 01:44.100
+Now I'm going to save you the trouble of me going through the sign up process.
+
+01:44.100 --> 01:49.540
+Instead I'm going to fast forward and I'll show you once I'm logged in.
+
+01:49.570 --> 01:50.340
+All right.
+
+01:50.350 --> 01:55.630
+Once you're logged in you're gonna get to the dashboard over here and you're going to want to create
+
+01:55.780 --> 01:57.250
+a project.
+
+01:57.340 --> 02:03.290
+So you see over here that there's a couple of templates they can actually just create for yourself.
+
+02:03.310 --> 02:07.950
+You can do phone verification S M S chat bots two factor authentication.
+
+02:08.080 --> 02:12.250
+There's even a game learn and explore which allows you to explore the API
+
+02:15.310 --> 02:16.630
+in my case.
+
+02:16.630 --> 02:17.820
+I don't want to use a template.
+
+02:17.820 --> 02:22.520
+I want to just create a product and I want to do a programmable estimates.
+
+02:22.540 --> 02:23.560
+That is texting.
+
+02:23.920 --> 02:26.170
+So let's continue.
+
+02:26.170 --> 02:32.230
+And by the way Web sites like these always change their UI and the visual.
+
+02:32.230 --> 02:37.060
+So it might look different for you depending on when you watch the video but all the functionality should
+
+02:37.060 --> 02:38.260
+be the same.
+
+02:38.270 --> 02:46.760
+I'm going to give my project the name 0 2 mastery texture and let's click Continue.
+
+02:46.880 --> 02:48.290
+No I don't have any friends.
+
+02:48.290 --> 02:49.250
+This is just me.
+
+02:49.340 --> 02:54.130
+So I want an invite to teammate and there we go.
+
+02:54.160 --> 02:57.820
+We have our dashboard in the next video.
+
+02:57.820 --> 03:01.000
+I'm going to try and attempt to send myself a text message.
+
+03:01.030 --> 03:02.680
+Now I haven't really practiced this.
+
+03:02.710 --> 03:03.940
+So we'll see how it goes.
+
+03:04.060 --> 03:06.170
+We'll do a bit of trial and error.
+
+03:06.220 --> 03:06.940
+I'll see in the next one.
+
+03:07.360 --> 03:07.990
+Bye bye.

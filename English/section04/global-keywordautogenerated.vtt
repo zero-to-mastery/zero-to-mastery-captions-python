@@ -1,0 +1,202 @@
+WEBVTT
+
+00:00.550 --> 00:01.410
+Welcome back.
+
+00:01.420 --> 00:04.300
+Let's try and answer some questions that you may have.
+
+00:04.300 --> 00:07.370
+For example what about parameters.
+
+00:07.540 --> 00:15.400
+If I do parameter let's say be here What is this parameter when I use B like this.
+
+00:15.400 --> 00:18.800
+So let's say print B.
+
+00:19.220 --> 00:31.930
+And in here I'll run confusion with let's say the number three hundred if I run this this works and
+
+00:32.050 --> 00:40.660
+that is because B the parameter is part of the local scope that is it's part of this.
+
+00:40.660 --> 00:44.040
+So parameters are considered local variables.
+
+00:44.050 --> 00:51.440
+We're able to use it inside of the function but we can't use it outside of those functions technically
+
+00:51.440 --> 00:57.580
+when we define the function we let the interpreter know hey B is going to be a local variable.
+
+00:58.400 --> 00:58.780
+OK.
+
+00:58.790 --> 01:00.120
+What about this.
+
+01:00.230 --> 01:04.950
+What if we have this a.
+
+01:05.000 --> 01:10.910
+But I want to make sure inside of my function that I'm actually referring to the global a is there a
+
+01:10.910 --> 01:16.900
+way for us to just use this value without creating a new variable.
+
+01:16.900 --> 01:19.200
+Well let's use a better example for this.
+
+01:19.460 --> 01:29.910
+Let's say I wanted to create a counter so we'll have total equals to zero and then in here I'm going
+
+01:29.910 --> 01:39.270
+to say define count and this function is going to say total plus equals 1.
+
+01:39.280 --> 01:45.280
+So we're going to add every single time when we add count it's going to increment zero by 1 and then
+
+01:45.280 --> 01:46.130
+one by one.
+
+01:46.150 --> 01:52.860
+So on and so forth so we're going to return total at the end of this.
+
+01:52.880 --> 01:53.180
+OK.
+
+01:53.330 --> 01:57.740
+So if I run here print count
+
+02:00.460 --> 02:01.820
+let's see what happens.
+
+02:01.900 --> 02:11.330
+I'm going to hit run and I get an error local variable total referenced before assignment and that is
+
+02:11.330 --> 02:17.180
+because well count doesn't know about total you're trying to use total but we haven't assigned anything
+
+02:17.180 --> 02:25.970
+yet but we want the total from the outside world to run because if I just do total equals zero here
+
+02:26.970 --> 02:30.180
+and I run count that's great.
+
+02:30.180 --> 02:30.890
+I get one.
+
+02:30.930 --> 02:34.750
+But what if I wanted to run account multiple times.
+
+02:34.860 --> 02:43.090
+What if I wanted to run count let's say three times so that the count total will be three.
+
+02:43.110 --> 02:45.060
+So let's do print on the last one here
+
+02:48.300 --> 02:49.060
+and I click Run.
+
+02:50.820 --> 02:56.360
+I still get one because every time we run the function we reset the total to zero.
+
+02:56.370 --> 03:06.080
+That's not very useful is it so one way that we can fix this is using what we call the global keyword
+
+03:06.170 --> 03:06.760
+in Python.
+
+03:07.310 --> 03:15.920
+And global says use the global total if it exists in here so that instead of having to create a new
+
+03:15.920 --> 03:20.080
+variable I can use the global variable total.
+
+03:20.090 --> 03:23.400
+Check this out.
+
+03:23.630 --> 03:30.050
+Well I get an invalid syntax and that is because we first have to say global total is going to be used
+
+03:30.050 --> 03:34.520
+in here and then we can say total plus equals 1.
+
+03:34.590 --> 03:40.820
+If I run this a look at that we have a proper counter.
+
+03:40.820 --> 03:48.920
+So Global is a way for us to access this global variable however I argue that this is actually not a
+
+03:48.920 --> 03:55.460
+good way of doing things because it can get really confusing when you start adding Global's and all
+
+03:55.460 --> 04:00.080
+these different universes are accessing each other's variables.
+
+04:00.440 --> 04:05.190
+A better way of doing this is something called dependency injection.
+
+04:05.190 --> 04:11.600
+And this is a simplified version of it but the idea is that instead of accessing variables outside of
+
+04:11.600 --> 04:16.760
+the function like this which can get really really complicated as files get bigger and bigger is to
+
+04:16.760 --> 04:17.810
+do instead
+
+04:21.480 --> 04:30.670
+total like this we create a parameter and then we pass in that parameter or argument in here.
+
+04:31.620 --> 04:38.340
+But as you can see it's still one because by the time we print the third total while this never changes.
+
+04:38.370 --> 04:44.960
+This is a global zero so instead we can do something like this.
+
+04:45.170 --> 04:54.540
+We can say count total of which we're going to count again and then count again
+
+04:57.530 --> 05:03.750
+if I run this I get three and I know what you're thinking.
+
+05:03.800 --> 05:05.740
+This is completely insane.
+
+05:05.750 --> 05:11.540
+It looks confusing look at all these brackets but let me show you what we've actually done.
+
+05:11.810 --> 05:21.710
+We're able to detach the dependency or the effect that this count function had on the outside global
+
+05:22.040 --> 05:25.550
+scope and instead just focus on its health.
+
+05:25.550 --> 05:31.130
+All we needed to do was say hey I want you to give a count with total of zero.
+
+05:31.130 --> 05:39.890
+And then after that this is going to evaluate 2 1 and then we do count total of one plus one is going
+
+05:39.890 --> 05:46.600
+to equal to two and then count two plus one is going to equal to three.
+
+05:46.670 --> 05:53.600
+In this way we're able to still do our count without having to use that global keyword which I would
+
+05:53.600 --> 05:54.950
+argue is nicer.
+
+05:55.010 --> 06:01.130
+Mind you if this is your first time seeing this it can get a little bit tricky but at least this way
+
+06:01.130 --> 06:04.820
+you know that there's different ways of doing things.
+
+06:04.850 --> 06:09.170
+One other word I want to show you is something called non local.
+
+06:09.740 --> 06:12.770
+But for that one let's take a break and I'll see you in the next video.

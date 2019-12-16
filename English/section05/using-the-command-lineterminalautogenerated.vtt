@@ -1,0 +1,103 @@
+WEBVTT
+
+00:01.060 --> 00:08.230
+By the way remember this exercise that we did where we pretended to have a picture that was stored on
+
+00:08.230 --> 00:17.500
+our computer and we had to create this script to read through our data and add a space or a blank.
+
+00:17.500 --> 00:24.040
+If there is a zero and if there's a want to add a star which gave us a little Christmas tree and although
+
+00:24.040 --> 00:30.760
+we've been using the ripple up until now at the end of the day all Python code whether you're writing
+
+00:31.000 --> 00:39.010
+Python for games whether you're writing Python for scripts to read your Excel spreadsheets or maybe
+
+00:39.040 --> 00:44.040
+you're using Python to do some machine learning at the end of the day.
+
+00:44.290 --> 00:53.290
+All we're doing is well we're writing a program and then this program gets run by a machine something
+
+00:53.290 --> 01:02.650
+like this here I have a one dot pi file that I've just created and then here as you can see we have
+
+01:03.190 --> 01:05.540
+our script that we had in our rebel.
+
+01:05.720 --> 01:08.130
+But I've just created it on my computer.
+
+01:08.170 --> 01:15.250
+It's one dot Pi I can name it whatever I want and usually a way a program runs again.
+
+01:15.250 --> 01:21.810
+Any type of Python program any type of programming language we can use something like our terminal.
+
+01:22.000 --> 01:27.970
+If you're on a Mac you can use the terminal or if you have a Linux based machine you can use a terminal
+
+01:27.970 --> 01:34.990
+as well or if you're on a Windows computer using the command prompt or the power shell.
+
+01:35.200 --> 01:43.120
+So that here if I wanted to run the wand pi file I make sure that my present working directory is where
+
+01:43.120 --> 01:45.940
+my file exists which is on my desktop.
+
+01:46.000 --> 01:53.560
+Remember that on Windows you'd say directory or desire to find out what you're present working directory
+
+01:53.600 --> 02:01.360
+is once you're in the same directory remember if you're not you can see these in two different locations
+
+02:01.840 --> 02:10.650
+to get to where the file is and then we run the file by saying python in our case 3 again based on whatever
+
+02:10.650 --> 02:15.910
+interpreter you want to use and just say one dot by and there you go.
+
+02:16.020 --> 02:23.820
+Our graphical user interface of displaying the tree is working and although this is a simple example
+
+02:24.390 --> 02:29.550
+that's all code is code is being run by a machine like this.
+
+02:29.550 --> 02:36.480
+We just say hey run this python file or multiple files through the Python interpreter and the machine
+
+02:36.510 --> 02:38.050
+is going to do something.
+
+02:38.070 --> 02:40.300
+We created a Christmas tree generator.
+
+02:40.320 --> 02:41.870
+So that's what the machine does.
+
+02:42.000 --> 02:44.200
+But the machine can do anything.
+
+02:44.370 --> 02:47.220
+It can build games and run games.
+
+02:47.220 --> 02:49.120
+It can do machine learning models.
+
+02:49.140 --> 02:50.550
+It can do visuals.
+
+02:50.550 --> 02:53.960
+It can simply send emails to your friends.
+
+02:53.970 --> 02:56.010
+The possibilities are endless.
+
+02:56.130 --> 02:59.720
+And it will explore those topics in our projects coming up.
+
+02:59.790 --> 03:00.300
+And of course.

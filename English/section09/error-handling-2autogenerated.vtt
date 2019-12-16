@@ -1,0 +1,181 @@
+WEBVTT
+
+00:00.630 --> 00:07.400
+Let's try a different example here let's say I'm creating a simple sum function.
+
+00:07.830 --> 00:12.450
+Yes I know it already exists in Python but we'll just create our own a simple one that takes number
+
+00:12.450 --> 00:14.510
+one and number two.
+
+00:14.580 --> 00:20.370
+And in here we'll just return num one plus num to.
+
+00:20.510 --> 00:30.530
+Now if we were to just simply do some 1 and some 2 and I ran our program.
+
+00:30.760 --> 00:32.620
+Well let's print it out first
+
+00:37.140 --> 00:42.110
+I click Run I get 1 and 2 because it just adds the two strings together.
+
+00:43.270 --> 00:52.630
+So let's just do this and click Run I get a type error must be string not end.
+
+00:52.960 --> 00:55.390
+So based on what we learned how do we handle this.
+
+00:56.290 --> 01:04.150
+Well we can add a try block in here and wrap this function or we can build it directly into our function.
+
+01:04.300 --> 01:05.740
+So I can say try
+
+01:10.250 --> 01:21.370
+and here have an accept class that says perhaps if we get a any type of error we'll print something
+
+01:21.370 --> 01:34.310
+is wrong if I run this I get something is wrong but here's the problem by just doing except with no
+
+01:34.640 --> 01:35.850
+exceptions.
+
+01:36.020 --> 01:43.280
+As a programmer I'm reading this and I don't really know what actually went wrong because it could be
+
+01:43.280 --> 01:52.230
+so many things so a good practice is to always catch these errors based on a specific exception.
+
+01:52.250 --> 01:56.450
+This way you know what the errors and you can be more descriptive.
+
+01:56.480 --> 02:08.360
+So here we can say type error and this type error we can just say Please enter numbers so that if I
+
+02:08.690 --> 02:11.990
+run this I get please enter numbers.
+
+02:11.990 --> 02:12.560
+So now.
+
+02:12.650 --> 02:13.000
+All right.
+
+02:13.010 --> 02:15.050
+My error is more descriptive.
+
+02:15.230 --> 02:20.810
+I should fix this and make sure that I enter numbers now.
+
+02:20.850 --> 02:27.610
+A common pattern when doing error handling is to do something like this type error as.
+
+02:27.630 --> 02:29.510
+And then doing something like a variable.
+
+02:29.520 --> 02:32.790
+So whatever variable we want in our case let's just say error.
+
+02:32.850 --> 02:39.150
+So I'm saying hey if you catch type error let us use error in our error message.
+
+02:39.360 --> 02:49.720
+So I can say here plus error so that if I run and let's do a string here if I run
+
+02:55.380 --> 02:57.260
+I get the error printed.
+
+02:57.390 --> 03:00.220
+Let me just open this up a little bit so you can see it clear.
+
+03:01.420 --> 03:02.560
+Look at that.
+
+03:02.560 --> 03:05.470
+It actually gives me the air that I want.
+
+03:06.920 --> 03:11.340
+So that I can see that on line five on this line.
+
+03:11.410 --> 03:17.680
+I get a type error unsupported operate and I get a descriptive error of what is happening.
+
+03:17.860 --> 03:26.950
+So maybe I could use it in my output message but what if I don't want to use this and I do run.
+
+03:27.050 --> 03:27.770
+All right.
+
+03:27.780 --> 03:30.200
+Everything is working again.
+
+03:30.210 --> 03:39.480
+If I do plus error and I click Run and this is actually tricky but it says here during handling of the
+
+03:39.480 --> 03:41.700
+above exception which I'm doing.
+
+03:41.850 --> 03:43.830
+Another exception occurred.
+
+03:43.830 --> 03:49.230
+Oh boy I try to handle something and I had an error within that error.
+
+03:49.260 --> 03:56.940
+So this is sometimes tricky but what it means is what we get out here is actually an error object.
+
+03:56.940 --> 03:59.150
+It's a built in exception in Python.
+
+03:59.340 --> 04:04.200
+You can't add in here the way I have instead and we want to use an F string.
+
+04:04.290 --> 04:17.150
+So I do f and then here pass it the error so that now if I run this I get please enter no unsupported
+
+04:17.180 --> 04:21.590
+operant type S for plus ant and SDR.
+
+04:21.590 --> 04:29.390
+So I actually get this error available to me now if I was to just print this error.
+
+04:29.440 --> 04:37.730
+Let's see what it looks like if I click Run you see this is the part of the error that we get.
+
+04:37.780 --> 04:44.930
+So it's very very useful if you want to give meaningful errors to your users another interesting thing
+
+04:44.990 --> 04:52.610
+you can do is something like this where you wrap these errors together.
+
+04:52.610 --> 05:01.520
+So let's say we have zero division error as well and here we'll just say whoops if we for example divide
+
+05:01.850 --> 05:05.410
+num 1 by number 2 let's just run this first.
+
+05:05.870 --> 05:13.150
+I get loops if I do one divide divided by zero and I run this.
+
+05:13.280 --> 05:23.150
+I also get loops so I can handle multiple errors the same way I can also say as error here and just
+
+05:23.360 --> 05:34.060
+actually print out the error and if I run this I'll get division by zero or if I do a string and run
+
+05:34.060 --> 05:37.120
+this I get the other error type.
+
+05:37.570 --> 05:44.110
+So this again is really useful to combine different errors if you want to handle them the same way.
+
+05:44.110 --> 05:51.910
+But what if we actually want to raise our own errors that is that we want to throw our own errors maybe
+
+05:51.910 --> 05:57.610
+inside of this except block I actually want the error to display for certain types of errors.
+
+05:57.730 --> 06:00.990
+How could we do that let's find out in the next video.

@@ -1,0 +1,316 @@
+WEBVTT
+
+00:00.850 --> 00:05.710
+So let's talk about some of the practical applications of decorators.
+
+00:05.710 --> 00:08.050
+I mean we've already seen them in classes right.
+
+00:08.050 --> 00:17.200
+We saw how class method and static method were able to create class methods and static methods on the
+
+00:17.200 --> 00:20.770
+class that the direct class can use.
+
+00:20.770 --> 00:26.830
+And if you don't remember these just go back to those videos but I want to show you one of my favorite
+
+00:26.830 --> 00:28.910
+examples of a decorator.
+
+00:29.290 --> 00:34.660
+We're going to create our own what we're going to do is I want to have a performance
+
+00:37.120 --> 00:38.010
+decorator.
+
+00:38.350 --> 00:41.090
+And by the way this decorator doesn't exist in Python.
+
+00:41.080 --> 00:43.150
+We're gonna build it from scratch.
+
+00:43.150 --> 00:50.410
+What I want to do is be able to have a performance decorator that I can use during testing my code to
+
+00:50.410 --> 00:53.020
+see how fast my code runs.
+
+00:53.020 --> 01:00.000
+For example if I had a function let's say longtime that takes well a long time to complete.
+
+01:00.000 --> 01:09.160
+So I'm going to do a really long loop and say for i in range of let's say all these numbers and I'm
+
+01:09.160 --> 01:11.270
+just going to do a random calculation I.
+
+01:11.290 --> 01:14.720
+Times five this function.
+
+01:14.720 --> 01:16.730
+I want to know how well it performs.
+
+01:16.730 --> 01:20.480
+How many milliseconds it takes to complete this.
+
+01:20.600 --> 01:23.760
+So how can we built that first.
+
+01:23.820 --> 01:27.030
+I'm going to do something that we haven't talked about yet that we will.
+
+01:27.030 --> 01:29.970
+Something about modules in built in modules.
+
+01:29.970 --> 01:36.270
+So for now we're not going to talk about this too much but we're going to import from the time module
+
+01:37.110 --> 01:44.620
+something called Ball time again something that we'll talk about in the module section of the course.
+
+01:44.650 --> 01:50.320
+I'm essentially saying hey when I installed Python or in my case when I'm using this ripple it has access
+
+01:50.320 --> 01:52.130
+to this time if I ask for it.
+
+01:52.150 --> 01:59.640
+And in this case I'm saying hey I want to use this time object or module that I get from Python.
+
+02:00.980 --> 02:04.630
+And then here we're going to create our decorator following the pattern that we've learned.
+
+02:04.960 --> 02:13.030
+I'm going to say define performance and performance is going to accept a function just like we've seen
+
+02:13.030 --> 02:13.800
+before.
+
+02:14.050 --> 02:16.270
+And in here we'll have our wrapper.
+
+02:16.510 --> 02:20.820
+So let's say wrapper function and wrapper function.
+
+02:20.830 --> 02:28.610
+If you remember it's going to be flexible by taking in Star arcs and star star keyword args so that
+
+02:28.610 --> 02:34.100
+we can pass it however many parameters we want because we don't know how this function.
+
+02:34.100 --> 02:35.630
+How many parameters is going to have.
+
+02:35.630 --> 02:42.230
+And I want to be able to use performance on all my functions now in here first.
+
+02:42.290 --> 02:52.720
+What we're going to do is we're going to have the result of the function be the function that we receive
+
+02:52.750 --> 03:04.230
+right here and then simply say run the function with Star ARGs and star star keyword marks and finally
+
+03:04.230 --> 03:08.500
+at the end of this I want to return the results.
+
+03:08.760 --> 03:15.600
+And then finally we're going to return the wrapper so nothing we haven't seen before.
+
+03:15.630 --> 03:21.600
+I could have just done return here or just ran the function but I'll show you why I did it this way.
+
+03:21.690 --> 03:22.740
+In a second.
+
+03:22.860 --> 03:32.210
+Right now our function doesn't really do anything if I click Run while nothing happens if I do a long
+
+03:32.210 --> 03:34.010
+time and I run this function
+
+03:37.720 --> 03:39.990
+it just took a long time to run but that's it.
+
+03:40.000 --> 03:41.420
+Nothing happens.
+
+03:41.470 --> 03:43.700
+This is where we make things interesting.
+
+03:43.870 --> 03:49.990
+We want to calculate from the beginning of running this function to the end of running this function
+
+03:50.350 --> 03:53.590
+and we can use time module to do this.
+
+03:53.920 --> 03:58.770
+I can create a variable time one for the start and simply say time.
+
+03:58.990 --> 04:07.920
+So I'm running this time function that's going to start a time and say hey this initial time is going
+
+04:07.920 --> 04:19.150
+to be T1 and after this function our main function longtime gets run I'm going to say t to and say hey
+
+04:19.420 --> 04:22.150
+what's the time right now.
+
+04:23.130 --> 04:30.000
+So this time we'll check what time it is now and then we're gonna run this function and then this time
+
+04:30.030 --> 04:35.820
+is going to check the time and however much difference there is between these two is how long this part
+
+04:36.030 --> 04:36.470
+took.
+
+04:36.540 --> 04:36.790
+Right.
+
+04:37.440 --> 04:50.240
+So all we do is say print an F string and say it took t one minus t to write and this actually returns
+
+04:50.240 --> 04:55.970
+a millisecond so I'll just say m s four milliseconds and that's it.
+
+04:55.970 --> 05:03.590
+I've wrapped my function with just this extra timepiece and then I'm printing as soon as we run the
+
+05:03.590 --> 05:04.230
+function.
+
+05:04.310 --> 05:05.700
+How long it took.
+
+05:05.840 --> 05:06.610
+So let's check it out.
+
+05:07.190 --> 05:12.290
+If I now run my longtime function right here and I click run
+
+05:16.420 --> 05:20.220
+all right I get a minus number because I messed up here.
+
+05:20.220 --> 05:31.860
+This should be T2 minus t 1 because the time on t 1 Some time passes and then T2 so t is always going
+
+05:31.860 --> 05:33.480
+to be larger than t 1.
+
+05:33.630 --> 05:40.040
+If I run this all right it took point once six milliseconds.
+
+05:40.040 --> 05:43.460
+I think this is actually seconds.
+
+05:43.490 --> 05:45.950
+Now let's make this long function even longer.
+
+05:45.950 --> 05:48.050
+If I go like this and click Run
+
+05:52.130 --> 05:55.850
+oh boy that took one point nine seconds.
+
+05:56.070 --> 05:58.950
+What if I make it even longer.
+
+05:58.950 --> 06:05.300
+If I click Run and this is the part where I keep talking until the function runs because there's gonna
+
+06:05.320 --> 06:10.570
+be an awkward silence otherwise hopefully this end soon because I have nothing else to talk about.
+
+06:10.570 --> 06:11.860
+Come on.
+
+06:11.860 --> 06:14.120
+This is getting off words.
+
+06:14.680 --> 06:14.970
+All right.
+
+06:14.980 --> 06:15.370
+Come on.
+
+06:15.670 --> 06:17.700
+Oh boy am.
+
+06:17.770 --> 06:21.260
+Going to fast forward through here homeboy.
+
+06:21.300 --> 06:23.630
+It took 19 seconds.
+
+06:23.640 --> 06:34.230
+That's that's pretty bad but I now have this decorator that I can give to pretty much any function in
+
+06:34.230 --> 06:40.100
+my program and actually measure the performance of my function pretty useful right.
+
+06:40.110 --> 06:46.860
+I could have this piece of code and before let's say I deploy my code or put my code out into the world
+
+06:47.640 --> 06:54.480
+I can test how performing at my functions are and maybe I can optimize things in different ways.
+
+06:54.480 --> 06:55.970
+Very very useful.
+
+06:56.010 --> 07:01.500
+And I did that in just just a few lines of code nine lines of code now.
+
+07:01.510 --> 07:09.160
+Mind you this performance decorator depends on the machine and how fast your CPSU and memory are on
+
+07:09.160 --> 07:09.930
+your computer.
+
+07:09.940 --> 07:17.290
+So for what took me 19 seconds might take you a lot more or a lot less depending on your machine.
+
+07:17.410 --> 07:21.640
+But this is a nice way to compare functions relatively.
+
+07:21.910 --> 07:28.930
+So I hope after this you see the power of decorators decorators are used a lot in Python libraries and
+
+07:28.930 --> 07:36.240
+frameworks where frameworks that we're going to talk about like Django and flask use decorators maybe
+
+07:36.240 --> 07:42.780
+you want to have some authentication decorator so you do authenticated where each function can only
+
+07:42.780 --> 07:50.310
+be run if the user is authenticated maybe they are they have the privilege to run a function such as
+
+07:50.380 --> 08:02.840
+logon to our Web site or maybe you just need a logging or logging decorator that just logs and lets
+
+08:02.990 --> 08:08.900
+your database know that hey somebody has logged into your system or Hey somebody has purchased something
+
+08:08.900 --> 08:15.000
+from Amazon or Hey somebody just requested a friend request.
+
+08:15.040 --> 08:20.650
+There's so many uses for decorators and decorator is a hard topic.
+
+08:20.650 --> 08:25.720
+You're not going to see them all over Python code they're just an extra feature that you can use as
+
+08:25.720 --> 08:29.380
+you come more and more comfortable with python.
+
+08:29.560 --> 08:35.590
+But I hope by the end of this hall you will least to understand them to maybe one day build your own
+
+08:35.860 --> 08:40.400
+or use pre-built ones by libraries and frameworks.
+
+08:40.460 --> 08:41.620
+I'll see in the next one.
+
+08:41.930 --> 08:42.160
+Bob.

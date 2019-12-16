@@ -1,0 +1,106 @@
+WEBVTT
+
+00:00.720 --> 00:04.800
+Now topples like I said are quite similar to lists.
+
+00:04.980 --> 00:17.690
+So if I wanted to I can say new topple and use my topple and then slice that topple.
+
+00:17.700 --> 00:30.560
+So for example if I do one too like this and print new topple I'm going to get to karma.
+
+00:30.650 --> 00:33.090
+Why is that.
+
+00:33.090 --> 00:39.490
+Well we started 0 1 and 2 if I did 4 here and click Run.
+
+00:41.070 --> 00:49.280
+I get 2 3 4 it's still a temple but you have to remember that a temple that only has a single item tends
+
+00:49.280 --> 00:58.410
+to have this little comma at the end but it's still a temple and just like a list I can assign different
+
+00:58.410 --> 00:58.860
+things.
+
+00:58.860 --> 01:11.690
+For example I can say X equals to my topple 0 and then I can say Y equals my top all 1 and x and y will
+
+01:11.690 --> 01:27.770
+equal 1 and 2 but a short form of doing this again similar to lists is to say hey I want X Y Z may not
+
+01:28.250 --> 01:37.280
+other to be the values assigned from the top so that if I do X here and I run I get one.
+
+01:37.470 --> 01:42.340
+If I do Z and I run I get 3.
+
+01:42.360 --> 01:44.500
+What if I do other.
+
+01:44.540 --> 01:50.280
+And if I click Run I get 4 and 5 as a list.
+
+01:50.380 --> 01:50.910
+All right.
+
+01:50.920 --> 01:55.290
+If your head doesn't hurt by now don't worry I have some good news.
+
+01:55.330 --> 02:02.100
+Luckily for us a Tupolev has only two methods that we care about count an index.
+
+02:02.110 --> 02:03.060
+How nice is that.
+
+02:03.160 --> 02:05.560
+So nice and simple.
+
+02:05.690 --> 02:07.290
+Guess what these mean.
+
+02:07.310 --> 02:12.710
+So let's go back to my couple and now try these out.
+
+02:12.800 --> 02:18.170
+If I go my top all debt count well it's going to count the value.
+
+02:18.380 --> 02:24.220
+So if we want to count how many fives occur in the topo I get one.
+
+02:24.430 --> 02:28.950
+If I had a another five in the top all I get to.
+
+02:29.030 --> 02:31.330
+What about index.
+
+02:31.420 --> 02:32.940
+What's the index of five.
+
+02:34.730 --> 02:45.660
+Well the index of 5 is 4 because 0 1 2 3 for the first value that it finds it's going to return the
+
+02:45.660 --> 02:46.660
+index of.
+
+02:47.190 --> 02:56.310
+And then finally we can also do length right we can use this built in function to run length and it's
+
+02:56.310 --> 03:02.510
+going to tell us that yep it's has a length of 6 awesome.
+
+03:02.700 --> 03:03.380
+There it is.
+
+03:03.390 --> 03:05.030
+We're flying through them now.
+
+03:05.070 --> 03:07.290
+This is our third data structure.
+
+03:07.280 --> 03:12.750
+Remember they're simply lists that are immutable.
+
+03:12.750 --> 03:14.260
+I'll see in the next one by.

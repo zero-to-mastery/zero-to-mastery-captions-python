@@ -1,0 +1,76 @@
+WEBVTT
+
+00:00.590 --> 00:01.880
+Welcome back.
+
+00:01.880 --> 00:08.510
+Up until this point we learned that Opie or object oriented programming is a paradigm a way for us to
+
+00:08.510 --> 00:10.930
+think about structuring our code.
+
+00:10.940 --> 00:18.400
+We went from procedural to writing functions to now using things like object oriented programming.
+
+00:18.410 --> 00:25.310
+Now what we've seen is what we call a classical Opie that is we use classes to incorporate Object Oriented
+
+00:25.490 --> 00:32.100
+Programming Paradigms we learn that we can create a class in Python with a class keyword.
+
+00:32.250 --> 00:39.260
+Using this naming convention which is camel case with capital letter which tells other programmers that
+
+00:39.260 --> 00:47.030
+this is a class that needs to get instantiated we learned about class object attributes we learned about
+
+00:47.030 --> 00:55.030
+how we can instantiate an object and how we have this init function that runs on every instantiation
+
+00:55.210 --> 00:57.700
+to customize our objects.
+
+00:57.730 --> 01:05.380
+We learned about how to add methods to our class so that each object that we create and instantiate
+
+01:05.560 --> 01:07.900
+has access to these methods.
+
+01:07.900 --> 01:13.090
+We also learned that there's things like class method and static methods which are methods that can
+
+01:13.090 --> 01:22.190
+be called on the class without actually instantiating it into an object and all of this was that so
+
+01:22.190 --> 01:26.470
+we can create our own data type the models the real world.
+
+01:26.510 --> 01:33.200
+Now there's still lots more to learn and object oriented programming but if you follow these guidelines
+
+01:33.290 --> 01:37.400
+and look at this overall structure that's pretty much it.
+
+01:37.460 --> 01:45.320
+That's how classes work in Python and we actually have gained a really powerful tool now to really make
+
+01:45.320 --> 01:46.890
+our code better.
+
+01:47.030 --> 01:53.360
+Now the idea of object oriented programming require some practice and it's really hard to grasp when
+
+01:53.360 --> 01:55.310
+you're just starting out.
+
+01:55.430 --> 02:00.590
+We're going to try and do some exercises and learn a few more things about object oriented programming
+
+02:00.830 --> 02:07.300
+so that we can really grasp this concept and use it in our everyday programs.
+
+02:07.360 --> 02:08.470
+I'll see in the next one.
+
+02:08.500 --> 02:08.770
+Bobby.

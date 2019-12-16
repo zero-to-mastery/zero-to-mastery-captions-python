@@ -1,0 +1,175 @@
+WEBVTT
+
+00:00.650 --> 00:01.850
+Welcome back.
+
+00:01.850 --> 00:06.710
+We learned that we were able to create an actual attribute for the class.
+
+00:06.800 --> 00:08.270
+But what about a method.
+
+00:08.270 --> 00:15.480
+Is there a way to do something like here what we do with attributes but for methods well there is and
+
+00:15.540 --> 00:22.170
+we use a decorator which is a topic that will cover later on and you'll understand how these work underneath
+
+00:22.170 --> 00:23.640
+the hood in a bit.
+
+00:23.640 --> 00:30.870
+But for now the syntax that we're going to use is the add song and then we call a class method like
+
+00:30.870 --> 00:38.670
+this and now with this decorator we can now write a function.
+
+00:38.700 --> 00:48.840
+For example let's create a function and we'll call it adding things that will take num 1 and num to
+
+00:50.460 --> 00:54.760
+and in here make sure we add the define for the function.
+
+00:54.880 --> 01:02.930
+And in here we'll just return num 1 plus num to OK.
+
+01:02.940 --> 01:07.820
+So what does this class method do.
+
+01:07.880 --> 01:11.320
+Let me minimize this just so we can see a little bit better
+
+01:14.210 --> 01:15.680
+now in here.
+
+01:15.710 --> 01:25.360
+Let's see if Player 1 has access to adding things so let's just say adding things 2 and 3.
+
+01:25.620 --> 01:26.490
+If I click Run
+
+01:30.580 --> 01:34.730
+takes two position arguments but three were given.
+
+01:35.080 --> 01:36.790
+That's on line 17.
+
+01:36.790 --> 01:44.170
+So when we call this we gave it two parameters but then it was expecting it says that we actually got
+
+01:44.170 --> 01:54.840
+three and that is because adding things the first parameter just like we have here is the CLSA and CLSA
+
+01:54.940 --> 01:56.660
+stands for class.
+
+01:56.830 --> 02:01.330
+So this player character that's the class that we're referring to.
+
+02:01.420 --> 02:03.030
+So similar to what we've seen before.
+
+02:03.040 --> 02:06.220
+But the standard is to use CLSA.
+
+02:06.220 --> 02:14.080
+Now if I run this you'll see that we get five OK.
+
+02:14.100 --> 02:20.100
+But looking at this it looks like it's pretty much the same as the above except instead of using self
+
+02:20.370 --> 02:22.410
+we use CLSA.
+
+02:22.410 --> 02:25.410
+But how is this a class method.
+
+02:25.410 --> 02:31.720
+Well it's because we can actually use this without even instantiating a class.
+
+02:31.770 --> 02:32.940
+Let me show you.
+
+02:33.000 --> 02:42.750
+Let's say that we don't instantiate Player 1 and now I just simply call in here player character dot
+
+02:43.140 --> 02:49.230
+adding things if I click Run look at that I get five.
+
+02:49.290 --> 02:52.950
+It's a method on the actual class.
+
+02:52.950 --> 02:58.480
+It's a class method so you can do some interesting things.
+
+02:58.520 --> 03:01.700
+And by the way class methods aren't used as often.
+
+03:01.700 --> 03:04.700
+So if you're thinking why do we even need this.
+
+03:04.700 --> 03:10.250
+Well I would say ninety five percent of your classes aren't going to use something like a class method
+
+03:10.280 --> 03:14.080
+but there are cases where this might be useful.
+
+03:14.180 --> 03:20.570
+For example we can use the CNS to actually instantiate an object in here.
+
+03:20.630 --> 03:29.030
+So for example I can say that CLSA which is the class which is the player character and I'm going to
+
+03:29.030 --> 03:35.810
+instantiate it remember just like we did here with the brackets with num 1 plus num 2 as the second
+
+03:35.810 --> 03:37.850
+parameter and we'll give it name.
+
+03:38.300 --> 03:44.110
+Teddy if I hit run here.
+
+03:44.330 --> 03:56.340
+Look at that I've instantiated an object Teddy with the age of what should be five So let's take this
+
+03:59.880 --> 04:13.780
+make this equal to Player 3 and if I do Player 3 right here dot H and I click Run I get 5 so I have
+
+04:13.780 --> 04:23.170
+a whole new player here that was created by using this class method so I was able to create just like
+
+04:23.170 --> 04:32.920
+a created a class object attribute a class method using this at sign there's also one other way of doing
+
+04:32.920 --> 04:42.900
+something like this which is the static method and the static method works the exact same way as here
+
+04:43.560 --> 04:53.710
+except you do not have access to this CLSA or the class so you can't do something like we did above.
+
+04:53.710 --> 05:04.100
+Instead we just perform some sort of method like adding things too like this so the only difference
+
+05:04.100 --> 05:12.700
+between the two is the idea that we don't have access in our parameters to this CLSA so we would use
+
+05:12.760 --> 05:20.530
+something like static method where we don't care anything about the class state a class state is something
+
+05:20.530 --> 05:27.010
+like these we don't care about the attributes really we use something like a class method when we do
+
+05:27.010 --> 05:32.400
+care about these attributes and maybe we want to modify them or change them.
+
+05:32.550 --> 05:37.890
+Now these class method and static method is something that you won't see very often but I wanted to
+
+05:37.890 --> 05:43.320
+show to you just because you might encounter it through your python career hopefully this wasn't too
+
+05:43.320 --> 05:43.980
+confusing.
+
+05:44.040 --> 05:47.040
+In the next video I want to review what we've just learned up until now.

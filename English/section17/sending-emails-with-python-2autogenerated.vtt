@@ -1,0 +1,295 @@
+WEBVTT
+
+00:00.480 --> 00:03.390
+Let's send our first e-mail now.
+
+00:03.450 --> 00:08.130
+This requires a lot of configuration that again you'll just have to get used to.
+
+00:08.130 --> 00:10.140
+So if it looks overwhelming Don't worry.
+
+00:10.140 --> 00:14.550
+Once you have this basic setup you can send any type of e-mail you want.
+
+00:14.580 --> 00:23.170
+So the first thing we're gonna do is I'm going to say email is going to equal this e-mail message that
+
+00:23.170 --> 00:26.680
+I just imported this e-mail message.
+
+00:26.680 --> 00:39.140
+Class and this is going to be our email object from here we can add to this object the from key which
+
+00:39.140 --> 00:41.060
+will be hey who is this e-mail from.
+
+00:41.060 --> 00:44.210
+This e-mail is going to be from myself from Andre Nagai
+
+00:46.810 --> 00:55.550
+next is Who is this e-mail going to be to Well this e-mail is going to be too.
+
+00:55.750 --> 01:01.540
+Well let's say Andre at 0 2 mastery dot Io.
+
+01:01.660 --> 01:11.860
+So we want to send that e-mail to this e-mail address and then the e-mail subject line will say what
+
+01:11.860 --> 01:16.290
+should we say let's create the worst spammy e-mail possible.
+
+01:16.330 --> 01:17.610
+I think this will be funny.
+
+01:17.710 --> 01:24.450
+Let's say you won a million dollars.
+
+01:24.500 --> 01:25.070
+There you go.
+
+01:25.130 --> 01:30.160
+That's a spammy subject line that's for sure so that's our subject.
+
+01:30.160 --> 01:40.240
+The next thing we're going to do is say Email dot set content method which essentially says what's the
+
+01:40.240 --> 01:41.820
+content of the email.
+
+01:42.190 --> 01:47.410
+In our case let's just say I am a python master.
+
+01:47.410 --> 01:51.950
+Now in here we can actually set any type of content we want.
+
+01:52.090 --> 01:53.220
+We can do text.
+
+01:53.260 --> 01:55.930
+We can do HDMI all we can do images.
+
+01:55.930 --> 01:57.540
+We're going to get to that a little bit later on.
+
+01:57.880 --> 02:00.610
+But for now this is fine.
+
+02:00.620 --> 02:01.390
+There you go.
+
+02:01.400 --> 02:06.030
+That's our email object with the from two subject and content.
+
+02:06.110 --> 02:10.010
+We have our email but we need to send it right.
+
+02:10.940 --> 02:21.680
+So what we need to do is to use this SMP server to log in to our Gmail client and then send that email
+
+02:21.740 --> 02:22.490
+from there.
+
+02:23.190 --> 02:35.060
+So all we're going to do is say with S.M. T.P. lib dot SMP and in here we're going to say what is going
+
+02:35.060 --> 02:37.010
+to be our SMP server.
+
+02:37.010 --> 02:42.680
+And the reason I got you to create a Gmail account is just so you can follow along because this is going
+
+02:42.680 --> 02:50.100
+to be custom to whatever email client you're using in our case we want our host to be Gmail.
+
+02:50.180 --> 02:56.490
+So I'm going to say S.M. tepee dot gmail dot com.
+
+02:56.540 --> 03:06.850
+This is going to be our host and then this SMP is going to be running on pt. 5 8 7 again.
+
+03:06.860 --> 03:08.970
+You don't have to know this exactly.
+
+03:09.260 --> 03:16.100
+If we go back to SMP you see over here that typically submit I'm going e-mail to the mail server on
+
+03:16.160 --> 03:17.550
+Port 587.
+
+03:17.620 --> 03:19.970
+Remember at some TB is a protocol.
+
+03:19.970 --> 03:25.490
+It's a standard for machines to communicate with each other by using port 587.
+
+03:25.520 --> 03:30.220
+It's just a standard way for SMP server to be run.
+
+03:30.430 --> 03:35.410
+Like I said this is one of those things that you can usually just google around and copy and paste because
+
+03:35.770 --> 03:38.820
+it's going to be the same if you have a different client than G.M..
+
+03:38.830 --> 03:45.470
+Then again you can google and see what type of host you need in our case let's continue here.
+
+03:45.500 --> 03:55.800
+We're going to say with this host as S.M. T.P. because we're going to use this now let's make this a
+
+03:55.800 --> 04:00.010
+little bit bigger so you can see an in here.
+
+04:00.020 --> 04:04.610
+This is the part that's going to look confusing but again it's just you do it once and once you do it
+
+04:04.790 --> 04:07.660
+you have an e-mail server they can use.
+
+04:07.760 --> 04:12.010
+I'm going to say as empty dot E H L O.
+
+04:12.050 --> 04:18.440
+Kind of looks like hello but it's not Hello this is actually part of the protocol of the S M TB.
+
+04:18.470 --> 04:25.340
+Again the agreement it starts with a little hello message that well it's type like this you can actually
+
+04:25.340 --> 04:29.610
+Google why this method is like this and not actually says hello.
+
+04:29.870 --> 04:31.880
+It's actually a pretty funny story.
+
+04:32.000 --> 04:38.650
+So we have a 70 B Hello So that's the initial hey this is a server I'm awake.
+
+04:38.650 --> 04:40.360
+Hello message.
+
+04:40.400 --> 04:52.420
+Next we do the SMP dot start T L S and tell us is an encryption mechanism.
+
+04:52.630 --> 04:56.830
+So we want to connect securely to the server.
+
+04:57.640 --> 04:59.220
+And now this is the critical part.
+
+04:59.260 --> 05:03.040
+Up until this point you might be confused as to what we're actually doing here.
+
+05:03.130 --> 05:12.730
+We're essentially with this next line we're going to connect to this email account this G.M. account
+
+05:12.730 --> 05:20.560
+that I created so that instead of me opening this page hitting compose and writing that email that we
+
+05:20.560 --> 05:24.240
+already wrote I can do it from code.
+
+05:24.290 --> 05:25.650
+So what am I going to do.
+
+05:25.730 --> 05:32.860
+I'm going to say S.M. T.P. dot log in and I'm going to log in with my credentials.
+
+05:32.870 --> 05:39.230
+So the first one is going to be this dummy e-mail that I created which is 0 2 mastery one at gmail dot
+
+05:39.230 --> 05:40.460
+com.
+
+05:40.460 --> 05:46.470
+And next is going to be the password that I used for this log in.
+
+05:46.670 --> 05:52.730
+Again this is something that because I've created a dummy account I don't mind sharing it with you.
+
+05:52.790 --> 05:59.540
+The password is Hello ziti am my old friend
+
+06:02.780 --> 06:09.050
+so this way I'm able to log in to this server and guess what we're doing next.
+
+06:09.050 --> 06:13.730
+Well next we're going to say Send message.
+
+06:13.910 --> 06:18.810
+And we're going to send where we're going to send this whole email that we've created.
+
+06:18.860 --> 06:29.930
+So let's do e-mail and just for fun at the end we'll say print all good boss.
+
+06:29.940 --> 06:30.360
+There we go.
+
+06:31.110 --> 06:35.190
+Now if we didn't make any errors this should actually work.
+
+06:35.220 --> 06:36.510
+Let's give it a go.
+
+06:36.510 --> 06:44.590
+I'm going to say Python 3 and then run our email sender dot pi.
+
+06:44.730 --> 06:46.290
+I want to give you a warning here.
+
+06:46.290 --> 06:52.270
+If you've named your PI file e-mail dot pi this actually might give you an error.
+
+06:52.290 --> 06:55.660
+So make sure you name it something other than email dot pi.
+
+06:55.710 --> 06:57.160
+Let's give it a go.
+
+06:57.180 --> 07:00.740
+There's a bit of a pause and we have all good boss.
+
+07:00.840 --> 07:07.500
+There was a pause here because we had to connect to our server log in to our account and then send the
+
+07:07.530 --> 07:09.750
+e-mail and then all good boss.
+
+07:09.780 --> 07:12.450
+So it looks like this code worked.
+
+07:12.630 --> 07:13.690
+So let's test it out.
+
+07:13.710 --> 07:19.210
+I logged in to this dummy account and I sent an e-mail to Andre at 0 2 mastery data.
+
+07:19.290 --> 07:22.860
+Oh let's check that e-mail account and look at that.
+
+07:22.860 --> 07:24.830
+You won a million dollars.
+
+07:24.840 --> 07:32.720
+I am a python master from the e-mail address of our dummy account.
+
+07:32.740 --> 07:38.110
+Now I actually had to pull this out of the spam folder because it was marked as spam because well it
+
+07:38.110 --> 07:43.250
+definitely looks like spammy email so that's awesome.
+
+07:43.250 --> 07:47.020
+We're just able to send an e-mail through python.
+
+07:47.030 --> 07:52.580
+How cool is that in the next video we're going to explore this a little bit more and make this a little
+
+07:52.580 --> 07:58.010
+bit more dynamic so we can customize it to each individual that we send e-mail to.
+
+07:58.850 --> 08:00.170
+I'll see you on the next one.
+
+08:00.170 --> 08:00.620
+Bye bye.

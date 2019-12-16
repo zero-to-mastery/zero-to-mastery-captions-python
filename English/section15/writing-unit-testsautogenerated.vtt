@@ -1,0 +1,304 @@
+WEBVTT
+
+00:00.620 --> 00:01.160
+Welcome back.
+
+00:01.370 --> 00:04.600
+Let's continue with our unit tests now.
+
+00:04.640 --> 00:10.820
+One thing I noticed here is that when looking at the documentation we actually have an assert is instance
+
+00:11.240 --> 00:17.450
+so we can actually instead of saying assert true just use the assert is instance which we give a and
+
+00:17.450 --> 00:18.420
+b.
+
+00:18.620 --> 00:20.510
+Again all these tests are methods.
+
+00:20.540 --> 00:27.290
+There's no right one you can use whichever one you want as a tool to improve your code so in my case
+
+00:27.410 --> 00:35.130
+let's just change this to assert is instance and fix this like this.
+
+00:35.150 --> 00:36.590
+So just a little cleaner.
+
+00:36.620 --> 00:38.440
+Let's see if this works.
+
+00:38.720 --> 00:39.050
+All right.
+
+00:39.050 --> 00:40.730
+Everything is still good.
+
+00:40.790 --> 00:40.990
+OK.
+
+00:41.030 --> 00:45.520
+Let's try and break our code again so everything is looking good.
+
+00:45.590 --> 00:47.390
+But what if we do something different.
+
+00:47.390 --> 00:55.900
+What if we do let's say at another test and we'll say test do stuff too.
+
+00:55.950 --> 00:59.860
+Usually you want to name these functions a lot better so they're more descriptive.
+
+01:00.140 --> 01:07.430
+But in our case this is fine just so we can see how they work this time around let's do a test program
+
+01:07.790 --> 01:16.210
+is going to equal how about a non.
+
+01:16.220 --> 01:24.670
+So now if I run this let's run this code again and by the way you might notice here how I'm copying
+
+01:24.670 --> 01:32.460
+code in a test and you might think well can we just make this simpler and not repeat ourself.
+
+01:32.940 --> 01:36.440
+And you can totally do that and make things a lot easier.
+
+01:36.660 --> 01:42.270
+But when it comes to tests because they don't go into production and this is just for development purposes
+
+01:42.930 --> 01:48.720
+you really want to have tests that are easy to read so that other people understand your tests because
+
+01:48.750 --> 01:52.130
+when it comes to testing Readability is really really important.
+
+01:52.140 --> 01:59.590
+We don't care as much about not repeating ourself and making our code efficient nice and small so I
+
+01:59.590 --> 02:04.090
+like writing tests that are really descriptive really obvious.
+
+02:04.280 --> 02:09.630
+All right in here let's say self dot assert equal.
+
+02:09.900 --> 02:13.780
+And what should this be well in this case.
+
+02:13.790 --> 02:16.630
+I'm expecting a value error so let's do this.
+
+02:16.640 --> 02:20.560
+I expect that the result will be a value error.
+
+02:20.750 --> 02:24.430
+I'm going to save and run my test.
+
+02:24.510 --> 02:25.950
+All right I get an error.
+
+02:26.040 --> 02:32.910
+It says this is a type error into argument must be a string and I'm giving it a non type.
+
+02:32.930 --> 02:33.130
+All right.
+
+02:33.140 --> 02:38.210
+So this isn't handling it properly because it just doesn't work with the end.
+
+02:38.240 --> 02:39.920
+We get a type error.
+
+02:40.010 --> 02:41.120
+So how can we fix this.
+
+02:41.140 --> 02:46.250
+Huckabee adjusted in case we get a non type in the parameter.
+
+02:46.270 --> 02:49.220
+Well first off let's give it a default parameter.
+
+02:49.240 --> 02:52.760
+Let's say the default parameter is zero.
+
+02:52.780 --> 02:53.920
+If I run this
+
+02:58.460 --> 02:59.450
+I still get the error.
+
+02:59.480 --> 02:59.740
+OK.
+
+02:59.750 --> 03:02.640
+So we still haven't fixed it.
+
+03:02.680 --> 03:08.780
+The argument must be a strict a by like object or a no not non type.
+
+03:08.810 --> 03:09.080
+OK.
+
+03:09.080 --> 03:14.300
+So we are still not checking for the non type.
+
+03:14.300 --> 03:20.080
+So another thing we can do is say if no.
+
+03:20.130 --> 03:29.400
+So we're checking if we have the no value because remember this is going to default to true if it has
+
+03:29.400 --> 03:35.750
+any sort of numbers or well any value but if it's a non type it's going to turn into false.
+
+03:35.760 --> 03:51.090
+So in here if no one gets a return this else otherwise will return please enter number so I'm going
+
+03:51.090 --> 03:55.430
+to say this and now change this because now we should expect.
+
+03:55.440 --> 04:06.950
+Please enter number into my test and I'm going to say assert equal that result is going to be please
+
+04:06.950 --> 04:10.100
+enter number if I now run my test.
+
+04:10.100 --> 04:18.020
+Let's clear this oh looks like I'm getting ran two tests in 0 seconds but we have three tests and that's
+
+04:18.020 --> 04:22.520
+because you see here that I named mine the same.
+
+04:22.520 --> 04:26.060
+Remember if you name the thing the same well it's only going to run one of them.
+
+04:26.090 --> 04:30.650
+So make sure that all the test names are unique.
+
+04:30.650 --> 04:33.560
+So I'm going to run this all right.
+
+04:33.560 --> 04:36.470
+Ran three tests and everything is working fine
+
+04:39.380 --> 04:40.910
+very very cool.
+
+04:42.310 --> 04:48.520
+So you can see here how we went from a very simple function and we started catching these errors and
+
+04:48.520 --> 04:56.260
+started realizing how our function was too simplistic that if we received a wrong input
+
+04:59.030 --> 05:05.930
+a string or a non type well as soon as we did that our function failed.
+
+05:05.930 --> 05:12.000
+So by using tests and as testing and breaking things I was able to improve this function.
+
+05:12.110 --> 05:17.500
+So it's more durable so that now it works a lot better in production.
+
+05:17.570 --> 05:18.080
+Right.
+
+05:18.110 --> 05:20.150
+And this is the power of tests.
+
+05:20.270 --> 05:26.180
+It allows us to check for any mistakes that we may have made because maybe we wouldn't have thought
+
+05:26.180 --> 05:32.660
+of doing something like this initially but by writing tests alongside our code we were able to improve
+
+05:32.900 --> 05:34.170
+the function.
+
+05:34.190 --> 05:36.100
+Now one last thing I want to add.
+
+05:36.260 --> 05:43.550
+Let's just add another one over the tests and say that this do stuff for what if the test parameter
+
+05:43.640 --> 05:49.110
+is just an empty string we should get Please enter a number.
+
+05:49.160 --> 05:53.780
+So if I ran this all right four tests are passing.
+
+05:53.810 --> 06:00.660
+So it looks like our code is working nicely now to finish off here.
+
+06:00.680 --> 06:04.330
+I want to just point out a few things I'm calling here.
+
+06:04.330 --> 06:13.830
+Unit test on Main but this has nothing to do with the actual file that we wrote which is the main file
+
+06:14.770 --> 06:25.740
+if let's say I rename this so let's go to my desktop and say I want to change this to script dot pi
+
+06:28.210 --> 06:32.580
+let's now open this my case with sublime text.
+
+06:32.580 --> 06:33.990
+Let's go back here.
+
+06:33.990 --> 06:39.000
+So you see here that main dot pi is while doesn't exist anymore it's asking me to save.
+
+06:39.000 --> 06:41.240
+So this is a completely different file now.
+
+06:41.310 --> 06:47.220
+If I do script here and simply change all the instances to script
+
+06:51.610 --> 07:01.300
+if I save this and now run this still works unit test on Main simply says hey just run all the tests
+
+07:01.360 --> 07:02.470
+over here.
+
+07:02.560 --> 07:08.620
+Now one thing and this is a common practice that we've talked about before is because you want to say
+
+07:08.980 --> 07:15.010
+run this file if this is the main file being run because we don't really want to import test main or
+
+07:15.370 --> 07:17.050
+anything like this into other files.
+
+07:17.050 --> 07:22.180
+These are individual files that should only be run when we run our tests.
+
+07:22.180 --> 07:31.050
+So I can just say if underscore underscore name equals underscore underscore main
+
+07:33.730 --> 07:38.850
+then run this piece of code.
+
+07:38.860 --> 07:42.070
+So now if I save this and run.
+
+07:42.200 --> 07:42.950
+There you go.
+
+07:42.950 --> 07:44.780
+Everything is still working.
+
+07:44.780 --> 07:51.230
+But now I make sure that this is a test file and I'm only going to run this code if it's the file that's
+
+07:51.230 --> 07:51.710
+being run.
+
+07:51.710 --> 07:53.850
+If it's the main file being run.
+
+07:53.930 --> 08:02.650
+So this is a standard way that you would have your unit test done with the unit test module.
+
+08:02.660 --> 08:06.050
+Let's take a break and talk a little bit more about tests in the next video.

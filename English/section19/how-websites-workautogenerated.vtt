@@ -1,0 +1,295 @@
+WEBVTT
+
+00:00.650 --> 00:03.680
+So how do Web sites work.
+
+00:03.680 --> 00:05.900
+Now I have an entire web development course.
+
+00:05.900 --> 00:12.290
+So because this is a Python course we're not going to go super super deep into this topic.
+
+00:12.290 --> 00:15.240
+Instead we're going to focus on the Python side of things.
+
+00:15.380 --> 00:21.800
+But I do want to help you understand what we're building and how everything works because hopefully
+
+00:21.800 --> 00:28.040
+by the end of this course you're able to actually change your portfolio update your portfolio to your
+
+00:28.040 --> 00:34.300
+own liking and showcase the projects that we've built throughout the course so I have a Web site for
+
+00:34.300 --> 00:34.540
+you.
+
+00:34.530 --> 00:43.750
+Here we have x k C.D. which is just a little funny comic Web site if I click refresh here or enter this
+
+00:43.750 --> 00:47.020
+U.R.L. I'm taken to this Web site.
+
+00:47.030 --> 00:49.830
+But how does this actually work.
+
+00:49.870 --> 00:56.810
+How is my browser in this case Google Chrome able to display this web page for me.
+
+00:56.920 --> 00:59.390
+I need to be connected to the Internet right.
+
+00:59.440 --> 01:04.620
+So there's some sort of data that's being transferred for me to be able to see this.
+
+01:04.690 --> 01:06.600
+So let's explore how this works.
+
+01:07.600 --> 01:13.580
+And look at that I created a nice little diagram for you and in this diagram I'm going to attempt to
+
+01:13.640 --> 01:15.810
+just tell you exactly how it works.
+
+01:15.830 --> 01:17.420
+It's quite simple.
+
+01:17.420 --> 01:24.000
+We have our browser right here which can be Google Chrome it could be safari could be Firefox.
+
+01:24.110 --> 01:27.590
+It doesn't matter this browser.
+
+01:27.590 --> 01:34.350
+We're able to type into it a Web site or maybe google for a Web site and then click on a Web site when
+
+01:34.350 --> 01:37.280
+we click on a Web site.
+
+01:37.290 --> 01:46.380
+What happens is that through internet the browser makes a request all the way to another machine and
+
+01:46.380 --> 01:52.440
+this machine which we call a server is located anywhere in the world.
+
+01:52.470 --> 02:00.690
+It doesn't really matter because through our internet network the browser is going to say hey this Web
+
+02:00.690 --> 02:01.580
+site.
+
+02:01.890 --> 02:09.470
+Who owns that Web site or which machine can serve me the files for that Web site and using some complex
+
+02:09.470 --> 02:10.320
+logic.
+
+02:10.550 --> 02:16.490
+It's going to find this server which at the end of the day is just a computer.
+
+02:16.490 --> 02:19.770
+And we're actually going to show you and deploy our own server.
+
+02:19.880 --> 02:27.560
+Well it simply says hey give me some data because without data I'm not able to display anything on a
+
+02:27.560 --> 02:28.190
+web page.
+
+02:29.080 --> 02:30.480
+And the server.
+
+02:30.610 --> 02:35.680
+Well first of all they communicate over something called a CTP and a.
+
+02:35.690 --> 02:41.500
+S because the browser and the server are two different machines.
+
+02:41.500 --> 02:42.230
+Right.
+
+02:42.250 --> 02:50.860
+The browser is on my laptop right now and the machine which is a server it can be anywhere in the world
+
+02:52.240 --> 02:54.790
+they need to communicate some way.
+
+02:54.790 --> 03:00.850
+And we need a rule to say you know we don't want all these machines talking to each other with no rules
+
+03:00.880 --> 03:01.760
+in place.
+
+03:01.840 --> 03:07.980
+For example we can agree that when we communicate between you and I I'm going to speak in English in
+
+03:07.990 --> 03:16.870
+the same way a GDP and a GDP yes which is a secured encrypted version of communication allows me to
+
+03:16.870 --> 03:26.300
+say hey can you give me the data and the server to understand oh this Web site or this browser needs
+
+03:26.360 --> 03:36.290
+the data that I have if I go back to this Web site over here you see that I'm using a G.P.S. and it's
+
+03:36.290 --> 03:39.440
+saying I want to use the HECS protocol.
+
+03:39.440 --> 03:44.800
+That is the language to communicate that I want to go to this Web site.
+
+03:44.840 --> 03:51.470
+So as soon as I hit enter it's going to make that request all the way to a server somewhere and then
+
+03:51.470 --> 03:59.260
+the server is going to respond with this data let's continue with our diagram so the request has just
+
+03:59.260 --> 04:00.190
+been made.
+
+04:00.250 --> 04:06.040
+This server just happens to have three files that we need.
+
+04:06.040 --> 04:12.260
+One is an HCM Mal file and this file is the text or content of the Web site.
+
+04:12.340 --> 04:19.000
+The other one is the C assess file and this contains all the styling of the Web site.
+
+04:19.030 --> 04:24.400
+So that is colors maybe some fonts maybe the position of the elements.
+
+04:24.430 --> 04:25.620
+Anything to do with style.
+
+04:25.630 --> 04:28.850
+So doesn't look like a boring piece of text.
+
+04:29.020 --> 04:34.630
+And then we have Javascript javascript is what gives Web sites behavior.
+
+04:34.690 --> 04:41.890
+When I log into Facebook or maybe tweet something on Twitter javascript is allowing me to perform those
+
+04:41.890 --> 04:51.160
+actions because with just a shemale and CSX we just have text and some pretty styling with JavaScript
+
+04:51.250 --> 04:55.600
+we're able to take actions but we don't need to focus on that too much.
+
+04:55.600 --> 05:04.150
+All we need to know is that this server because it's a computer on its files has these three files for
+
+05:04.150 --> 05:12.130
+us and these three files what happened gets sent to the browser because the browser was really really
+
+05:12.130 --> 05:17.440
+kind and asked hey can you give me data and the server says Sure.
+
+05:17.440 --> 05:23.490
+Here it is and sends us these three files in these three files when they get sent back.
+
+05:23.530 --> 05:30.630
+The browser understands them and because it understands them even though to us it may look like gibberish
+
+05:30.870 --> 05:34.400
+it's able to display that Web site for us.
+
+05:34.470 --> 05:36.130
+But let me ask you a question.
+
+05:36.180 --> 05:39.900
+Up until now I haven't really talked about Python.
+
+05:39.900 --> 05:41.690
+I thought this was a Python course Andre.
+
+05:41.680 --> 05:44.750
+Were you telling me all this stuff that I don't care about.
+
+05:44.760 --> 05:51.140
+Well because in here there's one piece that can actually be written in Python.
+
+05:51.180 --> 05:52.810
+Can you guess what that is.
+
+05:53.870 --> 05:59.910
+If you guessed the server congratulations you get five thousand points.
+
+06:00.140 --> 06:05.750
+You see the browser is something that while it's an application we download on our computer.
+
+06:05.800 --> 06:15.470
+Right but up until now the server was kind of a mystery box a machine a computer somewhere but Python
+
+06:15.470 --> 06:23.440
+programmers can actually write the logic and the rules that servers can act upon.
+
+06:23.450 --> 06:31.400
+So all this communication of Hey can you give me data can be interpreted in Python and then send this
+
+06:31.400 --> 06:39.700
+data to the browser using Python and we're going to build our own server over the next couple of videos
+
+06:39.970 --> 06:46.780
+but also touch upon these HMRC SS and JavaScript files so we can actually display something like a Web
+
+06:46.780 --> 06:47.820
+site.
+
+06:47.830 --> 06:51.200
+Now I want to finish off this video with one question.
+
+06:51.460 --> 06:56.860
+Do you think that this server has to be written in Python.
+
+06:56.950 --> 06:57.550
+What do you think.
+
+06:58.420 --> 06:59.550
+No it doesn't.
+
+06:59.560 --> 07:00.240
+Right.
+
+07:00.250 --> 07:04.340
+The browser doesn't care what this machine is like.
+
+07:04.360 --> 07:14.290
+All it cares about is these three files and because we're speaking in this HDP HDP as protocol the browser
+
+07:14.290 --> 07:17.010
+says hey I don't care what language you speak.
+
+07:17.050 --> 07:18.130
+I don't care anything.
+
+07:18.340 --> 07:25.240
+I'm just going to tell you through this AC G.P.S. just give me the data that I want and we can do whatever
+
+07:25.240 --> 07:32.050
+logic we want in here I can send e-mails from here if I want I can send text messages I can do math
+
+07:32.050 --> 07:35.510
+operations I can play a game on this computer if I want.
+
+07:35.530 --> 07:43.180
+It doesn't really matter as long as I am able to send these files back to the browser so we can do that
+
+07:43.180 --> 07:50.880
+with Python but we can do that with other languages like node like P. HP like Java.
+
+07:51.910 --> 07:55.160
+So we can write a server in any type of language.
+
+07:55.220 --> 08:01.330
+The only thing we can really do is on the browser side on the browser side we have to use these three
+
+08:01.330 --> 08:08.110
+files because while at least in general terms it can only understand javascript which is another programming
+
+08:08.110 --> 08:09.450
+language.
+
+08:09.460 --> 08:12.760
+All right let's explore this topic a little bit more in the next video.

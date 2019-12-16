@@ -1,0 +1,295 @@
+WEBVTT
+
+00:00.330 --> 00:07.980
+Let's talk about something that's quite unique to Python and makes things really really nice as Python
+
+00:07.980 --> 00:08.760
+programmers.
+
+00:08.850 --> 00:13.870
+And it's called comprehension is it's one of our key terms comprehension.
+
+00:13.890 --> 00:15.330
+What are they.
+
+00:15.330 --> 00:25.520
+Well they're actually called list comprehension for set comprehension or dictionary comprehension.
+
+00:25.560 --> 00:32.970
+And these are some of the data types that we have in Python and we're able to use all comprehension
+
+00:33.540 --> 00:37.860
+with these three data types by the way as I'm recording.
+
+00:37.860 --> 00:40.890
+There are some birds chirping in the background.
+
+00:41.010 --> 00:44.320
+I thought it would be nice to just record the birds chirping in the background.
+
+00:44.340 --> 00:47.400
+I think it would be peaceful for you if you get annoyed.
+
+00:47.400 --> 00:51.020
+I'm sorry but hey the birds have to have fun as well.
+
+00:51.060 --> 00:51.330
+OK.
+
+00:51.520 --> 00:54.310
+So what are these comprehension.
+
+00:54.870 --> 01:05.250
+Well they're a quick way for us to create lists or sets or dictionary in Python instead of perhaps looping
+
+01:05.880 --> 01:14.560
+or appending to a bunch of items to lists so let me show you instead of doing something like my list
+
+01:14.800 --> 01:17.590
+equals an empty list.
+
+01:17.590 --> 01:22.720
+And from here I'll do something like For character in Hello
+
+01:25.320 --> 01:28.200
+my list dot append
+
+01:31.200 --> 01:35.410
+character just so I can create this list finally.
+
+01:35.580 --> 01:38.370
+So let's say my list and we'll print this out
+
+01:41.560 --> 01:50.350
+if I click Run I created a list that contains the characters from hello all right.
+
+01:50.370 --> 01:54.500
+But is there a faster cleaner way of doing this.
+
+01:54.700 --> 01:58.450
+And yes there is with list comprehension and python.
+
+01:58.510 --> 02:00.760
+Again it is quite unique.
+
+02:00.850 --> 02:07.270
+You don't see it in a lot of programming languages but people that use python really love this feature
+
+02:07.750 --> 02:09.480
+and I do too.
+
+02:09.490 --> 02:17.490
+So how can we do this using a list comprehension Well the format we're going to follow is like this
+
+02:18.620 --> 02:32.920
+we're going to say param for param in it of all so when I say param I mean parameter or in our case
+
+02:32.920 --> 02:36.130
+it could be a variable so we can name it whatever we want.
+
+02:36.130 --> 02:42.940
+So let's name this character like we did in here and then character like we did in here and then we
+
+02:42.940 --> 02:44.500
+want an editable.
+
+02:44.500 --> 02:54.870
+In our case we'll say hello so that if I remove this and I click Run I get the same thing.
+
+02:54.970 --> 02:56.280
+Just like that.
+
+02:56.320 --> 03:07.150
+So upon creation online three I create a list that contains character and hello I do a for loop in here
+
+03:07.660 --> 03:14.100
+and I create the list so the way that I like to think about it is hey create a variable and then we're
+
+03:14.100 --> 03:25.340
+going to do a for loop saying hey for each variable in the ignorable added to the list okay let's expand
+
+03:25.340 --> 03:31.040
+upon this Let's say I wanted to do something else let's call it my list too.
+
+03:31.430 --> 03:40.850
+And I want to create let's say a quick list with numbers ranging from zero to 100 0 0 to ninety nine.
+
+03:40.850 --> 03:44.610
+How would I go about doing this again using list comprehension.
+
+03:44.630 --> 03:47.330
+I'll say Number Four.
+
+03:47.330 --> 03:48.090
+Number.
+
+03:48.290 --> 03:49.680
+And then what's the later rule.
+
+03:49.730 --> 03:50.730
+I'm going to use.
+
+03:50.780 --> 03:59.960
+Well I'm going to use a range and say zero to 100 hundred so that if I click Run here look that I get
+
+03:59.960 --> 04:04.040
+a nice long list pre populate it with all these numbers.
+
+04:04.130 --> 04:07.250
+How cool is that okay.
+
+04:08.270 --> 04:10.030
+But here's my challenge to you.
+
+04:10.190 --> 04:15.690
+What if I wanted this but all the numbers should be multiplied by two.
+
+04:15.920 --> 04:18.130
+So I want a list where this equals to zero.
+
+04:18.140 --> 04:18.970
+This is two.
+
+04:18.970 --> 04:20.180
+This is four.
+
+04:20.240 --> 04:21.110
+This is six.
+
+04:21.110 --> 04:21.890
+This is eight.
+
+04:21.890 --> 04:22.990
+This is 10.
+
+04:23.030 --> 04:24.750
+So on and so forth.
+
+04:24.830 --> 04:25.550
+How can I do it.
+
+04:26.830 --> 04:36.220
+Well we can actually expand upon this so that my list three this time around we'll use the same for
+
+04:36.220 --> 04:44.840
+loop that we've seen before like this but instead of just the variable this is not an expression of
+
+04:44.840 --> 04:51.730
+how we want to act upon each character just like we saw in lambda expressions.
+
+04:52.160 --> 05:00.020
+So I can now say Num Times to for these items.
+
+05:00.150 --> 05:06.460
+So now if I do my last three Hey check that out.
+
+05:06.530 --> 05:08.770
+That's pretty nice isn't it.
+
+05:08.990 --> 05:12.940
+OK let's make it even more challenging.
+
+05:12.950 --> 05:15.120
+Let's say my list three.
+
+05:15.340 --> 05:25.400
+Now let's make this a little bit bigger here my list for I want to change it so that in my list I still
+
+05:25.400 --> 05:33.670
+keep here what I have the numbers but I want to only keep that even numbers in this case.
+
+05:33.690 --> 05:35.880
+All of them are even because they're multiplied by two.
+
+05:36.270 --> 05:44.180
+But if for example we do to the power of two and let's comment this out for a second and click Run we
+
+05:44.180 --> 05:51.900
+see that some numbers aren't even so I want to keep these numbers but only the even ones.
+
+05:52.250 --> 05:56.600
+How would I go about doing it well in this case.
+
+05:56.600 --> 05:59.900
+We have a new way of creating this list expression.
+
+05:59.990 --> 06:02.350
+We'll do the exact same thing that we've done here.
+
+06:02.360 --> 06:10.870
+So I'm just going to copy that but at the end remember we now have an expression here something that
+
+06:10.870 --> 06:19.130
+we're going to do to effect whatever the item in the editable is we're going to loop through things.
+
+06:19.130 --> 06:28.220
+And then finally after this we can say f or we can do an if condition so let's say in our case I'll
+
+06:28.220 --> 06:34.780
+say if num modulo 2 is equal to zero.
+
+06:34.780 --> 06:45.250
+Only then added to the list so if we click run well and make sure that it's less for click Run look
+
+06:45.250 --> 06:45.880
+at that.
+
+06:45.910 --> 06:48.380
+All of these are even numbers.
+
+06:48.460 --> 06:49.860
+So let's look at this format.
+
+06:51.830 --> 06:56.280
+Remember these are called list comprehension.
+
+06:56.350 --> 07:03.250
+It's a way for us to quickly create lists with Python instead of looping and using append or things
+
+07:03.250 --> 07:12.210
+that we've seen before so it's a shorthand form for us to do things unique like this the way we're able
+
+07:12.210 --> 07:20.520
+to do this is to have an expression here of what we want to do with each item that we're iterating over
+
+07:21.360 --> 07:26.860
+we loop using a for loop through an admirable.
+
+07:26.940 --> 07:30.190
+We give it to a variable which we're going to act upon.
+
+07:30.330 --> 07:40.140
+And then if we want we also have an option to add a conditional and say hey only included into the list
+
+07:40.200 --> 07:47.350
+based on this condition based on a true or false very very cool.
+
+07:47.460 --> 07:53.750
+Now although list comprehension are really nice because they're just simple one liners.
+
+07:54.090 --> 07:58.140
+It can get pretty confusing looking at this code.
+
+07:58.290 --> 08:03.320
+You have to be really familiar with less comprehension to really understand what's going on.
+
+08:03.330 --> 08:11.760
+So although this makes code shorter maybe even cleaner it does take away a bit of its readability so
+
+08:11.760 --> 08:21.210
+it might be better to just create a descriptive function like generate list of even numbers or something
+
+08:21.210 --> 08:22.990
+along those lines.
+
+08:23.220 --> 08:24.810
+So it's more descriptive.
+
+08:24.930 --> 08:28.920
+And another developer might have a better idea of what's going on.
+
+08:28.920 --> 08:31.380
+So it's always a tradeoff.
+
+08:31.480 --> 08:37.030
+Let's take a break and talk about set and dictionary comprehension in the next video by.

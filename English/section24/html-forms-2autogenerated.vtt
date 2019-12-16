@@ -1,0 +1,115 @@
+WEBVTT
+
+00:01.260 --> 00:09.000
+I want to introduce you to one last former element and it's actually not an input with a type as we've
+
+00:09.000 --> 00:14.380
+described before it's a little bit different but the idea is still the same.
+
+00:14.520 --> 00:23.700
+So let's add cars here and we want this to be a drop down menu again something that we see very often
+
+00:24.060 --> 00:25.450
+and form fields.
+
+00:25.470 --> 00:36.360
+However unlike an input tag we have to do a select tag means a closing select tag as well and within
+
+00:36.360 --> 00:39.250
+here we can put in our options.
+
+00:39.360 --> 00:52.650
+So the option will be will have a value of Volvo Nabucco and we'll say Volvo because we want that actually
+
+00:52.650 --> 00:58.880
+printed to the screen and again we have to close that tag we'll add
+
+01:02.690 --> 01:03.110
+Audie
+
+01:06.130 --> 01:09.090
+and we'll close that tag as well and we can keep adding them.
+
+01:09.130 --> 01:11.870
+But for now just two is fine.
+
+01:11.950 --> 01:18.130
+If I save this and I refresh we have cars let's add a brake here
+
+01:21.250 --> 01:22.350
+just so it looks nicer.
+
+01:22.360 --> 01:22.990
+There you go.
+
+01:23.140 --> 01:26.730
+And here now we have a drop down menu.
+
+01:27.250 --> 01:32.050
+Let's say you want to extend this or you want to see what kind of properties you can put with select
+
+01:32.140 --> 01:33.620
+the way you go about it.
+
+01:33.640 --> 01:41.510
+As you know we've done this before we type in H2 email select tag and actually Google gives you a nice
+
+01:41.510 --> 01:47.480
+little info page over here with attributes so you can see over here we can use multiple which is specifies
+
+01:47.480 --> 01:50.410
+that a multiple options can be selected at once.
+
+01:50.570 --> 01:51.710
+So let's do that.
+
+01:51.710 --> 01:52.250
+Let's.
+
+01:53.390 --> 01:55.300
+Let's minimize this.
+
+01:55.340 --> 01:57.030
+Perfect.
+
+01:57.080 --> 02:09.100
+And within select we'll put multiple we refresh and we can actually select multiple elements but that
+
+02:09.100 --> 02:13.690
+doesn't look that pretty so I'm going to take that out and refresh.
+
+02:13.690 --> 02:20.600
+I actually realized that we forgot one important input type so I'm going to throw it in there as a bonus.
+
+02:20.680 --> 02:26.030
+And as you know with any registration form we want a password.
+
+02:26.200 --> 02:28.960
+So let's add that right after the email
+
+02:32.230 --> 02:42.960
+will do and put type and yes there is a password type that we can add and this password type will have
+
+02:43.770 --> 02:50.550
+another achieve you that's kind of cool and that is men which is how many the minimum characters that
+
+02:50.610 --> 02:52.700
+a password needs gas.
+
+02:52.710 --> 02:58.390
+So let's save that refresh and let's add a break here.
+
+02:58.410 --> 03:01.780
+So it looks pretty refresh.
+
+03:02.150 --> 03:05.180
+And now the password field look at that.
+
+03:05.300 --> 03:08.570
+It acts like a password field.
+
+03:08.660 --> 03:08.840
+All right.
+
+03:09.350 --> 03:12.800
+Let's submit this form and see what hap.

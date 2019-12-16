@@ -1,0 +1,97 @@
+WEBVTT
+
+00:00.760 --> 00:03.850
+I want to teach you one last thing when it comes to lists.
+
+00:04.010 --> 00:06.230
+And it's called list unpacking.
+
+00:06.520 --> 00:08.280
+And it's a really really nice feature.
+
+00:08.320 --> 00:11.410
+I really like it with list and packing.
+
+00:11.440 --> 00:13.620
+We can do something like this.
+
+00:13.930 --> 00:23.980
+Let's say I have a list that is while very simple 1 2 and 3 and I want to assign a variable to this
+
+00:24.160 --> 00:24.820
+list.
+
+00:24.820 --> 00:25.360
+Let's call it.
+
+00:25.360 --> 00:28.150
+Basket equals one two three.
+
+00:28.180 --> 00:33.810
+But what if I wanted to assign a variable to each item.
+
+00:33.840 --> 00:42.230
+Well I can actually do something like this A B C so that when I print a.
+
+00:42.550 --> 00:54.460
+And then let's print B and then print c and i click Run I get one two three and this is something that
+
+00:54.460 --> 01:01.570
+we've seen when we talked about variables where even if it wasn't a list as long as we gave it by comma
+
+01:01.570 --> 01:07.520
+separated by comma different values we're able to print one two three.
+
+01:07.540 --> 01:12.700
+But this is where list I'm packing gets really really useful.
+
+01:12.700 --> 01:20.660
+We can actually let's say extend our list to include all the way till night.
+
+01:20.730 --> 01:27.880
+What if we wanted to unpack one two and three byte but keep everything else still in a list.
+
+01:27.900 --> 01:29.340
+Could we still do that.
+
+01:29.760 --> 01:32.330
+Well with list unpacking we can't.
+
+01:32.400 --> 01:39.730
+All we need to do is say comma and then add a star and give it a variable name whatever we like.
+
+01:39.870 --> 01:42.170
+Let's say other.
+
+01:42.340 --> 01:51.270
+So now if I print other than I click Run look at that I'm able to unpack my list.
+
+01:51.320 --> 01:58.160
+However way I want what if I add a comma here and add D
+
+02:01.040 --> 02:06.120
+Well if I run this I get a list all the way until 8.
+
+02:06.240 --> 02:18.130
+But now D is well actually the very last item so that's very very neat maybe they use case right now
+
+02:18.130 --> 02:23.590
+is not absolutely clear to you but this is something that might help you.
+
+02:23.620 --> 02:31.150
+Another tool in your toolbox to unpack a list and change a list in different ways we'll explore this
+
+02:31.150 --> 02:32.910
+more later on in this course.
+
+02:33.010 --> 02:36.360
+But for now less unpacking when you hear that word.
+
+02:36.520 --> 02:38.140
+Now you know what it means.
+
+02:38.320 --> 02:39.760
+I'll see you in the next one.
+
+02:39.760 --> 02:40.030
+Bye bye.

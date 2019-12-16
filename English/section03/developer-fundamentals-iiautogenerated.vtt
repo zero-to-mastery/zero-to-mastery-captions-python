@@ -1,0 +1,151 @@
+WEBVTT
+
+00:00.660 --> 00:08.280
+Let's talk about another developer fundamental and this one is commenting your code.
+
+00:08.390 --> 00:15.680
+Up until now you may have seen me comment at comments to our script's for example right here.
+
+00:15.680 --> 00:23.200
+I added a comment of billions and this tells the Python interpreter hey this is a comment.
+
+00:23.210 --> 00:25.790
+Don't run this it's just for me.
+
+00:25.790 --> 00:32.150
+You can just ignore it and skip over to line two and you saw that I simply did that in Python with the
+
+00:32.270 --> 00:33.030
+punchline.
+
+00:33.140 --> 00:38.920
+As soon as Python sees a pound sign it adds a comment and you can do that after a line as well.
+
+00:38.990 --> 00:50.360
+I can say this assigns to a variable and although this may look like two lines it's actually just the
+
+00:50.480 --> 00:56.790
+word wrapping that's happening and you can see that the interpreter just completely ignores these comments.
+
+00:57.080 --> 01:02.080
+Now commenting sounds very very simple but it's an important concept.
+
+01:02.090 --> 01:07.790
+And if you want to be a good programmer in all languages we have commenting.
+
+01:08.030 --> 01:14.500
+But there's good ways and bad ways of commenting and this is something that comes with practice.
+
+01:14.510 --> 01:21.430
+But here are some key guidelines when you're commenting your code.
+
+01:21.470 --> 01:26.150
+The idea is that you're adding valuable comments.
+
+01:26.150 --> 01:40.310
+That is if I add a comment here that says hey this is a sign the name variable a value of Andre string
+
+01:41.750 --> 01:45.510
+a comment like this is not really good.
+
+01:45.560 --> 01:46.880
+Why is that.
+
+01:46.880 --> 01:51.990
+Well because your code should be self explanatory.
+
+01:52.040 --> 01:52.600
+Right.
+
+01:52.610 --> 01:58.160
+The idea is for us to write code that is easy to read easy to understand.
+
+01:58.160 --> 02:00.260
+It's not trying to be clever.
+
+02:00.260 --> 02:07.340
+Instead it should read like English and any python programmer would know that here we're just simply
+
+02:07.340 --> 02:10.280
+adding Andre as a value of name.
+
+02:10.310 --> 02:13.770
+We're assigning a variable and adding a comment like this.
+
+02:13.790 --> 02:20.990
+That's self-explanatory just adds clutter to your code so there's a tradeoff here.
+
+02:20.990 --> 02:26.390
+It's good to comment your code for let's say you if you're working on teams and other developers come
+
+02:26.660 --> 02:33.650
+and they want to understand your code but you have to remember this principle of code being easy to
+
+02:33.650 --> 02:35.190
+read.
+
+02:35.210 --> 02:43.580
+The only time you want to add comments to your code is well when something really really important is
+
+02:43.580 --> 02:51.680
+happening where it might be a little complex you first decide hey is this code written in a way that
+
+02:51.950 --> 02:52.860
+makes sense.
+
+02:52.880 --> 03:03.490
+For example if this was variable a and this was variable B well this might be really hard for somebody
+
+03:03.490 --> 03:04.170
+to understand.
+
+03:04.180 --> 03:07.740
+So you might say that this is is cool.
+
+03:07.780 --> 03:15.790
+Flag but before you add that comment you want to say to yourself maybe my code is hard to read.
+
+03:15.860 --> 03:22.290
+Maybe I should just change the variable to is cool to make it more understandable.
+
+03:22.310 --> 03:29.780
+Now this is something that you improve upon more and more and you do want to use comments as an extra
+
+03:29.780 --> 03:31.800
+tool to make your code understandable.
+
+03:31.910 --> 03:36.820
+Maybe you write code that six months from now you want to go back to understand what you did.
+
+03:37.220 --> 03:42.410
+But remember more comments doesn't necessarily mean better code.
+
+03:42.410 --> 03:51.020
+You want to be concise and keeping things simple while adding comments only when necessary to help others
+
+03:51.050 --> 03:56.840
+understand your code not trying to make your unreadable code more readable.
+
+03:56.840 --> 04:01.400
+We'll explore this topic and give you advice on it throughout the course.
+
+04:01.400 --> 04:08.590
+But remember this key developer fundamental because you're going to need it throughout your career.
+
+04:08.630 --> 04:17.720
+By the way this article over here has some really important points that I think you'll really benefit
+
+04:17.720 --> 04:21.830
+from especially in the commenting best practices.
+
+04:21.830 --> 04:28.160
+You can read some of the dos and don'ts and what some of the top programmers do when commenting.
+
+04:28.250 --> 04:33.610
+I know it sounds silly but it is an important concept that most courses overlook.
+
+04:33.710 --> 04:36.780
+So I highly recommend you read over this.
+
+04:36.890 --> 04:41.110
+I'll link to it in the resources and I'll see you in the next video.

@@ -1,0 +1,340 @@
+WEBVTT
+
+00:00.750 --> 00:01.800
+Welcome back.
+
+00:01.860 --> 00:07.010
+It's time to use Python and build our real server now.
+
+00:07.130 --> 00:09.590
+What should we do here first.
+
+00:09.590 --> 00:20.930
+Your first intuition might say hmm I wonder if Python has a module already for that if you actually
+
+00:20.930 --> 00:24.380
+Google python a GDP server.
+
+00:24.380 --> 00:25.010
+You see that.
+
+00:25.070 --> 00:26.030
+Oh look at that.
+
+00:26.030 --> 00:30.900
+Python seems to have an HDP server.
+
+00:30.980 --> 00:32.000
+Awesome.
+
+00:32.000 --> 00:36.870
+And this module actually allows us to create a server.
+
+00:37.520 --> 00:42.770
+You can see over here that all we need to do is use the HDP server.
+
+00:42.770 --> 00:49.910
+And while we have ourselves a server you can actually read through the documentation and see how you
+
+00:49.910 --> 00:50.450
+can build one.
+
+00:50.630 --> 00:56.620
+You can see over here for example that it's a simple couple of lines to create a server.
+
+00:56.630 --> 01:04.670
+However if I scroll all the way up there is a warning here HDP server is now recommended for production.
+
+01:04.670 --> 01:08.840
+It only implements basic security checks.
+
+01:09.080 --> 01:15.490
+You see building servers is a very very common thing.
+
+01:15.790 --> 01:22.670
+A lot of Python developers are hired as back end engineers to build things like servers.
+
+01:22.750 --> 01:30.770
+So when we use something like the HDB server that's built in as part of the Python standard library.
+
+01:30.910 --> 01:38.230
+Well we're redoing all these things that frankly a lot of developers have done before.
+
+01:38.380 --> 01:46.330
+And when you have a problem that is constantly getting solved or the problem is constantly being rewritten
+
+01:46.360 --> 01:53.020
+and rewritten and rewritten we start to have something called libraries but also something called frameworks
+
+01:54.080 --> 02:00.920
+and that is instead of using something that well frankly would take us a really long time to do.
+
+02:01.070 --> 02:07.370
+And as you can see here there's still a lot of issues like security issues that we need to check and
+
+02:07.370 --> 02:08.390
+fix.
+
+02:08.390 --> 02:18.440
+We can use a framework like flask to build a server because so many engineers are building servers using
+
+02:18.740 --> 02:28.890
+Python flask is a tool that uses perhaps underneath the hood something like HDP server but instead make
+
+02:28.880 --> 02:36.200
+sure that the security the added tools and benefits are already pre-built for us.
+
+02:36.200 --> 02:43.820
+You can think of it as a kitchen you're trying to bake a cake and instead of you having to go by the
+
+02:43.820 --> 02:51.410
+knife go by the ball the mixer the oven go buy the ingredients all that stuff flask is like the kitchen
+
+02:51.410 --> 02:56.690
+where you get to enter the kitchen you have all the tools necessary you have the ingredients and all
+
+02:56.690 --> 02:58.670
+you have to do is cook.
+
+02:59.210 --> 03:03.190
+Now when it comes to Python there's two really popular frameworks.
+
+03:03.310 --> 03:10.970
+There's the flask framework and the Django framework right over here now.
+
+03:11.120 --> 03:14.810
+Django is one of those frameworks that it's really really big.
+
+03:14.810 --> 03:18.340
+It's a big big kitchen.
+
+03:18.500 --> 03:24.490
+On the other hand flask is what we call a micro framework that is it's extremely lean.
+
+03:24.500 --> 03:31.450
+It's a small library so that we can do things fast I'm going to teach flask over the next couple of
+
+03:31.450 --> 03:35.390
+videos because I like the simplicity of it all.
+
+03:35.410 --> 03:39.850
+Sometimes when you write in Django it feels like you're not even writing Python because there's so many
+
+03:39.850 --> 03:43.680
+rules and so many tools that you can use versus with flask.
+
+03:43.690 --> 03:45.830
+Everything is clean and small.
+
+03:45.940 --> 03:48.030
+And it's great for our use.
+
+03:48.090 --> 03:50.800
+So how do we get started.
+
+03:50.810 --> 03:57.320
+Well as you know by now as with any tool that we use we should read the documentation right there in
+
+03:57.320 --> 03:57.890
+our case.
+
+03:57.890 --> 04:05.030
+We can just go to installation and actually read through and see what they recommend you see over here
+
+04:05.030 --> 04:10.220
+that they recommend we use a virtual environment something that we've already talked about in previous
+
+04:10.220 --> 04:16.640
+lesson and you'll see why this is important when we actually deploy their project to production but
+
+04:16.640 --> 04:23.690
+it looks like we first create an environment so we make a directory project directory which hopefully
+
+04:23.690 --> 04:25.430
+we already have.
+
+04:25.430 --> 04:28.750
+And then we create a virtual environment.
+
+04:28.760 --> 04:34.310
+Now one thing I haven't told you is that if you use Python 3 which if you're following this course you
+
+04:34.310 --> 04:40.410
+already are using it comes pre-built with something called the envy.
+
+04:40.440 --> 04:47.970
+So instead of Pip and or virtual AV that I've talked about in the previous video on virtual environments
+
+04:48.660 --> 04:55.060
+this comes pre-built so we can actually just run this command in our terminal.
+
+04:55.060 --> 04:56.220
+So let's give it a go
+
+04:59.460 --> 05:01.170
+and look at that.
+
+05:01.170 --> 05:06.390
+A new virtual environment folder was just created.
+
+05:06.390 --> 05:13.090
+Now you see over here that the virtual environment was created while in a new folder called the V envy.
+
+05:13.680 --> 05:24.360
+If we actually leave out the first part or the last the envy or actually let's go back one directory
+
+05:25.760 --> 05:32.810
+and simply say Python three dash M V V and then say Web server
+
+05:36.120 --> 05:42.740
+the web server now becomes the virtual environment because we already have the folder built.
+
+05:42.960 --> 05:46.530
+So we don't want a new folder called virtual environment.
+
+05:46.530 --> 05:48.030
+We can just delete that
+
+05:51.530 --> 05:55.630
+and instead have the virtual environment right over here now.
+
+05:55.640 --> 05:59.900
+It also gives you the option on how to do it on Windows.
+
+05:59.900 --> 06:07.730
+So again on windows you might have to run py Desiree or if you're using Python 2 and you don't have
+
+06:08.240 --> 06:14.880
+the the envy module in that case while you have to use virtual environment.
+
+06:15.020 --> 06:21.110
+And then finally we have to activate the environment and all we need to do if you're on a Mac or Linux
+
+06:21.170 --> 06:24.820
+is just grab this code or on Windows.
+
+06:24.830 --> 06:25.640
+Grab this.
+
+06:25.640 --> 06:29.750
+So let's just copy and paste this if I paste it in here.
+
+06:29.750 --> 06:36.040
+Well let's talk about what is doing here we have to change this to where our folder is.
+
+06:36.050 --> 06:38.340
+In our case we're doing the web server right.
+
+06:38.360 --> 06:47.920
+So I'm going to say Web backslash space server because well that's the folder that we want to go into
+
+06:47.920 --> 06:51.760
+from desktop and inside of the bin folder.
+
+06:51.790 --> 06:56.710
+Right here we have the Activate executable.
+
+06:56.710 --> 07:02.970
+So all we're saying is hey run this executable you don't need to worry about it what it does.
+
+07:02.970 --> 07:06.690
+But if I run this we get a bit of an error.
+
+07:06.690 --> 07:12.420
+Now the issue here is that I'm using something called a fish shell.
+
+07:12.600 --> 07:17.790
+And the reason I'm showing you this is because everybody's machine is different.
+
+07:17.790 --> 07:23.910
+So whether you are on Windows or Mac or Linux or maybe you're using a different type of terminal you
+
+07:23.910 --> 07:25.990
+might get these errors.
+
+07:26.030 --> 07:35.560
+Now the best way to solve these is if you go to the V envy python module and you scroll all the way
+
+07:35.560 --> 07:43.540
+down you'll see here that you can activate using certain scripts but depends on which Shell you're using.
+
+07:43.600 --> 07:49.340
+Most of you are using partial and windows or bash if you're using a Mac.
+
+07:49.450 --> 07:53.690
+In my case I'm using this fish.
+
+07:53.850 --> 08:01.150
+So all I need to do is actually add this dot fish at the end of my script you'll notice here that you
+
+08:01.150 --> 08:04.390
+might have to add different things based on what you're using.
+
+08:04.390 --> 08:10.750
+So if you're on Windows you're most likely going to add dot bad or dot P.S. 1 so let's try that again.
+
+08:10.780 --> 08:15.140
+I'm going to run the same thing but this time say dot fish.
+
+08:15.180 --> 08:16.490
+There you go.
+
+08:16.500 --> 08:25.280
+It's now working and I'm in the web server which is this folder in the virtual environment.
+
+08:25.350 --> 08:31.080
+So now I can install packages here and just be in my own little world.
+
+08:31.170 --> 08:36.480
+Now if for some reason activating doesn't work for you you can actually still keep going with the lectures.
+
+08:36.480 --> 08:37.850
+It won't really affect you.
+
+08:37.860 --> 08:40.740
+This is just one of those things that it's a little tricky.
+
+08:40.740 --> 08:46.860
+You might not get it straight away but the best thing to do is to always read the documentation and
+
+08:46.860 --> 08:49.560
+follow the instructions.
+
+08:49.560 --> 08:50.350
+All right.
+
+08:50.350 --> 08:52.930
+That took an unnecessarily long time.
+
+08:52.930 --> 08:55.930
+So let's finish off by installing flask.
+
+08:55.930 --> 09:02.940
+If we go back to our guide we can finally install flask by doing pip install flask.
+
+09:02.950 --> 09:12.710
+Now again we want to make sure that our Pip if we do version is for Python three point seven but for
+
+09:12.710 --> 09:15.290
+some of you you might have to use Pip three
+
+09:19.920 --> 09:21.110
+so based on your needs.
+
+09:21.120 --> 09:31.500
+Make sure you use the appropriate Pip installer let's clear this up and just copy and paste and install
+
+09:31.650 --> 09:32.040
+flask
+
+09:35.910 --> 09:36.670
+awesome.
+
+09:36.780 --> 09:40.670
+We've just installed flask so we can start using it in our project.
+
+09:40.920 --> 09:43.860
+But that was a whole lot of setup and a lot of downloading.
+
+09:43.860 --> 09:46.940
+So let's take a break and I'll see you in the next video by.

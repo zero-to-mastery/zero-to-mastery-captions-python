@@ -1,0 +1,130 @@
+WEBVTT
+
+00:00.900 --> 00:07.440
+One thing that I really like doing in my courses is to actually understand the why of everything.
+
+00:08.070 --> 00:11.720
+Everything that we learn there should be a reason we're learning it right.
+
+00:11.940 --> 00:17.340
+And you might be asking yourself a why do we even care about machine learning how is that useful and
+
+00:17.640 --> 00:19.440
+how do we get here.
+
+00:19.440 --> 00:28.410
+Well if you think about a business because most technology evolves from business needs we have the advent
+
+00:28.620 --> 00:36.300
+of computers and the ability for businesses to use computers to do things really really fast and efficiently
+
+00:36.660 --> 00:38.350
+so that they gain an edge.
+
+00:38.550 --> 00:45.480
+And then we got spreadsheets spreadsheets like Excel files and CSP files were amazing because we can
+
+00:45.480 --> 00:53.550
+store data that businesses generate such as maybe customers customer data into an excel file and then
+
+00:53.550 --> 01:02.160
+people got really really good at analyzing these CSP files these spreadsheets to make business decisions.
+
+01:02.160 --> 01:09.200
+Maybe forecasting that December sales are going to be high because while the past two years we've had
+
+01:09.210 --> 01:16.780
+really high December sales because of Christmas and then as companies got more and more data we started
+
+01:16.810 --> 01:23.650
+getting this idea of the relational databases spreadsheets were great CSP files were great but we started
+
+01:23.650 --> 01:31.480
+getting more and more information and data and we needed a better way to organize things to understand
+
+01:31.480 --> 01:33.260
+things from our data.
+
+01:33.310 --> 01:41.380
+That's when we got things like my askew El which allowed us instead of using spreadsheets to use a language
+
+01:41.380 --> 01:48.430
+called ask you well to read information from our database right information to our database but similar
+
+01:48.430 --> 01:56.320
+to spreadsheets use the data that we gathered from the business to make business decisions so that our
+
+01:56.320 --> 01:59.240
+business becomes even more profitable.
+
+01:59.380 --> 02:09.900
+And then in 2000 we had this fancy term of big data we had big companies like Facebook Amazon Twitter
+
+02:11.000 --> 02:18.920
+Google that started accumulating more and more data an insane amount of data that you simply couldn't
+
+02:18.920 --> 02:21.020
+contain in a spreadsheet.
+
+02:21.110 --> 02:31.020
+User actions user likes user purchasing histories this idea of big data meant that we had so much data
+
+02:31.050 --> 02:38.910
+these companies had so much data and sometimes unlike relational databases which had to be a structured
+
+02:38.970 --> 02:45.960
+form of data sometimes we got really messy unstructured data and that's where we started getting this
+
+02:45.960 --> 02:53.700
+idea of no Eskew well where things like Mongo D.B. came into existence where you can store unstructured
+
+02:53.700 --> 02:57.890
+data and hopefully make business decisions out of that.
+
+02:58.530 --> 03:06.180
+Maybe if you were Amazon you can use customers purchasing history to recommend different products.
+
+03:06.180 --> 03:15.030
+And ever since then this idea of data getting more and more data has turned us into using machine learning
+
+03:16.030 --> 03:23.380
+because at some point we have so much data that as humans we can't just look like we did at spreadsheets
+
+03:24.010 --> 03:27.890
+and look at columns Ambrose and make business decisions.
+
+03:28.050 --> 03:34.320
+I mean we still could but then we'd be wasting all this data that we've been getting over the years.
+
+03:34.320 --> 03:40.020
+So companies like Facebook and Google that collect massive amounts of data every single day are turning
+
+03:40.020 --> 03:45.720
+to things like machine learning so that instead of humans looking at the data and trying to figure things
+
+03:45.720 --> 03:52.170
+out we give this data to machines so that they're better able even better than humans to make business
+
+03:52.260 --> 03:53.390
+decisions.
+
+03:53.520 --> 03:59.220
+And this idea of machine learning really came to be because of this growth in data that we received
+
+03:59.220 --> 04:07.740
+from businesses as well as the improvements in CPE use GP use that is graphical processing units and
+
+04:07.740 --> 04:09.240
+computer advancements.
+
+04:09.360 --> 04:17.130
+So using the massive amounts of data and massive improvements in computation we can use these machines
+
+04:17.310 --> 04:24.680
+to give them this big data and make decision for us just like we used to with spreadsheets now.
+
+04:24.750 --> 04:32.950
+This is a simplified version of how we got here but I hope it gives you a reason as to why businesses
+
+04:33.400 --> 04:38.530
+like this idea of machine learning I'll see in the next video by.

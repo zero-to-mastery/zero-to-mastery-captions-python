@@ -1,0 +1,259 @@
+WEBVTT
+
+00:00.390 --> 00:05.910
+Up to this point we learned that the power of Python really comes into play when we talk about modules
+
+00:06.120 --> 00:12.240
+but more importantly when we talk about the standard library that it comes with that is the ability
+
+00:12.240 --> 00:19.470
+for us to have these built in modules that we can just import into Python to extend the language and
+
+00:19.470 --> 00:25.740
+have things like random module the CIS module to be able to use in our code.
+
+00:25.740 --> 00:28.550
+And these were called the standard library.
+
+00:28.860 --> 00:37.530
+But the true power of Python and I argue the reason that Python is such a big part of any company really
+
+00:37.530 --> 00:44.110
+in this day and age and why Python has just exploded in popularity is because of this third part it's
+
+00:44.110 --> 00:51.130
+because of developers like you and I who have the ability to create our own Python files.
+
+00:51.520 --> 00:58.300
+Thousands millions trillions of Python files and actually share them with each other so that we can
+
+00:58.420 --> 01:04.180
+actually instead of just having our own code our own standard library code that we download with our
+
+01:04.180 --> 01:13.060
+Python interpreter also have all the code that others share on the Internet so that we don't keep reinventing
+
+01:13.060 --> 01:19.690
+the wheel if somebody else wrote a really really good module that maybe can be used in another project
+
+01:19.690 --> 01:20.870
+across the world.
+
+01:21.010 --> 01:24.280
+Well they can share it and we can import.
+
+01:24.310 --> 01:31.800
+We can download that module and imported into our project and that's why really amazing libraries like
+
+01:31.890 --> 01:38.670
+numbed by pandas tensor flow all these things that we're going to talk about later in the course our
+
+01:38.670 --> 01:46.140
+libraries built by the outside developer community not the Python community but in general just developers
+
+01:46.140 --> 01:51.960
+like you and I or developers working at Google it could be developers that are working in South Africa
+
+01:52.020 --> 01:53.670
+that are working in Fiji.
+
+01:53.670 --> 01:54.690
+It doesn't matter.
+
+01:54.690 --> 02:04.630
+We're able to use each other's code and we're able to do that using the pip install comment and in these
+
+02:04.630 --> 02:10.720
+next couple of videos you're going to see the true power of Python how we're able to stand on the shoulders
+
+02:10.720 --> 02:16.960
+of giants learn from previous mistakes so that we don't constantly reinvent the wheel if we want to
+
+02:16.960 --> 02:23.140
+build a game if we want to build a Web site we don't have to code it absolutely from scratch we can
+
+02:23.140 --> 02:29.710
+use bits and pieces modules in libraries from all these different parts to combine it so that we can
+
+02:29.710 --> 02:33.440
+fast track and build our project even faster.
+
+02:33.700 --> 02:35.260
+So how can we do this.
+
+02:35.290 --> 02:39.330
+How can we use this knowledge base of the world.
+
+02:39.340 --> 02:41.650
+Well we have a Web site for that.
+
+02:41.650 --> 02:47.490
+It's called the python package index or pipe for sure as you can see.
+
+02:47.500 --> 02:55.430
+Bye bye Dada and right now there are a hundred and eighty two thousand projects three hundred and thirty
+
+02:55.430 --> 03:03.970
+five thousand users on this Web site that I've shared code that you can use unlike the python module
+
+03:03.970 --> 03:08.020
+index which I mean had a lot but that's it.
+
+03:08.150 --> 03:18.200
+This has a lot more let's say I wanted to do email Well look at all the packages that I have for sending
+
+03:18.200 --> 03:19.380
+email with my code.
+
+03:19.700 --> 03:26.840
+Let's say I wanted to do let's say image optimization with code well look at that.
+
+03:26.900 --> 03:35.900
+All these packages for image optimization that I can do what if for example I wanted to I don't know
+
+03:35.960 --> 03:41.070
+read Excel files or CSP files.
+
+03:41.130 --> 03:43.780
+Well there's packages for that as well.
+
+03:44.670 --> 03:46.600
+And there are a lot of them.
+
+03:46.740 --> 03:48.220
+Pretty much anything you need.
+
+03:48.330 --> 03:58.300
+He can probably find on here now a good practice is to first check that something exists in well the
+
+03:58.300 --> 03:59.230
+built in module.
+
+03:59.230 --> 04:04.270
+Maybe the standard python module standard library has it already.
+
+04:04.270 --> 04:06.490
+Otherwise you come over here.
+
+04:06.700 --> 04:11.020
+Now you get really really good at noticing which projects are good.
+
+04:11.020 --> 04:12.280
+Which projects are bad.
+
+04:12.370 --> 04:17.840
+For example if I click on here I can read about the project.
+
+04:18.100 --> 04:20.230
+I can see who's worked on the project.
+
+04:20.290 --> 04:22.640
+I can see what kind of license it has.
+
+04:22.660 --> 04:29.860
+I can see what Python programming language version it's compatible with but I can also look at their
+
+04:29.860 --> 04:32.660
+release history and see well.
+
+04:32.920 --> 04:36.180
+Has this person been working on this project recently.
+
+04:36.220 --> 04:39.400
+Doesn't look like too much has happened with this project.
+
+04:39.400 --> 04:44.080
+So you get really really good at deciding which packages are good.
+
+04:44.080 --> 04:46.120
+Which ones are bad.
+
+04:46.390 --> 04:48.570
+You can go to the home page of the project.
+
+04:48.700 --> 05:00.490
+What I like to usually do is let's say I wanted to read CSB files I would say read CSC Python 3 and
+
+05:00.490 --> 05:02.880
+then say maybe built in.
+
+05:03.010 --> 05:09.670
+See if there's any built in modules and I see over here that there's some Python documentation official
+
+05:09.670 --> 05:17.710
+documentation that maybe I can read and I see that it has import CSC so I can go to over here and just
+
+05:17.710 --> 05:20.970
+check hey is CSP actually a built in module.
+
+05:20.970 --> 05:22.870
+Oh yeah looks like it is.
+
+05:22.900 --> 05:27.610
+So I probably should use that because I mean if it's a built in module I'm sure the Python community
+
+05:27.610 --> 05:32.770
+has worked really really hard to make sure that it works well but maybe I wanted some extra features
+
+05:32.770 --> 05:34.270
+that I can't find here.
+
+05:34.270 --> 05:44.800
+In that case I would just go back and maybe type in instead of built in pure IP and now I can just browse
+
+05:44.800 --> 05:48.950
+through these and see which one I like.
+
+05:48.970 --> 05:53.160
+There are so many packages that you can do pretty much anything you want.
+
+05:53.170 --> 05:57.450
+That's the beauty of Python this massive community and it's not just python.
+
+05:57.580 --> 06:04.090
+There's communities like javascript that use instead of Pi by they use NPM.
+
+06:04.170 --> 06:08.000
+You have Ruby developers that use something like Ruby gems.
+
+06:08.050 --> 06:09.760
+This is what programmers do.
+
+06:09.850 --> 06:13.010
+They share code so that others can use it.
+
+06:13.240 --> 06:15.840
+And most of these are just completely free to use.
+
+06:15.850 --> 06:20.560
+You can use them in your code and not have to worry about it which is really really nice.
+
+06:20.680 --> 06:28.090
+And on top of that you can also create your own packages if you wrote a really really nice module that
+
+06:28.090 --> 06:29.230
+you want to share.
+
+06:29.440 --> 06:36.430
+You can publish your own packages to the Python package index but enough talk about this let's actually
+
+06:36.430 --> 06:43.540
+learn how to use this power how to install something from third party developers that we can use in
+
+06:43.540 --> 06:50.810
+our program and by the way I'm about to show you a few little packages but in our final projects where
+
+06:50.810 --> 06:55.850
+we build over 10 projects we're gonna be using a lot of these so we're going to learn a lot more later
+
+06:55.850 --> 06:56.600
+on in the course.
+
+06:56.780 --> 07:03.650
+So don't worry I'm going to cover some really exciting ones like texting e mail reading PDX checking
+
+07:03.650 --> 07:11.720
+out images and machine learning Excel and a ton a ton of things so bear with me as we start to learn
+
+07:11.720 --> 07:13.220
+about pip install.

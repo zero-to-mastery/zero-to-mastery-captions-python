@@ -1,0 +1,151 @@
+WEBVTT
+
+00:00.650 --> 00:01.160
+Welcome back.
+
+00:01.940 --> 00:08.090
+I mentioned to you that a dictionaries of values can hold any sort of data type.
+
+00:08.240 --> 00:10.220
+But what about the keys.
+
+00:10.310 --> 00:19.490
+Up until now I've only used strings to denote a key but could I do something like this could I do one
+
+00:19.490 --> 00:22.970
+two three like this.
+
+00:22.970 --> 00:23.930
+Well let's have a look.
+
+00:23.930 --> 00:24.760
+Let's give it a try.
+
+00:25.950 --> 00:34.110
+If I do one two three and I click Run I get one two three.
+
+00:34.800 --> 00:35.160
+Awesome.
+
+00:35.160 --> 00:36.530
+That works.
+
+00:37.020 --> 00:40.650
+What about what about true.
+
+00:40.770 --> 00:48.050
+If I select if I have a key true and I click Run will that work yeah.
+
+00:48.230 --> 00:49.480
+It looks like it works.
+
+00:49.490 --> 00:50.840
+What about a list.
+
+00:50.840 --> 00:54.390
+What if I have a list of let's say just a hundred.
+
+00:54.440 --> 00:59.290
+Would that work if I click Run Nope.
+
+00:59.650 --> 01:01.160
+It doesn't work.
+
+01:01.180 --> 01:04.250
+It says on hash table type list.
+
+01:04.390 --> 01:05.660
+What does that mean.
+
+01:06.280 --> 01:15.190
+Dictionary keys need to have a special property a key needs to be immutable.
+
+01:15.250 --> 01:21.380
+That is a key cannot change and numbers billions.
+
+01:21.400 --> 01:26.460
+I mean this is a value that cannot change a string.
+
+01:26.980 --> 01:33.700
+If you remember is a value that cannot change it's immutable but a list.
+
+01:33.700 --> 01:37.780
+If you remember can be changed right on a list.
+
+01:37.780 --> 01:43.120
+I can reassign let's say the index of zero to something else.
+
+01:43.300 --> 01:44.390
+Right.
+
+01:44.440 --> 01:51.010
+So because of that a dictionary says Hey my keys because I'm storing them in memory and I don't want
+
+01:51.010 --> 01:51.820
+to lose them.
+
+01:51.820 --> 01:54.770
+It has to be something that isn't going to change on me.
+
+01:54.790 --> 02:02.660
+Maybe a programmer comes in and by mistake changes this array of 100 to have an index of something else.
+
+02:02.680 --> 02:08.100
+Well dictionary doesn't really want that because it doesn't want to lose this value.
+
+02:08.170 --> 02:12.910
+So a dictionary key always has to be immutable.
+
+02:13.080 --> 02:19.860
+And as we learn a few other things like a couple that we'll see in upcoming videos you can use those
+
+02:19.860 --> 02:21.450
+as keys as well.
+
+02:21.450 --> 02:30.270
+However most of the time ninety five ninety nine percent of the time a key for a dictionary is usually
+
+02:30.270 --> 02:33.780
+something descriptive like a string okay.
+
+02:33.810 --> 02:36.880
+But what about this.
+
+02:37.020 --> 02:41.270
+What if we have a nother string.
+
+02:41.310 --> 02:43.880
+One two three.
+
+02:44.160 --> 02:52.980
+And let's just remove this for now what happens when I search for one two three the string.
+
+02:53.160 --> 02:55.810
+If I click Run I get.
+
+02:55.810 --> 03:06.500
+Hello a key in a dictionary has to be unique because there can only be one key because that key is going
+
+03:06.500 --> 03:10.170
+to represent a bookshelf in that memory space.
+
+03:10.240 --> 03:16.680
+So anytime I do the same key and maybe add a value it's going to overwrite.
+
+03:16.690 --> 03:19.050
+So this no longer exists.
+
+03:19.090 --> 03:25.040
+A key has to be unique and it's something that can only exist.
+
+03:25.180 --> 03:26.320
+Well just once.
+
+03:26.350 --> 03:29.890
+Otherwise we overwrite it which is why you see hello here.
+
+03:29.920 --> 03:31.550
+We've lost the array.
+
+03:31.580 --> 03:36.870
+One two three let's explore this idea a little bit more in the next video.

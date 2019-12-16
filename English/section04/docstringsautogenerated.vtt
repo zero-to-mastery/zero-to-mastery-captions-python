@@ -1,0 +1,121 @@
+WEBVTT
+
+00:00.750 --> 00:06.870
+There is a unique thing that we can do with functions that we haven't seen before.
+
+00:07.000 --> 00:08.970
+And they're called Doc strings.
+
+00:08.970 --> 00:09.780
+Let me show you what I mean.
+
+00:10.380 --> 00:17.610
+If I had a function here and we'll just call it test and test let's say receives a parameter that is
+
+00:17.670 --> 00:26.800
+a and in here it's going to print a what a useless completely useless function.
+
+00:26.800 --> 00:34.270
+Now if I run this well nothing's going to happen because I have to call test and then say well exclamation
+
+00:34.270 --> 00:41.020
+marks and you see that our function works but we can actually with functions in Python use something
+
+00:41.020 --> 00:44.320
+called Doc strings and it looks something like this.
+
+00:44.530 --> 00:47.650
+You do single code single code single code.
+
+00:47.770 --> 00:52.500
+So three of them and then at the bottom once again single code single code single code.
+
+00:53.170 --> 01:02.590
+So the beginning of the function like this and in here I can add some info about the function for example
+
+01:02.650 --> 01:11.630
+this function tests and prints param a.
+
+01:11.670 --> 01:13.270
+Now here's the interesting part.
+
+01:13.530 --> 01:22.170
+If I run test here and I do brackets look at that my editor tells me info this function tests and prints
+
+01:22.200 --> 01:23.830
+program a.
+
+01:23.910 --> 01:26.770
+This is called a dork string.
+
+01:27.210 --> 01:34.950
+And what it allows us to do is to actually comment inside of our functions in a way that if another
+
+01:34.950 --> 01:41.160
+person let's say is using the test function they can actually let's say in the future when we write
+
+01:41.250 --> 01:47.280
+large applications where it's not just ten lines of code or maybe we have different files instead of
+
+01:47.760 --> 01:50.310
+just finding what test does.
+
+01:50.310 --> 01:58.430
+As I'm typing it it's going to tell me hate tests is going to return or print param a.
+
+01:58.470 --> 02:04.860
+So I find out information about this and if we ever use something like length for example and run this
+
+02:05.190 --> 02:11.830
+you'll see that this gives us information about the function by using dark strings.
+
+02:11.910 --> 02:16.540
+But it comes built in with Python another way to view this.
+
+02:16.540 --> 02:22.180
+Mind you when we talk about devolve power environments our editors are going to do this automatically
+
+02:22.570 --> 02:25.420
+but there's a few other ways that we can actually read this.
+
+02:25.420 --> 02:33.010
+For example I can do the help function which we haven't seen before which comes pre-built with Python
+
+02:34.420 --> 02:36.050
+and we don't want to call the function.
+
+02:36.070 --> 02:44.440
+I just want to call help on test if I run this look at that I get test a info.
+
+02:44.440 --> 02:50.890
+This function tests and prints parameters so it can use help to find out what a function does which
+
+02:50.890 --> 02:52.870
+is really really useful.
+
+02:52.900 --> 03:00.370
+One other way to do this is to use what we call a magic method or a Dunder method which again we'll
+
+03:00.370 --> 03:01.990
+get into later on in the course.
+
+03:02.110 --> 03:11.030
+I do double underscore then I do doc and then double underscore like this if I click Run
+
+03:14.050 --> 03:21.570
+while we have to print something here so let's print quick run and look at that.
+
+03:21.590 --> 03:30.300
+I get the same thing so these Doc strings are really really useful to add comments and definitions to
+
+03:30.300 --> 03:37.650
+your functions so that when other people on your let's say team or co-workers come across your function
+
+03:37.650 --> 03:43.530
+that you created they're able to understand what it does right away without searching through your python
+
+03:43.530 --> 03:45.230
+files or multiple files.
+
+03:45.330 --> 03:46.680
+Very useful feature.

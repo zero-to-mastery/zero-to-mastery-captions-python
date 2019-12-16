@@ -1,0 +1,547 @@
+WEBVTT
+
+00:00.660 --> 00:01.610
+Welcome back.
+
+00:01.620 --> 00:10.890
+Let's continue from our previous video to talk about a more advanced workflow and get and get hub now
+
+00:10.980 --> 00:12.240
+up to this point.
+
+00:12.390 --> 00:16.410
+Both Marcy and I have just been working on over here.
+
+00:16.410 --> 00:19.230
+Branch Master what does that mean.
+
+00:19.230 --> 00:27.190
+Well it says branches but I only see master here and you might have noticed one issue with the way that
+
+00:27.190 --> 00:28.630
+we were doing things.
+
+00:28.630 --> 00:34.050
+That is if it's my first day on the job and I just change the title.
+
+00:34.240 --> 00:35.980
+But maybe we'd even want that change.
+
+00:35.980 --> 00:40.280
+Maybe that breaks our branding or breaks our app.
+
+00:40.540 --> 00:44.350
+But I was able to do it so easily to change it into master.
+
+00:44.350 --> 00:47.680
+Maybe Marcy didn't even know that I've added that change.
+
+00:47.680 --> 00:48.800
+And that's a big problem right.
+
+00:48.810 --> 00:54.310
+You don't want to put things into what we call production into what the user sees.
+
+00:54.310 --> 00:59.770
+If it's going to break our Web site if you're a big company like Facebook that could mean millions of
+
+00:59.770 --> 01:06.940
+dollars in lost revenue even if you have a bug that lasts a few hours so I'm going to show you a more
+
+01:06.940 --> 01:09.310
+realistic workflow that you'll have.
+
+01:09.310 --> 01:17.630
+And that is with branching to show you what I mean I have over here a visual of what good is really
+
+01:17.630 --> 01:18.820
+really good.
+
+01:18.830 --> 01:25.040
+Up until now we've been working on what we call master that is the master branch think of the master
+
+01:25.040 --> 01:28.160
+branch as the authority.
+
+01:28.220 --> 01:34.370
+This is the right way that our app or our Web site should look and up until now.
+
+01:34.370 --> 01:44.230
+When I did the cool background title Well I went from background generator to cool generator.
+
+01:44.540 --> 01:50.450
+And then when Marci changed it to capitalized letters then we went to here and we just went in a linear
+
+01:50.450 --> 01:53.990
+fashion from one end to the other to the other to the other.
+
+01:53.990 --> 01:56.430
+But like I said that is a bit of a problem.
+
+01:56.450 --> 02:03.020
+So a better thing to do is what we call branching if I wanted to change the title I will create a branch
+
+02:03.710 --> 02:06.300
+and just call it little feature for example.
+
+02:06.830 --> 02:15.910
+And I just work on that branch on my own without affecting the master branch what the user sees only
+
+02:15.910 --> 02:16.950
+when it's finished.
+
+02:16.960 --> 02:23.770
+When Marci has reviewed it when we have tested it and everybody on the team is OK then we bring it back
+
+02:23.890 --> 02:30.920
+into master and you can see over here with the big feature you can keep going for a long time on your
+
+02:30.920 --> 02:38.120
+own branch and only when you're done do what we call merge into master.
+
+02:38.180 --> 02:39.580
+I'm going to show you how that works today.
+
+02:41.260 --> 02:49.620
+I'm going to close this and remember our example we have Marcy's computer here with all the files and
+
+02:49.620 --> 02:57.990
+we have my computer here with all the files we both have our workstation setup and now you see what
+
+02:58.170 --> 03:03.750
+Master in my terminal means and I'll show you in the notes afterwards how you can have this setup.
+
+03:03.750 --> 03:08.610
+So it tells you what branch you're on but we can see that we're both on Master.
+
+03:08.610 --> 03:09.720
+That's my computer.
+
+03:09.840 --> 03:12.760
+And Marcy's computer is also on Master.
+
+03:12.870 --> 03:18.380
+We want to make sure that we're both up to date with the latest GitHub.
+
+03:18.420 --> 03:22.860
+So Marcy's gonna do get pull and I'm also going to do get Paul
+
+03:26.420 --> 03:33.050
+and let's say that I'm now working on a new feature and because it's a better workflow not to work on
+
+03:33.060 --> 03:40.910
+Master and this is a good tip generally don't work on master always branch off if I do get branch they'll
+
+03:40.910 --> 03:46.430
+show me that well I only have one branch and that is master but we can add to it and we can say get
+
+03:46.520 --> 03:52.780
+branch new or little feature.
+
+03:52.780 --> 03:59.950
+And now if I do get branch I see that I have little feature but Master is highlighted because I'm currently
+
+03:59.950 --> 04:01.050
+a master.
+
+04:01.150 --> 04:11.110
+So the way I would go to the little feature branch I'll say get check out little feature and there you
+
+04:11.110 --> 04:16.270
+go switch to branch a little feature and now I'm on little feature branch.
+
+04:16.270 --> 04:26.220
+So what I've done is I've branched off of master and now created a little feature let's create a bit
+
+04:26.220 --> 04:32.250
+of a change I'm going to say in the little feature we're going to change the current RSS background
+
+04:32.250 --> 04:36.840
+title to say this is the background
+
+04:40.960 --> 04:49.210
+I'm going to save here and again I do my simple workflow that we did in the last video get status I
+
+04:49.210 --> 04:53.590
+see that yeah we have the index that a simple change point clear so we can see.
+
+04:53.590 --> 05:02.660
+So now that we've made this change let's do get add and again just get status to make sure everything
+
+05:02.660 --> 05:03.370
+went through.
+
+05:03.410 --> 05:06.030
+Yeah we're ready to commit index out a symbol.
+
+05:06.050 --> 05:14.270
+So we'll do get commit message we'll be changing text perfect.
+
+05:14.280 --> 05:16.170
+Let's clear that.
+
+05:16.170 --> 05:21.960
+And now again in order to let get have know of the changes we need to get push.
+
+05:22.070 --> 05:23.850
+So we'll do get push
+
+05:30.020 --> 05:37.490
+let's go to get hub and see what happened we see that now we have this a yellow bar that just showed
+
+05:37.490 --> 05:44.500
+up and says You recently pushed branches so if I click on this green button here compare pull request
+
+05:47.780 --> 05:55.130
+it shows me what changes I have which is I've changed a title and here I can let Marci know saying Marci
+
+05:55.970 --> 05:59.720
+I've changed the text.
+
+05:59.750 --> 06:03.370
+What do you think and I click on Create pull request
+
+06:06.430 --> 06:11.350
+and now I have my PR and you see here how says merge pull requests.
+
+06:11.380 --> 06:18.490
+Well if we go back to our diagram I've created this little feature and now I'm saying Hey Marcy I've
+
+06:18.640 --> 06:20.680
+just done this new change.
+
+06:20.740 --> 06:21.700
+What do you think.
+
+06:21.730 --> 06:25.130
+Is it OK for me to merge it into M..
+
+06:25.330 --> 06:31.040
+And what will happen here most likely is Marcy's will come see this pull request.
+
+06:31.180 --> 06:36.100
+You can see that we're on the pull request apps so she'll be able to see them and seeing oh Andre just
+
+06:36.250 --> 06:44.770
+did this change she'll look through the changes and she'll say hmm hmm well if she likes this she can
+
+06:44.770 --> 06:52.050
+be like looks good she can click on Start a review and you know what she would like says Look she's
+
+06:52.060 --> 06:53.170
+just going to approve
+
+07:01.260 --> 07:03.990
+now Marcy or myself.
+
+07:03.990 --> 07:08.580
+Usually you don't want to merge your own poll requests somebody on the team does it can now just say
+
+07:09.180 --> 07:13.340
+March poll request confirm merge.
+
+07:13.460 --> 07:21.110
+And there you go sometimes like deleting the branch afterwards so you can just click delete here if
+
+07:21.110 --> 07:23.270
+I go back to the code.
+
+07:23.370 --> 07:28.700
+Well I don't have the branches anymore because I just deleted it but in my master if I go to index out
+
+07:28.710 --> 07:32.350
+a symbol I see this is the background.
+
+07:32.410 --> 07:37.750
+So now Marcy can go to her project and say get pull
+
+07:40.630 --> 07:47.010
+and again she has the latest update.
+
+07:47.100 --> 07:49.970
+Now let's talk about some conflicts second arise.
+
+07:50.070 --> 07:57.070
+Now let's say Marcy wants to change something and I also change this same thing and we get a merge conflict.
+
+07:57.150 --> 07:58.400
+Let's see what happens.
+
+07:58.440 --> 08:05.520
+So let's say Marcy wants to change create a new feature saying we'll call this one big feature and she'll
+
+08:05.520 --> 08:09.740
+say get check out or get branch.
+
+08:09.810 --> 08:23.070
+Big feature she'll say get check out big feature and if I do get branch we see that there's a new branch
+
+08:23.070 --> 08:23.520
+here.
+
+08:23.520 --> 08:29.970
+Let's clear that and she'll say here that she wants to change this back to background color or background
+
+08:29.970 --> 08:34.400
+generator because all the users are complaining that the title changed and they like the all time.
+
+08:34.440 --> 08:36.030
+So she's changed that.
+
+08:36.420 --> 08:42.840
+She has done the get ad get to commit
+
+08:45.440 --> 08:54.320
+reverting back to old title perfect and then she's going to do get push.
+
+08:54.620 --> 08:57.050
+Let's clear that first actually.
+
+08:57.050 --> 09:03.850
+And we do get push first time you get this you might get this Sara saying that there's no upstream you
+
+09:03.880 --> 09:10.660
+just copy the code that they give you here.
+
+09:10.680 --> 09:11.430
+Perfect.
+
+09:11.430 --> 09:22.330
+Now if I go back to background generator I see the big feature pull request over here and just to show
+
+09:22.330 --> 09:24.430
+you that you can have multiple comments.
+
+09:24.440 --> 09:26.890
+Let's say Marcy decides to.
+
+09:26.890 --> 09:27.740
+Oh this is me.
+
+09:27.760 --> 09:30.580
+Marcy decides to add an exclamation point here.
+
+09:30.580 --> 09:34.090
+She can just say again she saves this.
+
+09:34.090 --> 09:40.080
+That's clear she'll say get ad get connect.
+
+09:40.260 --> 09:44.590
+You do this a lot so you get really really good a get after working the company for a while.
+
+09:44.970 --> 09:53.350
+And she'll say added X exclamation whoops I want I want to do get commit
+
+09:55.840 --> 10:01.370
+commit added exclamation
+
+10:03.740 --> 10:05.830
+and she'll do get push again.
+
+10:09.980 --> 10:18.120
+Let's go back to get up if we look at the pull request they'll actually have both of these vert back
+
+10:18.120 --> 10:21.130
+to all title and added exclamation.
+
+10:21.360 --> 10:27.900
+And we see over here both of the changes create the pull request needs changes.
+
+10:27.900 --> 10:28.290
+ANDRE
+
+10:31.010 --> 10:39.490
+So while this pull request is out there I decided to start a new branch call.
+
+10:39.490 --> 10:41.140
+Let's just call it conflict for now
+
+10:44.330 --> 10:47.450
+and I'll get check out conflict
+
+10:49.990 --> 11:02.550
+now in the conflict branch I decided to change this to just completely remove the call generator.
+
+11:03.150 --> 11:11.210
+I save that again I check my status and index start a simple file has been changed.
+
+11:11.350 --> 11:21.320
+So while this is happening I get Marcy to merge the pull request so she's entered into M..
+
+11:21.670 --> 11:30.240
+Her parole request is in and now if I go back to my conflict I do get status and we have to add these
+
+11:30.240 --> 11:34.170
+so get ad then get commit.
+
+11:34.320 --> 11:35.530
+I'll just do a short message here.
+
+11:35.540 --> 11:50.180
+Just check and now if I go back to master I have to do get checkout master again before I push my changes
+
+11:50.180 --> 11:56.330
+I want to make sure that I have the latest version of a master so I'm not changing anything I won't
+
+11:56.330 --> 12:10.000
+have any conflicts so I'll do get pool to get the latest and now I go to get check out conflict branch
+
+12:12.510 --> 12:22.270
+and I can do this command get merge master so I'm saying merge whatever Zen Master into conflict
+
+12:25.660 --> 12:28.590
+Marcy has been working on the big feature and she's merged it.
+
+12:28.600 --> 12:34.120
+So now Master has the big feature branch.
+
+12:34.230 --> 12:41.780
+I've also created another branch and I've been working on my own on the conflict branch and the conflict
+
+12:41.780 --> 12:47.120
+branch doesn't know anything about master so I'm saying hey whatever is in master right now which includes
+
+12:47.450 --> 12:49.910
+the big feature that Marcy worked on.
+
+12:50.060 --> 12:53.460
+Pull it in and make sure that there's no conflict.
+
+12:53.570 --> 13:00.710
+So I do that and oh I get conflict merge conflict and index not a shame offer.
+
+13:00.830 --> 13:09.320
+Now if I actually click on Sublime Text let me open the subsidy can see a better oh boy I get this weird
+
+13:09.440 --> 13:18.340
+little syntax it's overwhelming at first but it's easy to see what happening head is where my branches
+
+13:18.340 --> 13:18.580
+at.
+
+13:19.060 --> 13:28.060
+And it shows me that here to the end I don't have the H one anymore but in the master branch we have
+
+13:28.450 --> 13:36.360
+background generator now I can talk to Marcy and say Hey Marcy do you want to keep the back on generator.
+
+13:36.360 --> 13:38.970
+Title and she'll say yes.
+
+13:38.970 --> 13:40.760
+That was the right thing to do.
+
+13:40.890 --> 13:42.540
+Don't change the background.
+
+13:42.540 --> 13:45.420
+Well in that case I just remove these lines
+
+13:49.060 --> 13:59.590
+and remove this and save now if I do get status now OK.
+
+13:59.610 --> 14:01.780
+We have the modified status here.
+
+14:01.830 --> 14:05.070
+Let me just make this smaller again so you can see.
+
+14:05.070 --> 14:06.600
+Let me clear this.
+
+14:07.050 --> 14:13.800
+What we do now is we have to do get ad again because we made those changes and we have to do get commit
+
+14:14.760 --> 14:17.190
+fixing the merge issue.
+
+14:19.970 --> 14:21.500
+And I forgot the MLS share that again
+
+14:27.980 --> 14:31.160
+conflict fixing marriage issue.
+
+14:31.220 --> 14:38.400
+Let's clear here and do get status nothing to command working to clean.
+
+14:38.430 --> 14:42.840
+And if I do get push Well again I get this error.
+
+14:42.840 --> 14:47.760
+But I want to show you this time around if I didn't get the push origin conflict
+
+14:51.340 --> 14:53.210
+it now works.
+
+14:53.420 --> 14:58.630
+Let's go back to get hub see what sort of things we have.
+
+14:58.630 --> 15:05.590
+We have the conflict branch and if we look at the conflict branch now well there's nothing changed because
+
+15:05.590 --> 15:08.620
+well I just reverted all my changes so it's completely empty.
+
+15:08.620 --> 15:18.370
+There's no changes now so Marcy would be like hey did you mean to to make this PR.
+
+15:18.910 --> 15:25.760
+It's empty I'll see this message on my PR and I can keep going.
+
+15:25.830 --> 15:33.770
+And that's pretty much the workflow that you'll see in get a lead the commands for you after this but
+
+15:33.810 --> 15:38.880
+you see it's very very nice to work with you learn a few commands and as long as you have this visual
+
+15:38.880 --> 15:45.660
+model of every time you're working on something you always create a branch you title it with whatever
+
+15:45.660 --> 15:55.290
+feature you're working on and every once in a while you want to pull master and merge master into your
+
+15:55.290 --> 16:00.360
+branch to make sure that you're not missing out on any updates that other developers or teammates have
+
+16:00.360 --> 16:03.460
+done once you're done with your feature.
+
+16:03.570 --> 16:12.120
+You make a pull request by doing get push and that pull request your add comments and people will review
+
+16:12.120 --> 16:17.430
+your file changes and if they want you to make a few changes then you can do again get add get commit
+
+16:17.880 --> 16:24.300
+finally make your changes and then you can merge pull request and once that's done then everybody else
+
+16:24.300 --> 16:25.220
+on the team.
+
+16:25.320 --> 16:26.830
+There's now a new master.
+
+16:26.850 --> 16:30.270
+So everybody else on the team should do get Paul as well.
+
+16:31.190 --> 16:37.220
+It does takes a bit of time to get used to but is a really really nice workflow to make sure that everybody
+
+16:37.370 --> 16:44.480
+on the team works on the same files same projects without causing any errors and making sure that everybody
+
+16:44.480 --> 16:45.550
+collaborates.
+
+16:45.650 --> 16:48.790
+Well and that's it.
+
+16:48.790 --> 16:50.230
+Hope you found this useful.
+
+16:50.230 --> 16:51.490
+I'll see you in the next one.
+
+16:51.550 --> 16:51.900
+Bye bye.

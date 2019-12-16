@@ -1,0 +1,133 @@
+WEBVTT
+
+00:00.270 --> 00:05.880
+Let's talk about a key developer fundamentals we haven't seen one in a while so I hope you're excited
+
+00:05.880 --> 00:06.600
+to see another one.
+
+00:07.320 --> 00:08.100
+What is it.
+
+00:08.100 --> 00:12.130
+This one is pick the right library.
+
+00:12.210 --> 00:14.160
+What do you mean by this.
+
+00:14.160 --> 00:18.040
+Well let's have a look at what we just installed in the previous video.
+
+00:18.390 --> 00:26.270
+We installed this library called pillow which allows us to manipulate images using Python but I also
+
+00:26.270 --> 00:28.950
+mentioned that there's a couple of warnings here.
+
+00:29.090 --> 00:35.530
+It says Hey pillow and pill cannot coexist in the same environment before installing pillow Please uninstall
+
+00:35.630 --> 00:37.060
+pill.
+
+00:37.070 --> 00:40.600
+We also have some version warnings as well.
+
+00:40.690 --> 00:42.460
+So what does this mean.
+
+00:42.460 --> 00:50.600
+Well if I go back to the main page over here we see that pillow is a is the friendly pill for by this
+
+00:50.600 --> 00:54.110
+person and pill is the python Image Library.
+
+00:54.110 --> 00:58.430
+What does this all mean when you pick a library that you want to use.
+
+00:58.460 --> 01:01.880
+And trust me you're gonna do a lot of that in your career.
+
+01:01.880 --> 01:07.850
+You want to make sure that you pick either the latest most modern library but also the library that
+
+01:07.850 --> 01:09.540
+the most people use.
+
+01:09.860 --> 01:12.500
+And we've mentioned this before when using pipes.
+
+01:12.620 --> 01:13.080
+Right.
+
+01:13.100 --> 01:17.550
+We want to make sure that the library we use has a lot of community support.
+
+01:17.600 --> 01:22.850
+It's constantly being updated so that there's no security issues or it's not a library.
+
+01:22.850 --> 01:26.480
+That's not very well because anybody can publish a library.
+
+01:26.660 --> 01:33.590
+When you look at python Image Library which is the original one that we used to have and this is a Wikipedia
+
+01:33.590 --> 01:35.310
+article that I can link to.
+
+01:35.510 --> 01:40.730
+And again this is something that you'll just have to learn to develop the skill of finding the right
+
+01:40.730 --> 01:41.840
+library.
+
+01:41.840 --> 01:44.630
+So in here we actually see that Python Image Library.
+
+01:44.630 --> 01:55.320
+So originally it was called Pil and this library existed and was very popular but when Python 3 came
+
+01:55.320 --> 01:59.300
+out pill didn't support this newer version of Python.
+
+01:59.340 --> 02:05.850
+So essentially what happened was it was forked and forked simply means it was essentially copied because
+
+02:05.850 --> 02:13.440
+it was an open source library and developed into pillow by another developer which gives us Python 3
+
+02:13.530 --> 02:16.590
+support so that's what it means.
+
+02:16.590 --> 02:21.510
+It's a pill fork that allows us to have Python 3 support.
+
+02:21.700 --> 02:28.830
+The key here being that again we want to make sure that we use a libraries that are up to date that
+
+02:28.830 --> 02:35.460
+work with Python 3 but also libraries like pillow here that have a lot of community support.
+
+02:35.460 --> 02:39.480
+If I go to get hub here we see that it has six thousand four hundred stars.
+
+02:39.510 --> 02:45.450
+It's been forked a thousand two hundred times and it's also used by one hundred and fifty thousand developers.
+
+02:45.450 --> 02:47.330
+That's a pretty good sign.
+
+02:47.340 --> 02:55.230
+We also see that the latest commit happened this year which is awesome.
+
+02:55.230 --> 03:01.710
+Again developing that skill to pick the right library is a sign of an experienced developer.
+
+03:02.520 --> 03:03.460
+So there you go.
+
+03:03.570 --> 03:05.640
+Another developer fundamentals.
+
+03:05.640 --> 03:08.340
+Let's get back to building some projects in the next video.

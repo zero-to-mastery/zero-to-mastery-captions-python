@@ -1,0 +1,145 @@
+WEBVTT
+
+00:00.330 --> 00:06.030
+I want to address a question that you may or may not have but it's something that's taken me years to
+
+00:06.030 --> 00:12.780
+understand and that is why not just have everything as global variables.
+
+00:12.780 --> 00:16.140
+I mean all this confusion of who has access to who.
+
+00:16.170 --> 00:19.410
+How easy would it be if everything was just on the main page.
+
+00:19.440 --> 00:25.820
+All our information all the data on our global scope so that everything has access to everything.
+
+00:25.830 --> 00:31.030
+Wouldn't that be easier and you'd be kind of right.
+
+00:31.080 --> 00:34.550
+I mean that would make all this headache go away.
+
+00:34.560 --> 00:35.630
+Right.
+
+00:35.730 --> 00:43.470
+But you have to remember that machines don't have infinite power don't have infinite CPR you don't have
+
+00:43.530 --> 00:47.660
+infinite memory they all have limited resources.
+
+00:47.850 --> 00:54.240
+And as programmers we have to be conscious of what resources we use because sometimes that can cost
+
+00:54.240 --> 00:55.020
+us money.
+
+00:55.050 --> 01:01.100
+Sometimes that can crash our computers and scope is a great demonstration of this.
+
+01:01.170 --> 01:11.780
+For example this code right here when this function is run we're creating technically just one location
+
+01:12.410 --> 01:16.370
+in memory for the x variable.
+
+01:16.490 --> 01:23.210
+So we have that bookshelf in our computer that is X. That's pointing to local when we actually call
+
+01:23.210 --> 01:23.970
+this function.
+
+01:24.590 --> 01:32.380
+And then when we say non-local here Well we're saying just don't create another bookshelf for us.
+
+01:32.390 --> 01:39.950
+Just use the one that we already have and assign it non-local if we didn't have this line by the time
+
+01:39.950 --> 01:42.030
+we get to line seven.
+
+01:42.260 --> 01:47.250
+We've placed in memory x equals two local and x equals two non-local.
+
+01:47.270 --> 01:49.740
+So we have two locations now in memory.
+
+01:49.760 --> 01:56.390
+Now this isn't a big deal because well in this day and age we do have a lot of memory but as programs
+
+01:56.390 --> 02:00.050
+get larger and larger this does become a bit of a problem.
+
+02:00.860 --> 02:01.420
+OK.
+
+02:01.490 --> 02:04.060
+But what about a function.
+
+02:04.070 --> 02:09.920
+I mean we learned that functions allow us to not repeat ourselves and being able to call out our multiple
+
+02:09.920 --> 02:10.570
+times.
+
+02:10.640 --> 02:19.280
+But another good use of functions is that once we call this function and all of this is done the computer
+
+02:19.700 --> 02:27.530
+and the Python interpreter specifically destroys all this memory that is once we finish with the outer
+
+02:27.530 --> 02:28.150
+function.
+
+02:28.280 --> 02:31.330
+I can't really call print x here.
+
+02:31.430 --> 02:32.690
+It's going to give me an error.
+
+02:32.690 --> 02:39.580
+It's going to say I have no idea what X is and why is that it's because after we call this function
+
+02:40.150 --> 02:46.480
+the python will be called the garbage collector is going to say hey it looks like we're done with this
+
+02:46.480 --> 02:47.170
+function.
+
+02:47.170 --> 02:53.710
+And I see that this x variable well in this x variable we're not gonna use because we're done with this
+
+02:53.710 --> 02:54.060
+function.
+
+02:54.070 --> 02:57.240
+So I'm going to collect that garbage and then just throw it out.
+
+02:57.250 --> 03:04.390
+So I'm going to empty that memory cupboard so that other resources or other programs can use that.
+
+03:04.630 --> 03:10.630
+And that is a really nice feature where python just automatically removes these for you so that you
+
+03:10.630 --> 03:15.430
+don't clog up the computer's memory and that's why scope is useful.
+
+03:15.430 --> 03:20.290
+We don't have to think about it in such detail like I've mentioned it but it's nice to know that it's
+
+03:20.290 --> 03:26.070
+there so that your programs don't hog up a lot of memory and they can run efficiently.
+
+03:26.110 --> 03:31.860
+This is a bit of an advance topic but I did want to include it in here so that you can think about why
+
+03:31.870 --> 03:34.490
+programs are designed the way they are.
+
+03:34.510 --> 03:36.300
+All right let's stop talking now.
+
+03:36.310 --> 03:38.240
+I'll see you in the next video by.

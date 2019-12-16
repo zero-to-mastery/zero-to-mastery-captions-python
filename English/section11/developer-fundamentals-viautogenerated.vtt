@@ -1,0 +1,91 @@
+WEBVTT
+
+00:00.330 --> 00:06.660
+Let's get into another developer fundamental and that is pros and cons of libraries.
+
+00:06.750 --> 00:13.440
+You want to be careful with packages because it's not always good to use them.
+
+00:13.440 --> 00:15.270
+Now what do I mean by that.
+
+00:15.270 --> 00:20.430
+Well these packages are created by developers and programmers.
+
+00:20.430 --> 00:25.410
+You can have people that are creating really really good packages but also people that are creating
+
+00:25.770 --> 00:29.570
+bad packages that may be buggy and don't work well.
+
+00:29.640 --> 00:36.180
+So you have to develop that skill to make sure you're able to see hey this package is really popular
+
+00:36.210 --> 00:43.590
+or this package is being maintained or this library is really popular with the community so most likely
+
+00:43.710 --> 00:45.540
+it's a good package to use.
+
+00:45.540 --> 00:52.900
+So this is a skill that you need to develop also keep in mind that every time you add a library to let's
+
+00:52.900 --> 00:59.110
+say your project you're adding more and more code which means more and more bytes of data.
+
+00:59.320 --> 01:02.720
+So your project gets heavier and heavier and heavier.
+
+01:02.830 --> 01:08.350
+So that's also something that you want to consider before you're importing a library ask yourself this
+
+01:08.350 --> 01:10.750
+could I just write this myself.
+
+01:10.750 --> 01:16.930
+You usually want to pull in a library when writing something from scratch yourself is going to be really
+
+01:16.930 --> 01:20.740
+time consuming and you don't have the expertise in that area.
+
+01:20.740 --> 01:25.390
+At the same time it's what makes programming so powerful.
+
+01:25.390 --> 01:25.910
+Right.
+
+01:25.930 --> 01:29.170
+Because we don't have to start everything from scratch.
+
+01:29.170 --> 01:35.650
+And most of the time when you're working as a developer what you're doing is essentially matching and
+
+01:35.950 --> 01:40.600
+pulling in different libraries and getting them to all work together.
+
+01:40.600 --> 01:46.000
+A lot of your work is going to involve working with these libraries reading the documentation of these
+
+01:46.000 --> 01:52.900
+libraries and figuring things out as you go as you try and build a useful tool by combining everything
+
+01:52.900 --> 01:53.930
+together.
+
+01:53.950 --> 01:56.260
+So there's pros and cons to everything.
+
+01:56.890 --> 02:00.840
+And this is just something that you will develop as you progress to your career.
+
+02:00.880 --> 02:02.170
+Just keep an open mind.
+
+02:02.200 --> 02:10.070
+Be careful of using just any library but also learn to read library documentation learn how to use all
+
+02:10.070 --> 02:15.480
+these different tools to combine to create something useful I'll see in the next video.
+
+02:15.630 --> 02:15.860
+Bob.

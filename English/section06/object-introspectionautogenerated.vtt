@@ -1,0 +1,76 @@
+WEBVTT
+
+00:00.710 --> 00:01.710
+Welcome back.
+
+00:01.730 --> 00:11.940
+I want to talk to you about this idea of introspection and introspection in computer programming means
+
+00:11.940 --> 00:17.220
+the ability to determine the type of an object at runtime.
+
+00:17.220 --> 00:18.300
+What is runtime.
+
+00:18.300 --> 00:20.250
+That is when the code is running.
+
+00:20.370 --> 00:28.260
+You can determine the type of an object and it's actually one of Python's strengths because everything
+
+00:28.260 --> 00:30.350
+in Python is an object.
+
+00:30.600 --> 00:32.040
+We can examine.
+
+00:32.040 --> 00:39.570
+We can introspect an object and actually figure out what our code does as we're coding and then running
+
+00:40.650 --> 00:51.080
+and Python allows us to do introspection and inspect these objects with some nice helper functions this
+
+00:51.170 --> 01:05.950
+one function is called dir and Der Well if I run this will give me all of the methods and attributes
+
+01:06.220 --> 01:08.860
+that the wizard instant has.
+
+01:08.860 --> 01:16.560
+So with a dir function we give it an instance and right away we get access to what it has access to.
+
+01:16.720 --> 01:21.700
+Well we see that we have name power and sign in again.
+
+01:21.770 --> 01:24.080
+We have the sign in from the user.
+
+01:24.080 --> 01:34.990
+And then we have also attack from the Wizard class and this Ed that I'm using whenever I do dot is actually
+
+01:34.990 --> 01:42.580
+using this ability of introspection to just list out these available methods for me just like I have
+
+01:42.880 --> 01:44.080
+here.
+
+01:44.080 --> 01:50.260
+So this is really useful when you're trying to figure out why you have access to but you may notice
+
+01:50.260 --> 01:51.230
+something here.
+
+01:51.310 --> 01:57.930
+We have a lot of these Dunder or magic methods that we haven't really talked about.
+
+01:58.090 --> 02:02.920
+What are these and why are they so important in the next video.
+
+02:02.920 --> 02:04.990
+We're going to tackle this question.
+
+02:05.040 --> 02:06.160
+I'll see you now.
+
+02:06.380 --> 02:06.630
+Bobby.

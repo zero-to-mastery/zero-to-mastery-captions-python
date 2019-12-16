@@ -1,0 +1,226 @@
+WEBVTT
+
+00:00.540 --> 00:06.890
+I want to talk quickly about a file parts because for some people this might be a new concept.
+
+00:06.930 --> 00:14.460
+Up until now I wrote let's say something like sad dot Pi or sad dot text and I was able to run this
+
+00:14.460 --> 00:23.610
+code because when I ran it in my terminal or command prompt they were all in the same folder on my desktop.
+
+00:23.610 --> 00:28.540
+If I do present working directory on a Mac it shows me where I'm currently at.
+
+00:28.560 --> 00:30.330
+Which is the desktop.
+
+00:30.330 --> 00:38.250
+So I was able to run it like this because my script file was in the same folder as my sad and test text
+
+00:39.360 --> 00:46.980
+but what happens if this wasn't the case we can actually jump back a directory by saying C D.
+
+00:47.040 --> 00:47.890
+Dot dot.
+
+00:48.030 --> 00:54.440
+So if we go back my present working directory is now user and I go.
+
+00:54.570 --> 01:06.430
+So I'm not on the desktop anymore so that if I try and run Python 3 and then say a script dot pi well
+
+01:07.270 --> 01:08.540
+can't find the file.
+
+01:08.650 --> 01:09.660
+Right.
+
+01:09.850 --> 01:15.780
+So let's go back to desktop and try to figure out this problem.
+
+01:16.050 --> 01:26.590
+I'm going to for now make a directory and call it let's say all a very generic folder or let's just
+
+01:26.590 --> 01:28.770
+call it app.
+
+01:28.820 --> 01:37.590
+So now I have an app folder I can move this sad text into the app folder now.
+
+01:37.710 --> 01:48.810
+So if I grab the sad text and move it to the app folder if I go back now and try to access sad that
+
+01:48.820 --> 02:00.520
+text so let's say Python 3 script up by well if I go back I've appended C++ tax so it's actually creating
+
+02:00.520 --> 02:01.430
+it for me.
+
+02:01.480 --> 02:10.750
+So instead let's actually remove sad dot text because we actually have one already in here in the app
+
+02:11.260 --> 02:14.950
+instead of appending it let's just do a read.
+
+02:15.090 --> 02:22.720
+If I try to read now I get a file not found error sad dot text doesn't exist because it checks the desktop
+
+02:22.810 --> 02:27.480
+and on the desktop we have nothing we don't have sad dot text.
+
+02:27.490 --> 02:29.640
+So how can we get around this.
+
+02:29.650 --> 02:39.130
+Well I simply say that I want to go into the directory app slash sad dot text so that if I run this
+
+02:41.940 --> 02:45.480
+now it's it it's reading it but it's an unsupported operation.
+
+02:45.480 --> 02:47.760
+So let's just turn this into a read
+
+02:51.690 --> 02:53.670
+and we don't need any of this so let's just
+
+02:56.700 --> 02:57.760
+read here.
+
+02:57.860 --> 03:00.260
+If I run this all right.
+
+03:00.300 --> 03:01.680
+It's working now.
+
+03:01.680 --> 03:10.610
+I'm able to change the fact that now if you're on a non Unix based system that is if you're not only
+
+03:10.610 --> 03:12.680
+mac or linux and you're on Windows.
+
+03:12.680 --> 03:17.780
+Most of the time instead of this Slash It's a back slash like this.
+
+03:17.810 --> 03:23.980
+So windows and Unix systems have different file parts and file system in place.
+
+03:24.020 --> 03:30.320
+So this is something that you can read up on depending on your file path and why your present working
+
+03:30.320 --> 03:36.350
+directory is you'll have a better idea of how it should look on Windows it's usually something like
+
+03:36.350 --> 03:40.950
+C and then backslash and then you'll have different file path.
+
+03:40.970 --> 03:43.640
+Now this is called a relative path.
+
+03:43.640 --> 03:49.610
+So relative to where I am where I'm running the script from I am going to go from here into the app
+
+03:49.790 --> 03:51.440
+into said Dot text.
+
+03:51.440 --> 04:01.600
+I could have also copied this entire file path like this and this is called an absolute path.
+
+04:01.600 --> 04:09.870
+So if I run this this still works because I'm giving an absolute path it's saying hey on this computer
+
+04:10.050 --> 04:14.340
+this exists from the root user all the way into here.
+
+04:14.820 --> 04:16.690
+So this is another way of doing it.
+
+04:16.770 --> 04:22.590
+Most of the time you'll see relative because it's a lot simpler finally.
+
+04:22.650 --> 04:30.000
+You might sometimes see something like a dot slash dot slash simply means from the current folder.
+
+04:30.000 --> 04:32.960
+So if I run this it's still going to work.
+
+04:33.060 --> 04:39.840
+It's going to say hey from the current folder go to app folder then go to the text folder.
+
+04:39.840 --> 04:47.410
+If I do dot dot slash like this if I run this I'll get an error.
+
+04:47.490 --> 04:50.700
+Dot dot means back a folder.
+
+04:50.700 --> 04:58.740
+So instead of our present working directory being desktop because we did dot dot will actually go into
+
+04:58.860 --> 05:07.050
+my user account and it's going to try and find and I go a slash app slash sad dot text which is not
+
+05:07.050 --> 05:09.930
+going to find anyway.
+
+05:10.000 --> 05:15.250
+This is a bit of a tangent but I wanted to let you know that these file parts are important and it's
+
+05:15.340 --> 05:23.740
+really dependent on a what operating system you're using like Mac or Windows and also where you're calling
+
+05:23.740 --> 05:30.590
+the file from let's continue our discussion of files in the next video one quick note that I forgot
+
+05:30.590 --> 05:37.950
+to mention there's a really useful built in module and python and you can see here it's new in version
+
+05:37.950 --> 05:40.890
+three point four called Path lib.
+
+05:41.280 --> 05:44.300
+It's an object oriented file system path.
+
+05:44.310 --> 05:50.430
+Now the main thing is you can see how to use it through the documentation but the key thing is that
+
+05:50.430 --> 05:58.380
+if you're building a program that lets say reads something from the file system like a file and this
+
+05:58.380 --> 06:06.090
+program can be used both on Windows and Mac and Linux systems you want a way to make sure that it works
+
+06:06.090 --> 06:06.540
+on both.
+
+06:06.570 --> 06:06.810
+Right.
+
+06:06.810 --> 06:14.380
+Because we saw how Mac and Windows have different file system with different slashes well path lib library
+
+06:14.740 --> 06:16.690
+actually works with both.
+
+06:16.690 --> 06:22.270
+You can see over here if you want to manipulate windows path on a Unix machine or vice versa this is
+
+06:22.270 --> 06:30.860
+going to work for you and it's a good way for you to create software that is compatible with both systems
+
+06:30.890 --> 06:37.520
+because path lib is going to take care of the file past for you based on what machine is running your
+
+06:37.530 --> 06:39.430
+code.
+
+06:39.490 --> 06:43.930
+Now this is something you can read on your own and experiment but I wanted to let you know that this
+
+06:44.350 --> 06:49.770
+does exist and it is a useful library for you to have in the back of your pocket.
+
+06:49.800 --> 06:50.900
+That's it for now.
+
+06:50.970 --> 06:52.660
+I'll see in the next one by.

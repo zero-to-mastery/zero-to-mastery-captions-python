@@ -1,0 +1,217 @@
+WEBVTT
+
+00:00.510 --> 00:01.490
+Welcome back.
+
+00:01.500 --> 00:08.050
+I kept mentioning this key term ignorable but what does it really mean.
+
+00:08.280 --> 00:09.120
+It arable.
+
+00:09.240 --> 00:14.840
+You're going to hear that over and over in Python programming and other programming languages as well.
+
+00:14.930 --> 00:23.960
+And as we discussed a little bit in the previous video irritable simply means it is an object or a collection
+
+00:24.230 --> 00:26.590
+that can be iterated over.
+
+00:26.770 --> 00:36.680
+So again and it arable can be a list can be a dictionary can be a topple can be a set.
+
+00:36.770 --> 00:38.200
+It's a collection of items.
+
+00:38.210 --> 00:42.770
+We also saw that a string could be irritable.
+
+00:42.890 --> 00:45.800
+Now these things are ignorable.
+
+00:45.800 --> 00:46.510
+Why.
+
+00:46.520 --> 00:58.890
+Because if they can be iterated that is iterated means that we can go one by one to check each item
+
+00:59.430 --> 01:00.150
+in the collection
+
+01:03.390 --> 01:07.440
+and you're going to hear this over and over when talking to Python programmers.
+
+01:07.440 --> 01:14.460
+So you want to make sure that you have that vocabulary you're iterating over something you're looping
+
+01:14.730 --> 01:26.860
+over something so terrible is the noun and iterated or iterate is the action of iterating over and editable.
+
+01:26.910 --> 01:29.500
+I know it's a little confusing now.
+
+01:29.520 --> 01:36.570
+Many objects in python like I said are edible but there's a few special ones that we haven't covered
+
+01:36.570 --> 01:38.570
+yet specifically dictionary.
+
+01:38.610 --> 01:43.040
+We saw how lists topples sets and strings can be iterated.
+
+01:43.110 --> 01:45.750
+But what about an object.
+
+01:45.750 --> 01:58.290
+Let's say we have an object here and this object will be users and users or user will have a name of
+
+01:58.560 --> 02:12.130
+column will have age of five thousand six goblins PRETTY OLD AND THEN WE'LL SAY CAN SWIM Gollum let's
+
+02:12.130 --> 02:13.270
+say cannot swim.
+
+02:13.600 --> 02:15.060
+False.
+
+02:15.180 --> 02:27.360
+What if we use this object right here for item in user and we print right here.
+
+02:27.370 --> 02:30.600
+The item what do you think will happen.
+
+02:30.660 --> 02:33.470
+Let's run this well.
+
+02:33.480 --> 02:40.830
+I get an error because I forgot a cell many call in here and we don't why he goes we want semicolon
+
+02:42.210 --> 02:46.620
+and then obviously this needs to be a string as well.
+
+02:46.680 --> 02:53.440
+Now if I click a run here look at that I get name age and can't swim.
+
+02:53.450 --> 02:58.590
+So I've printed the keys of the dictionary.
+
+02:58.910 --> 03:01.610
+Now this dictionary we have the keys.
+
+03:01.610 --> 03:02.540
+That's great.
+
+03:02.550 --> 03:06.430
+But what if I wanted actually the values.
+
+03:06.440 --> 03:15.750
+Is there a way to do this well dictionaries have three methods that are really really useful when we
+
+03:15.750 --> 03:20.210
+want to loop over their keys and values.
+
+03:20.250 --> 03:32.880
+The first one is items and with items when I do this and I click run you'll see that I get the key value
+
+03:32.880 --> 03:44.010
+pair in a table and this is a very common pattern that you'll see a lot another one that we have is
+
+03:44.540 --> 03:58.820
+the values and guess what that does that gives us the values of the dictionary and we saw that user
+
+03:59.450 --> 04:00.520
+just leaving it blank.
+
+04:00.530 --> 04:08.240
+Gives us the keys but we have a method that is more descriptive and allows us to show exactly what we
+
+04:08.240 --> 04:10.430
+want to do which is keys.
+
+04:10.490 --> 04:20.810
+And if we run this you'll see that I'm able to iterate over the keys in these three methods are very
+
+04:20.810 --> 04:24.410
+common and you're gonna use them a lot in your programming career.
+
+04:24.410 --> 04:29.510
+So make sure you take note of them items values and keys.
+
+04:29.510 --> 04:37.660
+It allows us to iterate over dictionaries But another interesting thing they can do and another common
+
+04:37.660 --> 04:47.200
+pattern when iterating over dictionaries is what if you want to print for example separately the items
+
+04:47.710 --> 04:49.980
+name and column.
+
+04:49.980 --> 04:55.530
+So right now we're returning a Tupperware and we saw that we can do trouble unpacking.
+
+04:55.560 --> 04:56.040
+Right.
+
+04:56.100 --> 05:05.550
+I can say key value equals item and then just print key value.
+
+05:05.730 --> 05:15.630
+If I run this you see that I'm able to print these but there's actually a shorthand way of being able
+
+05:15.630 --> 05:18.720
+to do this in here in the for loop.
+
+05:18.720 --> 05:30.110
+I can say key value and just completely avoid this entire line and if I run this.
+
+05:30.300 --> 05:31.030
+There you go.
+
+05:31.080 --> 05:32.430
+It still works.
+
+05:32.640 --> 05:39.000
+And this again is a very common pattern where if you're collecting the items of a dictionary you can
+
+05:39.000 --> 05:46.850
+separate them into key and value or you might even see shorthand K and the again.
+
+05:46.880 --> 05:53.240
+These can be any variables that you want you can name them whatever helps your code be more readable
+
+05:54.310 --> 05:57.720
+by the way just for fun let's say in the last line here.
+
+05:57.730 --> 06:07.050
+I want to iterate over the number 50 what do you think will happen then if I click Run sorry.
+
+06:07.110 --> 06:09.010
+Name the name key.
+
+06:09.080 --> 06:11.730
+Oh I get an error here because I haven't changed.
+
+06:11.750 --> 06:13.890
+So let's change these back.
+
+06:13.890 --> 06:15.710
+That's not the era I was expecting.
+
+06:15.750 --> 06:24.800
+The error I was expecting was this type error int object is not ignorable.
+
+06:24.830 --> 06:29.420
+Now this error should make sense now because I've said it over and over.
+
+06:29.420 --> 06:30.980
+Why is it not adorable.
+
+06:30.980 --> 06:35.580
+Well because it's not an object that can be iterated over.
+
+06:35.600 --> 06:41.540
+It's not a collection of items because we learned that in Python these are editable.
+
+06:41.540 --> 06:43.300
+I'll see in the next video by.

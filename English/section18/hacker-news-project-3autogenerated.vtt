@@ -1,0 +1,190 @@
+WEBVTT
+
+00:01.480 --> 00:02.580
+Welcome back.
+
+00:02.620 --> 00:12.220
+Let's add a another layer to our app which is to sort the list of our links from top to bottom and we
+
+00:12.220 --> 00:20.810
+can do that fairly easily let's hear instead of returning hacker news that we have here will create
+
+00:20.840 --> 00:24.140
+a new function called sort stories
+
+00:27.540 --> 00:35.790
+votes and we'll give it the Hacker News list and we'll create this function up here we'll say define
+
+00:36.570 --> 00:38.770
+sort stories
+
+00:41.440 --> 00:42.130
+by votes
+
+00:45.830 --> 00:48.260
+and this will receive the parameter.
+
+00:48.260 --> 00:54.330
+Hacker News list and we're going to do just a simple sort algorithm here.
+
+00:54.330 --> 00:59.840
+So we're going to use the sort function that we have.
+
+01:00.000 --> 01:04.560
+We're going to give it the Hacker News list and let's see what happens.
+
+01:04.590 --> 01:05.760
+I'm going to run this
+
+01:10.410 --> 01:13.220
+oh and I have to sort it here.
+
+01:13.220 --> 01:14.150
+That's the method.
+
+01:14.150 --> 01:15.700
+Let's run this again.
+
+01:15.860 --> 01:17.810
+We get an error here.
+
+01:17.810 --> 01:25.680
+And if we read the error says Piper not supported between instances of dict and dict.
+
+01:25.730 --> 01:26.600
+What does that mean.
+
+01:26.600 --> 01:32.410
+Well we're trying to sort items in a list but they're all dictionaries.
+
+01:32.690 --> 01:35.650
+So python is saying hey what I don't understand.
+
+01:35.650 --> 01:36.910
+How do you want me to sort it.
+
+01:36.980 --> 01:39.740
+Do you want me to sort of by title by linked by votes.
+
+01:39.740 --> 01:41.060
+You've got to tell me.
+
+01:41.060 --> 01:45.740
+And this is a common part of pattern with sorted that you'll just have to get used to we're going to
+
+01:45.770 --> 01:52.610
+use a lambda function our second parameter is simply going to be the key that we want to sort by and
+
+01:52.630 --> 01:56.190
+that key that we want to search by is well votes.
+
+01:56.320 --> 01:57.540
+Right.
+
+01:57.550 --> 02:03.710
+So all we're going to do is say lambda and say qui
+
+02:06.680 --> 02:17.800
+and this key that we're going to search by is going to be votes so that if I save this and run this
+
+02:17.800 --> 02:28.800
+again look that I have everything sorted by boat as you can see.
+
+02:29.030 --> 02:34.580
+Now if this is overwhelming to you with the Lambda you can go visit the section of the course where
+
+02:34.580 --> 02:36.110
+we talk about lambdas here.
+
+02:36.110 --> 02:42.720
+But this is just a common pattern that you can remember with sorting whenever you're sorting dictionaries.
+
+02:42.800 --> 02:52.890
+We use keys and we can give it this syntax with a lambda and pass it the key that you want to sort by.
+
+02:52.920 --> 02:54.960
+In our case it's the votes.
+
+02:55.130 --> 02:59.330
+The last thing we want to do is we want to actually have the reverse order.
+
+02:59.340 --> 03:05.790
+So the top item in the list should be or the first item in the list should have the highest number of
+
+03:05.790 --> 03:06.210
+votes.
+
+03:06.750 --> 03:13.620
+So we can simply do that with the third parameter by saying reverse equals true.
+
+03:13.620 --> 03:16.370
+Just like that.
+
+03:16.470 --> 03:27.000
+Now if I save and run our code we see that we have a list of all the top links with the very highest
+
+03:27.000 --> 03:33.160
+one of three hundred and nine votes right here very very cool.
+
+03:33.160 --> 03:38.030
+Now the exciting part is that you don't even have to visit Hacker News Web site anymore.
+
+03:38.080 --> 03:44.560
+You can be a complete programmer and do cool things like just read the titles here and we can read about
+
+03:44.670 --> 03:44.860
+it.
+
+03:44.940 --> 03:52.680
+Well Facebook is five billion dollar penalty due to privacy reasons by just selecting this link and
+
+03:52.830 --> 03:58.870
+let's say you're using terminal you can just say open selection as your well and look at that.
+
+03:59.040 --> 04:04.380
+We can read this story directly like that very very cool.
+
+04:04.380 --> 04:10.230
+So now you have a cleaned up more efficient version of Hacker News that you can read every day and all
+
+04:10.230 --> 04:17.140
+you need to do is just run this script in the morning and get your reading done.
+
+04:17.190 --> 04:20.460
+Now there's many ways that you can expand this project.
+
+04:20.460 --> 04:26.850
+You can maybe display this on your own index start a simple file so that you can actually click on these
+
+04:26.860 --> 04:28.260
+links.
+
+04:28.360 --> 04:31.010
+You can do this with other Web sites.
+
+04:31.360 --> 04:40.830
+But my challenge and exercise to you is this how can we expand this list so that it includes more than
+
+04:40.830 --> 04:43.150
+just the first page of Hacker News.
+
+04:43.290 --> 04:49.340
+That is if we go back to hacker news so far we've only scraped these 30 links.
+
+04:49.380 --> 04:56.040
+But what if I click more here and I want to go to the second page and why I want to scrape the first
+
+04:56.100 --> 04:58.350
+two pages of Hacker News.
+
+04:58.680 --> 05:04.200
+How would I go about doing this and the next video I'm going to give you the solution.
+
+05:04.200 --> 05:09.780
+But I challenge you to figure this out on your own and see how you might do it.
+
+05:10.780 --> 05:11.700
+If you get stuck.
+
+05:11.770 --> 05:14.070
+Well I'll see you in the next video by.

@@ -1,0 +1,178 @@
+WEBVTT
+
+00:00.750 --> 00:06.560
+I want to talk quickly about the idea of clean code something that we've talked about before and this
+
+00:06.560 --> 00:10.930
+is a good example to do with something like a function.
+
+00:10.970 --> 00:21.580
+For example let's say we had a function that perhaps checks if a number is even or odd so let's say
+
+00:22.780 --> 00:33.310
+is odd or even as a function that takes in a number and we're going to hear say well how are we going
+
+00:33.310 --> 00:34.200
+to check.
+
+00:34.210 --> 00:45.350
+Well we can use the modulo operator I can say if no modulo 2 which remember gives us the remainder.
+
+00:45.460 --> 00:49.780
+And if it's an even number the remainder is always going to be zero.
+
+00:49.780 --> 00:52.570
+So this is going to tell us if it's an even number.
+
+00:52.570 --> 01:05.350
+So if it's an even number then I want you to return true and if it's not an even number.
+
+01:05.350 --> 01:13.000
+So let's say now to doesn't equal zero.
+
+01:13.040 --> 01:21.030
+So if this is an odd number there is always a remainder in that case we return false.
+
+01:21.230 --> 01:27.140
+So maybe let's change this function to be more descriptive is even.
+
+01:27.410 --> 01:33.870
+So it's going to return true if it's even false if it's not even so in here.
+
+01:34.060 --> 01:43.300
+If I do is even and give it 50 and I run I get a narrow because I have to make sure that I do an L.
+
+01:43.600 --> 01:55.650
+If statement here we have to print here so let's do print and click Run I get true if I do 51 and click
+
+01:55.650 --> 01:58.450
+Run I get false.
+
+01:58.470 --> 01:58.740
+All right.
+
+01:58.740 --> 02:02.220
+It seems to be working but how can we clean up this code.
+
+02:02.880 --> 02:04.190
+Well here's the thing.
+
+02:04.200 --> 02:10.750
+We have some ways that we can actually make this a little bit tighter.
+
+02:10.800 --> 02:22.820
+For example if we're only checking for is even we don't really need to check this again because if no
+
+02:22.830 --> 02:24.570
+module or two doesn't equal 0.
+
+02:24.570 --> 02:29.460
+That is if a number divided by two doesn't always have a remainder of zero.
+
+02:29.460 --> 02:30.900
+We always know that that's.
+
+02:30.990 --> 02:31.890
+Well it's not gonna be.
+
+02:31.890 --> 02:34.860
+Even so we don't even need the statement.
+
+02:34.860 --> 02:39.140
+We can just say else right.
+
+02:39.330 --> 02:42.990
+So that if I run this this still works.
+
+02:42.990 --> 02:43.280
+Sorry.
+
+02:43.310 --> 02:45.750
+So we've cleaned up our code a little bit.
+
+02:46.490 --> 02:47.270
+But here's the thing.
+
+02:47.390 --> 02:54.980
+Another thing we could do is we know that return access the function automatically so we don't even
+
+02:54.980 --> 02:56.940
+need the else statement.
+
+02:57.140 --> 03:05.910
+I can just say return here because it's only going to get to line 5 if this statement is not correct.
+
+03:05.930 --> 03:11.230
+So if it's not even well I'm going to skip line four and go to line five.
+
+03:11.540 --> 03:15.300
+So that if I run this this still works.
+
+03:15.490 --> 03:15.850
+All right.
+
+03:15.850 --> 03:18.340
+But we can make this even cleaner.
+
+03:18.400 --> 03:18.920
+Right.
+
+03:19.000 --> 03:21.090
+Because right now we're just returning.
+
+03:21.090 --> 03:27.950
+True or false and usually if you have something like this we're returning true false directly.
+
+03:28.110 --> 03:34.110
+There is usually a better way and that's using an expression that evaluates to a Boolean.
+
+03:34.560 --> 03:44.930
+We can actually do is simply say hey remove all of this and I want you to just return like this and
+
+03:45.230 --> 03:55.110
+if we run this this still works and if I do 50 this still works because what we're saying here is I
+
+03:55.110 --> 03:58.290
+want you to return whatever this value is.
+
+03:58.290 --> 04:03.360
+And this is an expression right that's going to evaluate TRUE FALSE directly.
+
+04:03.360 --> 04:07.560
+So we get the exact same result as we had before.
+
+04:07.590 --> 04:09.900
+But look how much cleaner that is.
+
+04:09.900 --> 04:12.140
+That is just nice simple code.
+
+04:12.150 --> 04:15.530
+And as a developer I can come in here and right away see that.
+
+04:15.540 --> 04:15.940
+All right.
+
+04:15.990 --> 04:20.830
+Is even is just performing this operation and returning true or false.
+
+04:20.880 --> 04:23.520
+So this is a good way to think about clean code.
+
+04:23.520 --> 04:26.180
+How can you clean up your code and mind you.
+
+04:26.220 --> 04:27.630
+There's no perfect solution.
+
+04:27.630 --> 04:29.420
+You can always clean up code.
+
+04:29.520 --> 04:36.520
+But thinking like this really allows you to develop the way that advanced programmers think I'll see
+
+04:36.520 --> 04:37.470
+you in the next room.
+
+04:37.510 --> 04:37.740
+Bob.

@@ -1,0 +1,286 @@
+WEBVTT
+
+00:00.450 --> 00:08.580
+Now up to this point we've learned that SDR is an ordered sequence of characters right.
+
+00:08.580 --> 00:17.010
+It's essentially a piece of tax where we can write our names passwords paragraphs and sentences and
+
+00:17.100 --> 00:24.720
+strings underneath the hood are stored in memory as I said as eight an ordered sequence of characters.
+
+00:24.720 --> 00:37.300
+So for example if I had the string me me me then this will be stored in our computers memory in an order
+
+00:37.750 --> 00:41.140
+so and will be stored in a place in memory.
+
+00:41.140 --> 00:45.080
+And after that place a memory e will be stored.
+
+00:45.370 --> 00:50.810
+Then the space will be stored and then M then e this space than and the need.
+
+00:50.980 --> 00:57.250
+So if you think of a bookshelf each one of these is ordered in a different part of the bookshelf but
+
+00:57.250 --> 01:07.930
+one after another and the way we can think about this is like this the M is stored in location 0 and
+
+01:07.930 --> 01:19.200
+then e is stored in Location 1 and then space is stored in Location 2 and so on and so forth and each
+
+01:19.470 --> 01:31.140
+shelf now corresponds to a value so that when we ask the computer hey I want you to grab this string
+
+01:31.770 --> 01:37.260
+we know that hey we're going to look in the shelf 0 2 7.
+
+01:37.500 --> 01:39.920
+Now why is this important.
+
+01:40.080 --> 01:47.820
+Because one of the most useful things you can do with strings is to access different part of a string
+
+01:48.180 --> 01:51.690
+using it's what we call an index.
+
+01:51.700 --> 02:00.450
+So for example when you have a string and let's call this variable or this piece of string selfish and
+
+02:00.450 --> 02:10.520
+selfish has me me me me me and I'm going to comment this out just like this.
+
+02:10.840 --> 02:11.680
+Make sure it's aligned.
+
+02:11.740 --> 02:21.520
+OK and what I'm going to do here is I'm going to say selfish and then square brackets right here and
+
+02:21.520 --> 02:24.560
+then type in 0.
+
+02:24.580 --> 02:25.900
+Now if I print this
+
+02:29.320 --> 02:35.570
+and I click Run check that out I get the letter M.
+
+02:35.600 --> 02:36.960
+Why is that.
+
+02:37.010 --> 02:45.050
+Well using the square brackets I'm telling the computer Hey grab the variable selfish and then from
+
+02:45.050 --> 02:53.170
+that variable selfish grab whatever is an index of 0 and what's on that bookshelf of index of 0.
+
+02:53.240 --> 02:57.480
+Well the letter and what if I do seven.
+
+02:57.680 --> 03:05.940
+What do you think will happen if I click Run I get e because on the bookshelf of number seven That's
+
+03:06.020 --> 03:14.700
+E and when I am getting just selfish I get the entire string it's going to say all right I'm gonna grab
+
+03:14.700 --> 03:24.490
+from the bookshelf index of zero all the way to seven very very cool and this concept we're going to
+
+03:24.490 --> 03:32.140
+explore throughout the course and you're going to see why it's important very soon but using this knowledge
+
+03:32.200 --> 03:38.860
+we can do a lot of string manipulation and Python has this unique feature that we're gonna talk about
+
+03:38.860 --> 03:45.830
+right now that allows us to grab different pieces of text so let's have a look here.
+
+03:46.030 --> 03:55.240
+The rule here is when we use square brackets in Python The first item that we put it between the square
+
+03:55.240 --> 04:03.020
+brackets is what we call the start the start is Hey where do you want me to look.
+
+04:03.200 --> 04:05.250
+In our case we said we want to look at zero.
+
+04:05.330 --> 04:11.800
+So we got him we want to look at seven we got eight but then there's an extra thing that we can do if
+
+04:11.800 --> 04:21.790
+we do a Colin here we also have the option to say Hey where to stop.
+
+04:21.930 --> 04:23.010
+What does that mean.
+
+04:23.010 --> 04:32.090
+Well if I do something and you know what let's change this to zero one two three four five six seven
+
+04:32.150 --> 04:33.920
+just so it's easier to understand.
+
+04:34.250 --> 04:43.630
+If I do let's say the zero Colin too and I click Run I get.
+
+04:43.820 --> 04:46.150
+Start at zero and at two.
+
+04:46.250 --> 04:54.400
+So I get to grab zero to one because remember I'm saying start here but then stop as soon as you get
+
+04:54.400 --> 04:55.670
+to bookshelf 2.
+
+04:55.720 --> 05:05.480
+We don't want that so if I do 0 2 7 What do you think will happen while I click Run and I get all the
+
+05:05.480 --> 05:15.990
+way to 6 so in order for us to grab the full string we have to do 0 to 8 because there's actually eight
+
+05:15.990 --> 05:18.390
+characters here right because we start from zero.
+
+05:18.450 --> 05:22.320
+If I click Run there you go.
+
+05:22.410 --> 05:31.290
+Now there's a third thing that we can add here and this is called the STEP OVER AND THE STEP OVER says
+
+05:31.290 --> 05:36.130
+hey start here and here and then step over a few things.
+
+05:36.240 --> 05:43.540
+So the default is 1 because we're going one by one through our bookshelf.
+
+05:43.620 --> 05:49.690
+You see that we get the entire string but if I add to here it steps over by 2.
+
+05:50.070 --> 05:59.880
+So I grab 0 then I step over 1 to grab two then step over one to grab four step over and so on and so
+
+05:59.880 --> 06:00.200
+forth.
+
+06:02.080 --> 06:06.700
+So let me ask you a couple of tricky questions here.
+
+06:06.760 --> 06:12.070
+What happens if I do this.
+
+06:12.120 --> 06:12.960
+Is this valid.
+
+06:12.960 --> 06:15.080
+If I click Run well will happen.
+
+06:15.090 --> 06:19.250
+Ready to guess.
+
+06:19.270 --> 06:23.950
+One two three four five six seven this says Hey.
+
+06:23.960 --> 06:25.030
+Start at 1.
+
+06:25.040 --> 06:26.780
+So that is right here.
+
+06:26.990 --> 06:29.950
+But then afterwards stop.
+
+06:29.960 --> 06:31.640
+Well there's nothing there.
+
+06:31.640 --> 06:36.410
+So the default is going to say go all the way to the end.
+
+06:36.430 --> 06:39.080
+I know this is confusing but hang in there.
+
+06:39.100 --> 06:43.910
+Practice this often enough and this will become second nature OK.
+
+06:43.920 --> 06:49.100
+What if I do something like this where I don't feel the start and do five here.
+
+06:49.200 --> 06:50.150
+What happens now.
+
+06:53.990 --> 06:56.420
+I get zero one two three four.
+
+06:56.510 --> 06:58.340
+All the way until five.
+
+06:58.520 --> 07:04.570
+So it starts as default zero and goes to five OK.
+
+07:04.570 --> 07:16.030
+What if I do something like this to semicolons and then when I click Run All right I get the default
+
+07:16.180 --> 07:20.840
+behavior because it's starting at zero when there's nothing.
+
+07:20.920 --> 07:24.410
+It ends whenever the string ends when there's nothing.
+
+07:24.460 --> 07:28.350
+And then we're stepping over through it once.
+
+07:28.430 --> 07:29.180
+All right.
+
+07:29.180 --> 07:32.970
+But what if we do something like this.
+
+07:33.020 --> 07:35.700
+What if I do minus one here.
+
+07:35.700 --> 07:36.340
+Mm hmm.
+
+07:36.380 --> 07:37.720
+This is a tricky one.
+
+07:38.000 --> 07:38.630
+What will happen.
+
+07:38.840 --> 07:50.200
+Let's find out I get seven in Python the negative index means Hey start at the end of the string so
+
+07:50.200 --> 07:55.130
+that if I do minus two I get six.
+
+07:55.170 --> 08:04.040
+If I do minus three I get five because I'm going backwards and a neat trick that you can do here is
+
+08:04.460 --> 08:12.350
+if we do semicolon semicolon minus one and this is actually quite a common operation.
+
+08:12.350 --> 08:15.130
+So you just have to memorize this even though it looks weird.
+
+08:15.350 --> 08:18.610
+It means start stop.
+
+08:18.650 --> 08:19.940
+There's no limit here.
+
+08:19.940 --> 08:22.650
+But I want to step over from the back.
+
+08:22.700 --> 08:32.820
+So what do you think will happen here if I click Run you see that we get the reverse of the string.
+
+08:32.940 --> 08:40.990
+So this is a very useful notation if you want to let's say reverse an order and if we want to let's
+
+08:40.990 --> 08:49.850
+say skip by two click Run and you see that we're skipping by two now now hopeful your head doesn't hurt
+
+08:49.910 --> 08:52.480
+with all this notation you just have to get used to it.
+
+08:52.490 --> 08:56.540
+It's something quite unique to Python but it's very very useful.

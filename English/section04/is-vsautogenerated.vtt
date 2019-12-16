@@ -1,0 +1,256 @@
+WEBVTT
+
+00:01.380 --> 00:01.910
+All right.
+
+00:01.940 --> 00:04.970
+In this video I'm going to try and tricky.
+
+00:05.190 --> 00:11.020
+I want you to look at these expressions where I'm checking for equality right.
+
+00:11.040 --> 00:18.720
+I'm saying hey does true equal four one does empty string equal one due to race equal that are empty
+
+00:18.750 --> 00:26.540
+equal while each other now pause a video here and try to guess what the outcomes of this are going to
+
+00:26.540 --> 00:27.950
+be.
+
+00:28.200 --> 00:28.940
+Ready.
+
+00:29.130 --> 00:31.410
+By the way if you get one hundred percent on this wall.
+
+00:31.560 --> 00:36.960
+Good for you because if this was my first time learning python I wouldn't get this.
+
+00:36.960 --> 00:40.940
+Let's go home.
+
+00:40.940 --> 00:50.510
+Is that why you expected true evaluated so true because one evaluated to true an empty string.
+
+00:50.510 --> 00:56.740
+It goes to one evaluated to false that makes sense because they definitely don't equal each other right.
+
+00:56.900 --> 01:09.050
+An empty array doesn't equal to one and a 10 equals ten point zero and then both arrays that are empty
+
+01:09.110 --> 01:10.910
+equal to true.
+
+01:10.910 --> 01:21.580
+Now the reason I'm showing you here is that the double equals checks for equality or equality of value.
+
+01:21.710 --> 01:28.280
+That is if for example the first on true equals to one there's two different types one's an integer
+
+01:28.400 --> 01:33.100
+one's a boolean it will convert them into the same type.
+
+01:33.110 --> 01:39.950
+In this case this will be converted like this to a boolean value.
+
+01:40.010 --> 01:42.860
+And if you remember one is truth.
+
+01:42.950 --> 01:49.250
+So this will evaluate to True which is why we get true.
+
+01:49.310 --> 01:58.540
+What about the other one well on empty string is false see so it evaluates to false and false doesn't
+
+01:58.540 --> 02:00.880
+equal true.
+
+02:00.880 --> 02:01.140
+Right.
+
+02:01.150 --> 02:04.590
+Because we're checking for equality here.
+
+02:04.600 --> 02:08.440
+So one of these gets converted to the other's type.
+
+02:08.490 --> 02:10.800
+What about an empty array.
+
+02:11.010 --> 02:20.970
+Again an empty array is actually false see so that's not going to equal one a ten equals to a float
+
+02:21.180 --> 02:22.320
+of ten point 0.
+
+02:22.560 --> 02:26.400
+That gets converted to an integer or float.
+
+02:26.400 --> 02:33.240
+And they're going to equal each other and that's an expected behavior and then an empty array well equals
+
+02:33.240 --> 02:34.310
+an empty array.
+
+02:34.350 --> 02:42.990
+If I add in this array one two three one two three and I click Run I get an invalid syntax because I
+
+02:42.990 --> 02:49.510
+have this year let's run that again I get true that makes sense.
+
+02:49.510 --> 02:55.060
+Let's change this to one and see what happens if I click Run.
+
+02:55.080 --> 03:01.310
+All right still false Now this does get a little tricky right.
+
+03:01.730 --> 03:02.120
+Mm hmm.
+
+03:02.120 --> 03:04.210
+Should this have evaluated too.
+
+03:04.210 --> 03:12.130
+True but now we get false so this doesn't get converted in time vs. what we had here.
+
+03:12.170 --> 03:18.130
+Now don't get confused by this because this would be bad code if you're checking something like this.
+
+03:18.140 --> 03:25.070
+Well obviously you should be checking two types two of the same types together.
+
+03:25.340 --> 03:33.110
+Ideally when you use comparison operators or logical operators like this you're comparing two types
+
+03:33.140 --> 03:39.740
+and you're not letting Python do this type conversion and hopefully Python figures it out for us.
+
+03:39.740 --> 03:49.220
+But I hope the W quality makes sense because there's another check that we can do which is is and is
+
+03:49.370 --> 03:51.570
+well as a keyword in Python.
+
+03:52.130 --> 04:01.080
+What happens if we change all these equal signs to is do you think there will be a difference.
+
+04:01.910 --> 04:04.110
+Let's have a look.
+
+04:04.160 --> 04:12.690
+If I click Run I get false for everything.
+
+04:12.810 --> 04:14.560
+So what's the difference here.
+
+04:14.610 --> 04:19.970
+Equals checks for the equality in value such as one two three.
+
+04:20.160 --> 04:28.950
+Well that's has the same value as one two three in a list is actually checks if the location and memory
+
+04:29.220 --> 04:34.740
+where this value is stored is the same.
+
+04:34.910 --> 04:35.960
+Let's go through that.
+
+04:35.960 --> 04:43.100
+So true is that one note true is not one true is while only true.
+
+04:43.100 --> 04:43.920
+Right.
+
+04:44.090 --> 04:45.680
+That will be true.
+
+04:45.680 --> 04:49.810
+What about string one is that one.
+
+04:49.810 --> 04:50.190
+No.
+
+04:50.230 --> 04:55.300
+I mean for one to be a shrink that needs to be one.
+
+04:55.300 --> 04:56.460
+Right.
+
+04:56.500 --> 05:05.410
+Because the one string isn't only in one place in memory it's literally the exact same thing.
+
+05:05.410 --> 05:06.820
+What about this list.
+
+05:06.820 --> 05:10.520
+As a matter of fact lists two is array empty array.
+
+05:10.540 --> 05:15.550
+Is that or is this list a list.
+
+05:15.550 --> 05:19.850
+Well if we run this I still get false
+
+05:22.710 --> 05:31.050
+and this is a little tricky and also advanced every time I create a list it's added in memory somewhere.
+
+05:31.080 --> 05:41.000
+So this is in a location in memory but whenever I create a new list it's created in another location.
+
+05:41.000 --> 05:47.830
+So these are two completely different lists that live in different locations in memory.
+
+05:47.900 --> 05:54.110
+So it's going to check hey is this in the same memory space same bookshelf as that one.
+
+05:54.110 --> 05:55.540
+No that's not it.
+
+05:56.240 --> 06:01.640
+But why does this work for things like numbers and strings.
+
+06:01.640 --> 06:09.530
+And that's because underneath the hood these are types that are very simple that are in memory but in
+
+06:09.620 --> 06:17.600
+one location versus something like a list even though this might be the same list with the same items
+
+06:18.710 --> 06:26.870
+because this is a data structure every time we create it it's created in a new location so that even
+
+06:26.870 --> 06:36.470
+if we have a variable a that contains this list and by the way this will be the same for all our data
+
+06:36.470 --> 06:41.090
+structures like dictionaries sets topples.
+
+06:41.420 --> 06:52.410
+If I do B equals this and I check a is that B No they're created in a different memory space.
+
+06:52.470 --> 06:57.740
+So this where a points is in a different place than where B points.
+
+06:58.050 --> 07:09.070
+But if I do a equals to b I get true because this double equality checks only the values.
+
+07:09.100 --> 07:15.040
+Now this is a bit of a hard topic so you might have to watch this video a couple of times you might
+
+07:15.040 --> 07:20.860
+have to practice this a few times yourself but just keep in mind the difference between IS and double
+
+07:20.860 --> 07:24.330
+equals E is tends to be a little stricter.
+
+07:24.610 --> 07:32.440
+You're checking for the exact thing that you're looking for versus equality which checks the value.
+
+07:32.440 --> 07:33.190
+All right.
+
+07:33.280 --> 07:34.330
+That was a doozy.
+
+07:34.350 --> 07:36.050
+Clancy in the next video by.

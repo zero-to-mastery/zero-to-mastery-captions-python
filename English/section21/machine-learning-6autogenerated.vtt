@@ -1,0 +1,148 @@
+WEBVTT
+
+00:00.390 --> 00:03.080
+Holy moly we did it.
+
+00:03.120 --> 00:05.030
+That wasn't too bad was it.
+
+00:05.040 --> 00:11.820
+I mean there's a lot of new concept and machine learning is a big big topic that could be a whole course
+
+00:11.880 --> 00:13.100
+in its own.
+
+00:13.230 --> 00:19.220
+But I hope I was able to narrow down the essence of machine learning so you understand what's happening
+
+00:19.230 --> 00:28.340
+when people talk about M.L. we're simply doing these steps and we've learned about all of these steps
+
+00:28.520 --> 00:37.770
+so that now you can start to improve on them and learn how to perhaps improve at each step of the way.
+
+00:37.820 --> 00:43.010
+Now I've created a little notebook here that you can actually follow.
+
+00:43.010 --> 00:52.850
+I even have done some visualizations for you here using map plot lib to show you some of the iris dataset
+
+00:53.330 --> 00:55.740
+and kind of explore it on your own.
+
+00:56.690 --> 01:06.170
+But the key here is that you use Jupiter notebooks to visualize data to manipulate data to clean data
+
+01:06.710 --> 01:14.780
+and then slowly as you start to learn about your data you start making predictions to test your data
+
+01:15.410 --> 01:23.990
+to train your model on this dataset and hopefully get it to the point where you can make some important
+
+01:24.020 --> 01:26.060
+business decisions.
+
+01:26.060 --> 01:34.160
+Now this iris dataset isn't necessarily useful to somebody like Amazon or Google but using these basic
+
+01:34.160 --> 01:42.860
+principles you now have the ability to increase the ability of a model from just detecting flower types
+
+01:43.220 --> 01:54.620
+to detecting all sorts of images image recognitions self-driving cars all use the same principles but
+
+01:54.620 --> 02:04.010
+at the end of the day all we're doing is creating these models or functions by giving them inputs and
+
+02:04.130 --> 02:11.630
+some of our outputs to see how good we can create that function and all we're doing is moving ourselves
+
+02:11.750 --> 02:20.330
+away from the function writers to simply the data aggregators and the people that change the inputs
+
+02:20.630 --> 02:25.260
+here and there to try and make the function as good as possible.
+
+02:25.300 --> 02:29.190
+Now the topic of machine learning is really really vast.
+
+02:29.320 --> 02:36.450
+There's different topics that we can explore but the key thing is that there are a lot of tools and
+
+02:36.460 --> 02:43.450
+in order for you to do machine learning really well you need big datasets.
+
+02:43.450 --> 02:49.720
+So companies that we talked about like Microsoft Amazon Netflix can do machine learning really well
+
+02:50.020 --> 02:56.490
+and invest a lot of money into machine learning because they have these datasets available now.
+
+02:56.500 --> 03:04.660
+You can create your custom models but these big companies also offer things like trainable models that
+
+03:04.660 --> 03:12.790
+is very general models like vision auto email vision that you can train but they initially at least
+
+03:13.030 --> 03:20.080
+have created the base model for you or you can even use the pre trained models which essentially do
+
+03:20.110 --> 03:21.550
+everything for you.
+
+03:21.580 --> 03:27.550
+It's that model that you can just plug and play and use and you get the benefit of all that data that
+
+03:27.550 --> 03:28.720
+Google collected.
+
+03:28.720 --> 03:32.110
+They just give you the model that you want to use.
+
+03:32.200 --> 03:38.770
+You want to do translation Well you just send them the text and they'll respond with the translated
+
+03:38.800 --> 03:41.900
+text for you because remember what I said.
+
+03:42.010 --> 03:49.630
+The value is not necessarily in the model but in the data that we use in creating that model.
+
+03:49.630 --> 03:50.950
+This was a big topic.
+
+03:51.160 --> 03:52.570
+I hope your head doesn't hurt.
+
+03:52.690 --> 03:56.080
+And if you don't get everything 100 percent don't worry.
+
+03:56.080 --> 04:02.110
+This is a big topic that is constantly evolving and there are so many advances happening every single
+
+04:02.110 --> 04:09.640
+day that even the experts are overwhelmed the idea of this section was just to introduce you to the
+
+04:09.640 --> 04:14.690
+topic so that maybe if this picture interest you can explore these topics on your own.
+
+04:14.770 --> 04:21.130
+Further along I'll least some resources some of my favorite resources for you so that you can explore
+
+04:21.130 --> 04:22.480
+this a little bit further.
+
+04:22.480 --> 04:23.270
+But for now.
+
+04:23.470 --> 04:24.820
+Good job getting this far.
+
+04:24.820 --> 04:26.080
+I'm really proud of you.
+
+04:26.080 --> 04:27.970
+I'll see you in the next one.
+
+04:27.970 --> 04:28.270
+Bye bye.

@@ -1,0 +1,94 @@
+WEBVTT
+
+00:00.830 --> 00:01.840
+Welcome back.
+
+00:01.850 --> 00:07.880
+Remember this slide I told you that we're going to wait until we set up our developer environment.
+
+00:07.970 --> 00:13.170
+And up until now we've been using a browser to run our Python code.
+
+00:13.340 --> 00:20.360
+But we want to be professional developers and professional developers use professional tools in our
+
+00:20.360 --> 00:21.050
+case.
+
+00:21.080 --> 00:24.220
+These are the main ones in the Python community.
+
+00:24.290 --> 00:28.190
+Right now we have the terminal or command prompt.
+
+00:28.190 --> 00:37.970
+If you're on Windows to run quick python scripts and we've seen this before I can go into my terminal
+
+00:38.630 --> 00:42.760
+type in Python or Python 3.
+
+00:42.770 --> 00:48.890
+Make sure that we have that version and then in here I can just write any python script that I want
+
+00:51.560 --> 00:58.270
+I enter it and I just run these simple scripts and I can just exit like this.
+
+00:58.300 --> 01:04.060
+This is used for just quick testing but most of the time you're not going to see professional programmers
+
+01:04.420 --> 01:07.060
+use this method very often.
+
+01:08.570 --> 01:16.850
+Instead most of the time we use something like code editors or I.D. Now nothing's preventing me from
+
+01:17.180 --> 01:24.880
+writing Python code in let's say a word document a Google Docs or a text file.
+
+01:24.950 --> 01:32.270
+But the problem with that is that well it just looks like text and when you make a spelling error when
+
+01:32.270 --> 01:36.590
+you write improper syntax where it's not Python code.
+
+01:36.590 --> 01:41.660
+If I'd just write it a word document it's not going to tell me any information.
+
+01:41.690 --> 01:50.570
+A professional developer need some extra tools that code editors and ideas provide that help us be more
+
+01:50.570 --> 01:55.650
+efficient with our code and we're going to be exploring that over the next couple of videos.
+
+01:55.790 --> 02:01.160
+But what is a code editor and an idea and what's the difference.
+
+02:01.220 --> 02:08.690
+We're actually going to show you how each of these work but a simple rule is that code editors are light
+
+02:08.870 --> 02:17.000
+weight they give you some really nice features like auto completion lynching which we're going to talk
+
+02:17.000 --> 02:23.450
+about while I.D. are full fledged environments.
+
+02:23.630 --> 02:33.380
+That is they provide a ton of extra stuff in order for us to just write really good code because of
+
+02:33.380 --> 02:34.660
+that they tend to be bigger.
+
+02:34.660 --> 02:40.880
+You have to download a large file size but they come with a lot of things like auto completion debugging
+
+02:41.330 --> 02:45.050
+code formatting unit testing code snippets.
+
+02:45.050 --> 02:51.080
+So on and so forth versus code editors where you have to just install bits and pieces and kind of create
+
+02:51.170 --> 02:58.480
+your own environment but enough talk let's actually install some of these and don't worry at the end.
+
+02:58.490 --> 03:04.370
+We'll also introduce you to this idea of a Jupiter notebook which is one of my favorites.

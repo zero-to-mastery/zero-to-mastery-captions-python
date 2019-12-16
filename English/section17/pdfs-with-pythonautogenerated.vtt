@@ -1,0 +1,448 @@
+WEBVTT
+
+00:00.330 --> 00:02.570
+Let's talk about PDX.
+
+00:02.700 --> 00:05.280
+How do we process them.
+
+00:05.300 --> 00:10.860
+I mean we've learned about working with files in our previous section with Python.
+
+00:11.180 --> 00:16.430
+And you can imagine that we can work with any files we've learned about image processing but we've also
+
+00:16.430 --> 00:24.440
+learned that we can just manipulate any text file any PDA file any CSP or excel file.
+
+00:24.440 --> 00:29.860
+These are all just file types that we can process and work with in Python.
+
+00:29.930 --> 00:37.150
+In this section we're going to talk about PD F and how this might work and this knowledge of PD F will
+
+00:37.160 --> 00:39.680
+transferred to different file formats.
+
+00:39.680 --> 00:45.110
+Now we're going to talk about Excel files and CSP files later on in the course when we get into machine
+
+00:45.110 --> 00:45.830
+learning.
+
+00:45.920 --> 00:51.890
+But for now let's work with PD and see how we can use python to make our lives easier.
+
+00:51.890 --> 00:57.350
+Now I'm going to link to some PDA files that we have here that we're going to use in this section.
+
+00:57.350 --> 01:00.200
+We have a simple dummy PDA file.
+
+01:00.200 --> 01:08.420
+We have a another PDA file that actually has two pages and then we have a watermark PD F which we're
+
+01:08.420 --> 01:15.600
+going to save for our final project in the section but let's go back here from what we've learned so
+
+01:15.600 --> 01:16.120
+far.
+
+01:16.140 --> 01:23.720
+What do you think our first step is Well our first step is to find a library that we can use with Python
+
+01:23.720 --> 01:28.520
+to process PDA files and get ready for this section.
+
+01:28.520 --> 01:31.120
+I have a really impressive Web site.
+
+01:31.130 --> 01:37.100
+Probably the best web site you've seen probably the cleanest most modern web site when it comes to the
+
+01:37.160 --> 01:38.550
+package that we're installing.
+
+01:38.690 --> 01:47.650
+We're installing something called Pip 3 install P Y PD f.
+
+01:47.760 --> 01:51.100
+Now there's a lot of packages that we can install when it comes to PDX.
+
+01:51.120 --> 01:54.270
+This is the one that I recommend for the course.
+
+01:54.280 --> 01:58.320
+Now while this is installing in my case it's already installed.
+
+01:58.320 --> 02:00.950
+Let me show you what their Web site documentation looks like.
+
+02:00.960 --> 02:01.580
+Get ready.
+
+02:01.620 --> 02:03.240
+It's pretty.
+
+02:03.290 --> 02:04.280
+Here it is.
+
+02:04.280 --> 02:04.670
+Wow.
+
+02:04.670 --> 02:05.760
+Right.
+
+02:05.780 --> 02:11.840
+I don't know why but for some reason Python documentation Web sites are not the prettiest.
+
+02:11.840 --> 02:13.700
+I mean this is all subjective right.
+
+02:13.700 --> 02:18.170
+Some people like this but it just doesn't get you excited about working with PDX.
+
+02:18.170 --> 02:19.920
+This Web site does it anyway.
+
+02:19.930 --> 02:26.840
+You can see over here that it's actually not that big of a library and you can click on the documentation
+
+02:26.870 --> 02:29.030
+and again read through everything.
+
+02:29.030 --> 02:32.070
+But let's just learn the basics.
+
+02:32.240 --> 02:38.310
+So the first thing I'm going to do is import P Y PD F two.
+
+02:38.720 --> 02:45.380
+And what we're going to do is work with the first one the dummy up EDF which is just this PDA file that
+
+02:45.380 --> 02:48.730
+has one single page that says dummy PDA file.
+
+02:48.920 --> 02:51.100
+Nothing too exciting.
+
+02:51.120 --> 02:53.710
+Now how can we open this file.
+
+02:53.850 --> 02:55.860
+We know this from previous lessons.
+
+02:55.860 --> 02:56.220
+Right.
+
+02:56.220 --> 03:02.510
+We can use that with open command and we'll say dummy dot PDA.
+
+03:03.240 --> 03:10.510
+And I can say it like this because we're in the same folder I have a PDA if dot py file that I've created.
+
+03:10.570 --> 03:18.500
+So I'm just saying Hey grab the dummy PDA F from the same directory and in here Let's for now just do
+
+03:18.560 --> 03:27.270
+read because I want to read the file and then just say as a file and for now print file to see what
+
+03:27.270 --> 03:28.030
+we get.
+
+03:28.220 --> 03:34.060
+I'm going to run this file by saying Python 3 PDA f dot pi.
+
+03:34.140 --> 03:37.490
+Let's see what happens.
+
+03:37.500 --> 03:38.370
+All right.
+
+03:38.370 --> 03:42.790
+I get a text Io wrapper name dummy PDA f.
+
+03:43.000 --> 03:43.250
+All right.
+
+03:43.260 --> 03:46.090
+It looks like it's working.
+
+03:46.350 --> 03:52.130
+Let's just explore this a little bit more to see that it is indeed working.
+
+03:52.470 --> 03:55.910
+What we can do is actually use that pipe EDF to read the file.
+
+03:56.100 --> 03:59.280
+So let's do this.
+
+03:59.340 --> 04:12.140
+We can say reader equals pi PD F and use the method PD f file reader again.
+
+04:12.240 --> 04:22.780
+It allows us to read this python file so let's just give it file in here and then we'll just print reader
+
+04:23.110 --> 04:26.010
+and we can ask for a number of pages.
+
+04:26.020 --> 04:28.000
+Again this comes with the library.
+
+04:28.000 --> 04:31.500
+So let's run this and see what happens.
+
+04:31.510 --> 04:32.320
+All right.
+
+04:32.500 --> 04:33.550
+We get an error.
+
+04:33.650 --> 04:41.560
+It says PD f read warning paedophile reader stream file object is not in binary mode.
+
+04:41.680 --> 04:43.030
+What does that mean.
+
+04:43.030 --> 04:46.520
+Well remember binary is ones and zeros right.
+
+04:46.550 --> 04:52.980
+If I click on dummies dummied up EDF this is not the PDA we thought.
+
+04:52.980 --> 04:55.380
+This is how a PDA should look.
+
+04:55.380 --> 05:01.820
+But you see depending on the program that you're running it might not be able to read the PDA file.
+
+05:01.830 --> 05:07.770
+So what we need to do and this is just a standard that you have to remember is that we want to read
+
+05:07.890 --> 05:13.970
+the binary so it's read and then binary.
+
+05:14.090 --> 05:24.050
+So what happens here is that this creates a file stream object so it's going to convert the file object
+
+05:24.260 --> 05:36.270
+to binary mode so that the P Y PDL 2 file reader can read this binary file object.
+
+05:36.300 --> 05:40.560
+So now if I run this again look at that.
+
+05:40.560 --> 05:43.580
+It's able to read it and it tells me that this has one page.
+
+05:44.160 --> 05:52.240
+If I do two page dot EDF and run this we get two pages.
+
+05:52.290 --> 05:52.840
+Awesome.
+
+05:52.860 --> 05:57.020
+Let's clear this and go back to our dummy up EDF.
+
+05:57.030 --> 05:59.490
+I feel bad for naming this PDA if dummy.
+
+05:59.490 --> 06:01.270
+I shouldn't be mean to this PBF.
+
+06:01.540 --> 06:04.700
+I'll I'll work on my naming conventions next time.
+
+06:04.830 --> 06:13.540
+So just like we saw in the image processing with BP EDF we can do a lot of things to process this image.
+
+06:13.720 --> 06:14.790
+For example I can do.
+
+06:14.830 --> 06:16.000
+Get page here.
+
+06:16.210 --> 06:20.650
+And if I do get page let's say the first page and I run this
+
+06:23.620 --> 06:27.410
+we get the page object over here.
+
+06:27.440 --> 06:33.770
+Now it looks like gibberish here because while this is a special object that pipe EDF creates.
+
+06:33.770 --> 06:40.510
+But if I do something like page one which will be the page two in this case I get an error an index
+
+06:40.510 --> 06:46.570
+error saying list index out of range because the dummy PBF f only has one page.
+
+06:46.660 --> 06:53.740
+We can also do different things like let's for example rotate this image and we'll rotated one hundred
+
+06:53.740 --> 06:59.890
+and eighty degrees if I run this.
+
+06:59.930 --> 07:01.240
+This doesn't work.
+
+07:01.310 --> 07:03.680
+Now why is this.
+
+07:03.680 --> 07:13.340
+It's because P Y PD f 2 uses the reader object but it needs to know what to rotate in our case we actually
+
+07:13.340 --> 07:16.740
+have to get the page of the reader to rotate it.
+
+07:16.820 --> 07:27.310
+So we have to do something like reader dot get page get the first page of our dummy PDA F and assign
+
+07:27.310 --> 07:34.510
+this to the page variable so that now that we have the page object remember a page object and a reader
+
+07:34.510 --> 07:39.210
+object fine now run this well I get page.
+
+07:39.280 --> 07:45.230
+Object has no attribute rotate and I may have tricked you a little bit to prove a point here.
+
+07:45.250 --> 07:51.970
+Now this rotate objects sounds like something that it should have but it's actually not the right name
+
+07:51.970 --> 07:52.870
+that we want.
+
+07:52.870 --> 07:54.550
+So how can we solve this.
+
+07:54.820 --> 08:03.240
+And this gets back to us reading the documentation if I go back to the file reader and lets search rotate
+
+08:03.750 --> 08:09.590
+or let's go back here we see that we have the page object class which we have right.
+
+08:09.600 --> 08:18.350
+We have the page object if I click over here let's find rotate and we have a few things we have merged
+
+08:18.350 --> 08:27.260
+rotate page we keep going keep going keep going and all right we have rotate clockwise rotate counterclockwise
+
+08:27.320 --> 08:29.720
+and the angle so it looks like this is what we need.
+
+08:29.720 --> 08:36.340
+We don't actually have a rotate method but you see here this is how we figure out what the library does.
+
+08:36.350 --> 08:39.630
+We also have scale to scale by if we want it to.
+
+08:39.710 --> 08:49.970
+So let's just copy rotate clockwise or let's do rotate counterclockwise and we'll just do 90 if I save
+
+08:49.970 --> 08:52.480
+this and run.
+
+08:52.700 --> 09:00.380
+All right we get back an object here but this object is actually in memory if I go back to my dummy.
+
+09:00.400 --> 09:04.990
+Nothing has changed because we haven't really saved anything.
+
+09:05.020 --> 09:07.780
+This is all in my computer's memory.
+
+09:07.780 --> 09:12.250
+When this program stops running well it gets trashed.
+
+09:12.250 --> 09:18.960
+So let's update our dummied up PD F to actually right and rotate counterclockwise.
+
+09:18.970 --> 09:19.720
+How can we do that.
+
+09:20.290 --> 09:32.090
+Well with another with keyword so inside of with open we're going to say with open and we'll call this
+
+09:32.210 --> 09:34.450
+let's say crooked.
+
+09:34.600 --> 09:36.100
+I don't know if this is how you spell crooked.
+
+09:36.130 --> 09:46.160
+So let's go with tilt dot PD F and we're going to open this file and we're going to write to this file
+
+09:46.370 --> 09:56.860
+in binary format and we're going to say as file and in here we're going to write the file to this new
+
+09:56.860 --> 09:57.590
+file.
+
+09:57.670 --> 09:59.750
+But how can we do this.
+
+09:59.770 --> 10:06.430
+This library gives us something called a writer object so we can create a writer variable.
+
+10:06.580 --> 10:14.970
+And this writer variable will use the P Y PD f dot PD F instead of follow meter.
+
+10:15.040 --> 10:16.480
+We have a file
+
+10:19.140 --> 10:31.180
+and this allows us to write the object in memory so that now I can say writer dot write and just to
+
+10:31.180 --> 10:35.400
+make the naming convention appropriate let's say this is going to be the new file.
+
+10:35.560 --> 10:44.790
+So we'll say new file so let's see if this works I'm going to clear and let's run this.
+
+10:44.950 --> 10:45.350
+All right.
+
+10:45.370 --> 10:54.980
+We have tilt dot PD F but we actually forgot to do one thing because we've just opened a writer object
+
+10:55.520 --> 10:58.980
+but we're not actually writing any PDX into it.
+
+10:59.030 --> 11:03.680
+Ideally we get the rotated page and write inside of it.
+
+11:03.680 --> 11:04.400
+Right.
+
+11:04.430 --> 11:16.190
+So what we can do is remove the print here we've rotated the page and with the writer object that we
+
+11:16.190 --> 11:27.980
+have now we can say writer dot add page and give it the page that we've rotated.
+
+11:28.010 --> 11:38.440
+So now if I run this one more time and go to tilt Well again we see gibberish here but if we open this
+
+11:39.840 --> 11:44.230
+look at that harpy IDF is rotated just like that.
+
+11:44.250 --> 11:50.020
+Very very cool so that's great but kind of useless.
+
+11:50.020 --> 11:50.350
+Right.
+
+11:50.380 --> 11:52.060
+Who really rotates PDX.
+
+11:52.090 --> 12:00.650
+That's really hard to read but at least this shows you the ability for us to process PDX let's work
+
+12:00.650 --> 12:03.200
+on something more exciting in the next video.
+
+12:03.200 --> 12:06.390
+I want us to do something a little bit more useful than this.
+
+12:06.410 --> 12:08.600
+So let's take a break and I'll see you in the next one.

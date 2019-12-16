@@ -1,0 +1,466 @@
+WEBVTT
+
+00:00.300 --> 00:01.510
+Welcome back.
+
+00:01.530 --> 00:06.330
+In this video I want to talk about an important concept which is return.
+
+00:06.330 --> 00:11.290
+It's a key word in Python that we are going to see a lot when working with functions.
+
+00:11.340 --> 00:12.180
+So let's have a look.
+
+00:12.450 --> 00:19.560
+If I let's say I want to create a function called sum which by the way already exists in Python but
+
+00:19.590 --> 00:21.030
+we're going to create our own.
+
+00:21.030 --> 00:25.650
+And I'm going to say number one for number one and number two.
+
+00:25.830 --> 00:36.240
+Well are some function is going to add name one plus name two nice and simple function.
+
+00:36.240 --> 00:48.120
+Now if I run some with number four and five guess what's about to happen I'm going to hit run and nothing
+
+00:48.270 --> 00:49.070
+happens.
+
+00:49.230 --> 00:53.970
+Which I mean might not be surprising to you because we're not printing anything right.
+
+00:54.150 --> 00:56.710
+But what if I run print here.
+
+00:56.880 --> 00:58.440
+Will this change.
+
+00:58.500 --> 01:02.430
+Let's see.
+
+01:02.760 --> 01:05.750
+I get none.
+
+01:05.800 --> 01:07.760
+Is that what you expected.
+
+01:07.870 --> 01:10.120
+And we've seen none before.
+
+01:10.120 --> 01:10.770
+Right.
+
+01:10.780 --> 01:19.360
+I mean remember when we had a list let's say one two three and then we did something like clear on it
+
+01:20.420 --> 01:29.430
+in our editor it gave us this little arrow and said none and we talked about this idea of on lists something
+
+01:29.430 --> 01:37.920
+like clear changes the actual list and clears everything and empties the list but it doesn't return
+
+01:37.950 --> 01:45.940
+a new list it just modifies the existing list but instead just returns None to us.
+
+01:45.960 --> 01:55.350
+Well functions are just like that they always have to return something and when they don't return anything
+
+01:55.380 --> 02:05.530
+like there's no return keyword here it automatically returns None so if we don't have something like
+
+02:05.770 --> 02:13.480
+return here it's always going to return nothing but if we add return it's going to say as soon as we
+
+02:13.480 --> 02:21.420
+get to lying to hate I want you to exit this function and when you exit this function I want you to
+
+02:21.420 --> 02:24.450
+return whatever this expression gives us.
+
+02:24.750 --> 02:37.390
+If I click Run I get nine if we change this to 10 plus five we get 15 and this is a good general rule
+
+02:37.390 --> 02:41.710
+with functions because functions can do two things right.
+
+02:41.710 --> 02:44.690
+One it can return something.
+
+02:44.710 --> 02:51.880
+So at the end of the function whatever after the function gets run we return something either none or
+
+02:51.880 --> 02:59.140
+some sort of a value some sort of a data type or we can have a function that doesn't return anything
+
+02:59.170 --> 03:01.870
+but perhaps modifies something.
+
+03:01.870 --> 03:04.630
+So for example I could print
+
+03:07.770 --> 03:14.700
+and if I hit run here I return None because I don't have that return statement.
+
+03:14.700 --> 03:24.390
+However my function does something it modifies Well the look of this tax write a prints high for us.
+
+03:24.540 --> 03:34.360
+So a function either modifies something in our program or returns something and this is a topic that
+
+03:34.360 --> 03:38.940
+is quite advanced that we'll get into later on when we talk about functional programming.
+
+03:39.370 --> 03:52.130
+But a good rule of thumb with functions is this a function should do one thing really well and usually
+
+03:52.130 --> 04:02.740
+a function should return something Now this doesn't mean that any function that maybe does multiple
+
+04:02.740 --> 04:10.210
+things or any function that doesn't return something is bad but it's generally good practice to make
+
+04:10.210 --> 04:14.020
+your code simple and readable to have these two rules.
+
+04:14.110 --> 04:19.530
+For example here if I have print and additions.
+
+04:19.690 --> 04:23.040
+Well this function is doing multiple things.
+
+04:23.110 --> 04:24.730
+It's worrying about printing.
+
+04:24.730 --> 04:26.770
+And it's also worrying about something.
+
+04:26.950 --> 04:32.060
+And the definition this function is called some.
+
+04:32.170 --> 04:40.300
+I mean if I didn't know or I didn't see this and all I did was run some I think having printing high
+
+04:41.230 --> 04:44.770
+would be surprising because the name doesn't really describe what it does.
+
+04:44.770 --> 04:46.690
+I mean I'm expecting this to be summed.
+
+04:46.750 --> 04:49.550
+Why is my program saying hi.
+
+04:49.660 --> 04:55.840
+So we want to make sure that our function does one thing and one thing only really well because as we
+
+04:55.840 --> 04:59.920
+will see later on we can combine and run different functions together.
+
+05:00.370 --> 05:08.050
+And then also we want to make sure that we return something because this way what we can do is we can
+
+05:08.050 --> 05:13.110
+actually assign this return value to a variable.
+
+05:13.150 --> 05:25.230
+For example I can say total equals to some 10 5 and because this function returns something and when
+
+05:25.290 --> 05:28.640
+it's done running is going to have 15 as a value.
+
+05:28.680 --> 05:32.330
+That's the same thing as what we're doing here.
+
+05:32.470 --> 05:34.120
+And here's the cool part.
+
+05:34.210 --> 05:44.060
+Now I can run maybe some 10 plus total.
+
+05:44.200 --> 05:52.560
+Now let's go through this one by one I define my function the Python interpreter is going to say all
+
+05:52.560 --> 05:54.500
+right I know what some is now.
+
+05:54.540 --> 05:55.640
+You've defined it.
+
+05:55.680 --> 05:57.090
+I'm going to keep it in memory.
+
+05:57.090 --> 05:59.720
+It's going to keep going keep going until line 7.
+
+05:59.730 --> 06:06.670
+And it's going to say hey I want a variable total and I want that total variable to equal some 10 5.
+
+06:06.780 --> 06:12.060
+And before we even assign anything to total Python interpreter is going to say some.
+
+06:12.120 --> 06:13.200
+What's some again.
+
+06:13.200 --> 06:16.800
+Oh I remember here it's in memory OK at some.
+
+06:16.830 --> 06:19.890
+I'm gonna give it argument's 10 and five.
+
+06:19.890 --> 06:25.050
+So it's going to go run that function as soon as we end this closing bracket.
+
+06:25.050 --> 06:29.860
+It's going to go into the sum it's going to say Hey Number one is going to equal 10.
+
+06:29.910 --> 06:33.610
+Hey num two is going to equal five.
+
+06:33.680 --> 06:41.300
+Now we go to line two and it's going to say hey I want you to add 10 plus five because I know what these
+
+06:41.300 --> 06:42.690
+variables are.
+
+06:42.860 --> 06:48.530
+And then once you're done with that and this turns into 15 I want you to return.
+
+06:48.530 --> 06:54.800
+So the Python interpreter finally when it's done calling some is going to say hey assign the value of
+
+06:54.800 --> 06:57.790
+15 to the variable total.
+
+06:58.100 --> 06:59.580
+And then it's going to go to the next line.
+
+06:59.630 --> 07:01.210
+Hey I want to print something.
+
+07:01.220 --> 07:02.060
+What do you want to print.
+
+07:02.180 --> 07:04.670
+Well I want to print this.
+
+07:05.210 --> 07:06.880
+It's going to say hey what some.
+
+07:06.890 --> 07:08.180
+I know what's on this.
+
+07:08.210 --> 07:09.270
+I have it in memory.
+
+07:09.410 --> 07:15.110
+And then again it's going to say 10 and then the next argument is going to be total Hey what's total.
+
+07:15.110 --> 07:18.040
+Let me go in memory and find out oh it's 15.
+
+07:18.140 --> 07:25.990
+So it's like saying 15 and this is the power of functions right.
+
+07:26.070 --> 07:35.940
+I'm able to return things and assign them to variables and call them like this and I can keep running
+
+07:35.940 --> 07:41.620
+them if I wanted to if I want to make this even simpler I can go some instead of total.
+
+07:41.700 --> 07:44.560
+We'll be right here and look at that.
+
+07:44.610 --> 07:52.690
+Now I have it all in one line and if I click run again it still works OK.
+
+07:53.270 --> 07:57.310
+But what if we do something like this.
+
+07:57.710 --> 08:04.300
+What if I say define some and then I'll say define inside of here.
+
+08:04.670 --> 08:18.890
+Another function and this function takes num 1 and num to an end here we finally return number one and
+
+08:18.890 --> 08:20.950
+number two.
+
+08:21.730 --> 08:22.540
+Let's test the set.
+
+08:22.570 --> 08:23.620
+What do you think will happen.
+
+08:24.430 --> 08:38.810
+Well first let's say total equals some 10 plus 20 and then I'm going to print Total if I click Run I
+
+08:38.810 --> 08:41.590
+get none now.
+
+08:41.650 --> 08:42.840
+Why is that.
+
+08:43.420 --> 08:44.680
+And this should be obvious to you.
+
+08:44.800 --> 08:49.080
+Because here I'm saying hey I want you to define some.
+
+08:49.090 --> 08:51.920
+And what are we going to do with the function some.
+
+08:52.000 --> 08:55.960
+Well inside of here I'm going to define another function.
+
+08:55.960 --> 09:02.950
+But this return statement is actually not run right because all we're doing inside of this block this
+
+09:02.950 --> 09:12.560
+code block is this part we're defining the function but we're never calling another function so this
+
+09:12.650 --> 09:20.850
+returns None and we've lost the ability to well to call this function.
+
+09:20.930 --> 09:23.510
+So how can we solve this.
+
+09:23.510 --> 09:25.530
+One way is to return.
+
+09:25.580 --> 09:26.120
+Right.
+
+09:26.150 --> 09:30.350
+So at the end here we have to make sure that the indentation is right.
+
+09:30.530 --> 09:34.070
+And we're going to return another func.
+
+09:34.190 --> 09:37.180
+So let's add return and see what happens here.
+
+09:37.430 --> 09:44.020
+If I click Run All right I get this function now.
+
+09:44.080 --> 09:48.370
+So total is going to equal this function that we returned.
+
+09:48.610 --> 09:51.600
+And it's in memory OK.
+
+09:51.620 --> 09:54.290
+But I'm not getting the result that I want.
+
+09:54.290 --> 09:54.850
+Right.
+
+09:54.860 --> 09:56.030
+And why is that.
+
+09:56.030 --> 09:59.480
+Because while we're not calling this function.
+
+09:59.480 --> 10:01.460
+So there's a few ways that we can do this.
+
+10:01.550 --> 10:06.170
+We can either give it the parameters or the arguments in here.
+
+10:06.200 --> 10:08.240
+So let's say 10 20.
+
+10:08.300 --> 10:19.060
+And if I click Run I get 30 or if we want to keep whatever we give it here I can just simply say another
+
+10:19.060 --> 10:19.840
+func.
+
+10:19.930 --> 10:29.610
+So if we give it num 1 and num two and I click Run Hey look at that I get 30.
+
+10:29.710 --> 10:36.120
+Now this video you might have to watch over and over because it does stretch your mind a little bit.
+
+10:36.250 --> 10:42.380
+And to be honest this function is not very good because it's well it's very confusing.
+
+10:42.490 --> 10:44.980
+Your function should be easy to understand.
+
+10:45.550 --> 10:54.360
+So we might want to change this up a bit maybe instead over here of having the same parameter names.
+
+10:54.400 --> 11:05.050
+Just to clarify it maybe we can say and one and and two and then here we do and one plus and two to
+
+11:05.050 --> 11:12.310
+clarify that when we return this other function I'm using the parameters number one and number two that
+
+11:12.310 --> 11:20.340
+we called here because this definition of a function doesn't really care what these things are.
+
+11:20.340 --> 11:24.470
+It only cares when another function gets called.
+
+11:24.530 --> 11:30.710
+Now if you need to pause the video and look at this and maybe practice this a little bit that's completely
+
+11:30.710 --> 11:31.790
+understandable.
+
+11:31.880 --> 11:34.890
+But I wanted to show you the power of return.
+
+11:35.060 --> 11:41.810
+You can have nested functions just like you could with conditionals but you have to be careful that
+
+11:42.050 --> 11:45.090
+your function either returns something.
+
+11:45.140 --> 11:47.790
+Otherwise it's going to return None.
+
+11:48.110 --> 11:52.550
+And most of the time you're going to want to return something from a function.
+
+11:52.550 --> 11:59.180
+So we can do something like this where we assign it to a variable so we can use it later on in our programs.
+
+11:59.180 --> 12:00.720
+I'll see in the next one by
+
+12:03.800 --> 12:13.620
+one last thing a return keyword automatically exits the function so that in here if I added another
+
+12:13.620 --> 12:24.410
+piece of code like print Hello or maybe even have return five in here you see that it's still valid
+
+12:24.650 --> 12:34.420
+but if I run this I still get 30 because the interpreter never gets to line five and six because as
+
+12:34.420 --> 12:39.930
+soon as we return something from a function it exits that function.
+
+12:40.570 --> 12:47.530
+And the reason that this part doesn't exit the function is because remember inside of this function
+
+12:47.860 --> 12:48.950
+we're defining.
+
+12:49.060 --> 12:55.360
+So we're not actually running this part we're just saying hey when we see another function coming up
+
+12:55.480 --> 12:59.040
+in our code we know what it is but we're not going to run it.
+
+12:59.050 --> 13:00.460
+So it's going to look like this.
+
+13:00.560 --> 13:05.590
+And as soon as it sees the return statement when it gets cold it's going to say alright I'm exiting
+
+13:06.160 --> 13:10.820
+out of this function with this value just a little heads up.

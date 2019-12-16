@@ -1,0 +1,196 @@
+WEBVTT
+
+00:00.360 --> 00:01.360
+Welcome back.
+
+00:01.410 --> 00:05.440
+In the previous video we saw that we did some big booboo.
+
+00:05.440 --> 00:13.290
+That is we overrode name and speak and now all that hard work that we put into our class has been overridden
+
+00:13.710 --> 00:15.130
+by this.
+
+00:15.210 --> 00:23.740
+I mean sure if we instantiate a new object we will have our run and speak but.
+
+00:23.770 --> 00:27.440
+Player 1 now is completely useless.
+
+00:27.790 --> 00:35.820
+It has no name and speak but it just says boo completely useless now in Python.
+
+00:35.830 --> 00:38.490
+There's this idea of public and private.
+
+00:38.850 --> 00:42.720
+And this is related to our discussion of abstraction.
+
+00:42.960 --> 00:49.830
+The idea behind abstraction is that we hide away information and only give access to things that a user
+
+00:49.830 --> 00:52.460
+is concerned about right.
+
+00:52.470 --> 00:56.010
+So ideally we shouldn't have access to in it.
+
+00:56.010 --> 01:03.000
+Ideally we shouldn't be able to let's say modify run or modify name and H because when we create a player
+
+01:03.000 --> 01:11.680
+character in our game hopefully the player can just randomly change their name or their H and sneak
+
+01:11.680 --> 01:21.330
+into our game that perhaps is only 18 and over so can we make a private variable in our class.
+
+01:21.340 --> 01:22.660
+Well here's the thing.
+
+01:22.660 --> 01:28.940
+Some languages allow us to have private variables for example in a language like Java.
+
+01:29.020 --> 01:36.520
+I can actually say that an attribute is private like this and I won't be able to access it and modify
+
+01:36.520 --> 01:37.660
+it like I had this way.
+
+01:38.320 --> 01:45.250
+But in Python there's no true privacy no true private variables.
+
+01:45.250 --> 01:47.660
+So how do we get around this.
+
+01:47.660 --> 01:57.290
+Well what we would do is do underscore name or underscore each now.
+
+01:57.290 --> 01:59.510
+Does this give any special power.
+
+01:59.510 --> 01:59.790
+No.
+
+01:59.810 --> 02:04.610
+This is just a convention that is as programmers as Python programmers.
+
+02:04.610 --> 02:10.880
+We determined that hey if we see underscore in our code that most likely means that this should be a
+
+02:10.880 --> 02:22.530
+private variable so that when I use it and speak let's say underscore name underscore H and let's comment
+
+02:22.570 --> 02:27.010
+this out if I click Run.
+
+02:27.180 --> 02:35.090
+Well I have to run this because now it's a method let's click Run and I get my name is Andre and I'm
+
+02:35.090 --> 02:38.530
+a hundred years old it all works.
+
+02:38.680 --> 02:48.810
+But if I tried to overwrite these and click Run hope and now because it's no longer a method let's remove
+
+02:48.810 --> 02:53.900
+speak and I click Run this still works.
+
+02:53.900 --> 02:59.120
+And that's because like I said there's no true private variables as programmers.
+
+02:59.120 --> 03:02.000
+We've decided that underscore means that you shouldn't touch us.
+
+03:02.150 --> 03:03.650
+Please don't touch this.
+
+03:03.650 --> 03:08.190
+You can still be bad and do something like this but I'm letting you know ahead of time.
+
+03:08.360 --> 03:11.860
+If you see underscore this shouldn't be modified.
+
+03:11.900 --> 03:16.910
+This should be private and that's how we achieve privacy in Python.
+
+03:16.910 --> 03:21.200
+We all kind of agreed to say hey let's keep this little thing private.
+
+03:21.200 --> 03:29.120
+So if you ever want to keep a method or a an attribute private you just put an underscore in front of
+
+03:29.120 --> 03:29.360
+it.
+
+03:29.420 --> 03:31.670
+But it's no guarantee.
+
+03:31.670 --> 03:35.470
+What about this double underscore in it.
+
+03:35.580 --> 03:40.380
+Again this is something we're going to be speaking about very shortly but it's called a Dunder method
+
+03:41.500 --> 03:48.780
+that is it's built into python and we usually never write our own Dunder methods.
+
+03:48.780 --> 03:50.780
+We would never write double underscore.
+
+03:50.820 --> 03:51.060
+Right.
+
+03:51.060 --> 03:59.710
+This these double underscores and there's lots of them have special meaning in Python.
+
+03:59.820 --> 04:06.360
+And the reason that they're named like this is because they're saying hey if you're writing double underscore
+
+04:06.360 --> 04:09.150
+for your variable you're doing something very wrong.
+
+04:09.240 --> 04:11.160
+You're about to overwrite something.
+
+04:11.160 --> 04:18.000
+So once again this double underscore is also a convention to let people know you shouldn't really touch
+
+04:18.000 --> 04:21.950
+this or modify this with each data type.
+
+04:21.960 --> 04:29.070
+Let's say a list if I do dot you'll see that as you scroll down you have a lot of these Dunder methods.
+
+04:29.070 --> 04:34.140
+Again something that we're going to talk about but these are here to let you know don't overwrite these
+
+04:34.500 --> 04:39.720
+if you're doing something like underscore underscore I don't know doc like this.
+
+04:39.720 --> 04:40.530
+That's bad.
+
+04:40.530 --> 04:50.800
+Don't don't try and modify it and assign into five so this idea of a private field is important to Python.
+
+04:51.360 --> 04:55.350
+And although we can overwrite a lot of things it's bad practice.
+
+04:55.350 --> 04:57.590
+But let's bring it back to abstraction.
+
+04:57.660 --> 05:05.730
+The idea is to abstract away this code and although it can be modified and overridden by using these
+
+05:05.730 --> 05:12.930
+proper conventions like private attributes we're able to abstract things away but still make sure that
+
+05:13.260 --> 05:17.940
+whatever the user might be using isn't going to break our code.
+
+05:18.600 --> 05:19.740
+I'll see in the next one.
+
+05:19.930 --> 05:20.140
+Bob.

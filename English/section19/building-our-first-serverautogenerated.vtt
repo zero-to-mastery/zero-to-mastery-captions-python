@@ -1,0 +1,325 @@
+WEBVTT
+
+00:00.920 --> 00:01.830
+Welcome back.
+
+00:01.850 --> 00:05.210
+Let's build our first Web site now.
+
+00:05.260 --> 00:12.940
+I've already created a folder called Web server because this is going to be our web server for now.
+
+00:12.940 --> 00:19.930
+And inside of this web server we have an index Don ACM all file which will be the extension for creating
+
+00:19.930 --> 00:20.960
+a nation email file.
+
+00:20.980 --> 00:28.180
+We have script dot J.S. which is the extension for writing javascript just like we have dot PI for writing
+
+00:28.180 --> 00:29.110
+Python.
+
+00:29.110 --> 00:33.540
+And then we have style dot c assess for writing CSF styles.
+
+00:33.580 --> 00:39.920
+Now in this section I'm going to be using Sublime Text and my eye term terminal.
+
+00:40.060 --> 00:43.330
+But you can use whatever developer tool that you want.
+
+00:43.600 --> 00:49.480
+I like using these ones just for the screen recordings they help because well it's nice and clean it
+
+00:49.480 --> 00:55.810
+doesn't give me too many hints so that I can also make errors and show you along as I make errors how
+
+00:55.810 --> 00:57.070
+I fix them.
+
+00:57.250 --> 01:01.480
+But again you can use Visual Studio code whatever you prefer.
+
+01:01.520 --> 01:09.990
+Now you see over here that all these files are empty but remember a web server simply gives these three
+
+01:09.990 --> 01:17.070
+files to a browser so that the browser can display the page so let's start off with a Shia e-mail.
+
+01:17.360 --> 01:22.790
+How do we write HMO well Sublime Text actually lets me do something interesting here.
+
+01:22.820 --> 01:29.690
+If I type in a CML and then hit tab it auto fills it for me.
+
+01:29.690 --> 01:30.340
+All right all right.
+
+01:30.350 --> 01:34.130
+I kind of cheated but hey I don't want to bore you to death.
+
+01:34.310 --> 01:43.280
+So this is a standard HMO file because I have the DOT HMO extension if I have this type of syntax I
+
+01:43.280 --> 01:46.820
+can write HMO and it's not that difficult.
+
+01:46.820 --> 01:51.380
+We have opening tags and closing tags with the backslash here.
+
+01:51.380 --> 01:55.130
+So we have the head of the Web site with the title.
+
+01:55.130 --> 01:57.710
+So this is what appears on the tab.
+
+01:57.800 --> 02:04.250
+So let's say my Web site very creative.
+
+02:04.350 --> 02:05.280
+So that's the head.
+
+02:05.280 --> 02:06.380
+And then the body.
+
+02:06.450 --> 02:09.960
+This is what gets displayed on a Web site.
+
+02:09.990 --> 02:18.220
+So in here I can say I am a web master just like that.
+
+02:18.360 --> 02:21.400
+And we've created are a sham Alpha.
+
+02:21.400 --> 02:30.150
+Now check this out if I now open index on a HMO if I right click here and let's say open in your window
+
+02:30.720 --> 02:34.230
+or you can even just go and double click this file.
+
+02:34.260 --> 02:36.270
+So if I double click this.
+
+02:36.270 --> 02:38.970
+Look at that I am a web master.
+
+02:39.000 --> 02:40.680
+Just simple text.
+
+02:40.680 --> 02:49.730
+Nothing too crazy but I've just created my first web site let's continue with CSX CSX has a different
+
+02:50.570 --> 02:55.950
+syntax than a Shia CSF syntax goes something like this.
+
+02:56.320 --> 03:03.730
+We can give it what a simple element we want to add some styling to in our case let's say body and I
+
+03:03.730 --> 03:13.330
+can say body then curly brackets and in here I want to have background let's say color and we'll go
+
+03:13.330 --> 03:25.390
+with let's go with green Phi save this and I refreshed the page Mm hmm.
+
+03:25.430 --> 03:27.170
+Nothing happened.
+
+03:27.170 --> 03:32.540
+And this is a little small detail that again this isn't a web development course so we don't need to
+
+03:32.570 --> 03:33.560
+worry too much about.
+
+03:33.770 --> 03:42.440
+But essentially the very first thing that happens is that the HMO file gets sent and the HMO file is
+
+03:42.440 --> 03:46.110
+actually the only thing that gets read by the browser.
+
+03:46.550 --> 03:53.870
+So within the HMO file I have to say hey HMO by the way we also have a c assess file.
+
+03:53.870 --> 03:58.320
+Can you also use that in the website so we can do that in the head.
+
+03:58.320 --> 04:07.700
+Tag by using something called a link tag so a link tag can actually remove some of this.
+
+04:07.830 --> 04:16.710
+We simply have to say hey it's a type of text C Ss and it has something called H riff H or f simply
+
+04:16.710 --> 04:24.750
+says hate whereas this file located in our case because it's in the same folder as our index site HMO
+
+04:25.290 --> 04:33.030
+we can simply say it's style dot c SS because well just look for style that's SS and that's where the
+
+04:33.390 --> 04:35.250
+style file is.
+
+04:35.250 --> 04:41.160
+And now if you remember we also had the relationship style sheet that we need to include.
+
+04:41.160 --> 04:44.810
+I just removed it so that we can see why we're writing over here.
+
+04:44.850 --> 04:50.520
+So if we do style sheet and this is just something a syntax that you have to get used to if you want
+
+04:50.520 --> 05:00.750
+to include a CSX file if I saved this and go back and refresh it look at that my ugly Web site let's
+
+05:00.750 --> 05:09.030
+make it a little bit bigger my ugly Web site with a green background color now has some stop if I open
+
+05:09.030 --> 05:10.400
+up the developer tools.
+
+05:10.440 --> 05:10.980
+Once again
+
+05:14.330 --> 05:23.740
+and I hit refresh look at that I get an HMO file and a CSX file awesome.
+
+05:24.130 --> 05:27.360
+So I just created my own Web server.
+
+05:27.580 --> 05:28.630
+Right.
+
+05:28.750 --> 05:34.240
+We could even write JavaScript here but again this is in a javascript core so we don't need to worry
+
+05:34.240 --> 05:34.780
+about it.
+
+05:34.810 --> 05:36.280
+In this case here you go.
+
+05:36.280 --> 05:43.840
+I just wrote some javascript which this is kind of like writing print in Python five refresh the page
+
+05:43.840 --> 05:52.750
+one more time again JavaScript file doesn't get displayed because well we have to again tell index that
+
+05:52.750 --> 06:01.900
+a symbol that we need a javascript file and usually JavaScript files are contained in a script tag usually
+
+06:01.900 --> 06:03.670
+at the bottom of the body.
+
+06:03.820 --> 06:05.030
+So let's close that.
+
+06:05.050 --> 06:13.210
+And then in here instead of using the H ref we just have to say as RC for source and then once again
+
+06:13.270 --> 06:14.660
+where's the javascript file.
+
+06:14.680 --> 06:17.100
+It's at script J Yes.
+
+06:17.500 --> 06:26.050
+So if I save this and I refresh the page look at that we're now loading this script J.S. file and all
+
+06:26.050 --> 06:29.920
+it's doing is if we click on the console tab is there you go.
+
+06:29.920 --> 06:36.730
+It printed something in the console and console is something that JavaScript uses but all we care about
+
+06:36.730 --> 06:47.460
+is that we're able to serve these three files what we've done is created our very first server but you
+
+06:47.460 --> 06:56.150
+may have noticed something when you went up over here look at the you URL path that we have that's not
+
+06:56.450 --> 06:59.760
+why you usually type into a Web site right.
+
+06:59.780 --> 07:04.340
+I mean we saw that the Web site over here is Casey D dot com.
+
+07:04.340 --> 07:11.060
+Well has the dot com uses a GDP that's a real Euro right.
+
+07:11.160 --> 07:19.040
+Well I'm sorry to tell you that we didn't actually create a real web server because all we've done is
+
+07:19.040 --> 07:26.840
+we've served to the browser some files from as you can see from our computer.
+
+07:26.900 --> 07:33.350
+So all it's doing is the browser saying hey I'm going to display these files that are located right
+
+07:33.350 --> 07:40.890
+here on your computer so essentially we have a web server that's also running a browser but that's not
+
+07:40.890 --> 07:42.640
+how real life works.
+
+07:42.660 --> 07:44.790
+Why would that be.
+
+07:44.790 --> 07:52.260
+Well imagine if he had your own Web site do you really want to have people from all over the world access
+
+07:52.320 --> 07:57.750
+your Web site directly through your computer grabbing the files from your computer.
+
+07:57.750 --> 07:59.310
+I mean no right.
+
+07:59.310 --> 08:03.540
+There's a lot of security issues there's a lot of issues with performance.
+
+08:03.540 --> 08:08.040
+You have to keep your laptop on the entire time so people can access your Web site.
+
+08:08.060 --> 08:15.180
+Instead we want to a web server which as the name suggests service files and specializes in serving
+
+08:15.180 --> 08:20.520
+files to browsers somewhere in the world that I don't have to worry about.
+
+08:20.520 --> 08:26.430
+It's not on my computer somebody owns that machine somebody owns that computer and it's on all the time
+
+08:26.460 --> 08:32.820
+so that whenever we go to a Web site or a link it's always going to be running and sending those files
+
+08:32.880 --> 08:34.000
+out.
+
+08:34.050 --> 08:41.190
+So we're finally going to get back to Python here because what we want to do is do something more sophisticated
+
+08:41.430 --> 08:48.930
+than just having these files on our machine instead we want to build a real server using Python that
+
+08:48.930 --> 08:55.130
+we can deploy so that people can access our Web site anywhere in the world.
+
+08:55.140 --> 09:00.600
+Now you might still be confused this whole process might not make complete sense to you because we're
+
+09:00.600 --> 09:02.130
+just getting started but don't worry.
+
+09:02.160 --> 09:05.470
+By the end of it all it's all going to make sense.
+
+09:05.520 --> 09:13.710
+So let's forget about the browser for now and get into building a real server something more sophisticated
+
+09:13.740 --> 09:19.170
+than what we've done up until now which is just a folder with these three files and we just double click
+
+09:19.170 --> 09:20.430
+on index that Asia.
+
+09:21.390 --> 09:23.500
+I'll see you in the next video by.
