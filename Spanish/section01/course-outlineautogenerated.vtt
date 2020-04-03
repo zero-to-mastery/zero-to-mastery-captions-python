@@ -1,0 +1,253 @@
+WEBVTT
+
+00:00.600 --> 00:04.260
+Hola, estoy super emocionado de empezar este curso contigo.
+
+00:04.320 --> 00:09.510
+Pero antes necesitamos ver en donde comenzamos y donde terminaremos.
+
+00:09.870 --> 00:12.210
+Así tendremos un paso libre hacia el éxito.
+
+00:12.420 --> 00:19.770
+Este curso incluye más de 200 videos en alta definición y proyectos, pero todos están desglosados
+
+00:19.770 --> 00:23.010
+en secciones para ayudarnos a aprender mejor.
+
+00:23.010 --> 00:27.310
+Este curso va a comenzar con lo básico de Python aquí.
+
+00:27.360 --> 00:32.730
+Si es la primera vez que aprendes un lenguaje de programación, este curso será super super útil aun
+
+00:32.730 --> 00:37.770
+para aquellos que saben un lenguaje de programación, pero no conocen nada acerca de python.
+
+00:37.770 --> 00:44.040
+Esta sección te pondrá al día con lo básico así te sentirás más cómodo programando.
+
+00:44.040 --> 00:45.330
+Esta es una sección grande. 
+
+00:45.510 --> 00:52.320
+Así que tendremos dos partes y a lo largo del camino me veras escribiendo código pero tu también participa y
+
+00:52.320 --> 00:57.330
+practica escribiendo código así te pondrás cómodo con lo que Python tiene para ofrecerte.
+
+00:57.390 --> 01:01.630
+A continuación hablaremos acerca de un entorno de desarrollo profesional de python. 
+
+01:01.710 --> 01:07.530
+Te ensenaremos como usar la terminal y la línea de comandos, acerca de editores de código como Sublime Text
+
+01:07.530 --> 01:09.140
+y Visual Studio Code.
+
+01:09.150 --> 01:11.110
+Hablamos acerca de usar Pi Charm.
+
+01:11.190 --> 01:18.170
+Una idea completamente integrada para los desarrolladores de Python y también de cómo usar Júpiter Notebooks porque vamos a 
+
+01:18.210 --> 01:22.710
+usar estos "notebooks" más tarde en curso para hacer algo muy emocionante. 
+
+01:22.710 --> 01:24.540
+Pista pista es aprendizaje automatizado.
+
+01:24.540 --> 01:32.040
+Y una vez que tengamos nuestro entorno profesional de desarrollador entonces nos adentraremos en temas avanzados de Python.
+
+01:32.040 --> 01:36.780
+Ahora esta sección no nos vamos a asustar de los temas difíciles porque te ayudare a entenderlos
+
+01:36.780 --> 01:38.500
+y darle sentido a todo.
+
+01:38.520 --> 01:45.270
+Vamos a hablar acerca de clases, programación orientada a objetos, acerca de decoradores, generadores, manejo de aire
+
+01:45.330 --> 01:51.740
+programación funcional también y las mejores prácticas cuando se trata de escribir código limpio.
+
+01:52.050 --> 01:58.650
+Y también hablaremos acerca de los paquetes populares de Python, como trabajar con archivos, como comprobar nuestro código, como
+
+01:58.650 --> 02:01.520
+usar expresiones regulares y mucho más.
+
+02:01.590 --> 02:05.320
+Estas por delante de mi dolor al final de esta sección pero créeme que será divertido.
+
+02:05.550 --> 02:08.100
+Ahora la mayoría de los cursos se realizaran para entonces.
+
+02:08.220 --> 02:12.420
+Habrás aprendido python y estarás listo.
+
+02:12.420 --> 02:19.560
+Bueno no reamente, porque una vez que aprendamos este nuevo lenguaje, esta nueva sintaxis, tendremos nuestras computadoras listas
+
+02:19.560 --> 02:21.030
+para trabajar con Python.
+
+02:21.060 --> 02:24.570
+Tenemos que hablar de cómo podemos aplicar nuestro nuevo conocimiento.
+
+02:24.600 --> 02:26.710
+Esa es la parte divertida del curso.
+
+02:26.910 --> 02:30.710
+Empezaremos hablando de las carreras y las opciones de carreras que tienes en Python.
+
+02:30.990 --> 02:34.180
+Luego nos adentramos en diferentes campos que podemos usar en python.
+
+02:34.380 --> 02:40.260
+Vamos a aprender acerca de secuencias de comando en Python cuando usemos python para mandar correos electrónicos automatizados.
+
+02:40.260 --> 02:47.970
+Usamos python para procesar imágenes que funcionen con archivos PDA, vamos a usar python para mandarnos a nosotros mismos mensajes de texto.
+
+02:47.970 --> 02:54.870
+Construiremos un bot de Twitter y mi proyecto favorito en esta sección es construir un comprobador de contraseñas para
+
+02:54.870 --> 02:58.580
+ver si las contraseñas que estés usando han sido robadas por hackers.
+
+02:58.590 --> 03:00.350
+Es un proyecto muy muy divertido.
+
+03:00.360 --> 03:08.430
+También hablaremos acerca de raspado de datos, un caso de uso muy común con python es raspar datos en línea y
+
+03:08.430 --> 03:10.180
+usarlo para algo productivo.
+
+03:10.230 --> 03:15.750
+En nuestro caso vamos a aprender a usar el raspado de datos y ver cómo podemos raspar un sitio web popular 
+
+03:15.750 --> 03:22.350
+para programadores que solo seleccionen los artículos que son importantes para ti para estar al dia con la industria.
+
+03:22.350 --> 03:24.510
+Repito, será un proyecto muy muy divertido.
+
+03:24.510 --> 03:27.760
+Lo sé, estoy diciendo que todos los proyectos son divertidos, pero está bien, soy parcial.
+
+03:27.780 --> 03:28.940
+Denme un descanso aquí.
+
+03:28.950 --> 03:34.230
+Vamos a aprender acerca de la automatización y vamos a usar algo llamado selenium para 
+
+03:34.230 --> 03:36.570
+controlar por medio de nuestras maquinas.
+
+03:36.570 --> 03:43.170
+Un navegador web y conseguir que la maquina ejecute diferentes tareas como si fuera un usuario real y hay unas divertidas
+
+03:43.170 --> 03:46.400
+aplicaciones cuando se trata de automatización que estaremos hablando.
+
+03:46.530 --> 03:53.400
+Y yo sé que los dos temas favoritos de todos es Desarrollo Web y Ciencia de los Datos y aprendizaje
+
+03:53.400 --> 03:54.340
+automático.
+
+03:54.510 --> 04:00.090
+En estas dos secciones vamos a divertimos bastante y pienso que serán una de las secciones más populares
+
+04:00.270 --> 04:01.550
+en la sección de desarrollo web.
+
+04:01.560 --> 04:10.050
+Vamos a aprender a utilizar como usar HCM l CSF y JavaScript también Python para construir nuestro propio servidor
+
+04:10.110 --> 04:17.490
+nuestro propio portafolio sitio web, poner el sitio web en línea, en producción y tener futuros empleadores y clientes.
+
+04:17.580 --> 04:19.340
+contactándote por medio de tu sitio web.
+
+04:19.620 --> 04:24.600
+Y si, tendrás la capacidad de personalizarlo y hacer lo que quieras con este portafolio sitio web así 
+
+04:24.600 --> 04:26.960
+tendrás algo que mostrar al final de este curso.
+
+04:27.120 --> 04:32.280
+Y luego de la parte de ciencia de los datos y aprendizaje automático vamos a usar algo llamado Jupiter notebooks
+
+04:32.640 --> 04:36.770
+y Kaggle para acceder a unos interesantes conjuntos de datos.
+
+04:36.840 --> 04:42.500
+Vamos a usar unas librerías como pandas y psychic para aprender a predecir que jugadores de futbol van a ser
+
+04:42.500 --> 04:45.650
+los más valiosos o los menos pagados.
+
+04:45.750 --> 04:51.660
+Vamos a construir nuestro propio modelo de aprendizaje automático usando el conjunto de datos iris y luego también vamos
+
+04:51.660 --> 04:57.930
+hacer un poco de detección de imágenes en donde alimentaremos al modelo de aprendizaje automático una imagen y podrá predecir 
+
+04:57.960 --> 05:04.970
+que imagen es y serás capaz de ver como este mágico aprendizaje automático funciona por debajo del 
+
+05:04.970 --> 05:09.030
+capo, como puedes ver tenemos bastante contenido que cubrir en este curso. 
+
+05:09.140 --> 05:14.510
+Y para el final todo esto va encajar y tendrá sentido desde el principio
+
+05:14.570 --> 05:18.300
+de los básicos de Python hasta el fin con el aprendizaje automático.
+
+05:18.320 --> 05:21.230
+Vamos a llevarte desde Cero hasta Dominio.
+
+05:21.230 --> 05:21.960
+Pero sabes qué.
+
+05:22.010 --> 05:25.660
+La mejor parte de este curso es la comunidad en línea.
+
+05:25.670 --> 05:31.550
+Tenemos miles de desarrolladores que platican todos los días, ayudando el uno al otro a resolver problemas juntos
+
+05:31.820 --> 05:35.240
+y solamente hablando acerca de lo último y lo mejor en programación.
+
+05:35.240 --> 05:37.760
+Ahora este es un recurso opcional para ti para tu uso.
+
+05:37.790 --> 05:41.990
+Así puedes tener una conversación de ida y vuelta con otros estudiantes y conmigo mismo.
+
+05:41.990 --> 05:45.860
+Así que siéntete que eres parte de un aula y que no estás solo haciendo todo esto.
+
+05:46.400 --> 05:47.230
+Pero sabes qué.
+
+05:47.240 --> 05:48.160
+Suficiente platica.
+
+05:48.170 --> 05:49.460
+Estoy seguro de que estas emocionado.
+
+05:49.460 --> 05:50.210
+Yo también.
+
+05:50.210 --> 05:51.480
+Así que empecemos.
+
+05:51.500 --> 05:56.750
+Vamos a comenzar a aprender y ver porque Python se ha convertido en un popular lenguaje de programación en el mundo.
