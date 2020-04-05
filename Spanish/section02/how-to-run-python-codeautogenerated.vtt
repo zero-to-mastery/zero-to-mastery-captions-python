@@ -1,0 +1,196 @@
+WEBVTT
+
+00:00.900 --> 00:01.320
+Muy bien.
+
+00:01.410 --> 00:02.130
+Increíble.
+
+00:02.130 --> 00:04.510
+Hemos estado hablando por mucho tiempo.
+
+00:04.620 --> 00:08.240
+Como podemos finalmente ejecutar código en Python.
+
+00:08.250 --> 00:09.740
+Quiero empezar a escribir código ahora mismo.
+
+00:09.870 --> 00:12.900
+Empecemos descargando este servicio de traduccion.
+
+00:12.900 --> 00:15.430
+Bueno, lo siento.
+
+00:15.510 --> 00:20.610
+Realmente es algo que vamos a hacer luego en el curso y se lo que están pensando.
+
+00:20.730 --> 00:24.430
+Que?! Andre, que es esto un jardín de niños?.
+
+00:24.540 --> 00:25.550
+Vamos.
+
+00:25.560 --> 00:27.240
+Yo vine a aprender python.
+
+00:27.300 --> 00:28.990
+Empieza ensenándome python.
+
+00:29.070 --> 00:30.600
+Yo lo se.
+
+00:30.600 --> 00:31.190
+Y no te preocupes.
+
+00:31.200 --> 00:36.840
+En este curso vamos a conseguir que tengas una configuración profesional con Python así para cuando vayas
+
+00:36.840 --> 00:41.320
+al ámbito profesional conozcas lo que deberías de estar haciendo.
+
+00:41.340 --> 00:46.400
+Vamos a aprender como tener todo esto configurado, de primero.
+
+00:46.470 --> 00:53.660
+Vamos a tener nuestra terminal o línea de comandos donde podemos ejecutar Python en lo que llamamos un repo
+
+00:54.390 --> 01:00.160
+y luego vamos a usar editores de código como Sublime Text y Visual Studio Code.
+
+01:00.210 --> 01:07.230
+También vamos a usar un IDE o un Entorno de Desarrollo Integrado como PyCharm y Spider y vamos 
+
+01:07.230 --> 01:14.060
+a usar también Jupiter Notebooks y te voy a ensenar como configurar y preparar todos estos para tu computador.
+
+01:14.190 --> 01:20.340
+Cuáles son los ventajas y desventajas de usar cada uno y como algunos de ellos pueden ser usados para aprendizaje automático mientras
+
+01:20.610 --> 01:28.020
+otros pueden ser usado para escribir scripts y yo sé que esto es mucho, pero es bueno tener estas
+
+01:28.020 --> 01:34.470
+habilidades dependiendo de que trabajo quieras y si eres un desarrollador profesional en Python.
+
+01:34.620 --> 01:38.060
+Bueno, deberías de estar utilizando la mayoría de estos, pero hay un problema.
+
+01:38.070 --> 01:45.120
+Si comienzo introduciendo esto en el curso ahora mismo, notaras que estas herramientas se instalan de manera diferente
+
+01:45.150 --> 01:46.980
+dependiendo del computador que tengas.
+
+01:47.460 --> 01:54.090
+Así que, si usa una Mac o Windows o Linux, tal vez estés en tu dispositivo móvil porque quieres 
+
+01:54.090 --> 01:59.280
+empezar ahora mismo y escribir código en vez de preocuparte por la instalación y estar seguro que 
+
+01:59.280 --> 02:01.580
+tu computador este bien configurado.
+
+02:01.590 --> 02:06.570
+Yo quiero estar seguro de que todos nosotros podemos empezar ahora mismo no importando en que dispositivo te encuentres.
+
+02:06.690 --> 02:13.260
+Ahora si realmente estas dispuesto, dirigiste a la sección en donde te muestro como instalar todos estos
+
+02:13.830 --> 02:15.690
+en todos tus dispositivos.
+
+02:15.690 --> 02:22.600
+Así que ahí lo tienes, prepáralo y puedes venir de vuelta a la sección, pero te advierto es muy fácil encontrarte
+
+02:22.600 --> 02:26.600
+con problemas y estar confundido mientras instalas las herramientas.
+
+02:26.650 --> 02:32.530
+Así que recomiendo que te quedes con lo que te voy a mostrar y te prometo que obtendrás esta configuración
+
+02:32.530 --> 02:35.860
+profesional que ningún otro curso te va a ensenar todas estas cosas.
+
+02:35.860 --> 02:39.280
+Pero antes de mencionarlos necesitamos aprender.
+
+02:39.410 --> 02:42.580
+Bueno tú necesitas ser capaz de divertirte y escribir algún código.
+
+02:43.120 --> 02:47.860
+Así que cual es este truco que te estoy mencionando en donde no necesitamos ninguno de estos y aun ejecutar
+
+02:47.860 --> 02:48.280
+Python.
+
+02:48.910 --> 02:50.630
+Se llama wrap.
+
+02:50.680 --> 03:00.920
+Veras que en vez de descargar esto podemos ir a repl punto it y cuando vayas aquí obtendrás una pantalla
+
+03:00.930 --> 03:02.700
+de inicio de sesión.
+
+03:02.760 --> 03:09.090
+Ahora te recomiendo que crees una cuenta aquí porque créeme que será muy muy útil, es una de 
+
+03:09.090 --> 03:17.580
+mis herramientas favoritas y te permite guardar tus archivos de Python en línea por ejemplo una vez que inicies sesión
+
+03:17.580 --> 03:18.850
+y crees una cuenta.
+
+03:18.960 --> 03:25.530
+Puedes crear un nuevo repl escoger un lenguaje que quieras utilizar en nuestro caso vamos a escoger
+
+03:25.590 --> 03:36.580
+Python podemos llamar a nuetro repl como queramos así que llámalo, hey podemos solamente crear un repl y revisarlo 
+
+03:36.580 --> 03:38.570
+de una vez.
+
+03:38.830 --> 03:46.780
+Podemos tenerlo sin necesidad de descargar este servicio de traducción de python podemos empezar a escribir Python
+
+03:47.860 --> 03:54.400
+ahora mismo en nuestros navegadores y esto va a funcionar para cualquiera que tenga una conexión a Internet en
+
+03:54.400 --> 03:59.960
+un navegador porque este interprete puede ejecutarse automáticamente aquí.
+
+04:00.190 --> 04:05.100
+Y la belleza con repl es que puedes guardar estos archivos.
+
+04:05.110 --> 04:11.380
+Puedes tener diferentes carpetas así que vamos a trabajar mediante este curso vamos a tener una carpeta para todo 
+
+04:11.380 --> 04:18.190
+tu trabajo en Python y tener una manera organizada de una estructura de archivos que puedes acceder donde sea
+
+04:18.190 --> 04:20.200
+con una conexión a Internet.
+
+04:20.200 --> 04:24.480
+Ahora si no quieres registrarte a repl que es completamente gratuito.
+
+04:24.670 --> 04:31.630
+También puedes utilizar este git código abierto en donde puedes ir a Python y podrás ejecutar 
+
+04:31.870 --> 04:33.980
+Python en línea.
+
+04:34.150 --> 04:42.580
+Así que toma tu tiempo para regístrate a repl punto it y comencemos con nuestro primer programa en Python.
+
+04:42.590 --> 04:48.290
+Ya estoy a punto de comenzar y en el siguiente video vamos a escribir nuestra primera pieza de código.
+
+04:48.290 --> 04:49.330
+No más esperas.
+
+04:49.340 --> 04:52.340
+Es tiempo de escribir código así que te veré en el siguiente video.
+
+04:52.340 --> 04:52.700
+Hasta luego.
