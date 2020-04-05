@@ -1,0 +1,298 @@
+WEBVTT
+
+00:00.860 --> 00:03.290
+Hey, estas siguiendo aun esta ronda.
+
+00:03.290 --> 00:03.710
+Eso está bien.
+
+00:03.710 --> 00:10.460
+Espero no aburrirte con toda mi platica, pero si en este video finalmente vamos a escribir algo de código
+
+00:10.760 --> 00:11.540
+en Python.
+
+00:11.540 --> 00:12.190
+Santo cielo.
+
+00:12.200 --> 00:12.610
+Gracias a Dios.
+
+00:12.620 --> 00:14.860
+Pensé que duraría por mucho tiempo.
+
+00:14.950 --> 00:15.670
+Está bien.
+
+00:15.770 --> 00:18.450
+¿Así que va a hacer nuestro primer programa?
+
+00:19.190 --> 00:22.910
+Bueno creemos nuestra primera simple función.
+
+00:23.570 --> 00:29.870
+Y probablemente es la primera cosa que todo programador aprende es escribir nuestro propio nombre.
+
+00:30.110 --> 00:39.230
+Así que una vez que tengas repl punto it configurado recuerda que también usar gitpod punto io, vamos a 
+
+00:39.230 --> 00:40.610
+simplemente escribir.
+
+00:40.610 --> 00:48.150
+print y luego veras ahí que aquí nos da cierta información, pero todo lo que queremos hacer es escribir paréntesis
+
+00:49.260 --> 00:56.870
+una frase así que podemos hacer doble comillas aquí o una comilla simple y solamente escribe tu nombre.
+
+00:59.420 --> 01:08.440
+Y si hacemos click en run en el lado derecho podremos ver nuestro primer programa en Python.
+
+01:08.610 --> 01:12.570
+¿Muy emociónate pero que está pasando aquí?
+
+01:12.570 --> 01:14.680
+Bueno, miremos veamos que sucede.
+
+01:14.730 --> 01:17.550
+Primero que todo estas confundido porque
+
+01:17.550 --> 01:20.850
+mi cosa esta oscura y la tuya esta clara
+
+01:20.970 --> 01:27.510
+Es porque si voy a los ajustes he puesto el tema muy claro u oscuro.
+
+01:27.510 --> 01:28.820
+Yo prefiero la versión oscura.
+
+01:28.950 --> 01:34.380
+Pero tú puedes cambiar los ajustes puedes cambiar el tamaño de la fuente según lo que quieras cuando 
+
+01:34.380 --> 01:35.300
+mires este video.
+
+01:35.310 --> 01:41.420
+La apariencia de este sitio web se mire diferente pero la mayoría de los ajustes deberían de ser los mismo podemos ver 
+
+01:41.420 --> 01:52.750
+tenemos un main punto py que es la extensión de python cualquier archivo que tenga un punto py o P Y es un archivo en Python.
+
+01:52.790 --> 02:00.180
+Así que hemos escrito aquí en la línea uno es un programa que imprime.
+
+02:00.350 --> 02:04.640
+En este caso Andre por el momento o en tu caso tu propio nombre.
+
+02:04.820 --> 02:12.800
+Y hemos escrito esto a este archivo, ahora todo lo que hay envuelto en este archivo tiene este interprete
+
+02:13.740 --> 02:23.460
+para nosotros que ejecuta esta pieza de código que nos da un código fuente de main punto py hacia el intérprete y ejecuta
+
+02:23.460 --> 02:25.860
+aquí mismo a nuestro lado derecho.
+
+02:26.190 --> 02:30.790
+Si observas por aquí estamos usando la versión de python número tres punto seis punto uno.
+
+02:30.960 --> 02:36.870
+Y debajo de aquí podrás observar que tenemos Andre Bagle impreso.
+
+02:37.100 --> 02:38.680
+Eso es increíble
+
+02:38.780 --> 02:42.120
+Este es nuestro código ejecutándose.
+
+02:42.220 --> 02:50.440
+Recuerdan este diagrama todo lo que hemos hecho es tener nuestro main punto py en donde escribimos André Agassi 
+
+02:50.440 --> 02:58.780
+se lo hemos dado al interprete que repl ya provee para nosotros ese interprete toma nuestro código lo convierte
+
+02:58.780 --> 03:07.460
+en código binario aquí dice que va decir Andre Agassi y luego lo ejecuta en C Python M que se encuentra
+
+03:07.460 --> 03:13.880
+en lado derecho que hemos visto finalmente imprime nuestro nombre porque le dice a la maquina Hey queremos ese
+
+03:14.030 --> 03:15.460
+texto impreso.
+
+03:15.620 --> 03:17.290
+Eso es lo que estamos viendo aquí.
+
+03:17.360 --> 03:24.230
+Este es el C Python máquina virtual que ejecuta este código y le dice a esta máquina Hey quiero que
+
+03:24.230 --> 03:25.820
+tu imprimas esto.
+
+03:26.080 --> 03:28.410
+Muy bien, pero esto no es muy emocionante.
+
+03:28.420 --> 03:33.400
+Me refiero a que hagamos este programa un poco más dinámico para que nuestro primer programa queramos haga algo
+
+03:33.400 --> 03:36.340
+mucho más impresionante que solo imprima nuestro nombre.
+
+03:36.340 --> 03:40.900
+Así que te voy a ensenar otra cosa que podemos hacer en Python.
+
+03:41.050 --> 03:51.270
+Y se llama input ahora aquí puedo escribir input y puede ver que repl me da algo
+
+03:51.900 --> 03:58.450
+de información diciendo Oh tengo esto que puedes hacer un click aquí y luego este input por aquí.
+
+03:58.560 --> 03:59.700
+Bien que podemos hacer.
+
+03:59.850 --> 04:02.640
+Este input va a preguntar al usuario.
+
+04:02.730 --> 04:10.050
+Y si apunto con el mouse por aquí podrás ver que me está dando información, pero input simplemente nos da una manera 
+
+04:10.050 --> 04:11.910
+de capturar información.
+
+04:11.910 --> 04:24.800
+Así que digamos cuál es tu nombre y si ejecuto este código veras que tenemos nuestro código ejecutando y 
+
+04:24.800 --> 04:28.170
+esta pidiéndome cual es mi nombre con este cursor por aquí.
+
+04:28.310 --> 04:29.980
+Yo puedo escribir algo aquí.
+
+04:30.110 --> 04:36.190
+Puedo decir que soy Andre y si presiono Enter.
+
+04:36.410 --> 04:37.970
+Bueno ahí lo tienes.
+
+04:37.970 --> 04:41.720
+He escrito mi propio nombre.
+
+04:41.720 --> 04:42.860
+Algo no tan emocionante.
+
+04:42.920 --> 04:43.640
+Bien.
+
+04:43.820 --> 04:51.420
+Pero acá es donde nuestro código se convierte en algo interesante porque podemos guardar esta información en nuestro computador.
+
+04:51.480 --> 04:57.570
+Así que otra vez estas cosas las vamos a ver en detalle en nuestra sección de básicos de Python.
+
+04:57.780 --> 05:06.630
+Pero solo para escribir nuestro primer código bien asignemos esto a la memoria, digamos que nombre es igual
+
+05:06.960 --> 05:11.760
+a lo que sea que input sea tu nombre.
+
+05:11.870 --> 05:20.560
+Y luego finalmente podemos imprimir el nombre para recordar, el intérprete va a tomar esta primer
+
+05:20.560 --> 05:24.750
+línea y va a preguntar cuál es tu nombre.
+
+05:24.770 --> 05:32.750
+Voy a comenzar a escribir algo, esa información escrita va a ser asignada a nombre y luego finalmente
+
+05:32.930 --> 05:35.280
+imprimimos nombre.
+
+05:35.480 --> 05:37.560
+Recuerda que el intérprete toma
+
+05:37.610 --> 05:40.480
+línea por línea convierte el código a código binario.
+
+05:40.490 --> 05:44.300
+Y luego finalmente lo ejecuta, así que hagamos un intento.
+
+05:44.300 --> 05:46.820
+Voy a hacer click en ejecutar.
+
+05:46.840 --> 05:47.080
+Muy bien.
+
+05:47.110 --> 05:48.550
+Cual es tu nombre
+
+05:48.550 --> 05:56.190
+Mi nombre es Andre puedes ver lo que escribir en mi nombre.
+
+05:56.360 --> 05:59.230
+Presiono enter y luego se imprime.
+
+05:59.300 --> 06:05.090
+ANDRE así que para el final pongamos un saludo.
+
+06:05.280 --> 06:10.070
+Así que voy a decir print Hola
+
+06:12.490 --> 06:14.550
+Y luego más nombre.
+
+06:14.710 --> 06:16.390
+Ahora no te preocupes de la sintaxis.
+
+06:16.400 --> 06:24.610
+Vamos a repasarlo luego, pero todo lo que estamos haciendo es simplemente decir hola y luego añadimos nuestro nombre al final de esto
+
+06:25.720 --> 06:29.650
+así que veamos que sucede cuando ejecute esto y diga Cual es tu nombre?
+
+06:30.160 --> 06:36.330
+Mi nombre es Andre y presiono Enter y obtengo Hola Andre.
+
+06:36.330 --> 06:44.300
+Pero sin espacios así que añadamos un pequeño espacio oprimo otra vez Ejecutar y por la cuarta vez Mi nombre es Andre y dice
+
+06:44.480 --> 06:54.300
+Hola Andre ahí esta nuestro primer programa en python ahora es emocionante porque es nuestro primer
+
+06:54.300 --> 07:01.200
+programa solo hemos aprendido los pasos aquí, pero espero, porque hemos visto alguno de estos temas por 
+
+07:01.200 --> 07:05.370'
+adelantado, que esto no solamente es pura magia, ¿verdad?
+
+07:05.580 --> 07:13.380
+Tu comprendes esto, esto es código fuente, este main punto py, es lo que damos a un intérprete que ejecuta
+
+07:13.380 --> 07:19.680
+nuestro código, línea por línea y luego ejecuta nuestro programa.
+
+07:19.680 --> 07:22.370
+En nuestro caso es cuál es tu nombre.
+
+07:22.410 --> 07:23.950
+Programa.
+
+07:24.090 --> 07:27.080
+¿Que cool es esto?
+
+07:27.100 --> 07:28.670
+Esto solo es el comienzo.
+
+07:28.710 --> 07:31.730
+Vamos a ir mucho más y más avanzado aquí.
+
+07:31.930 --> 07:33.830
+Mira si puedes jugar con esto.
+
+07:33.850 --> 07:39.130
+No sabemos mucho de Python aun, pero te espero que esto te mantenga emocionado porque hay mucho mas 
+
+07:39.130 --> 07:42.020
+código por escribir, te veré en el próximo video.
+
+07:42.090 --> 07:42.640
+Hasta luego.
